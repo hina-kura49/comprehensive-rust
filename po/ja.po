@@ -1666,7 +1666,7 @@ msgstr "API 設計の基礎"
 #: src/SUMMARY.md src/idiomatic/foundations-api-design.md
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid "Meaningful Doc Comments"
-msgstr ""
+msgstr "意味のあるドキュメントコメント"
 
 #: src/SUMMARY.md
 msgid "Who Are You Writing For?"
@@ -1699,7 +1699,7 @@ msgstr "「どのように」「どこで」ではなく「何を」「なぜ」
 #: src/SUMMARY.md src/idiomatic/foundations-api-design.md
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid "Predictable API"
-msgstr ""
+msgstr "予測可能な API"
 
 #: src/SUMMARY.md
 msgid "Naming conventions"
@@ -1815,9 +1815,8 @@ msgstr "型システムの活用"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
-#, fuzzy
 msgid "Newtype Pattern"
-msgstr "タイプステートパターン"
+msgstr "ニュータイプパターン"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
@@ -1834,7 +1833,7 @@ msgstr "カプセル化されているか？"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 msgid "RAII"
-msgstr ""
+msgstr "RAII"
 
 #: src/SUMMARY.md
 msgid "Drop Skipped"
@@ -1872,9 +1871,8 @@ msgstr "Drop と Option"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
-#, fuzzy
 msgid "Extension Traits"
-msgstr "ジェネリックトレイト"
+msgstr "拡張トレイト"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
@@ -1908,7 +1906,6 @@ msgid "Should I Define An Extension Trait?"
 msgstr ""
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "Typestate Pattern"
 msgstr "タイプステートパターン"
 
@@ -1949,9 +1946,8 @@ msgid "Serializer: Complete implementation"
 msgstr "シリアライザ: 実装の完成"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "Borrow checking invariants"
-msgstr "借用チェック"
+msgstr "借用チェックの不変条件"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
@@ -1987,9 +1983,8 @@ msgstr "PhantomData: OwnedFd と BorrowedFd"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/token-types.md
-#, fuzzy
 msgid "Token Types"
-msgstr "Copy 型"
+msgstr "トークン型"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
@@ -2116,11 +2111,11 @@ msgstr "継承"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "Why no Inheritance in Rust?"
-msgstr ""
+msgstr "Rust に継承がないのはなぜか"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid "Inheritance from Rust's Perspective"
-msgstr ""
+msgstr "Rust から見た継承"
 
 #: src/SUMMARY.md
 msgid "\"Inheritance\" in Rust and Supertraits"
@@ -2128,11 +2123,11 @@ msgstr "Rust における「継承」とスーパートレイト"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/composition.md
 msgid "Composition over Inheritance"
-msgstr ""
+msgstr "継承よりもコンポジション"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "Problem solving: Break Down the Problem"
-msgstr ""
+msgstr "問題解決: 問題を分解する"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 #, fuzzy
@@ -31874,9 +31869,8 @@ msgid "\"From server: {}\""
 msgstr "\"From server: {}\""
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid "Welcome to Idiomatic Rust"
-msgstr "ベアメタルRustへようこそ"
+msgstr "Idiomatic Rust へようこそ"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31884,6 +31878,9 @@ msgid ""
 "concepts. We now want to go one step further: how do you use Rust "
 "_effectively_ in your projects? What does _idiomatic_ Rust look like?"
 msgstr ""
+"[Rust の基礎](../welcome-day-1.md) では、Rust の構文と中心となる概念を紹介し"
+"ました。ここではさらに一歩進めて、プロジェクトで Rust を _効果的に_ 使うには"
+"どうすればよいか、_慣用的な_ Rust とはどのようなものかを考えます。"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31893,10 +31890,14 @@ msgid ""
 "make informed decisions within the context and constraints of your own "
 "projects."
 msgstr ""
+"この講座は特定の考え方に基づいています。ある種のパターンを勧め、別のパターン"
+"を避けるよう促します。とはいえ、プロジェクトによって必要なものが異なる場合が"
+"あることも認識しています。皆さんが自分のプロジェクトの状況と制約の中で十分な"
+"情報に基づいて判断できるよう、必要な情報は常に提供します。"
 
 #: src/idiomatic/welcome.md
 msgid "⚠️ This course is under **active development**."
-msgstr ""
+msgstr "⚠️ この講座は現在 **活発に開発中** です。"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31904,23 +31905,28 @@ msgid ""
 "yet been spotted. Nonetheless, we encourage you to browse through and "
 "provide early feedback!"
 msgstr ""
+"内容は頻繁に変わる可能性があり、まだ見つかっていない誤りがあるかもしれませ"
+"ん。それでも、ぜひ目を通して早めにフィードバックをお寄せください。"
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 13 hours and 55 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 55 分です。"
+msgstr ""
+"このセッションの所要時間は、10 分間の休憩を入れて約 13 時間 55 分です。内容は"
+"次のとおりです。"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "The course will cover the topics listed below. Each topic may be covered in "
 "one or more slides, depending on its complexity and relevance."
 msgstr ""
+"この講座では、以下のトピックを扱います。各トピックは、その複雑さと重要性に応"
+"じて 1 枚以上のスライドで扱います。"
 
 #: src/idiomatic/welcome.md
 msgid "Target Audience"
-msgstr ""
+msgstr "対象者"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31929,10 +31935,14 @@ msgid ""
 "programming language. We have no expectation of experience with more modern "
 "or feature-rich languages like Swift, Kotlin, C#, or TypeScript."
 msgstr ""
+"C、C++11 以降、Java 7 以降、Python 2 または 3、Go、またはその他の同様の命令型"
+"プログラミング言語で 2～3 年以上のコーディング経験があるエンジニア。Swift、"
+"Kotlin、C#、TypeScript のような、より現代的で機能の豊富な言語の経験は前提とし"
+"ていません。"
 
 #: src/idiomatic/welcome.md
 msgid "Foundations of API design"
-msgstr ""
+msgstr "API 設計の基礎"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31940,10 +31950,12 @@ msgid ""
 "spend much more time reading the call sites than declarations of the "
 "functions being called."
 msgstr ""
+"黄金律: 呼び出し側での明確さと読みやすさを優先します。人々は、呼び出される関"
+"数の宣言よりも、呼び出し箇所を読むことにはるかに多くの時間を費やします。"
 
 #: src/idiomatic/welcome.md
 msgid "Make your API predictable"
-msgstr ""
+msgstr "API を予測可能にする"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31951,6 +31963,9 @@ msgid ""
 "in the standard library - e.g., methods should be called \"push\" not "
 "\"push_back\", \"is_empty\" not \"empty\" etc.)"
 msgstr ""
+"命名規則に従う（大文字・小文字の規則、標準ライブラリで前例のある語彙を優先す"
+"る。例: メソッド名は \"push_back\" ではなく \"push\"、\"empty\" ではなく "
+"\"is_empty\" とするなど）"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31958,12 +31973,17 @@ msgid ""
 "in your APIs. If something feels like a basic type/algorithm, check in the "
 "standard library first."
 msgstr ""
+"標準ライブラリの基本的な型（vocabulary type）とトレイトを知り、自分の API で"
+"使う。基本的な型やアルゴリズムだと感じるものがあれば、まず標準ライブラリを確"
+"認する。"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Use well-established API design patterns that we will discuss later in this "
 "class (e.g., newtype, owned/view type pairs, error handling)"
 msgstr ""
+"この講座で後ほど説明する、確立された API 設計パターンを使う（例: newtype、所"
+"有型とビュー型のペア、エラー処理）"
 
 #: src/idiomatic/welcome.md
 msgid ""
@@ -31971,200 +31991,211 @@ msgid ""
 "method name with spaces instead of underscores, don't repeat the same "
 "information just to fill out every markdown tag, provide usage examples)"
 msgstr ""
+"意味があり効果的なドキュメント コメントを書く（例: メソッド名のアンダースコア"
+"をスペースに置き換えて繰り返すだけにしない、すべての Markdown タグを埋めるた"
+"めだけに同じ情報を繰り返さない、使用例を示す）"
 
 #: src/idiomatic/welcome.md
 msgid "Leveraging the type system"
-msgstr ""
+msgstr "型システムの活用"
 
 #: src/idiomatic/welcome.md
 msgid "Short recap on enums, structs and type aliases"
-msgstr ""
+msgstr "列挙型、構造体、型エイリアスの簡単なおさらい"
 
 #: src/idiomatic/welcome.md
 msgid "Newtype pattern and encapsulation: parse, don't validate"
 msgstr ""
+"newtype パターンとカプセル化: 検証せずにパースする（parse, don't validate）"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Extension traits: avoid the newtype pattern when you want to provide "
 "additional behaviour"
-msgstr ""
+msgstr "拡張トレイト: 追加の動作を提供したい場合に newtype パターンを避ける"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "RAII, scope guards and drop bombs: using `Drop` to clean up resources, "
 "trigger actions or enforce invariants"
 msgstr ""
+"RAII、スコープガード、ドロップボム: `Drop` を使ってリソースをクリーンアップす"
+"る、アクションをトリガーする、不変条件を強制する"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "\"Token\" types: force users to prove they've performed a specific action"
-msgstr ""
+msgstr "「トークン」型: 特定のアクションを実行したことをユーザーに証明させる"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "The typestate pattern: enforce correct state transitions at compile-time"
-msgstr ""
+msgstr "typestate パターン: 正しい状態遷移をコンパイル時に強制する"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Using the borrow checker to enforce invariants that have nothing to do with "
 "memory ownership"
-msgstr ""
+msgstr "借用チェッカーを使って、メモリの所有権とは関係のない不変条件を強制する"
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid "OwnedFd/BorrowedFd in the standard library"
-msgstr "標準ライブラリの非同期バージョン。"
+msgstr "標準ライブラリの OwnedFd/BorrowedFd"
 
 #: src/idiomatic/welcome.md
 msgid "[Branded types](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf)"
 msgstr ""
+"[ブランド型（Branded types）](https://plv.mpi-sws.org/rustbelt/ghostcell/"
+"paper.pdf)"
 
 #: src/idiomatic/welcome.md
 msgid "Don't fight the borrow checker"
-msgstr ""
+msgstr "借用チェッカーと戦わない"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "\"Owned\" types and \"view\" types: `&str` and `String`, `Path` and "
 "`PathBuf`, etc."
-msgstr ""
+msgstr "「所有」型と「ビュー」型: `&str` と `String`、`Path` と `PathBuf` など"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Don't hide ownership requirements: avoid hidden `.clone()`, learn to love "
 "`Cow`"
-msgstr ""
+msgstr "所有権の要件を隠さない: 隠れた `.clone()` を避け、`Cow` を使いこなす"
 
 #: src/idiomatic/welcome.md
 msgid "Split types along ownership boundaries"
-msgstr ""
+msgstr "所有権の境界に沿って型を分割する"
 
 #: src/idiomatic/welcome.md
 msgid "Structure your ownership hierarchy like a tree"
-msgstr ""
+msgstr "所有権の階層をツリーのように構成する"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Strategies to manage circular dependencies: reference counting, using "
 "indexes instead of references"
-msgstr ""
+msgstr "循環依存を管理する戦略: 参照カウント、参照の代わりにインデックスを使う"
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid "Interior mutability (Cell, RefCell)"
-msgstr "内部可変性"
+msgstr "内部可変性（Cell、RefCell）"
 
 #: src/idiomatic/welcome.md
 msgid "Working with lifetime parameters on user-defined data types"
-msgstr ""
+msgstr "ユーザー定義のデータ型でライフタイム パラメータを扱う"
 
 #: src/idiomatic/welcome.md
 msgid "Polymorphism in Rust"
-msgstr ""
+msgstr "Rust におけるポリモーフィズム"
 
 #: src/idiomatic/welcome.md
 msgid "A quick refresher on traits and generic functions"
-msgstr ""
+msgstr "トレイトとジェネリック関数の簡単なおさらい"
 
 #: src/idiomatic/welcome.md
 msgid "Rust has no inheritance: what are the implications?"
-msgstr ""
+msgstr "Rust には継承がない: それは何を意味するのか？"
 
 #: src/idiomatic/welcome.md
 msgid "Using enums for polymorphism"
-msgstr ""
+msgstr "ポリモーフィズムに列挙型を使う"
 
 #: src/idiomatic/welcome.md
 msgid "Using traits for polymorphism"
-msgstr ""
+msgstr "ポリモーフィズムにトレイトを使う"
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid "Using composition"
-msgstr "使用例"
+msgstr "コンポジションを使う"
 
 #: src/idiomatic/welcome.md
 msgid "How do I pick the most appropriate pattern?"
-msgstr ""
+msgstr "最も適切なパターンをどう選ぶか？"
 
 #: src/idiomatic/welcome.md
 msgid "Working with generics"
-msgstr ""
+msgstr "ジェネリクスを扱う"
 
 #: src/idiomatic/welcome.md
 msgid "Generic type parameter in a function or trait object as an argument?"
 msgstr ""
+"引数には、関数のジェネリック型パラメータとトレイトオブジェクトのどちらを使う"
+"べきか？"
 
 #: src/idiomatic/welcome.md
 msgid "Trait bounds don't have to refer to the generic parameter"
-msgstr ""
+msgstr "トレイト境界はジェネリック パラメータを参照していなくてもよい"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Type parameters in traits: should it be a generic parameter or an associated "
 "type?"
 msgstr ""
+"トレイトの型パラメータ: ジェネリック パラメータにすべきか、関連型にすべきか？"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Macros: a valuable tool to DRY up code when traits are not enough (or too "
 "complex)"
 msgstr ""
+"マクロ: トレイトだけでは不十分な（または複雑すぎる）場合に、コードの重複をな"
+"くす（DRY にする）ための有用なツール"
 
 #: src/idiomatic/welcome.md
 msgid "What is the purpose of errors? Recovery vs. reporting."
-msgstr ""
+msgstr "エラーの目的は何か？ 回復か、報告か。"
 
 #: src/idiomatic/welcome.md
 msgid "Result vs. Option"
-msgstr ""
+msgstr "Result と Option"
 
 #: src/idiomatic/welcome.md
-#, fuzzy
 msgid "Designing good errors:"
-msgstr "ライブラリをデザイン"
+msgstr "良いエラーの設計:"
 
 #: src/idiomatic/welcome.md
 msgid "Determine the error scope."
-msgstr ""
+msgstr "エラーのスコープを決める。"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Capture additional context as the error flows upwards, crossing scope "
 "boundaries."
 msgstr ""
+"エラーが上位へ伝わりスコープの境界を越えるときに、追加のコンテキストを付け加"
+"える。"
 
 #: src/idiomatic/welcome.md
 msgid "Leverage the `Error` trait to keep track of the full error chain."
-msgstr ""
+msgstr "`Error` トレイトを活用して、エラーチェーン全体を追跡する。"
 
 #: src/idiomatic/welcome.md
 msgid "Leverage `thiserror` to reduce boilerplate when defining error types."
 msgstr ""
+"`thiserror` を活用して、エラー型を定義する際のボイラープレートを減らす。"
 
 #: src/idiomatic/welcome.md
 msgid ""
 "Distinguish fatal errors from recoverable errors using `Result<Result<T, "
 "RecoverableError>, FatalError>`."
 msgstr ""
+"`Result<Result<T, RecoverableError>, FatalError>` を使って、致命的なエラーと"
+"回復可能なエラーを区別する。"
 
 #: src/idiomatic/foundations-api-design.md
-#, fuzzy
 msgid "This segment should take about 3 hours and 15 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 5 分です"
+msgstr "このセグメントの所要時間は約 3 時間 15 分です。内容は次のとおりです。"
 
 #: src/idiomatic/foundations-api-design.md
-#, fuzzy
 msgid "1 hour and 25 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 25 分"
 
 #: src/idiomatic/foundations-api-design.md
 #: src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "1 hour and 50 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 50 分"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid "/// API for the client // ❌ Lacks detail\n"
@@ -34073,12 +34104,16 @@ msgid ""
 "Rust's type system is _expressive_: you can use types and traits to build "
 "abstractions that make your code harder to misuse."
 msgstr ""
+"Rust の型システムは _表現力が豊か_ です。型とトレイトを使って、誤用しにくい"
+"コードにするための抽象化を構築できます。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
 "In some cases, you can go as far as enforcing correctness at _compile-time_, "
 "with no runtime overhead."
 msgstr ""
+"場合によっては、実行時のオーバーヘッドなしに、_コンパイル時_ に正しさを強制す"
+"ることまでできます。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34086,6 +34121,8 @@ msgid ""
 "domain. With careful design, you can improve the clarity and maintainability "
 "of the entire codebase."
 msgstr ""
+"型とトレイトは、ビジネスドメインの概念や制約をモデル化できます。慎重に設計す"
+"ることで、コードベース全体の明確さと保守性を向上させることができます。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid "Additional items speaker may mention:"
@@ -34096,6 +34133,8 @@ msgid ""
 "Rust's type system borrows a lot of ideas from functional programming "
 "languages."
 msgstr ""
+"Rust の型システムは、関数型プログラミング言語から多くのアイデアを借りていま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34106,12 +34145,19 @@ msgid ""
 "pragprog.com/titles/swdddf/domain-modeling-made-functional/) is a great "
 "resource on the topic, with examples written in F#."
 msgstr ""
+"たとえば、Rust の列挙型は、Haskell や OCaml などの言語では「代数的データ型」"
+"として知られています。型を使った設計の指針を探すときは、関数型言語向けの学習"
+"教材を参考にできます。[\"Domain Modeling Made Functional\"](https://"
+"pragprog.com/titles/swdddf/domain-modeling-made-functional/) はこのトピックに"
+"関する優れた資料で、例は F# で書かれています。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
 "Despite Rust's functional roots, not all functional design patterns can be "
 "easily translated to Rust."
 msgstr ""
+"Rust は関数型にルーツを持ちますが、すべての関数型デザインパターンを簡単に "
+"Rust に置き換えられるわけではありません。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34119,6 +34165,8 @@ msgid ""
 "topics to design APIs that leverage higher-order functions and higher-kinded "
 "types in Rust."
 msgstr ""
+"たとえば、Rust で高階関数や高カインド型を活用する API を設計するには、幅広い"
+"高度なトピックをしっかり理解している必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34126,6 +34174,9 @@ msgid ""
 "easier to implement. Consider using in-place mutation, relying on Rust's "
 "borrow-checker and type system to control what can be mutated, and where."
 msgstr ""
+"より命令型のアプローチの方が実装しやすいかどうかを、ケースごとに判断してくだ"
+"さい。インプレースでの変更を使い、何をどこで変更できるかの制御は Rust の借用"
+"チェッカーと型システムに任せることを検討してください。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34133,6 +34184,9 @@ msgid ""
 "doesn't support inheritance, and object decomposition should take into "
 "account the constraints introduced by the borrow checker."
 msgstr ""
+"オブジェクト指向のデザインパターンにも同じ注意が必要です。Rust は継承をサポー"
+"トしておらず、オブジェクトの分解では借用チェッカーによって生じる制約を考慮す"
+"る必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
@@ -34140,16 +34194,17 @@ msgid ""
 "abstractions\", although the label can be misleading: the impact on compile "
 "times and code complexity may be significant."
 msgstr ""
+"型レベルプログラミングは「ゼロコスト抽象化」を作るためによく使えることに触れ"
+"てください。ただし、この呼び名は誤解を招くことがあります。コンパイル時間や"
+"コードの複雑さへの影響が大きくなる場合があるからです。"
 
 #: src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "This segment should take about 7 hours and 40 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 10 分です"
+msgstr "このセグメントの所要時間は約 7 時間 40 分です。"
 
 #: src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "1 hour and 30 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 30 分"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid "A _newtype_ is a wrapper around an existing type, often a primitive:"
@@ -38083,12 +38138,16 @@ msgid ""
 "Rust has plenty of mechanisms for writing and using polymorphic code, but "
 "they're somewhat different from other popular languages!"
 msgstr ""
+"Rust には、ポリモーフィックなコードを書いて使うための仕組みがたくさんあります"
+"が、他の一般的な言語とはやや異なります！"
 
 #: src/idiomatic/polymorphism.md
 msgid ""
 "This chapter will cover the details of Rust's polymorphism and how it's "
 "similar, or different to, other languages."
 msgstr ""
+"この章では、Rust のポリモーフィズムの詳細と、それが他の言語とどのように似てい"
+"るか、あるいは異なるかを説明します。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
@@ -39302,7 +39361,7 @@ msgstr ""
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid "From OOP to Rust: Composition, Not Inheritance"
-msgstr ""
+msgstr "OOP から Rust へ：継承ではなくコンポジション"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid ""
@@ -39310,19 +39369,24 @@ msgid ""
 "software engineering has been done with Inheritance as a core part of "
 "business logic."
 msgstr ""
+"継承は、パラダイムとしての OOP の成功の鍵です。何十年にもわたり、継承をビジネ"
+"スロジックの中核として、成功したソフトウェアエンジニアリングが行われてきまし"
+"た。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid "So why did Rust avoid inheritance?"
-msgstr ""
+msgstr "では、なぜ Rust は継承を避けたのでしょうか。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid ""
 "How do we move from inheritance-based problem solving to Rust's approach?"
 msgstr ""
+"継承に基づく問題解決から Rust のアプローチへ、どのように移行すればよいでしょ"
+"うか。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid "How do you represent heterogeneous collections in Rust?"
-msgstr ""
+msgstr "Rust では異種コレクションをどのように表現するのでしょうか。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid ""
@@ -39330,6 +39394,9 @@ msgid ""
 "polymorphic problem solving with types in OOP languages like java, C++ etc. "
 "to Rust's trait-based approach to Polymorphism."
 msgstr ""
+"このセクションでは、Java や C++ などの OOP 言語で型を使ってポリモーフィックな"
+"問題解決を考える方法から、Rust のトレイトに基づくポリモーフィズムのアプローチ"
+"へ移行する方法を見ていきます。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid ""
@@ -39337,93 +39404,96 @@ msgid ""
 "especially with modern standards of OOP development. Remember to keep an "
 "open mind."
 msgstr ""
+"違いはありますが、特に現代の OOP 開発の標準と比べると、共通する部分もたくさん"
+"あります。柔軟な姿勢で臨むことを心がけてください。"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid "Inheritance in OOP languages"
-msgstr ""
+msgstr "OOP 言語における継承"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
-#, fuzzy
 msgid "// Base class\n"
-msgstr "// ベースケース。\n"
+msgstr "// 基底クラス\n"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid "// Inheriting class\n"
-msgstr ""
+msgstr "// 継承するクラス\n"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
-#, fuzzy
 msgid "// Create a Car object\n"
-msgstr "/// 新しいカウンタを作成します。\n"
+msgstr "// Car オブジェクトを作成する\n"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
-#, fuzzy
 msgid "// Inherited method\n"
-msgstr "// クローン トレイトで `clone` メソッドを追加します。\n"
+msgstr "// 継承したメソッド\n"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
-#, fuzzy
 msgid "// Car's own method\n"
-msgstr "/// 送信可。\n"
+msgstr "// Car 独自のメソッド\n"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid ""
 "This should be a short reminder for students about what inheritance is in "
 "other languages."
 msgstr ""
+"これは、他の言語における継承とは何かを受講者に簡単に思い出してもらうためのも"
+"のです。"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid ""
 "Inheritance is a mechanism where a \"child\" type gains the fields and "
 "methods of the \"parent\" types it is inheriting from."
 msgstr ""
+"継承とは、「子」の型が継承元の「親」の型のフィールドとメソッドを得る仕組みで"
+"す。"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid "Methods are able to be overridden as-needed by the inheriting type."
-msgstr ""
+msgstr "メソッドは、継承する型によって必要に応じてオーバーライドできます。"
 
 #: src/idiomatic/from-oop-to-rust/inheritance.md
 msgid "Can call methods of inherited-from classes with `super`."
-msgstr ""
+msgstr "`super` を使って継承元のクラスのメソッドを呼び出せます。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
-#, fuzzy
 msgid "// methods\n"
-msgstr "メソッド"
+msgstr "// メソッド\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "// 🔨❌, Rust does not have inheritance!\n"
-msgstr ""
+msgstr "// 🔨❌、Rust には継承はありません！\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "// Inherited \"id\" field\n"
-msgstr ""
+msgstr "// 継承された \"id\" フィールド\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
 "// methods, but also includes Id's methods, or maybe overrides to\n"
 "    // those methods.\n"
 msgstr ""
+"// メソッド。ただし、Id のメソッドも含まれるか、\n"
+"    // それらのメソッドのオーバーライドが含まれるかもしれません。\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "// ✅\n"
-msgstr ""
+msgstr "// ✅\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "// All of data's methods that aren't from traits.\n"
-msgstr ""
+msgstr "// data のメソッドのうち、トレイト由来でないものすべて。\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "// Implementations for traits in separate impl blocks.\n"
-msgstr ""
+msgstr "// トレイトの実装は別の impl ブロックで行います。\n"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "Inheritance comes with a number of downsides."
-msgstr ""
+msgstr "継承にはいくつもの欠点があります。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "Heterogeneous by default:"
-msgstr ""
+msgstr "デフォルトで異種："
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
@@ -39431,22 +39501,29 @@ msgid ""
 "interchangeably, without being able to specify a concrete type or if a type "
 "is identical to another."
 msgstr ""
+"クラスの継承では、異なるクラスの型を暗黙的に相互に置き換えて使えてしまい、具"
+"体的な型を指定したり、ある型が別の型と同一かどうかを指定したりすることができ"
+"ません。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
 "For operations like equality or comparison this allows for comparison and "
 "equality that throws an error or otherwise panics."
 msgstr ""
+"等価性や比較のような操作では、そのためにエラーをスローしたり、パニックを起こ"
+"したりするような比較や等価性判定が可能になってしまいます。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
 "Multiple sources of truth for what makes up a data structure and how it "
 "behaves:"
 msgstr ""
+"データ構造が何で構成され、どのように振る舞うかについて、信頼できる情報源が複"
+"数存在する："
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "A type's fields are obscured by the inheritance hierarchy."
-msgstr ""
+msgstr "型のフィールドが継承階層によって見えにくくなります。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
@@ -39454,10 +39531,15 @@ msgid ""
 "child type, it's hard to tell what the behavior of a type is in complex "
 "codebases maintained by multiple parties."
 msgstr ""
+"型のメソッドは親の型のメソッドをオーバーライドしているかもしれず、子の型に"
+"よってオーバーライドされているかもしれません。複数の関係者が保守する複雑な"
+"コードベースでは、型の振る舞いを把握するのが困難です。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "Dynamic dispatch as default adds overhead from vtable lookups:"
 msgstr ""
+"動的ディスパッチがデフォルトだと、vtable の参照によるオーバーヘッドが生じま"
+"す。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
@@ -39465,60 +39547,67 @@ msgid ""
 "information on what methods to call and other pieces of runtime-known pieces "
 "of information on the type."
 msgstr ""
+"動的ディスパッチが機能するためには、どのメソッドを呼び出すかという情報や、そ"
+"の型について実行時に分かるその他の情報を格納しておく場所が必要です。"
 
 #: src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid ""
 "This store is the `vtable` for a value. Method calls will require more "
 "dereferences than calling a method for a type that is known at compile time."
 msgstr ""
+"この格納場所が値の `vtable` です。メソッド呼び出しには、コンパイル時に型が分"
+"かっている場合のメソッド呼び出しよりも多くの参照外しが必要になります。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
-#, fuzzy
 msgid "// Data\n"
-msgstr "/// データレジスタ\n"
+msgstr "// データ\n"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
-#, fuzzy
 msgid "// Concrete behavior\n"
-msgstr "// 未定義の動作\n"
+msgstr "// 具体的な振る舞い\n"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid "// Abstract behavior\n"
-msgstr ""
+msgstr "// 抽象的な振る舞い\n"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
-#, fuzzy
 msgid "// Instanced behavior\n"
-msgstr "// 未定義の動作\n"
+msgstr "// インスタンスの振る舞い\n"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid ""
 "From Rust's perspective, one where Inheritance was never there, introducing "
 "inheritance would look like muddying the water between types and traits."
 msgstr ""
+"継承がもともと存在しない Rust の視点から見ると、継承を導入することは型とトレ"
+"イトの境界を曖昧にするように見えます。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid "A type is a concrete piece of data and its associated behavior."
-msgstr ""
+msgstr "型とは、具体的なデータとそれに関連付けられた振る舞いです。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid "A trait is abstract behavior that must be implemented by a type."
-msgstr ""
+msgstr "トレイトとは、型によって実装されなければならない抽象的な振る舞いです。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid ""
 "A class is a combination of data, behavior, and overrides to that behavior."
 msgstr ""
+"クラスとは、データ、振る舞い、およびその振る舞いのオーバーライドを組み合わせ"
+"たものです。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid ""
 "Coming from Rust, an inheritable class looks like a type that is also a "
 "trait."
 msgstr ""
+"Rust の視点から見ると、継承可能なクラスは、トレイトでもある型のように見えま"
+"す。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid "This is not an upside, as we can no longer reason about concrete types."
-msgstr ""
+msgstr "これは利点ではありません。具体的な型について推論できなくなるからです。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid ""
@@ -39526,6 +39615,8 @@ msgid ""
 "generic behavior vs concrete specifics, because in OOP these two concepts "
 "are tied up in each other."
 msgstr ""
+"この 2 つを分離できないと、汎用的な振る舞いと具体的な詳細を区別して推論するこ"
+"とが難しくなります。OOP では、この 2 つの概念が互いに結び付いているからです。"
 
 #: src/idiomatic/from-oop-to-rust/switch-perspective.md
 msgid ""
@@ -39533,58 +39624,71 @@ msgid ""
 "worth the loss in specificity between writing code that delineates between "
 "behavior and data."
 msgstr ""
+"フラットなフィールドアクセスや型定義における DRY の便利さは、振る舞いとデータ"
+"を明確に区別するコードを書くことで得られる具体性を失うほどの価値はありませ"
+"ん。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid "\"Inheritance\" in Rust: Supertraits"
-msgstr ""
+msgstr "Rust における「継承」: スーパートレイト"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid ""
 "In Rust, traits can depend on other traits. We're already familiar with "
 "Traits being able to have Supertraits."
 msgstr ""
+"Rust では、トレイトは他のトレイトに依存できます。トレイトがスーパートレイトを"
+"持てることは、すでにご存じのとおりです。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid "This looks superficially similar to inheritance."
-msgstr ""
+msgstr "これは表面的には継承に似ています。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid ""
 "This is a mechanism like inheritance, but separates the data from the "
 "behavior."
-msgstr ""
+msgstr "これは継承に似た仕組みですが、データと振る舞いを分離します。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid "Keeps behavior in a state where it's easy to reason about."
-msgstr ""
+msgstr "振る舞いを推論しやすい状態に保ちます。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid "Makes what we aim to achieve with \"multiple inheritance\" easier too:"
-msgstr ""
+msgstr "「多重継承」で実現しようとしていることも容易になります。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid ""
 "We only care about what behavior a type is capable of at the point where we "
 "clarify we want that behavior (when bounding a generic by traits)."
 msgstr ""
+"型がどのような振る舞いを持つかを気にするのは、その振る舞いが必要だと明示する"
+"時点（ジェネリクスをトレイトで制約するとき）だけです。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid ""
 "By specifying multiple traits on a generic, we know that the type has the "
 "methods of all those traits."
 msgstr ""
+"ジェネリクスに複数のトレイトを指定することで、その型がそれらすべてのトレイト"
+"のメソッドを持つことが分かります。"
 
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 msgid ""
 "Does not involve inheritance of fields. A trait doesn't expose fields, only "
 "methods and associated types / constants."
 msgstr ""
+"フィールドの継承は含まれません。トレイトはフィールドを公開せず、メソッドと関"
+"連型・関連定数のみを公開します。"
 
 #: src/idiomatic/from-oop-to-rust/composition.md
 msgid ""
 "Rather than mixins or inheritance, we compose types by creating fields of "
 "different types."
 msgstr ""
+"ミックスインや継承の代わりに、異なる型のフィールドを作成することで型を合成し"
+"ます。"
 
 #: src/idiomatic/from-oop-to-rust/composition.md
 msgid ""
@@ -39592,6 +39696,8 @@ msgid ""
 "developers a lot of control and clarity over what a type does and it has "
 "access to."
 msgstr ""
+"これには主にフィールドアクセスの使い勝手の面で欠点がありますが、型が何をする"
+"か、何にアクセスできるかについて、開発者は大きな制御と明確さを得られます。"
 
 #: src/idiomatic/from-oop-to-rust/composition.md
 msgid ""
@@ -39599,66 +39705,86 @@ msgid ""
 "types of an enum implement that trait. Derive macros often assume all types "
 "that compose a new type implement that trait already."
 msgstr ""
+"トレイトを導出する際は、構造体のすべてのフィールドの型、または列挙型のすべて"
+"のバリアントの型がそのトレイトを実装していることを確認してください。導出マク"
+"ロは多くの場合、新しい型を構成するすべての型がすでにそのトレイトを実装してい"
+"ると想定します。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "// Problem: implementing a GUI API\n"
-msgstr ""
+msgstr "// 問題: GUI API を実装する\n"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "// Question: What's the minimum useful behavior for a drawing API?\n"
-msgstr ""
+msgstr "// 質問: 描画 API にとって最低限必要な有用な振る舞いは何か？\n"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "\"arc of radius \""
-msgstr ""
+msgstr "\"arc of radius \""
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "// Question: What's a good API for users?\n"
-msgstr ""
+msgstr "// 質問: ユーザーにとって良い API とは何か？\n"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "You're already adept at breaking down problems, but you're likely used to "
 "reaching for OOP-style methods."
 msgstr ""
+"皆さんは問題を分解することにはすでに長けていますが、OOP スタイルのメソッドに"
+"頼ることに慣れているでしょう。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "This isn't a drastic change, it just requires re-ordering the way you "
 "approach things."
 msgstr ""
+"これは劇的な変化ではありません。物事へのアプローチの順序を入れ替えるだけで"
+"す。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "Try to solve the problem with either Generics & Traits or Enums first."
 msgstr ""
+"まずはジェネリクスとトレイト、または列挙型のどちらかで問題を解決してみてくだ"
+"さい。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "Does the problem require a specific set of types? An enum may be the "
 "cleanest way of solving this problem."
 msgstr ""
+"その問題には特定の型の集合が必要ですか？そうであれば、列挙型が最もすっきりし"
+"た解決方法かもしれません。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "Does the problem really care about the specifics of the types involved, or "
 "can behavior be focused on?"
 msgstr ""
+"その問題では、関係する型の詳細が本当に重要ですか？それとも振る舞いに焦点を当"
+"てられますか？"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "Organize your problem solving around finding a minimum viable amount of "
 "knowledge to implement something."
 msgstr ""
+"何かを実装するために必要な最小限の知識を見つけることを中心に、問題解決を組み"
+"立ててください。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid "Does a trait already exist for this use case? If so, use it!"
 msgstr ""
+"このユースケースのためのトレイトはすでに存在しますか？存在するなら、それを"
+"使ってください。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "If you really do need heterogeneous collections, use them! They exist in "
 "Rust as a tool for a reason."
 msgstr ""
+"異種のコレクションが本当に必要なら、使ってください。それらは理由があってツー"
+"ルとして Rust に存在しています。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
@@ -39666,17 +39792,23 @@ msgid ""
 "one solution, but it might not tackle the root cause and could lead to new "
 "difficult problems popping up in the future."
 msgstr ""
+"XY 問題に注意してください。ある問題は 1 つの解決策で最も簡単に対処できるよう"
+"に見えても、根本原因に対処しておらず、将来新たな難しい問題を引き起こす可能性"
+"があります。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "That is, be certain that dynamic dispatch with trait objects is what you "
 "need before you commit to using them."
 msgstr ""
+"つまり、トレイトオブジェクトによる動的ディスパッチを使うと決める前に、それが"
+"本当に必要であることを確認してください。"
 
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
 msgid ""
 "Be certain that traits are what you need before you commit to using them."
 msgstr ""
+"トレイトを使うと決める前に、それが本当に必要であることを確認してください。"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "IMPORTANT: THIS MODULE IS IN AN EARLY STAGE OF DEVELOPMENT"
