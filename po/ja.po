@@ -1076,7 +1076,7 @@ msgstr "AIDL型"
 
 #: src/SUMMARY.md src/android/aidl/types/primitives.md
 msgid "Primitive Types"
-msgstr ""
+msgstr "プリミティブ型"
 
 #: src/SUMMARY.md src/android/aidl/types/arrays.md
 msgid "Array Types"
@@ -1092,7 +1092,7 @@ msgstr "Parcelables"
 
 #: src/SUMMARY.md src/android/aidl/types/file-descriptor.md
 msgid "Sending Files"
-msgstr ""
+msgstr "ファイルの送信"
 
 #: src/SUMMARY.md src/android/testing/googletest.md
 msgid "GoogleTest"
@@ -1116,21 +1116,19 @@ msgstr "C"
 
 #: src/SUMMARY.md src/android/interoperability/with-c/c-library.md
 msgid "A Simple C Library"
-msgstr ""
+msgstr "シンプルな C ライブラリ"
 
 #: src/SUMMARY.md
 msgid "Bindgen"
 msgstr "Bindgen"
 
 #: src/SUMMARY.md src/android/interoperability/with-c/run-our-binary.md
-#, fuzzy
 msgid "Running Our Binary"
 msgstr "バイナリの実行"
 
 #: src/SUMMARY.md src/android/interoperability/with-c/rust-library.md
-#, fuzzy
 msgid "A Simple Rust Library"
-msgstr "Rust ライブラリ"
+msgstr "シンプルな Rust ライブラリ"
 
 #: src/SUMMARY.md
 msgid "Calling Rust from C"
@@ -19905,40 +19903,36 @@ msgstr ""
 "をおすすめします。"
 
 #: src/android.md
-#, fuzzy
 msgid ""
 "Service example: [DNS over HTTP](https://security.googleblog.com/2022/07/dns-"
 "over-http3-in-android.html)."
 msgstr ""
 "サービスの例: [DNS over HTTP](https://security.googleblog.com/2022/07/dns-"
-"over-http3-in-android.html)"
+"over-http3-in-android.html)。"
 
 #: src/android.md
-#, fuzzy
 msgid ""
 "Libraries: [Rutabaga Virtual Graphics Interface](https://crosvm.dev/book/"
 "appendix/rutabaga_gfx.html)."
 msgstr ""
 "ライブラリ: [Rutabaga Virtual Graphics Interface](https://crosvm.dev/book/"
-"appendix/rutabaga_gfx.html)"
+"appendix/rutabaga_gfx.html)。"
 
 #: src/android.md
-#, fuzzy
 msgid ""
 "Kernel Drivers: [Binder](https://lore.kernel.org/rust-for-linux/20231101-"
 "rust-binder-v1-0-08ba9197f637@google.com/)."
 msgstr ""
 "カーネル ドライバ: [Binder](https://lore.kernel.org/rust-for-linux/20231101-"
-"rust-binder-v1-0-08ba9197f637@google.com/)"
+"rust-binder-v1-0-08ba9197f637@google.com/)。"
 
 #: src/android.md
-#, fuzzy
 msgid ""
 "Firmware: [pKVM firmware](https://security.googleblog.com/2023/10/bare-metal-"
 "rust-in-android.html)."
 msgstr ""
 "ファームウェア: [pKVM ファームウェア](https://security.googleblog.com/"
-"2023/10/bare-metal-rust-in-android.html)"
+"2023/10/bare-metal-rust-in-android.html)。"
 
 #: src/android/setup.md
 msgid ""
@@ -19964,6 +19958,9 @@ msgid ""
 "android) of the course material. Please `git clone` the repository to follow "
 "along."
 msgstr ""
+"以降のページのコードは、講座資料の [`src/android/` ディレクトリ](https://"
+"github.com/google/comprehensive-rust/tree/main/src/android) にあります。手元"
+"で試しながら進めるには、リポジトリを `git clone` してください。"
 
 #: src/android/setup.md
 msgid ""
@@ -19982,10 +19979,9 @@ msgstr ""
 "るため、多くの Rust ユースケースを実行するのに理想的なエミュレータです。"
 
 #: src/android/build-rules.md
-#, fuzzy
 msgid "The Android build system (Soong) supports Rust through several modules:"
 msgstr ""
-"Android ビルドシステム（Soong）は、さまざまなモジュールを通じて Rust をサポー"
+"Android ビルドシステム（Soong）は、いくつかのモジュールを通じて Rust をサポー"
 "トしています。"
 
 #: src/android/build-rules.md
@@ -20082,12 +20078,10 @@ msgid "We will look at `rust_binary` and `rust_library` next."
 msgstr "次に `rust_binary` と `rust_library` を見ていきます。"
 
 #: src/android/build-rules.md
-#, fuzzy
 msgid "Additional items the speaker may mention:"
-msgstr "追加で次の項目に言及することをおすすめします。"
+msgstr "講師が言及してもよい追加の項目:"
 
 #: src/android/build-rules.md
-#, fuzzy
 msgid ""
 "Cargo is not optimized for multi-language repositories, and also downloads "
 "packages from the internet."
@@ -20096,23 +20090,21 @@ msgstr ""
 "パッケージをダウンロードします。"
 
 #: src/android/build-rules.md
-#, fuzzy
 msgid ""
 "For compliance and performance, Android must have crates in-tree. It must "
 "also interoperate with C/C++/Java code. Soong fills that gap."
 msgstr ""
 "コンプライアンスおよびパフォーマンス上の理由から、Android ではクレートをツ"
-"リー内に配置する必要があります。また、C /C++ / Java コードとの相互運用性も必"
-"要です。Soong を使用することで、そのギャップを埋めることができます。"
+"リー内に配置する必要があります。また、C/C++/Java コードとの相互運用性も必要で"
+"す。Soong はそのギャップを埋めます。"
 
 #: src/android/build-rules.md
-#, fuzzy
 msgid ""
 "Soong has many similarities to [Bazel](https://bazel.build/), which is the "
 "open-source variant of Blaze (used in google3)."
 msgstr ""
-"Soong には、Blaze（google3 で使用）のオープンソース版である Bazel と多くの類"
-"似点があります。"
+"Soong には、Blaze（google3 で使用）のオープンソース版である [Bazel](https://"
+"bazel.build/) と多くの類似点があります。"
 
 #: src/android/build-rules.md
 msgid "Fun fact: Data from Star Trek is a Soong-type Android."
@@ -20124,7 +20116,6 @@ msgid "Rust Binaries"
 msgstr "Rust バイナリ"
 
 #: src/android/build-rules/binary.md
-#, fuzzy
 msgid ""
 "Let's start with a simple application. At the root of an AOSP checkout, "
 "create the following files:"
@@ -20182,7 +20173,7 @@ msgstr ""
 #: src/android/build-rules/binary.md src/android/build-rules/library.md
 msgid ""
 "Go through the build steps and demonstrate them running in your emulator."
-msgstr ""
+msgstr "ビルドの手順を一つずつ説明し、エミュレータで実行するデモを行います。"
 
 #: src/android/build-rules/binary.md
 msgid ""
@@ -20190,12 +20181,18 @@ msgid ""
 "that all modules have documentation. Try removing it and see what error you "
 "get."
 msgstr ""
+"充実したドキュメント コメントに気づきましたか？Android のビルドルールでは、す"
+"べてのモジュールにドキュメントが必須です。ドキュメントを削除して、どのような"
+"エラーが出るか試してみてください。"
 
 #: src/android/build-rules/binary.md
 msgid ""
 "Stress that the Rust build rules look like the other Soong rules. This is by "
 "design, to make using Rust as easy as C++ or Java."
 msgstr ""
+"Rust のビルドルールは他の Soong ルールと同じような見た目であることを強調して"
+"ください。これは、Rust を C++ や Java と同じくらい簡単に使えるようにするため"
+"の意図的な設計です。"
 
 #: src/android/build-rules/library.md
 msgid "Rust Libraries"
@@ -20215,15 +20212,14 @@ msgid "`libgreeting`, which we define below,"
 msgstr "`libgreeting`: 以下で定義します。"
 
 #: src/android/build-rules/library.md
-#, fuzzy
 msgid ""
 "`libtextwrap`, which is a crate already vendored in [`external/rust/android-"
 "crates-io/crates/`](https://cs.android.com/android/platform/superproject/"
 "main/+/main:external/rust/android-crates-io/crates/)."
 msgstr ""
-"`libtextwrap`: すでに[`external/rust/crates/`](https://cs.android.com/"
-"android/platform/superproject/+/master:external/rust/crates/) に取り込まれて"
-"いるクレートです。"
+"`libtextwrap`: すでに [`external/rust/android-crates-io/crates/`](https://"
+"cs.android.com/android/platform/superproject/main/+/main:external/rust/"
+"android-crates-io/crates/) に取り込まれているクレートです。"
 
 #: src/android/build-rules/library.md
 msgid "\"hello_rust_with_dep\""
@@ -20298,15 +20294,19 @@ msgid ""
 "`libgreetings`. Note how the Rust code uses the crate name, as is normal in "
 "Rust."
 msgstr ""
+"`greetings` という名前の Rust クレートは、`libgreetings` というルールでビルド"
+"する必要があります。Rust では普通のことですが、Rust コードではクレート名を使"
+"用している点に注目してください。"
 
 #: src/android/build-rules/library.md
 msgid ""
 "Again, the build rules enforce that we add documentation comments to all "
 "public items."
 msgstr ""
+"ここでも、ビルドルールにより、すべての公開アイテムにドキュメント コメントを追"
+"加することが求められます。"
 
 #: src/android/aidl.md
-#, fuzzy
 msgid ""
 "Rust supports the [Android Interface Definition Language (AIDL)](https://"
 "developer.android.com/guide/components/aidl):"
@@ -20315,7 +20315,6 @@ msgstr ""
 "developer.android.com/guide/components/aidl) がサポートされています。"
 
 #: src/android/aidl.md
-#, fuzzy
 msgid "Rust code can call existing AIDL servers."
 msgstr "Rust コードは既存の AIDL サーバーを呼び出すことができます。"
 
@@ -20325,19 +20324,23 @@ msgstr "Rust では新しい AIDL サーバーを作成できます。"
 
 #: src/android/aidl.md
 msgid "AIDL enables Android apps to interact with each other."
-msgstr ""
+msgstr "AIDL により、Android アプリが相互にやり取りできるようになります。"
 
 #: src/android/aidl.md
 msgid ""
 "Since Rust is a first-class citizen in this ecosystem, other processes on "
 "the device can call Rust services."
 msgstr ""
+"Rust はこのエコシステムにおける第一級の存在なので、デバイス上の他のプロセスか"
+"ら Rust のサービスを呼び出すことができます。"
 
 #: src/android/aidl/birthday-service.md
 msgid ""
 "To illustrate using Rust with Binder, we will create a Binder interface. "
 "Then, we'll implement the service and write a client that talks to it."
 msgstr ""
+"Binder で Rust を使用する例として、Binder インターフェースを作成します。次"
+"に、そのサービスを実装し、サービスとやり取りするクライアントを作成します。"
 
 #: src/android/aidl/example-service/interface.md
 msgid "AIDL Interfaces"
@@ -20391,36 +20394,45 @@ msgid ""
 "`com.example.birthdayservice` and the file is at `aidl/com/example/"
 "IBirthdayService.aidl`."
 msgstr ""
+"`aidl/` ディレクトリ以下のディレクトリ構造は、AIDL ファイルで使用するパッケー"
+"ジ名と一致している必要があります。つまり、パッケージは "
+"`com.example.birthdayservice` で、ファイルは `aidl/com/example/"
+"IBirthdayService.aidl` にあります。"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid "Generated Service API"
-msgstr ""
+msgstr "生成されるサービス API"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid "Binder generates a trait for each interface definition."
-msgstr ""
+msgstr "Binder は、インターフェース定義ごとにトレイトを生成します。"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid "_out/soong/.intermediates/.../com_example_birthdayservice.rs_:"
-msgstr ""
+msgstr "_out/soong/.intermediates/.../com_example_birthdayservice.rs_:"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid ""
 "Your service will need to implement this trait, and your client will use "
 "this trait to talk to the service."
 msgstr ""
+"サービスではこのトレイトを実装する必要があり、クライアントはこのトレイトを使"
+"用してサービスとやり取りします。"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid ""
 "Point out how the generated function signature, specifically the argument "
 "and return types, correspond to the interface definition."
 msgstr ""
+"生成された関数シグネチャ、特に引数と戻り値の型が、インターフェース定義とどの"
+"ように対応しているかを説明してください。"
 
 #: src/android/aidl/example-service/service-bindings.md
 msgid ""
 "`String` for an argument results in a different Rust type than `String` as a "
 "return type."
 msgstr ""
+"引数の `String` と戻り値の型の `String` では、異なる Rust 型になります。"
 
 #: src/android/aidl/example-service/service.md
 msgid "Service Implementation"
@@ -20437,7 +20449,6 @@ msgid "_birthday_service/src/lib.rs_:"
 msgstr "_birthday_service/src/lib.rs_:"
 
 #: src/android/aidl/example-service/service.md
-#, fuzzy
 msgid "//! Implementation of the `IBirthdayService` AIDL interface.\n"
 msgstr "//! `IBirthdayService` AIDL インターフェースの実装。\n"
 
@@ -20479,12 +20490,16 @@ msgid ""
 "Point out the path to the generated `IBirthdayService` trait, and explain "
 "why each of the segments is necessary."
 msgstr ""
+"生成された `IBirthdayService` トレイトへのパスを示し、パスの各セグメントがな"
+"ぜ必要なのかを説明してください。"
 
 #: src/android/aidl/example-service/service.md
 msgid ""
 "Note that `wishHappyBirthday` and other AIDL IPC methods take `&self` "
 "(instead of `&mut self`)."
 msgstr ""
+"`wishHappyBirthday` などの AIDL IPC メソッドは、（`&mut self` ではなく）"
+"`&self` を受け取ることに注意してください。"
 
 #: src/android/aidl/example-service/service.md
 msgid ""
@@ -20492,24 +20507,32 @@ msgid ""
 "pool, allowing for multiple requests to be processed in parallel. This "
 "requires that the service methods only get a shared reference to `self`."
 msgstr ""
+"これが必要なのは、Binder がスレッドプールで受信リクエストに応答し、複数のリク"
+"エストを並列に処理できるようにしているためです。そのため、サービスのメソッド"
+"は `self` への共有参照しか受け取れません。"
 
 #: src/android/aidl/example-service/service.md
 msgid ""
 "Any state that needs to be modified by the service will have to be put in "
 "something like a `Mutex` to allow for safe mutation."
 msgstr ""
+"サービスが変更する必要のある状態は、安全に変更できるように `Mutex` などに入れ"
+"る必要があります。"
 
 #: src/android/aidl/example-service/service.md
 msgid ""
 "The correct approach for managing service state depends heavily on the "
 "details of your service."
 msgstr ""
+"サービスの状態を管理する正しい方法は、サービスの詳細に大きく依存します。"
 
 #: src/android/aidl/example-service/service.md
 msgid ""
 "TODO: What does the `binder::Interface` trait do? Are there methods to "
 "override? Where is the source?"
 msgstr ""
+"TODO: `binder::Interface` トレイトは何をするのか？オーバーライドするメソッド"
+"はあるか？ソースはどこにあるか？"
 
 #: src/android/aidl/example-service/server.md
 msgid "AIDL Server"
@@ -20556,10 +20579,15 @@ msgid ""
 "complicated than students are used to if they've used Binder from C++ or "
 "another language. Explain to students why each step is necessary."
 msgstr ""
+"ユーザー定義のサービス実装（この場合は `IBirthdayService` を実装する "
+"`BirthdayService` 型）を Binder サービスとして起動するには、複数の手順が必要"
+"です。C++ などの言語で Binder を使ったことがある受講者には、慣れているものよ"
+"り複雑に見えるかもしれません。各手順がなぜ必要なのかを受講者に説明してくださ"
+"い。"
 
 #: src/android/aidl/example-service/server.md
 msgid "Create an instance of your service type (`BirthdayService`)."
-msgstr ""
+msgstr "サービス型（`BirthdayService`）のインスタンスを作成します。"
 
 #: src/android/aidl/example-service/server.md
 msgid ""
@@ -20569,18 +20597,27 @@ msgid ""
 "doesn't have inheritance, we use composition, putting our `BirthdayService` "
 "within the generated `BnBinderService`."
 msgstr ""
+"サービス オブジェクトを対応する `Bn*` 型（この場合は `BnBirthdayService`）で"
+"ラップします。この型は Binder によって生成され、C++ の `BnBinder` 基底クラス"
+"と同様に、Binder の共通機能を提供します。Rust には継承がないため、コンポジ"
+"ションを使用し、生成された `BnBinderService` の中に `BirthdayService` を入れ"
+"ます。"
 
 #: src/android/aidl/example-service/server.md
 msgid ""
 "Call `add_service`, giving it a service identifier and your service object "
 "(the `BnBirthdayService` object in the example)."
 msgstr ""
+"`add_service` を呼び出し、サービス識別子とサービス オブジェクト（この例では "
+"`BnBirthdayService` オブジェクト）を渡します。"
 
 #: src/android/aidl/example-service/server.md
 msgid ""
 "Call `join_thread_pool` to add the current thread to Binder's thread pool "
 "and start listening for connections."
 msgstr ""
+"`join_thread_pool` を呼び出して、現在のスレッドを Binder のスレッドプールに追"
+"加し、接続の待ち受けを開始します。"
 
 #: src/android/aidl/example-service/deploy.md
 msgid "We can now build, push, and start the service:"
@@ -20638,9 +20675,8 @@ msgid "\"Failed to connect to BirthdayService\""
 msgstr "\"Failed to connect to BirthdayService\""
 
 #: src/android/aidl/example-service/client.md
-#, fuzzy
 msgid "// Call the service.\n"
-msgstr "/// 誕生日サービスを呼び出します。\n"
+msgstr "// サービスを呼び出します。\n"
 
 #: src/android/aidl/example-service/client.md
 msgid "\"{msg}\""
@@ -20684,6 +20720,8 @@ msgid ""
 "`Strong<dyn IBirthdayService>` is the trait object representing the service "
 "that the client has connected to."
 msgstr ""
+"`Strong<dyn IBirthdayService>` は、クライアントが接続したサービスを表すトレイ"
+"トオブジェクトです。"
 
 #: src/android/aidl/example-service/client.md
 msgid ""
@@ -20691,6 +20729,9 @@ msgid ""
 "process ref count for the service trait object, and the global Binder ref "
 "count that tracks how many processes have a reference to the object."
 msgstr ""
+"`Strong` は Binder 用のカスタムのスマートポインタ型です。サービスのトレイトオ"
+"ブジェクトに対するプロセス内の参照カウントと、そのオブジェクトへの参照を持つ"
+"プロセスの数を追跡するグローバルな Binder 参照カウントの両方を扱います。"
 
 #: src/android/aidl/example-service/client.md
 msgid ""
@@ -20699,6 +20740,10 @@ msgid ""
 "interface, there is a single Rust trait generated that both client and "
 "server use."
 msgstr ""
+"クライアントがサービスとのやり取りに使用するトレイトオブジェクトは、サーバー"
+"が実装するトレイトとまったく同じものを使用している点に注意してください。ある "
+"Binder インターフェースに対しては、クライアントとサーバーの両方が使用する "
+"Rust トレイトが 1 つだけ生成されます。"
 
 #: src/android/aidl/example-service/client.md
 msgid ""
@@ -20706,19 +20751,21 @@ msgid ""
 "should ideally be defined in a common crate that both the client and server "
 "can depend on."
 msgstr ""
+"サービスを登録するときに使用したものと同じサービス識別子を使用します。これ"
+"は、クライアントとサーバーの両方が依存できる共通のクレートで定義するのが理想"
+"的です。"
 
 #: src/android/aidl/example-service/changing-definition.md
-#, fuzzy
 msgid ""
 "Let's extend the API: we'll let clients specify a list of lines for the "
 "birthday card:"
 msgstr ""
-"APIを拡張して、クライアントが誕生日カードに追加する複数行のメッセージを指定で"
-"きるようにします。"
+"API を拡張して、クライアントが誕生日カードに載せる複数の行を指定できるように"
+"しましょう。"
 
 #: src/android/aidl/example-service/changing-definition.md
 msgid "This results in an updated trait definition for `IBirthdayService`:"
-msgstr ""
+msgstr "これにより、`IBirthdayService` のトレイト定義が更新されます。"
 
 #: src/android/aidl/example-service/changing-definition.md
 msgid ""
@@ -20726,79 +20773,85 @@ msgid ""
 "`&[String]` in Rust, i.e. that idiomatic Rust types are used in the "
 "generated bindings wherever possible:"
 msgstr ""
+"AIDL 定義の `String[]` が Rust では `&[String]` に変換されている点に注目して"
+"ください。つまり、生成されるバインディングでは、可能な限り Rust の慣用的な型"
+"が使用されます。"
 
 #: src/android/aidl/example-service/changing-definition.md
 msgid "`in` array arguments are translated to slices."
-msgstr ""
+msgstr "`in` の配列引数はスライスに変換されます。"
 
 #: src/android/aidl/example-service/changing-definition.md
 msgid "`out` and `inout` args are translated to `&mut Vec<T>`."
-msgstr ""
+msgstr "`out` と `inout` の引数は `&mut Vec<T>` に変換されます。"
 
 #: src/android/aidl/example-service/changing-definition.md
 msgid "Return values are translated to returning a `Vec<T>`."
-msgstr ""
+msgstr "戻り値は `Vec<T>` を返すように変換されます。"
 
 #: src/android/aidl/example-service/changing-implementation.md
 msgid "Updating Client and Service"
-msgstr ""
+msgstr "クライアントとサービスの更新"
 
 #: src/android/aidl/example-service/changing-implementation.md
 msgid "Update the client and server code to account for the new API."
 msgstr ""
+"新しい API に対応するように、クライアントとサーバーのコードを更新します。"
 
 #: src/android/aidl/example-service/changing-implementation.md
-#, fuzzy
 msgid "'\\n'"
-msgstr "b'\\n'"
+msgstr "'\\n'"
 
 #: src/android/aidl/example-service/changing-implementation.md
 msgid "\"Habby birfday to yuuuuu\""
-msgstr ""
+msgstr "\"Habby birfday to yuuuuu\""
 
 #: src/android/aidl/example-service/changing-implementation.md
 msgid "\"And also: many more\""
-msgstr ""
+msgstr "\"And also: many more\""
 
 #: src/android/aidl/example-service/changing-implementation.md
 msgid ""
 "TODO: Move code snippets into project files where they'll actually be built?"
 msgstr ""
+"TODO: コード スニペットを、実際にビルドされるプロジェクト ファイルに移動す"
+"る？"
 
 #: src/android/aidl/types.md
 msgid "Working With AIDL Types"
-msgstr ""
+msgstr "AIDL 型の操作"
 
 #: src/android/aidl/types.md
 msgid "AIDL types translate into the appropriate idiomatic Rust type:"
-msgstr ""
+msgstr "AIDL 型は、適切な Rust の慣用的な型に変換されます。"
 
 #: src/android/aidl/types.md
 msgid "Primitive types map (mostly) to idiomatic Rust types."
-msgstr ""
+msgstr "プリミティブ型は（ほとんどの場合）Rust の慣用的な型に対応します。"
 
 #: src/android/aidl/types.md
 msgid "Collection types like slices, `Vec`s and string types are supported."
-msgstr ""
+msgstr "スライス、`Vec`、文字列型などのコレクション型がサポートされています。"
 
 #: src/android/aidl/types.md
 msgid ""
 "References to AIDL objects and file handles can be sent between clients and "
 "services."
 msgstr ""
+"AIDL オブジェクトへの参照とファイル ハンドルを、クライアントとサービスの間で"
+"送信できます。"
 
 #: src/android/aidl/types.md
 msgid "File handles and parcelables are fully supported."
-msgstr ""
+msgstr "ファイル ハンドルと parcelable が完全にサポートされています。"
 
 #: src/android/aidl/types/primitives.md
 msgid "Primitive types map (mostly) idiomatically:"
-msgstr ""
+msgstr "プリミティブ型は（ほとんどの場合）慣用的に対応付けられます。"
 
 #: src/android/aidl/types/primitives.md
-#, fuzzy
 msgid "AIDL Type"
-msgstr "AIDL（Androidインターフェイス定義言語）"
+msgstr "AIDL 型"
 
 #: src/android/aidl/types/primitives.md src/android/aidl/types/arrays.md
 #: src/android/interoperability/cpp/type-mapping.md
@@ -20807,65 +20860,63 @@ msgstr "Rust 型"
 
 #: src/android/aidl/types/primitives.md
 msgid "Note"
-msgstr ""
+msgstr "注"
 
 #: src/android/aidl/types/primitives.md
-#, fuzzy
 msgid "`boolean`"
-msgstr "`bool`"
+msgstr "`boolean`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`byte`"
-msgstr ""
+msgstr "`byte`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`i8`"
-msgstr ""
+msgstr "`i8`"
 
 #: src/android/aidl/types/primitives.md
-#, fuzzy
 msgid "Note that bytes are signed."
-msgstr "// 7 バイトを超える値は無効です。\n"
+msgstr "バイトは符号付きであることに注意してください。"
 
 #: src/android/aidl/types/primitives.md
 msgid "`u16`"
-msgstr ""
+msgstr "`u16`"
 
 #: src/android/aidl/types/primitives.md
 msgid "Note the usage of `u16`, NOT `u32`."
-msgstr ""
+msgstr "`u32` ではなく `u16` が使われていることに注意してください。"
 
 #: src/android/aidl/types/primitives.md
 msgid "`int`"
-msgstr ""
+msgstr "`int`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`i32`"
-msgstr ""
+msgstr "`i32`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`long`"
-msgstr ""
+msgstr "`long`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`i64`"
-msgstr ""
+msgstr "`i64`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`float`"
-msgstr ""
+msgstr "`float`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`f32`"
-msgstr ""
+msgstr "`f32`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`double`"
-msgstr ""
+msgstr "`double`"
 
 #: src/android/aidl/types/primitives.md
 msgid "`f64`"
-msgstr ""
+msgstr "`f64`"
 
 #: src/android/aidl/types/arrays.md
 msgid ""
@@ -20873,33 +20924,32 @@ msgid ""
 "appropriate Rust array type depending on how they are used in the function "
 "signature:"
 msgstr ""
+"配列型（`T[]`、`byte[]`、`List<T>`）は、関数シグネチャでの使われ方に応じて、"
+"適切な Rust の配列型に変換されます。"
 
 #: src/android/aidl/types/arrays.md
-#, fuzzy
 msgid "Position"
-msgstr "説明"
+msgstr "位置"
 
 #: src/android/aidl/types/arrays.md
 msgid "`in` argument"
-msgstr ""
+msgstr "`in` 引数"
 
 #: src/android/aidl/types/arrays.md
-#, fuzzy
 msgid "`&[T]`"
-msgstr "スライス型"
+msgstr "`&[T]`"
 
 #: src/android/aidl/types/arrays.md
 msgid "`out`/`inout` argument"
-msgstr ""
+msgstr "`out`/`inout` 引数"
 
 #: src/android/aidl/types/arrays.md
-#, fuzzy
 msgid "`&mut Vec<T>`"
-msgstr "`Vec<T>`"
+msgstr "`&mut Vec<T>`"
 
 #: src/android/aidl/types/arrays.md
 msgid "Return"
-msgstr ""
+msgstr "戻り値"
 
 #: src/android/aidl/types/arrays.md
 #: src/android/interoperability/cpp/type-mapping.md
@@ -20913,103 +20963,109 @@ msgid ""
 "`int[3][4]`). In the Java backend, fixed-size arrays are represented as "
 "array types."
 msgstr ""
+"Android 13 以降では固定サイズの配列がサポートされており、`T[N]` は `[T; N]` "
+"になります。固定サイズの配列は多次元にすることもできます（例: `int[3][4]`）。"
+"Java バックエンドでは、固定サイズの配列は配列型として表されます。"
 
 #: src/android/aidl/types/arrays.md
 msgid "Arrays in parcelable fields always get translated to `Vec<T>`."
-msgstr ""
+msgstr "parcelable のフィールド内の配列は、常に `Vec<T>` に変換されます。"
 
 #: src/android/aidl/types/objects.md
 msgid ""
 "AIDL objects can be sent either as a concrete AIDL type or as the type-"
 "erased `IBinder` interface:"
 msgstr ""
+"AIDL オブジェクトは、具体的な AIDL 型として送信することも、型消去された "
+"`IBinder` インターフェースとして送信することもできます。"
 
 #: src/android/aidl/types/objects.md
-#, fuzzy
 msgid ""
 "_birthday_service/aidl/com/example/birthdayservice/"
 "IBirthdayInfoProvider.aidl_:"
 msgstr ""
-"_birthday_service/aidl/com/example/birthdayservice/IBirthdayService.aidl_:"
+"_birthday_service/aidl/com/example/birthdayservice/"
+"IBirthdayInfoProvider.aidl_:"
 
 #: src/android/aidl/types/objects.md
 msgid "/** The same thing, but using a binder object. */"
-msgstr ""
+msgstr "/** 同じことを、binder オブジェクトを使って行います。 */"
 
 #: src/android/aidl/types/objects.md
 msgid "/** The same thing, but using `IBinder`. */"
-msgstr ""
+msgstr "/** 同じことを、`IBinder` を使って行います。 */"
 
 #: src/android/aidl/types/objects.md
-#, fuzzy
 msgid "/// Rust struct implementing the `IBirthdayInfoProvider` interface.\n"
-msgstr "//! `IBirthdayService` AIDL インターフェースの実装。\n"
+msgstr "/// `IBirthdayInfoProvider` インターフェースを実装する Rust 構造体。\n"
 
 #: src/android/aidl/types/objects.md
-#, fuzzy
 msgid "// Create a binder object for the `IBirthdayInfoProvider` interface.\n"
-msgstr "//! `IBirthdayService` AIDL インターフェースの実装。\n"
+msgstr ""
+"// `IBirthdayInfoProvider` インターフェース用の binder オブジェクトを作成しま"
+"す。\n"
 
 #: src/android/aidl/types/objects.md
-#, fuzzy
 msgid "// Send the binder object to the service.\n"
-msgstr "/// 誕生日サービスを呼び出します。\n"
+msgstr "// binder オブジェクトをサービスに送信します。\n"
 
 #: src/android/aidl/types/objects.md
 msgid ""
 "// Perform the same operation but passing the provider as an `SpIBinder`.\n"
-msgstr ""
+msgstr "// 同じ操作を、プロバイダを `SpIBinder` として渡して行います。\n"
 
 #: src/android/aidl/types/objects.md
 msgid ""
 "Note the usage of `BnBirthdayInfoProvider`. This serves the same purpose as "
 "`BnBirthdayService` that we saw previously."
 msgstr ""
+"`BnBirthdayInfoProvider` が使われていることに注目してください。これは、前に見"
+"た `BnBirthdayService` と同じ役割を果たします。"
 
 #: src/android/aidl/types/parcelables.md
 msgid "Binder for Rust supports sending parcelables directly:"
 msgstr ""
+"Rust 用の Binder は、parcelable を直接送信することをサポートしています。"
 
 #: src/android/aidl/types/parcelables.md
-#, fuzzy
 msgid "_birthday_service/aidl/com/example/birthdayservice/BirthdayInfo.aidl_:"
-msgstr ""
-"_birthday_service/aidl/com/example/birthdayservice/IBirthdayService.aidl_:"
+msgstr "_birthday_service/aidl/com/example/birthdayservice/BirthdayInfo.aidl_:"
 
 #: src/android/aidl/types/parcelables.md
 msgid "/** The same thing, but with a parcelable. */"
-msgstr ""
+msgstr "/** 同じことを、parcelable を使って行います。 */"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid ""
 "Files can be sent between Binder clients/servers using the "
 "`ParcelFileDescriptor` type:"
 msgstr ""
+"`ParcelFileDescriptor` 型を使用すると、Binder のクライアントとサーバーの間で"
+"ファイルを送信できます。"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid "/** The same thing, but loads info from a file. */"
-msgstr ""
+msgstr "/** 同じことを、ファイルから情報を読み込んで行います。 */"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid "// Open a file and put the birthday info in it.\n"
-msgstr ""
+msgstr "// ファイルを開き、誕生日の情報を書き込みます。\n"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid "\"/data/local/tmp/birthday.info\""
-msgstr ""
+msgstr "\"/data/local/tmp/birthday.info\""
 
 #: src/android/aidl/types/file-descriptor.md
-#, fuzzy
 msgid "\"{name}\""
-msgstr "\"Hello {name}\""
+msgstr "\"{name}\""
 
 #: src/android/aidl/types/file-descriptor.md
 msgid "\"{years}\""
-msgstr ""
+msgstr "\"{years}\""
 
 #: src/android/aidl/types/file-descriptor.md
 msgid "// Create a `ParcelFileDescriptor` from the file and send it.\n"
-msgstr ""
+msgstr "// ファイルから `ParcelFileDescriptor` を作成して送信します。\n"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid ""
@@ -21018,11 +21074,14 @@ msgid ""
 "`File`\n"
 "        // object.\n"
 msgstr ""
+"// ファイル ディスクリプタを `File` に変換します。`ParcelFileDescriptor` は\n"
+"        // `OwnedFd` をラップしており、これをクローンして `File` オブジェクト"
+"の\n"
+"        // 作成に使用できます。\n"
 
 #: src/android/aidl/types/file-descriptor.md
-#, fuzzy
 msgid "\"Invalid file handle\""
-msgstr "\"Invalid length\""
+msgstr "\"Invalid file handle\""
 
 #: src/android/aidl/types/file-descriptor.md
 msgid ""
@@ -21030,46 +21089,49 @@ msgid ""
 "`File` (or any other type that wraps an `OwnedFd`), and can be used to "
 "create a new `File` handle on the other side."
 msgstr ""
+"`ParcelFileDescriptor` は `OwnedFd` をラップしているため、`File`（または "
+"`OwnedFd` をラップする他の任意の型）から作成でき、受信側で新しい `File` ハン"
+"ドルを作成するのに使用できます。"
 
 #: src/android/aidl/types/file-descriptor.md
 msgid ""
 "Other types of file descriptors can be wrapped and sent, e.g. TCP, UDP, and "
 "UNIX sockets."
 msgstr ""
+"他の種類のファイル ディスクリプタ（TCP、UDP、UNIX ソケットなど）もラップして"
+"送信できます。"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "Testing in Android"
-msgstr "Android での Rust へようこそ"
+msgstr "Android でのテスト"
 
 #: src/android/testing.md
 msgid ""
 "Building on [Testing](../testing.md), we will now look at how unit tests "
 "work in AOSP. Use the `rust_test` module for your unit tests:"
 msgstr ""
+"[テスト](../testing.md) の内容を踏まえ、ここでは AOSP での単体テストの仕組み"
+"を見ていきます。単体テストには `rust_test` モジュールを使用します。"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "_testing/Android.bp_:"
-msgstr "_hello_rust/Android.bp_:"
+msgstr "_testing/Android.bp_:"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"libleftpad\""
-msgstr "\"libtextwrap\""
+msgstr "\"libleftpad\""
 
 #: src/android/testing.md
 msgid "\"leftpad\""
-msgstr ""
+msgstr "\"leftpad\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"libleftpad_test\""
-msgstr "\"libbirthday_bindgen_test\""
+msgstr "\"libleftpad_test\""
 
 #: src/android/testing.md
 msgid "\"leftpad_test\""
-msgstr ""
+msgstr "\"leftpad_test\""
 
 #: src/android/testing.md src/android/interoperability/with-c/run-our-binary.md
 msgid "\"general-tests\""
@@ -21077,80 +21139,67 @@ msgstr "\"general-tests\""
 
 #: src/android/testing.md
 msgid "\"libgoogletest_example\""
-msgstr ""
+msgstr "\"libgoogletest_example\""
 
 #: src/android/testing.md
 msgid "\"googletest_example\""
-msgstr ""
+msgstr "\"googletest_example\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"googletest.rs\""
-msgstr "GoogleTest"
+msgstr "\"googletest.rs\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"libgoogletest_rust\""
-msgstr "\"liblog_rust\""
+msgstr "\"libgoogletest_rust\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"libmockall_example\""
-msgstr "プログラムの例"
+msgstr "\"libmockall_example\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"mockall_example\""
-msgstr "プログラムの例"
+msgstr "\"mockall_example\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"mockall.rs\""
-msgstr "\"crab.rs\""
+msgstr "\"mockall.rs\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"libmockall\""
-msgstr "\"small\""
+msgstr "\"libmockall\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "_testing/src/lib.rs_:"
-msgstr "_hello_rust/src/lib.rs_:"
+msgstr "_testing/src/lib.rs_:"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "//! Left-padding library.\n"
-msgstr "//! 挨拶ライブラリ。\n"
+msgstr "//! 左パディング ライブラリ。\n"
 
 #: src/android/testing.md
 msgid "/// Left-pad `s` to `width`.\n"
-msgstr ""
+msgstr "/// `s` を `width` まで左パディングします。\n"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"{s:>width$}\""
-msgstr "\"|{:^width$}|\""
+msgstr "\"{s:>width$}\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"  foo\""
-msgstr "\"foo\""
+msgstr "\"  foo\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "\"foobar\""
-msgstr "\"foo\""
+msgstr "\"foobar\""
 
 #: src/android/testing.md
-#, fuzzy
 msgid "You can now run the test with"
-msgstr "これで、バインディングを自動生成できます。"
+msgstr "これで、次のコマンドでテストを実行できます。"
 
 #: src/android/testing.md
-#, fuzzy
 msgid "The output looks like this:"
-msgstr "全体的なアプローチは次のようになります。"
+msgstr "出力は次のようになります。"
 
 #: src/android/testing.md
 msgid ""
@@ -21165,12 +21214,24 @@ msgid ""
 "Test cases: finished with 2 passing and 0 failing out of 2 test cases\n"
 "```"
 msgstr ""
+"```text\n"
+"INFO: Elapsed time: 2.666s, Critical Path: 2.40s\n"
+"INFO: 3 processes: 2 internal, 1 linux-sandbox.\n"
+"INFO: Build completed successfully, 3 total actions\n"
+"//comprehensive-rust-android/testing:libleftpad_test_host            PASSED "
+"in 2.3s\n"
+"    PASSED  libleftpad_test.tests::long_string (0.0s)\n"
+"    PASSED  libleftpad_test.tests::short_string (0.0s)\n"
+"Test cases: finished with 2 passing and 0 failing out of 2 test cases\n"
+"```"
 
 #: src/android/testing.md
 msgid ""
 "Notice how you only mention the root of the library crate. Tests are found "
 "recursively in nested modules."
 msgstr ""
+"ライブラリ クレートのルートだけを指定していることに注目してください。テスト"
+"は、ネストされたモジュールから再帰的に検出されます。"
 
 #: src/android/testing/googletest.md
 msgid ""
@@ -21228,9 +21289,13 @@ msgid ""
 "exercises to help you get comfortable with `googletest` macros, its matchers "
 "and its overall philosophy."
 msgstr ""
+"これはほんの一部にすぎず、組み込みのマッチャーは他にもたくさんあります。自習"
+"用の Rust 講座 [\"Advanced testing for Rust applications\"](https://rust-"
+"exercises.com/advanced-testing/) の第 1 章に取り組んでみることを検討してくだ"
+"さい。このライブラリをガイド付きで紹介しており、`googletest` マクロ、そのマッ"
+"チャー、全体的な考え方に慣れるための演習が用意されています。"
 
 #: src/android/testing/googletest.md
-#, fuzzy
 msgid ""
 "A particularly nice feature is that mismatches in multi-line strings are "
 "shown as a diff:"
@@ -21279,7 +21344,6 @@ msgstr ""
 "す。これにより、すぐにモックできるようになります。"
 
 #: src/android/testing/mocking.md
-#, fuzzy
 msgid ""
 "Mockall is the recommended mocking library in Android (AOSP). There are "
 "other [mocking libraries available on crates.io](https://crates.io/keywords/"
@@ -21287,11 +21351,10 @@ msgid ""
 "libraries work in a similar fashion as Mockall, meaning that they make it "
 "easy to get a mock implementation of a given trait."
 msgstr ""
-"ここでは、Mockall が推奨モック ライブラリである Android（AOSP）向けのアドバイ"
-"スを行います。特に HTTP サービスのモックに関しては、[crates.io で他のモック "
-"ライブラリが公開されています](https://crates.io/keywords/mock)。他のモック ラ"
-"イブラリも Mockall と 同様で、特定のトレイトのモック実装を簡単に得ることがで"
-"きます。"
+"Mockall は Android（AOSP）で推奨されているモック ライブラリです。特に HTTP "
+"サービスのモックの分野では、[crates.io で他のモック ライブラリも公開されてい"
+"ます](https://crates.io/keywords/mock)。他のモック ライブラリも Mockall と同"
+"様の仕組みで動作し、特定のトレイトのモック実装を簡単に得ることができます。"
 
 #: src/android/testing/mocking.md
 msgid ""
@@ -21338,15 +21401,14 @@ msgstr ""
 "プロジェクトにすばやく追加します。"
 
 #: src/android/testing/mocking.md
-#, fuzzy
 msgid ""
 "Mockall has extensive functionality. In particular, you can set up "
 "expectations which depend on the arguments passed. Here we use this to mock "
 "a cat which becomes hungry 3 hours after the last time it was fed:"
 msgstr ""
-"Mockall にはさらに多くの機能があります。特に、渡される引数に応じて期待値を設"
-"定できます。ここでは、最後に餌を与えてらえてから 3 時間後に空腹になる猫をモッ"
-"クするためにこれを使用します。"
+"Mockall には豊富な機能があります。特に、渡される引数に応じて期待値を設定でき"
+"ます。ここでは、最後に餌を与えられてから 3 時間後に空腹になる猫をモックするた"
+"めにこれを使用します。"
 
 #: src/android/testing/mocking.md
 msgid ""
@@ -21439,6 +21501,8 @@ msgid ""
 "The logger implementation in `liblogger` is only needed in the final binary, "
 "if you're logging from a library you only need the `log` facade crate."
 msgstr ""
+"`liblogger` のロガー実装が必要なのは最終的なバイナリだけです。ライブラリから"
+"ログを出力する場合は、`log` ファサード クレートだけが必要です。"
 
 #: src/android/interoperability.md
 msgid ""
@@ -21455,19 +21519,20 @@ msgid "Call functions written in other languages from Rust."
 msgstr "Rust から他の言語で記述された関数を呼び出す。"
 
 #: src/android/interoperability.md
-#, fuzzy
 msgid ""
 "When you call functions in a foreign language, you're using a _foreign "
 "function interface_, also known as FFI."
 msgstr ""
-"他の言語の関数を呼び出す場合は、外部関数インターフェース（FFI: _foreign "
-"function interface_）を使用します。"
+"他の言語の関数を呼び出す場合は、_外部関数インターフェース_（FFI: foreign "
+"function interface）を使用します。"
 
 #: src/android/interoperability.md
 msgid ""
 "This is a key ability of Rust: compiled code becomes indistinguishable from "
 "compiled C or C++ code."
 msgstr ""
+"これは Rust の重要な能力です。コンパイルされたコードは、コンパイルされた C "
+"や C++ のコードと区別がつかなくなります。"
 
 #: src/android/interoperability.md
 msgid ""
@@ -21475,6 +21540,9 @@ msgid ""
 "en.wikipedia.org/wiki/Application_binary_interface) (application binary "
 "interface) as C code."
 msgstr ""
+"技術的には、Rust は C コードと同じ [ABI](https://en.wikipedia.org/wiki/"
+"Application_binary_interface)（アプリケーション バイナリ インターフェース）に"
+"コンパイルできる、ということになります。"
 
 #: src/android/interoperability/with-c.md
 msgid "Interoperability with C"
@@ -21498,13 +21566,12 @@ msgid "\"{x}, {abs_x}\""
 msgstr "\"{x}, {abs_x}\""
 
 #: src/android/interoperability/with-c.md
-#, fuzzy
 msgid ""
 "We already saw this in the [Safe FFI Wrapper exercise](../../unsafe-rust/"
 "exercise.md)."
 msgstr ""
-"これは、[安全な FFI ラッパーの演習](../../exercises/day-3/safe-ffi-"
-"wrapper.md)ですでに取り扱いました。"
+"これは、[安全な FFI ラッパーの演習](../../unsafe-rust/exercise.md)ですでに取"
+"り扱いました。"
 
 #: src/android/interoperability/with-c.md
 msgid ""
@@ -21525,6 +21592,10 @@ msgid ""
 "using the C [ABI](https://en.wikipedia.org/wiki/"
 "Application_binary_interface) (application binary interface)."
 msgstr ""
+"`extern` ブロックの [`\"C\"` の部分](https://doc.rust-lang.org/reference/"
+"items/external-blocks.html#abi) は、`abs` を C の [ABI](https://"
+"en.wikipedia.org/wiki/Application_binary_interface)（アプリケーション バイナ"
+"リ インターフェース）で呼び出せることを Rust に伝えます。"
 
 #: src/android/interoperability/with-c.md
 msgid ""
@@ -21532,9 +21603,11 @@ msgid ""
 "extern functions are unsafe, but since `abs(x)` can't trigger undefined "
 "behavior with any `x`, we can declare it safe."
 msgstr ""
+"`safe fn abs` の部分は、`abs` が安全な関数であることを Rust に伝えます。デ"
+"フォルトでは extern 関数はアンセーフですが、`abs(x)` はどのような `x` に対し"
+"ても未定義の動作を引き起こさないため、安全であると宣言できます。"
 
 #: src/android/interoperability/with-c/c-library.md
-#, fuzzy
 msgid "Let's first create a small C library:"
 msgstr "まず、小さな C ライブラリを作成します。"
 
@@ -21655,12 +21728,17 @@ msgid ""
 "later\n"
 "    // after it returns.\n"
 msgstr ""
+"// SAFETY: 渡すポインタは Rust の参照から得たものなので有効です。また、\n"
+"    // それに含まれる `name` は上の `name` を参照しており、これも有効なままで"
+"す。\n"
+"    // `print_card` は、戻った後に使うためにどちらのポインタも保存しませ"
+"ん。\n"
 
 #: src/android/interoperability/with-c/bindgen.md
 msgid ""
 "The Android build rules will automatically call `bindgen` for you behind the "
 "scenes."
-msgstr ""
+msgstr "Android のビルドルールは、裏で自動的に `bindgen` を呼び出します。"
 
 #: src/android/interoperability/with-c/bindgen.md
 msgid ""
@@ -21668,6 +21746,9 @@ msgid ""
 "practice to encapsulate the output of `bindgen` in a Rust library which "
 "exposes a safe interface to caller."
 msgstr ""
+"`main` 内の Rust コードは依然として書きにくいことに注意してください。"
+"`bindgen` の出力を、呼び出し元に安全なインターフェースを公開する Rust ライブ"
+"ラリにカプセル化するのが良い方法です。"
 
 #: src/android/interoperability/with-c/run-our-binary.md
 msgid ""
@@ -21708,11 +21789,12 @@ msgid "// Generated file, skip linting\n"
 msgstr "// 生成されたファイル、lint チェックをスキップ\n"
 
 #: src/android/interoperability/with-c/rust-library.md
-#, fuzzy
 msgid ""
 "Exporting Rust functions and types to C is easy. Here's a simple Rust "
 "library:"
-msgstr "Rust の関数と型は、C に簡単にエクスポートできます。"
+msgstr ""
+"Rust の関数と型は、C に簡単にエクスポートできます。以下はシンプルな Rust ライ"
+"ブラリです。"
 
 #: src/android/interoperability/with-c/rust-library.md
 msgid "_interoperability/rust/libanalyze/analyze.rs_"
@@ -21727,6 +21809,8 @@ msgid ""
 "/// Analyze the numbers.\n"
 "// SAFETY: There is no other global function of this name.\n"
 msgstr ""
+"/// 数値を分析します。\n"
+"// SAFETY: この名前の他のグローバル関数はありません。\n"
 
 #: src/android/interoperability/with-c/rust-library.md
 msgid "\"x ({x}) is smallest!\""
@@ -21754,15 +21838,15 @@ msgid "\"analyze.rs\""
 msgstr "\"analyze.rs\""
 
 #: src/android/interoperability/with-c/rust-library.md
-#, fuzzy
 msgid ""
 "`#[unsafe(no_mangle)]` disables Rust's usual name mangling, so the exported "
 "symbol will just be the name of the function. You can also use "
 "`#[unsafe(export_name = \"some_name\")]` to specify whatever name you want."
 msgstr ""
-"`#[no_mangle]` により Rust の通常の名前のマングリングが無効になるため、エクス"
-"ポートされたシンボルは単に関数の名前になります。`#[export_name = "
-"\"some_name\"]` を使用して任意の名前を指定することもできます。"
+"`#[unsafe(no_mangle)]` により Rust の通常の名前のマングリングが無効になるた"
+"め、エクスポートされたシンボルは単に関数の名前になります。"
+"`#[unsafe(export_name = \"some_name\")]` を使用して任意の名前を指定することも"
+"できます。"
 
 #: src/android/interoperability/with-c/rust.md
 msgid "Calling Rust"
@@ -21813,13 +21897,12 @@ msgstr ""
 "```"
 
 #: src/android/interoperability/cpp.md
-#, fuzzy
 msgid ""
 "The [CXX crate](https://cxx.rs/) enables safe interoperability between Rust "
 "and C++."
 msgstr ""
-"[CXX クレート](https://cxx.rs/)を使用すると、Rust と C++ の間で安全な相互運用"
-"性を確保できます。"
+"[CXX クレート](https://cxx.rs/) を使用すると、Rust と C++ の間で安全な相互運"
+"用ができます。"
 
 #: src/android/interoperability/cpp.md
 msgid "The overall approach looks like this:"
@@ -21917,9 +22000,8 @@ msgid "// Method on `MyType`\n"
 msgstr "// `MyType` のメソッド\n"
 
 #: src/android/interoperability/cpp/rust-bridge.md
-#, fuzzy
 msgid "// Free function\n"
-msgstr "関数"
+msgstr "// フリー関数\n"
 
 #: src/android/interoperability/cpp/rust-bridge.md
 msgid ""
@@ -22095,7 +22177,6 @@ msgid "`rust::Str`"
 msgstr "`rust::Str`"
 
 #: src/android/interoperability/cpp/type-mapping.md
-#, fuzzy
 msgid "`CxxString`"
 msgstr "`CxxString`"
 
@@ -22175,9 +22256,8 @@ msgstr ""
 #: src/android/interoperability/cpp/android-cpp-genrules.md
 #: src/android/interoperability/cpp/android-build-cpp.md
 #: src/android/interoperability/cpp/android-build-rust.md
-#, fuzzy
 msgid "Building in Android"
-msgstr "Android 向けのビルド"
+msgstr "Android でのビルド"
 
 #: src/android/interoperability/cpp/android-cpp-genrules.md
 msgid ""
@@ -22347,11 +22427,12 @@ msgid "//! Rust <-> Java FFI demo.\n"
 msgstr "//! Rust <-> Java FFI のデモ。\n"
 
 #: src/android/interoperability/java.md
-#, fuzzy
 msgid ""
 "/// HelloWorld::hello method implementation.\n"
 "// SAFETY: There is no other global function of this name.\n"
-msgstr "/// HelloWorld::hello メソッドの実装。\n"
+msgstr ""
+"/// HelloWorld::hello メソッドの実装。\n"
+"// SAFETY: この名前の他のグローバル関数はありません。\n"
 
 #: src/android/interoperability/java.md
 msgid "\"system\""
@@ -22407,12 +22488,17 @@ msgid ""
 "`Java_HelloWorld_hello` symbol exactly as written. This is important so that "
 "Java can recognize the symbol as a `hello` method on the `HelloWorld` class."
 msgstr ""
+"`unsafe(no_mangle)` 属性は、`Java_HelloWorld_hello` シンボルを書かれたとおり"
+"に出力するよう Rust に指示します。これは、Java がこのシンボルを `HelloWorld` "
+"クラスの `hello` メソッドとして認識できるようにするために重要です。"
 
 #: src/android/interoperability/java.md
 msgid ""
 "By default, Rust will mangle (rename) symbols so that a binary can link in "
 "two versions of the same Rust crate."
 msgstr ""
+"デフォルトでは、Rust はシンボルをマングリング（名前変更）します。これにより、"
+"1 つのバイナリに同じ Rust クレートの 2 つのバージョンをリンクできます。"
 
 #: src/chromium.md
 msgid "Welcome to Rust in Chromium"
