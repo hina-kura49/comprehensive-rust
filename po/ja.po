@@ -2113,51 +2113,45 @@ msgid "Problem solving: Break Down the Problem"
 msgstr "問題解決: 問題を分解する"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
-#, fuzzy
 msgid "Introduction"
-msgstr "解答"
+msgstr "はじめに"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 #: src/unsafe-deep-dive/introduction/definition.md
-#, fuzzy
 msgid "Defining Unsafe Rust"
-msgstr "Unsafe Rust"
+msgstr "Unsafe Rust の定義"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Purpose of the unsafe keyword"
-msgstr ""
+msgstr "unsafe キーワードの目的"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Two roles of the unsafe keyword"
-msgstr ""
+msgstr "unsafe キーワードの 2 つの役割"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
-#, fuzzy
 msgid "Warm Up Examples"
-msgstr "例"
+msgstr "ウォームアップの例"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid "Using an unsafe block"
-msgstr ""
+msgstr "unsafe ブロックの使用"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
-#, fuzzy
 msgid "Defining an unsafe function"
-msgstr "Unsafe関数の書き方"
+msgstr "unsafe 関数の定義"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
-#, fuzzy
 msgid "Implementing an unsafe trait"
-msgstr "Unsafeなトレイトの実装"
+msgstr "unsafe トレイトの実装"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
-#, fuzzy
 msgid "Defining an unsafe trait"
-msgstr "Unsafeなトレイトの実装"
+msgstr "unsafe トレイトの定義"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Characteristics of Unsafe Rust"
-msgstr ""
+msgstr "Unsafe Rust の特徴"
 
 #: src/SUMMARY.md
 msgid "Dangerous"
@@ -2173,19 +2167,19 @@ msgstr "時には有用"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Responsibility shift"
-msgstr ""
+msgstr "責任の移行"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Stronger development workflow required"
-msgstr ""
+msgstr "より強力な開発ワークフローが必要"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Example: may_overflow"
-msgstr ""
+msgstr "例: may_overflow"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions.md
 msgid "Safety Preconditions"
-msgstr ""
+msgstr "安全性の前提条件"
 
 #: src/SUMMARY.md
 msgid "Common Preconditions"
@@ -2223,9 +2217,8 @@ msgid "Example: ASCII Type"
 msgstr ""
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game.md
-#, fuzzy
 msgid "Rules of the game"
-msgstr "例の実行方法:"
+msgstr "ゲームのルール"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 #, fuzzy
@@ -2238,9 +2231,8 @@ msgstr "メモリのコピー"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/responsibility-shift.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
-#, fuzzy
 msgid "Safe Rust"
-msgstr "Unsafe Rust"
+msgstr "安全な Rust"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
@@ -2289,7 +2281,7 @@ msgstr "Unboundedチャネル"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/memory-lifecycle.md
 msgid "Memory Lifecycle"
-msgstr ""
+msgstr "メモリのライフサイクル"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
@@ -2325,13 +2317,13 @@ msgstr "部分的な初期化"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning.md
 msgid "Pinning"
-msgstr ""
+msgstr "固定"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "What pinning is"
-msgstr ""
+msgstr "固定とは"
 
 #: src/SUMMARY.md
 msgid "What a move is"
@@ -2356,7 +2348,7 @@ msgstr "`PhantomPinned`"
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "Self-Referential Buffer Example"
-msgstr ""
+msgstr "自己参照バッファの例"
 
 #: src/SUMMARY.md
 msgid "C++ implementation"
@@ -2391,7 +2383,7 @@ msgstr "実例"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi.md
 msgid "FFI"
-msgstr ""
+msgstr "FFI"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-interop.md
 #, fuzzy
@@ -41599,7 +41591,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "IMPORTANT: THIS MODULE IS IN AN EARLY STAGE OF DEVELOPMENT"
-msgstr ""
+msgstr "重要: このモジュールは開発の初期段階にあります"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
@@ -41607,38 +41599,43 @@ msgid ""
 "With that in mind, your feedback, comments, and especially your concerns, "
 "are very welcome."
 msgstr ""
+"Comprehensive Rust のこのモジュールは完成したものとは考えないでください。その"
+"うえで、フィードバックやコメント、特に懸念点は大歓迎です。"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
 "To comment on this module's development, please use the [GitHub issue "
 "tracker](https://github.com/google/comprehensive-rust/issues)."
 msgstr ""
+"このモジュールの開発についてコメントするには、[GitHub の issue トラッカー]"
+"(https://github.com/google/comprehensive-rust/issues)を使用してください。"
 
 #: src/unsafe-deep-dive/welcome.md
-#, fuzzy
 msgid "Welcome to the Unsafe Rust Deep Dive"
-msgstr "Comprehensive Rust 🦀 へようこそ"
+msgstr "アンセーフRust ディープダイブへようこそ"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
 "This deep dive aims to enable you to work productively with Unsafe Rust."
 msgstr ""
+"このディープダイブは、アンセーフRust を使って生産的に作業できるようになること"
+"を目的としています。"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "We’ll work on three areas:"
-msgstr ""
+msgstr "次の 3 つの分野に取り組みます。"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "establishing a mental model of Unsafe Rust"
-msgstr ""
+msgstr "アンセーフRust のメンタルモデルを確立する"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "practicing reading & writing Unsafe Rust"
-msgstr ""
+msgstr "アンセーフRust の読み書きを練習する"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "practicing code review for Unsafe Rust"
-msgstr ""
+msgstr "アンセーフRust のコードレビューを練習する"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
@@ -41646,65 +41643,69 @@ msgid ""
 "to review easy cases yourself, and distinguish difficult cases that need to "
 "be reviewed by more experienced Unsafe Rust engineers."
 msgstr ""
+"このクラスの目標は、簡単なケースは自分でレビューでき、より経験豊富なアンセー"
+"フRust エンジニアによるレビューが必要な難しいケースを見分けられるだけのアン"
+"セーフRust の知識を身につけてもらうことです。"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "Establishing a mental model of Unsafe Rust"
-msgstr ""
+msgstr "アンセーフRust のメンタルモデルを確立する"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "what the `unsafe` keyword means"
-msgstr ""
+msgstr "`unsafe` キーワードの意味"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "a shared vocabulary for talking about safety"
-msgstr ""
+msgstr "安全性について話すための共通の語彙"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "a mental model of how memory works"
-msgstr ""
+msgstr "メモリがどのように機能するかについてのメンタルモデル"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "common patterns"
-msgstr ""
+msgstr "一般的なパターン"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "expectations for code that uses `unsafe`"
-msgstr ""
+msgstr "`unsafe` を使用するコードに求められること"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "Practicing working with unsafe"
-msgstr ""
+msgstr "アンセーフな処理の練習"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "reading and writing both code and documentation"
-msgstr ""
+msgstr "コードとドキュメントの両方の読み書き"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "using unsafe APIs"
-msgstr ""
+msgstr "アンセーフな API の使用"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "designing and implementing them"
-msgstr ""
+msgstr "それらの設計と実装"
 
 #: src/unsafe-deep-dive/welcome.md
-#, fuzzy
 msgid "Reviewing code"
-msgstr "コードの生成"
+msgstr "コードのレビュー"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "the confidence to self-review easy cases"
-msgstr ""
+msgstr "簡単なケースをセルフレビューする自信"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "the knowledge to detect difficult cases"
-msgstr ""
+msgstr "難しいケースを見分ける知識"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
 "“We'll be using a spiral model of teaching. This means that we revisit the "
 "same topic multiple times with increasing depth.”"
 msgstr ""
+"「スパイラル型の教授法を使用します。つまり、同じトピックを何度も取り上げ、そ"
+"のたびに深く掘り下げていきます。」"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid ""
@@ -41712,39 +41713,41 @@ msgid ""
 "don't know each other well. Ask everyone to introduce themselves, noting "
 "down any particular goals for the class."
 msgstr ""
+"特にクラスの参加者がお互いをよく知らない場合は、自己紹介を一巡するとよいで"
+"しょう。全員に自己紹介をしてもらい、このクラスに対する特定の目標があればメモ"
+"しておきます。"
 
 #: src/unsafe-deep-dive/welcome.md
-#, fuzzy
 msgid "Who are you?"
-msgstr "b\"Who are you?\\n\""
+msgstr "あなたは誰ですか？"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "What are you working on?"
-msgstr ""
+msgstr "何に取り組んでいますか？"
 
 #: src/unsafe-deep-dive/welcome.md
 msgid "What are your goals for this class?"
-msgstr ""
+msgstr "このクラスでの目標は何ですか？"
 
 #: src/unsafe-deep-dive/setup.md
-#, fuzzy
 msgid "Setting Up"
-msgstr "\"Setting up IMU...\""
+msgstr "セットアップ"
 
 #: src/unsafe-deep-dive/setup.md
-#, fuzzy
 msgid "Local Rust installation"
-msgstr "インストール"
+msgstr "ローカルの Rust インストール"
 
 #: src/unsafe-deep-dive/setup.md
 msgid ""
 "You should have a Rust compiler installed that supports the 2024 edition of "
 "the language, which is any version of rustc higher than 1.84."
 msgstr ""
+"言語の 2024 エディションをサポートする Rust コンパイラ（バージョン 1.84 より"
+"新しい rustc）をインストールしておく必要があります。"
 
 #: src/unsafe-deep-dive/setup.md
 msgid "(Optional) Create a local instance of the course"
-msgstr ""
+msgstr "（省略可）コースのローカル インスタンスを作成する"
 
 #: src/unsafe-deep-dive/setup.md
 msgid ""
@@ -41758,37 +41761,49 @@ msgid ""
 "$ cargo serve # then open http://127.0.0.1:3000/ in a browser\n"
 "```"
 msgstr ""
+"```console\n"
+"$ git clone --depth=1 https://github.com/google/comprehensive-rust.git\n"
+"Cloning into 'comprehensive-rust'...\n"
+"...\n"
+"$ cd comprehensive-rust\n"
+"$ cargo install-tools\n"
+"...\n"
+"$ cargo serve # then open http://127.0.0.1:3000/ in a browser\n"
+"```"
 
 #: src/unsafe-deep-dive/setup.md
 msgid ""
 "Ask everyone to confirm that everyone is able to execute `rustc` with a "
 "version newer than 1.87."
 msgstr ""
+"全員が 1.87 より新しいバージョンの `rustc` を実行できることを確認してもらいま"
+"す。"
 
 #: src/unsafe-deep-dive/setup.md
 msgid ""
 "For those people who do not, tell them that we'll resolve that in the break."
-msgstr ""
+msgstr "できない人には、休憩中に解決すると伝えます。"
 
 #: src/unsafe-deep-dive/introduction.md
 msgid ""
 "We'll start our course by creating a shared understanding of what Unsafe "
 "Rust is and what the `unsafe` keyword does."
 msgstr ""
+"このコースでは、まずアンセーフRust とは何か、そして `unsafe` キーワードが何を"
+"するのかについて、共通の理解を築くことから始めます。"
 
 #: src/unsafe-deep-dive/introduction.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "Outline"
-msgstr ""
+msgstr "概要"
 
 #: src/unsafe-deep-dive/introduction.md
-#, fuzzy
 msgid "25 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "25 分"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "“Unsafe Rust is a superset of Safe Rust.”"
-msgstr ""
+msgstr "「アンセーフRust はセーフRust のスーパーセットです。」"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
@@ -41796,10 +41811,12 @@ msgid ""
 "raw pointers and call functions that can break Rust’s safety guarantees if "
 "called incorrectly.”"
 msgstr ""
+"「アンセーフRust は、生ポインタの参照外しや、誤って呼び出すと Rust の安全性保"
+"証を破る可能性のある関数の呼び出しなど、追加の機能を提供します。」"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "“These extra capabilities are referred to as _unsafe operations_.”"
-msgstr ""
+msgstr "「これらの追加機能は _アンセーフな操作_ と呼ばれます。」"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
@@ -41807,6 +41824,9 @@ msgid ""
 "built on. For example, without the ability to dereference a raw pointer, it "
 "would be impossible to implement `Vec` or `Box`.”"
 msgstr ""
+"「アンセーフな操作は、Rust 標準ライブラリが構築される基盤となっています。たと"
+"えば、生ポインタを参照外しする機能がなければ、`Vec` や `Box` を実装することは"
+"不可能です。」"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
@@ -41814,77 +41834,83 @@ msgid ""
 "checking and type safety still apply. Unsafe operations have their own "
 "rules, which we’ll learn about in this class.”"
 msgstr ""
+"「アンセーフRust を書いている間も、コンパイラは引き続き支援してくれます。借用"
+"チェックと型安全性は引き続き適用されます。アンセーフな操作には独自のルールが"
+"あり、それについてはこのクラスで学びます。」"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
 "The unsafe operations from the [Rust Reference](https://doc.rust-lang.org/"
 "reference/unsafety.html) (Avoid spending too much time):"
 msgstr ""
+"[Rust リファレンス](https://doc.rust-lang.org/reference/unsafety.html)に記載"
+"されているアンセーフな操作（時間をかけすぎないようにしてください）:"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
 "The following language level features cannot be used in the safe subset of "
 "Rust:"
-msgstr ""
+msgstr "次の言語レベルの機能は、Rust の安全なサブセットでは使用できません。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
-#, fuzzy
 msgid "Dereferencing a raw pointer."
 msgstr "生ポインタの参照外し。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "Reading or writing a mutable or unsafe external static variable."
-msgstr ""
+msgstr "可変またはアンセーフな外部 static 変数の読み取りまたは書き込み。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "Accessing a field of a union, other than to assign to it."
-msgstr ""
+msgstr "共用体のフィールドへのアクセス（代入する場合を除く）。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
-#, fuzzy
 msgid "Calling an `unsafe` function."
-msgstr "Unsafe関数の呼び出し"
+msgstr "`unsafe` 関数の呼び出し。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid ""
 "Calling a safe function marked with a `<target_feature>` from a function "
 "that does not have a `<target_feature>` attribute enabling the same features."
 msgstr ""
+"`<target_feature>` が付けられた安全な関数を、同じ機能を有効にする "
+"`<target_feature>` 属性を持たない関数から呼び出すこと。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
-#, fuzzy
 msgid "Implementing an unsafe trait."
-msgstr "Unsafeなトレイトの実装"
+msgstr "アンセーフなトレイトの実装。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "Declaring an extern block."
-msgstr ""
+msgstr "extern ブロックの宣言。"
 
 #: src/unsafe-deep-dive/introduction/definition.md
 msgid "Applying an unsafe attribute to an item."
-msgstr ""
+msgstr "アイテムへのアンセーフな属性の適用。"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid "Why the unsafe keyword exists"
-msgstr ""
+msgstr "unsafe キーワードが存在する理由"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid "Rust ensures safety"
-msgstr ""
+msgstr "Rust は安全性を保証する"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid "But there are limits to what the compiler can do"
-msgstr ""
+msgstr "しかし、コンパイラにできることには限界がある"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid ""
 "The unsafe keyword allows programmers to assume responsibility for Rust’s "
 "rules"
 msgstr ""
+"unsafe キーワードにより、プログラマが Rust のルールに対する責任を引き受けられ"
+"る"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid "“A fundamental goal of Rust is to ensure memory safety.”"
-msgstr ""
+msgstr "「Rust の基本的な目標は、メモリ安全性を保証することです。」"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid ""
@@ -41892,71 +41918,81 @@ msgid ""
 "programming language. Even if they could be, there are limits to what the "
 "Rust compiler can control.”"
 msgstr ""
+"「しかし、限界があります。安全性に関する考慮事項の中には、プログラミング言語"
+"で表現できないものがあります。仮に表現できたとしても、Rust コンパイラが制御で"
+"きることには限界があります。」"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid ""
 "“The `unsafe` keyword shifts the burden of upholding Rust’s rules from the "
 "compiler to the programmer.”"
 msgstr ""
+"「`unsafe` キーワードは、Rust のルールを守る責任をコンパイラからプログラマに"
+"移します。」"
 
 #: src/unsafe-deep-dive/introduction/purpose.md
 msgid ""
 "“When you see the `unsafe` keyword, you are seeing responsibility shift from "
 "the compiler to the programmer."
 msgstr ""
+"「`unsafe` キーワードを目にしたとき、それは責任がコンパイラからプログラマに"
+"移っていることを示しています。"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "The unsafe keyword has two roles"
-msgstr ""
+msgstr "unsafe キーワードには 2 つの役割がある"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "_Creating_ APIs with safety considerations"
-msgstr ""
+msgstr "安全性に関する考慮事項を伴う API の _作成_"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "unsafe functions: `unsafe fn get_unchecked(&self) { ... }`"
-msgstr ""
+msgstr "アンセーフな関数: `unsafe fn get_unchecked(&self) { ... }`"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "unsafe traits: `unsafe trait Send {}`"
-msgstr ""
+msgstr "アンセーフなトレイト: `unsafe trait Send {}`"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "_Using_ APIs with safety considerations"
-msgstr ""
+msgstr "安全性に関する考慮事項を伴う API の _使用_"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "invoking built-in unsafe operators: `unsafe { *ptr }`"
-msgstr ""
+msgstr "組み込みのアンセーフな演算子の使用: `unsafe { *ptr }`"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "calling unsafe functions: `unsafe { x.get_unchecked() }`"
-msgstr ""
+msgstr "アンセーフな関数の呼び出し: `unsafe { x.get_unchecked() }`"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "implementing unsafe traits: `unsafe impl Send for Counter {}`"
-msgstr ""
+msgstr "アンセーフなトレイトの実装: `unsafe impl Send for Counter {}`"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
-#, fuzzy
 msgid "Two roles:"
-msgstr "2 つのバイナリ"
+msgstr "2 つの役割:"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "**Creating** APIs with safety considerations and defining what needs to be "
 "considered"
 msgstr ""
+"安全性に関する考慮事項を伴う API を **作成** し、何を考慮する必要があるかを定"
+"義する"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "**Using** APIs with safety considerations and confirming that the "
 "consideration has been made"
 msgstr ""
+"安全性に関する考慮事項を伴う API を **使用** し、その考慮がなされたことを確認"
+"する"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "Creating APIs with safety considerations"
-msgstr ""
+msgstr "安全性に関する考慮事項を伴う API の作成"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
@@ -41964,12 +42000,17 @@ msgid ""
 "safety guarantees. Specifically, you need to use the unsafe keyword when "
 "defining unsafe functions and unsafe traits."
 msgstr ""
+"「まず、unsafe キーワードを使用すると、Rust の安全性保証を破る可能性のある "
+"API を作成できます。具体的には、アンセーフな関数やアンセーフなトレイトを定義"
+"する際に unsafe キーワードを使用する必要があります。"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "“When used in this role, you’re informing users of your API that they need "
 "to be careful.”"
 msgstr ""
+"「この役割で使用する場合、API のユーザーに対して注意が必要であることを伝えて"
+"います。」"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
@@ -41978,16 +42019,22 @@ msgid ""
 "requirements. Callers need to know that they have satisfied any "
 "requirements, and that’s impossible if they’re not written down.”"
 msgstr ""
+"「API の作成者は、どのような注意が必要かを伝える必要があります。アンセーフな "
+"API は、安全性の要件に関するドキュメントがなければ完全とはいえません。呼び出"
+"し元は、すべての要件を満たしていることを知る必要がありますが、要件が書かれて"
+"いなければそれは不可能です。」"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid "Using APIs with safety considerations"
-msgstr ""
+msgstr "安全性に関する考慮事項を伴う API の使用"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "“The unsafe keyword adopts its other role, using APIs, when it is used "
 "nearby to a curly brace."
 msgstr ""
+"「unsafe キーワードは、波かっこの近くで使用されると、もう 1 つの役割である "
+"API の使用を担います。"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
@@ -41995,86 +42042,99 @@ msgid ""
 "careful. They have verified that the code is safe and is providing an "
 "assurance to others.”"
 msgstr ""
+"「この役割で使用する場合、unsafe キーワードは作成者が注意を払ったことを意味し"
+"ます。作成者はコードが安全であることを検証済みであり、他の人に対してそれを保"
+"証しています。」"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "“Unsafe blocks are most common. They allow you to invoke unsafe functions "
 "that have been defined using the first role."
 msgstr ""
+"「最も一般的なのはアンセーフブロックです。アンセーフブロックを使用すると、1 "
+"つ目の役割を使って定義されたアンセーフな関数を呼び出すことができます。"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "“Unsafe blocks also allow you to perform operations which the compiler knows "
 "are unsafe, such as dereferencing a raw pointer.”"
 msgstr ""
+"「アンセーフブロックでは、生ポインタの参照外しなど、コンパイラがアンセーフで"
+"あると認識している操作も実行できます。」"
 
 #: src/unsafe-deep-dive/introduction/two-roles.md
 msgid ""
 "“You might also see the unsafe keyword being used to implement unsafe traits."
 msgstr ""
+"「unsafe キーワードが、アンセーフなトレイトを実装するために使用されているのを"
+"目にすることもあるでしょう。"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
 msgid "Warm-up examples"
-msgstr ""
+msgstr "ウォームアップの例"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
 msgid "Examples to demonstrate:"
-msgstr ""
+msgstr "デモする例:"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
 msgid "using an [unsafe block](warm-up/unsafe-block.md) (`unsafe { ... }`)"
 msgstr ""
+"[アンセーフブロック](warm-up/unsafe-block.md)（`unsafe { ... }`）の使用"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
 msgid "defining an [unsafe function](warm-up/unsafe-fn.md) (`unsafe fn`)"
-msgstr ""
+msgstr "[アンセーフな関数](warm-up/unsafe-fn.md)（`unsafe fn`）の定義"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
 msgid ""
 "[implementing](warm-up/unsafe-impl.md) an unsafe trait (`unsafe impl { ... }"
 "`)"
 msgstr ""
+"アンセーフなトレイトの[実装](warm-up/unsafe-impl.md)（`unsafe impl { ... }`）"
 
 #: src/unsafe-deep-dive/introduction/warm-up.md
-#, fuzzy
 msgid "defining an [unsafe trait](warm-up/unsafe-trait.md) (`unsafe trait`)"
-msgstr "[アンセーフなトレイト](./unsafe-rust/unsafe-traits.md)（5 分）"
+msgstr ""
+"[アンセーフなトレイト](warm-up/unsafe-trait.md)（`unsafe trait`）の定義"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid ""
 "Walk through the code. Confirm that the audience is familiar with the "
 "dereference operator."
 msgstr ""
+"コードを順に説明します。受講者が参照外し演算子に慣れていることを確認します。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid "Attempt to compile the code, trigger the compiler error."
-msgstr ""
+msgstr "コードをコンパイルしてみて、コンパイラエラーを発生させます。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid "Add the unsafe block:"
-msgstr ""
+msgstr "アンセーフブロックを追加します。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid ""
 "Prompt audience for a code review. Guide learners towards adding a safety "
 "comment."
 msgstr ""
+"受講者にコードレビューを促します。安全性コメントを追加するよう学習者を導きま"
+"す。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid "Add the safety comment:"
-msgstr ""
+msgstr "安全性コメントを追加します。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 msgid "// SAFETY: `i` must be within 0..numbers.len()\n"
-msgstr ""
+msgstr "// SAFETY: `i` は 0..numbers.len() の範囲内でなければならない\n"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
-#, fuzzy
 msgid "_Suggested Solution_"
-msgstr "演習の解答"
+msgstr "_解答例_"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
@@ -42082,33 +42142,40 @@ msgid ""
 "///\n"
 "/// Returns `None` when `p` is null, otherwise wraps `val` in `Some`.\n"
 msgstr ""
+"/// null 許容ポインタを参照に変換します。\n"
+"///\n"
+"/// `p` が null の場合は `None` を返し、それ以外の場合は `val` を `Some` で"
+"ラップします。\n"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
-#, fuzzy
 msgid "// SAFETY: `ptr` is non-null\n"
-msgstr "// 安全: self.dir は NULL ではありません。\n"
+msgstr "// SAFETY: `ptr` は null ではない\n"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "“This looks as though it’s safe code, however it actually requires an unsafe "
 "block.”"
 msgstr ""
+"「これは安全なコードのように見えますが、実際にはアンセーフブロックが必要で"
+"す。」"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid "Highlight the dereference operation, i.e. `*p` within the unsafe block."
-msgstr ""
+msgstr "参照外し操作、つまりアンセーフブロック内の `*p` を強調します。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "“Callers must ensure that the `ptr` is null, or that it may be converted to "
 "a reference."
 msgstr ""
+"「呼び出し元は、`ptr` が null であるか、参照に変換可能であることを保証しなけ"
+"ればなりません。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "“It may be counter-intuitive, but many pointers cannot be converted to "
 "references."
-msgstr ""
+msgstr "「直感に反するかもしれませんが、多くのポインタは参照に変換できません。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
@@ -42116,6 +42183,9 @@ msgid ""
 "arbitrary bits rather than a valid value. That’s not something that Rust "
 "allows and something that this function needs to protect itself against."
 msgstr ""
+"「さまざまな問題がありますが、たとえば有効な値ではなく任意のビットを指すポイ"
+"ンタが作成される可能性があります。これは Rust が許可しないことであり、この関"
+"数が自らを守らなければならないことです。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
@@ -42123,20 +42193,25 @@ msgid ""
 "responsibility for guarding against invalid inputs, or we can shift that "
 "responsibility to the caller with the unsafe keyword.”"
 msgstr ""
+"「したがって、API 設計者である私たちには 2 つの道があります。無効な入力を防ぐ"
+"責任を引き受けようとするか、unsafe キーワードを使ってその責任を呼び出し元に移"
+"すかです。」"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "“The first path is a difficult one. We’re accepting a generic type T, which "
 "is all possible types that implement Sized. That’s a lot of types!"
 msgstr ""
+"「1 つ目の道は困難です。ここではジェネリック型 T を受け取っていますが、これ"
+"は Sized を実装するすべての型です。非常に多くの型があります。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid "“Therefore, the second path makes more sense."
-msgstr ""
+msgstr "「したがって、2 つ目の道のほうが理にかなっています。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid "_Extra content (time permitting)_"
-msgstr ""
+msgstr "_追加コンテンツ（時間に余裕がある場合）_"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
@@ -42145,18 +42220,26 @@ msgid ""
 "of useful documentation. You should also look into the source code of many "
 "of the methods on std::pointer."
 msgstr ""
+"「ちなみに、ポインタの詳細や、ポインタを参照に変換する際のルールに興味がある"
+"場合は、標準ライブラリに役立つドキュメントがたくさんあります。std::pointer の"
+"多くのメソッドのソースコードも調べてみるとよいでしょう。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "“For example, the `ptr_to_ref` function on this slide actually exists in the "
 "standard library as the `as_mut` method on pointers.”"
 msgstr ""
+"「たとえば、このスライドの `ptr_to_ref` 関数は、実際には標準ライブラリにポイ"
+"ンタの `as_mut` メソッドとして存在します。」"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md
 msgid ""
 "Open the documentation for [std::pointer.as_mut](https://doc.rust-lang.org/"
 "std/primitive.pointer.html#method.as_mut) and highlight the Safety section."
 msgstr ""
+"[std::pointer.as_mut](https://doc.rust-lang.org/std/"
+"primitive.pointer.html#method.as_mut) のドキュメントを開き、Safety セクション"
+"を強調します。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
@@ -42164,6 +42247,8 @@ msgid ""
 "knows what a trait is. Is anyone able to explain traits for the rest of the "
 "class?"
 msgstr ""
+"「コードを見る前に、全員がトレイトとは何かを知っているか確認しておきましょ"
+"う。クラスの皆さんにトレイトについて説明できる人はいますか？"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
@@ -42171,21 +42256,25 @@ msgid ""
 "about traits as shared behavior focuses on the syntax of methods and their "
 "signatures."
 msgstr ""
+"「トレイトは、共有された振る舞いを作成する方法として説明されることがよくあり"
+"ます。トレイトを共有された振る舞いとして考えると、メソッドの構文とそのシグネ"
+"チャに焦点が当たります。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
 "“There’s also a deeper way to think of traits: as sets of requirements. This "
 "emphasizes the shared semantics of the implementing types."
 msgstr ""
+"「トレイトについては、より深い考え方もあります。要件の集合として捉えることで"
+"す。これにより、実装する型の共有されたセマンティクスが強調されます。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
-#, fuzzy
 msgid "“Can anyone explain what the `Send` and `Sync` traits are?"
-msgstr "組み込みの `Send` トレイトと `Sync` トレイトはアンセーフです。"
+msgstr "「`Send` トレイトと `Sync` トレイトとは何か、説明できる人はいますか？"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid "If no"
-msgstr ""
+msgstr "いない場合"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
@@ -42193,6 +42282,9 @@ msgid ""
 "speaking, Send types can be shared between threads by value. Sync types must "
 "be shared by reference."
 msgstr ""
+"「Send と Sync は並行性に関係しています。詳細は多くありますが、大まかに言う"
+"と、Send な型は値としてスレッド間で共有できます。Sync な型は参照によって共有"
+"されなければなりません。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
@@ -42200,11 +42292,16 @@ msgid ""
 "thread boundaries. Those rules cannot be checked by the compiler, and "
 "therefore the code author must take responsibility for upholding them."
 msgstr ""
+"スレッド境界を越えてデータを安全に共有するためには、従うべきルールが数多くあ"
+"ります。それらのルールはコンパイラでチェックできないため、コードの作成者がそ"
+"れらを守る責任を負わなければなりません。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
 "Arc implements Send and Sync, therefore it’s safe for our clock to as well."
 msgstr ""
+"Arc は Send と Sync を実装しているので、私たちの clock もそれらを実装して安全"
+"です。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md
 msgid ""
@@ -42212,24 +42309,29 @@ msgid ""
 "“indivisible” or “whole” from Ancient Greek, rather than the contemporary "
 "English sense of “tiny particle”."
 msgstr ""
+"_atomic_ という単語は、現代英語の「微小な粒子」という意味ではなく、古代ギリ"
+"シャ語に由来する「分割できない」または「全体」という意味を持つことを指摘する"
+"と役立つかもしれません。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
 msgid "/// Indicates that the type uses 32 bits of memory.\n"
-msgstr ""
+msgstr "/// その型がメモリを 32 ビット使用することを示します。\n"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
 msgid "“Now let’s define our own unsafe trait.”"
-msgstr ""
+msgstr "「では、独自のアンセーフなトレイトを定義してみましょう。」"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
 msgid "Add the unsafe keyword and compile the code."
-msgstr ""
+msgstr "unsafe キーワードを追加して、コードをコンパイルします。"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
 msgid ""
 "“If the requirements of the trait are semantic, then your trait may not need "
 "any methods at all. The documentation is essential, however.”"
 msgstr ""
+"「トレイトの要件がセマンティックなものであれば、トレイトにはメソッドがまった"
+"く必要ないこともあります。ただし、ドキュメントは不可欠です。」"
 
 #: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md
 msgid ""
@@ -42238,35 +42340,41 @@ msgid ""
 "compiler the ability to talk about types that meet the requirements "
 "described in the documentation.”"
 msgstr ""
+"「メソッドを持たないトレイトはマーカートレイトと呼ばれます。型に対してマー"
+"カートレイトを実装すると、型システムに情報を追加することになります。これによ"
+"り、ドキュメントに記載された要件を満たす型についてコンパイラが扱えるようにな"
+"ります。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md
-#, fuzzy
 msgid "Characteristics of unsafe"
-msgstr "\"Character not found\""
+msgstr "unsafe の特徴"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md
 msgid "[Dangerous](characteristics-of-unsafe-rust/dangerous.md)"
-msgstr ""
+msgstr "[危険](characteristics-of-unsafe-rust/dangerous.md)"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md
 msgid ""
 "[Sometimes necessary](characteristics-of-unsafe-rust/sometimes-necessary.md)"
 msgstr ""
+"[必要な場合がある](characteristics-of-unsafe-rust/sometimes-necessary.md)"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md
 msgid "[Sometimes useful](characteristics-of-unsafe-rust/sometimes-useful.md)"
 msgstr ""
+"[役に立つ場合がある](characteristics-of-unsafe-rust/sometimes-useful.md)"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
-#, fuzzy
 msgid "Unsafe is dangerous"
-msgstr "Unsafe Rust"
+msgstr "unsafe は危険"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
 msgid ""
 "“Use-after-free (UAF), integer overflows, and out of bounds (OOB) reads/"
 "writes comprise 90% of vulnerabilities with OOB being the most common.”"
 msgstr ""
+"「解放後使用（UAF）、整数オーバーフロー、境界外（OOB）の読み取り / 書き込みが"
+"脆弱性の 90% を占めており、中でも OOB が最も多く見られます。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
 msgid ""
@@ -42274,39 +42382,48 @@ msgid ""
 "Enhancements](https://security.googleblog.com/2019/05/queue-hardening-"
 "enhancements.html)\""
 msgstr ""
+"\\--- **Jeff Vander Stoep and Chong Zang**, Google. \"[Queue the Hardening "
+"Enhancements](https://security.googleblog.com/2019/05/queue-hardening-"
+"enhancements.html)\""
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
 msgid ""
 "“The software industry has gathered lots of evidence that unsafe code is "
 "difficult to write correctly and creates very serious problems.”"
 msgstr ""
+"「ソフトウェア業界では、アンセーフなコードを正しく書くことは難しく、非常に深"
+"刻な問題を引き起こすという証拠が数多く集まっています。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
 msgid ""
 "“The issues in this list are eliminated by Rust. The unsafe keyword lets "
 "them back into your source code.”"
 msgstr ""
+"「このリストにある問題は Rust によって排除されます。unsafe キーワードは、それ"
+"らの問題をソースコードに再び招き入れます。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md
 msgid "“Be careful.”"
-msgstr ""
+msgstr "「注意してください。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid "Unsafe is sometimes necessary"
-msgstr ""
+msgstr "unsafe が必要な場合がある"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid ""
 "The Rust compiler can only enforce its rules for code that it has compiled."
 msgstr ""
+"Rust コンパイラがルールを強制できるのは、自身がコンパイルしたコードに対しての"
+"みです。"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid "\"{pid}\""
-msgstr ""
+msgstr "\"{pid}\""
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid "“There are some activities that _require_ unsafe."
-msgstr ""
+msgstr "「unsafe を _必要とする_ 作業もあります。"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid ""
@@ -42314,28 +42431,32 @@ msgid ""
 "memory guarantees. Therefore, invoking external functions requires an unsafe "
 "block.”"
 msgstr ""
+"「Rust コンパイラは、外部関数が Rust のメモリ保証に準拠していることを検証でき"
+"ません。そのため、外部関数を呼び出すにはアンセーフブロックが必要です。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
-#, fuzzy
 msgid "Optional:"
-msgstr "Option"
+msgstr "省略可:"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid ""
 "“Working with the external environment often involves sharing memory. The "
 "interface that computers provide is a memory address (a pointer).”"
 msgstr ""
+"「外部環境とやり取りする際には、メモリを共有することがよくあります。コン"
+"ピュータが提供するインターフェースは、メモリアドレス（ポインタ）です。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid ""
 "“Here's an example that asks the Linux kernel to write to memory that we "
 "control:"
 msgstr ""
+"「以下は、私たちが管理するメモリに書き込むよう Linux カーネルに依頼する例で"
+"す。"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
-#, fuzzy
 msgid "\"{buf:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{buf:?}\""
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-necessary.md
 msgid ""
@@ -42343,18 +42464,22 @@ msgid ""
 "As well as calling an external function, we must mark the boundary as "
 "`unsafe` because the compiler cannot verify how the OS touches that memory.”"
 msgstr ""
+"「この FFI 呼び出しは、オペレーティング システムに働きかけてバッファ（`buf`）"
+"を埋めます。外部関数を呼び出すことに加えて、OS がそのメモリにどのように触れる"
+"かをコンパイラが検証できないため、その境界を `unsafe` としてマークしなければ"
+"なりません。」"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-useful.md
 msgid "Unsafe is sometimes useful"
-msgstr ""
+msgstr "unsafe が役に立つ場合がある"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-useful.md
 msgid "Your code can go faster!"
-msgstr ""
+msgstr "コードを高速化できる"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-useful.md
 msgid "Code using `unsafe` _might_ be faster."
-msgstr ""
+msgstr "`unsafe` を使用したコードは高速になる _可能性があります_。"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-useful.md
 msgid ""
@@ -42362,50 +42487,57 @@ msgid ""
 "validate performance claims. For cases like this, Rust's iterators can "
 "usually elide bounds checks anyway."
 msgstr ""
+"`fast_sum()` は境界チェックを省略します。ただし、パフォーマンスに関する主張を"
+"検証するにはベンチマークが必要です。このようなケースでは、通常 Rust のイテ"
+"レータが境界チェックを省略してくれます。"
 
 #: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/sometimes-useful.md
 msgid ""
 "Optional: [show identical generated assembly](https://rust.godbolt.org/z/"
 "d48v1Y5aj) for the two functions."
 msgstr ""
+"省略可: 2 つの関数について[生成されるアセンブリが同一であることを示します]"
+"(https://rust.godbolt.org/z/d48v1Y5aj)。"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Unsafe keyword shifts responsibility"
-msgstr ""
+msgstr "unsafe キーワードは責任を移す"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Is Memory Safe?"
-msgstr ""
+msgstr "メモリ安全か"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Responsibility for Memory Safety"
-msgstr ""
+msgstr "メモリ安全性に対する責任"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Compiler"
-msgstr ""
+msgstr "コンパイラ"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Programmer"
-msgstr ""
+msgstr "プログラマ"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Who has responsibility for memory safety?"
-msgstr ""
+msgstr "メモリ安全性に対する責任は誰にあるか"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Safe Rust → compiler"
-msgstr ""
+msgstr "セーフRust → コンパイラ"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid "Unsafe Rust → programmer"
-msgstr ""
+msgstr "アンセーフRust → プログラマ"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid ""
 "“While writing safe Rust, you cannot create memory safety problems. The "
 "compiler will ensure that a program with mistakes will not build.”"
 msgstr ""
+"「セーフRust を書いている間は、メモリ安全性の問題を作り出すことはできません。"
+"誤りのあるプログラムはビルドされないことをコンパイラが保証します。」"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid ""
@@ -42413,6 +42545,8 @@ msgid ""
 "from the compiler to programmers. It signals that there are preconditions "
 "that must be satisfied."
 msgstr ""
+"「`unsafe` キーワードは、メモリ安全性を維持する責任をコンパイラからプログラマ"
+"に移します。これは、満たさなければならない前提条件があることを示しています。"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid ""
@@ -42420,52 +42554,58 @@ msgid ""
 "understood what the preconditions are and that their code will always "
 "satisfy them."
 msgstr ""
+"「その責任を果たすために、プログラマは前提条件が何であるかを理解し、自分の"
+"コードが常にそれを満たすことを保証しなければなりません。"
 
 #: src/unsafe-deep-dive/introduction/responsibility-shift.md
 msgid ""
 "“Throughout this course, we'll use the term _safety preconditions_ to "
 "describe this situation.”"
 msgstr ""
+"「このコースでは、この状況を表すために _安全性の前提条件_ という用語を使用し"
+"ます。」"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Impact on workflow"
-msgstr ""
+msgstr "ワークフローへの影響"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
-#, fuzzy
 msgid "While writing code"
-msgstr "コードの生成"
+msgstr "コードを書いているとき"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid ""
 "Verify that you understand the preconditions of any `unsafe` functions/traits"
-msgstr ""
+msgstr "`unsafe` 関数 / トレイトの前提条件を理解していることを確認する"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Check that the preconditions are satisfied"
-msgstr ""
+msgstr "前提条件が満たされていることをチェックする"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Document your reasoning in safety comments"
-msgstr ""
+msgstr "推論の過程を安全性コメントに記述する"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Enhanced code review"
-msgstr ""
+msgstr "強化されたコードレビュー"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Self-review → peer reviewer → unsafe Rust expert (when needed)"
 msgstr ""
+"セルフレビュー → ピアレビュアー → アンセーフRust のエキスパート（必要な場合）"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid "Escalate to a person who is comfortable with your code and reasoning"
-msgstr ""
+msgstr "あなたのコードと推論を十分に理解している人にエスカレーションする"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid ""
 "“The unsafe keyword places more responsibility on the programmer; therefore "
 "it requires a stronger development workflow."
 msgstr ""
+"「unsafe キーワードはプログラマにより多くの責任を負わせます。そのため、より強"
+"固な開発ワークフローが必要になります。"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid ""
@@ -42473,22 +42613,29 @@ msgid ""
 "review is mandatory, and where the author and primary reviewer have access "
 "to an unsafe Rust expert.”"
 msgstr ""
+"「このクラスでは、コードレビューが必須であり、作成者と主レビュアーがアンセー"
+"フRust のエキスパートに相談できるという、特定のソフトウェア開発ワークフローを"
+"前提としています。」"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid ""
 "“The author and primary reviewer will verify simple unsafe Rust code "
 "themselves, and punt to an unsafe expert when necessary.”"
 msgstr ""
+"「作成者と主レビュアーは、シンプルなアンセーフRust のコードは自分たちで検証"
+"し、必要に応じてアンセーフのエキスパートに任せます。」"
 
 #: src/unsafe-deep-dive/introduction/impact-on-workflow.md
 msgid ""
 "“There are only a few unsafe Rust experts, and they are very busy, so we "
 "need to optimally use their time.”"
 msgstr ""
+"「アンセーフRust のエキスパートはごく少数で、非常に忙しいため、その時間を最適"
+"に使う必要があります。」"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid "Example: may_overflow function"
-msgstr ""
+msgstr "例: may_overflow 関数"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
@@ -42499,41 +42646,56 @@ msgid ""
 "/// Calling this with `a >= 1` causes signed integer overflow, which is\n"
 "/// undefined behavior with `unchecked_add`.\n"
 msgstr ""
+"/// オーバーフローのチェックを行わずに、負の数に 2^31 - 1 を加算します。\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// `a >= 1` でこれを呼び出すと符号付き整数オーバーフローが発生し、\n"
+"/// これは `unchecked_add` では未定義の動作となります。\n"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
-#, fuzzy
 msgid "\"{x}\""
-msgstr "\"x: {x}\""
+msgstr "\"{x}\""
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“The `unsafe` keyword may have a subtly different meaning than what some "
 "people assume.”"
 msgstr ""
+"「`unsafe` キーワードには、一部の人が想定しているものとは微妙に異なる意味があ"
+"る場合があります。」"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“The code author believes that the code is correct. In principle, the code "
 "is safe.”"
 msgstr ""
+"「コードの作成者はコードが正しいと信じています。原理的には、このコードは安全"
+"です。」"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“In this toy example, the `may_overflow` function is only intended to be "
 "called with negative numbers."
 msgstr ""
+"「このトイ サンプルでは、`may_overflow` 関数は負の数でのみ呼び出されることを"
+"想定しています。"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "Ask learners if they can explain why `may_overflow` requires the unsafe "
 "keyword."
 msgstr ""
+"`may_overflow` に unsafe キーワードが必要な理由を説明できるかどうか、学習者に"
+"尋ねます。"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“In case you’re unsure what the problem is, let’s pause briefly to explain. "
 "An `i32` only has 31 bits available for positive numbers."
 msgstr ""
+"「何が問題なのかよく分からない方のために、少し立ち止まって説明しましょう。"
+"`i32` で正の数に使えるのは 31 ビットだけです。"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
@@ -42545,6 +42707,13 @@ msgid ""
 "that undefined behavior is impossible, which can cause dead-code elimination "
 "and unexpected runtime behavior."
 msgstr ""
+"標準のセーフRust では、整数オーバーフロー（`a + i32::MAX`）は未定義の動作では"
+"ありません。オーバーフローチェックが有効な場合（デバッグモード）はパニックに"
+"なり、リリースモードでは 2 の補数によるラップアラウンドが行われます。しかし、"
+"`unchecked_add` は `unsafe` な操作であり、オーバーフローチェックを完全に省略"
+"し、オーバーフローを未定義の動作（UB）と定めています。コンパイラは未定義の動"
+"作が起こりえないという前提でコードを最適化するため、デッドコードの削除や予期"
+"しない実行時の動作が起こる可能性があります。"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
@@ -42553,17 +42722,24 @@ msgid ""
 "i32::unchecked_add cannot overflow`). In release mode, `unchecked_add` "
 "produces actual UB."
 msgstr ""
+"コードをコンパイルして実行します。デバッグモードでは、標準ライブラリが安全性"
+"の前提条件の違反を検出してパニックになります（`unsafe precondition(s) "
+"violated: i32::unchecked_add cannot overflow`）。リリースモードでは、"
+"`unchecked_add` は実際に UB を引き起こします。"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“This code can be used correctly, however, improper usage is highly "
 "dangerous.”"
 msgstr ""
+"「このコードは正しく使用することもできますが、不適切な使用は非常に危険で"
+"す。」"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
 "“And it's impossible for the compiler to verify that the usage is correct.”"
 msgstr ""
+"「そして、使用方法が正しいことをコンパイラが検証することは不可能です。」"
 
 #: src/unsafe-deep-dive/introduction/may_overflow.md
 msgid ""
@@ -42571,12 +42747,16 @@ msgid ""
 "location where responsibility for memory safety shifts from the compiler to "
 "the programmer."
 msgstr ""
+"これが、`unsafe` キーワードはメモリ安全性に対する責任がコンパイラからプログラ"
+"マに移る場所を示す、と言うときの意味です。"
 
 #: src/unsafe-deep-dive/safety-preconditions.md
 msgid ""
 "Safety preconditions are conditions on an action that must be satisfied "
 "before that action will be safe."
 msgstr ""
+"安全性の前提条件とは、ある操作が安全になるためにその操作の前に満たされていな"
+"ければならない条件です。"
 
 #: src/unsafe-deep-dive/safety-preconditions.md
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
@@ -42584,6 +42764,8 @@ msgid ""
 "“Safety preconditions are conditions on code that must be satisfied to "
 "maintain Rust's safety guarantees"
 msgstr ""
+"「安全性の前提条件とは、Rust の安全性保証を維持するためにコードが満たさなけれ"
+"ばならない条件です。"
 
 #: src/unsafe-deep-dive/safety-preconditions.md
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
@@ -42591,14 +42773,16 @@ msgid ""
 "“You're likely to see a strong affinity between safety preconditions and the "
 "rules of Safe Rust.”"
 msgstr ""
+"「安全性の前提条件とセーフRust のルールの間には、強い類似性が見られるでしょ"
+"う。」"
 
 #: src/unsafe-deep-dive/safety-preconditions.md
 msgid "Q: Can you list any?"
-msgstr ""
+msgstr "Q: 何か挙げられますか？"
 
 #: src/unsafe-deep-dive/safety-preconditions.md
 msgid "(Fuller list in the next slide)"
-msgstr ""
+msgstr "（より詳しいリストは次のスライドにあります）"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Common safety preconditions"
@@ -43064,25 +43248,28 @@ msgid ""
 "“We've seen many examples of code that has problems in the class, but we "
 "lack consistent terminology."
 msgstr ""
+"“このクラスでは問題のあるコードの例を数多く見てきましたが、一貫した用語があり"
+"ません。"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid ""
 "“The goal of the next section is to introduce some terms that describe many "
 "of the concepts that we have been thinking about."
 msgstr ""
+"“次のセクションの目標は、これまで考えてきた多くの概念を説明する用語をいくつか"
+"紹介することです。"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
-#, fuzzy
 msgid "undefined behavior"
-msgstr "実行時に未定義の動作はありません："
+msgstr "未定義の動作"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid "sound"
-msgstr ""
+msgstr "健全（sound）"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid "unsound"
-msgstr ""
+msgstr "不健全（unsound）"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid ""
@@ -43090,12 +43277,16 @@ msgid ""
 "it's important to use a shared vocabulary. That way we can agree on "
 "semantics."
 msgstr ""
+"“安全性の前提条件の多くは構文的なものではなく意味的なものであるため、共通の語"
+"彙を使うことが重要です。そうすることで、意味について合意できます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid ""
 "“The overarching goal is to develop a mental framework of what soundness is "
 "and ensure that Rust code that contains unsafe remains sound.”"
 msgstr ""
+"“全体的な目標は、健全性とは何かについてのメンタルフレームワークを身につけ、"
+"unsafe を含む Rust コードが健全であり続けるようにすることです。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Soundness is fundamental to Rust"
@@ -43609,50 +43800,58 @@ msgid ""
 "Memory moves through different phases as objects (values) are created and "
 "destroyed."
 msgstr ""
+"メモリは、オブジェクト（値）が作成・破棄されるにつれて、さまざまな段階を移り"
+"変わります。"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
-#, fuzzy
 msgid "Memory State"
-msgstr "メモリ管理"
+msgstr "メモリの状態"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid "Readable from Safe Rust?"
-msgstr ""
+msgstr "Safe Rust から読み取り可能か？"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
-#, fuzzy
 msgid "Available"
-msgstr "変数"
+msgstr "利用可能（Available）"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid "Allocated"
-msgstr ""
+msgstr "割り当て済み（Allocated）"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid "Initialized"
-msgstr ""
+msgstr "初期化済み（Initialized）"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid ""
 "This section discusses what happens as memory from the operating system "
 "becomes a valid variable in the program."
 msgstr ""
+"このセクションでは、オペレーティングシステムから得たメモリがプログラム内の有"
+"効な変数になるまでに何が起こるかを説明します。"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid ""
 "When memory is available, the operating system has provided our program with "
 "it."
 msgstr ""
+"メモリが利用可能（available）であるとき、オペレーティングシステムはそのメモリ"
+"をプログラムに提供しています。"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid ""
 "When memory is allocated, it is reserved for values to be written to it. We "
 "call this uninitialized memory."
 msgstr ""
+"メモリが割り当て済み（allocated）であるとき、そのメモリは値を書き込むために予"
+"約されています。これを初期化されていないメモリと呼びます。"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid "When memory is initialized, it is safe to read from."
 msgstr ""
+"メモリが初期化済み（initialized）であるとき、そのメモリからの読み取りは安全で"
+"す。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "`MaybeUninit<T>` allows Rust to refer to uninitialized memory."
@@ -43980,54 +44179,54 @@ msgid ""
 msgstr ""
 
 #: src/unsafe-deep-dive/pinning.md
-#, fuzzy
 msgid "This segment of the course covers:"
-msgstr "このページは講師用です。"
+msgstr "講座のこのセグメントでは、次の内容を扱います:"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid "What \"pinning\" is"
-msgstr ""
+msgstr "「固定」とは何か"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid "Why it is necessary"
-msgstr ""
+msgstr "なぜ必要なのか"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid "How Rust implements it"
-msgstr ""
+msgstr "Rust がどのように実装しているか"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid "How it interacts with unsafe and FFI"
-msgstr ""
+msgstr "unsafe や FFI とどのように関わるか"
 
 #: src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
-#, fuzzy
 msgid "This segment should take about 1 hour and 20 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 10 分です"
+msgstr "このセグメントの所要時間は約 1 時間 20 分です。内容は次のとおりです。"
 
 #: src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/definition-of-pin.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "Definition of Pin"
-msgstr ""
+msgstr "Pin の定義"
 
 #: src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/phantompinned.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "PhantomPinned"
-msgstr ""
+msgstr "PhantomPinned"
 
 #: src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "Pin<Ptr> and Drop"
-msgstr ""
+msgstr "Pin<Ptr> と Drop"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid ""
 "\"Pinning, or holding a value's memory address in a fixed location,is one of "
 "the more challenging concepts in Rust.\""
 msgstr ""
+"\"固定、つまり値のメモリアドレスを固定された位置に保持することは、Rust のより"
+"難しい概念の 1 つです。\""
 
 #: src/unsafe-deep-dive/pinning.md
 msgid ""
@@ -44035,6 +44234,9 @@ msgid ""
 "(https://doc.rust-lang.org/std/future/trait.Future.html#tymethod.poll), "
 "pinning has wider applicability.\""
 msgstr ""
+"\"通常は非同期コード内（例: [`poll(self: Pin<&mut Self>)`](https://doc.rust-"
+"lang.org/std/future/trait.Future.html#tymethod.poll)）でしか見かけませんが、"
+"固定はより広く適用できます。\""
 
 #: src/unsafe-deep-dive/pinning.md
 msgid ""
@@ -44042,6 +44244,8 @@ msgid ""
 "unsafe keyword, including self-referential structs and intrusive data "
 "structures."
 msgstr ""
+"自己参照構造体や侵入型データ構造など、unsafe キーワードなしで書くのが難しい、"
+"または不可能なデータ構造があります。"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid ""
@@ -44049,12 +44253,17 @@ msgid ""
 "assume that any C++ with a reference might be a self-referential data "
 "structure."
 msgstr ""
+"これに関連する代表的なユースケースが C++ との FFI です。Rust は、参照を持つ "
+"C++ のデータはどれも自己参照データ構造である可能性があると想定しなければなり"
+"ません。"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid ""
 "\"To understand this conflict in more detail, we'll first need to make sure "
 "that we have a strong understanding of Rust's move semantics.\""
 msgstr ""
+"「この衝突をより詳しく理解するには、まず Rust のムーブセマンティクスをしっか"
+"り理解しておく必要があります。」"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "A pinned type cannot change its memory address (move)"
