@@ -279,11 +279,11 @@ msgstr "パターンマッチング"
 
 #: src/SUMMARY.md src/pattern-matching.md src/pattern-matching/infallible.md
 msgid "Irrefutable Patterns"
-msgstr ""
+msgstr "論駁不可能なパターン"
 
 #: src/SUMMARY.md src/pattern-matching.md src/pattern-matching/match.md
 msgid "Matching Values"
-msgstr ""
+msgstr "値のマッチング"
 
 #: src/SUMMARY.md src/pattern-matching.md
 msgid "Destructuring Structs"
@@ -299,14 +299,12 @@ msgid "Let Control Flow"
 msgstr "Let制御フロー"
 
 #: src/SUMMARY.md src/pattern-matching/let-control-flow/if-let.md
-#, fuzzy
 msgid "`if let` Expressions"
 msgstr "`if let` 式"
 
 #: src/SUMMARY.md src/pattern-matching/let-control-flow/while-let.md
-#, fuzzy
 msgid "`while let` Statements"
-msgstr "`while let` 式"
+msgstr "`while let` 文"
 
 #: src/SUMMARY.md
 msgid "`let else`"
@@ -346,9 +344,8 @@ msgid "Deriving"
 msgstr "導出"
 
 #: src/SUMMARY.md src/methods-and-traits.md src/methods-and-traits/exercise.md
-#, fuzzy
 msgid "Exercise: Logger Trait"
-msgstr "演習: ジェネリックなロガー"
+msgstr "演習: ロガートレイト"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/welcome-day-2.md src/generics.md src/idiomatic/polymorphism/generics.md
@@ -393,24 +390,20 @@ msgid "Closures"
 msgstr "クロージャ"
 
 #: src/SUMMARY.md src/closures.md src/closures/syntax.md
-#, fuzzy
 msgid "Closure Syntax"
-msgstr "クロージャ"
+msgstr "クロージャの構文"
 
 #: src/SUMMARY.md src/closures.md src/closures/capturing.md
-#, fuzzy
 msgid "Capturing"
-msgstr "文字列（String）"
+msgstr "キャプチャ"
 
 #: src/SUMMARY.md src/closures.md
-#, fuzzy
 msgid "Closure Traits"
-msgstr "他のトレイト"
+msgstr "クロージャトレイト"
 
 #: src/SUMMARY.md src/closures.md src/closures/exercise.md
-#, fuzzy
 msgid "Exercise: Log Filter"
-msgstr "演習: ジェネリックなロガー"
+msgstr "演習: ログフィルタ"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/welcome-day-2-afternoon.md src/std-types.md
@@ -7425,44 +7418,43 @@ msgstr "2日目の講座へようこそ"
 
 #: src/welcome-day-2.md
 msgid "We have covered the foundations of Rust:"
-msgstr ""
+msgstr "ここまでで Rust の基礎を学びました。"
 
 #: src/welcome-day-2.md
 msgid "**Basic Types:** Integers, booleans, characters, tuples, and arrays."
-msgstr ""
+msgstr "**基本的な型:** 整数、ブール値、文字、タプル、配列。"
 
 #: src/welcome-day-2.md
 msgid "**Control Flow:** `if` expressions, loops, and `match` expressions."
-msgstr ""
+msgstr "**制御フロー:** `if` 式、ループ、`match` 式。"
 
 #: src/welcome-day-2.md
 msgid "**Functions:** How to define and call functions."
-msgstr ""
+msgstr "**関数:** 関数の定義方法と呼び出し方法。"
 
 #: src/welcome-day-2.md
-#, fuzzy
 msgid "**User-Defined Types:** Model data with `struct` and `enum`."
-msgstr "ユーザー定義型: 構造体と列挙型。"
+msgstr "**ユーザー定義型:** `struct` と `enum` によるデータのモデル化。"
 
 #: src/welcome-day-2.md
 msgid "**References:** Basic borrowing with `&` and `&mut`."
-msgstr ""
+msgstr "**参照:** `&` と `&mut` による基本的な借用。"
 
 #: src/welcome-day-2.md
 msgid "You can now construct any type in Rust and implement basic logic!"
 msgstr ""
+"これで、Rust で任意の型を構築し、基本的なロジックを実装できるようになりまし"
+"た。"
 
 #: src/welcome-day-2.md src/welcome-day-2-afternoon.md src/welcome-day-4.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 2 hours and 50 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 55 分です。"
+msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 50 分です。"
 
 #: src/pattern-matching.md src/generics.md
-#, fuzzy
 msgid "This segment should take about 50 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 50 分です"
+msgstr "このセグメントの所要時間は約 50 分です。"
 
 #: src/pattern-matching/infallible.md
 msgid ""
@@ -7470,6 +7462,9 @@ msgid ""
 "values. Let's review that and talk about a few other things patterns can "
 "express:"
 msgstr ""
+"1 日目には、パターンを使用して複合値を _分解_ する方法を簡単に見ました。それ"
+"を復習しながら、パターンで表現できる他のいくつかのことについて説明しましょ"
+"う。"
 
 #: src/pattern-matching/infallible.md
 #: src/pattern-matching/let-control-flow/if-let.md
@@ -7585,23 +7580,20 @@ msgstr ""
 #: src/idiomatic/from-oop-to-rust/supertraits.md
 #: src/idiomatic/from-oop-to-rust/composition.md
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
-#, fuzzy
 msgid "// Copyright 2025 Google LLC\n"
-msgstr "# Copyright 2023 Google LLC"
+msgstr "// Copyright 2025 Google LLC\n"
 
 #: src/pattern-matching/infallible.md
-#, fuzzy
 msgid "// This does the same thing as above.\n"
-msgstr "// システム タイマーを遅延目的で使用します。\n"
+msgstr "// これは上記と同じことを行います。\n"
 
 #: src/pattern-matching/infallible.md
-#, fuzzy
 msgid "// Ignore the first element, only bind the second and third.\n"
-msgstr "/// 空でないリスト: 最初の要素とリストの残り。\n"
+msgstr "// 最初の要素を無視し、2 番目と 3 番目の要素のみをバインドします。\n"
 
 #: src/pattern-matching/infallible.md
 msgid "// Ignore everything but the last element.\n"
-msgstr ""
+msgstr "// 最後の要素以外をすべて無視します。\n"
 
 #: src/pattern-matching/infallible.md src/pattern-matching/match.md
 #: src/generics/exercise.md src/generics/solution.md src/std-types/exercise.md
@@ -7615,47 +7607,55 @@ msgid ""
 "All of the demonstrated patterns are _irrefutable_, meaning that they will "
 "always match the value on the right hand side."
 msgstr ""
+"ここで示したパターンはすべて _論駁不可能_ です。つまり、右辺の値に常に一致し"
+"ます。"
 
 #: src/pattern-matching/infallible.md
 msgid ""
 "Patterns are type-specific, including irrefutable patterns. Try adding or "
 "removing an element to the tuple and look at the resulting compiler errors."
 msgstr ""
+"パターンは、論駁不可能なパターンも含めて、型に固有です。タプルに要素を追加ま"
+"たは削除して、その結果生じるコンパイラ エラーを確認してみてください。"
 
 #: src/pattern-matching/infallible.md
 msgid ""
 "Variable names are patterns that always match and bind the matched value "
 "into a new variable with that name."
 msgstr ""
+"変数名は、常に一致し、一致した値をその名前の新しい変数にバインドするパターン"
+"です。"
 
 #: src/pattern-matching/infallible.md
 msgid ""
 "`_` is a pattern that always matches any value, discarding the matched value."
-msgstr ""
+msgstr "`_` は常に任意の値に一致するパターンで、一致した値は破棄されます。"
 
 #: src/pattern-matching/infallible.md
 msgid "`..` allows you to ignore multiple values at once."
-msgstr ""
+msgstr "`..` を使用すると、複数の値を一度に無視できます。"
 
 #: src/pattern-matching/infallible.md
 msgid ""
 "You can also demonstrate more advanced usages of `..`, such as ignoring the "
 "middle elements of a tuple."
 msgstr ""
+"タプルの中間の要素を無視するなど、`..` のより高度な使用方法を示すこともできま"
+"す。"
 
 #: src/pattern-matching/infallible.md
 msgid "All of these patterns work with arrays as well:"
-msgstr ""
+msgstr "これらのパターンはすべて配列でも機能します。"
 
 #: src/pattern-matching/match.md
-#, fuzzy
 msgid ""
 "The `match` keyword lets you match a value against one or more _patterns_. "
 "The patterns can be simple values, similarly to `switch` in C and C++, but "
 "they can also be used to express more complex conditions:"
 msgstr ""
-"`match` キーワードを使用すると、1 つ以上のパターンに対して値を照合できます。"
-"上から順に照合が行われ、最初に一致したパターンのみが実行されます。"
+"`match` キーワードを使用すると、1 つ以上の _パターン_ に対して値を照合できま"
+"す。パターンは C や C++ の `switch` と同様に単純な値にすることもできますが、"
+"より複雑な条件を表現するために使用することもできます。"
 
 #: src/pattern-matching/match.md
 msgid "'x'"
@@ -7706,21 +7706,21 @@ msgid "\"Something else\""
 msgstr "\"Something else\""
 
 #: src/pattern-matching/match.md
-#, fuzzy
 msgid ""
 "A variable in the pattern (`key` in this example) will create a binding that "
 "can be used within the match arm. We will learn more about this on the next "
 "slide."
 msgstr ""
 "パターンの変数（この例では `key`）により、マッチアーム内で使用できるバイン"
-"ディングが作成されます。"
+"ディングが作成されます。これについては次のスライドで詳しく学びます。"
 
 #: src/pattern-matching/match.md
-#, fuzzy
 msgid ""
 "A match guard causes the arm to match only if the condition is true. If the "
 "condition is false the match will continue checking later cases."
-msgstr "マッチガードにより、条件が true の場合にのみアームが一致します。"
+msgstr ""
+"マッチガードにより、条件が true の場合にのみアームが一致します。条件が false "
+"の場合、照合は後続のケースのチェックを続けます。"
 
 #: src/pattern-matching/match.md
 msgid ""
@@ -7734,7 +7734,7 @@ msgstr "`|` を `or` として指定する"
 
 #: src/pattern-matching/match.md
 msgid "`..` matches any number of items"
-msgstr ""
+msgstr "`..` は任意の数の要素に一致します"
 
 #: src/pattern-matching/match.md
 msgid "`1..=5` represents an inclusive range"
@@ -7754,7 +7754,6 @@ msgstr ""
 "能であるマッチガードは重要かつ必要です。"
 
 #: src/pattern-matching/match.md
-#, fuzzy
 msgid ""
 "Match guards are different from `if` expressions after the `=>`. An `if` "
 "expression is evaluated after the match arm is selected. Failing the `if` "
@@ -7762,18 +7761,18 @@ msgid ""
 "`match` expression being considered. In the following example, the wildcard "
 "pattern `_ =>` is never even attempted."
 msgstr ""
-"マッチガードは、マッチアーム内の個別の `if` 式とは異なります。分岐ブロック内"
-"（`=>` の後）の `if` 式は、マッチアームが選択された後に実行されます。そのブ"
-"ロック内で `if` 条件が満たされなかった場合、元の `match` 式の他のアームは考慮"
-"されません。"
+"マッチガードは、`=>` の後の `if` 式とは異なります。`if` 式は、マッチアームが"
+"選択された後に評価されます。そのブロック内で `if` 条件が満たされなかった場合"
+"でも、元の `match` 式の他のアームが考慮されることはありません。次の例では、ワ"
+"イルドカード パターン `_ =>` が試行されることすらありません。"
 
 #: src/pattern-matching/match.md
 msgid "\"Uppercase\""
-msgstr ""
+msgstr "\"Uppercase\""
 
 #: src/pattern-matching/match.md
 msgid "\"Bug: this is never printed\""
-msgstr ""
+msgstr "\"Bug: this is never printed\""
 
 #: src/pattern-matching/match.md
 msgid ""
@@ -7788,15 +7787,17 @@ msgid ""
 "arm, as it will instead be interpreted as a variable name pattern, which "
 "creates a new variable that will shadow the existing one. For example:"
 msgstr ""
+"既存の変数をマッチアームの条件として使用することはできないことに注意してくだ"
+"さい。それは変数名パターンとして解釈され、既存の変数をシャドーイングする新し"
+"い変数が作成されるからです。次に例を示します。"
 
 #: src/pattern-matching/match.md
 msgid "\"Expected value is 5, actual is {expected}\""
-msgstr ""
+msgstr "\"Expected value is 5, actual is {expected}\""
 
 #: src/pattern-matching/match.md
-#, fuzzy
 msgid "\"Value was something else\""
-msgstr "\"Something else\""
+msgstr "\"Value was something else\""
 
 #: src/pattern-matching/match.md
 msgid ""
@@ -7806,16 +7807,23 @@ msgid ""
 "variable pattern which always matches, meaning the first branch will always "
 "be taken. If a constant is used instead this will then work as expected."
 msgstr ""
+"ここでは数値 123 に対して照合を行い、最初のケースで値が 5 かどうかをチェック"
+"しようとしています。素朴に考えると、値が 5 ではないため最初のケースは一致しな"
+"いと予想されますが、実際にはこれは常に一致する変数パターンとして解釈されるた"
+"め、常に最初の分岐が選択されます。代わりに定数を使用すれば、期待どおりに動作"
+"します。"
 
 #: src/pattern-matching/match.md
 msgid ""
 "Another piece of pattern syntax you can show students is the `@` syntax "
 "which binds a part of a pattern to a variable. For example:"
 msgstr ""
+"受講者に紹介できるもう 1 つのパターン構文として、パターンの一部を変数にバイン"
+"ドする `@` 構文があります。次に例を示します。"
 
 #: src/pattern-matching/match.md
 msgid "\"outer: {outer:?}, inner: {inner}\""
-msgstr ""
+msgstr "\"outer: {outer:?}, inner: {inner}\""
 
 #: src/pattern-matching/match.md
 msgid ""
@@ -7824,50 +7832,48 @@ msgid ""
 "it contains the full `Option::Some(123)`. This is rarely used but can be "
 "useful in more complex patterns."
 msgstr ""
+"この例では、`inner` は分解によって `Option` から取り出された値 123 を持ち、"
+"`outer` は `Some(inner)` 式全体をキャプチャするため、`Option::Some(123)` 全体"
+"を含みます。これはめったに使用されませんが、より複雑なパターンで役立つことが"
+"あります。"
 
 #: src/pattern-matching/destructuring-structs.md
 msgid "Structs"
 msgstr "構造体（structs）"
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid "Like tuples, structs can also be destructured by matching:"
-msgstr ""
-"タプルと同様に、構造体と列挙型もパターンマッチによりデストラクトできます。"
+msgstr "タプルと同様に、構造体もパターンマッチによりデストラクトできます。"
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid "\"Standing still\""
-msgstr "\"bindings\""
+msgstr "\"Standing still\""
 
 #: src/pattern-matching/destructuring-structs.md
 msgid "\"{repeat} step x: {x}\""
-msgstr ""
+msgstr "\"{repeat} step x: {x}\""
 
 #: src/pattern-matching/destructuring-structs.md
 msgid "\"Single step y: {y}\""
-msgstr ""
+msgstr "\"Single step y: {y}\""
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid "\"Other move\""
-msgstr "\"there\""
+msgstr "\"Other move\""
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid "Change the literal values in `m` to match with the other patterns."
-msgstr "`foo` のリテラル値を他のパターンと一致するように変更します。"
+msgstr "`m` のリテラル値を他のパターンと一致するように変更します。"
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid ""
 "Add a new field to `Movement` and make changes to the pattern as needed."
 msgstr ""
-"`Foo` に新しいフィールドを追加し、必要に応じてパターンに変更を加えます。"
+"`Movement` に新しいフィールドを追加し、必要に応じてパターンに変更を加えます。"
 
 #: src/pattern-matching/destructuring-structs.md
 msgid "Note how `delta: (x, 0)` is a nested pattern."
-msgstr ""
+msgstr "`delta: (x, 0)` がネストされたパターンであることに注目してください。"
 
 #: src/pattern-matching/destructuring-structs.md
 msgid ""
@@ -7876,29 +7882,30 @@ msgid ""
 "ergonomics](https://rust-lang.github.io/rfcs/2005-match-ergonomics.html) and "
 "is often useful with `match self` when implementing methods on an enum."
 msgstr ""
+"`match &m` を試して、キャプチャの型を確認してください。パターンの構文は同じま"
+"まですが、キャプチャは共有参照になります。これは [match ergonomics](https://"
+"rust-lang.github.io/rfcs/2005-match-ergonomics.html) と呼ばれるもので、列挙型"
+"にメソッドを実装する際の `match self` でよく役立ちます。"
 
 #: src/pattern-matching/destructuring-structs.md
 msgid ""
 "The same effect occurs with `match &mut m`: the captures become exclusive "
 "references."
-msgstr ""
+msgstr "`match &mut m` でも同じ効果があり、キャプチャは排他参照になります。"
 
 #: src/pattern-matching/destructuring-structs.md
-#, fuzzy
 msgid ""
 "The distinction between a capture and a constant expression can be hard to "
 "spot. Try changing the `0` in the first arm to a variable, and see that it "
 "subtly doesn't work. Change it to a `const` and see it working again."
 msgstr ""
-"キャプチャと定数式を区別しづらい場合があります。2 つ目のアームの `2` を変数に"
-"変更してみて、うまく機能しないことを確認します。これを `const` に変更して、再"
-"び動作することを確認します。"
+"キャプチャと定数式を区別しづらい場合があります。1 つ目のアームの `0` を変数に"
+"変更してみて、微妙にうまく機能しないことを確認します。これを `const` に変更し"
+"て、再び動作することを確認します。"
 
 #: src/pattern-matching/destructuring-enums.md
-#, fuzzy
 msgid "Like tuples, enums can also be destructured by matching:"
-msgstr ""
-"タプルと同様に、構造体と列挙型もパターンマッチによりデストラクトできます。"
+msgstr "タプルと同様に、列挙型もパターンマッチによりデストラクトできます。"
 
 #: src/pattern-matching/destructuring-enums.md
 msgid ""
@@ -7969,15 +7976,17 @@ msgid ""
 "definition and the `match`. Point out how this is syntactically similar to "
 "matching on a struct."
 msgstr ""
+"列挙型の定義と `match` に構造体形式のバリアントを 1 つ追加して、その構文を示"
+"してください。これが構文的に構造体に対するマッチとよく似ていることを指摘して"
+"ください。"
 
 #: src/pattern-matching/let-control-flow.md
-#, fuzzy
 msgid ""
 "Rust has a few control flow constructs that differ from other languages. "
 "They are used for pattern matching:"
 msgstr ""
 "Rust には、他の言語とは異なる制御フロー構造がいくつかあります。これらはパター"
-"ン マッチングに使用されます。"
+"ンマッチに使用されます。"
 
 #: src/pattern-matching/let-control-flow.md
 msgid "`if let` expressions"
@@ -8002,9 +8011,8 @@ msgstr ""
 "応じて異なるコードを実行できます。"
 
 #: src/pattern-matching/let-control-flow/if-let.md
-#, fuzzy
 msgid "\"slept for {duration:?}\""
-msgstr "\"slept for {:?}\""
+msgstr "\"slept for {duration:?}\""
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid ""
@@ -8028,27 +8036,25 @@ msgstr ""
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid "With an `else` clause, this can be used as an expression."
-msgstr ""
+msgstr "`else` 節を付けると、これを式として使用できます。"
 
 #: src/pattern-matching/let-control-flow/while-let.md
-#, fuzzy
 msgid ""
 "Like with `if let`, there is a [`while let`](https://doc.rust-lang.org/"
 "reference/expressions/loop-expr.html#predicate-pattern-loops) variant that "
 "repeatedly tests a value against a pattern:"
 msgstr ""
-"`if let` に似た [`while let`](https://doc.rust-lang.org/reference/"
-"expressions/loop-expr.html#predicate-pattern-loops) 派生物もあります。これ"
-"は、パターンに照らして値をテストします。"
+"`if let` と同様に、[`while let`](https://doc.rust-lang.org/reference/"
+"expressions/loop-expr.html#predicate-pattern-loops) という形式もあります。こ"
+"れは、値をパターンに照らして繰り返しテストします。"
 
 #: src/pattern-matching/let-control-flow/while-let.md
-#, fuzzy
 msgid "\"Comprehensive Rust 🦀\""
-msgstr "Comprehensive Rust 🦀 へようこそ"
+msgstr "\"Comprehensive Rust 🦀\""
 
 #: src/pattern-matching/let-control-flow/while-let.md
 msgid "// (There are more efficient ways to reverse a string!)\n"
-msgstr ""
+msgstr "// （文字列を反転するには、もっと効率的な方法があります！）\n"
 
 #: src/pattern-matching/let-control-flow/while-let.md
 msgid ""
@@ -8085,11 +8091,12 @@ msgid ""
 "This form cannot be used as an expression, because it may have no value if "
 "the condition is false."
 msgstr ""
+"条件が偽の場合に値を持たない可能性があるため、この形式は式として使用できませ"
+"ん。"
 
 #: src/pattern-matching/let-control-flow/let-else.md
-#, fuzzy
 msgid "`let else` Statements"
-msgstr "`let else` 式"
+msgstr "`let else` 文"
 
 #: src/pattern-matching/let-control-flow/let-else.md
 msgid ""
@@ -8131,12 +8138,17 @@ msgid ""
 "where you try to get a value out of a `Result`, returning an error if the "
 "`Result` was `Err`."
 msgstr ""
+"この早期リターンに基づく制御フローは、Rust のエラー処理コードでよく使われま"
+"す。`Result` から値を取り出そうとし、`Result` が `Err` だった場合はエラーを返"
+"す、という形です。"
 
 #: src/pattern-matching/let-control-flow/let-else.md
 msgid ""
 "If students ask, you can also demonstrate how real error handling code would "
 "be written with `?`."
 msgstr ""
+"受講者から質問があれば、実際のエラー処理コードが `?` を使ってどのように書かれ"
+"るかを示すこともできます。"
 
 #: src/pattern-matching/exercise.md
 msgid "Let's write a simple recursive evaluator for arithmetic expressions."
@@ -8147,16 +8159,20 @@ msgid ""
 "An example of a small arithmetic expression could be `10 + 20`, which "
 "evaluates to `30`. We can represent the expression as a tree:"
 msgstr ""
+"小さな算術式の例として `10 + 20` が挙げられます。これは評価すると `30` になり"
+"ます。この式は次のようなツリーとして表現できます。"
 
 #: src/pattern-matching/exercise.md
 msgid ""
 "A bigger and more complex expression would be `(10 * 9) + ((3 - 4) * 5)`, "
 "which evaluates to `85`. We represent this as a much bigger tree:"
 msgstr ""
+"より大きく複雑な式として `(10 * 9) + ((3 - 4) * 5)` があります。これは評価す"
+"ると `85` になります。これは、はるかに大きなツリーとして表現されます。"
 
 #: src/pattern-matching/exercise.md
 msgid "In code, we will represent the tree with two types:"
-msgstr ""
+msgstr "コードでは、このツリーを 2 つの型で表現します。"
 
 #: src/pattern-matching/exercise.md src/pattern-matching/solution.md
 #: src/error-handling/exercise.md src/error-handling/solution.md
@@ -8192,24 +8208,23 @@ msgstr ""
 
 #: src/pattern-matching/exercise.md
 msgid "Create a new Cargo library project with"
-msgstr ""
+msgstr "次のコマンドで新しい Cargo ライブラリプロジェクトを作成します。"
 
 #: src/pattern-matching/exercise.md
 msgid "Copy and paste the code below into a the `src/lib.rs` file."
-msgstr ""
+msgstr "以下のコードをコピーして `src/lib.rs` ファイルに貼り付けます。"
 
 #: src/pattern-matching/exercise.md
-#, fuzzy
 msgid ""
 "Then begin implementing `eval`. Use `cargo test` to ensure that the final "
 "library passes the tests. It may be helpful to use `todo!()` and get the "
 "tests to pass one-by-one. You can also skip a test temporarily with "
 "`#[ignore]`:"
 msgstr ""
-"コードをコピーして Rust プレイグラウンドに貼り付け、`eval` の実装を開始しま"
-"す。完成したエバリュエータはテストに合格する必要があります。`todo!()` を使用"
-"して、テストを 1 つずつ実施することをおすすめします。`#[ignore]` を使用して、"
-"テストを一時的にスキップすることもできます。"
+"次に `eval` の実装を開始します。`cargo test` を使用して、完成したライブラリが"
+"テストに合格することを確認してください。`todo!()` を使用して、テストを 1 つず"
+"つ合格させていくと良いでしょう。`#[ignore]` を使用して、テストを一時的にス"
+"キップすることもできます。"
 
 #: src/methods-and-traits/methods.md
 msgid ""
@@ -8240,9 +8255,8 @@ msgid "\"Lap {idx}: {lap} sec\""
 msgstr "\"Lap {idx}: {lap} sec\""
 
 #: src/methods-and-traits/methods.md
-#, fuzzy
 msgid "// Exclusive ownership of self (covered later)\n"
-msgstr "// 自身の排他的所有権\n"
+msgstr "// self の排他的所有権（後で説明します）\n"
 
 #: src/methods-and-traits/methods.md
 msgid "\"Race {} is finished, total lap time: {}\""
@@ -8297,13 +8311,12 @@ msgid "`mut self`: same as above, but the method can mutate the object."
 msgstr "`mut self`: 上記と同じですが、メソッドはオブジェクトを変更できます。"
 
 #: src/methods-and-traits/methods.md
-#, fuzzy
 msgid ""
 "No receiver: this becomes a static method on the struct. Typically used to "
 "create constructors that are called `new` by convention."
 msgstr ""
-"レシーバなし: 構造体の静的メソッドになります。通常は、`new` と呼ばれるコンス"
-"トラクタを作成するために使用されます。"
+"レシーバなし: 構造体の静的メソッドになります。通常は、慣例的に `new` と呼ばれ"
+"るコンストラクタを作成するために使用されます。"
 
 #: src/methods-and-traits/methods.md
 msgid "It can be helpful to introduce methods by comparing them to functions."
@@ -8332,6 +8345,8 @@ msgid ""
 "Note that methods can also be called like associated functions by explicitly "
 "passing the receiver in, e.g. `CarRace::add_lap(&mut race, 20)`."
 msgstr ""
+"メソッドは、レシーバを明示的に渡すことで関連関数のように呼び出すこともできま"
+"す。例: `CarRace::add_lap(&mut race, 20)`。"
 
 #: src/methods-and-traits/methods.md
 msgid "Point out the use of the keyword `self`, a method receiver."
@@ -8388,14 +8403,12 @@ msgstr ""
 "インターフェースに似ています："
 
 #: src/methods-and-traits/traits.md
-#, fuzzy
 msgid "/// Return a sentence from this pet.\n"
-msgstr "// このモジュールから型を再エクスポートします。\n"
+msgstr "/// このペットの文を返します。\n"
 
 #: src/methods-and-traits/traits.md
-#, fuzzy
 msgid "/// Print a string to the terminal greeting this pet.\n"
-msgstr "/// 挨拶を標準出力に出力します。\n"
+msgstr "/// このペットに挨拶する文字列をターミナルに出力します。\n"
 
 #: src/methods-and-traits/traits.md
 msgid ""
@@ -8410,6 +8423,8 @@ msgid ""
 "In the \"Generics\" segment, next, we will see how to build functionality "
 "that is generic over all types implementing a trait."
 msgstr ""
+"次の「ジェネリクス」セグメントでは、トレイトを実装するすべての型に対してジェ"
+"ネリックな機能を構築する方法を説明します。"
 
 #: src/methods-and-traits/traits/implementing.md
 msgid "\"Oh you're a cutie! What's your name? {}\""
@@ -8428,11 +8443,12 @@ msgid "\"Fido\""
 msgstr "\"Fido\""
 
 #: src/methods-and-traits/traits/implementing.md
-#, fuzzy
 msgid ""
 "To implement `Trait` for `Type`, you use an `impl Trait for Type { .. }` "
 "block."
-msgstr "トレイトは `impl <trait> for <type> { .. }` ブロックに実装されます。"
+msgstr ""
+"`Type` に `Trait` を実装するには、`impl Trait for Type { .. }` ブロックを使用"
+"します。"
 
 #: src/methods-and-traits/traits/implementing.md
 msgid ""
@@ -8440,17 +8456,19 @@ msgid ""
 "type with a `talk()` method would not automatically satisfy `Pet` unless it "
 "is in an `impl Pet` block."
 msgstr ""
+"Go のインターフェースとは異なり、一致するメソッドがあるだけでは不十分です。"
+"`talk()` メソッドを持つ `Cat` 型は、`impl Pet` ブロック内になければ、自動的"
+"に `Pet` を満たすことはありません。"
 
 #: src/methods-and-traits/traits/implementing.md
-#, fuzzy
 msgid ""
 "Traits may provide default implementations of some methods. Default "
 "implementations can rely on all the methods of the trait. In this case, "
 "`greet` is provided, and relies on `talk`."
 msgstr ""
-"トレイトは予め実装された（デフォルトの）メソッドと、ユーザが自身で実装する必"
-"要のあるメソッドを指定することができます。デフォルトの実装のあるメソッドは、"
-"その定義を実装必須のメソットに依存することができます。"
+"トレイトは、一部のメソッドのデフォルト実装を提供できます。デフォルト実装は、"
+"トレイトのすべてのメソッドに依存できます。この例では、`greet` が提供されてお"
+"り、`talk` に依存しています。"
 
 #: src/methods-and-traits/traits/implementing.md
 msgid ""
@@ -8459,6 +8477,11 @@ msgid ""
 "be implemented for a given type (and often types implement many traits!). "
 "`impl` blocks can even be spread across multiple modules/files."
 msgstr ""
+"1 つの型に対して複数の `impl` ブロックを書くことができます。これには固有の "
+"`impl` ブロックとトレイトの `impl` ブロックの両方が含まれます。同様に、1 つの"
+"型に複数のトレイトを実装できます（多くの型は多数のトレイトを実装していま"
+"す！）。`impl` ブロックは複数のモジュールやファイルにまたがって配置することも"
+"できます。"
 
 #: src/methods-and-traits/traits/supertraits.md
 msgid ""
@@ -8466,15 +8489,17 @@ msgid ""
 "called _supertraits_. Here, any type implementing `Pet` must implement "
 "`Animal`."
 msgstr ""
+"トレイトは、それを実装する型が他のトレイトも実装することを要求できます。これ"
+"を _スーパートレイト_ と呼びます。この例では、`Pet` を実装するすべての型は "
+"`Animal` を実装する必要があります。"
 
 #: src/methods-and-traits/traits/supertraits.md
 msgid "\"Rex\""
 msgstr "\"Rex\""
 
 #: src/methods-and-traits/traits/supertraits.md
-#, fuzzy
 msgid "\"{} has {} legs\""
-msgstr "\"{} is {} years old\""
+msgstr "\"{} has {} legs\""
 
 #: src/methods-and-traits/traits/supertraits.md
 msgid ""
@@ -8482,12 +8507,15 @@ msgid ""
 "expect this to behave like OO inheritance. It just specifies an additional "
 "requirement on implementations of a trait."
 msgstr ""
+"これは「トレイトの継承」と呼ばれることもありますが、OO の継承のように動作する"
+"ものだと受講者が考えないようにしてください。これは、トレイトの実装に追加の要"
+"件を指定するだけです。"
 
 #: src/methods-and-traits/traits/associated-types.md
 msgid ""
 "Associated types are placeholder types that are supplied by the trait "
 "implementation."
-msgstr ""
+msgstr "関連型は、トレイトの実装によって指定されるプレースホルダ型です。"
 
 #: src/methods-and-traits/traits/associated-types.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
@@ -8502,12 +8530,16 @@ msgid ""
 "Associated types are sometimes also called \"output types\". The key "
 "observation is that the implementer, not the caller, chooses this type."
 msgstr ""
+"関連型は「出力型」と呼ばれることもあります。重要なのは、呼び出し元ではなく実"
+"装者がこの型を選択するという点です。"
 
 #: src/methods-and-traits/traits/associated-types.md
 msgid ""
 "Many standard library traits have associated types, including arithmetic "
 "operators and `Iterator`."
 msgstr ""
+"算術演算子や `Iterator` など、標準ライブラリの多くのトレイトに関連型がありま"
+"す。"
 
 #: src/methods-and-traits/deriving.md
 msgid ""
@@ -8534,9 +8566,8 @@ msgstr ""
 "// デバッグ トレイトで、`{:?}` を使用した出力のサポートを追加します。\n"
 
 #: src/methods-and-traits/deriving.md
-#, fuzzy
 msgid "\"{p1:?} vs. {p2:?}\""
-msgstr "\"{:?} vs. {:?}\""
+msgstr "\"{p1:?} vs. {p2:?}\""
 
 #: src/methods-and-traits/deriving.md
 msgid ""
@@ -8554,6 +8585,9 @@ msgid ""
 "implementation that is correct for most cases. For example, demonstrate how "
 "a manual `Clone` impl can be repetitive compared to deriving the trait:"
 msgstr ""
+"導出は通常、ほとんどの場合に正しい共通の定型的な実装を持つトレイトに対して提"
+"供されます。たとえば、手動の `Clone` 実装が、トレイトを導出する場合と比べてど"
+"れほど冗長になるかを示してください。"
 
 #: src/methods-and-traits/deriving.md
 msgid ""
@@ -8561,9 +8595,11 @@ msgid ""
 "demonstrates the generally boilerplate-y pattern that manual impls would "
 "follow, which should help make the use of `derive` clear to students."
 msgstr ""
+"この例では上記の `.clone()` がすべて必要なわけではありませんが、手動の実装が"
+"従う一般的な定型パターンを示しています。これにより、受講者が `derive` を使う"
+"理由を理解しやすくなるはずです。"
 
 #: src/methods-and-traits/exercise.md
-#, fuzzy
 msgid ""
 "Let's design a simple logging utility, using a trait `Logger` with a `log` "
 "method. Code that might log its progress can then take an `&impl Logger`. In "
@@ -8571,13 +8607,12 @@ msgid ""
 "build it would send messages to a log server."
 msgstr ""
 "トレイト `Logger` と `log` メソッドを使用して、シンプルなロギングユーティリ"
-"ティを設計してみましょう。進行状況をログに記録するコードは、その後に `&impl "
-"Logger` を受け取ることができます。この場合、テストではテストログファイルに"
-"メッセージが書き込まれますが、本番環境ビルドではログサーバーにメッセージが送"
-"信されます。"
+"ティを設計してみましょう。進行状況をログに記録するコードは、`&impl Logger` を"
+"受け取ることができます。テストではテストログファイルにメッセージが書き込ま"
+"れ、本番環境ビルドではログサーバーにメッセージが送信される、といった使い方が"
+"できます。"
 
 #: src/methods-and-traits/exercise.md
-#, fuzzy
 msgid ""
 "However, the `StderrLogger` given below logs all messages, regardless of "
 "verbosity. Your task is to write a `VerbosityFilter` type that will ignore "
@@ -8588,7 +8623,6 @@ msgstr ""
 "無視する `VerbosityFilter` 型を作成することです。"
 
 #: src/methods-and-traits/exercise.md
-#, fuzzy
 msgid ""
 "This is a common pattern: a struct wrapping a trait implementation and "
 "implementing that same trait, adding behavior in the process. In the "
@@ -8596,8 +8630,8 @@ msgid ""
 "wrapped type."
 msgstr ""
 "これは一般的なパターンです。つまり、トレイト実装をラップして同じトレイトを実"
-"装し、その過程で挙動を追加していく構造体です。ロギングユーティリティでは他に"
-"どのような種類のラッパーが役立つでしょうか。"
+"装し、その過程で挙動を追加する構造体です。「ジェネリクス」セグメントでは、"
+"ラップされる型に対してラッパーをジェネリックにする方法を説明します。"
 
 #: src/methods-and-traits/exercise.md src/methods-and-traits/solution.md
 #: src/generics/generic-data.md src/closures/exercise.md
@@ -8615,9 +8649,8 @@ msgid "/// Only log messages up to the given verbosity level.\n"
 msgstr "/// 指定された詳細度レベルまでのメッセージのみをログに記録。\n"
 
 #: src/methods-and-traits/exercise.md
-#, fuzzy
 msgid "// TODO: Implement the `Logger` trait for `VerbosityFilter`.\n"
-msgstr "// `RotDecoder` の `Read` トレイトを実装します。\n"
+msgstr "// TODO: `VerbosityFilter` に `Logger` トレイトを実装します。\n"
 
 #: src/methods-and-traits/exercise.md src/methods-and-traits/solution.md
 #: src/generics/generic-data.md src/closures/exercise.md
@@ -8635,43 +8668,37 @@ msgid "impl Trait"
 msgstr "impl Trait"
 
 #: src/generics.md
-#, fuzzy
 msgid "dyn Trait"
-msgstr "Asyncトレイト"
+msgstr "dyn Trait"
 
 #: src/generics.md
-#, fuzzy
 msgid "Exercise: Generic min"
-msgstr "演習: ジェネリックな `min`"
+msgstr "演習: ジェネリックな min"
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid ""
 "Rust supports generics, which lets you abstract algorithms or data "
 "structures (such as sorting or a binary tree) over the types used or stored."
 msgstr ""
-"Rustはジェネリクス（generics）をサポートします。これにより、使用または保存す"
-"る型に関してアルゴリズムやデータ構造（ソートアルゴリズムや、二分木など）を抽"
-"象化することができます。"
+"Rust はジェネリクス（generics）をサポートしています。これにより、使用または保"
+"存する型に関してアルゴリズムやデータ構造（ソートや二分木など）を抽象化するこ"
+"とができます。"
 
 #: src/generics/generic-functions.md
 msgid "\"picked a number: {:?}\""
 msgstr "\"picked a number: {:?}\""
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid "\"picked a string: {:?}\""
-msgstr "\"picked a tuple: {:?}\""
+msgstr "\"picked a string: {:?}\""
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid "'L'"
-msgstr "'x'"
+msgstr "'L'"
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid "'R'"
-msgstr "'x'"
+msgstr "'R'"
 
 #: src/generics/generic-functions.md
 msgid ""
@@ -8680,6 +8707,10 @@ msgid ""
 "reduce code duplication, or after talking about generics to show how "
 "monomorphization works."
 msgstr ""
+"`pick` の単相化されたバージョンを示すと役立つことがあります。ジェネリックな "
+"`pick` について話す前に示せば、ジェネリクスによってコードの重複をどのように減"
+"らせるかがわかります。ジェネリクスについて話した後に示せば、単相化の仕組みが"
+"わかります。"
 
 #: src/generics/generic-functions.md
 msgid ""
@@ -8692,9 +8723,10 @@ msgid ""
 "In this example we only use the primitive types `i32` and `char` for `T`, "
 "but we can use any type here, including user-defined types:"
 msgstr ""
+"この例では `T` にプリミティブ型の `i32` と `char` だけを使用していますが、"
+"ユーザー定義型を含め、任意の型を使用できます。"
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid ""
 "This is similar to C++ templates, but Rust partially compiles the generic "
 "function immediately, so that function must be valid for all types matching "
@@ -8704,19 +8736,20 @@ msgid ""
 msgstr ""
 "これは C++ テンプレートに似ていますが、Rust はジェネリック関数を部分的にすぐ"
 "にコンパイルするため、その関数は制約に一致するすべての型に対して有効である必"
-"要があります。たとえば、`n == 0` の場合は `even + odd` を返すように `pick` を"
-"変更してみてください。整数を使用した `pick` インスタンス化のみが使用されてい"
-"る場合でも、Rust はそれを無効とみなします。C++ ではこれを行うことができます。"
+"要があります。たとえば、`cond` が false の場合は `left + right` を返すように "
+"`pick` を変更してみてください。整数を使用した `pick` インスタンス化のみが使用"
+"されている場合でも、Rust はそれを無効とみなします。C++ ではこれを行うことがで"
+"きます。"
 
 #: src/generics/generic-functions.md
-#, fuzzy
 msgid ""
 "Generic code is turned into non-generic code based on the call sites. This "
 "is a zero-cost abstraction: you get exactly the same result as if you had "
 "hand-coded the data structures without the abstraction."
 msgstr ""
-"これはゼロコスト抽象化です：抽象化なしに手作業でデータ構造を書いたときと、全"
-"く同じ結果を得ることができます。"
+"ジェネリックなコードは、呼び出し箇所に基づいて非ジェネリックなコードに変換さ"
+"れます。これはゼロコスト抽象化です。抽象化なしに手作業でデータ構造を書いたと"
+"きと、まったく同じ結果が得られます。"
 
 #: src/generics/trait-bounds.md
 msgid ""
@@ -8731,18 +8764,16 @@ msgstr ""
 "172)。）"
 
 #: src/generics/trait-bounds.md
-#, fuzzy
 msgid "You can do this with `T: Trait`:"
-msgstr "そうしたことは`T: Trait` や `impl Trait`を用いて行えます："
+msgstr "これは `T: Trait` を用いて行えます。"
 
 #: src/generics/trait-bounds.md
 msgid "\"{pair:?}\""
 msgstr "\"{pair:?}\""
 
 #: src/generics/trait-bounds.md
-#, fuzzy
 msgid "Try making a `NotCloneable` and passing it to `duplicate`."
-msgstr "`NonClonable` を作成して`duplicate` に渡してみてください。"
+msgstr "`NotCloneable` を作成して `duplicate` に渡してみてください。"
 
 #: src/generics/trait-bounds.md
 msgid "When multiple traits are necessary, use `+` to join them."
@@ -8782,33 +8813,30 @@ msgstr ""
 "ません。"
 
 #: src/generics/generic-data.md
-#, fuzzy
 msgid ""
 "You can use generics to abstract over the concrete field type. Returning to "
 "the exercise for the previous segment:"
 msgstr ""
-"ジェネリクスを使って、具体的なフィールドの型を抽象化することができます："
+"ジェネリクスを使って、具体的なフィールドの型を抽象化することができます。前の"
+"セグメントの演習に戻ってみましょう。"
 
 #: src/generics/generic-data.md src/closures/exercise.md
 #: src/closures/solution.md
-#, fuzzy
 msgid "\"[stderr] verbosity={verbosity}: {message}\""
-msgstr "\"verbosity={verbosity}: {message}\""
+msgstr "\"[stderr] verbosity={verbosity}: {message}\""
 
 #: src/generics/generic-data.md src/closures/exercise.md
 #: src/closures/solution.md
-#, fuzzy
 msgid "\"[stdout] verbosity={verbosity}: {message}\""
-msgstr "\"verbosity={verbosity}: {message}\""
+msgstr "\"[stdout] verbosity={verbosity}: {message}\""
 
 #: src/generics/generic-data.md
-#, fuzzy
 msgid ""
 "_Q:_ Why is `L` specified twice in `impl<L: Logger> .. VerbosityFilter<L>`? "
 "Isn't that redundant?"
 msgstr ""
-"_Q:_ なぜ`T`は２回も `impl<T> Point<T> {}` において指定されたのでしょうか？冗"
-"長ではありませんか？"
+"_Q:_ なぜ `L` は `impl<L: Logger> .. VerbosityFilter<L>` において 2 回も指定"
+"されているのでしょうか？冗長ではありませんか？"
 
 #: src/generics/generic-data.md
 msgid ""
@@ -8819,26 +8847,24 @@ msgstr ""
 "れらは独立してジェネリックです。"
 
 #: src/generics/generic-data.md
-#, fuzzy
 msgid "It means these methods are defined for any `L`."
 msgstr ""
-"つまり、そのようなメソッドは任意の`T`に対して定義されるということです。"
+"つまり、これらのメソッドは任意の `L` に対して定義されるということです。"
 
 #: src/generics/generic-data.md
-#, fuzzy
 msgid "It is possible to write `impl VerbosityFilter<StderrLogger> { .. }`."
-msgstr "`impl Point<u32> { .. }`のように書くことも可能です。 "
+msgstr ""
+"`impl VerbosityFilter<StderrLogger> { .. }` のように書くことも可能です。"
 
 #: src/generics/generic-data.md
-#, fuzzy
 msgid ""
 "`VerbosityFilter` is still generic and you can use `VerbosityFilter<f64>`, "
 "but methods in this block will only be available for "
 "`VerbosityFilter<StderrLogger>`."
 msgstr ""
-"`Point`はそれでもなおジェネリックであり、 `Point<f64>`を使うことができます。"
-"しかし、このブロックでのメソッドは`Point<u32>`に対してのみ利用可能となりま"
-"す。"
+"`VerbosityFilter` はそれでもなおジェネリックであり、`VerbosityFilter<f64>` を"
+"使うことができます。しかし、このブロック内のメソッドは "
+"`VerbosityFilter<StderrLogger>` に対してのみ利用可能となります。"
 
 #: src/generics/generic-data.md
 msgid ""
@@ -8846,6 +8872,9 @@ msgid ""
 "You can put bounds there as well, but generally in Rust we only put the "
 "trait bounds on the impl blocks."
 msgstr ""
+"`VerbosityFilter` 型自体にはトレイト境界を付けていないことに注意してくださ"
+"い。そこに境界を付けることもできますが、Rust では一般に、トレイト境界は impl "
+"ブロックにのみ付けます。"
 
 #: src/generics/generic-traits.md
 msgid ""
@@ -8854,14 +8883,18 @@ msgid ""
 "(https://doc.rust-lang.org/std/convert/trait.From.html) trait is used to "
 "define type conversions:"
 msgstr ""
+"トレイトも、型や関数と同様にジェネリックにできます。トレイトのパラメータは、"
+"トレイトが使用されるときに具体的な型になります。たとえば、[`From<T>`]"
+"(https://doc.rust-lang.org/std/convert/trait.From.html) トレイトは型変換を定"
+"義するために使用されます。"
 
 #: src/generics/generic-traits.md
 msgid "\"Converted from integer: {from}\""
-msgstr ""
+msgstr "\"Converted from integer: {from}\""
 
 #: src/generics/generic-traits.md
 msgid "\"Converted from bool: {from}\""
-msgstr ""
+msgstr "\"Converted from bool: {from}\""
 
 #: src/generics/generic-traits.md
 msgid ""
@@ -8869,6 +8902,9 @@ msgid ""
 "the `std` docs](https://doc.rust-lang.org/std/convert/trait.From.html) is "
 "simple, and copied here for reference."
 msgstr ""
+"`From` トレイトについては講座の後半で説明しますが、[`std` ドキュメントでの定"
+"義](https://doc.rust-lang.org/std/convert/trait.From.html) はシンプルなので、"
+"参考までにここにコピーしています。"
 
 #: src/generics/generic-traits.md
 msgid ""
@@ -8876,6 +8912,9 @@ msgid ""
 "parameters. Here, `Foo::from(\"hello\")` would not compile because there is "
 "no `From<&str>` implementation for `Foo`."
 msgstr ""
+"トレイトの実装は、考えられるすべての型パラメータをカバーする必要はありませ"
+"ん。この例では、`Foo` に対する `From<&str>` の実装がないため、"
+"`Foo::from(\"hello\")` はコンパイルされません。"
 
 #: src/generics/generic-traits.md
 msgid ""
@@ -8883,6 +8922,8 @@ msgid ""
 "\"output\" type. A trait can have multiple implementations for different "
 "input types."
 msgstr ""
+"ジェネリックなトレイトは型を「入力」として受け取りますが、関連型は一種の「出"
+"力」型です。トレイトは、異なる入力型に対して複数の実装を持つことができます。"
 
 #: src/generics/generic-traits.md
 msgid ""
@@ -8892,6 +8933,11 @@ msgid ""
 "[specialization](https://rust-lang.github.io/rfcs/1210-impl-"
 "specialization.html)."
 msgstr ""
+"実際、Rust では、任意の型 T に対して一致するトレイトの実装は最大 1 つでなけれ"
+"ばなりません。他の一部の言語とは異なり、Rust には「最も具体的な」一致を選択す"
+"るためのヒューリスティックはありません。このサポートを追加する取り組みがあ"
+"り、[特化(specialization)](https://rust-lang.github.io/rfcs/1210-impl-"
+"specialization.html) と呼ばれています。"
 
 #: src/generics/impl-trait.md
 msgid ""
@@ -8910,11 +8956,12 @@ msgstr ""
 "//   fn add_42_millions<T: Into<i32>>(x: T) -> i32 {\n"
 
 #: src/generics/impl-trait.md
-#, fuzzy
 msgid ""
 "`impl Trait` allows you to work with types that you cannot name. The meaning "
 "of `impl Trait` is a bit different in the different positions."
-msgstr "`impl Trait`の意味は、位置によって少し異なります。"
+msgstr ""
+"`impl Trait` を使用すると、名前を付けられない型を扱うことができます。`impl "
+"Trait` の意味は、位置によって少し異なります。"
 
 #: src/generics/impl-trait.md
 msgid ""
@@ -8963,6 +9010,9 @@ msgid ""
 "In addition to using traits for static dispatch via generics, Rust also "
 "supports using them for type-erased, dynamic dispatch via trait objects:"
 msgstr ""
+"Rust では、ジェネリクスによる静的ディスパッチにトレイトを使用するだけでなく、"
+"トレイトオブジェクトによる型消去された動的ディスパッチにトレイトを使用するこ"
+"ともできます。"
 
 #: src/generics/dyn-trait.md src/smart-pointers/trait-objects.md
 msgid "\"Miau!\""
@@ -8970,7 +9020,7 @@ msgstr "\"Miau!\""
 
 #: src/generics/dyn-trait.md
 msgid "// Uses generics and static dispatch.\n"
-msgstr ""
+msgstr "// ジェネリクスと静的ディスパッチを使用します。\n"
 
 #: src/generics/dyn-trait.md src/smart-pointers/trait-objects.md
 msgid "\"Hello, who are you? {}\""
@@ -8978,7 +9028,7 @@ msgstr "\"Hello, who are you? {}\""
 
 #: src/generics/dyn-trait.md
 msgid "// Uses type-erasure and dynamic dispatch.\n"
-msgstr ""
+msgstr "// 型消去と動的ディスパッチを使用します。\n"
 
 #: src/generics/dyn-trait.md
 msgid ""
@@ -8989,6 +9039,11 @@ msgid ""
 "full type information and can resolve that type's trait implementation to "
 "use."
 msgstr ""
+"ジェネリクス（`impl Trait` を含む）は単相化を使用して、ジェネリクスがインスタ"
+"ンス化される型ごとに、関数の特化されたインスタンスを作成します。つまり、ジェ"
+"ネリック関数内からトレイトメソッドを呼び出す場合も静的ディスパッチが使用され"
+"ます。コンパイラは完全な型情報を持っており、使用するその型のトレイト実装を解"
+"決できるためです。"
 
 #: src/generics/dyn-trait.md
 msgid ""
@@ -8997,6 +9052,10 @@ msgid ""
 "This means that there's a single version of `fn dynamic` that is used "
 "regardless of what type of `Pet` is passed in."
 msgstr ""
+"`dyn Trait` を使用する場合は、代わりに [仮想関数テーブル](https://"
+"en.wikipedia.org/wiki/Virtual_method_table) (vtable) を介した動的ディスパッチ"
+"が使用されます。つまり、どの型の `Pet` が渡されても、使用される `fn dynamic` "
+"のバージョンは 1 つだけです。"
 
 #: src/generics/dyn-trait.md
 msgid ""
@@ -9004,6 +9063,9 @@ msgid ""
 "indirection. In this case it's a reference, though smart pointer types like "
 "`Box` can also be used (this will be demonstrated on day 3)."
 msgstr ""
+"`dyn Trait` を使用する場合、トレイトオブジェクトは何らかの間接参照の背後に置"
+"く必要があります。この例では参照ですが、`Box` などのスマートポインタ型も使用"
+"できます（これは 3 日目に説明します）。"
 
 #: src/generics/dyn-trait.md
 msgid ""
@@ -9016,41 +9078,46 @@ msgid ""
 "compiler doesn't need to know the concrete type of the `Pet` in order to do "
 "this."
 msgstr ""
+"実行時には、`&dyn Pet` は「ファットポインタ」、つまり 2 つのポインタのペアと"
+"して表現されます。1 つのポインタは `Pet` を実装する具体的なオブジェクトを指"
+"し、もう 1 つはその型に対するトレイト実装の vtable を指します。`&dyn Pet` に"
+"対して `talk` メソッドを呼び出すと、コンパイラは vtable で `talk` の関数ポイ"
+"ンタを探し、`Dog` または `Cat` へのポインタをその関数に渡して呼び出します。コ"
+"ンパイラは、これを行うために `Pet` の具体的な型を知る必要はありません。"
 
 #: src/generics/dyn-trait.md
 msgid ""
 "A `dyn Trait` is considered to be \"type-erased\", because we no longer have "
 "compile-time knowledge of what the concrete type is."
 msgstr ""
+"`dyn Trait` は「型消去」されているとみなされます。具体的な型が何であるかにつ"
+"いて、コンパイル時の情報がもはや存在しないためです。"
 
 #: src/generics/exercise.md
-#, fuzzy
 msgid ""
 "In this short exercise, you will implement a generic `min` function that "
 "determines the minimum of two values, using the [`Ord`](https://doc.rust-"
 "lang.org/stable/std/cmp/trait.Ord.html) trait."
 msgstr ""
-"この短い演習では、`LessThan` トレイトを使用して、2 つの値の最小値を決定する"
-"ジェネリックな `min` 関数を実装します。"
+"この短い演習では、[`Ord`](https://doc.rust-lang.org/stable/std/cmp/"
+"trait.Ord.html) トレイトを使用して、2 つの値の最小値を決定するジェネリックな "
+"`min` 関数を実装します。"
 
 #: src/generics/exercise.md
-#, fuzzy
 msgid "// TODO: implement the `min` function used in the tests.\n"
-msgstr "// TODO: `main` で使用する `min` 関数を実装します。\n"
+msgstr "// TODO: テストで使用する `min` 関数を実装します。\n"
 
 #: src/generics/exercise.md src/generics/solution.md
 msgid "'z'"
 msgstr "'z'"
 
 #: src/generics/exercise.md src/generics/solution.md
-#, fuzzy
 msgid "'7'"
-msgstr "'x'"
+msgstr "'7'"
 
 #: src/generics/exercise.md src/generics/solution.md
-#, fuzzy
 msgid "'1'"
-msgstr "'x'"
+msgstr "'1'"
 
 #: src/generics/exercise.md src/generics/solution.md
 #: src/std-traits/from-and-into.md src/macros/macro_rules/repetition.md
@@ -9062,54 +9129,58 @@ msgstr "\"hello\""
 #: src/generics/exercise.md src/generics/solution.md
 #: src/idiomatic/polymorphism/generics.md
 msgid "\"goodbye\""
-msgstr ""
+msgstr "\"goodbye\""
 
 #: src/generics/exercise.md src/generics/solution.md
 msgid "\"bat\""
-msgstr ""
+msgstr "\"bat\""
 
 #: src/generics/exercise.md src/generics/solution.md
 msgid "\"armadillo\""
-msgstr ""
+msgstr "\"armadillo\""
 
 #: src/generics/exercise.md
-#, fuzzy
 msgid ""
 "Show students the [`Ord`](https://doc.rust-lang.org/stable/std/cmp/"
 "trait.Ord.html) trait and [`Ordering`](https://doc.rust-lang.org/stable/std/"
 "cmp/enum.Ordering.html) enum."
 msgstr ""
-"[`OsStr`](https://doc.rust-lang.org/std/ffi/struct.OsStr.html) と "
-"[`OsString`](https://doc.rust-lang.org/std/ffi/struct.OsString.html)"
+"[`Ord`](https://doc.rust-lang.org/stable/std/cmp/trait.Ord.html) トレイトと "
+"[`Ordering`](https://doc.rust-lang.org/stable/std/cmp/enum.Ordering.html) 列"
+"挙型を受講者に示してください。"
 
 #: src/closures.md src/concurrency/threads.md src/concurrency/shared-state.md
-#, fuzzy
 msgid "This segment should take about 30 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 20 分です"
+msgstr "このセグメントの所要時間は約 30 分です。内容は次のとおりです。"
 
 #: src/closures/syntax.md
 msgid "Closures are created with vertical bars: `|..| ..`."
-msgstr ""
+msgstr "クロージャは縦棒で作成します: `|..| ..`。"
 
 #: src/closures/syntax.md
 msgid "// Argument and return type can be inferred for lightweight syntax:\n"
-msgstr ""
+msgstr "// 簡潔な構文では、引数と戻り値の型は推論できます:\n"
 
 #: src/closures/syntax.md
 msgid "// Or we can specify types and bracket the body to be fully explicit:\n"
 msgstr ""
+"// または、型を指定し、本体を波かっこで囲んで完全に明示することもできます:\n"
 
 #: src/closures/syntax.md
 msgid ""
 "The arguments go between the `|..|`. The body can be surrounded by `{ .. }`, "
 "but if it is a single expression these can be omitted."
 msgstr ""
+"引数は `|..|` の間に置きます。本体は `{ .. }` で囲むことができますが、単一の"
+"式であれば省略できます。"
 
 #: src/closures/syntax.md
 msgid ""
 "Argument types are optional, and are inferred if not given. The return type "
 "is also optional, but can only be written if using `{ .. }` around the body."
 msgstr ""
+"引数の型は省略可能で、指定しない場合は推論されます。戻り値の型も省略可能です"
+"が、書けるのは本体を `{ .. }` で囲んでいる場合のみです。"
 
 #: src/closures/syntax.md
 msgid ""
@@ -9117,6 +9188,9 @@ msgid ""
 "not capture any variables from their lexical environment. We will see "
 "captures next."
 msgstr ""
+"これらの例はどちらも、単なるネストされた関数として書くこともできます。レキシ"
+"カル環境から変数を一切キャプチャしていないためです。キャプチャについては次に"
+"説明します。"
 
 #: src/closures/syntax.md
 msgid ""
@@ -9125,17 +9199,23 @@ msgid ""
 "closures can: [Example in the playground](https://play.rust-lang.org/?"
 "version=stable&mode=debug&edition=2024&gist=817cbeeefc49f3d0d180a3d6d54c8bda)."
 msgstr ""
+"関数を変数に格納できるのはクロージャに限りません。通常の関数も変数に入れて、"
+"クロージャと同じように呼び出すことができます: [プレイグラウンドの例](https://"
+"play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=817cbeeefc49f3d0d180a3d6d54c8bda)。"
 
 #: src/closures/syntax.md
 msgid ""
 "The linked example also demonstrates that closures that don't capture "
 "anything can also coerce to a regular function pointer."
 msgstr ""
+"リンク先の例では、何もキャプチャしないクロージャが通常の関数ポインタに型強制"
+"できることも示しています。"
 
 #: src/closures/capturing.md
 msgid ""
 "A closure can capture variables from the environment where it was defined."
-msgstr ""
+msgstr "クロージャは、定義された環境から変数をキャプチャできます。"
 
 #: src/closures/capturing.md
 msgid ""
@@ -9144,12 +9224,18 @@ msgid ""
 "`max_value` mutable, changing it, and printing the clamped values again. Why "
 "doesn't this work?"
 msgstr ""
+"デフォルトでは、クロージャは値を参照でキャプチャします。この例では "
+"`max_value` は `clamp` によってキャプチャされますが、出力のために `main` から"
+"引き続き使用できます。`max_value` を可変にして値を変更し、クランプされた値を"
+"再度出力してみてください。なぜうまくいかないのでしょうか？"
 
 #: src/closures/capturing.md
 msgid ""
 "If a closure mutates values, it will capture them by mutable reference. Try "
 "adding `max_value += 1` to `clamp`."
 msgstr ""
+"クロージャが値を変更する場合は、可変参照でキャプチャします。`clamp` に "
+"`max_value += 1` を追加してみてください。"
 
 #: src/closures/capturing.md
 msgid ""
@@ -9157,12 +9243,18 @@ msgid ""
 "`move` keyword. This can help with lifetimes, for example if the closure "
 "must outlive the captured values (more on lifetimes later)."
 msgstr ""
+"`move` キーワードを使用すると、クロージャに値を参照させる代わりに強制的にムー"
+"ブさせることができます。これはライフタイムの問題に役立つ場合があります。たと"
+"えば、クロージャがキャプチャした値よりも長く存続しなければならない場合です"
+"（ライフタイムについては後で詳しく説明します）。"
 
 #: src/closures/capturing.md
 msgid ""
 "This looks like `move |v| ..`. Try adding this keyword and see if `main` can "
 "still access `max_value` after defining `clamp`."
 msgstr ""
+"これは `move |v| ..` のようになります。このキーワードを追加して、`clamp` の定"
+"義後も `main` が `max_value` にアクセスできるかどうかを確認してください。"
 
 #: src/closures/capturing.md
 msgid ""
@@ -9171,14 +9263,15 @@ msgid ""
 "then exclusive reference, then by move). The `move` keyword forces capture "
 "by value."
 msgstr ""
+"デフォルトでは、クロージャは外側のスコープの各変数を、可能な限り要求の少ない"
+"アクセス形式でキャプチャします（可能であれば共有参照、次に排他参照、次にムー"
+"ブの順）。`move` キーワードは値によるキャプチャを強制します。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "Closure traits"
-msgstr "他のトレイト"
+msgstr "クロージャのトレイト"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "Closures or lambda expressions have types that cannot be named. However, "
 "they implement special [`Fn`](https://doc.rust-lang.org/std/ops/"
@@ -9189,7 +9282,7 @@ msgstr ""
 "クロージャやラムダ式には、名前を付けることができない型があります。ただし、こ"
 "れらは特別な [`Fn`](https://doc.rust-lang.org/std/ops/trait.Fn.html)、"
 "[`FnMut`](https://doc.rust-lang.org/std/ops/trait.FnMut.html)、[`FnOnce`]"
-"(https://doc.rust-lang.org/std/ops/trait.FnOnce.html) トレイトを備えていま"
+"(https://doc.rust-lang.org/std/ops/trait.FnOnce.html) トレイトを実装していま"
 "す。"
 
 #: src/closures/traits.md
@@ -9197,94 +9290,89 @@ msgid ""
 "The special types `fn(..) -> T` refer to function pointers - either the "
 "address of a function, or a closure that captures nothing."
 msgstr ""
+"特別な型 `fn(..) -> T` は関数ポインタを指します。これは、関数のアドレス、また"
+"は何もキャプチャしないクロージャのいずれかです。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"Calling {func_name}({input}): {}\""
-msgstr "\"Calling function on {input}\""
+msgstr "\"Calling {func_name}({input}): {}\""
 
 #: src/closures/traits.md
 msgid "\"-itis\""
-msgstr ""
+msgstr "\"-itis\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"{x}{suffix}\""
-msgstr "\"{x}, {abs_x}\""
+msgstr "\"{x}{suffix}\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"add_suffix\""
-msgstr "\"add_3: {}\""
+msgstr "\"add_suffix\""
 
 #: src/closures/traits.md
 msgid "\"senior\""
-msgstr ""
+msgstr "\"senior\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"appendix\""
-msgstr "\"apple\""
+msgstr "\"appendix\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"/\""
-msgstr "\"\""
+msgstr "\"/\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"accumulate\""
-msgstr "\"accumulate: {}\""
+msgstr "\"accumulate\""
 
 #: src/closures/traits.md
 msgid "\"red\""
-msgstr ""
+msgstr "\"red\""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid "\"green\""
-msgstr "\"greetings\""
+msgstr "\"green\""
 
 #: src/closures/traits.md
 msgid "\"blue\""
-msgstr ""
+msgstr "\"blue\""
 
 #: src/closures/traits.md
 msgid "\"take_and_reverse\""
-msgstr ""
+msgstr "\"take_and_reverse\""
 
 #: src/closures/traits.md
 msgid "\"reversed: \""
-msgstr ""
+msgstr "\"reversed: \""
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "An `Fn` (e.g. `add_suffix`) neither consumes nor mutates captured values. It "
 "can be called needing only a shared reference to the closure, which means "
 "the closure can be executed repeatedly and even concurrently."
 msgstr ""
-"`Fn`（例: `add_3`）は、キャプチャした値を使用も変更もしないか、または何もキャ"
-"プチャしない場合があります。これは同時に複数回呼び出すことができます。"
+"`Fn`（例: `add_suffix`）は、キャプチャした値を消費も変更もしません。クロー"
+"ジャへの共有参照だけで呼び出せるため、クロージャを繰り返し、さらには同時に実"
+"行することもできます。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "An `FnMut` (e.g. `accumulate`) might mutate captured values. The closure "
 "object is accessed via exclusive reference, so it can be called repeatedly "
 "but not concurrently."
 msgstr ""
-"`FnMut`（例: `accumulate`）は、キャプチャした値を変更することがあります。複数"
-"回呼び出すことはできますが、同時に呼び出すことはできません。"
+"`FnMut`（例: `accumulate`）は、キャプチャした値を変更することがあります。ク"
+"ロージャオブジェクトには排他参照を介してアクセスするため、繰り返し呼び出すこ"
+"とはできますが、同時に呼び出すことはできません。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "If you have an `FnOnce` (e.g. `take_and_reverse`), you may only call it "
 "once. Doing so consumes the closure and any values captured by move."
 msgstr ""
-"`FnOnce`（例: `multiply_sum`）がある場合は、1 回だけ呼び出すことができます。"
-"これは、キャプチャした値を使用する場合があります。"
+"`FnOnce`（例: `take_and_reverse`）がある場合は、1 回だけ呼び出すことができま"
+"す。呼び出すと、クロージャと、ムーブによってキャプチャされた値がすべて消費さ"
+"れます。"
 
 #: src/closures/traits.md
 msgid ""
@@ -9307,24 +9395,24 @@ msgstr ""
 "り、呼び出し元に最も柔軟に対応できます。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "In contrast, when you have a closure, the most flexible you can have is `Fn` "
 "(which can be passed to a consumer of any of the three closure traits), then "
 "`FnMut`, and lastly `FnOnce`."
 msgstr ""
-"一方、クロージャがある場合、最も柔軟性の高い方法は、まず `Fn`（どこでも渡すこ"
-"とができるため）、次に `FnMut`、最後に `FnOnce` を使用することです。"
+"一方、クロージャを持つ側にとって最も柔軟性が高いのは `Fn`（3 つのクロージャト"
+"レイトのいずれを受け取る側にも渡すことができます）で、次に `FnMut`、最後に "
+"`FnOnce` です。"
 
 #: src/closures/traits.md
-#, fuzzy
 msgid ""
 "The compiler also infers `Copy` (e.g. for `add_suffix`) and `Clone` (e.g. "
 "`take_and_reverse`), depending on what the closure captures. Function "
 "pointers (references to `fn` items) implement `Copy` and `Fn`."
 msgstr ""
-"コンパイラは、クロージャがキャプチャする内容に応じて、`Copy`（例: `add_3`）"
-"と `Clone`（例: `multiply_sum`）も推測します。"
+"コンパイラは、クロージャがキャプチャする内容に応じて、`Copy`（例: "
+"`add_suffix`）と `Clone`（例: `take_and_reverse`）も推論します。関数ポインタ"
+"（`fn` アイテムへの参照）は `Copy` と `Fn` を実装します。"
 
 #: src/closures/exercise.md
 msgid ""
@@ -9332,25 +9420,27 @@ msgid ""
 "uses a closure to filter log messages, sending those that pass the filtering "
 "predicate to an inner logger."
 msgstr ""
+"今日の午前中に作成したジェネリックなロガーをもとに、クロージャを使用してログ"
+"メッセージをフィルタリングする `Filter` を実装してください。フィルタリングの"
+"述語を満たすメッセージは、内部のロガーに送ります。"
 
 #: src/closures/exercise.md
-#, fuzzy
 msgid "// TODO: Define and implement `Filter`.\n"
-msgstr "// TODO: `VerbosityFilter` を定義して実装します。\n"
+msgstr "// TODO: `Filter` を定義して実装します。\n"
 
 #: src/closures/exercise.md src/closures/solution.md
 msgid "\"yikes\""
-msgstr ""
+msgstr "\"yikes\""
 
 #: src/closures/exercise.md src/closures/solution.md
 msgid ""
 "// Logger that writes to stderr and filters based on message contents.\n"
 msgstr ""
+"// stderr に書き込み、メッセージの内容に基づいてフィルタリングするロガー。\n"
 
 #: src/closures/exercise.md src/closures/solution.md
-#, fuzzy
 msgid "\"yikes, something went wrong\""
-msgstr "\"Something went wrong!\""
+msgstr "\"yikes, something went wrong\""
 
 #: src/closures/exercise.md src/closures/solution.md
 msgid "\"uhoh\""
@@ -9358,12 +9448,11 @@ msgstr "\"uhoh\""
 
 #: src/closures/exercise.md src/closures/solution.md
 msgid "// Logger that writes to stdout and filters based on verbosity.\n"
-msgstr ""
+msgstr "// stdout に書き込み、詳細度に基づいてフィルタリングするロガー。\n"
 
 #: src/closures/solution.md
-#, fuzzy
 msgid "/// Only log messages matching a filtering predicate.\n"
-msgstr "/// 指定された詳細度レベルまでのメッセージのみをログに記録。\n"
+msgstr "/// フィルタリングの述語に一致するメッセージのみをログに記録。\n"
 
 #: src/closures/solution.md
 msgid ""
@@ -9371,6 +9460,9 @@ msgid ""
 "parameter (here `P`). This is because every closure in Rust has a unique, "
 "anonymous type generated by the compiler."
 msgstr ""
+"**クロージャの格納:** 構造体にクロージャを格納するには、ジェネリックな型パラ"
+"メータ（ここでは `P`）を使用します。これは、Rust のすべてのクロージャが、コン"
+"パイラによって生成される一意の匿名型を持つためです。"
 
 #: src/closures/solution.md
 msgid ""
@@ -9379,6 +9471,10 @@ msgid ""
 "type. We use `Fn` (instead of `FnMut` or `FnOnce`) because `log` takes "
 "`&self`, so we can only access the predicate immutably."
 msgstr ""
+"**`Fn` トレイト境界:** 境界 `P: Fn(u8, &str) -> bool` は、`P` が指定された引"
+"数と戻り値の型を持つ関数として呼び出せることをコンパイラに伝えます。`log` は "
+"`&self` を受け取るため、述語には不変でしかアクセスできません。そのため、"
+"（`FnMut` や `FnOnce` ではなく）`Fn` を使用します。"
 
 #: src/closures/solution.md
 msgid ""
@@ -9386,6 +9482,9 @@ msgid ""
 "parentheses around `self.predicate` are necessary to disambiguate between "
 "calling a method named `predicate` and calling the field itself."
 msgstr ""
+"**フィールドの呼び出し:** クロージャは `(self.predicate)(...)` を使用して呼び"
+"出します。`self.predicate` を囲む括弧は、`predicate` という名前のメソッドの呼"
+"び出しと、フィールド自体の呼び出しを区別するために必要です。"
 
 #: src/closures/solution.md
 msgid ""
@@ -9393,6 +9492,9 @@ msgid ""
 "`&mut self`, which conflicts with the `Logger` trait signature. If we used "
 "`FnOnce`, we could only log a single message!"
 msgstr ""
+"なぜ `Fn` が必要なのかを話し合ってください。`FnMut` を使用した場合、`log` は "
+"`&mut self` を受け取る必要があり、`Logger` トレイトのシグネチャと矛盾します。"
+"`FnOnce` を使用した場合、メッセージを 1 つしかログに記録できなくなります！"
 
 #: src/closures/solution.md
 msgid ""
@@ -9401,6 +9503,9 @@ msgid ""
 "only on `impl` blocks that use them), putting them on `new` helps type "
 "inference."
 msgstr ""
+"`new` の `impl` ブロックにも境界が含まれています。技術的には構造体の定義自体"
+"には厳密には必要ありませんが（境界は、それを使用する `impl` ブロックにのみ付"
+"けることができます）、`new` に境界を付けると型推論に役立ちます。"
 
 #: src/std-types.md src/std-types/option.md
 msgid "Option"
@@ -9431,16 +9536,15 @@ msgstr ""
 "一般的なメソッドをいくつか取り上げてください。"
 
 #: src/std-types/std.md
-#, fuzzy
 msgid ""
 "Rust comes with a standard library that helps establish a set of common "
 "types used by Rust libraries and programs. This way, two libraries can work "
 "together smoothly because they both use the same `String` type."
 msgstr ""
 "Rust には、Rust のライブラリとプログラムで使用される一般的な型のセットを確立"
-"するのに役立つ標準ライブラリが付属しています。2 つのライブラリをスムーズに連"
-"携させることができるのは、このように両方とも同じ `String` 型を使用しているた"
-"めです。"
+"するのに役立つ標準ライブラリが付属しています。このように両方とも同じ "
+"`String` 型を使用するため、2 つのライブラリをスムーズに連携させることができま"
+"す。"
 
 #: src/std-types/std.md
 msgid ""
@@ -9459,7 +9563,6 @@ msgstr ""
 "依存しない、最も基本的な型と関数が含まれます。"
 
 #: src/std-types/std.md
-#, fuzzy
 msgid ""
 "`alloc` includes types that require a global heap allocator, such as `Vec`, "
 "`Box` and `Arc`."
@@ -9468,25 +9571,23 @@ msgstr ""
 "る型が含まれます。"
 
 #: src/std-types/std.md
-#, fuzzy
 msgid ""
 "Embedded Rust applications typically only use `core`, and sometimes `alloc`."
 msgstr ""
-"多くの場合、埋め込みの Rust アプリは `core` のみを使用し、場合によっては "
-"`alloc` を使用します。"
+"組み込みの Rust アプリケーションは通常 `core` のみを使用し、場合によっては "
+"`alloc` も使用します。"
 
 #: src/std-types/docs.md
 msgid "Rust comes with extensive documentation. For example:"
 msgstr "Rust には詳細なドキュメントが用意されています。次に例を示します。"
 
 #: src/std-types/docs.md
-#, fuzzy
 msgid ""
 "All of the details about [loops](https://doc.rust-lang.org/stable/reference/"
 "expressions/loop-expr.html)."
 msgstr ""
-"ループから早く抜け出したい場合は [`break`](https://doc.rust-lang.org/"
-"reference/expressions/loop-expr.html#break-expressions) を使用してください。"
+"[ループ](https://doc.rust-lang.org/stable/reference/expressions/loop-"
+"expr.html) に関するすべての詳細。"
 
 #: src/std-types/docs.md
 msgid ""
@@ -9509,6 +9610,8 @@ msgstr ""
 #: src/std-types/docs.md
 msgid "Use `rustup doc --std` or <https://std.rs> to view the documentation."
 msgstr ""
+"ドキュメントを表示するには、`rustup doc --std` または <https://std.rs> を使用"
+"します。"
 
 #: src/std-types/docs.md
 msgid "In fact, you can document your own code:"
@@ -9588,9 +9691,8 @@ msgid "\"Character not found\""
 msgstr "\"Character not found\""
 
 #: src/std-types/option.md
-#, fuzzy
 msgid "`Option` is widely used, not just in the standard library."
-msgstr "標準ライブラリの非同期バージョン。"
+msgstr "`Option` は、標準ライブラリに限らず広く使用されています。"
 
 #: src/std-types/option.md
 msgid ""
@@ -9622,6 +9724,9 @@ msgid ""
 "treating it like a container with room for at most one element. Methods with "
 "similar names and behaviors exist on other container types."
 msgstr ""
+"`insert` や `take` など、`Option` の多くのメソッドは、最大 1 つの要素を入れら"
+"れるコンテナのように扱うものとみなすことができます。他のコンテナ型にも、名前"
+"と動作が似たメソッドがあります。"
 
 #: src/std-types/option.md
 msgid ""
@@ -9631,18 +9736,21 @@ msgid ""
 "automatically uses NULL to represent the `None` variant, and thus can be "
 "stored in the same memory as `&T`."
 msgstr ""
+"「ニッチの最適化」とは、T の有効な値ではない何らかの表現がある場合に、"
+"`Option<T>` のメモリ上のサイズが通常 `T` と同じになることを意味します。たとえ"
+"ば、参照は NULL にはなりえないため、`Option<&T>` は自動的に NULL を使用して "
+"`None` バリアントを表します。そのため、`&T` と同じメモリに格納できます。"
 
 #: src/std-types/result.md
-#, fuzzy
 msgid ""
 "`Result` is similar to `Option`, but indicates the success or failure of an "
 "operation, each with a different enum variant. It is generic: `Result<T, E>` "
 "where `T` is used in the `Ok` variant and `E` appears in the `Err` variant."
 msgstr ""
 "`Result` は `Option` に似ていますが、オペレーションの成功または失敗を、それぞ"
-"れ異なる型で示します。これは式の演習で定義されていた `Res` に似ているものの、"
-"汎用的で、`Result<T, E>` の形式を取ります（`T` は `Ok` バリアントで使用され、"
-"`E` は `Err` バリアントで使用されます）。"
+"れ異なる列挙型のバリアントで示します。これはジェネリックで、`Result<T, E>` の"
+"形式を取ります（`T` は `Ok` バリアントで使用され、`E` は `Err` バリアントで使"
+"用されます）。"
 
 #: src/std-types/result.md src/error-handling/result.md
 msgid "\"diary.txt\""
@@ -9673,31 +9781,28 @@ msgstr ""
 "できます。これもデベロッパーのインテントのシグナルです。"
 
 #: src/std-types/result.md
-#, fuzzy
 msgid ""
 "`Result` documentation is a recommended read. Not during the course, but it "
 "is worth mentioning. It contains many convenience methods and functions that "
 "help functional-style programming."
 msgstr ""
 "`Result` のドキュメントを読むことをすすめましょう。この講座では取り上げません"
-"が、言及する価値があります。このドキュメントには、関数型プログラミングに役立"
-"つ便利なメソッドや関数が多数含まれています。"
+"が、言及する価値があります。このドキュメントには、関数型スタイルのプログラミ"
+"ングに役立つ便利なメソッドや関数が多数含まれています。"
 
 #: src/std-types/result.md
-#, fuzzy
 msgid ""
 "`Result` is the standard type to implement error handling as we will see on "
 "Day 4."
-msgstr "`Result` は、3 日目で説明するエラー処理を実装する標準型です。"
+msgstr "`Result` は、4 日目で説明するエラー処理を実装する標準型です。"
 
 #: src/std-types/string.md
-#, fuzzy
 msgid ""
 "[`String`](https://doc.rust-lang.org/std/string/struct.String.html) is a "
 "growable UTF-8 encoded string:"
 msgstr ""
-"[`String`](https://doc.rust-lang.org/std/string/struct.String.html) は、標準"
-"的なヒープ割り当ての拡張可能な UTF-8 文字列バッファです。"
+"[`String`](https://doc.rust-lang.org/std/string/struct.String.html) は、拡張"
+"可能な UTF-8 エンコードの文字列です。"
 
 #: src/std-types/string.md src/std-traits/comparisons.md
 #: src/std-traits/read-and-write.md src/memory-management/review.md
@@ -9839,6 +9944,10 @@ msgid ""
 "`Display`, so anything that can be formatted can also be converted to a "
 "string."
 msgstr ""
+"多くの型は [`to_string`](https://doc.rust-lang.org/std/string/"
+"trait.ToString.html#tymethod.to_string) メソッドで文字列に変換できます。この"
+"トレイトは `Display` を実装するすべての型に自動的に実装されるため、フォーマッ"
+"トできるものはすべて文字列にも変換できます。"
 
 #: src/std-types/vec.md
 msgid ""
@@ -9928,6 +10037,11 @@ msgid ""
 "instead, which abstracts over both I/O streams and collections, while "
 "avoiding materialization of intermediate collections."
 msgstr ""
+"標準ライブラリがコンテナトレイトを公開するのではなく、なぜ `Vec` やスライスに"
+"これほど多くの固有メソッドがあるのか、と受講者が質問するかもしれません。この"
+"設計の主な理由は、Rust が代わりに `Iterator` トレイトに機能を集約しているため"
+"です。`Iterator` は I/O ストリームとコレクションの両方を抽象化し、中間コレク"
+"ションの実体化を避けることができます。"
 
 #: src/std-types/hashmap.md
 msgid "Standard hash map with protection against HashDoS attacks:"
@@ -10012,12 +10126,11 @@ msgstr ""
 "す。これにより、リテラル配列からハッシュマップを簡単に初期化できます。"
 
 #: src/std-types/hashmap.md
-#, fuzzy
 msgid ""
 "Alternatively HashMap can be built from any `Iterator` that yields key-value "
 "tuples."
 msgstr ""
-"別の方法として、HashMap は、Key-Value タプルを生成する任意の `Iterator` から"
+"別の方法として、HashMap は、キーと値のタプルを生成する任意の `Iterator` から"
 "作成することもできます。"
 
 #: src/std-types/hashmap.md
@@ -10033,28 +10146,26 @@ msgstr ""
 "します。"
 
 #: src/std-types/exercise.md
-#, fuzzy
 msgid ""
 "In this exercise you will take a very simple data structure and make it "
 "generic. It uses a [`std::collections::HashMap`](https://doc.rust-lang.org/"
 "stable/std/collections/struct.HashMap.html) to keep track of what values "
 "have been seen and how many times each one has appeared."
 msgstr ""
-"この演習では、非常にシンプルなデータ構造を汎用的なものにします。"
-"[`std::collections::HashMap`](https://doc.rust-lang.org/stable/std/"
-"collections/struct.HashMap.html) を使用して、どの値が確認され、各値が何回出現"
-"したかを追跡します。"
+"この演習では、非常にシンプルなデータ構造をジェネリックにします。このデータ構"
+"造は [`std::collections::HashMap`](https://doc.rust-lang.org/stable/std/"
+"collections/struct.HashMap.html) を使用して、どの値が出現し、各値が何回出現し"
+"たかを追跡します。"
 
 #: src/std-types/exercise.md
-#, fuzzy
 msgid ""
 "The initial version of `Counter` is hardcoded to only work for `char` "
 "values. Make the struct and its methods generic over the type of value being "
 "tracked, that way `Counter` can track any type of value."
 msgstr ""
-"`Counter` の初期バージョンは、`u32` の値でのみ機能するようにハードコードされ"
-"ています。追跡する値の型に対して構造体とそのメソッドをジェネリック化します。"
-"これにより、`Counter` であらゆる型の値を追跡できます。"
+"`Counter` の初期バージョンは、`char` の値でのみ機能するようにハードコードされ"
+"ています。追跡する値の型に対して構造体とそのメソッドをジェネリックにしてくだ"
+"さい。これにより、`Counter` であらゆる型の値を追跡できます。"
 
 #: src/std-types/exercise.md
 msgid ""
@@ -10090,11 +10201,11 @@ msgstr "' '"
 
 #: src/std-types/exercise.md src/std-types/solution.md
 msgid "'¥'"
-msgstr ""
+msgstr "'¥'"
 
 #: src/std-types/exercise.md src/std-types/solution.md
 msgid "\"most common character: {:?}\""
-msgstr ""
+msgstr "\"most common character: {:?}\""
 
 #: src/std-types/exercise.md src/std-types/solution.md
 msgid "\"saw {} values equal to {}\""
@@ -10113,22 +10224,20 @@ msgid "\"got {} apples\""
 msgstr "\"got {} apples\""
 
 #: src/std-traits.md
-#, fuzzy
 msgid "Read and Write"
-msgstr "`Read` と `Write`"
+msgstr "Read と Write"
 
 #: src/std-traits.md
-#, fuzzy
 msgid "Default, struct update syntax"
-msgstr "`Default`、構造体更新記法"
+msgstr "Default、構造体更新記法"
 
 #: src/std-traits.md
-#, fuzzy
 msgid ""
 "As with the standard library types, spend time reviewing the documentation "
 "for each trait."
 msgstr ""
-"標準ライブラリ型と同様に、時間をかけて各トレイトのドキュメントを確認します。"
+"標準ライブラリの型と同様に、時間をかけて各トレイトのドキュメントを確認してく"
+"ださい。"
 
 #: src/std-traits.md
 msgid "This section is long. Take a break midway through."
@@ -10202,6 +10311,9 @@ msgid ""
 "references to two different things can compare as equal if the values "
 "pointed to are the same:"
 msgstr ""
+"Rust で参照を比較する場合、比較されるのは参照先の値であり、参照自体は比較され"
+"ません。つまり、2 つの異なるものへの参照であっても、参照先の値が同じであれば"
+"等しいと判定されます。"
 
 #: src/std-traits/operators.md
 msgid ""
@@ -10212,9 +10324,8 @@ msgstr ""
 "index.html) 内のトレイトを介して実装されます。"
 
 #: src/std-traits/operators.md
-#, fuzzy
 msgid "\"{p1:?} + {p2:?} = {:?}\""
-msgstr "\"{:?} + {:?} = {:?}\""
+msgstr "\"{p1:?} + {p2:?} = {:?}\""
 
 #: src/std-traits/operators.md src/memory-management/drop.md
 msgid "Discussion points:"
@@ -10227,13 +10338,12 @@ msgstr ""
 "`&Point` に `Add` を実装できます。これはどのような状況で役に立ちますか？"
 
 #: src/std-traits/operators.md
-#, fuzzy
 msgid ""
 "Answer: `Add::add` consumes `self`. If type `T` for which you are "
 "overloading the operator is not `Copy`, you should consider overloading the "
 "operator for `&T` as well. This avoids unnecessary cloning on the call site."
 msgstr ""
-"回答: `Add:add` は `self` を使用します。演算子をオーバーロードする型 `T` が "
+"回答: `Add::add` は `self` を消費します。演算子をオーバーロードする型 `T` が "
 "`Copy` でない場合は、`&T` の演算子もオーバーロードすることを検討する必要があ"
 "ります。これにより、呼び出し箇所での不要なクローン作成を回避できます。"
 
@@ -10269,18 +10379,21 @@ msgid ""
 "for integer types it flips each bit of the number, which, arithmetically, is "
 "equivalent to subtracting the argument from `-1`: `!5 == -6`."
 msgstr ""
+"`Not` トレイト（`!` 演算子）は注目に値します。C 系言語の同じ演算子のように引"
+"数を `bool` に変換するのではなく、整数型では数値の各ビットを反転させるからで"
+"す。これは算術的には、`-1` から引数を引くことと等価です：`!5 == -6`。"
 
 #: src/std-traits/from-and-into.md
-#, fuzzy
 msgid ""
 "Types implement [`From`](https://doc.rust-lang.org/std/convert/"
 "trait.From.html) and [`Into`](https://doc.rust-lang.org/std/convert/"
 "trait.Into.html) to facilitate type conversions. Unlike `as`, these traits "
 "correspond to lossless, infallible conversions."
 msgstr ""
-"型は、型変換を容易にする [`From`](https://doc.rust-lang.org/std/convert/"
-"trait.From.html) と [`Into`](https://doc.rust-lang.org/std/convert/"
-"trait.Into.html) を実装しています。"
+"型は、型変換を容易にするために [`From`](https://doc.rust-lang.org/std/"
+"convert/trait.From.html) と [`Into`](https://doc.rust-lang.org/std/convert/"
+"trait.Into.html) を実装します。`as` とは異なり、これらのトレイトは損失がな"
+"く、失敗しない変換に対応します。"
 
 #: src/std-traits/from-and-into.md
 msgid "\"{s}, {addr}, {one}, {bigger}\""
@@ -10430,16 +10543,14 @@ msgid "\"\\n\""
 msgstr "\"\\n\""
 
 #: src/std-traits/read-and-write.md
-#, fuzzy
 msgid "\"Logged: {buffer:?}\""
-msgstr "\"Logged: {:?}\""
+msgstr "\"Logged: {buffer:?}\""
 
 #: src/std-traits/default.md
 msgid "The `Default` Trait"
 msgstr "`Default` トレイト"
 
 #: src/std-traits/default.md
-#, fuzzy
 msgid ""
 "The [`Default`](https://doc.rust-lang.org/std/default/trait.Default.html) "
 "trait produces a default value for a type."
@@ -10473,13 +10584,12 @@ msgid "This means all types in the struct must implement `Default` too."
 msgstr "つまり、構造体内のすべての型にも `Default` を実装する必要があります。"
 
 #: src/std-traits/default.md
-#, fuzzy
 msgid ""
 "Standard Rust types commonly implement `Default` with reasonable values "
 "(e.g. `0`, `\"\"`, etc)."
 msgstr ""
-"標準の Rust 型は多くの場合、妥当な値（`0`、`\"\"` など）の `Default` を実装し"
-"ます。"
+"標準の Rust 型は多くの場合、妥当な値（`0`、`\"\"` など）で `Default` を実装し"
+"ています。"
 
 #: src/std-traits/default.md
 msgid "The partial struct initialization works nicely with default."
