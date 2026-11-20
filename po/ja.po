@@ -134,7 +134,6 @@ msgid "`if` Expressions"
 msgstr "`if` 式"
 
 #: src/SUMMARY.md src/control-flow-basics/match.md
-#, fuzzy
 msgid "`match` Expressions"
 msgstr "`match` 式"
 
@@ -156,7 +155,7 @@ msgstr "`break` と `continue`"
 
 #: src/SUMMARY.md src/control-flow-basics/break-continue/labels.md
 msgid "Labels"
-msgstr ""
+msgstr "ラベル"
 
 #: src/SUMMARY.md src/control-flow-basics.md
 #: src/control-flow-basics/functions.md
@@ -224,9 +223,8 @@ msgid "Strings"
 msgstr "文字列"
 
 #: src/SUMMARY.md src/references.md src/references/dangling.md
-#, fuzzy
 msgid "Reference Validity"
-msgstr "参照"
+msgstr "参照の有効性"
 
 #: src/SUMMARY.md src/references.md src/references/exercise.md
 msgid "Exercise: Geometry"
@@ -4247,12 +4245,10 @@ msgid "Welcome to Day 1"
 msgstr "Day 1へようこそ"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "This is the first day of Rust Fundamentals. We will cover a broad range of "
 "topics today:"
-msgstr ""
-"「Comprehensive Rust」の初日です。本日は多岐にわたる内容をカバーします："
+msgstr "これは「Rust の基礎」の 1 日目です。今日は幅広いトピックを扱います。"
 
 #: src/welcome-day-1.md
 msgid ""
@@ -4263,9 +4259,8 @@ msgstr ""
 "ソッド。"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid "Types and type inference."
-msgstr "型推論"
+msgstr "型と型推論。"
 
 #: src/welcome-day-1.md
 msgid "Control flow constructs: loops, conditionals, and so on."
@@ -4282,33 +4277,33 @@ msgid "Schedule"
 msgstr "スケジュール"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 2 hours and 10 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 15 分です。"
+msgstr ""
+"このセッションの所要時間は、10 分間の休憩を含めて約 2 時間 10 分です。内容は"
+"次のとおりです。"
 
 #: src/welcome-day-1.md
 msgid "Please remind the students that:"
 msgstr "受講生に伝えてください："
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "They should ask questions when they get them, don't save them to the end."
-msgstr "分からない事があれば、最後まで待たずに質問をしてください。"
+msgstr ""
+"受講者には、質問があればその都度尋ね、最後まで取っておかないよう伝えてくださ"
+"い。"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "The class is meant to be interactive and discussions are very much "
 "encouraged!"
 msgstr ""
-"本講座はインタラクティブな形式で行うため、積極的にディスカッションをしてくだ"
-"さい！"
+"本講座はインタラクティブな形式を想定しているため、ディスカッションを大いに歓"
+"迎します。"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "As an instructor, you should try to keep the discussions relevant, i.e., "
 "keep the discussions related to how Rust does things vs. some other "
@@ -4316,26 +4311,25 @@ msgid ""
 "allowing discussions since they engage people much more than one-way "
 "communication."
 msgstr ""
-"講師の方へ： ディスカッションはなるべく関連性を有する範囲に留めましょう。例え"
-"ば、他言語との比較を行う場合には、あくまでもRustとどう違うのかまでを議論の範"
-"囲に設定してください。また、バランスの取り方が難しいかもしれませんが、一方的"
-"に話すよりもなるべくディスカッションを許容するように心がけてください。"
+"講師は、ディスカッションを関連性のある範囲に留めるよう心がけてください。つま"
+"り、Rust と他の言語とでやり方がどう違うかに関連した話題にしてください。適切な"
+"バランスを見つけるのは難しいかもしれませんが、一方的な説明よりもはるかに受講"
+"者の関心を引きつけるため、迷ったらディスカッションを許容する方向にしてくださ"
+"い。"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "The questions will likely mean that we talk about things ahead of the slides."
-msgstr "質問があった場合、おそらく将来的に話す内容に触れる事になります。"
+msgstr "質問によっては、スライドより先の内容について話すことになるでしょう。"
 
 #: src/welcome-day-1.md
-#, fuzzy
 msgid ""
 "This is perfectly okay! Repetition is an important part of learning. "
 "Remember that the slides are just a support and you are free to skip them as "
 "you like."
 msgstr ""
-"これは全く問題ありません！復習は学びの重要な要素です。スライドはあくまでもサ"
-"ポートとして用意されているものであり、ご自身の判断でスキップも可能です。"
+"これはまったく問題ありません。繰り返しは学習の重要な要素です。スライドはあく"
+"までも補助であり、自由にスキップしてかまわないことを覚えておいてください。"
 
 #: src/welcome-day-1.md
 msgid ""
@@ -4360,9 +4354,8 @@ msgstr ""
 "て柔軟に調整してください。"
 
 #: src/hello-world.md src/concurrency/send-sync.md
-#, fuzzy
 msgid "This segment should take about 15 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 55 分です"
+msgstr "このセグメントの所要時間は約 15 分です。内容は次のとおりです。"
 
 #: src/hello-world.md src/types-and-values.md src/control-flow-basics.md
 #: src/tuples-and-arrays.md src/references.md src/user-defined-types.md
@@ -4379,7 +4372,7 @@ msgstr "このセグメントの所要時間は約 55 分です"
 #: src/unsafe-deep-dive/introduction.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "Slide"
-msgstr ""
+msgstr "スライド"
 
 #: src/hello-world.md src/references.md src/user-defined-types.md
 #: src/pattern-matching.md src/methods-and-traits.md src/generics.md
@@ -4390,22 +4383,21 @@ msgstr ""
 #: src/concurrency/async-control-flow.md src/concurrency/async-pitfalls.md
 #: src/unsafe-deep-dive/introduction.md
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分"
 
 #: src/hello-world.md src/control-flow-basics.md src/user-defined-types.md
 #: src/memory-management.md src/concurrency/channels.md
 #: src/concurrency/send-sync.md src/idiomatic/foundations-api-design.md
 msgid "2 minutes"
-msgstr ""
+msgstr "2 分"
 
 #: src/hello-world/what-is-rust.md
-#, fuzzy
 msgid ""
 "Rust is a new programming language that had its [1.0 release in 2015]"
 "(https://blog.rust-lang.org/2015/05/15/Rust-1.0.html):"
 msgstr ""
-"Rustは[2015年に1.0版がリリース](https://blog.rust-lang.org/2015/05/15/"
-"Rust-1.0.html)された新しいプログラミング言語です："
+"Rust は、[2015 年に 1.0 版がリリース](https://blog.rust-lang.org/2015/05/15/"
+"Rust-1.0.html) された新しいプログラミング言語です。"
 
 #: src/hello-world/what-is-rust.md
 msgid "Rust is a statically compiled language in a similar role as C++"
@@ -4468,10 +4460,11 @@ msgid "High level of control."
 msgstr "高度な制御性。"
 
 #: src/hello-world/what-is-rust.md
-#, fuzzy
 msgid ""
 "Can be scaled down to very constrained devices such as microcontrollers."
-msgstr "携帯電話のようなデバイスにまでスケールダウンが可能"
+msgstr ""
+"マイクロコントローラのような非常に制約の多いデバイスにまでスケールダウンでき"
+"る。"
 
 #: src/hello-world/what-is-rust.md
 msgid "Has no runtime or garbage collection."
@@ -4534,9 +4527,9 @@ msgid "Array access is bounds checked."
 msgstr "配列へのアクセスには境界チェックが行われる。"
 
 #: src/hello-world/benefits.md
-#, fuzzy
 msgid "Integer overflow is defined (panic or wrap-around)."
-msgstr "整数オーバーフローの挙動が定義されている。"
+msgstr ""
+"整数オーバーフローの挙動が定義されている（パニックまたはラップアラウンド）。"
 
 #: src/hello-world/benefits.md
 msgid ""
@@ -4607,17 +4600,16 @@ msgstr ""
 "係管理などの構造要素を含む現代的な言語です。"
 
 #: src/hello-world/benefits.md
-#, fuzzy
 msgid ""
 "Experience with Java, Go, Python, JavaScript...: You get the same memory "
 "safety as in those languages, plus a similar high-level language feeling. In "
 "addition you get fast and predictable performance like C and C++ (no garbage "
 "collector) as well as access to low-level hardware (should you need it)."
 msgstr ""
-"Java、Go、Python、JavaScriptなどの経験がある場合： これらの言語と同様のメモリ"
-"安全性と、高水準言語に近い感覚を得ることができます。また、CやC++のように高速"
-"かつ予測可能なパフォーマンス（ガベージコレクタがない）を得ることができ、（必"
-"要なら）低水準なハードウェアへのアクセスも可能です"
+"Java、Go、Python、JavaScript などの経験がある場合: これらの言語と同じメモリ安"
+"全性と、同様の高水準言語らしい感覚が得られます。さらに、C や C++ のような高速"
+"で予測可能なパフォーマンス（ガベージコレクタがない）や、（必要な場合は）低水"
+"準のハードウェアへのアクセスも得られます。"
 
 #: src/hello-world/playground.md
 msgid ""
@@ -4671,9 +4663,8 @@ msgstr ""
 "講者に特に役立ちます。"
 
 #: src/types-and-values.md src/concurrency/async.md
-#, fuzzy
 msgid "This segment should take about 40 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 40 分です"
+msgstr "このセグメントの所要時間は約 40 分です。内容は次のとおりです。"
 
 #: src/types-and-values/hello-world.md
 msgid ""
@@ -4727,9 +4718,8 @@ msgstr ""
 #: src/concurrency/async-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/chat-app.md
 #: src/concurrency/async-exercises/solutions.md
-#, fuzzy
 msgid "// Copyright 2024 Google LLC\n"
-msgstr "# Copyright 2023 Google LLC"
+msgstr "// Copyright 2024 Google LLC\n"
 
 #: src/types-and-values/hello-world.md
 msgid "\"Hello 🌍!\""
@@ -4753,11 +4743,12 @@ msgstr "CやC++と同様に、ブロックは波括弧で囲みます。"
 
 #: src/types-and-values/hello-world.md
 msgid "Statements end with `;`."
-msgstr ""
+msgstr "文は `;` で終わります。"
 
 #: src/types-and-values/hello-world.md
 msgid "`println` is a macro, indicated by the `!` in the invocation."
 msgstr ""
+"`println` はマクロであり、呼び出しにある `!` によってそれが示されています。"
 
 #: src/types-and-values/hello-world.md
 msgid "Rust strings are UTF-8 encoded and can contain any Unicode character."
@@ -4765,37 +4756,34 @@ msgstr ""
 "Rustの文字列はUTF-8でエンコードされ、どんなUnicode文字でも含む事ができます。"
 
 #: src/types-and-values/hello-world.md
-#, fuzzy
 msgid ""
 "This slide tries to make the students comfortable with Rust code. They will "
 "see a ton of it over the next four days so we start small with something "
 "familiar."
 msgstr ""
-"このスライドの目的は、Rustのコードに慣れてもらう事です。この4日間で大量のRust"
-"コードを見る事になるので、馴染みのあるものから始めてみましょう。"
+"このスライドの目的は、受講者に Rust のコードに慣れてもらうことです。これから "
+"4 日間で大量の Rust コードを見ることになるので、馴染みのあるものから小さく始"
+"めます。"
 
 #: src/types-and-values/hello-world.md
-#, fuzzy
 msgid ""
 "Rust is very much like other languages in the C/C++/Java tradition. It is "
 "imperative and it doesn't try to reinvent things unless absolutely necessary."
 msgstr ""
-"Rustは、C/C++/Java系統の言語によく似ています。Rustは、命令型（関数型ではな"
-"く）であり、必須でない限り機能の再発明はしません。"
+"Rust は、C/C++/Java の系譜にある他の言語とよく似ています。命令型の言語であ"
+"り、どうしても必要な場合を除いて、物事を再発明しようとはしません。"
 
 #: src/types-and-values/hello-world.md
-#, fuzzy
 msgid "Rust is modern with full support for Unicode."
-msgstr "RustはUnicodeなどにも完全に対応している現代的な言語です。"
+msgstr "Rust は Unicode を完全にサポートする現代的な言語です。"
 
 #: src/types-and-values/hello-world.md
-#, fuzzy
 msgid ""
 "Rust uses macros for situations where you want to have a variable number of "
 "arguments (no function [overloading](../control-flow-basics/functions.md))."
 msgstr ""
-"Rustで可変長引数を用いたい場合は、マクロを使用します(関数[オーバーロード]"
-"(basic-syntax/functions-interlude.md)はありません)。"
+"Rust では、可変個の引数を扱いたい場合にマクロを使用します（関数の [オーバー"
+"ロード](../control-flow-basics/functions.md) はありません）。"
 
 #: src/types-and-values/hello-world.md
 msgid ""
@@ -4803,6 +4791,9 @@ msgid ""
 "arguments based on the format string, which can't be done with a regular "
 "function. Otherwise it can be treated like a regular function."
 msgstr ""
+"`println!` がマクロであるのは、フォーマット文字列に応じて任意の個数の引数を処"
+"理する必要があり、それは通常の関数ではできないからです。それ以外の点では、通"
+"常の関数と同じように扱うことができます。"
 
 #: src/types-and-values/hello-world.md
 msgid ""
@@ -4892,9 +4883,8 @@ msgstr ""
 #: src/bare-metal/aps/logging/using.md
 #: src/bare-metal/useful-crates/aarch64-paging.md
 #: src/exercises/bare-metal/solutions-afternoon.md
-#, fuzzy
 msgid "// Copyright 2023 Google LLC\n"
-msgstr "# Copyright 2023 Google LLC"
+msgstr "// Copyright 2023 Google LLC\n"
 
 #: src/types-and-values/variables.md
 msgid "\"x: {x}\""
@@ -4922,6 +4912,9 @@ msgid ""
 "unnecessary `mut`. These are omitted in most slides to avoid distracting "
 "warnings. Try removing the mutation but leaving the `mut` keyword in place."
 msgstr ""
+"このスライドでは、未使用の変数や不要な `mut` などに対する警告が有効になってい"
+"ます。ほとんどのスライドでは、気を散らす警告を避けるためにこれらを省略してい"
+"ます。変更を行う部分を削除し、`mut` キーワードはそのまま残してみてください。"
 
 #: src/types-and-values/variables.md
 msgid ""
@@ -5027,9 +5020,8 @@ msgid "`bool` is 8 bits wide."
 msgstr "`bool` は 8 ビット幅です。"
 
 #: src/types-and-values/values.md
-#, fuzzy
 msgid "There are a few syntaxes that are not shown above:"
-msgstr "上記には示されていない構文もあります。"
+msgstr "上記には示されていない構文もいくつかあります。"
 
 #: src/types-and-values/values.md
 msgid ""
@@ -5060,15 +5052,14 @@ msgid "Arithmetic is very similar to other languages, with similar precedence."
 msgstr "算術は他の言語とよく似ており、優先順位も類似しています。"
 
 #: src/types-and-values/arithmetic.md
-#, fuzzy
 msgid ""
 "What about integer overflow? In C and C++ overflow of _signed_ integers is "
 "actually undefined, and might do unknown things at runtime. In Rust, it's "
 "defined."
 msgstr ""
-"整数オーバーフローはどうでしょうか。C と C++ では、 _符号付き_ 整数のオーバー"
-"フローは実際には未定義であり、プラットフォームやコンパイラによって動作が異な"
-"る場合があります。Rust では、整数オーバーフローが定義されています。"
+"整数オーバーフローはどうでしょうか。C と C++ では、_符号付き_ 整数のオーバー"
+"フローは実際には未定義であり、実行時に予測できない動作をする可能性がありま"
+"す。Rust では、これは定義されています。"
 
 #: src/types-and-values/arithmetic.md
 msgid ""
@@ -5134,23 +5125,20 @@ msgid "// ERROR: no implementation for `{float} == {integer}`\n"
 msgstr "// エラー: `{float} == {integer}` の実装がありません\n"
 
 #: src/types-and-values/exercise.md
-#, fuzzy
 msgid ""
 "The Fibonacci sequence begins with `[0, 1]`. For `n > 1`, the next number is "
 "the sum of the previous two."
 msgstr ""
-"1 つ目と 2 つ目のフィボナッチ数はどちらも `1` です。n>2 の場合、n 番目のフィ"
-"ボナッチ数は、n-1 番目のフィボナッチ数と n-2 番目のフィボナッチ数の合計として"
-"再帰的に計算されます。"
+"フィボナッチ数列は `[0, 1]` から始まります。`n > 1` の場合、次の数は直前の 2 "
+"つの数の合計です。"
 
 #: src/types-and-values/exercise.md
-#, fuzzy
 msgid ""
 "Write a function `fib(n)` that calculates the nth Fibonacci number. When "
 "will this function panic?"
 msgstr ""
-"n 番目のフィボナッチ数を計算する関数 `fib(n)` を記述します。この関数はいつパ"
-"ニックするでしょうか。"
+"n 番目のフィボナッチ数を計算する関数 `fib(n)` を記述してください。この関数は"
+"いつパニックするでしょうか。"
 
 #: src/types-and-values/exercise.md
 msgid "// The base case.\n"
@@ -5165,24 +5153,25 @@ msgid "// The recursive case.\n"
 msgstr "// 再帰的なケース。\n"
 
 #: src/types-and-values/exercise.md src/types-and-values/solution.md
-#, fuzzy
 msgid "\"fib({n}) = {}\""
-msgstr "\"fib(n) = {}\""
+msgstr "\"fib({n}) = {}\""
 
 #: src/types-and-values/exercise.md
 msgid "This exercise is a classic introduction to recursion."
-msgstr ""
+msgstr "この演習は、再帰の入門として定番のものです。"
 
 #: src/types-and-values/exercise.md
 msgid ""
 "Encourage students to think about the base cases and the recursive step."
-msgstr ""
+msgstr "ベースケースと再帰ステップについて考えるよう受講者に促してください。"
 
 #: src/types-and-values/exercise.md
 msgid ""
 "The question \"When will this function panic?\" is a hint to think about "
 "integer overflow. The Fibonacci sequence grows quickly!"
 msgstr ""
+"「この関数はいつパニックするでしょうか」という問いは、整数オーバーフローにつ"
+"いて考えるためのヒントです。フィボナッチ数列は急速に大きくなります。"
 
 #: src/types-and-values/exercise.md
 msgid ""
@@ -5190,6 +5179,9 @@ msgid ""
 "opportunity to discuss the trade-offs between recursion and iteration (e.g., "
 "performance, stack overflow for deep recursion)."
 msgstr ""
+"受講者が反復による解答を考え出すこともあります。これは、再帰と反復のトレード"
+"オフ（パフォーマンスや、深い再帰でのスタックオーバーフローなど）について議論"
+"する絶好の機会です。"
 
 #: src/types-and-values/solution.md
 msgid ""
@@ -5197,17 +5189,21 @@ msgid ""
 "the course, we will see that the last expression in a block is automatically "
 "returned, allowing us to omit the `return` keyword for a more concise style."
 msgstr ""
+"ここでは、関数から値を返すために `return` 構文を使用しています。講座の後半"
+"で、ブロックの最後の式は自動的に返されるため、`return` キーワードを省略してよ"
+"り簡潔に書けることを学びます。"
 
 #: src/types-and-values/solution.md
 msgid ""
 "The `if` condition `n < 2` does not need parentheses, which is standard Rust "
 "style."
 msgstr ""
+"`if` の条件 `n < 2` には括弧が必要ありません。これは Rust の標準的なスタイル"
+"です。"
 
 #: src/types-and-values/solution.md
-#, fuzzy
 msgid "Panic"
-msgstr "パニック（panic）"
+msgstr "パニック"
 
 #: src/types-and-values/solution.md
 msgid ""
@@ -5215,6 +5211,9 @@ msgid ""
 "grows very rapidly. With `u32`, the calculated values will overflow the 32-"
 "bit integer limit (4,294,967,295) when `n` reaches 48."
 msgstr ""
+"この演習では、この関数がいつパニックするかを問うています。フィボナッチ数列は"
+"非常に急速に大きくなります。`u32` の場合、`n` が 48 に達すると、計算された値"
+"が 32 ビット整数の上限（4,294,967,295）を超えてオーバーフローします。"
 
 #: src/types-and-values/solution.md
 msgid ""
@@ -5224,20 +5223,30 @@ msgid ""
 "release`), overflow checks are disabled by default, and the number will wrap "
 "around (modular arithmetic), producing incorrect results."
 msgstr ""
+"Rust では、_デバッグモード_（`cargo run` を使用したときのデフォルト）で整数演"
+"算のオーバーフローがチェックされます。オーバーフローが発生すると、プログラム"
+"はパニックします（エラーメッセージを出してクラッシュします）。_リリースモード"
+"_（`cargo run --release`）では、デフォルトでオーバーフローチェックが無効に"
+"なっており、数値はラップアラウンドして（剰余演算）、誤った結果になります。"
 
 #: src/types-and-values/solution.md
 msgid "Walk through the solution step-by-step."
-msgstr ""
+msgstr "解答を一歩ずつ順に説明してください。"
 
 #: src/types-and-values/solution.md
 msgid "Explain the recursive calls and how they lead to the final result."
 msgstr ""
+"再帰呼び出しと、それがどのように最終的な結果につながるのかを説明してくださ"
+"い。"
 
 #: src/types-and-values/solution.md
 msgid ""
 "Discuss the integer overflow issue. With `u32`, the function will panic for "
 "`n` around 47. You can demonstrate this by changing the input to `main`."
 msgstr ""
+"整数オーバーフローの問題について議論してください。`u32` の場合、この関数は "
+"`n` が 47 前後でパニックします。`main` への入力を変更することで、これを実演で"
+"きます。"
 
 #: src/types-and-values/solution.md
 msgid ""
@@ -5245,6 +5254,8 @@ msgid ""
 "memory usage with the recursive one. An iterative solution will be much more "
 "efficient."
 msgstr ""
+"別の方法として反復による解答を示し、そのパフォーマンスとメモリ使用量を再帰に"
+"よる解答と比較してください。反復による解答のほうがはるかに効率的です。"
 
 #: src/types-and-values/solution.md src/control-flow-basics/match.md
 #: src/control-flow-basics/loops/for.md src/references/dangling.md
@@ -5276,63 +5287,57 @@ msgid ""
 "programming to optimize the recursive Fibonacci calculation, although this "
 "is beyond the scope of the current topic."
 msgstr ""
+"より高度な議論として、再帰によるフィボナッチ数の計算を最適化するためのメモ化"
+"や動的計画法を紹介することもできます。ただし、これは現在のトピックの範囲を超"
+"えています。"
 
 #: src/control-flow-basics.md src/methods-and-traits.md src/modules.md
 #: src/testing.md
-#, fuzzy
 msgid "This segment should take about 45 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 45 分です"
+msgstr "このセグメントの所要時間は約 45 分です。内容は次のとおりです。"
 
 #: src/control-flow-basics.md
-#, fuzzy
 msgid "if Expressions"
-msgstr "if式"
+msgstr "if 式"
 
 #: src/control-flow-basics.md src/pattern-matching.md src/concurrency/async.md
 #: src/concurrency/async-control-flow.md
 msgid "4 minutes"
-msgstr ""
+msgstr "4 分"
 
 #: src/control-flow-basics.md
-#, fuzzy
 msgid "match Expressions"
-msgstr "match式"
+msgstr "match 式"
 
 #: src/control-flow-basics.md
-#, fuzzy
 msgid "break and continue"
-msgstr "`break` と `continue`"
+msgstr "break と continue"
 
 #: src/control-flow-basics.md
 msgid "We will now cover the many kinds of flow control found in Rust."
-msgstr ""
+msgstr "ここからは、Rust にあるさまざまな種類の制御フローを取り上げます。"
 
 #: src/control-flow-basics.md
-#, fuzzy
 msgid ""
 "Most of this will be very familiar to what you have seen in other "
 "programming languages."
 msgstr ""
-"これは、他のプログラミング言語で馴染みのある `void` と考えることができます。"
+"そのほとんどは、他のプログラミング言語で見てきたものと非常によく似ています。"
 
 #: src/control-flow-basics/blocks-and-scopes.md
-#, fuzzy
 msgid ""
 "A block in Rust contains a sequence of expressions, enclosed by braces `{}`."
-msgstr ""
-"Rust におけるブロックの中にはいくつかの式が存在します。それぞれのブロックは値"
-"と型を持っており、ブロックの値や型はそのブロック内にある最後の式の値や型と一"
-"致します。"
+msgstr "Rust のブロックは、波括弧 `{}` で囲まれた一連の式を含みます。"
 
 #: src/control-flow-basics/blocks-and-scopes.md
 msgid ""
 "The final expression of a block determines the value and type of the whole "
 "block."
-msgstr ""
+msgstr "ブロックの最後の式によって、ブロック全体の値と型が決まります。"
 
 #: src/control-flow-basics/blocks-and-scopes.md
 msgid "// dbg!(y);\n"
-msgstr ""
+msgstr "// dbg!(y);\n"
 
 #: src/control-flow-basics/blocks-and-scopes.md
 msgid ""
@@ -5350,6 +5355,8 @@ msgid ""
 "You can explain that dbg! is a Rust macro that prints and returns the value "
 "of a given expression for quick and dirty debugging."
 msgstr ""
+"dbg! は、手早くデバッグするために、与えられた式の値を出力してその値を返す "
+"Rust のマクロであることを説明するとよいでしょう。"
 
 #: src/control-flow-basics/blocks-and-scopes.md
 msgid ""
@@ -5364,12 +5371,16 @@ msgstr ""
 msgid ""
 "Demonstrate that attempting to access `y` outside of its scope won't compile."
 msgstr ""
+"スコープの外で `y` にアクセスしようとするとコンパイルできないことを実演してく"
+"ださい。"
 
 #: src/control-flow-basics/blocks-and-scopes.md
 msgid ""
 "Values are effectively \"deallocated\" when they go out of their scope, even "
 "if their data on the stack is still there."
 msgstr ""
+"値は、スコープの外に出ると、スタック上のデータがまだ残っていても、事実上「解"
+"放」されます。"
 
 #: src/control-flow-basics/if.md
 msgid "`if` expressions"
@@ -5386,7 +5397,7 @@ msgstr ""
 
 #: src/control-flow-basics/if.md
 msgid "\"zero!\""
-msgstr ""
+msgstr "\"zero!\""
 
 #: src/control-flow-basics/if.md
 msgid "\"biggish\""
@@ -5417,71 +5428,70 @@ msgid "\"number size: {}\""
 msgstr "\"number size: {}\""
 
 #: src/control-flow-basics/if.md
-#, fuzzy
 msgid ""
 "Because `if` is an expression and must have a particular type, both of its "
 "branch blocks must have the same type. Show what happens if you add `;` "
 "after `\"small\"` in the second example."
 msgstr ""
-"`if` は式であるため、1 つの決まった型を持たなくてはなりません。したがって、"
-"`if` 式の分岐ブロックは同一の型を持つ必要があります。2 つ目の例において、"
-"`x / 2` のあとに `;` を付け加えると何が起こるでしょうか。"
+"`if` は式であり、特定の型を持たなければならないため、両方の分岐ブロックは同じ"
+"型でなければなりません。2 つ目の例で `\"small\"` の後に `;` を追加すると何が"
+"起こるかを示してください。"
 
 #: src/control-flow-basics/if.md
-#, fuzzy
 msgid ""
 "An `if` expression should be used in the same way as the other expressions. "
 "For example, when it is used in a `let` statement, the statement must be "
 "terminated with a `;` as well. Remove the `;` before `println!` to see the "
 "compiler error."
 msgstr ""
-"式で `if` を使用する場合、次のステートメントと区切るために、式に `;` を含める"
-"必要があります。`println!` の前にある `;` を削除すると、コンパイラ エラーが表"
-"示されます。"
+"`if` 式は、他の式と同じように使用する必要があります。たとえば、`let` 文の中で"
+"使用する場合は、その文も `;` で終える必要があります。`println!` の前にある "
+"`;` を削除して、コンパイラエラーを確認してください。"
 
 #: src/control-flow-basics/match.md
 msgid "`match` can be used to check a value against one or more options:"
-msgstr ""
+msgstr "`match` を使用すると、値を 1 つ以上の選択肢と照合できます。"
 
 #: src/control-flow-basics/match.md
-#, fuzzy
 msgid "\"one\""
-msgstr "\"none\""
+msgstr "\"one\""
 
 #: src/control-flow-basics/match.md
 msgid "\"ten\""
-msgstr ""
+msgstr "\"ten\""
 
 #: src/control-flow-basics/match.md
 msgid "\"one hundred\""
-msgstr ""
+msgstr "\"one hundred\""
 
 #: src/control-flow-basics/match.md
-#, fuzzy
 msgid "\"something else\""
-msgstr "\"Something else\""
+msgstr "\"something else\""
 
 #: src/control-flow-basics/match.md
 msgid ""
 "Like `if` expressions, `match` also takes on the value of the branch it "
 "chooses;"
-msgstr ""
+msgstr "`if` 式と同様に、`match` も選択された分岐の値をとります。"
 
 #: src/control-flow-basics/match.md
 msgid "\"The value of {flag} is {val}\""
-msgstr ""
+msgstr "\"The value of {flag} is {val}\""
 
 #: src/control-flow-basics/match.md
 msgid ""
 "`match` arms are evaluated from top to bottom, and the first one that "
 "matches has its corresponding body executed."
 msgstr ""
+"`match` のアームは上から順に評価され、最初に一致したアームの本体が実行されま"
+"す。"
 
 #: src/control-flow-basics/match.md
 msgid ""
 "There is no fall-through between cases the way that `switch` works in other "
 "languages."
 msgstr ""
+"他の言語の `switch` のように、ケース間でフォールスルーすることはありません。"
 
 #: src/control-flow-basics/match.md
 msgid ""
@@ -5489,6 +5499,9 @@ msgid ""
 "this is the same thing, since blocks are also expressions, but students may "
 "not fully understand that symmetry at this point."
 msgstr ""
+"`match` アームの本体は、単一の式またはブロックにすることができます。ブロック"
+"も式であるため、厳密にはこれは同じことですが、この時点では受講者はこの対称性"
+"を十分に理解していないかもしれません。"
 
 #: src/control-flow-basics/match.md
 msgid ""
@@ -5498,6 +5511,10 @@ msgid ""
 "introduced yet. Instead we demonstrate matching on a `bool`, which is the "
 "simplest primitive type."
 msgstr ""
+"`match` 式は網羅的である必要があります。つまり、考えられるすべての値をカバー"
+"するか、`_` のようなデフォルトのケースを持つ必要があります。網羅性は列挙型を"
+"使うと最も簡単に示せますが、列挙型はまだ紹介していません。そのため、ここでは"
+"最も単純なプリミティブ型である `bool` に対するマッチングを示します。"
 
 #: src/control-flow-basics/match.md
 msgid ""
@@ -5506,6 +5523,10 @@ msgid ""
 "much information. We'll be talking about pattern matching in more detail "
 "tomorrow, so try not to go into too much detail here."
 msgstr ""
+"このスライドではパターンマッチングには触れずに `match` を紹介し、最初に多くの"
+"情報を詰め込むことなく、受講者が構文に慣れる機会を提供します。パターンマッチ"
+"ングについては明日詳しく説明するので、ここではあまり詳細に立ち入らないように"
+"してください。"
 
 #: src/control-flow-basics/match.md
 msgid ""
@@ -5515,6 +5536,11 @@ msgid ""
 "that checks multiple cases, a `match` expression can be more concise than "
 "`if {} else if {} else if {} else`."
 msgstr ""
+"`match` を使う動機をさらに示すために、例を `if` で書いた同等のコードと比較す"
+"ることができます。2 つ目の `bool` に対するマッチングの場合は、`if {} else {}"
+"` ブロックとかなり似ています。しかし、複数のケースをチェックする 1 つ目の例で"
+"は、`match` 式のほうが `if {} else if {} else if {} else` よりも簡潔に書けま"
+"す。"
 
 #: src/control-flow-basics/match.md
 msgid ""
@@ -5523,6 +5549,10 @@ msgid ""
 "should be taken. However talking about match guards requires explaining "
 "about pattern matching, which we're trying to avoid on this slide."
 msgstr ""
+"`match` はマッチガードもサポートしています。マッチガードを使うと任意の論理条"
+"件を追加でき、その条件を評価してマッチアームを選択するかどうかが決まります。"
+"ただし、マッチガードについて話すにはパターンマッチングの説明が必要になるた"
+"め、このスライドでは避けています。"
 
 #: src/control-flow-basics/loops.md
 msgid "There are three looping keywords in Rust: `while`, `loop`, and `for`:"
@@ -5544,28 +5574,28 @@ msgstr ""
 "をします。"
 
 #: src/control-flow-basics/loops/for.md
-#, fuzzy
 msgid ""
 "The [`for` loop](https://doc.rust-lang.org/std/keyword.for.html) iterates "
 "over ranges of values or the items in a collection:"
 msgstr ""
-"[`for` ループ](https://doc.rust-lang.org/std/keyword.for.html) は、値の範囲を"
-"反復処理します。"
+"[`for` ループ](https://doc.rust-lang.org/std/keyword.for.html) は、値の範囲ま"
+"たはコレクションの要素を反復処理します。"
 
 #: src/control-flow-basics/loops/for.md
 msgid ""
 "`for` loops can be given any sequence of values and will iterate through "
 "that sequence."
 msgstr ""
+"`for` ループには任意の値のシーケンスを与えることができ、そのシーケンスを反復"
+"処理します。"
 
 #: src/control-flow-basics/loops/for.md
-#, fuzzy
 msgid ""
 "Note that the first `for` loop only iterates to `4`. Show the `1..=5` syntax "
 "for an inclusive range."
 msgstr ""
-"なお、この `for` ループは `4` までしか反復処理しません。5 を範囲に含める場合"
-"の構文は `1..=5` であることを示します。"
+"なお、最初の `for` ループは `4` までしか反復処理しません。範囲の終端を含める"
+"場合の構文 `1..=5` を示してください。"
 
 #: src/control-flow-basics/loops/for.md
 msgid ""
@@ -5573,21 +5603,25 @@ msgid ""
 "iterating over different kinds of ranges/collections. Iterators will be "
 "discussed in more detail later."
 msgstr ""
+"内部的には、`for` ループは「イテレータ」と呼ばれる概念を使用して、さまざまな"
+"種類の範囲やコレクションに対する反復処理を行います。イテレータについては後で"
+"詳しく説明します。"
 
 #: src/control-flow-basics/loops/loop.md
-#, fuzzy
 msgid ""
 "The [`loop` expression](https://doc.rust-lang.org/std/keyword.loop.html) "
 "just loops forever, until a `break`."
 msgstr ""
-"[`loop` ステートメント](https://doc.rust-lang.org/std/keyword.loop.html) は、"
-"`break` まで永久にループするだけです。"
+"[`loop` 式](https://doc.rust-lang.org/std/keyword.loop.html) は、`break` まで"
+"永久にループするだけです。"
 
 #: src/control-flow-basics/loops/loop.md
 msgid ""
 "The `loop` expression works like a `while true` loop. Use it for things like "
 "servers that will serve connections forever."
 msgstr ""
+"`loop` 式は `while true` ループのように動作します。接続を永久に処理し続ける"
+"サーバーなどに使用します。"
 
 #: src/control-flow-basics/break-continue.md
 msgid ""
@@ -5599,31 +5633,30 @@ msgstr ""
 "てください。"
 
 #: src/control-flow-basics/break-continue.md
-#, fuzzy
 msgid ""
 "If you want to exit any kind of loop early, use [`break`](https://doc.rust-"
 "lang.org/reference/expressions/loop-expr.html#break-expressions). With "
 "`loop`, this can take an optional expression that becomes the value of the "
 "`loop` expression."
 msgstr ""
-"ループから早く抜け出したい場合は [`break`](https://doc.rust-lang.org/"
-"reference/expressions/loop-expr.html#break-expressions) を使用してください。"
+"どの種類のループでも早く抜け出したい場合は、[`break`](https://doc.rust-"
+"lang.org/reference/expressions/loop-expr.html#break-expressions) を使用してく"
+"ださい。`loop` の場合、`break` はオプションで式を取ることができ、その式が "
+"`loop` 式の値になります。"
 
 #: src/control-flow-basics/break-continue.md
-#, fuzzy
 msgid ""
 "Note that `loop` is the only looping construct that may evaluate to a non-"
 "trivial value. This is because control flow of a `loop` only proceeds to its "
 "context via a `break` expression (unlike `while` and `for` loops, which can "
 "also exit when the condition fails)."
 msgstr ""
-"注意が必要なのは、`loop` が唯一、非自明な値を返すことができるループ構造である"
-"という点です。これは、`loop` が少なくとも一度は必ず実行されることが保証されて"
-"いるからです（これに対して、while や for ループは必ずしも実行されるわけではあ"
-"りません）。"
+"`loop` は、非自明な値を返すことができる唯一のループ構造であることに注意してく"
+"ださい。これは、`loop` の制御フローが `break` 式を通じてのみその外側のコンテ"
+"キストに進むからです（これに対して、`while` ループや `for` ループは条件が満た"
+"されなくなったときにも終了できます）。"
 
 #: src/control-flow-basics/break-continue/labels.md
-#, fuzzy
 msgid ""
 "Both `continue` and `break` can optionally take a label argument that is "
 "used to break out of nested loops:"
@@ -5633,11 +5666,11 @@ msgstr ""
 
 #: src/control-flow-basics/break-continue/labels.md
 msgid "Labeled break also works on arbitrary blocks, e.g."
-msgstr ""
+msgstr "ラベル付きの break は、任意のブロックでも機能します。例:"
 
 #: src/control-flow-basics/break-continue/labels.md
 msgid "\"This line gets skipped\""
-msgstr ""
+msgstr "\"This line gets skipped\""
 
 #: src/control-flow-basics/functions.md
 msgid ""
@@ -5660,13 +5693,12 @@ msgstr ""
 "ファクタリングします）。"
 
 #: src/control-flow-basics/functions.md
-#, fuzzy
 msgid ""
 "Some functions have no return value, and return the 'unit type', `()`. The "
 "compiler will infer this if the return type is omitted."
 msgstr ""
-"戻り値がなく、'unit type'、`()` を返す関数もあります。`-> ()` の戻り値の型が"
-"省略されている場合、コンパイラはこれを推測します。"
+"戻り値がなく、「ユニット型」である `()` を返す関数もあります。戻り値の型が省"
+"略されている場合、コンパイラはこれを推論します。"
 
 #: src/control-flow-basics/functions.md
 msgid ""
@@ -5750,7 +5782,6 @@ msgstr ""
 
 #: src/control-flow-basics/macros.md src/pattern-matching/match.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
-#, fuzzy
 msgid "More To Explore"
 msgstr "その他"
 
@@ -5759,6 +5790,8 @@ msgid ""
 "There are a number of other useful macros provided by the standard library. "
 "Some other examples you can share with students if they want to know more:"
 msgstr ""
+"標準ライブラリには、他にも便利なマクロが多数用意されています。受講者がさらに"
+"知りたい場合に紹介できる例をいくつか挙げます。"
 
 #: src/control-flow-basics/macros.md
 msgid ""
@@ -5766,6 +5799,9 @@ msgid ""
 "related macros can be used to add assertions to your code. These are used "
 "heavily in writing tests."
 msgstr ""
+"[`assert!`](https://doc.rust-lang.org/stable/std/macro.assert.html) とその関"
+"連マクロを使用すると、コードにアサーションを追加できます。これらはテストを書"
+"く際によく使われます。"
 
 #: src/control-flow-basics/macros.md
 msgid ""
@@ -5773,84 +5809,86 @@ msgid ""
 "macro.unreachable.html) is used to mark a branch of control flow that should "
 "never be hit."
 msgstr ""
+"[`unreachable!`](https://doc.rust-lang.org/stable/std/"
+"macro.unreachable.html) は、決して到達しないはずの制御フローの分岐を示すため"
+"に使用されます。"
 
 #: src/control-flow-basics/macros.md
-#, fuzzy
 msgid ""
 "[`eprintln!`](https://doc.rust-lang.org/stable/std/macro.eprintln.html) "
 "allows you to print to stderr."
 msgstr ""
-"同様に、[`Write`](https://doc.rust-lang.org/std/io/trait.Write.html) を使用す"
-"ると、`u8` シンクを抽象化できます。"
+"[`eprintln!`](https://doc.rust-lang.org/stable/std/macro.eprintln.html) を使"
+"用すると、stderr に出力できます。"
 
 #: src/control-flow-basics/exercise.md
-#, fuzzy
 msgid ""
 "The [Collatz Sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) is "
 "defined as follows, for an arbitrary n<sub>1</sub> greater than zero:"
 msgstr ""
 "[コラッツ数列](https://en.wikipedia.org/wiki/Collatz_conjecture) は、ゼロより"
-"大きい任意の n"
+"大きい任意の n<sub>1</sub> に対して、次のように定義されます。"
 
 #: src/control-flow-basics/exercise.md
-#, fuzzy
 msgid ""
 "If _n<sub>i</sub>_ is 1, then the sequence terminates at _n<sub>i</sub>_."
-msgstr "_ が 1 の場合、数列は _n"
+msgstr "_n<sub>i</sub>_ が 1 の場合、数列は _n<sub>i</sub>_ で終了します。"
 
 #: src/control-flow-basics/exercise.md
 msgid "If _n<sub>i</sub>_ is even, then _n<sub>i+1</sub> = n<sub>i</sub> / 2_."
 msgstr ""
+"_n<sub>i</sub>_ が偶数の場合、_n<sub>i+1</sub> = n<sub>i</sub> / 2_ となりま"
+"す。"
 
 #: src/control-flow-basics/exercise.md
 msgid ""
 "If _n<sub>i</sub>_ is odd, then _n<sub>i+1</sub> = 3 * n<sub>i</sub> + 1_."
 msgstr ""
+"_n<sub>i</sub>_ が奇数の場合、_n<sub>i+1</sub> = 3 * n<sub>i</sub> + 1_ とな"
+"ります。"
 
 #: src/control-flow-basics/exercise.md
-#, fuzzy
 msgid "For example, beginning with _n<sub>1</sub>_ = 3:"
-msgstr "たとえば、_n"
+msgstr "たとえば、_n<sub>1</sub>_ = 3 から始めると、次のようになります。"
 
 #: src/control-flow-basics/exercise.md
 msgid "3 is odd, so _n<sub>2</sub>_ = 3 * 3 + 1 = 10;"
-msgstr ""
+msgstr "3 は奇数なので、_n<sub>2</sub>_ = 3 * 3 + 1 = 10"
 
 #: src/control-flow-basics/exercise.md
 msgid "10 is even, so _n<sub>3</sub>_ = 10 / 2 = 5;"
-msgstr ""
+msgstr "10 は偶数なので、_n<sub>3</sub>_ = 10 / 2 = 5"
 
 #: src/control-flow-basics/exercise.md
 msgid "5 is odd, so _n<sub>4</sub>_ = 3 * 5 + 1 = 16;"
-msgstr ""
+msgstr "5 は奇数なので、_n<sub>4</sub>_ = 3 * 5 + 1 = 16"
 
 #: src/control-flow-basics/exercise.md
 msgid "16 is even, so _n<sub>5</sub>_ = 16 / 2 = 8;"
-msgstr ""
+msgstr "16 は偶数なので、_n<sub>5</sub>_ = 16 / 2 = 8"
 
 #: src/control-flow-basics/exercise.md
 msgid "8 is even, so _n<sub>6</sub>_ = 8 / 2 = 4;"
-msgstr ""
+msgstr "8 は偶数なので、_n<sub>6</sub>_ = 8 / 2 = 4"
 
 #: src/control-flow-basics/exercise.md
 msgid "4 is even, so _n<sub>7</sub>_ = 4 / 2 = 2;"
-msgstr ""
+msgstr "4 は偶数なので、_n<sub>7</sub>_ = 4 / 2 = 2"
 
 #: src/control-flow-basics/exercise.md
 msgid "2 is even, so _n<sub>8</sub>_ = 1; and"
-msgstr ""
+msgstr "2 は偶数なので、_n<sub>8</sub>_ = 1 となり、"
 
 #: src/control-flow-basics/exercise.md
 msgid "the sequence terminates."
 msgstr "数列は終了します。"
 
 #: src/control-flow-basics/exercise.md
-#, fuzzy
 msgid ""
 "Write a function to calculate the length of the Collatz sequence for a given "
 "initial `n`."
 msgstr ""
-"任意の初期値 `n` に対するコラッツ数列の長さを計算する関数を作成します。"
+"任意の初期値 `n` に対するコラッツ数列の長さを計算する関数を作成してください。"
 
 #: src/control-flow-basics/exercise.md src/control-flow-basics/solution.md
 msgid "/// Determine the length of the collatz sequence beginning at `n`.\n"
@@ -5863,11 +5901,11 @@ msgstr "\"Length: {}\""
 
 #: src/control-flow-basics/exercise.md src/control-flow-basics/solution.md
 msgid "// should be 15\n"
-msgstr ""
+msgstr "// 15 になるはず\n"
 
 #: src/control-flow-basics/solution.md
 msgid "This solution demonstrates a few key Rust features:"
-msgstr ""
+msgstr "この解答は、Rust の重要な機能をいくつか示しています。"
 
 #: src/control-flow-basics/solution.md
 msgid ""
@@ -5875,6 +5913,9 @@ msgid ""
 "local variable `n` mutable within the function scope. It does _not_ affect "
 "the caller's value, as integers are `Copy` types passed by value."
 msgstr ""
+"**`mut` 引数:** 引数 `n` は `mut n` として宣言されています。これにより、ロー"
+"カル変数 `n` が関数のスコープ内で可変になります。整数は値渡しされる `Copy` 型"
+"なので、呼び出し元の値には影響し _ません_。"
 
 #: src/control-flow-basics/solution.md
 msgid ""
@@ -5882,12 +5923,17 @@ msgid ""
 "value. We assign the result of the `if`/`else` block directly to `n`. This "
 "is more concise than writing `n = ...` inside each branch."
 msgstr ""
+"**`if` 式:** Rust の `if` は式であり、値を生成します。`if`/`else` ブロックの"
+"結果を直接 `n` に代入しています。これは、各分岐の中で `n = ...` と書くよりも"
+"簡潔です。"
 
 #: src/control-flow-basics/solution.md
 msgid ""
 "**Implicit return:** The function ends with `len` (without a semicolon), "
 "which is automatically returned."
 msgstr ""
+"**暗黙の戻り値:** 関数は `len`（セミコロンなし）で終わっており、これが自動的"
+"に返されます。"
 
 #: src/control-flow-basics/solution.md
 msgid ""
@@ -5898,12 +5944,19 @@ msgid ""
 "numbers), but panic or infinite loops are potential outcomes here if `n <= "
 "0`."
 msgstr ""
+"コラッツ数列が有効であるためには、`n` は 0 より厳密に大きくなければならないこ"
+"とに注意してください。関数のシグネチャは `i32` を受け取りますが、問題の説明は"
+"正の整数を前提としています。より堅牢な実装では、`u32` を使用するか、`Option` "
+"または `Result` を返して無効な入力（0 または負の数）を処理するでしょう。ここ"
+"では `n <= 0` の場合、パニックや無限ループが起こる可能性があります。"
 
 #: src/control-flow-basics/solution.md
 msgid ""
 "The overflow is a potential issue if `n` grows too large, similar to the "
 "Fibonacci exercise."
 msgstr ""
+"フィボナッチの演習と同様に、`n` が大きくなりすぎるとオーバーフローが問題にな"
+"る可能性があります。"
 
 #: src/welcome-day-1-afternoon.md src/welcome-day-2-afternoon.md
 #: src/welcome-day-3-afternoon.md src/welcome-day-4-afternoon.md
@@ -5911,22 +5964,22 @@ msgid "Welcome Back"
 msgstr "おかえり"
 
 #: src/welcome-day-1-afternoon.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 2 hours and 45 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 55 分です。"
+msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 45 分です。"
 
 #: src/tuples-and-arrays.md
-#, fuzzy
 msgid "This segment should take about 35 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 55 分です"
+msgstr "このセグメントの所要時間は約 35 分です。"
 
 #: src/tuples-and-arrays.md
 msgid ""
 "We have seen how primitive types work in Rust. Now it's time for you to "
 "start building new composite types."
 msgstr ""
+"Rust のプリミティブ型がどのように機能するかを見てきました。次は、新しい複合型"
+"を作り始めましょう。"
 
 #: src/tuples-and-arrays/arrays.md
 msgid ""
@@ -5935,6 +5988,9 @@ msgid ""
 "value, or if you have a large array that would be hard to initialize "
 "manually."
 msgstr ""
+"配列は、`[0; 1024]` のような省略構文を使って初期化することもできます。これ"
+"は、すべての要素を同じ値で初期化したい場合や、手作業で初期化するのが難しい大"
+"きな配列がある場合に便利です。"
 
 #: src/tuples-and-arrays/arrays.md
 msgid ""
@@ -5954,11 +6010,12 @@ msgid ""
 "Try accessing an out-of-bounds array element. The compiler is able to "
 "determine that the index is unsafe, and will not compile the code:"
 msgstr ""
+"範囲外の配列要素にアクセスしてみてください。コンパイラはそのインデックスが安"
+"全でないと判断でき、コードをコンパイルしません。"
 
 #: src/tuples-and-arrays/arrays.md
-#, fuzzy
 msgid "\"a: {a:?}\""
-msgstr "\"a: {a}\""
+msgstr "\"a: {a:?}\""
 
 #: src/tuples-and-arrays/arrays.md
 msgid ""
@@ -5968,6 +6025,12 @@ msgid ""
 "Rust. The optimization is so good that it's hard to give an example of "
 "runtime checks failing. The following code will compile but panic at runtime:"
 msgstr ""
+"配列へのアクセスは実行時にチェックされます。Rust は可能な場合はこれらのチェッ"
+"クを最適化によって取り除きます。つまり、アクセスが安全であることをコンパイラ"
+"が証明できる場合は、パフォーマンス向上のために実行時チェックが削除されます。"
+"アンセーフな Rust を使用すると、これらのチェックを回避できます。この最適化は"
+"非常に優れているため、実行時チェックが失敗する例を示すのは困難です。次のコー"
+"ドはコンパイルされますが、実行時にパニックになります。"
 
 #: src/tuples-and-arrays/arrays.md
 msgid "We can use literals to assign values to arrays."
@@ -5980,6 +6043,10 @@ msgid ""
 "from what students expect if they come from a garbage-collected language, "
 "where arrays may be heap allocated by default."
 msgstr ""
+"配列はヒープに割り当てられません。配列はコンパイル時にサイズが判明している固"
+"定サイズの通常の値であり、スタックに配置されます。配列がデフォルトでヒープに"
+"割り当てられることがあるガベージ コレクションのある言語から来た受講者にとって"
+"は、予想と異なるかもしれません。"
 
 #: src/tuples-and-arrays/arrays.md
 msgid ""
@@ -5987,11 +6054,12 @@ msgid ""
 "array. The length of an array is fixed at compile-time, and so its length "
 "cannot change at runtime."
 msgstr ""
+"配列から要素を削除したり、配列に要素を追加したりする方法はありません。配列の"
+"長さはコンパイル時に固定されるため、実行時に変更することはできません。"
 
 #: src/tuples-and-arrays/arrays.md
-#, fuzzy
 msgid "Debug Printing"
-msgstr "デバッグ"
+msgstr "デバッグ出力"
 
 #: src/tuples-and-arrays/arrays.md
 msgid ""
@@ -6035,6 +6103,8 @@ msgid ""
 "The empty tuple `()` is referred to as the \"unit type\" and signifies "
 "absence of a meaningful value, akin to `void` in other languages."
 msgstr ""
+"空のタプル `()` は「ユニット型」と呼ばれ、意味のある値が存在しないことを表し"
+"ます。これは他の言語の `void` に似ています。"
 
 #: src/tuples-and-arrays/tuples.md
 msgid ""
@@ -6042,6 +6112,9 @@ msgid ""
 "`for` loop requires all the elements to have the same type, which may not be "
 "the case for a tuple."
 msgstr ""
+"配列とは異なり、タプルは `for` ループで使用できません。これは、`for` ループで"
+"はすべての要素が同じ型である必要がありますが、タプルではそうとは限らないため"
+"です。"
 
 #: src/tuples-and-arrays/tuples.md
 msgid ""
@@ -6049,6 +6122,8 @@ msgid ""
 "elements and their types are fixed at compile time and cannot be changed at "
 "runtime."
 msgstr ""
+"タプルに要素を追加したり、タプルから要素を削除したりする方法はありません。要"
+"素の数とその型はコンパイル時に固定され、実行時に変更することはできません。"
 
 #: src/tuples-and-arrays/iteration.md
 msgid "The `for` statement supports iterating over arrays (but not tuples)."
@@ -6065,15 +6140,14 @@ msgstr ""
 "ん。"
 
 #: src/tuples-and-arrays/iteration.md
-#, fuzzy
 msgid ""
 "The `assert_ne!` macro is new here. There are also `assert_eq!` and `assert!"
 "` macros. These are always checked, while debug-only variants like "
 "`debug_assert!` compile to nothing in release builds."
 msgstr ""
-"ここでは `assert_ne!` マクロが新たに加わっていますが、他にも `assert_eq! マク"
-"ロと`assert!` マクロがあります。これらは常にチェックされますが、"
-"`debug_assert!` などのデバッグ専用の派生ツールは、リリースビルドでは何もコン"
+"ここでは `assert_ne!` マクロが新たに加わっていますが、他にも `assert_eq!` マ"
+"クロと `assert!` マクロがあります。これらは常にチェックされますが、"
+"`debug_assert!` などのデバッグ専用の派生マクロは、リリースビルドでは何もコン"
 "パイルされません。"
 
 #: src/tuples-and-arrays/destructuring.md
@@ -6081,19 +6155,20 @@ msgid ""
 "Rust supports using pattern matching to destructure a larger value like a "
 "tuple into its constituent parts:"
 msgstr ""
+"Rust では、パターンマッチングを使用して、タプルのような大きな値をその構成要素"
+"に分解できます。"
 
 #: src/tuples-and-arrays/destructuring.md
-#, fuzzy
 msgid "\"{tuple:?}: {}\""
-msgstr "\"{thread_id:?}: {v:?}\""
+msgstr "\"{tuple:?}: {}\""
 
 #: src/tuples-and-arrays/destructuring.md
 msgid "\"ordered\""
-msgstr ""
+msgstr "\"ordered\""
 
 #: src/tuples-and-arrays/destructuring.md
 msgid "\"unordered\""
-msgstr ""
+msgstr "\"unordered\""
 
 #: src/tuples-and-arrays/destructuring.md
 msgid ""
@@ -6101,12 +6176,16 @@ msgid ""
 "statically verify that the value on the right of `=` has the same structure "
 "as the pattern."
 msgstr ""
+"ここで使用されているパターンは「論駁不可能」です。つまり、`=` の右側の値がパ"
+"ターンと同じ構造を持つことを、コンパイラが静的に検証できます。"
 
 #: src/tuples-and-arrays/destructuring.md
 msgid ""
 "A variable name is an irrefutable pattern that always matches any value, "
 "hence why we can also use `let` to declare a single variable."
 msgstr ""
+"変数名は、常に任意の値に一致する論駁不可能なパターンです。そのため、`let` を"
+"使って単一の変数を宣言することもできます。"
 
 #: src/tuples-and-arrays/destructuring.md
 msgid ""
@@ -6114,38 +6193,40 @@ msgid ""
 "comparison and destructuring to happen at the same time. This form of "
 "pattern matching will be discussed in more detail later."
 msgstr ""
+"Rust では条件式でパターンを使用することもでき、等価比較と分解を同時に行えま"
+"す。この形式のパターンマッチングについては、後で詳しく説明します。"
 
 #: src/tuples-and-arrays/destructuring.md
 msgid ""
 "Edit the examples above to show the compiler error when the pattern doesn't "
 "match the value being matched on."
 msgstr ""
+"上記の例を編集して、照合対象の値にパターンが一致しない場合のコンパイラ エラー"
+"を示してください。"
 
 #: src/tuples-and-arrays/exercise.md
 msgid "Arrays can contain other arrays:"
 msgstr "配列には他の配列を含めることができます。"
 
 #: src/tuples-and-arrays/exercise.md
-#, fuzzy
 msgid "What is the type of this variable?"
-msgstr "非同期の呼び出しの返り値の型は？"
+msgstr "この変数の型は何でしょうか？"
 
 #: src/tuples-and-arrays/exercise.md
-#, fuzzy
 msgid ""
 "Use an array such as the above to write a function `transpose` that "
 "transposes a matrix (turns rows into columns):"
 msgstr ""
-"上記のような配列を使用して、行列を転置（行を列に変換）する `transpose` 関数を"
-"記述します。"
+"上記のような配列を使用して、行列を転置（行を列に変換）する関数 `transpose` を"
+"作成してください。"
 
 #: src/tuples-and-arrays/exercise.md
-#, fuzzy
 msgid ""
 "Copy the code below to <https://play.rust-lang.org/> and implement the "
 "function. This function only operates on 3×3 matrices."
 msgstr ""
-"以下のコードを <https://play.rust-lang.org/> にコピーして、関数を実装します。"
+"以下のコードを <https://play.rust-lang.org/> にコピーして、関数を実装してくだ"
+"さい。この関数は 3×3 の行列のみを扱います。"
 
 #: src/tuples-and-arrays/exercise.md src/tuples-and-arrays/solution.md
 msgid "// <-- the comment makes rustfmt add a newline\n"
@@ -6153,17 +6234,15 @@ msgstr "// <-- このコメントにより rustfmt で改行を追加\n"
 
 #: src/tuples-and-arrays/exercise.md src/tuples-and-arrays/solution.md
 msgid "\"Original:\""
-msgstr ""
+msgstr "\"Original:\""
 
 #: src/tuples-and-arrays/exercise.md src/tuples-and-arrays/solution.md
-#, fuzzy
 msgid "\"{row:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{row:?}\""
 
 #: src/tuples-and-arrays/exercise.md src/tuples-and-arrays/solution.md
-#, fuzzy
 msgid "\"\\nTransposed:\""
-msgstr "\"transposed: {:#?}\""
+msgstr "\"\\nTransposed:\""
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
@@ -6171,6 +6250,9 @@ msgid ""
 "where each element is itself an array of 3 `i32`s. This is how multi-"
 "dimensional arrays are typically represented in Rust."
 msgstr ""
+"**配列型:** 型 `[[i32; 3]; 3]` はサイズ 3 の配列を表し、その各要素はそれ自体"
+"が 3 つの `i32` からなる配列です。Rust では通常、多次元配列はこのように表現さ"
+"れます。"
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
@@ -6178,6 +6260,9 @@ msgid ""
 "filling it. Rust requires all variables to be initialized before use; there "
 "is no concept of \"uninitialized memory\" in safe Rust."
 msgstr ""
+"**初期化:** `result` に値を入れる前に、ゼロ（`[[0; 3]; 3]`）で初期化していま"
+"す。Rust では、すべての変数を使用前に初期化する必要があります。安全な Rust に"
+"は「初期化されていないメモリ」という概念はありません。"
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
@@ -6185,6 +6270,9 @@ msgid ""
 "`Copy`. When we pass `matrix` to the function, it is copied by value. The "
 "`result` variable is a new, separate array."
 msgstr ""
+"**コピーセマンティクス:** `Copy` 型（`i32` など）の配列は、それ自体も `Copy` "
+"です。`matrix` を関数に渡すと、値としてコピーされます。`result` 変数は新しい"
+"別の配列です。"
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
@@ -6192,12 +6280,17 @@ msgid ""
 "over indices. Rust also has powerful iterators, which we will see later, but "
 "indexing is straightforward for this matrix transposition."
 msgstr ""
+"**反復処理:** 範囲（`0..3`）を使った通常の `for` ループで、インデックスを反復"
+"処理しています。Rust には強力なイテレータもあり、それについては後で説明します"
+"が、この行列の転置ではインデックスを使うほうが簡単です。"
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
 "Mention that `[i32; 3]` is a distinct type from `[i32; 4]`. Array sizes are "
 "part of the type signature."
 msgstr ""
+"`[i32; 3]` は `[i32; 4]` とは別の型であることを説明してください。配列のサイズ"
+"は型シグネチャの一部です。"
 
 #: src/tuples-and-arrays/solution.md
 msgid ""
@@ -6206,21 +6299,22 @@ msgid ""
 "It would work, but it would return a modified _copy_, leaving the original "
 "in `main` unchanged)."
 msgstr ""
+"`matrix` を変更した後にそれを直接返そうとしたら（シグネチャを `mut matrix` に"
+"変更した場合）どうなるか、受講者に尋ねてください。（回答: 動作はしますが、変"
+"更された _コピー_ が返され、`main` 内の元の値は変更されません。）"
 
 #: src/references.md src/smart-pointers.md src/iterators.md
 #: src/error-handling.md src/concurrency/async-pitfalls.md
-#, fuzzy
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 55 分です"
+msgstr "このセグメントの所要時間は約 55 分です。"
 
 #: src/references/shared.md
-#, fuzzy
 msgid ""
 "A reference provides a way to access another value without taking ownership "
 "of the value, and is also called \"borrowing\". Shared references are read-"
 "only, and the referenced data cannot change."
 msgstr ""
-"参照を使用すると、値について責任を負うことなく別の値にアクセスできます。参照"
+"参照を使用すると、値の所有権を取得することなく別の値にアクセスできます。参照"
 "は「借用」とも呼ばれます。共有参照は読み取り専用であり、参照先のデータは変更"
 "できません。"
 
@@ -6229,9 +6323,8 @@ msgid "'A'"
 msgstr "'A'"
 
 #: src/references/shared.md
-#, fuzzy
 msgid "'B'"
-msgstr "'x'"
+msgstr "'B'"
 
 #: src/references/shared.md
 msgid ""
@@ -6246,6 +6339,7 @@ msgstr ""
 msgid ""
 "References can never be null in Rust, so null checking is not necessary."
 msgstr ""
+"Rust では参照が null になることはないため、null チェックは必要ありません。"
 
 #: src/references/shared.md
 msgid ""
@@ -6277,16 +6371,17 @@ msgid ""
 "Explicit referencing with `&` is required, except when invoking methods, "
 "where Rust performs automatic referencing and dereferencing."
 msgstr ""
+"`&` による明示的な参照が必要です。ただしメソッドを呼び出す場合は例外で、Rust "
+"が自動的に参照と逆参照を行います。"
 
 #: src/references/shared.md
-#, fuzzy
 msgid ""
 "Rust will auto-dereference in some cases, in particular when invoking "
 "methods (try `r.is_ascii()`). There is no need for an `->` operator like in "
 "C++."
 msgstr ""
-"Rust は、特にメソッドを呼び出すとき、自動的に逆参照する場合があります"
-"（`r.count_ones()` を試してください）。C++ のような `->` 演算子は必要ありませ"
+"Rust は、特にメソッドを呼び出すとき、自動的に逆参照を行う場合があります"
+"（`r.is_ascii()` を試してください）。C++ のような `->` 演算子は必要ありませ"
 "ん。"
 
 #: src/references/shared.md
@@ -6309,22 +6404,19 @@ msgstr ""
 "定してみてください。"
 
 #: src/references/shared.md
-#, fuzzy
 msgid ""
 "Rust is tracking the lifetimes of all references to ensure they live long "
 "enough. Dangling references cannot occur in safe Rust."
 msgstr ""
 "Rust は、すべての参照のライフタイムを追跡して、十分な存続期間を確保していま"
-"す。安全な Rust では、ダングリング参照が発生することはありません。`x_axis` "
-"は `point` への参照を返しますが、関数が戻ると `point` の割り当てが解除される"
-"ため、コンパイルされません。"
+"す。安全な Rust では、ダングリング参照が発生することはありません。"
 
 #: src/references/shared.md
-#, fuzzy
 msgid ""
 "We will talk more about borrowing and preventing dangling references when we "
 "get to ownership."
-msgstr "借用については所有権のところで詳しく説明します。"
+msgstr ""
+"借用とダングリング参照の防止については、所有権のところで詳しく説明します。"
 
 #: src/references/exclusive.md
 msgid ""
@@ -6347,16 +6439,15 @@ msgstr ""
 "か、`point.0` を変更してみてください。"
 
 #: src/references/exclusive.md
-#, fuzzy
 msgid ""
 "Be sure to note the difference between `let mut x_coord: &i32` and `let "
 "x_coord: &mut i32`. The first one is a shared reference that can be bound to "
 "different values, while the second is an exclusive reference to a mutable "
 "value."
 msgstr ""
-"`let mut x_coord: &i32` と `let x_coord: &mut i32` の違いに注意してください。"
-"前者は異なる値にバインドできる共有参照を表すのに対し、後者は可変の値への排他"
-"参照を表します。"
+"`let mut x_coord: &i32` と `let x_coord: &mut i32` の違いに必ず注意してくださ"
+"い。前者は異なる値にバインドできる共有参照であるのに対し、後者は可変の値への"
+"排他参照です。"
 
 #: src/references/slices.md
 msgid "A slice gives you a view into a larger collection:"
@@ -6417,13 +6508,15 @@ msgstr ""
 
 #: src/references/slices.md
 msgid "You can't \"grow\" a slice once it's created:"
-msgstr ""
+msgstr "スライスは、いったん作成すると「拡張」することはできません。"
 
 #: src/references/slices.md
 msgid ""
 "You can't append elements of the slice, since it doesn't own the backing "
 "buffer."
 msgstr ""
+"スライスはその背後にあるバッファを所有していないため、スライスに要素を追加す"
+"ることはできません。"
 
 #: src/references/slices.md
 msgid ""
@@ -6431,25 +6524,33 @@ msgid ""
 "slice does not have information about the length of the underlying buffer "
 "and so you can't know how large the slice can be grown."
 msgstr ""
+"背後にあるバッファのより大きな部分を指すようにスライスを拡張することはできま"
+"せん。スライスは基となるバッファの長さに関する情報を持っていないため、スライ"
+"スをどこまで拡張できるかを知ることはできません。"
 
 #: src/references/slices.md
 msgid ""
 "To get a larger slice you have to go back to the original buffer and create "
 "a larger slice from there."
 msgstr ""
+"より大きなスライスを取得するには、元のバッファに戻って、そこからより大きなス"
+"ライスを作成する必要があります。"
 
 #: src/references/strings.md
 msgid "We can now understand the two string types in Rust:"
-msgstr ""
+msgstr "これで、Rust の 2 つの文字列型を理解できるようになりました。"
 
 #: src/references/strings.md
 msgid "`&str` is a slice of UTF-8 encoded bytes, similar to `&[u8]`."
 msgstr ""
+"`&str` は UTF-8 でエンコードされたバイトのスライスで、`&[u8]` に似ています。"
 
 #: src/references/strings.md
 msgid ""
 "`String` is an owned buffer of UTF-8 encoded bytes, similar to `Vec<T>`."
 msgstr ""
+"`String` は UTF-8 でエンコードされたバイトの所有バッファで、`Vec<T>` に似てい"
+"ます。"
 
 #: src/references/strings.md src/std-traits/read-and-write.md
 msgid "\"World\""
@@ -6472,7 +6573,6 @@ msgid "\"s3: {s3}\""
 msgstr "\"s3: {s3}\""
 
 #: src/references/strings.md
-#, fuzzy
 msgid ""
 "`&str` introduces a string slice, which is an immutable reference to UTF-8 "
 "encoded string data stored in a block of memory. String literals "
@@ -6480,10 +6580,9 @@ msgid ""
 msgstr ""
 "`&str` は文字列スライスを導入します。これは、メモリブロックに保存されている "
 "UTF-8 でエンコードされた文字列データへの不変の参照です。文字列リテラル"
-"（`”Hello”`）は、プログラムのバイナリに格納されます。"
+"（`\"Hello\"`）は、プログラムのバイナリに格納されます。"
 
 #: src/references/strings.md
-#, fuzzy
 msgid ""
 "Rust's `String` type is a wrapper around a vector of bytes. As with a "
 "`Vec<T>`, it is owned."
@@ -6554,18 +6653,27 @@ msgid ""
 "use without `null` checks. The other rule we'll look at for now is that "
 "references can't _outlive_ the data they point to."
 msgstr ""
+"Rust は参照に対していくつかのルールを課しており、それによって参照を常に安全に"
+"使用できるようにしています。ルールの 1 つは、参照が決して `null` にならないこ"
+"とで、これにより `null` チェックなしで安全に使用できます。ここで取り上げるも"
+"う 1 つのルールは、参照はそれが指すデータよりも _長く存続_ できないというもの"
+"です。"
 
 #: src/references/dangling.md
 msgid ""
 "This slide gets students thinking about references as not simply being "
 "pointers, since Rust has different rules for references than other languages."
 msgstr ""
+"Rust の参照には他の言語とは異なるルールがあるため、このスライドでは、参照が単"
+"なるポインタではないことを受講者に考えてもらいます。"
 
 #: src/references/dangling.md
 msgid ""
 "We'll look at the rest of Rust's borrowing rules on day 3 when we talk about "
 "Rust's ownership system."
 msgstr ""
+"Rust の借用ルールの残りについては、3 日目に Rust の所有権システムについて説明"
+"する際に取り上げます。"
 
 #: src/references/dangling.md
 msgid ""
@@ -6574,6 +6682,10 @@ msgid ""
 "introduced enums or pattern matching, though, so try not to go into too much "
 "detail about this here."
 msgstr ""
+"Rust で null 許容性に相当するのは `Option` 型で、これを使うと（参照やポインタ"
+"に限らず）任意の型を「null 許容」にできます。ただし、列挙型やパターンマッチン"
+"グはまだ紹介していないため、ここではあまり詳細に立ち入らないようにしてくださ"
+"い。"
 
 #: src/references/exercise.md
 msgid ""
@@ -6638,6 +6750,9 @@ msgid ""
 "array, which causes the `for` loop to give mutable references to each "
 "element."
 msgstr ""
+"`normalize` では、`*item /= mag` によって各要素を変更できたことに注目してくだ"
+"さい。これは、配列への可変参照を使用して反復処理しているためで、それにより "
+"`for` ループが各要素への可変参照を返します。"
 
 #: src/references/solution.md
 msgid ""
@@ -6645,12 +6760,14 @@ msgid ""
 "magnitude(vector: &[f64]) -> f64`. This makes the function more general, at "
 "the cost of a runtime length check."
 msgstr ""
+"ここでスライス参照を受け取ることも可能です（例: `fn magnitude(vector: "
+"&[f64]) -> f64`）。これにより、実行時の長さチェックというコストと引き換えに、"
+"関数がより汎用的になります。"
 
 #: src/user-defined-types.md src/std-types.md src/std-traits.md
 #: src/memory-management.md
-#, fuzzy
 msgid "This segment should take about 1 hour. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間です"
+msgstr "このセグメントの所要時間は約 1 時間です。"
 
 #: src/user-defined-types/named-structs.md
 msgid "Like C and C++, Rust has support for custom structs:"
@@ -6722,24 +6839,25 @@ msgid ""
 "Struct fields do not support default values. Default values are specified by "
 "implementing the `Default` trait which we will cover later."
 msgstr ""
+"構造体のフィールドはデフォルト値をサポートしていません。デフォルト値は "
+"`Default` トレイトを実装することで指定します。これについては後で説明します。"
 
 #: src/user-defined-types/named-structs.md
 msgid "You can also demonstrate the struct update syntax here:"
-msgstr ""
+msgstr "ここで構造体更新記法を示すこともできます。"
 
 #: src/user-defined-types/named-structs.md
 msgid "\"Jackie\""
 msgstr "\"Jackie\""
 
 #: src/user-defined-types/named-structs.md
-#, fuzzy
 msgid ""
 "It allows us to copy the majority of the fields from the old struct without "
 "having to explicitly type it all out. It must always be the last element."
 msgstr ""
-"構文 `..avery` を使用すると、明示的にすべてのフィールドを入力しなくても、古い"
-"構造体のフィールドの大部分をコピーできます。この構文は、常に最後の要素にする"
-"必要があります。"
+"これを使用すると、明示的にすべてのフィールドを入力しなくても、古い構造体の"
+"フィールドの大部分をコピーできます。これは、常に最後の要素にする必要がありま"
+"す。"
 
 #: src/user-defined-types/named-structs.md
 msgid ""
@@ -6747,6 +6865,9 @@ msgid ""
 "about struct update syntax in more detail on the slide on the `Default` "
 "trait, so we don't need to talk about it here unless students ask about it."
 msgstr ""
+"これは主に `Default` トレイトと組み合わせて使用されます。構造体更新記法につい"
+"ては `Default` トレイトのスライドで詳しく説明するので、受講者から質問がない限"
+"り、ここで説明する必要はありません。"
 
 #: src/user-defined-types/tuple-structs.md
 msgid "If the field names are unimportant, you can use a tuple struct:"
@@ -6804,6 +6925,8 @@ msgid ""
 "The newtype pattern is covered extensively in the [\"Idiomatic Rust\" module]"
 "(../idiomatic/leveraging-the-type-system/newtype-pattern.md)."
 msgstr ""
+"ニュータイプ パターンについては、[「Idiomatic Rust」モジュール](../idiomatic/"
+"leveraging-the-type-system/newtype-pattern.md) で詳しく説明しています。"
 
 #: src/user-defined-types/tuple-structs.md
 msgid ""
@@ -6814,20 +6937,20 @@ msgstr ""
 "加する方法を示します。"
 
 #: src/user-defined-types/tuple-structs.md
-#, fuzzy
 msgid ""
 "Rust generally avoids implicit conversions, like automatic unwrapping or "
 "using booleans as integers."
 msgstr ""
-"Rust では通常、不明瞭なこと（自動ラップ解除や、整数としてのブール値の使用な"
-"ど）は好まれません。"
+"Rust では通常、暗黙的な変換（自動ラップ解除や、整数としてのブール値の使用な"
+"ど）は避けられています。"
 
 #: src/user-defined-types/tuple-structs.md
-#, fuzzy
 msgid ""
 "Operator overloading is discussed on Day 2 ([Standard Library Traits](../std-"
 "traits.md))."
-msgstr "演算子のオーバーロードについては、3 日目（ジェネリクス）で説明します。"
+msgstr ""
+"演算子のオーバーロードについては、2 日目（[標準ライブラリのトレイト](../std-"
+"traits.md)）で説明します。"
 
 #: src/user-defined-types/tuple-structs.md
 msgid ""
@@ -6835,6 +6958,8 @@ msgid ""
 "a zero-sized type (ZST), of which there is only one value (the name of the "
 "type)."
 msgstr ""
+"タプル構造体のフィールドが 0 個の場合、`()` は省略できます。その結果はサイズ"
+"がゼロの型（ZST）となり、その値は 1 つしかありません（型の名前そのもの）。"
 
 #: src/user-defined-types/tuple-structs.md
 msgid ""
@@ -6842,6 +6967,8 @@ msgid ""
 "(imagine a `NullReader` that implements some reader behavior by always "
 "returning EOF)."
 msgstr ""
+"これは、何らかの動作を実装するもののデータを持たない型によく使われます（常に "
+"EOF を返すことでリーダーの動作を実装する `NullReader` を想像してください）。"
 
 #: src/user-defined-types/tuple-structs.md
 msgid ""
@@ -6864,18 +6991,16 @@ msgid "// Simple variant\n"
 msgstr "// 単純なバリアント\n"
 
 #: src/user-defined-types/enums.md
-#, fuzzy
 msgid "// Tuple variant\n"
-msgstr "// 単純なバリアント\n"
+msgstr "// タプル バリアント\n"
 
 #: src/user-defined-types/enums.md
 msgid "// Struct variant\n"
 msgstr "// 構造体バリアント\n"
 
 #: src/user-defined-types/enums.md
-#, fuzzy
 msgid "\"On this turn: {player_move:?}\""
-msgstr "\"On this turn: {:?}\""
+msgstr "\"On this turn: {player_move:?}\""
 
 #: src/user-defined-types/enums.md
 msgid "Enumerations allow you to collect a set of values under one type."
@@ -7001,6 +7126,9 @@ msgid ""
 "creates a distinct type. Prefer `struct InventoryCount(usize)` to `type "
 "InventoryCount = usize`."
 msgstr ""
+"[ニュータイプ](tuple-structs.html) は別個の型を作成するため、多くの場合より良"
+"い選択肢です。`type InventoryCount = usize` よりも `struct "
+"InventoryCount(usize)` を使用してください。"
 
 #: src/user-defined-types/aliases.md
 msgid "C programmers will recognize this as similar to a `typedef`."
@@ -7011,14 +7139,13 @@ msgid "`const`"
 msgstr "`const`"
 
 #: src/user-defined-types/const.md
-#, fuzzy
 msgid ""
 "Constants are evaluated at compile time and their values are [inlined]"
 "(https://rust-lang.github.io/rfcs/0246-const-vs-static.html) wherever they "
 "are used:"
 msgstr ""
-"定数変数はコンパイル時に評価され、使用場所にかかわらずその値がインライン化さ"
-"れます。"
+"定数はコンパイル時に評価され、その値は使用されるすべての場所で [インライン化]"
+"(https://rust-lang.github.io/rfcs/0246-const-vs-static.html) されます。"
 
 #: src/user-defined-types/const.md
 msgid ""
@@ -7029,9 +7156,9 @@ msgstr ""
 "た関数のみです。ただし、`const` 関数は実行時に呼び出すことができます。"
 
 #: src/user-defined-types/const.md
-#, fuzzy
 msgid "Mention that `const` behaves semantically similar to C++'s `constexpr`"
-msgstr "`const` は C++ の `constexpr` と意味的によく似ていることを説明します。"
+msgstr ""
+"`const` は C++ の `constexpr` と意味的によく似た動作をすることを説明します。"
 
 #: src/user-defined-types/static.md
 msgid "`static`"
@@ -7067,11 +7194,8 @@ msgstr ""
 "ジェクト ID が必要ない場合は、一般的に `const` が使用されます。"
 
 #: src/user-defined-types/static.md
-#, fuzzy
 msgid "`static` is similar to mutable global variables in C++."
-msgstr ""
-"一方、`static` は、C++ の `const` または可変グローバル変数にかなり似ていま"
-"す。"
+msgstr "`static` は、C++ の可変グローバル変数に似ています。"
 
 #: src/user-defined-types/static.md
 msgid ""
@@ -7097,6 +7221,9 @@ msgid ""
 "initialization on first use. `OnceCell` is not `Sync` and thus cannot be "
 "used in this context."
 msgstr ""
+"初回使用時の初期化をサポートする方法として、static で `OnceLock` を使用するの"
+"が一般的です。`OnceCell` は `Sync` ではないため、このコンテキストでは使用でき"
+"ません。"
 
 #: src/user-defined-types/static.md
 msgid "Thread-local data can be created with the macro `std::thread_local`."
@@ -7193,6 +7320,11 @@ msgid ""
 "it to think the code is unused. They can ignore it for the purpose of this "
 "exercise."
 msgstr ""
+"演習の冒頭にある `#![allow(dead_code)]` について受講者から質問があった場合"
+"は、次のように説明してください。`Event` 型に対して行うのは出力することだけな"
+"ので、これが必要になります。コンパイラがデッドコードをチェックする方法の微妙"
+"な仕様により、コードが使用されていないとみなされてしまうためです。この演習で"
+"は無視してかまいません。"
 
 #: src/user-defined-types/solution.md
 msgid "/// A button was pressed.\n"
@@ -7233,12 +7365,19 @@ msgid ""
 "a nested `Button` enum. This allows `Event` to represent a rich set of "
 "states in a type-safe way."
 msgstr ""
+"**データを持つ列挙型:** Rust の `enum` のバリアントはデータを保持できます。"
+"`CarArrived(Floor)` は整数を保持し、`ButtonPressed(Button)` はネストされた "
+"`Button` 列挙型を保持します。これにより、`Event` は豊富な状態のセットを型安全"
+"な方法で表現できます。"
 
 #: src/user-defined-types/solution.md
 msgid ""
 "**Type Aliases:** `type Floor = i32` gives a semantic name to `i32`. This "
 "improves readability, but `Floor` is still just an `i32` to the compiler."
 msgstr ""
+"**型エイリアス:** `type Floor = i32` は `i32` に意味のある名前を付けます。こ"
+"れにより可読性は向上しますが、コンパイラにとって `Floor` は依然として単なる "
+"`i32` です。"
 
 #: src/user-defined-types/solution.md
 msgid ""
@@ -7246,18 +7385,27 @@ msgid ""
 "to format the enums for printing with `{:?}`. Without this, we would have to "
 "manually implement the `fmt::Debug` trait."
 msgstr ""
+"**`#[derive(Debug)]`:** この属性を使用して、列挙型を `{:?}` で出力するための"
+"フォーマット用コードを自動生成しています。これがなければ、`fmt::Debug` トレイ"
+"トを手動で実装する必要があります。"
 
 #: src/user-defined-types/solution.md
 msgid ""
 "**Nested Enums:** The `Button` enum is nested inside `Event::ButtonPressed`. "
 "This hierarchical structure is common in Rust for modeling complex domains."
 msgstr ""
+"**ネストされた列挙型:** `Button` 列挙型は `Event::ButtonPressed` の中にネスト"
+"されています。このような階層構造は、Rust で複雑なドメインをモデル化する際によ"
+"く使われます。"
 
 #: src/user-defined-types/solution.md
 msgid ""
 "Note that `Event::CarDoorOpened` is a \"unit variant\" (it carries no data), "
 "while `Event::CarArrived` is a \"tuple variant\"."
 msgstr ""
+"`Event::CarDoorOpened` は「ユニット バリアント」（データを保持しない）である"
+"のに対し、`Event::CarArrived` は「タプル バリアント」であることに注意してくだ"
+"さい。"
 
 #: src/user-defined-types/solution.md
 msgid ""
@@ -7266,6 +7414,10 @@ msgid ""
 "Both are valid, but grouping related concepts (like buttons) can make the "
 "code cleaner."
 msgstr ""
+"`Event` に `LobbyCallButtonPressed` と `CarFloorButtonPressed` のバリアントを"
+"持たせるのではなく、なぜ `Button` を別の列挙型にしているのかを議論してもよい"
+"でしょう。どちらも有効ですが、関連する概念（ボタンなど）をグループ化すると、"
+"コードがすっきりする場合があります。"
 
 #: src/welcome-day-2.md
 msgid "Welcome to Day 2"
