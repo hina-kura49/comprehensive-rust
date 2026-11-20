@@ -1759,32 +1759,28 @@ msgstr "一般的なトレイトの実装"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
-#, fuzzy
 msgid "Debug"
-msgstr "デバッグ"
+msgstr "Debug"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid "Display"
-msgstr ""
+msgstr "Display"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
-#, fuzzy
 msgid "PartialEq and Eq"
-msgstr "`PartialEq` と `Eq`"
+msgstr "PartialEq と Eq"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
-#, fuzzy
 msgid "PartialOrd and Ord"
-msgstr "`PartialOrd` と `Ord`"
+msgstr "PartialOrd と Ord"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
-#, fuzzy
 msgid "Hash"
-msgstr "ハッシュマップ（HashMap）"
+msgstr "Hash"
 
 #: src/SUMMARY.md src/memory-management.md src/memory-management/clone.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
@@ -1794,7 +1790,7 @@ msgstr "複製"
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid "Copy"
-msgstr ""
+msgstr "Copy"
 
 #: src/SUMMARY.md src/std-traits.md
 msgid "From and Into"
@@ -32199,35 +32195,39 @@ msgstr "1 時間 50 分"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid "/// API for the client // ❌ Lacks detail\n"
-msgstr ""
+msgstr "/// クライアント用の API // ❌ 詳細が足りない\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid "/// Function from A to B // ❌ Redundant\n"
-msgstr ""
+msgstr "/// A から B への関数 // ❌ 冗長\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid "/// Connects to the database. // ❌ Lacks detail\n"
-msgstr ""
+msgstr "/// データベースに接続します。 // ❌ 詳細が足りない\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid ""
 "Doc comments are the most common form of documentation developers engage "
 "with."
 msgstr ""
+"ドキュメント コメントは、開発者が最もよく接するドキュメントの形式です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
 msgid ""
 "Good doc comments provide information that the code, names, and types "
 "cannot, without restating the obvious information."
 msgstr ""
+"良いドキュメント コメントは、わかりきった情報を繰り返すことなく、コードや名"
+"前、型からは得られない情報を提供します。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid "Who are you writing for?"
-msgstr ""
+msgstr "誰のために書くのか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid "Colleagues, collaborators, largely-silent API users, or just yourself?"
 msgstr ""
+"同僚、共同作業者、ほとんど声を上げない API ユーザー、それとも自分自身？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32238,6 +32238,11 @@ msgid ""
 "constraints  \n"
 "/// before we proceed to MIR-to-LLVM-IR translation.  \n"
 msgstr ""
+"// 専門家が専門家向けに書いたもの\n"
+"/// 借用チェッカーのために MIR を正規化します。  \n"
+"///  \n"
+"/// このパスは、MIR から LLVM-IR への変換に進む前に、すべての借用が  \n"
+"/// NLL-Polonius の制約に従っていることを保証します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32254,6 +32259,16 @@ msgid ""
 "/// [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/mir/"
 "index.html).  \n"
 msgstr ""
+"// 専門家が初心者向けに書いたもの\n"
+"/// 中間レベル IR（MIR）を借用チェックのために準備します。  \n"
+"///  \n"
+"/// 借用チェッカーは、MIR を単純化した「正規」形式に対して動作します。  \n"
+"/// この関数はその変換を行います。これはコード生成の最終段階の  \n"
+"/// 前提条件です。  \n"
+"///  \n"
+"/// Rust の中間表現について詳しくは、  \n"
+"/// [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/mir/index.html) "
+"を参照してください。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32261,6 +32276,9 @@ msgid ""
 "Curse_of_knowledge) is a cognitive bias where experts assume that others "
 "have the same level of expertise and perspective."
 msgstr ""
+"背景: [知識の呪い](https://en.wikipedia.org/wiki/Curse_of_knowledge) とは、専"
+"門家が他の人も自分と同じレベルの専門知識と視点を持っていると思い込んでしまう"
+"認知バイアスです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32268,24 +32286,32 @@ msgid ""
 "same perspective as you. Don't write for people like yourself, write for "
 "others."
 msgstr ""
+"動機: 読み手は、あなたと同じレベルの専門知識や同じ視点を持っていません。自分"
+"のような人のためではなく、他の人のために書いてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
 "Unintentionally writing for yourself can lead to people not understanding a "
 "point you're trying to make or the concept you're trying to articulate."
 msgstr ""
+"意図せず自分のために書いてしまうと、伝えようとしている要点や説明しようとして"
+"いる概念が理解されなくなることがあります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
 "Imagine a version of you, or others you've known, struggling to find "
 "practical information while going through documentation."
 msgstr ""
+"ドキュメントを読みながら、実用的な情報を見つけられずに苦労している自分自身、"
+"または知り合いの誰かを想像してください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
 "Keep this idea of a person in mind when thinking about what areas of a "
 "codebase need attention for doc comments."
 msgstr ""
+"コードベースのどの部分にドキュメント コメントが必要かを考えるときは、このよう"
+"な人物像を念頭に置いてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32293,6 +32319,9 @@ msgid ""
 "find the important details in winding, extensive doc comments. Don't give "
 "too much information."
 msgstr ""
+"また、長々と曲がりくねったドキュメント コメントの中から重要な詳細を見つけられ"
+"ずに苦労している自分自身、または知り合いの誰かも想像してください。情報を与え"
+"すぎないようにしましょう。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32300,6 +32329,9 @@ msgid ""
 "they able to quickly grasp what they need or find out where they could need "
 "it?"
 msgstr ""
+"常に問いかけてください: このドキュメントは API ユーザーを困らせていないか？ "
+"ユーザーは必要なことをすぐに把握できるか、または必要になりそうな情報の場所を"
+"見つけられるか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md
 msgid ""
@@ -32308,10 +32340,14 @@ msgid ""
 "your domain. In that case, signpost and name-drop. Divert people to long-"
 "form documentation."
 msgstr ""
+"常に考慮してください: 専門家も API レベルのドキュメントを読みます。ドキュメン"
+"ト コメントは、読み手にその分野の基礎を教えるのに適した場所ではないかもしれま"
+"せん。その場合は、道しるべを示し、キーワードを挙げてください。読み手を長文の"
+"ドキュメントへ誘導しましょう。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "Library vs application docs"
-msgstr ""
+msgstr "ライブラリのドキュメントとアプリケーションのドキュメント"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid ""
@@ -32319,40 +32355,41 @@ msgid ""
 "names and type signatures. Stable and highly reusable code can afford this "
 "with a positive RoI."
 msgstr ""
+"基本的な API では、名前や型シグネチャを繰り返す詳細なドキュメントを見かけるこ"
+"とがあります。安定していて再利用性の高いコードでは、そうしても投資対効果"
+"（RoI）がプラスになります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
-#, fuzzy
 msgid "Library code:"
-msgstr "ライブラリ"
+msgstr "ライブラリのコードは:"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "has a high number of users,"
-msgstr ""
+msgstr "ユーザーが多い、"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "solves a whole range of related problems,"
-msgstr ""
+msgstr "関連するさまざまな問題を解決する、"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "often has stable APIs."
-msgstr ""
+msgstr "API が安定していることが多い。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
-#, fuzzy
 msgid "Application code is the opposite:"
-msgstr "アプリケーションプロセッサ"
+msgstr "アプリケーションのコードはその逆です:"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "few users,"
-msgstr ""
+msgstr "ユーザーが少ない、"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "solves a specific problem,"
-msgstr ""
+msgstr "特定の問題を解決する、"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "changes often."
-msgstr ""
+msgstr "頻繁に変更される。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid ""
@@ -32361,6 +32398,10 @@ msgid ""
 "who wrote it, for whom, and what material it is covering, and what resources "
 "did they have."
 msgstr ""
+"コードを繰り返したり、多くの例やケーススタディとともに同じ API を何度も取り上"
+"げたりする詳細なドキュメントを見たことがあるかもしれません。重要なのは文脈で"
+"す。誰が誰のために書いたのか、どのような内容を扱っているのか、そして書き手に"
+"どのようなリソースがあったのか。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid ""
@@ -32369,6 +32410,10 @@ msgid ""
 "responsible for this code often have appropriate resources to write and "
 "maintain elaborate documentation."
 msgstr ""
+"基本的なライブラリのコード、たとえば標準ライブラリや、Serde や Tokio のような"
+"再利用性の高いフレームワークには、詳細なドキュメントがあることがよくありま"
+"す。こうしたコードを担当するチームには、詳細なドキュメントを書いて維持するた"
+"めの十分なリソースがあることが多いです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid ""
@@ -32376,6 +32421,8 @@ msgid ""
 "significant benefit from elaborate documentation before it needs to be "
 "reworked."
 msgstr ""
+"ライブラリのコードは安定していることが多いため、作り直しが必要になる前に、コ"
+"ミュニティは詳細なドキュメントから大きな恩恵を受けられます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid ""
@@ -32385,22 +32432,26 @@ msgid ""
 "to extract a positive RoI from boilerplate docs even while they are up to "
 "date, because there are only a few users."
 msgstr ""
+"アプリケーションのコードは逆の特徴を持ちます。ユーザーが少なく、特定の問題を"
+"解決し、頻繁に変更されます。アプリケーションのコードでは、詳細なドキュメント"
+"はすぐに古くなり、誤解を招くものになります。また、ユーザーが少ないため、定型"
+"的なドキュメントは最新の状態であっても投資対効果をプラスにするのが困難です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid "The Anatomy of a Doc Comment"
-msgstr ""
+msgstr "ドキュメント コメントの構成"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid "A brief, one-sentence summary."
-msgstr ""
+msgstr "簡潔な 1 文の要約。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid "A more detailed explanation."
-msgstr ""
+msgstr "より詳しい説明。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid "Special sections: code examples, panics, errors, safety preconditions."
-msgstr ""
+msgstr "特別なセクション: コード例、パニック、エラー、安全性の前提条件。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32431,12 +32482,41 @@ msgid ""
 "///\n"
 "/// Triggers undefined behavior if...\n"
 msgstr ""
+"/// 文字列からキーと値のペアをパースします。\n"
+"///\n"
+"/// 入力文字列は `key=value` の形式でなければなりません。最初の '=' より前"
+"は\n"
+"/// すべてキーとして、それより後はすべて値として扱われます。\n"
+"///\n"
+"/// # Examples\n"
+"///\n"
+"/// ```\n"
+"/// use my_crate::parse_key_value;\n"
+"/// let (key, value) = parse_key_value(\"lang=rust\").unwrap();\n"
+"/// assert_eq!(key, \"lang\");\n"
+"/// assert_eq!(value, \"rust\");\n"
+"/// ```\n"
+"///\n"
+"/// # Panics\n"
+"///\n"
+"/// 入力が空の場合はパニックします。\n"
+"///\n"
+"/// # Errors\n"
+"///\n"
+"/// 文字列に `=` が含まれていない場合は `ParseError::Malformed` を返しま"
+"す。\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// ... の場合、未定義の動作を引き起こします。\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
 "Idiomatic Rust doc comments follow a conventional structure that makes them "
 "easier for developers to read."
 msgstr ""
+"慣用的な Rust のドキュメント コメントは、開発者が読みやすくなるような慣例的な"
+"構成に従います。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32445,12 +32525,17 @@ msgid ""
 "expectation about that: it is used as a short summary in module-level "
 "documentation and search results."
 msgstr ""
+"ドキュメント コメントの最初の行は、関数を 1 文で要約したものです。簡潔にして"
+"ください。`rustdoc` などのツールはこの点を強く前提としており、この行はモ"
+"ジュールレベルのドキュメントや検索結果で短い要約として使われます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
 "Next, you can provide a long, multi-paragraph description of the \"why\" and "
 "\"what\" of the function. Use Markdown."
 msgstr ""
+"次に、関数の「なぜ」と「何を」について、複数の段落からなる長い説明を書くこと"
+"ができます。Markdown を使ってください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32459,24 +32544,35 @@ msgid ""
 "as section titles. The Rust community expects to see relevant aspects of "
 "your API documented in these sections."
 msgstr ""
+"最後に、トップレベルのセクション見出しを使って内容を整理できます。ドキュメン"
+"ト コメントでは、セクションのタイトルとして `# Examples`、`# Panics`、`# "
+"Errors`、`# Safety` がよく使われます。Rust コミュニティは、API の関連する側面"
+"がこれらのセクションに記述されていることを期待しています。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
 "Rust heavily focuses on safety and correctness. Documenting behavior of your "
 "code in case of errors is critical for writing reliable software."
 msgstr ""
+"Rust は安全性と正しさを非常に重視しています。エラー時のコードの動作をドキュメ"
+"ント化することは、信頼性の高いソフトウェアを書くうえで非常に重要です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
 "`# Panics`: If your function may panic, you must document the specific "
 "conditions when that might happen. Callers need to know what to avoid."
 msgstr ""
+"`# Panics`: 関数がパニックする可能性がある場合は、それが起こりうる具体的な条"
+"件をドキュメント化しなければなりません。呼び出し側は何を避けるべきかを知る必"
+"要があります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
 "**Question:** Ask the class why documenting panics is so important in a "
 "language that prefers returning `Result`."
 msgstr ""
+"**質問:** `Result` を返すことを好む言語で、パニックをドキュメント化することが"
+"なぜそれほど重要なのか、受講者に尋ねてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32484,6 +32580,9 @@ msgid ""
 "should not panic unless a contract is violated by the caller. Documenting "
 "these contracts is essential."
 msgstr ""
+"**回答:** パニックは、回復不可能なプログラミングエラーのためのものです。ライ"
+"ブラリは、呼び出し側が契約に違反しない限りパニックすべきではありません。こう"
+"した契約をドキュメント化することが不可欠です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32491,6 +32590,9 @@ msgid ""
 "kind of errors can occur and under what circumstances. Callers need this "
 "information to write robust error handling logic."
 msgstr ""
+"`# Errors`: `Result` を返す関数では、このセクションで、どのような種類のエラー"
+"がどのような状況で発生しうるかを説明します。呼び出し側は、堅牢なエラー処理ロ"
+"ジックを書くためにこの情報を必要とします。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md
 msgid ""
@@ -32498,10 +32600,13 @@ msgid ""
 "must be satisfied, or else undefined behavior might result. They are "
 "discussed in detail in the Unsafe Rust deep dive."
 msgstr ""
+"`# Safety` コメントは、アンセーフな関数で満たさなければならない安全性の前提条"
+"件をドキュメント化します。これが満たされないと未定義の動作が起こる可能性があ"
+"ります。詳しくは Unsafe Rust のディープダイブで説明します。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "Name-dropping keywords and signposting topics"
-msgstr ""
+msgstr "キーワードを挙げ、トピックへの道しるべを示す"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32513,6 +32618,12 @@ msgid ""
 "///\n"
 "/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 msgstr ""
+"/// [MARC 21 レコードのリーダー][leader] をパースした表現。\n"
+"///\n"
+"/// MARC のリーダーには、レコードの残りの部分をどう解釈するかを決める  \n"
+"/// メタデータが含まれています。\n"
+"///\n"
+"/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32520,6 +32631,9 @@ msgid ""
 "    ///\n"
 "    /// Encoded in byte 6 of the leader.  \n"
 msgstr ""
+"/// スキーマと、後に続く有効なデータフィールドの集合を決定します。  \n"
+"    ///\n"
+"    /// リーダーのバイト 6 にエンコードされています。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32528,10 +32642,15 @@ msgid ""
 "    ///  \n"
 "    /// Encoded in byte 7 of the leader.  \n"
 msgstr ""
+"/// リレーションシップ フィールド（たとえば、より大きな著作に含まれる記事"
+"の  \n"
+"    /// \"773 Host Item Entry\"）をパースするかどうかを示します。  \n"
+"    ///  \n"
+"    /// リーダーのバイト 7 にエンコードされています。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "// ... other fields\n"
-msgstr ""
+msgstr "// ... その他のフィールド\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32544,12 +32663,21 @@ msgid ""
 "/// \n"
 "/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 msgstr ""
+"/// [MARC 21 レコードのリーダー][leader] をパースします。\n"
+"///  \n"
+"/// リーダーは 24 バイトの固定長フィールドとしてエンコードされており、レコー"
+"ドの  \n"
+"/// 残りの部分の意味的な解釈を決めるメタデータを含んでいます。  \n"
+"/// \n"
+"/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "Motivation: Readers of documentation will not be closely reading most of "
 "your doc comments like they would dialogue in a novel they love."
 msgstr ""
+"動機: ドキュメントの読み手は、大好きな小説の会話を読むように、ドキュメント コ"
+"メントの大部分をじっくり読むわけではありません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32557,6 +32685,8 @@ msgid ""
 "documentation that is relevant to whatever problem they're trying to solve "
 "in the moment."
 msgstr ""
+"ユーザーはほとんどの場合、そのとき解決しようとしている問題に関係するドキュメ"
+"ントの部分を見つけるために、ざっと目を通したり拾い読みしたりします。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32564,22 +32694,29 @@ msgid ""
 "them they will begin to search for context surrounding what is being "
 "documented."
 msgstr ""
+"自分に関係のあるキーワードや道しるべになりそうなものを見つけると、ユーザーは"
+"ドキュメント化されている内容の周辺にある文脈を探し始めます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "Ask the class: What do you look for in documentation? Focus on the moment-to-"
 "moment searching for information here, not general values in documentation."
 msgstr ""
+"受講者に尋ねてください: ドキュメントで何を探しますか？ ここでは、ドキュメント"
+"に求める一般的な価値ではなく、その場その場での情報の探し方に焦点を当ててくだ"
+"さい。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "Name-drop keywords close to the beginning of a paragraph."
-msgstr ""
+msgstr "キーワードは段落の冒頭近くに挙げる。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "This aids skimming and scanning, as the first few words of a paragraph stand "
 "out the most."
 msgstr ""
+"段落の最初の数語が最も目立つため、ざっと目を通したり拾い読みしたりしやすくな"
+"ります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32587,21 +32724,26 @@ msgid ""
 "as close to the beginning of a paragraph as possible lets a user determine "
 "if they've found relevant information faster."
 msgstr ""
+"ざっと目を通したり拾い読みしたりすることで、ユーザーは文章の中をすばやく移動"
+"できます。キーワードをできるだけ段落の冒頭近くに置くと、ユーザーは関連する情"
+"報を見つけたかどうかをより早く判断できます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "Signpost, but don't over-explain."
-msgstr ""
+msgstr "道しるべは示すが、説明しすぎない。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "Users will not necessarily have the same domain expertise as an API designer."
-msgstr ""
+msgstr "ユーザーが API 設計者と同じ分野の専門知識を持っているとは限りません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "If a tangential, specialist term or acronym is mentioned try to bring in "
 "enough context such that a novice could quickly do more research."
 msgstr ""
+"本筋から外れた専門用語や略語に言及する場合は、初心者がすぐにさらに調べられる"
+"だけの文脈を示すようにしてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32609,6 +32751,9 @@ msgid ""
 "mentions various protocols. But when it doesn't happen organically, it can "
 "be difficult to choose what to mention."
 msgstr ""
+"道しるべは自然に示されることがよくあります。たとえば、さまざまなプロトコルに"
+"言及するネットワーク ライブラリを考えてみてください。しかし、自然に示されない"
+"場合は、何に言及するかを選ぶのが難しいことがあります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
@@ -32616,142 +32761,176 @@ msgid ""
 "into what they are documenting, what sources would they look up and are "
 "there any red herrings they might end up following\"?"
 msgstr ""
+"経験則: API 開発者は「自分がドキュメント化しているものに初心者が出くわした"
+"ら、その人はどんな情報源を調べるだろうか。また、たどってしまいそうな見当違い"
+"の手がかりはないだろうか」と自問すべきです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "Users should be given enough information to look up subjects on their own."
-msgstr ""
+msgstr "ユーザーには、自分でテーマを調べられるだけの情報を与えるべきです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid ""
 "What we've already covered, predictability of an API including the naming "
 "conventions, is a form of signposting."
 msgstr ""
+"すでに取り上げた、命名規則を含む API の予測可能性も、道しるべの一種です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "Avoiding Redundancy"
-msgstr ""
+msgstr "冗長さを避ける"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Names and type signatures communicate a lot of information, don't repeat it "
 "in comments!"
 msgstr ""
+"名前と型シグネチャは多くの情報を伝えます。それをコメントで繰り返さないでくだ"
+"さい。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "// Repeats name/type information. Can omit!\n"
 "/// Parses an ipv4 from a str. Returns an option for failure modes.\n"
 msgstr ""
+"// 名前と型の情報を繰り返している。省略可！\n"
+"/// str から ipv4 をパースします。失敗した場合のために option を返します。\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "// Repeats information obvious from the field name. Can omit!\n"
-msgstr ""
+msgstr "// フィールド名から明らかな情報を繰り返している。省略可！\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
-#, fuzzy
 msgid "/// The customer id.\n"
-msgstr "// 再帰的なケース。\n"
+msgstr "/// 顧客 ID。\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "// Mentions the type name first thing, don't do this!\n"
 "/// `ServerSynchronizer` is an orchestrator that sends local edits [...]\n"
 msgstr ""
+"// 最初に型名に言及している。これはやめましょう！\n"
+"/// `ServerSynchronizer` は、ローカルの編集を送信するオーケストレーターです "
+"[...]\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "// Better! Focuses on purpose.\n"
 "/// Sends local edits [...]\n"
 msgstr ""
+"// こちらの方が良い！ 目的に焦点を当てている。\n"
+"/// ローカルの編集を送信します [...]\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "// Mentions the function name first thing, don't do this!\n"
 "/// `sync_to_server` sends local edits [...]\n"
 msgstr ""
+"// 最初に関数名に言及している。これはやめましょう！\n"
+"/// `sync_to_server` はローカルの編集を送信します [...]\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "// Better! Focuses on function.\n"
 "/// Sends local edits [...]\n"
 msgstr ""
+"// こちらの方が良い！ 機能に焦点を当てている。\n"
+"/// ローカルの編集を送信します [...]\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Motivation: Documentation that merely repeats name/signature information "
 "provides nothing new to the API user."
 msgstr ""
+"動機: 名前やシグネチャの情報を繰り返すだけのドキュメントは、API ユーザーに新"
+"しいことを何も伝えません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Additionally, signature information may change over time without the "
 "documentation being updated accordingly!"
 msgstr ""
+"さらに、シグネチャの情報は、ドキュメントがそれに合わせて更新されないまま、時"
+"間とともに変わる可能性があります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "This is an understandable pattern to fall into!"
-msgstr ""
+msgstr "これは陥りやすいパターンです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Naive approach to \"always document your code,\" follows this advice "
 "literally but does not follow the intent."
 msgstr ""
+"「常にコードをドキュメント化する」ことへの単純なアプローチは、この助言を文字"
+"どおりには守っていますが、その意図には沿っていません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Some tools might enforce documentation coverage, this kind of documentation "
 "is an easy fix."
 msgstr ""
+"ツールによってはドキュメントのカバレッジを強制するものがあり、この種のドキュ"
+"メントは手軽な解決策になってしまいます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "Be aware of the purpose of different modes of documentation:"
-msgstr ""
+msgstr "ドキュメントの種類ごとの目的を意識してください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Library code will need to be documented in ways that understand the scope of "
 "what it is used for and the breadth of people who are trying to use it."
 msgstr ""
+"ライブラリのコードは、それが何に使われるかという範囲と、それを使おうとする"
+"人々の幅広さを理解したうえでドキュメント化する必要があります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Application code has a more narrow purpose, it can afford to be more simple "
 "and direct."
 msgstr ""
+"アプリケーションのコードは目的がより限られているため、より簡潔で率直なものに"
+"できます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "The name of an item is part of the documentation of that item."
-msgstr ""
+msgstr "アイテムの名前は、そのアイテムのドキュメントの一部です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Similarly, the signature of a function is part of the documentation of that "
 "function."
-msgstr ""
+msgstr "同様に、関数のシグネチャは、その関数のドキュメントの一部です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Therefore: Some aspects of the item are already covered when you start "
 "writing doc comments!"
 msgstr ""
+"したがって、ドキュメント コメントを書き始める時点で、アイテムのいくつかの側面"
+"はすでにカバーされています。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid "Do not repeat information for the sake of an itemized list."
-msgstr ""
+msgstr "項目を列挙するためだけに情報を繰り返さないでください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Many areas of the standard library have minimal documentation because the "
 "name and types do give enough information."
 msgstr ""
+"標準ライブラリの多くの部分では、名前と型が十分な情報を与えているため、ドキュ"
+"メントは最小限になっています。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "Rule of Thumb: What information is missing from a user's perspective? Other "
 "than name, signature, and irrelevant details of the implementation."
 msgstr ""
+"経験則: ユーザーの視点から見て、どんな情報が欠けているか？ 名前、シグネチャ、"
+"実装上の無関係な詳細以外で考えてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
@@ -32759,12 +32938,17 @@ msgid ""
 "has an intermediate understanding of the language itself. Focus on "
 "documenting your API."
 msgstr ""
+"Rust や標準ライブラリの基本を説明しないでください。読み手は言語そのものについ"
+"て中級レベルの理解があると想定してください。自分の API のドキュメント化に集中"
+"しましょう。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
 "For example, if your function returns `Result`, you don't need to explain "
 "how `Result` or the question mark operators work."
 msgstr ""
+"たとえば、関数が `Result` を返す場合、`Result` や疑問符演算子の仕組みを説明す"
+"る必要はありません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
@@ -32772,6 +32956,9 @@ msgid ""
 "of doc comments, but puts a large burden on developers that could lead to "
 "leaning onto these patterns of writing low-quality comments."
 msgstr ""
+"`#![warn(missing_docs)]` lint は、ドキュメント コメントの存在を強制するのに役"
+"立ちますが、開発者に大きな負担をかけるため、このような質の低いコメントを書く"
+"パターンに頼ることにつながりかねません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md
 msgid ""
@@ -32779,16 +32966,21 @@ msgid ""
 "can afford to keep up with its demands, and usually only for library-style "
 "crates rather than application code."
 msgstr ""
+"この種の lint は、プロジェクトをメンテナンスする人々がその要求に応え続けられ"
+"る場合にのみ有効にすべきです。また通常は、アプリケーションのコードではなく、"
+"ライブラリ型のクレートに限るべきです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid "Names and Signatures are not full documentation"
-msgstr ""
+msgstr "名前とシグネチャだけでは完全なドキュメントにならない"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "// bad\n"
 "/// Returns a future that resolves when operation completes.  \n"
 msgstr ""
+"// 悪い例\n"
+"/// 操作が完了したときに解決される future を返します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
@@ -32796,12 +32988,17 @@ msgid ""
 "/// Sends local edits to the server, overwriting concurrent edits  \n"
 "/// if any happened.  \n"
 msgstr ""
+"// 良い例\n"
+"/// ローカルの編集をサーバーに送信します。同時に行われた編集があれば、  \n"
+"/// それを上書きします。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "// bad\n"
 "/// Returns an error if sending the email fails.  \n"
 msgstr ""
+"// 悪い例\n"
+"/// メールの送信に失敗した場合はエラーを返します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
@@ -32810,50 +33007,68 @@ msgid ""
 "///\n"
 "/// Returns an error immediately if the email is malformed.  \n"
 msgstr ""
+"// 良い例\n"
+"/// メールをバックグラウンド配信のキューに入れ、すぐに戻ります。  \n"
+"///\n"
+"/// メールの形式が不正な場合は、すぐにエラーを返します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "Motivation: API designers can over-commit to the idea that a function name "
 "and signature is enough documentation."
 msgstr ""
+"動機: API 設計者は、関数名とシグネチャがあればドキュメントとして十分だという"
+"考えに固執してしまうことがあります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "Again, names and types are _part_ of the documentation. They are not always "
 "the full story!"
 msgstr ""
+"繰り返しになりますが、名前と型はドキュメントの _一部_ です。それですべてが伝"
+"わるとは限りません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "Consider the behavior of functions that are not covered by the name, "
 "parameter names, or signature of that function."
 msgstr ""
+"関数の名前、パラメータ名、シグネチャでは表されていない、その関数の動作につい"
+"て考えてください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "It is not obvious that `sync_to_server()` could overwrite something (leading "
 "to a data loss), so document that."
 msgstr ""
+"`sync_to_server()` が何かを上書きする（データの損失につながる）可能性があるこ"
+"とは明らかではないため、それをドキュメント化してください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "In the email example, it is not obvious that the function can return success "
 "and still fail to deliver the email."
 msgstr ""
+"メールの例では、関数が成功を返しても、メールの配信には失敗する可能性があるこ"
+"とは明らかではありません。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
 "Use comments to disambiguate. Nuanced behaviors, behaviors that users of an "
 "API could trip up on, should be documented."
 msgstr ""
+"コメントを使って曖昧さをなくしてください。微妙な動作や、API のユーザーがつま"
+"ずきそうな動作はドキュメント化すべきです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid "Why and What, not How and Where"
-msgstr ""
+msgstr "How と Where ではなく Why と What"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid "Avoid documenting irrelevant details that may frequently change."
 msgstr ""
+"頻繁に変わる可能性のある、関係のない詳細をドキュメントに書くのは避けてくださ"
+"い。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
@@ -32870,6 +33085,16 @@ msgid ""
 "///  \n"
 "/// Returns an error if any database operation fails.  \n"
 msgstr ""
+"// 悪い例\n"
+"/// `User` レコードを Postgres データベースに保存します。  \n"
+"///  \n"
+"/// この関数は新しい接続を開き、トランザクションを開始します。  \n"
+"/// `SELECT` クエリで、指定された ID のユーザーが存在するかを確認します。  \n"
+"/// ユーザーが見つからない場合は `INSERT` を実行します。  \n"
+"///  \n"
+"/// # Errors  \n"
+"///  \n"
+"/// データベース操作のいずれかが失敗した場合はエラーを返します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
@@ -32881,18 +33106,30 @@ msgid ""
 "/// Returns a `db::Error::DuplicateUsername` error if the user (keyed by  \n"
 "/// `user.username` field) already exists.  \n"
 msgstr ""
+"// 良い例\n"
+"/// ユーザーレコードをアトミックに保存します。  \n"
+"///  \n"
+"/// # Errors  \n"
+"///  \n"
+"/// （`user.username` フィールドをキーとする）ユーザーがすでに存在する場合"
+"は、  \n"
+"/// `db::Error::DuplicateUsername` エラーを返します。  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
 "Motivation: Users want to know the contract of the API (what is guaranteed "
 "about this function), rather than implementation details."
 msgstr ""
+"動機: ユーザーが知りたいのは、実装の詳細ではなく API の契約（この関数について"
+"何が保証されているか）です。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
 "Motivation: Doc comments that explain implementation details become outdated "
 "faster than comments that explain the contract."
 msgstr ""
+"動機: 実装の詳細を説明するドキュメントコメントは、契約を説明するコメントより"
+"も早く古くなります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
@@ -32900,6 +33137,9 @@ msgid ""
 "doc comment for a function that you're using `for` loops to solve a problem, "
 "what is the point of this information?"
 msgstr ""
+"内部の情報は、ユーザーにとってはおそらく関係がありません。ある関数のドキュメ"
+"ントコメントで、問題を解くのに `for` ループを使っていると説明する場面を想像し"
+"てみてください。この情報に何の意味があるでしょうか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
@@ -32907,43 +33147,50 @@ msgid ""
 "likely due to whatever effects or invariants the user of that API needs to "
 "be aware of instead."
 msgstr ""
+"実装を説明する必要がある場合もありますが、それはおそらく、その API のユーザー"
+"が知っておくべき作用や不変条件があるためです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
 "Focus on those effects and invariants instead of the implementation details "
 "themselves."
 msgstr ""
+"実装の詳細そのものではなく、そうした作用や不変条件に焦点を当ててください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
 "Reiterate: Implementation details can and will change, so do not explain "
 "these details."
 msgstr ""
+"繰り返しになりますが、実装の詳細は変わる可能性があり、実際に変わるものなの"
+"で、そうした詳細は説明しないでください。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md
 msgid ""
 "Don't talk about where something is used, this is another instance where "
 "this information can become stale quickly."
 msgstr ""
+"あるものがどこで使われているかについては書かないでください。これも、情報がす"
+"ぐに古くなるケースの一つです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
-#, fuzzy
 msgid "Exercise: Dialog on Details"
-msgstr "演習: フィボナッチ"
+msgstr "演習: 詳細についての対話"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
 "Unnecessary details can sometimes be indicative of something that does need "
 "documentation."
-msgstr ""
+msgstr "不要な詳細が、実はドキュメントが必要な何かを示していることもあります。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid "/// Sorts a slice. Implemented using recursive quicksort.\n"
 msgstr ""
+"/// スライスをソートします。再帰的なクイックソートで実装されています。\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid "Ask the class: Is this comment necessary for this function?"
-msgstr ""
+msgstr "受講者に質問してください: この関数にこのコメントは必要でしょうか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
@@ -32951,21 +33198,29 @@ msgid ""
 "author, such as a PM, manager, etc. tell the class that the author of this "
 "function is pushing back."
 msgstr ""
+"ストーリー: PM やマネージャーなど、受講者と作成者の間に立つ仲介役を演じ、この"
+"関数の作成者が反対していると受講者に伝えます。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid "Ask the class: Why would an author of this kind of comment push back?"
 msgstr ""
+"受講者に質問してください: このようなコメントの作成者は、なぜ反対するのでしょ"
+"うか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
 "If the class asks why the author is pushing back, do not give details yet."
 msgstr ""
+"作成者がなぜ反対しているのかを受講者に聞かれても、まだ詳細は伝えないでくださ"
+"い。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
 "Ask the class: Why would the caller need to know the sorting algorithm in "
 "use?"
 msgstr ""
+"受講者に質問してください: 呼び出し元が、使われているソートアルゴリズムを知る"
+"必要があるのはなぜでしょうか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
@@ -32974,11 +33229,18 @@ msgid ""
 "data that [could be crafted maliciously to cause quadratic behavior during "
 "sorting](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf)."
 msgstr ""
+"ストーリー: 元の作成者とのミーティングから「戻ってきた」ことにして、この関数"
+"は信頼できないデータに対して呼び出されるアプリケーションコードであり、その"
+"データは [ソート中に二次的な挙動を引き起こすよう悪意を持って細工される可能性"
+"がある](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf) ことを受講者に説明しま"
+"す。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
 "Ask the class: Now we have more detail, how should we comment this function?"
 msgstr ""
+"受講者に質問してください: 詳しいことがわかった今、この関数にはどのようなコメ"
+"ントを付けるべきでしょうか？"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
@@ -32986,6 +33248,9 @@ msgid ""
 "public contract is (e.g., can you supply untrusted data or not), and this "
 "requires careful judgement."
 msgstr ""
+"ポイントは、何が実装の詳細で何がそうでないかは、公開された契約が何であるか"
+"（たとえば、信頼できないデータを渡してよいかどうか）に大きく依存し、慎重な判"
+"断が必要だということです。"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md
 msgid ""
@@ -32993,26 +33258,33 @@ msgid ""
 "detail) or if it is explaining that the algorithms used internally have "
 "known exploits (documentation draws attention to the wrong thing)."
 msgstr ""
+"コメントが for ループを使っていることを説明しているのか（不要な詳細）、それと"
+"も内部で使われているアルゴリズムに既知の攻撃手法があることを説明しているのか"
+"（ドキュメントが的外れなところに注意を向けている）を考えてみてください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid ""
 "Keep your APIs predictable through naming conventions and implementing "
 "common traits."
 msgstr ""
+"命名規則に従い、一般的なトレイトを実装することで、API を予測可能なものにして"
+"ください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid "/* What traits should this implement? */"
-msgstr ""
+msgstr "/* どのトレイトを実装すべきでしょうか？ */"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid "// What should this method be called?\n"
-msgstr ""
+msgstr "// このメソッドは何という名前にすべきでしょうか？\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid ""
 "A predictable API is one where a user's can make assumptions about a part of "
 "the API based on surface-level details like names, types, and signatures."
 msgstr ""
+"予測可能な API とは、名前、型、シグネチャといった表面的な情報から、ユーザー"
+"が API の一部について推測できる API のことです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid ""
@@ -33020,17 +33292,21 @@ msgid ""
 "search for methods that fit their needs quickly and be able to understand "
 "existing code quickly."
 msgstr ""
+"ここでは Rust の一般的な命名規則を見ていきます。命名規則があることで、ユー"
+"ザーは自分のニーズに合ったメソッドをすばやく探したり、既存のコードをすばやく"
+"理解したりできます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api.md
 msgid ""
 "We will also be looking at common traits that types implement, and when to "
 "implement them for types you define."
 msgstr ""
+"また、型が実装する一般的なトレイトと、自分で定義した型にそれらをいつ実装すべ"
+"きかについても見ていきます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md
-#, fuzzy
 msgid "Naming Conventions"
-msgstr "Unsafe関数の呼び出し"
+msgstr "命名規則"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md
 msgid ""
@@ -33038,56 +33314,68 @@ msgid ""
 "names like a domain-specific language and quickly understand the "
 "functionality and use cases of a method."
 msgstr ""
+"形式的で一貫して適用される命名規則があれば、開発者は名前をドメイン固有言語の"
+"ように扱い、メソッドの機能やユースケースをすばやく理解できます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md
 msgid ""
 "Rust's community developed naming conventions early, making them mostly "
 "consistent in places like the standard library."
 msgstr ""
+"Rust のコミュニティは早い段階で命名規則を整えたため、標準ライブラリなどではほ"
+"ぼ一貫しています。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md
 msgid ""
 "Here we'll learn common components of Rust method names, giving examples "
 "from the standard library and some context to go with them."
 msgstr ""
+"ここでは、Rust のメソッド名によく使われる構成要素を、標準ライブラリからの例と"
+"背景説明を交えて学びます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md
 msgid "`new`: Constructor functions"
-msgstr ""
+msgstr "`new`: コンストラクタ関数"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md
 msgid ""
 "Rust does not have a `new` keyword, instead `new` is a common prefix or "
 "whole method name."
 msgstr ""
+"Rust には `new` キーワードはありません。代わりに、`new` はよく使われる接頭"
+"辞、またはメソッド名そのものです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md
 msgid ""
 "There's no `new` keyword for Rust to initialize a new value, only functions "
 "you call or values you directly populate."
 msgstr ""
+"Rust には新しい値を初期化するための `new` キーワードはなく、呼び出す関数か、"
+"直接値を設定するかのどちらかです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md
 msgid ""
 "`new` is conventional for the \"default\" constructor function for a type. "
 "It holds no special syntactic meaning."
 msgstr ""
+"`new` は、型の「デフォルトの」コンストラクタ関数に付ける慣例的な名前です。構"
+"文上の特別な意味はありません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md
 msgid "This is sometimes a prefix, it sometimes takes arguments."
-msgstr ""
+msgstr "接頭辞として使われることもあり、引数を取ることもあります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/is.md
 msgid "`is_[condition]`: Boolean Check"
-msgstr ""
+msgstr "`is_[condition]`: ブール値のチェック"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/is.md
 msgid "Check a condition about a datatype."
-msgstr ""
+msgstr "データ型に関する条件をチェックします。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/is.md
 msgid "A boolean condition on a value."
-msgstr ""
+msgstr "値に関するブール値の条件です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/is.md
 msgid ""
@@ -33095,22 +33383,25 @@ msgid ""
 "instances of `is_not_` in standard library methods, just use `!"
 "value.is_[condition]`."
 msgstr ""
+"名前に `not` を含むメソッドよりも、`is` 接頭辞が好まれます。標準ライブラリの"
+"メソッドに `is_not_` の例はありません。単に `!value.is_[condition]` を使って"
+"ください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md
 msgid "`[method]_mut`: Mutable reference access"
-msgstr ""
+msgstr "`[method]_mut`: 可変参照によるアクセス"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md
 msgid "Suffix for access-style methods."
-msgstr ""
+msgstr "アクセス系メソッドの接尾辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md
 msgid "Suffix that signifies the method gives access to a mutable reference."
-msgstr ""
+msgstr "メソッドが可変参照へのアクセスを提供することを示す接尾辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md
 msgid "Requires mutable access to the value you're calling this method on."
-msgstr ""
+msgstr "このメソッドを呼び出す対象の値への可変アクセスが必要です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md
 msgid ""
@@ -33119,40 +33410,50 @@ msgid ""
 "functions, where the immutable version gets the shorter name and the mutable "
 "version gets the `_mut` suffix."
 msgstr ""
+"Rust では可変性を抽象化できないため、可変と不変の両方で使えるメソッドを書く方"
+"法はありません。代わりに関数をペアで書き、不変版には短い名前を、可変版には "
+"`_mut` 接尾辞を付けます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid "`with` as constructor"
-msgstr ""
+msgstr "コンストラクタとしての `with`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid ""
 "`with` as a constructor sets one value among a type while using default "
 "values for the rest."
 msgstr ""
+"コンストラクタとしての `with` は、型の値のうち一つを設定し、残りにはデフォル"
+"ト値を使います。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid "`with` as in \"`<Type>` with specific setting.\""
-msgstr ""
+msgstr "「特定の設定を持つ（with） `<Type>`」という意味での `with` です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid "// Initializes memory for at least N elements, len is still 0.\n"
 msgstr ""
+"// 少なくとも N 個の要素分のメモリを確保します。len は 0 のままです。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid ""
 "`with` can appear as a constructor prefix, most commonly when initializing "
 "heap memory for container types."
 msgstr ""
+"`with` はコンストラクタの接頭辞として使われることがあり、最もよく見られるのは"
+"コンテナ型のヒープメモリを初期化する場合です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid ""
 "In this case, it's distinct from `new` constructors because it specifies the "
 "value for something that is not usually cared about by API users."
 msgstr ""
+"この場合、通常は API ユーザーが気にしない部分の値を指定するという点で、`new` "
+"コンストラクタとは異なります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid "Ask the class: Why not `from_capacity`?"
-msgstr ""
+msgstr "受講者に質問してください: なぜ `from_capacity` ではないのでしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md
 msgid ""
@@ -33160,38 +33461,50 @@ msgid ""
 "with capacity\". Consider how `Vec::new_capacity` or `Vec::from_capacity` "
 "scan when written down, they do not communicate what's going on well."
 msgstr ""
+"回答: `Vec::with_capacity` というメソッド呼び出しは、「容量を持つ（with "
+"capacity） Vec」を作成するものとして自然に読めます。`Vec::new_capacity` や "
+"`Vec::from_capacity` と書いた場合にどう読めるかを考えてみてください。何が起き"
+"ているのかがうまく伝わりません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid "`with` as copy-and-set"
-msgstr ""
+msgstr "コピーして設定する `with`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid ""
 "`with` appears when a value is being copied, but also changed in a specific "
 "way."
-msgstr ""
+msgstr "`with` は、値をコピーしつつ、特定の部分を変更する場合に使われます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid "`with` as in \"like `<value>`, but with something different.\""
 msgstr ""
+"「`<value>` と同じだが、ある部分が異なる（with）」という意味での `with` で"
+"す。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid ""
 "// Simplified. \"/home/me/mortgage.pdf\".with_extension(\"mov\") =>\n"
 "    // \"/home/me/mortgage.mov\"\n"
 msgstr ""
+"// 簡略化しています。\"/home/me/mortgage.pdf\".with_extension(\"mov\") =>\n"
+"    // \"/home/me/mortgage.mov\"\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid ""
 "`with` can be used for methods that copy a value, but then change a specific "
 "part of that value."
 msgstr ""
+"`with` は、値をコピーした上で、その値の特定の部分を変更するメソッドに使えま"
+"す。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid ""
 "In the example here, `with_extension` copies the data of a `&Path` into a "
 "new `PathBuf`, but changes the extension to something else."
 msgstr ""
+"この例では、`with_extension` は `&Path` のデータを新しい `PathBuf` にコピーし"
+"ますが、拡張子を別のものに変更します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid "The original `Path` is unchanged."
