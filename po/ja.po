@@ -311,9 +311,8 @@ msgid "`while let` Statements"
 msgstr "`while let` 式"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "`let else`"
-msgstr "let-else"
+msgstr "`let else`"
 
 #: src/SUMMARY.md src/pattern-matching.md src/pattern-matching/exercise.md
 msgid "Exercise: Expression Evaluation"
@@ -322,7 +321,7 @@ msgstr "演習: 式の評価"
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/welcome-day-2.md src/methods-and-traits.md
 msgid "Methods and Traits"
-msgstr ""
+msgstr "メソッドとトレイト"
 
 #: src/SUMMARY.md src/methods-and-traits.md src/methods-and-traits/methods.md
 msgid "Methods"
@@ -819,9 +818,8 @@ msgid "Exercise: FFI Wrapper"
 msgstr "演習: FFIラッパー"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Macros: Morning"
-msgstr "Day 1： AM"
+msgstr "マクロ： AM"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/intro.md
 msgid "What Is A Macro"
@@ -925,9 +923,8 @@ msgid "Exercise: Generalized Operations"
 msgstr "演習: ジェネリックな `min`"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Macros: Afternoon"
-msgstr "Day 1： PM"
+msgstr "マクロ： PM"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/macro_rules/techniques.md
 msgid "Declarative Macro Techniques"
@@ -960,9 +957,8 @@ msgid "Push-Down Accumulators"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Exercise: Turtle Graphics II"
-msgstr "演習: ネストされた配列"
+msgstr "演習: タートルグラフィックス II"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/tt-bundling.md
 msgid "TT Bundling"
@@ -1071,7 +1067,7 @@ msgstr "インターフェイス"
 
 #: src/SUMMARY.md
 msgid "Service API"
-msgstr ""
+msgstr "サービス API"
 
 #: src/SUMMARY.md
 msgid "Service"
@@ -1146,9 +1142,8 @@ msgid "A Simple C Library"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Bindgen"
-msgstr "Bindgen の使用"
+msgstr "Bindgen"
 
 #: src/SUMMARY.md src/android/interoperability/with-c/run-our-binary.md
 #, fuzzy
@@ -1703,12 +1698,12 @@ msgstr "ブロードキャスト・チャットアプリ"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 msgid "Idiomatic Rust"
-msgstr ""
+msgstr "慣用的な Rust"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/idiomatic/welcome.md src/idiomatic/foundations-api-design.md
 msgid "Foundations of API Design"
-msgstr ""
+msgstr "API 設計の基礎"
 
 #: src/SUMMARY.md src/idiomatic/foundations-api-design.md
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments.md
@@ -1717,32 +1712,31 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Who Are You Writing For?"
-msgstr ""
+msgstr "誰に向けて書くのか？"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Library vs Application docs"
-msgstr "アプリケーションプロセッサ"
+msgstr "ライブラリとアプリケーションのドキュメント"
 
 #: src/SUMMARY.md
 msgid "Anatomy of a Doc Comment"
-msgstr ""
+msgstr "ドキュメントコメントの構成"
 
 #: src/SUMMARY.md
 msgid "Name Drop and Signpost"
-msgstr ""
+msgstr "キーワードを挙げ、道しるべを示す"
 
 #: src/SUMMARY.md
 msgid "Avoid Redundancy"
-msgstr ""
+msgstr "冗長さを避ける"
 
 #: src/SUMMARY.md
 msgid "Name and Signature are Not Enough"
-msgstr ""
+msgstr "名前とシグネチャだけでは不十分"
 
 #: src/SUMMARY.md
 msgid "What and Why, not How and Where"
-msgstr ""
+msgstr "「どのように」「どこで」ではなく「何を」「なぜ」"
 
 #: src/SUMMARY.md src/idiomatic/foundations-api-design.md
 #: src/idiomatic/foundations-api-design/predictable-api.md
@@ -1750,66 +1744,60 @@ msgid "Predictable API"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Naming conventions"
-msgstr "Unsafe関数の呼び出し"
+msgstr "命名規則"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "New"
-msgstr "少"
+msgstr "New"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Is"
-msgstr "s"
+msgstr "Is"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Mut"
-msgstr "Mutex"
+msgstr "Mut"
 
 #: src/SUMMARY.md
 msgid "With: Constructor"
-msgstr ""
+msgstr "With: コンストラクタ"
 
 #: src/SUMMARY.md
 msgid "With: Copy-and-change"
-msgstr ""
+msgstr "With: コピーして変更"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "With: Closures"
-msgstr "クロージャ"
+msgstr "With: クロージャ"
 
 #: src/SUMMARY.md
 msgid "Try"
-msgstr ""
+msgstr "Try"
 
 #: src/SUMMARY.md
 msgid "From"
-msgstr ""
+msgstr "From"
 
 #: src/SUMMARY.md
 msgid "Into"
-msgstr ""
+msgstr "Into"
 
 #: src/SUMMARY.md
 msgid "To"
-msgstr ""
+msgstr "To"
 
 #: src/SUMMARY.md
 msgid "As and Ref"
-msgstr ""
+msgstr "As と Ref"
 
 #: src/SUMMARY.md
 msgid "By"
-msgstr ""
+msgstr "By"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Implementing Common Traits"
-msgstr "トレイトの実装"
+msgstr "一般的なトレイトの実装"
 
 #: src/SUMMARY.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
@@ -1855,18 +1843,17 @@ msgid "From and Into"
 msgstr "FromとInto"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "TryFrom and TryInto"
-msgstr "FromとInto"
+msgstr "TryFrom と TryInto"
 
 #: src/SUMMARY.md
 msgid "Serialize and Deserialize"
-msgstr ""
+msgstr "Serialize と Deserialize"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/idiomatic/welcome.md src/idiomatic/leveraging-the-type-system.md
 msgid "Leveraging the Type System"
-msgstr ""
+msgstr "型システムの活用"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
@@ -1881,11 +1868,11 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Enforce Invariants"
-msgstr ""
+msgstr "不変条件を強制する"
 
 #: src/SUMMARY.md
 msgid "Is It Encapsulated?"
-msgstr ""
+msgstr "カプセル化されているか？"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 msgid "RAII"
@@ -1893,7 +1880,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Drop Skipped"
-msgstr ""
+msgstr "スキップされる Drop"
 
 #: src/SUMMARY.md src/concurrency/shared-state.md
 msgid "Mutex"
@@ -1905,13 +1892,12 @@ msgid "Drop Guards"
 msgstr "マッチガード"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Drop Bomb"
-msgstr "`Drop`"
+msgstr "Drop ボム"
 
 #: src/SUMMARY.md
 msgid "Drop Bomb Forget"
-msgstr ""
+msgstr "Drop ボムと forget"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
@@ -1919,14 +1905,12 @@ msgid "forget and drop functions"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Scope Guard"
-msgstr "`scopeguard`"
+msgstr "スコープガード"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Drop Option"
-msgstr "Option"
+msgstr "Drop と Option"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
@@ -1971,9 +1955,8 @@ msgid "Typestate Pattern"
 msgstr "タイプステートパターン"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Typestate Pattern Example"
-msgstr "タイプステートパターン"
+msgstr "タイプステートパターンの例"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
@@ -2004,9 +1987,8 @@ msgid "Serializer: implement Property"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Serializer: Complete implementation"
-msgstr "サービスの実装"
+msgstr "シリアライザ: 実装の完成"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #, fuzzy
@@ -2031,19 +2013,19 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "PhantomData and Types"
-msgstr ""
+msgstr "PhantomData と型"
 
 #: src/SUMMARY.md
 msgid "PhantomData and Types (implementation)"
-msgstr ""
+msgstr "PhantomData と型（実装）"
 
 #: src/SUMMARY.md
 msgid "PhantomData: Lifetimes for External Resources"
-msgstr ""
+msgstr "PhantomData: 外部リソースのライフタイム"
 
 #: src/SUMMARY.md
 msgid "PhantomData: OwnedFd & BorrowedFd"
-msgstr ""
+msgstr "PhantomData: OwnedFd と BorrowedFd"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 #: src/idiomatic/leveraging-the-type-system/token-types.md
@@ -2063,25 +2045,24 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Branded pt 1: Variable-specific tokens"
-msgstr ""
+msgstr "ブランド型 その 1: 変数固有のトークン"
 
 #: src/SUMMARY.md
 msgid "Branded pt 2: `PhantomData` and Lifetime Subtyping"
-msgstr ""
+msgstr "ブランド型 その 2: `PhantomData` とライフタイムのサブタイピング"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Branded pt 3: Implementation"
-msgstr "サービスの実装"
+msgstr "ブランド型 その 3: 実装"
 
 #: src/SUMMARY.md
 msgid "Branded pt 4: Branded types in action."
-msgstr ""
+msgstr "ブランド型 その 4: ブランド型の実践。"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/idiomatic/welcome.md src/idiomatic/polymorphism.md
 msgid "Polymorphism"
-msgstr ""
+msgstr "ポリモーフィズム"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/python.md
 msgid "What is Polymorphism?"
@@ -2097,23 +2078,20 @@ msgid "Deriving Traits"
 msgstr "導出"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Default Implementations"
-msgstr "実装の更新"
+msgstr "デフォルト実装"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Blanket Implementations"
-msgstr "実装の更新"
+msgstr "ブランケット実装"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Conditional Methods"
-msgstr "条件文"
+msgstr "条件付きメソッド"
 
 #: src/SUMMARY.md
 msgid "Statically Sized and Dynamically Sized types"
-msgstr ""
+msgstr "静的サイズ型と動的サイズ型"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/generics/monomorphization.md
 #, fuzzy
@@ -2131,9 +2109,8 @@ msgid "Inspecting Enums"
 msgstr "列挙型のデストラクト"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Heterogeneous Collections"
-msgstr "ガベージコレクション"
+msgstr "異種コレクション"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/enums/traits.md
 #, fuzzy
@@ -2141,19 +2118,16 @@ msgid "Re-exposing Traits"
 msgstr "トレイトの実装"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "`dyn`"
-msgstr "`dyn Trait`"
+msgstr "`dyn`"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Dyn Compatibility"
-msgstr "相互運用性"
+msgstr "dyn 互換性"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Generics vs Trait Objects"
-msgstr "所有されたトレイトオブジェクト"
+msgstr "ジェネリクスとトレイトオブジェクト"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/dyn/limits.md
 #, fuzzy
@@ -2161,9 +2135,8 @@ msgid "Limits of Trait Objects"
 msgstr "所有されたトレイトオブジェクト"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "The `Any` Trait"
-msgstr "`Drop` トレイト"
+msgstr "`Any` トレイト"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 #, fuzzy
@@ -2177,11 +2150,11 @@ msgstr ""
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/idiomatic/welcome.md
 msgid "From OOP to Rust"
-msgstr ""
+msgstr "OOP から Rust へ"
 
 #: src/SUMMARY.md
 msgid "Inheritance"
-msgstr ""
+msgstr "継承"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/why-no-inheritance.md
 msgid "Why no Inheritance in Rust?"
@@ -2193,7 +2166,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "\"Inheritance\" in Rust and Supertraits"
-msgstr ""
+msgstr "Rust における「継承」とスーパートレイト"
 
 #: src/SUMMARY.md src/idiomatic/from-oop-to-rust/composition.md
 msgid "Composition over Inheritance"
@@ -2252,15 +2225,15 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Dangerous"
-msgstr ""
+msgstr "危険"
 
 #: src/SUMMARY.md
 msgid "Sometimes necessary"
-msgstr ""
+msgstr "時には必要"
 
 #: src/SUMMARY.md
 msgid "Sometimes useful"
-msgstr ""
+msgstr "時には有用"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction.md
 msgid "Responsibility shift"
@@ -2279,9 +2252,8 @@ msgid "Safety Preconditions"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Common Preconditions"
-msgstr "条件文"
+msgstr "一般的な前提条件"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/getter.md
 #, fuzzy
@@ -2300,12 +2272,11 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Determining preconditions"
-msgstr ""
+msgstr "前提条件を見極める"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Example: references"
-msgstr "排他参照"
+msgstr "例: 参照"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/defining.md
 msgid "Defining your own preconditions"
@@ -2327,7 +2298,7 @@ msgstr "Android での Rust へようこそ"
 
 #: src/SUMMARY.md
 msgid "Copying memory"
-msgstr ""
+msgstr "メモリのコピー"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/introduction/responsibility-shift.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
@@ -2359,7 +2330,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "3 shapes of sound Rust"
-msgstr ""
+msgstr "健全な Rust の 3 つの形"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game/soundness-proof.md
 msgid "Soundness Proof"
@@ -2372,7 +2343,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Corollary"
-msgstr ""
+msgstr "系"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
@@ -2397,7 +2368,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "Arrays of uninit"
-msgstr ""
+msgstr "未初期化の配列"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
@@ -2406,15 +2377,15 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "ptr::write vs assignment"
-msgstr ""
+msgstr "ptr::write と代入"
 
 #: src/SUMMARY.md
 msgid "How to initialize memory"
-msgstr ""
+msgstr "メモリの初期化方法"
 
 #: src/SUMMARY.md
 msgid "Partial initialization"
-msgstr ""
+msgstr "部分的な初期化"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning.md
 msgid "Pinning"
@@ -2428,23 +2399,23 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "What a move is"
-msgstr ""
+msgstr "ムーブとは何か"
 
 #: src/SUMMARY.md
 msgid "Definition of Pin<Ptr>"
-msgstr ""
+msgstr "Pin<Ptr> の定義"
 
 #: src/SUMMARY.md
 msgid "Why it's difficult"
-msgstr ""
+msgstr "なぜ難しいのか"
 
 #: src/SUMMARY.md
 msgid "`Unpin` trait"
-msgstr ""
+msgstr "`Unpin` トレイト"
 
 #: src/SUMMARY.md
 msgid "`PhantomPinned`"
-msgstr ""
+msgstr "`PhantomPinned`"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
@@ -2452,9 +2423,8 @@ msgid "Self-Referential Buffer Example"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "C++ implementation"
-msgstr "サービスの実装"
+msgstr "C++ での実装"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 #, fuzzy
@@ -2468,7 +2438,7 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "With an integer offset"
-msgstr ""
+msgstr "整数オフセットを使う"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
@@ -2476,14 +2446,12 @@ msgid "With `Pin<Ptr>`"
 msgstr ""
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "`Pin<Ptr>` and `Drop`"
-msgstr "`PartialOrd` と `Ord`"
+msgstr "`Pin<Ptr>` と `Drop`"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Worked Example"
-msgstr "例"
+msgstr "実例"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi.md
 msgid "FFI"
@@ -2495,9 +2463,8 @@ msgid "Language Interop"
 msgstr "言語の特徴"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Strategies"
-msgstr "\"Socrates\""
+msgstr "戦略"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/type-safety.md
 msgid "Consideration: Type Safety"
@@ -2533,21 +2500,19 @@ msgstr ""
 
 #: src/SUMMARY.md
 msgid "`abs(3)`"
-msgstr ""
+msgstr "`abs(3)`"
 
 #: src/SUMMARY.md
 msgid "`rand(3)`"
-msgstr ""
+msgstr "`rand(3)`"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Exercise:C library"
-msgstr "演習: バイナリツリー"
+msgstr "演習: C ライブラリ"
 
 #: src/SUMMARY.md
-#, fuzzy
 msgid "Exercise: C++ library"
-msgstr "ライブラリ"
+msgstr "演習: C++ ライブラリ"
 
 #: src/SUMMARY.md
 msgid "Final Words"
@@ -2591,15 +2556,14 @@ msgstr ""
 "(https://github.com/google/comprehensive-rust/stargazers)"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "This is a free Rust course developed by the Android team at Google. The "
 "course covers the full spectrum of Rust, from basic syntax to advanced "
 "topics like generics and error handling."
 msgstr ""
-"この資料は、GoogleのAndroidチームによって開発された3日間のRust講座です。本講"
-"座では、基本構文からジェネリクスやエラー処理など、幅広い内容をカバーします。"
-"また、最終日にはAndroid専用の内容も含まれています。"
+"これは、Google の Android チームが開発した無料の Rust 講座です。本講座では、"
+"基本構文からジェネリクスやエラー処理などの高度なトピックまで、Rust の全範囲を"
+"カバーします。"
 
 #: src/index.md
 msgid ""
@@ -2616,10 +2580,13 @@ msgid ""
 "in the top right corner of the page or check the [Translations](running-the-"
 "course/translations.md) page for a list of all available translations."
 msgstr ""
+"本講座は他の言語でも利用できます。ページ右上で希望する言語を選択するか、[翻"
+"訳](running-the-course/translations.md) のページで利用可能なすべての翻訳の一"
+"覧を確認してください。"
 
 #: src/index.md
 msgid "The course is also available [as a PDF](comprehensive-rust.pdf)."
-msgstr ""
+msgstr "本講座は [PDF](comprehensive-rust.pdf) でも利用できます。"
 
 #: src/index.md
 msgid ""
@@ -2646,56 +2613,49 @@ msgid "We call the first four course days Rust Fundamentals."
 msgstr "コースの最初の4日間を「Rust の基礎」と呼びます。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "Building on this, you're invited to dive into one or more specialized topics:"
-msgstr ""
-"最初の3日間は、Rustの基礎を学びます。その後、より専門的なトピックに進む事がで"
-"きます："
+msgstr "これを土台として、1 つ以上の専門的なトピックに進むことができます。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "[Android](android.md): a half-day course on using Rust for Android platform "
 "development (AOSP). This includes interoperability with C, C++, and Java."
 msgstr ""
-"[Android](android.md)： Androidオープンソースプラットフォーム（AOSP）でRustを"
-"使用するための半日講座。C、C++、およびJavaとの相互運用性も含まれます。"
+"[Android](android.md): Android プラットフォーム開発（AOSP）で Rust を使用する"
+"ための半日講座です。C、C++、Java との相互運用性も含まれます。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "[Chromium](chromium.md): a half-day course on using Rust in Chromium-based "
 "browsers. This includes interoperability with C++ and how to include third-"
 "party crates in Chromium."
 msgstr ""
-"[ChromiumでのRust](../chromium.md) は半日コースで、Chromium ブラウザの一部と"
-"してRustを使用する方法について詳しく説明します。Chromium の `gn` ビルドシステ"
-"ムでRustを使用することで、サードパーティライブラリ（「クレート」）、および C+"
-"+ との相互運用性を導入できます。"
+"[Chromium](chromium.md): Chromium ベースのブラウザで Rust を使用するための半"
+"日講座です。C++ との相互運用性や、サードパーティのクレートを Chromium に取り"
+"込む方法も含まれます。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "[Bare-metal](bare-metal.md): a whole-day class on using Rust for bare-metal "
 "(embedded) development. Both microcontrollers and application processors are "
 "covered."
 msgstr ""
-"[Bare-metal](bare-metal.md)： ベアメタル（組み込み）開発でRustを使用するため"
-"の1日講座。マイクロコントローラとアプリケーションプロセッサの両方が対象となり"
-"ます。"
+"[ベアメタル](bare-metal.md): ベアメタル（組み込み）開発で Rust を使用するため"
+"の 1 日講座です。マイクロコントローラとアプリケーションプロセッサの両方が対象"
+"となります。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "[Concurrency](concurrency/welcome.md): a whole-day class on concurrency in "
 "Rust. We cover both classical concurrency (preemptively scheduling using "
 "threads and mutexes) and async/await concurrency (cooperative multitasking "
 "using futures)."
 msgstr ""
-"[Concurrency](concurrency.md)： Rustの並行性についての1日講座。並行性（スレッ"
-"ドとミューテックスを用いたプリエンプティブなスケジューリング）と、async/await"
-"を使用した並行性（futuresを用いた協調的マルチタスク）がカバーされます。"
+"[並行性](concurrency/welcome.md): Rust の並行性についての 1 日講座です。従来"
+"型の並行性（スレッドとミューテックスを用いたプリエンプティブなスケジューリン"
+"グ）と、async/await による並行性（future を用いた協調的マルチタスク）の両方を"
+"扱います。"
 
 #: src/index.md
 msgid "Non-Goals"
@@ -2710,40 +2670,36 @@ msgstr ""
 "座の目標として設定されていないものには、以下のようなものがあります："
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "Learning how to develop macros: please see [the Rust Book](https://doc.rust-"
 "lang.org/book/) and [Rust by Example](https://doc.rust-lang.org/rust-by-"
 "example/macros.html) instead."
 msgstr ""
-"マクロ（macro）の開発。マクロの詳細については、[Rust Book 日本語版 Ch. 19.5]"
-"(https://doc.rust-jp.rs/book-ja/ch19-06-macros.html)と[Rust by Example 日本語"
-"版 Ch.17](http://doc.rust-jp.rs/rust-by-example-ja/macros.html)を参照してくだ"
-"さい。"
+"マクロの開発方法を学ぶこと: 代わりに [the Rust Book](https://doc.rust-"
+"lang.org/book/) と [Rust by Example](https://doc.rust-lang.org/rust-by-"
+"example/macros.html) を参照してください。"
 
 #: src/index.md
 msgid "Assumptions"
 msgstr "前提知識"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "The course assumes that you already know how to program. Rust is a "
 "statically-typed language and we will sometimes make comparisons with C and "
 "C++ to better explain or contrast the Rust approach."
 msgstr ""
-"本講座では、既にプログラミングの知識がある事を前提としています。Rustは静的型"
-"付け言語であり、Rustのアプローチをより分かりやすく説明するために、時折CやC+"
-"+との比較を行います。"
+"本講座では、既にプログラミングの知識があることを前提としています。Rust は静的"
+"型付け言語であり、Rust のアプローチをより分かりやすく説明したり対比したりする"
+"ために、時折 C や C++ との比較を行います。"
 
 #: src/index.md
-#, fuzzy
 msgid ""
 "If you know how to program in a dynamically-typed language such as Python or "
 "JavaScript, then you will be able to follow along just fine too."
 msgstr ""
-"もし受講者の知識がPythonやJavaScriptなどの動的型付け言語に限定されている場合"
-"でも、本講座の受講は可能です。"
+"Python や JavaScript などの動的型付け言語でのプログラミングの知識があれば、本"
+"講座にも問題なくついていけます。"
 
 #: src/index.md
 msgid ""
@@ -2793,19 +2749,17 @@ msgstr ""
 "（スピーカーノートの横にある小さな矢印をクリック）。"
 
 #: src/running-the-course.md
-#, fuzzy
 msgid ""
 "Decide on the dates. Since the course takes four days, we recommend that you "
 "schedule the days over two weeks. Course participants have said that they "
 "find it helpful to have a gap in the course since it helps them process all "
 "the information we give them."
 msgstr ""
-"あらかじめ日程を決めておいてください。講座は最低でも3日かかるため、2週間にわ"
-"たって日程を組む事を推奨しています。過去の受講者によると、講座の間に数日"
-"ギャップを設ける事で内容が吸収しやすくなります。"
+"あらかじめ日程を決めておいてください。講座は 4 日間かかるため、2 週間にわたっ"
+"て日程を組むことを推奨しています。過去の受講者によると、講座の間に間隔を空け"
+"ることで、受け取った情報をすべて消化しやすくなるとのことです。"
 
 #: src/running-the-course.md
-#, fuzzy
 msgid ""
 "Find a room large enough for your in-person participants. We recommend a "
 "class size of 15-25 people. That's small enough that people are comfortable "
@@ -2815,11 +2769,12 @@ msgid ""
 "laptops. In particular, you will be doing significant live-coding as an "
 "instructor, so a lectern won't be very helpful for you."
 msgstr ""
-"十分な広さの部屋を確保しておいてください。15~25名程度のクラスを推奨していま"
-"す。受講者にとって質問がしやすい人数であり、1人の講師が質問に答える時間も確保"
-"できる規模だからです。また、皆さんはPCで作業をする必要があるため、講師を含め"
-"た人数分の机を用意しておいてください。ライブコーディング形式での実施を想定し"
-"ているため、講壇は不要です。"
+"対面の受講者全員が入れる十分な広さの部屋を確保してください。15～25 名程度のク"
+"ラスを推奨しています。受講者が気軽に質問できる人数であり、1 人の講師が質問に"
+"答える時間も確保できる規模だからです。講師と受講者の全員分の _机_ がある部屋"
+"を用意してください。全員が座ってノートパソコンで作業できる必要があります。特"
+"に講師はかなりの量のライブコーディングを行うため、講壇はあまり役に立ちませ"
+"ん。"
 
 #: src/running-the-course.md
 msgid ""
@@ -2874,7 +2829,7 @@ msgstr ""
 
 #: src/running-the-course.md
 msgid "Instructor Preparation"
-msgstr ""
+msgstr "講師の準備"
 
 #: src/running-the-course.md
 msgid ""
@@ -2882,6 +2837,9 @@ msgid ""
 "have gone through all the slides and exercises yourself. This will help you "
 "anticipate questions and potential difficulties."
 msgstr ""
+"**すべての資料に目を通す:** 講座を行う前に、すべてのスライドと演習に自分で目"
+"を通しておいてください。そうすることで、出てきそうな質問や、つまずきやすい点"
+"を予想しやすくなります。"
 
 #: src/running-the-course.md
 msgid ""
@@ -2890,6 +2848,9 @@ msgid ""
 "out smoothly during the class. Have the solutions ready in case you get "
 "stuck."
 msgstr ""
+"**ライブコーディングの準備をする:** 本講座ではかなりの量のライブコーディング"
+"を行います。授業中にスムーズに入力できるよう、例や演習を事前に練習しておいて"
+"ください。行き詰まったときのために解答を用意しておきましょう。"
 
 #: src/running-the-course.md
 msgid ""
@@ -2897,6 +2858,9 @@ msgid ""
 "`mdbook`. Knowing how to navigate, search, and use its features will make "
 "the presentation smoother."
 msgstr ""
+"**`mdbook` に慣れておく:** 本講座は `mdbook` を使って提示されます。ページの移"
+"動や検索の方法、各機能の使い方を知っておくと、プレゼンテーションがスムーズに"
+"なります。"
 
 #: src/running-the-course.md
 msgid ""
@@ -2906,16 +2870,23 @@ msgid ""
 "initially. Use this as a guide when editing slides. You can also [enable it "
 "via this link](?show-red-box=true)."
 msgstr ""
+"**スライドサイズのヘルパー:** <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</"
+"kbd> を押すと、プレゼンテーション時に使える領域の広さを示す視覚的なガイドの表"
+"示を切り替えられます。赤い枠の外にある内容は、最初は表示されないものと考えて"
+"ください。スライドを編集する際の目安として使用してください。[こちらのリンクか"
+"ら有効にする](?show-red-box=true) こともできます。"
 
 #: src/running-the-course.md
 msgid "Creating a Good Learning Environment"
-msgstr ""
+msgstr "良い学習環境をつくる"
 
 #: src/running-the-course.md
 msgid ""
 "**Encourage questions:** Reiterate that there are no \"stupid\" questions. A "
 "welcoming atmosphere for questions is crucial for learning."
 msgstr ""
+"**質問を促す:** 「ばかげた」質問などないということを繰り返し伝えてください。"
+"質問しやすい雰囲気は学習にとって非常に重要です。"
 
 #: src/running-the-course.md
 msgid ""
@@ -2923,34 +2894,37 @@ msgid ""
 "It's more important that students understand the concepts than sticking "
 "rigidly to the timeline."
 msgstr ""
+"**時間を効果的に管理する:** スケジュールに注意しつつも、柔軟に対応してくださ"
+"い。タイムラインに厳密に従うことよりも、受講者が概念を理解することのほうが重"
+"要です。"
 
 #: src/running-the-course.md
 msgid ""
 "**Facilitate group work:** During exercises, encourage students to work "
 "together. This can help them learn from each other and feel less stuck."
 msgstr ""
+"**グループワークを促進する:** 演習中は、受講者同士で協力するよう促してくださ"
+"い。互いに学び合うことができ、行き詰まりを感じにくくなります。"
 
 #: src/running-the-course/course-structure.md
 msgid "Rust Fundamentals"
 msgstr "Rust の基礎"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "The first four days make up [Rust Fundamentals](../welcome-day-1.md). The "
 "days are fast-paced and we cover a broad range of topics!"
 msgstr ""
-"[Rust の基礎](../welcome-day-1.md) を構成する最初の 4 日間で、さまざまな項目"
-"を駆け足で学びます。"
+"最初の 4 日間で [Rust の基礎](../welcome-day-1.md) を構成します。駆け足で進"
+"み、幅広いトピックを扱います。"
 
 #: src/running-the-course/course-structure.md
 msgid "Course schedule:"
 msgstr "コースのスケジュール:"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 1 Morning (2 hours and 10 minutes, including breaks)"
-msgstr "3 日目の午前（休憩を含めて 2 時間 15 分）"
+msgstr "1 日目の午前（休憩を含めて 2 時間 10 分）"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/welcome-day-1-afternoon.md src/welcome-day-2.md
@@ -2960,7 +2934,7 @@ msgstr "3 日目の午前（休憩を含めて 2 時間 15 分）"
 #: src/concurrency/welcome.md src/concurrency/welcome-async.md
 #: src/idiomatic/welcome.md
 msgid "Segment"
-msgstr ""
+msgstr "セグメント"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/hello-world.md src/types-and-values.md src/control-flow-basics.md
@@ -2982,9 +2956,8 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system.md
 #: src/unsafe-deep-dive/introduction.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
-#, fuzzy
 msgid "Duration"
-msgstr "`Duration`"
+msgstr "所要時間"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/types-and-values.md src/control-flow-basics.md src/tuples-and-arrays.md
@@ -2998,7 +2971,7 @@ msgstr "`Duration`"
 #: src/unsafe-deep-dive/introduction.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/types-and-values.md src/control-flow-basics.md src/tuples-and-arrays.md
@@ -3009,42 +2982,40 @@ msgstr ""
 #: src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/borrowing.md src/concurrency/welcome-async.md
 msgid "40 minutes"
-msgstr ""
+msgstr "40 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1.md
 #: src/welcome-day-2.md src/welcome-day-4.md
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 1 Afternoon (2 hours and 45 minutes, including breaks)"
-msgstr "1 日目の午後（休憩を含めて 2 時間 55 分）"
+msgstr "1 日目の午後（休憩を含めて 2 時間 45 分）"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1-afternoon.md
 msgid "35 minutes"
-msgstr ""
+msgstr "35 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1-afternoon.md
 #: src/welcome-day-3.md src/welcome-day-4.md src/welcome-day-4-afternoon.md
 #: src/concurrency/welcome-async.md
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-1-afternoon.md
 #: src/welcome-day-2-afternoon.md src/welcome-day-3.md src/macros/welcome.md
 msgid "1 hour"
-msgstr ""
+msgstr "1 時間"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 2 Morning (2 hours and 50 minutes, including breaks)"
-msgstr "3 日目の午前（休憩を含めて 2 時間 15 分）"
+msgstr "2 日目の午前（休憩を含めて 2 時間 50 分）"
 
 #: src/running-the-course/course-structure.md src/hello-world.md
 #: src/types-and-values.md src/control-flow-basics.md src/tuples-and-arrays.md
@@ -3053,18 +3024,17 @@ msgstr "3 日目の午前（休憩を含めて 2 時間 15 分）"
 #: src/lifetimes.md src/welcome-day-4.md src/iterators.md src/modules.md
 #: src/testing.md src/error-handling.md src/unsafe-deep-dive/introduction.md
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-2.md
 #: src/idiomatic/welcome.md src/unsafe-deep-dive/pinning.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 2 Afternoon (2 hours and 50 minutes, including breaks)"
-msgstr "1 日目の午後（休憩を含めて 2 時間 55 分）"
+msgstr "2 日目の午後（休憩を含めて 2 時間 50 分）"
 
 #: src/running-the-course/course-structure.md src/welcome-day-2-afternoon.md
 #: src/std-traits.md src/smart-pointers.md src/lifetimes.md src/iterators.md
@@ -3072,68 +3042,58 @@ msgstr "1 日目の午後（休憩を含めて 2 時間 55 分）"
 #: src/concurrency/welcome.md src/concurrency/sync-exercises.md
 #: src/concurrency/async-exercises.md
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 3 Morning (2 hours and 20 minutes, including breaks)"
-msgstr "3 日目の午前（休憩を含めて 2 時間 15 分）"
+msgstr "3 日目の午前（休憩を含めて 2 時間 20 分）"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 3 Afternoon (2 hours and 30 minutes, including breaks)"
-msgstr "1 日目の午後（休憩を含めて 2 時間 55 分）"
+msgstr "3 日目の午後（休憩を含めて 2 時間 30 分）"
 
 #: src/running-the-course/course-structure.md src/welcome-day-3-afternoon.md
 #: src/welcome-day-4-afternoon.md src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "1 hour and 15 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 15 分"
 
 #: src/running-the-course/course-structure.md src/welcome-day-3-afternoon.md
 #: src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "1 hour and 5 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 5 分"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 4 Morning (2 hours and 50 minutes, including breaks)"
-msgstr "4 日目の午前（休憩を含めて 3 時間 5 分）"
+msgstr "4 日目の午前（休憩を含めて 2 時間 50 分）"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Day 4 Afternoon (2 hours and 20 minutes, including breaks)"
-msgstr "1 日目の午後（休憩を含めて 2 時間 55 分）"
+msgstr "4 日目の午後（休憩を含めて 2 時間 20 分）"
 
 #: src/running-the-course/course-structure.md
 msgid "Deep Dives"
 msgstr "専門的なトピック"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "In addition to the 4-day class on Rust Fundamentals, we cover some more "
 "specialized topics:"
 msgstr ""
-"Rustの基礎に関する3日間の講座に加え、いくつかのより専門的なトピックも用意され"
-"ています："
+"4 日間の「Rust の基礎」の講座に加えて、より専門的なトピックもいくつか用意して"
+"います。"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Rust in Android"
-msgstr "Android での Rust へようこそ"
+msgstr "Android での Rust"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "The [Rust in Android](../android.md) deep dive is a half-day course on using "
 "Rust for Android platform development. This includes interoperability with "
 "C, C++, and Java."
 msgstr ""
-"[Android編](../android.md)は、Androidオープンソースプラットフォーム（AOSP）で"
-"Rustを使用するための半日程度の講座です。C、C++、およびJavaとの相互運用性も含"
-"まれます。"
+"[Android での Rust](../android.md) は、Android プラットフォーム開発で Rust を"
+"使用するための半日講座です。C、C++、Java との相互運用性も含まれます。"
 
 #: src/running-the-course/course-structure.md
 msgid ""
@@ -3161,9 +3121,8 @@ msgstr ""
 "確認してください。"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Rust in Chromium"
-msgstr "Chromium の Rust へようこそ"
+msgstr "Chromium での Rust"
 
 #: src/running-the-course/course-structure.md
 msgid ""
@@ -3188,20 +3147,18 @@ msgstr ""
 "でも問題ありません。作成した Chromium ブラウザを実行できることを確認します。"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Bare-Metal Rust"
-msgstr "ベアメタル"
+msgstr "ベアメタル Rust"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "The [Bare-Metal Rust](../bare-metal.md) deep dive is a full day class on "
 "using Rust for bare-metal (embedded) development. Both microcontrollers and "
 "application processors are covered."
 msgstr ""
-"[ベアメタル編](../bare-metal.md)は、ベアメタル（組み込み）開発でRustを使用す"
-"るための1日講座です。マイクロコントローラとアプリケーションプロセッサの両方が"
-"対象となります。"
+"[ベアメタル Rust](../bare-metal.md) は、ベアメタル（組み込み）開発で Rust を"
+"使用するための 1 日講座です。マイクロコントローラとアプリケーションプロセッサ"
+"の両方が対象となります。"
 
 #: src/running-the-course/course-structure.md
 msgid ""
@@ -3219,13 +3176,12 @@ msgid "Concurrency in Rust"
 msgstr "Rustでの並行性"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "The [Concurrency in Rust](../concurrency/welcome.md) deep dive is a full day "
 "class on classical as well as `async`/`await` concurrency."
 msgstr ""
-"[並行性編](../concurrency.md) は、並行性とasync/awaitを使用した並行性について"
-"の1日講座です。"
+"[Rust での並行性](../concurrency/welcome.md) は、従来型の並行性と `async`/"
+"`await` による並行性についての 1 日講座です。"
 
 #: src/running-the-course/course-structure.md
 msgid ""
@@ -3237,9 +3193,8 @@ msgstr ""
 "後、例を`src/main.rs`にコピペして実行する事ができます："
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Morning (3 hours and 20 minutes, including breaks)"
-msgstr "2 日目の午前（休憩を含めて 3 時間 5 分）"
+msgstr "午前（休憩を含めて 3 時間 20 分）"
 
 #: src/running-the-course/course-structure.md src/references.md
 #: src/std-types.md src/memory-management.md src/error-handling.md
@@ -3248,7 +3203,7 @@ msgstr "2 日目の午前（休憩を含めて 3 時間 5 分）"
 #: src/concurrency/async-exercises.md
 #: src/idiomatic/leveraging-the-type-system.md
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分"
 
 #: src/running-the-course/course-structure.md src/concurrency/welcome.md
 msgid "Send and Sync"
@@ -3257,51 +3212,47 @@ msgstr "SendとSync"
 #: src/running-the-course/course-structure.md src/concurrency/welcome.md
 #: src/concurrency/welcome-async.md
 msgid "1 hour and 10 minutes"
-msgstr ""
+msgstr "1 時間 10 分"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Afternoon (3 hours and 30 minutes, including breaks)"
-msgstr "3 日目の午後（休憩を含めて 2 時間 20 分）"
+msgstr "午後（休憩を含めて 3 時間 30 分）"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid ""
 "The [Idiomatic Rust](../idiomatic/welcome.md) deep dive is a 2-day class on "
 "Rust idioms and patterns."
 msgstr ""
-"[並行性編](../concurrency.md) は、並行性とasync/awaitを使用した並行性について"
-"の1日講座です。"
+"[慣用的な Rust](../idiomatic/welcome.md) は、Rust のイディオムとパターンにつ"
+"いての 2 日間の講座です。"
 
 #: src/running-the-course/course-structure.md
 msgid ""
 "You should be familiar with the material in [Rust Fundamentals](../welcome-"
 "day-1.md) before starting this course."
 msgstr ""
+"この講座を始める前に、[Rust の基礎](../welcome-day-1.md) の内容を理解しておく"
+"必要があります。"
 
 #: src/running-the-course/course-structure.md
-#, fuzzy
 msgid "Morning (13 hours and 55 minutes, including breaks)"
-msgstr "2 日目の午前（休憩を含めて 3 時間 5 分）"
+msgstr "午前（休憩を含めて 13 時間 55 分）"
 
 #: src/running-the-course/course-structure.md src/idiomatic/welcome.md
-#, fuzzy
 msgid "3 hours and 15 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "3 時間 15 分"
 
 #: src/running-the-course/course-structure.md src/idiomatic/welcome.md
-#, fuzzy
 msgid "7 hours and 40 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "7 時間 40 分"
 
 #: src/running-the-course/course-structure.md src/idiomatic/welcome.md
-#, fuzzy
 msgid "1 hour and 45 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 45 分"
 
 #: src/running-the-course/course-structure.md
 msgid "Unsafe (Work in Progress)"
-msgstr ""
+msgstr "アンセーフ（作成中）"
 
 #: src/running-the-course/course-structure.md
 msgid ""
@@ -3311,10 +3262,14 @@ msgid ""
 "FFI basics, and building data structures that the borrow checker would "
 "normally reject."
 msgstr ""
+"[アンセーフ](../unsafe-deep-dive/welcome.md) は、_unsafe_ な Rust 言語につい"
+"ての 2 日間の講座です。Rust の安全性保証の基礎、`unsafe` が必要となる理由、"
+"`unsafe` コードのレビュープロセス、FFI の基本、そして通常であれば借用チェッ"
+"カーに拒否されるデータ構造の構築について扱います。"
 
 #: src/running-the-course/course-structure.md
 msgid "not found - {{%course outline Unsafe}}"
-msgstr ""
+msgstr "not found - {{%course outline Unsafe}}"
 
 #: src/running-the-course/course-structure.md
 msgid "Format"
@@ -3333,47 +3288,51 @@ msgid "There are several useful keyboard shortcuts in mdBook:"
 msgstr "mdBookには、便利なショートカットキーがいくつか存在します："
 
 #: src/running-the-course/keyboard-shortcuts.md
-#, fuzzy
 msgid "<kbd>Arrow-Left</kbd>: Navigate to the previous page."
-msgstr "： 前のページに移動"
+msgstr "<kbd>Arrow-Left</kbd>: 前のページに移動します。"
 
 #: src/running-the-course/keyboard-shortcuts.md
-#, fuzzy
 msgid "<kbd>Arrow-Right</kbd>: Navigate to the next page."
-msgstr "： 次のページに移動。"
+msgstr "<kbd>Arrow-Right</kbd>: 次のページに移動します。"
 
 #: src/running-the-course/keyboard-shortcuts.md
-#, fuzzy
 msgid ""
 "<kbd>Ctrl</kbd> + <kbd>Enter</kbd>: Execute the code sample that has focus."
-msgstr "： フォーカスを持つコードサンプルを実行"
+msgstr ""
+"<kbd>Ctrl</kbd> + <kbd>Enter</kbd>: フォーカスされているコードサンプルを実行"
+"します。"
 
 #: src/running-the-course/keyboard-shortcuts.md
-#, fuzzy
 msgid "<kbd>s</kbd>: Activate the search bar."
-msgstr "： 検索バーを起動"
+msgstr "<kbd>s</kbd>: 検索バーを有効にします。"
 
 #: src/running-the-course/keyboard-shortcuts.md
 msgid ""
 "Mention that these shortcuts are standard for `mdbook` and can be useful "
 "when navigating any `mdbook`\\-generated site."
 msgstr ""
+"これらのショートカットは `mdbook` の標準のものであり、`mdbook` で生成されたど"
+"のサイトを閲覧する際にも役立つことを説明してください。"
 
 #: src/running-the-course/keyboard-shortcuts.md
 msgid "You can demonstrate each shortcut live to the students."
-msgstr ""
+msgstr "各ショートカットを受講者の前で実演してもよいでしょう。"
 
 #: src/running-the-course/keyboard-shortcuts.md
 msgid ""
 "The <kbd>s</kbd> key for search is particularly useful for quickly finding "
 "topics that have been discussed earlier."
 msgstr ""
+"検索用の <kbd>s</kbd> キーは、以前に説明したトピックをすばやく見つけるのに特"
+"に役立ちます。"
 
 #: src/running-the-course/keyboard-shortcuts.md
 msgid ""
 "<kbd>Ctrl</kbd> + <kbd>Enter</kbd> will be super important for you since "
 "you'll do a lot of live coding."
 msgstr ""
+"講師はライブコーディングを多く行うため、<kbd>Ctrl</kbd> + <kbd>Enter</kbd> は"
+"非常に重要になります。"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3394,7 +3353,6 @@ msgstr ""
 "[@henrif75](https://github.com/henrif75)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Chinese (Simplified)](https://google.github.io/comprehensive-rust/zh-CN/) "
 "by [@suetfei](https://github.com/suetfei), [@wnghl](https://github.com/"
@@ -3406,8 +3364,7 @@ msgstr ""
 "[@suetfei](https://github.com/suetfei)、[@wnghl](https://github.com/wnghl)、"
 "[@anlunx](https://github.com/anlunx)、[@kongy](https://github.com/kongy)、"
 "[@noahdragon](https://github.com/noahdragon)、[@superwhd](https://github.com/"
-"superwhd)、[@SketchK](https://github.com/SketchK)、[@nodmp](https://"
-"github.com/nodmp)"
+"superwhd)、@SketchK、[@nodmp](https://github.com/nodmp)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3424,7 +3381,6 @@ msgstr ""
 "johnathan79717)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Farsi](https://google.github.io/comprehensive-rust/fa/) by [@DannyRavi]"
 "(https://github.com/DannyRavi), [@javad-jafari](https://github.com/javad-"
@@ -3432,14 +3388,13 @@ msgid ""
 "github.com/moaminsharifi) , [@hamidrezakp](https://github.com/hamidrezakp) "
 "and [@mehrad77](https://github.com/mehrad77)."
 msgstr ""
-"[中国語（繁体字）](https://google.github.io/comprehensive-rust/zh-TW/): "
-"[@hueich](https://github.com/hueich)、[@victorhsieh](https://github.com/"
-"victorhsieh)、[@mingyc](https://github.com/mingyc)、[@kuanhungchen](https://"
-"github.com/kuanhungchen)、[@johnathan79717](https://github.com/"
-"johnathan79717)"
+"[ペルシア語](https://google.github.io/comprehensive-rust/fa/): [@DannyRavi]"
+"(https://github.com/DannyRavi)、[@javad-jafari](https://github.com/javad-"
+"jafari)、[@Alix1383](https://github.com/alix1383)、[@moaminsharifi](https://"
+"github.com/moaminsharifi)、[@hamidrezakp](https://github.com/hamidrezakp)、"
+"[@mehrad77](https://github.com/mehrad77)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Japanese](https://google.github.io/comprehensive-rust/ja/) by [@CoinEZ-JPN]"
 "(https://github.com/CoinEZ), [@momotaro1105](https://github.com/"
@@ -3447,10 +3402,11 @@ msgid ""
 "and [@kantasv](https://github.com/kantasv)."
 msgstr ""
 "[日本語](https://google.github.io/comprehensive-rust/ja/): [@CoinEZ-JPN]"
-"(https://github.com/CoinEZ)、[@momotaro1105](https://github.com/momotaro1105)"
+"(https://github.com/CoinEZ)、[@momotaro1105](https://github.com/"
+"momotaro1105)、[@HidenoriKobayashi](https://github.com/HidenoriKobayashi)、"
+"[@kantasv](https://github.com/kantasv)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Korean](https://google.github.io/comprehensive-rust/ko/) by [@keispace]"
 "(https://github.com/keispace), [@jiyongp](https://github.com/jiyongp), "
@@ -3459,7 +3415,8 @@ msgid ""
 msgstr ""
 "[韓国語](https://google.github.io/comprehensive-rust/ko/): [@keispace]"
 "(https://github.com/keispace)、[@jiyongp](https://github.com/jiyongp)、"
-"[@jooyunghan](https://github.com/jooyunghan)"
+"[@jooyunghan](https://github.com/jooyunghan)、[@namhyung](https://github.com/"
+"namhyung)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3470,15 +3427,14 @@ msgstr ""
 "(https://github.com/deavid)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Ukrainian](https://google.github.io/comprehensive-rust/uk/) by [@git-user-"
 "cpp](https://github.com/git-user-cpp), [@yaremam](https://github.com/"
 "yaremam) and [@reta](https://github.com/reta)."
 msgstr ""
-"[韓国語](https://google.github.io/comprehensive-rust/ko/): [@keispace]"
-"(https://github.com/keispace)、[@jiyongp](https://github.com/jiyongp)、"
-"[@jooyunghan](https://github.com/jooyunghan)"
+"[ウクライナ語](https://google.github.io/comprehensive-rust/uk/): [@git-user-"
+"cpp](https://github.com/git-user-cpp)、[@yaremam](https://github.com/"
+"yaremam)、[@reta](https://github.com/reta)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3486,9 +3442,8 @@ msgid ""
 msgstr "画面右上の言語切り替えボタンから、切り替えを行なってください。"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid "Incomplete Translations"
-msgstr "翻訳"
+msgstr "未完成の翻訳"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3497,13 +3452,12 @@ msgid ""
 msgstr "進行中の翻訳が多数あります。最新の翻訳へのリンクを以下に示します。"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Arabic](https://google.github.io/comprehensive-rust/ar/) by [@younies]"
 "(https://github.com/younies)"
 msgstr ""
-"[スペイン語](https://google.github.io/comprehensive-rust/es/): [@deavid]"
-"(https://github.com/deavid)"
+"[アラビア語](https://google.github.io/comprehensive-rust/ar/): [@younies]"
+"(https://github.com/younies)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3514,14 +3468,14 @@ msgstr ""
 "(https://github.com/raselmandol)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[French](https://google.github.io/comprehensive-rust/fr/) by [@KookaS]"
 "(https://github.com/KookaS), [@vcaen](https://github.com/vcaen) and "
 "[@AdrienBaudemont](https://github.com/AdrienBaudemont)."
 msgstr ""
 "[フランス語](https://google.github.io/comprehensive-rust/fr/): [@KookaS]"
-"(https://github.com/KookaS)、[@vcaen](https://github.com/vcaen)"
+"(https://github.com/KookaS)、[@vcaen](https://github.com/vcaen)、"
+"[@AdrienBaudemont](https://github.com/AdrienBaudemont)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3532,14 +3486,14 @@ msgstr ""
 "(https://github.com/Throvn)、[@ronaldfw](https://github.com/ronaldfw)"
 
 #: src/running-the-course/translations.md
-#, fuzzy
 msgid ""
 "[Italian](https://google.github.io/comprehensive-rust/it/) by "
 "[@henrythebuilder](https://github.com/henrythebuilder) and [@detro](https://"
 "github.com/detro)."
 msgstr ""
-"[ドイツ語](https://google.github.io/comprehensive-rust/de/): [@Throvn]"
-"(https://github.com/Throvn)、[@ronaldfw](https://github.com/ronaldfw)"
+"[イタリア語](https://google.github.io/comprehensive-rust/it/): "
+"[@henrythebuilder](https://github.com/henrythebuilder)、[@detro](https://"
+"github.com/detro)"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3548,6 +3502,10 @@ msgid ""
 "translation-report.html) or [synced to the latest version of the course]"
 "(https://google.github.io/comprehensive-rust/synced-translation-report.html)."
 msgstr ""
+"翻訳とその現在の状況をまとめた一覧は、[最終更新時点のもの](https://"
+"google.github.io/comprehensive-rust/translation-report.html) と [講座の最新版"
+"に同期したもの](https://google.github.io/comprehensive-rust/synced-"
+"translation-report.html) のいずれでも確認できます。"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3565,7 +3523,7 @@ msgstr ""
 msgid ""
 "This is a good opportunity to thank the volunteers who have contributed to "
 "the translations."
-msgstr ""
+msgstr "翻訳に貢献してくれたボランティアの方々に感謝を伝える良い機会です。"
 
 #: src/running-the-course/translations.md
 msgid ""
@@ -3573,12 +3531,16 @@ msgid ""
 "you can encourage them to check out the translated versions and even "
 "contribute if they find any issues."
 msgstr ""
+"一覧にある言語を話す受講者がクラスにいる場合は、翻訳版を見てみるよう勧めてく"
+"ださい。問題を見つけたら貢献してもらうのもよいでしょう。"
 
 #: src/running-the-course/translations.md
 msgid ""
 "Highlight that the project is open source and contributions are welcome, not "
 "just for translations but for the course content itself."
 msgstr ""
+"このプロジェクトはオープンソースであり、翻訳だけでなく講座の内容そのものに対"
+"する貢献も歓迎していることを強調してください。"
 
 #: src/cargo.md
 msgid ""
@@ -3602,15 +3564,14 @@ msgid "**Please follow the instructions on <https://rustup.rs/>.**"
 msgstr "**<https://rustup.rs/> の手順に沿ってインストールしてください。**"
 
 #: src/cargo.md
-#, fuzzy
 msgid ""
 "This will give you the Cargo build tool (`cargo`) and the Rust compiler "
 "(`rustc`). You will also get `rustup`, a command line utility that you can "
 "use to install different compiler versions."
 msgstr ""
-"Rustupも、cargoやrustcと一緒にコマンドラインユーティリティとしてインストール"
-"されます。Rustupを使用することで、ツールチェーンのインストールや切り替え、ク"
-"ロスコンパイルの設定などが行えます。"
+"これにより、Cargo ビルドツール（`cargo`）と Rust コンパイラ（`rustc`）が手に"
+"入ります。また、さまざまなバージョンのコンパイラをインストールするのに使える"
+"コマンドラインユーティリティである `rustup` も手に入ります。"
 
 #: src/cargo.md
 msgid ""
@@ -3633,7 +3594,7 @@ msgstr ""
 
 #: src/cargo.md
 msgid "On Debian/Ubuntu, you can install `rustup` via `apt`:"
-msgstr ""
+msgstr "Debian/Ubuntu では、`apt` を使って `rustup` をインストールできます。"
 
 #: src/cargo.md
 msgid ""
@@ -3641,6 +3602,9 @@ msgid ""
 "may provide an outdated version. Therefore, it is recommended to install "
 "Rust from the official site."
 msgstr ""
+"macOS では、[Homebrew](https://brew.sh/) を使って Rust をインストールできます"
+"が、古いバージョンが提供される場合があります。そのため、公式サイトから Rust "
+"をインストールすることを推奨します。"
 
 #: src/cargo/rust-ecosystem.md
 msgid "The Rust Ecosystem"
@@ -3652,29 +3616,26 @@ msgid ""
 msgstr "Rustエコシステムの主要ツールは以下の通りです："
 
 #: src/cargo/rust-ecosystem.md
-#, fuzzy
 msgid ""
 "`rustc`: the Rust compiler that turns `.rs` files into binaries and other "
 "intermediate formats."
 msgstr ""
-"`rustc`： Rustのコンパイラです。`.rs`ファイルをバイナリや他の中間形式に変換し"
-"ます。"
+"`rustc`: Rust のコンパイラです。`.rs` ファイルをバイナリや他の中間形式に変換"
+"します。"
 
 #: src/cargo/rust-ecosystem.md
-#, fuzzy
 msgid ""
 "`cargo`: the Rust dependency manager and build tool. Cargo knows how to "
 "download dependencies, usually hosted on <https://crates.io>, and it will "
 "pass them to `rustc` when building your project. Cargo also comes with a "
 "built-in test runner which is used to execute unit tests."
 msgstr ""
-"`cargo`： Rustのビルドシステム兼パッケージマネージャです。<https://crates.io>"
-"でホストされている依存関係をダウンロードし、プロジェクトビルド時に`rustc`に渡"
-"します。Cargo に組み込まれたテストランナを使って、ユニットテストを実行するこ"
-"ともできます。"
+"`cargo`: Rust の依存関係マネージャ兼ビルドツールです。Cargo は、通常 "
+"<https://crates.io> でホストされている依存関係をダウンロードし、プロジェクト"
+"のビルド時にそれらを `rustc` に渡します。また、Cargo にはユニットテストの実行"
+"に使われるテストランナーが組み込まれています。"
 
 #: src/cargo/rust-ecosystem.md
-#, fuzzy
 msgid ""
 "`rustup`: the Rust toolchain installer and updater. This tool is used to "
 "install and update `rustc` and `cargo` when new versions of Rust are "
@@ -3682,10 +3643,11 @@ msgid ""
 "standard library. You can have multiple versions of Rust installed at once "
 "and `rustup` will let you switch between them as needed."
 msgstr ""
-"`rustup`： Rustのツールチェーンを管理するためのツールです。`rustc`や`cargo`の"
-"インストールやアップデートに使用されます。標準ライブラリのドキュメントをダウ"
-"ンロードする事も可能です。また、複数のRustのバージョンがインストールされてい"
-"る場合、`rustup`で切り替えが行えます。"
+"`rustup`: Rust のツールチェーンのインストーラ兼アップデータです。新しいバー"
+"ジョンの Rust がリリースされたときに、`rustc` や `cargo` をインストール、アッ"
+"プデートするために使用されます。さらに、`rustup` は標準ライブラリのドキュメン"
+"トをダウンロードすることもできます。複数のバージョンの Rust を同時にインス"
+"トールしておき、`rustup` を使って必要に応じて切り替えることができます。"
 
 #: src/cargo/rust-ecosystem.md src/types-and-values/hello-world.md
 #: src/references/exclusive.md src/memory-management/move.md
@@ -3724,15 +3686,14 @@ msgstr ""
 "registries.html)、git、フォルダなどから解決することもできます。"
 
 #: src/cargo/rust-ecosystem.md
-#, fuzzy
 msgid ""
 "Rust also has [editions](https://doc.rust-lang.org/edition-guide/): the "
 "current edition is Rust 2024. Previous editions were Rust 2015, Rust 2018 "
 "and Rust 2021."
 msgstr ""
-"Rustには[editions](https://doc.rust-lang.org/edition-guide/)（エディション）"
-"があります：現在のエディションはRust2021です。以前はRust2015とRust2018でし"
-"た。"
+"Rust には [エディション](https://doc.rust-lang.org/edition-guide/) がありま"
+"す。現在のエディションは Rust 2024 です。以前のエディションは Rust 2015、"
+"Rust 2018、Rust 2021 でした。"
 
 #: src/cargo/rust-ecosystem.md
 msgid ""
@@ -3764,12 +3725,14 @@ msgstr ""
 "コンパイラを直接使用する事は非常に稀であり、基本的には`cargo`を介します。"
 
 #: src/cargo/rust-ecosystem.md
-#, fuzzy
 msgid ""
 "It might be worth alluding that Cargo itself is an extremely powerful and "
 "comprehensive tool. It is capable of many advanced features including but "
 "not limited to:"
-msgstr "`Cargo`は非常に包括的なツールであり、多くの機能を備えています："
+msgstr ""
+"Cargo 自体が非常に強力で包括的なツールであることに触れておくとよいかもしれま"
+"せん。Cargo は、次のような多くの高度な機能を備えています（これらに限りませ"
+"ん）。"
 
 #: src/cargo/rust-ecosystem.md
 msgid "Project/package structure"
@@ -3830,15 +3793,14 @@ msgstr ""
 "が容易になり、一貫した開発環境の提供が可能となります。"
 
 #: src/cargo/code-samples.md
-#, fuzzy
 msgid ""
 "Installing Cargo is still encouraged: it will make it easier for you to do "
 "the exercises. On the last day, we will do a larger exercise that shows you "
 "how to work with dependencies and for that you need Cargo."
 msgstr ""
-"ただし、できればCargoをインストールしてください： 練習問題で使えると便利で"
-"す。また最終日に依存関係を扱う課題を扱いますが、そこではCargoが必要になりま"
-"す。"
+"それでも、Cargo をインストールすることをおすすめします。演習が行いやすくなり"
+"ます。最終日には依存関係の扱い方を示す大きめの演習を行いますが、そのためには "
+"Cargo が必要です。"
 
 #: src/cargo/code-samples.md
 msgid "The code blocks in this course are fully interactive:"
@@ -3855,9 +3817,8 @@ msgstr "講座のコードブロックはインタラクティブです："
 #: src/android/interoperability/with-c/bindgen.md
 #: src/android/interoperability/java.md src/concurrency/channels/unbounded.md
 #: src/concurrency/channels/bounded.md
-#, fuzzy
 msgid "// Copyright 2022 Google LLC\n"
-msgstr "# Copyright 2023 Google LLC"
+msgstr "// Copyright 2022 Google LLC\n"
 
 #: src/cargo/code-samples.md src/cargo/running-locally.md
 #: src/types-and-values/hello-world.md src/types-and-values/variables.md
@@ -4149,18 +4110,19 @@ msgstr "# Copyright 2023 Google LLC"
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
-msgstr ""
+msgstr "// SPDX-License-Identifier: Apache-2.0\n"
 
 #: src/cargo/code-samples.md src/cargo/running-locally.md
 msgid "\"Edit me!\""
 msgstr "\"Edit me!\""
 
 #: src/cargo/code-samples.md
-#, fuzzy
 msgid ""
 "You can use <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to execute the code when "
 "focus is in the text box."
-msgstr "を押すと、コードが実行されます。"
+msgstr ""
+"テキストボックスにフォーカスがあるときに <kbd>Ctrl</kbd> + <kbd>Enter</kbd> "
+"を押すと、コードを実行できます。"
 
 #: src/cargo/code-samples.md
 msgid ""
@@ -4215,13 +4177,12 @@ msgstr ""
 "す。"
 
 #: src/cargo/running-locally.md
-#, fuzzy
 msgid ""
 "With this in place, follow these steps to build a Rust binary from one of "
 "the examples in this training:"
 msgstr ""
-"次に、本講座の例を参考にしながら、以下の手順に従ってRustのバイナリをビルドし"
-"てください："
+"これが整ったら、次の手順に従って、本講座の例のいずれかから Rust バイナリをビ"
+"ルドしてください。"
 
 #: src/cargo/running-locally.md
 msgid "Click the \"Copy to clipboard\" button on the example you want to copy."
@@ -4239,13 +4200,12 @@ msgstr ""
 "`exercise/`ディレクトリに移動し、`cargo run`でバイナリをビルドして実行："
 
 #: src/cargo/running-locally.md
-#, fuzzy
 msgid ""
 "Replace the boilerplate code in `src/main.rs` with your own code. For "
 "example, using the example on the previous page, make `src/main.rs` look like"
 msgstr ""
-"`src/main.rs`のボイラープレートコードを、コピーしたコードで置き換えてくださ"
-"い。例えば、前のページの例を使った場合、`src/main.rs`は以下のようになります。"
+"`src/main.rs` のボイラープレートコードを自分のコードに置き換えます。たとえ"
+"ば、前のページの例を使う場合は、`src/main.rs` を次のようにします。"
 
 #: src/cargo/running-locally.md
 msgid "Use `cargo run` to build and run your updated binary:"
@@ -42164,17 +42124,16 @@ msgid ""
 msgstr "Comprehensive Rust 🦀! を受講いただきありがとうございました。"
 
 #: src/thanks.md
-#, fuzzy
 msgid ""
 "We have enjoyed putting the course together. The course is not perfect, so "
 "if you spotted any mistakes or have ideas for improvements, please get in "
 "[contact with us on GitHub](https://github.com/google/comprehensive-rust/"
 "discussions). We would love to hear from you."
 msgstr ""
-"ここまで多くのことを学んできましたが、このコースは完璧ではないため、間違いを"
-"見つけた場合や改善のアイデアがある場合は [GitHub でお知らせください](https://"
-"github.com/google/comprehensive-rust/discussions)。皆さんからのフィードバック"
-"をお待ちしています。"
+"私たちは楽しみながらこのコースを作成しました。このコースは完璧ではないため、"
+"間違いを見つけた場合や改善のアイデアがある場合は [GitHub でお知らせください]"
+"(https://github.com/google/comprehensive-rust/discussions)。皆さんからの"
+"フィードバックをお待ちしています。"
 
 #: src/thanks.md
 msgid ""
@@ -42183,6 +42142,10 @@ msgid ""
 "#1083](https://github.com/google/comprehensive-rust/issues/1083). We are "
 "also very grateful for fixes and improvements to the existing notes."
 msgstr ""
+"スピーカーノートをお読みいただきありがとうございます。お役に立てば幸いです。"
+"ノートのないページを見つけた場合は、PR を送信し、[issue #1083](https://"
+"github.com/google/comprehensive-rust/issues/1083) にリンクしてください。既存"
+"のノートの修正や改善も大歓迎です。"
 
 #: src/glossary.md
 msgid ""
@@ -42195,13 +42158,12 @@ msgstr ""
 
 #. Please add the English term in italic after your translated term. Also, please keep the hard line breaks to ensure a nice formatting.
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "allocate:  \n"
 "Dynamic memory allocation on [the heap](memory-management/review.md)."
 msgstr ""
 "割り当て（allocate）:  \n"
-"[ヒープ](memory-management/stack-vs-heap.md) での動的メモリ割り当て。"
+"[ヒープ](memory-management/review.md) での動的メモリ割り当て。"
 
 #: src/glossary.md
 msgid ""
@@ -42209,6 +42171,9 @@ msgid ""
 "A fixed-size collection of elements of the same type, stored contiguously in "
 "memory. See [Arrays](tuples-and-arrays/arrays.md)."
 msgstr ""
+"配列（array）:  \n"
+"同じ型の要素からなる固定サイズのコレクション。メモリ上に連続して格納されま"
+"す。[配列](tuples-and-arrays/arrays.md) をご覧ください。"
 
 #: src/glossary.md
 msgid ""
@@ -42216,6 +42181,8 @@ msgid ""
 "A type associated with a specific trait. Useful for defining the "
 "relationship between types."
 msgstr ""
+"関連型（associated type）:  \n"
+"特定のトレイトに関連付けられた型。型同士の関係を定義するのに役立ちます。"
 
 #: src/glossary.md
 msgid ""
@@ -42228,42 +42195,41 @@ msgstr ""
 "プロイされます。[ベアメタル Rust](bare-metal.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "block:  \n"
 "See [Blocks](control-flow-basics/blocks-and-scopes.md) and _scope_."
 msgstr ""
 "ブロック（block）:  \n"
-"[ブロック](control-flow/blocks.md) とスコープをご覧ください。"
+"[ブロック](control-flow-basics/blocks-and-scopes.md) と _スコープ_ をご覧くだ"
+"さい。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "borrow:  \n"
 "See [Borrowing](borrowing/shared.md)."
 msgstr ""
 "借用（borrow）:  \n"
-"[借用](ownership/borrowing.md) をご覧ください。"
+"[借用](borrowing/shared.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "borrow checker:  \n"
 "The part of the Rust compiler which checks that all [borrows](borrowing/"
 "borrowck.md) are valid."
 msgstr ""
 "借用チェッカー（borrow checker）:  \n"
-"Rust コンパイラの一部。すべての借用が有効かどうかをチェックします。"
+"Rust コンパイラの一部。すべての [借用](borrowing/borrowck.md) が有効かどうか"
+"をチェックします。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "brace:  \n"
 "`{` and `}`. Also called _curly brace_, they delimit [_blocks_](control-flow-"
 "basics/blocks-and-scopes.md)."
 msgstr ""
 "中かっこ（brace）:  \n"
-"`{` and `}`。ブロックを区切ります。"
+"`{` と `}`。_curly brace_ とも呼ばれ、[_ブロック_](control-flow-basics/"
+"blocks-and-scopes.md) を区切ります。"
 
 #: src/glossary.md
 msgid ""
@@ -42275,47 +42241,46 @@ msgstr ""
 "ます。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "concurrency:  \n"
 "The execution of multiple tasks or processes at the same time. See [Welcome "
 "to Concurrency in Rust](concurrency/welcome.md)."
 msgstr ""
 "同時実行（concurrency）:  \n"
-"複数のタスクまたはプロセスを同時に実行することを指します。"
+"複数のタスクまたはプロセスを同時に実行することを指します。[Rustでの並行性へよ"
+"うこそ](concurrency/welcome.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "constant:  \n"
 "A value that does not change during the execution of a program. See [const]"
 "(user-defined-types/const.md)."
 msgstr ""
 "定数（constant）:  \n"
-"プログラムの実行中に変更されない値。"
+"プログラムの実行中に変更されない値。[const](user-defined-types/const.md) をご"
+"覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "control flow:  \n"
 "The order in which the individual statements or instructions are executed in "
 "a program. See [Control Flow Basics](control-flow-basics.md)."
 msgstr ""
 "制御フロー（control flow）:  \n"
-"個々のステートメントまたは命令がプログラム内で実行される順序。"
+"個々のステートメントまたは命令がプログラム内で実行される順序。[制御フローの基"
+"本](control-flow-basics.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "crash:  \n"
 "An unexpected and unhandled failure or termination of a program. See [panic]"
 "(error-handling/panics.md)."
 msgstr ""
 "クラッシュ（crash）:  \n"
-"予期しない制御不能なエラーまたは終了。"
+"プログラムの予期しない、処理されない失敗または終了。[パニック](error-"
+"handling/panics.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "enumeration:  \n"
 "A data type that holds one of several named constants, possibly with an "
@@ -42323,40 +42288,39 @@ msgid ""
 msgstr ""
 "列挙型（enumeration）:  \n"
 "複数の名前付き定数のうちの 1 つを保持するデータ型。関連するタプルまたは構造体"
-"を伴う場合があります。"
+"を伴う場合があります。[列挙型](user-defined-types/enums.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "error:  \n"
 "An unexpected condition or result that deviates from the expected behavior. "
 "See [Error Handling](error-handling.md)."
 msgstr ""
 "エラー（error）:  \n"
-"想定された動作から逸脱した、予期しない条件または結果。"
+"想定された動作から逸脱した、予期しない条件または結果。[エラー処理](error-"
+"handling.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "error handling:  \n"
 "The process of managing and responding to [errors](error-handling.md) that "
 "occur during program execution."
 msgstr ""
 "エラー処理（error handling）:  \n"
-"プログラムの実行中に発生するエラーを管理し、それに対応するプロセス。"
+"プログラムの実行中に発生する [エラー](error-handling.md) を管理し、それに対応"
+"するプロセス。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "function:  \n"
 "A reusable block of code that performs a specific task. See [Functions]"
 "(control-flow-basics/functions.md)."
 msgstr ""
 "関数（function）:  \n"
-"特定のタスクを実行する再利用可能なコードブロック。"
+"特定のタスクを実行する再利用可能なコードブロック。[関数](control-flow-basics/"
+"functions.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "garbage collector:  \n"
 "A mechanism that automatically frees up memory occupied by objects that are "
@@ -42365,10 +42329,10 @@ msgid ""
 msgstr ""
 "ガベージ コレクタ（garbage collector）:  \n"
 "使用されなくなったオブジェクトが占有していたメモリを自動的に解放するメカニズ"
-"ム。"
+"ム。[メモリ管理のアプローチ](memory-management/approaches.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "generics:  \n"
 "A feature that allows writing code with placeholders for types, enabling "
@@ -42376,20 +42340,19 @@ msgid ""
 msgstr ""
 "ジェネリクス（generics）:  \n"
 "型のプレースホルダを使用してコードを記述し、さまざまなデータ型でコードを再利"
-"用できるようにする機能。"
+"用できるようにする機能。[ジェネリクス](generics.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "immutable:  \n"
 "Unable to be changed after creation. See [Variables](types-and-values/"
 "variables.md)."
 msgstr ""
 "不変（immutable）:  \n"
-" 作成後に変更できないこと。"
+"作成後に変更できないこと。[変数](types-and-values/variables.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "integration test:  \n"
 "A type of test that verifies the interactions between different parts or "
@@ -42397,9 +42360,9 @@ msgid ""
 msgstr ""
 "統合テスト（integration test）:  \n"
 "システムのさまざまな部分やコンポーネント間の相互作用を検証するテストの一種。"
+"[他のタイプのテスト](testing/other.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "library:  \n"
 "A collection of precompiled routines or code that can be used by programs. "
@@ -42407,10 +42370,9 @@ msgid ""
 msgstr ""
 "ライブラリ（library）:  \n"
 "プログラムで使用できるプリコンパイル済みのルーチンまたはコードのコレクショ"
-"ン。"
+"ン。[モジュール](modules.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "macro:  \n"
 "Rust [macros](control-flow-basics/macros.md) can be recognized by a `!` in "
@@ -42419,32 +42381,32 @@ msgid ""
 "isn't supported by Rust functions."
 msgstr ""
 "マクロ（macro）:  \n"
-"Rust マクロは名前に `!` を含めることで認識できます。マクロは、通常の関数では"
-"不十分な場合に使用されます。典型的な例が `format!` です。これは可変長引数を取"
-"りますが、Rust 関数ではサポートされていません。"
+"Rust の [マクロ](control-flow-basics/macros.md) は名前に `!` が含まれているこ"
+"とで識別できます。マクロは、通常の関数では不十分な場合に使用されます。典型的"
+"な例が `format!` です。これは可変長引数を取りますが、Rust 関数ではサポートさ"
+"れていません。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "`main` function:  \n"
 "Rust programs start executing with the [`main` function](types-and-values/"
 "hello-world.md)."
 msgstr ""
 "`main` 関数（`main` function）:  \n"
-"Rust プログラムの実行は `main` 関数で開始されます。"
+"Rust プログラムの実行は [`main` 関数](types-and-values/hello-world.md) で開始"
+"されます。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "match:  \n"
 "A control flow construct in Rust that allows for [pattern matching](pattern-"
 "matching.md) on the value of an expression."
 msgstr ""
 "一致（match）:  \n"
-"式の値に対するパターン マッチングを可能にする、Rust の制御フロー構造。"
+"式の値に対する [パターン マッチング](pattern-matching.md) を可能にする、Rust "
+"の制御フロー構造。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "memory leak:  \n"
 "A situation where a program fails to release memory that is no longer "
@@ -42453,20 +42415,20 @@ msgid ""
 msgstr ""
 "メモリリーク（memory leak）:  \n"
 "プログラムで不要になったメモリの解放に失敗し、メモリ使用量が徐々に増加する状"
-"況。"
+"況。[メモリ管理のアプローチ](memory-management/approaches.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "method:  \n"
 "A function associated with an object or a type in Rust. See [Methods]"
 "(methods-and-traits/methods.md)."
 msgstr ""
 "メソッド（method）:  \n"
-"Rust のオブジェクトまたは型に関連付けられた関数。"
+"Rust のオブジェクトまたは型に関連付けられた関数。[メソッド](methods-and-"
+"traits/methods.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "module:  \n"
 "A namespace that contains definitions, such as functions, types, or traits, "
@@ -42474,30 +42436,29 @@ msgid ""
 msgstr ""
 "モジュール（module）:  \n"
 "関数、型、トレイトなどの定義を含む名前空間。Rust でコードを整理するために使用"
-"されます。"
+"されます。[モジュール](modules.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "move:  \n"
 "The transfer of ownership of a value from one variable to another in Rust. "
 "See [Move Semantics](memory-management/move.md)."
 msgstr ""
-"移動（move）:  \n"
-"Rust である変数から別の変数に値の所有権を移動すること。"
+"ムーブ（move）:  \n"
+"Rust である変数から別の変数に値の所有権を移動すること。[ムーブセマンティクス]"
+"(memory-management/move.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "mutable:  \n"
 "A property in Rust that allows [variables](types-and-values/variables.md) to "
 "be modified after they have been declared."
 msgstr ""
 "可変（mutable）:  \n"
-"宣言後の変数の変更を可能にする Rust のプロパティ。"
+"宣言後の [変数](types-and-values/variables.md) の変更を可能にする Rust のプロ"
+"パティ。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "ownership:  \n"
 "The concept in Rust that defines which part of the code is responsible for "
@@ -42506,27 +42467,27 @@ msgid ""
 msgstr ""
 "所有権（ownership）:  \n"
 "値に関連付けられたメモリの管理をコードのどの部分が担うかを定義する Rust の概"
-"念。"
+"念。[所有権](memory-management/ownership.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "panic:  \n"
 "An unrecoverable error condition in Rust that results in the termination of "
 "the program. See [Panics](error-handling/panics.md)."
 msgstr ""
 "パニック（panic）:  \n"
-"プログラムの終了を引き起こす、Rust の回復不能なエラー状態。"
+"プログラムの終了を引き起こす、Rust の回復不能なエラー状態。[パニック](error-"
+"handling/panics.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "pattern:  \n"
 "A combination of values, literals, or structures that can be matched against "
 "an expression in Rust. See [Pattern Matching](pattern-matching.md)."
 msgstr ""
 "パターン（pattern）:  \n"
-"Rust の式と照合できる値、リテラル、構造体の組み合わせ。"
+"Rust の式と照合できる値、リテラル、構造体の組み合わせ。[パターン マッチング]"
+"(pattern-matching.md) をご覧ください。"
 
 #: src/glossary.md
 msgid ""
@@ -42537,14 +42498,14 @@ msgstr ""
 "メッセージ、イベント、またはデータ構造体で保持されるデータまたは情報。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "receiver:  \n"
 "The first parameter in a Rust [method](methods-and-traits/methods.md) that "
 "represents the instance on which the method is called."
 msgstr ""
 "レシーバ（receiver）:  \n"
-"メソッドが呼び出されたインスタンスを表す Rust メソッドの最初のパラメータ。"
+"メソッドが呼び出されたインスタンスを表す Rust [メソッド](methods-and-traits/"
+"methods.md) の最初のパラメータ。"
 
 #: src/glossary.md
 msgid ""
@@ -42553,9 +42514,12 @@ msgid ""
 "ownership. References can be [shared (immutable)](references/shared.md) or "
 "[exclusive (mutable)](references/exclusive.md)."
 msgstr ""
+"参照（reference）:  \n"
+"値を所有しないポインタで、所有権を移動せずに値を借用します。参照には [共有"
+"（不変）](references/shared.md) 参照と [排他（可変）](references/"
+"exclusive.md) 参照があります。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "reference counting:  \n"
 "A memory management technique in which the number of references to an object "
@@ -42564,10 +42528,10 @@ msgid ""
 msgstr ""
 "参照カウント（reference counting）:  \n"
 "オブジェクトへの参照の数をトラッキングし、カウントがゼロになるとオブジェクト"
-"の割り当てを解除するメモリ管理技術。"
+"の割り当てを解除するメモリ管理技術。[Rc](smart-pointers/rc.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "Rust:  \n"
 "A systems programming language that focuses on safety, performance, and "
@@ -42575,9 +42539,9 @@ msgid ""
 msgstr ""
 "Rust:  \n"
 "安全性、パフォーマンス、同時実行に重点を置いたシステム プログラミング言語。"
+"[Rustとは？](hello-world/what-is-rust.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "safe:  \n"
 "Refers to code that adheres to Rust's ownership and borrowing rules, "
@@ -42585,7 +42549,7 @@ msgid ""
 msgstr ""
 "安全（safe）:  \n"
 "Rust の所有権と借用に関するルールに従って、メモリ関連のエラーを防止するコード"
-"を指します。"
+"を指します。[Unsafe Rust](unsafe-rust.md) をご覧ください。"
 
 #: src/glossary.md
 msgid ""
@@ -42594,29 +42558,32 @@ msgid ""
 "vector. Unlike arrays, slices have a size determined at runtime. See [Slices]"
 "(references/slices.md)."
 msgstr ""
+"スライス（slice）:  \n"
+"配列やベクタなどの連続したシーケンスに対する、動的なサイズのビュー。配列とは"
+"異なり、スライスのサイズは実行時に決まります。[スライス](references/"
+"slices.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "scope:  \n"
 "The region of a program where a variable is valid and can be used. See "
 "[Blocks and Scopes](control-flow-basics/blocks-and-scopes.md)."
 msgstr ""
 "スコープ（scope）:  \n"
-"変数が有効かつ使用可能なプログラムの領域。"
+"変数が有効かつ使用可能なプログラムの領域。[ブロックとスコープ](control-flow-"
+"basics/blocks-and-scopes.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "standard library:  \n"
 "A collection of modules providing essential functionality in Rust. See "
 "[Standard Library](std-types/std.md)."
 msgstr ""
 "標準ライブラリ（standard library）:  \n"
-"Rust の必須機能を提供するモジュールのコレクション。"
+"Rust の必須機能を提供するモジュールのコレクション。[標準ライブラリ](std-"
+"types/std.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "static:  \n"
 "A keyword in Rust used to define static variables or items with a `'static` "
@@ -42624,20 +42591,18 @@ msgid ""
 msgstr ""
 "静的（static）:  \n"
 "静的な変数や `'static` ライフタイムを持つアイテムを定義するために使用される "
-"Rust のキーワード。"
+"Rust のキーワード。[static](user-defined-types/static.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "string:  \n"
 "A data type storing textual data. See [Strings](references/strings.md)."
 msgstr ""
 "文字列（string）:  \n"
-"テキストデータを格納するデータ型。詳しくは、[`String` と `str`](basic-syntax/"
-"string-slices.html) をご覧ください。"
+"テキストデータを格納するデータ型。[文字列](references/strings.md) をご覧くだ"
+"さい。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "struct:  \n"
 "A composite data type in Rust that groups together variables of different "
@@ -42645,7 +42610,8 @@ msgid ""
 "structs.md)."
 msgstr ""
 "構造体（struct）:  \n"
-"異なる型の変数を 1 つの名前でグループ化する Rust の複合データ型。"
+"異なる型の変数を 1 つの名前でグループ化する Rust の複合データ型。[構造体]"
+"(user-defined-types/named-structs.md) をご覧ください。"
 
 #: src/glossary.md
 msgid ""
@@ -42653,29 +42619,31 @@ msgid ""
 "A function that tests the correctness of other code. Rust has a built-in "
 "test runner. See [Testing](testing.md)."
 msgstr ""
+"テスト（test）:  \n"
+"他のコードの正しさをテストする関数。Rust には組み込みのテストランナーがありま"
+"す。[テスト](testing.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "thread:  \n"
 "A separate sequence of execution in a program, allowing concurrent "
 "execution. See [Threads](concurrency/threads.md)."
 msgstr ""
 "スレッド（thread）:  \n"
-"同時実行を可能にする、プログラム内の独立した実行シーケンス。"
+"同時実行を可能にする、プログラム内の独立した実行シーケンス。[スレッド]"
+"(concurrency/threads.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "thread safety:  \n"
 "The property of a program that ensures correct behavior in a multithreaded "
 "environment. See [Send and Sync](concurrency/send-sync.md)."
 msgstr ""
 "スレッドセーフ（thread safety）:  \n"
-"マルチスレッド環境で正しい動作を保証するプログラムの特性。"
+"マルチスレッド環境で正しい動作を保証するプログラムの特性。[SendとSync]"
+"(concurrency/send-sync.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "trait:  \n"
 "A collection of methods defined for an unknown type, providing a way to "
@@ -42683,20 +42651,20 @@ msgid ""
 msgstr ""
 "トレイト（trait）:  \n"
 "未知の型に対して定義されたメソッドのコレクション。Rust でポリモーフィズムを実"
-"現する方法を提供します。"
+"現する方法を提供します。[トレイト](methods-and-traits/traits.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "trait bound:  \n"
 "An abstraction where you can require types to implement some traits of your "
 "interest. See [Trait Bounds](generics/trait-bounds.md)."
 msgstr ""
 "トレイト境界（trait bound）:  \n"
-"特定のトレイトを実装するために型を要求できる抽象化。"
+"関心のある特定のトレイトを実装するよう型に要求できる抽象化。[トレイト制約]"
+"(generics/trait-bounds.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "tuple:  \n"
 "A composite data type that contains variables of different types. Tuple "
@@ -42705,10 +42673,9 @@ msgid ""
 msgstr ""
 "タプル（tuple）:  \n"
 "さまざまな型の変数を含む複合データ型。タプル フィールドには名前がなく、序数で"
-"アクセスします。"
+"アクセスします。[タプル](tuples-and-arrays/tuples.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "type:  \n"
 "A classification that specifies which operations can be performed on values "
@@ -42716,19 +42683,19 @@ msgid ""
 msgstr ""
 "型（type）:  \n"
 "Rust の特定の種類の値に対してどのオペレーションを実行できるかを指定する分類。"
+"[型と値](types-and-values.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "type inference:  \n"
 "The ability of the Rust compiler to deduce the type of a variable or "
 "expression. See [Type Inference](types-and-values/inference.md)."
 msgstr ""
 "型推論（type inference）:  \n"
-"変数または式の型を推測する Rust コンパイラの機能。"
+"変数または式の型を推測する Rust コンパイラの機能。[型推論](types-and-values/"
+"inference.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "undefined behavior:  \n"
 "Actions or conditions in Rust that have no specified result, often leading "
@@ -42736,20 +42703,20 @@ msgid ""
 msgstr ""
 "未定義の動作（undefined behavior）:  \n"
 "結果が指定されていない Rust のアクションまたは条件。多くの場合、プログラムの"
-"予測不能な動作を引き起こします。"
+"予測不能な動作を引き起こします。[Unsafe Rust](unsafe-rust.md) をご覧くださ"
+"い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "union:  \n"
 "A data type that can hold values of different types but only one at a time. "
 "See [Unions](unsafe-rust/unions.md)."
 msgstr ""
 "共用体（union）:  \n"
-"異なる型の値を一度に 1 つだけ保持できるデータ型。"
+"異なる型の値を一度に 1 つだけ保持できるデータ型。[共用体](unsafe-rust/"
+"unions.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "unit test:  \n"
 "Rust comes with built-in support for running small unit tests and larger "
@@ -42757,39 +42724,38 @@ msgid ""
 msgstr ""
 "単体テスト（unit test）:  \n"
 "Rust には、小規模な単体テストと大規模な統合テストを実行するための組み込みサ"
-"ポートが付属しています。[単体テスト](testing/unit-tests.html) をご覧くださ"
+"ポートが付属しています。[ユニットテスト](testing/unit-tests.md) をご覧くださ"
 "い。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "unit type:  \n"
 "Type that holds no data, written as a tuple with no members. See speaker "
 "notes on [Functions](control-flow-basics/functions.html)."
 msgstr ""
 "ユニット型（unit type）:  \n"
-"データを保持しない型。メンバーのないタプルとして記述されます。"
+"データを保持しない型。メンバーのないタプルとして記述されます。[関数](control-"
+"flow-basics/functions.html) のスピーカーノートをご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "unsafe:  \n"
 "The subset of Rust which allows you to trigger _undefined behavior_. See "
 "[Unsafe Rust](unsafe-rust/unsafe.md)."
 msgstr ""
 "安全でない（unsafe）:  \n"
-"未定義の動作をトリガーできる Rust のサブセット。[安全でない Rust]"
-"(unsafe.html) をご覧ください。"
+"_未定義の動作_ を引き起こすことができる Rust のサブセット。[Unsafe Rust]"
+"(unsafe-rust/unsafe.md) をご覧ください。"
 
 #: src/glossary.md
-#, fuzzy
 msgid ""
 "variable:  \n"
 "A memory location storing data. Variables are valid in a _scope_. See "
 "[Variables](types-and-values/variables.md)."
 msgstr ""
 "変数（variable）:  \n"
-"データを格納するメモリの場所。変数はスコープ内で有効です。"
+"データを格納するメモリの場所。変数は _スコープ_ 内で有効です。[変数](types-"
+"and-values/variables.md) をご覧ください。"
 
 #: src/other-resources.md
 msgid "Other Rust Resources"
@@ -42854,6 +42820,8 @@ msgid ""
 "[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/): "
 "recommendations on how to design APIs."
 msgstr ""
+"[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/): API の設"
+"計方法に関する推奨事項。"
 
 #: src/other-resources.md
 msgid "More specialized guides hosted on the official Rust site:"
@@ -42906,15 +42874,14 @@ msgstr ""
 "持たない C プログラマーの視点で Rust を解説しています。"
 
 #: src/other-resources.md
-#, fuzzy
 msgid ""
 "[Rust for Embedded C Programmers](https://opentitan.org/book/doc/"
 "rust_for_c_devs.html): covers Rust from the perspective of developers who "
 "write firmware in C."
 msgstr ""
-"[Rust for Embedded C Programmers](https://docs.opentitan.org/doc/ug/"
-"rust_for_c/): ファームウェアを C で記述するデベロッパーの観点から Rust を解説"
-"しています。"
+"[Rust for Embedded C Programmers](https://opentitan.org/book/doc/"
+"rust_for_c_devs.html): ファームウェアを C で記述するデベロッパーの観点から "
+"Rust を解説しています。"
 
 #: src/other-resources.md
 msgid ""
@@ -42953,6 +42920,10 @@ msgid ""
 "framework. It covers `googletest`, snapshot testing, mocking as well as how "
 "to write your own custom test harness."
 msgstr ""
+"[Advanced testing for Rust applications](https://rust-exercises.com/advanced-"
+"testing/): Rust の組み込みテストフレームワークの先に進む、自分のペースで進め"
+"られるワークショップ。`googletest`、スナップショット テスト、モック、独自のカ"
+"スタム テストハーネスの作成方法を扱います。"
 
 #: src/other-resources.md
 msgid ""
@@ -42984,6 +42955,8 @@ msgid ""
 "[The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/): "
 "covers many details on Rust macros with practical examples."
 msgstr ""
+"[The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/): Rust "
+"マクロの多くの詳細を、実践的な例とともに解説しています。"
 
 #: src/other-resources.md
 msgid ""
