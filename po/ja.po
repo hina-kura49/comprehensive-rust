@@ -2186,19 +2186,17 @@ msgid "Common Preconditions"
 msgstr "一般的な前提条件"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/getter.md
-#, fuzzy
 msgid "Getter example"
-msgstr "例の実行方法:"
+msgstr "ゲッターの例"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/safety-preconditions/semantic-preconditions.md
-#, fuzzy
 msgid "Semantic preconditions"
-msgstr "match式"
+msgstr "意味上の前提条件"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/u8-to-bool.md
 msgid "Example: u8 to bool"
-msgstr ""
+msgstr "例: u8 から bool へ"
 
 #: src/SUMMARY.md
 msgid "Determining preconditions"
@@ -2210,20 +2208,19 @@ msgstr "例: 参照"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/defining.md
 msgid "Defining your own preconditions"
-msgstr ""
+msgstr "独自の前提条件の定義"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/safety-preconditions/ascii.md
 msgid "Example: ASCII Type"
-msgstr ""
+msgstr "例: ASCII 型"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game.md
 msgid "Rules of the game"
 msgstr "ゲームのルール"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
-#, fuzzy
 msgid "Rust is sound"
-msgstr "Android での Rust へようこそ"
+msgstr "Rust は健全である"
 
 #: src/SUMMARY.md
 msgid "Copying memory"
@@ -2236,25 +2233,23 @@ msgstr "安全な Rust"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
-#, fuzzy
 msgid "Encapsulated Unsafe Rust"
-msgstr "Unsafe Rust"
+msgstr "カプセル化された Unsafe Rust"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
-#, fuzzy
 msgid "Exposed Unsafe Rust"
-msgstr "Unsafe Rust"
+msgstr "公開された Unsafe Rust"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "Documented safety preconditions"
-msgstr ""
+msgstr "文書化された安全性の前提条件"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/crying-wolf.md
 msgid "Crying Wolf"
-msgstr ""
+msgstr "オオカミ少年"
 
 #: src/SUMMARY.md
 msgid "3 shapes of sound Rust"
@@ -2262,12 +2257,12 @@ msgstr "健全な Rust の 3 つの形"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/rules-of-the-game/soundness-proof.md
 msgid "Soundness Proof"
-msgstr ""
+msgstr "健全性の証明"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/soundness.md
 msgid "Soundness"
-msgstr ""
+msgstr "健全性"
 
 #: src/SUMMARY.md
 msgid "Corollary"
@@ -2275,9 +2270,8 @@ msgstr "系"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
-#, fuzzy
 msgid "Unsoundness"
-msgstr "Unboundedチャネル"
+msgstr "不健全性"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/memory-lifecycle.md
 msgid "Memory Lifecycle"
@@ -2286,9 +2280,8 @@ msgstr "メモリのライフサイクル"
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 #: src/unsafe-deep-dive/initialization.md
-#, fuzzy
 msgid "Initialization"
-msgstr "インストール"
+msgstr "初期化"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "MaybeUninit<T>"
@@ -42786,33 +42779,31 @@ msgstr "（より詳しいリストは次のスライドにあります）"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Common safety preconditions"
-msgstr ""
+msgstr "一般的な安全性の前提条件"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Aliasing and Mutability"
-msgstr ""
+msgstr "エイリアシングと可変性"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Alignment"
-msgstr ""
+msgstr "アラインメント"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
-#, fuzzy
 msgid "Array access is in-bound"
-msgstr "配列へのアクセスには境界チェックが行われる。"
+msgstr "配列へのアクセスが境界内であること"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Pointer provenance"
-msgstr ""
+msgstr "ポインタの来歴（provenance）"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Validity"
-msgstr ""
+msgstr "有効性"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
-#, fuzzy
 msgid "Memory"
-msgstr "スタックメモリ"
+msgstr "メモリ"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42820,22 +42811,30 @@ msgid ""
 "working through the details during the course. The intent is to show that "
 "there are several."
 msgstr ""
+"すべての前提条件の説明に時間をかけすぎないようにしてください。詳細はコースの"
+"中で順に取り上げていきます。ここでの意図は、前提条件がいくつもあることを示す"
+"ことです。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
 "\"An incomplete list, but these are a few of the major safety preconditions "
 "to get us thinking.\""
 msgstr ""
+"\"網羅的なリストではありませんが、考えるきっかけとして、主要な安全性の前提条"
+"件をいくつか挙げます。\""
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
 "Validity. Values must be valid values of the type that they represent. "
 "Rust's references may not be null. Creating one with `unsafe` causes the."
 msgstr ""
+"有効性。値は、それが表す型の有効な値でなければなりません。Rust の参照は null "
+"であってはなりません。`unsafe` を使ってそのような参照を作成すると、"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Alignment. References to values must be well-aligned, which means th"
 msgstr ""
+"アラインメント。値への参照は適切にアラインされていなければなりません。つまり"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42843,26 +42842,33 @@ msgid ""
 "manually creating mutable references (`&mut T`) from pointers, then you may "
 "only create one"
 msgstr ""
+"エイリアシング。すべての Rust コードは Rust の借用ルールを守らなければなりま"
+"せん。ポインタから可変参照（`&mut T`）を手動で作成する場合、作成できるのは 1 "
+"つだけ"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
 "Initialization. All instances of Rust types must be fully initialized. To "
 "create a value from raw memory, we need to make sure that we've written"
 msgstr ""
+"初期化。Rust の型のすべてのインスタンスは完全に初期化されていなければなりませ"
+"ん。生のメモリから値を作成するには、確実に書き込んでおく必要があります"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
 "Pointer provenance. The origin of a pointer is important. Casting a `usize` "
 "to a raw pointer is no longer allowed."
 msgstr ""
+"ポインタの来歴。ポインタの出どころは重要です。`usize` を生ポインタにキャスト"
+"することは、もはや許可されていません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Lifetimes. References must not outlive their referent."
-msgstr ""
+msgstr "ライフタイム。参照は参照先より長く生存してはなりません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Some conditions are even more subtle than they first seem."
-msgstr ""
+msgstr "一見したよりもさらに微妙な条件もあります。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42871,6 +42877,9 @@ msgid ""
 "bounds reference already breaks the compiler's assumptions, leading to "
 "erratic behavior."
 msgstr ""
+"「範囲内の配列アクセス」について考えてみましょう。プログラムを壊すのに、その"
+"メモリ位置からの読み取り（つまり参照外し）は必要ありません。範囲外の参照を作"
+"成した時点で、すでにコンパイラの前提が崩れ、予測不能な動作につながります。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42878,6 +42887,9 @@ msgid ""
 "assumption will cause later optimization passes within the compiler to "
 "misbehave (because out-of-bounds memory access cannot occur)."
 msgstr ""
+"Rust は LLVM に `getelementptr inbounds` の前提を使うよう指示します。この前提"
+"により、コンパイラ内の後続の最適化パスが誤動作します（範囲外のメモリアクセス"
+"は起こり得ないと仮定されるため）。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42888,10 +42900,16 @@ msgid ""
 "with the **Show LLVM IR** button. Highlight `getelementptr inbounds i32, ptr "
 "%array, i64 %offset`."
 msgstr ""
+"任意: 以下のコードを示す [Playground](https://play.rust-lang.org/?"
+"version=stable&mode=release&edition=2024&gist=4116c4de01c863cac918f193448210b1) "
+"を開きます。これは本質的に、配列から要素を取得する C の関数を Rust の構文で書"
+"いたものであることを説明します。**Show LLVM IR** ボタンで LLVM IR を生成しま"
+"す。`getelementptr inbounds i32, ptr %array, i64 %offset` をハイライトしま"
+"す。"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid "Expected output (the line to highlight starts with \\`%\\_3):"
-msgstr ""
+msgstr "期待される出力（ハイライトする行は \\`%\\_3 で始まります）:"
 
 #: src/unsafe-deep-dive/safety-preconditions/common-preconditions.md
 msgid ""
@@ -42899,28 +42917,33 @@ msgid ""
 "the \"one-past-the-end\" rule) is UB, even without dereferencing, due to "
 "LLVM's inbounds assumptions."
 msgstr ""
+"範囲: 範囲外のポインタ（「末尾の 1 つ先」ルールを超えるもの）を作成すること"
+"は、参照外しをしなくても、LLVM の inbounds の前提により UB になるという指摘は"
+"正しいです。"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid "/// Return the element at `index` from `arr`\n"
-msgstr ""
+msgstr "/// `arr` から `index` の位置にある要素を返します\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid "Ask: “What are the safety preconditions of `get`?”"
-msgstr ""
+msgstr "質問: 「`get` の安全性の前提条件は何でしょうか？」"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid ""
 "The pointer `arr` is non-null, well-aligned and refers to an array of `i32`"
 msgstr ""
+"ポインタ `arr` が null ではなく、正しくアラインされ、`i32` の配列を指している"
+"こと"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid "`index` is in-bounds"
-msgstr ""
+msgstr "`index` が範囲内であること"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Add safety comments:"
-msgstr ""
+msgstr "安全性コメントを追加します:"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid ""
@@ -42931,30 +42954,41 @@ msgid ""
 "/// - `arr` is non-null, correctly aligned and points to a valid `i32`\n"
 "/// - `index` is in-bounds for the array\n"
 msgstr ""
+"/// `arr` から `index` の位置にある要素を返します\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// - `arr` は null ではなく、正しくアラインされ、有効な `i32` を指しているこ"
+"と\n"
+"/// - `index` が配列の範囲内であること\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid "// SAFETY: Caller guarantees that index is inbounds\n"
-msgstr ""
+msgstr "// SAFETY: index が範囲内であることは呼び出し元が保証する\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/getter.md
 msgid ""
 "Optional: Add runtime checks can be added in debug builds to provide some "
 "extra robustness."
 msgstr ""
+"任意: デバッグビルドでランタイムチェックを追加して、さらに堅牢性を高めること"
+"ができます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "Determining Preconditions"
-msgstr ""
+msgstr "前提条件の特定"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "Where do you find the safety preconditions?"
-msgstr ""
+msgstr "安全性の前提条件はどこで見つけられるでしょうか？"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "Attempt to compile the program to trigger the compiler error (\"error\\"
 "[E0133\\]: call to unsafe function ...\")."
 msgstr ""
+"プログラムをコンパイルしてコンパイラエラー（\"error\\[E0133\\]: call to "
+"unsafe function ...\"）を発生させてみます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
@@ -42962,81 +42996,94 @@ msgid ""
 "function? Here we need to understand when it's safe to convert from a null "
 "pointer to a mutable reference.”"
 msgstr ""
+"質問: 「関数の前提条件を知りたいとき、どこを調べますか？ ここでは、null ポイ"
+"ンタから可変参照への変換が安全になるのはどのような場合かを理解する必要があり"
+"ます。」"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "Locations to look:"
-msgstr ""
+msgstr "調べる場所:"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "A function's API documentation, especially its safety section"
-msgstr ""
+msgstr "関数の API ドキュメント、特にその Safety セクション"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "The source code and its internal safety comments"
-msgstr ""
+msgstr "ソースコードとその内部の安全性コメント"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
-#, fuzzy
 msgid "Module documentation"
-msgstr "ドキュメント"
+msgstr "モジュールのドキュメント"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
-#, fuzzy
 msgid "Rust Reference"
-msgstr "参照"
+msgstr "Rust リファレンス"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "Consult [the documentation](https://doc.rust-lang.org/std/"
 "primitive.pointer.html#method.as_mut) for the `as_mut` method."
 msgstr ""
+"`as_mut` メソッドの[ドキュメント](https://doc.rust-lang.org/std/"
+"primitive.pointer.html#method.as_mut)を参照します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "Highlight Safety section."
-msgstr ""
+msgstr "Safety セクションをハイライトします。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid "**Safety**"
-msgstr ""
+msgstr "**Safety**"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "When calling this method, you have to ensure that either the pointer is null "
 "or the pointer is convertible to a reference."
 msgstr ""
+"このメソッドを呼び出す際は、ポインタが null であるか、ポインタが参照に変換可"
+"能であることを保証しなければなりません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "Click the \"convertible to a reference\" hyperlink to the \"Pointer to "
 "reference conversion\""
 msgstr ""
+"「convertible to a reference」のハイパーリンクをクリックして「Pointer to "
+"reference conversion」に移動します"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "Track down the rules for converting a pointer to a reference, i.e., whether "
 "it is \"dereferenceable\"."
 msgstr ""
+"ポインタを参照に変換するためのルール、つまりポインタが「参照外し可能"
+"（dereferenceable）」かどうかを調べます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md
 msgid ""
 "Consider the implications of this excerpt (Rust 1.90.0) \"You must enforce "
 "Rust’s aliasing rules. The exact aliasing rules are not decided yet, ...\""
 msgstr ""
+"次の抜粋（Rust 1.90.0）が意味することを考えてみましょう。「Rust のエイリアシ"
+"ングルールを守らなければなりません。正確なエイリアシングルールはまだ決まって"
+"いません。...」"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
-#, fuzzy
 msgid "Example: References"
-msgstr "排他参照"
+msgstr "例: 参照"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Confirm understanding of the syntax"
-msgstr ""
+msgstr "構文の理解を確認する"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "`Box<i32>` type is a reference to an integer on the heap that is owned by "
 "the box."
 msgstr ""
+"`Box<i32>` 型は、ヒープ上の整数への参照であり、その整数はボックスが所有してい"
+"ます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
@@ -43044,6 +43091,9 @@ msgid ""
 "does not know the ownership of. Programmers need to ensure the rules are "
 "enforced without assistance from the compiler."
 msgstr ""
+"`*mut i32` 型は、いわゆる生ポインタで、コンパイラがその所有権を把握していない"
+"整数を指します。プログラマは、コンパイラの支援なしにルールが守られるようにす"
+"る必要があります。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
@@ -43051,71 +43101,78 @@ msgid ""
 "semantically owning the data, or semantically borrowing, but that "
 "information only exists in the programmer's mind."
 msgstr ""
+"注: 生ポインタは Rust に所有権の情報を提供しません。ポインタは意味的にデータ"
+"を所有している場合も、意味的に借用している場合もありますが、その情報はプログ"
+"ラマの頭の中にしか存在しません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "`&mut *boxed as *mut _` expression:"
-msgstr ""
+msgstr "`&mut *boxed as *mut _` 式:"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "`*boxed` is ..."
-msgstr ""
+msgstr "`*boxed` は ..."
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "`&mut *boxed` is ..."
-msgstr ""
+msgstr "`&mut *boxed` は ..."
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "finally, `as *mut i32` casts the reference to a pointer."
-msgstr ""
+msgstr "最後に、`as *mut i32` が参照をポインタにキャストします。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "References, such as `&mut i32`, \"borrow\" their referent. This is Rust's "
 "ownership system."
 msgstr ""
+"`&mut i32` などの参照は、参照先を「借用」します。これが Rust の所有権システム"
+"です。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Confirm understanding of ownership"
-msgstr ""
+msgstr "所有権の理解を確認する"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Step through code:"
-msgstr ""
+msgstr "コードを順に追っていきます:"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "(Line 3) Creates raw pointer to the `123` by dereferencing the box, creating "
 "a new reference and casting the new reference as a pointer."
 msgstr ""
+"（3 行目）ボックスを参照外しし、新しい参照を作成して、その新しい参照をポイン"
+"タとしてキャストすることで、`123` への生ポインタを作成します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "(Line 4) Creates raw pointer with a NULL value"
-msgstr ""
+msgstr "（4 行目）NULL 値を持つ生ポインタを作成します"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "(Line 7) Converts the raw pointer to an Option with `.as_mut()`"
-msgstr ""
+msgstr "（7 行目）`.as_mut()` で生ポインタを Option に変換します"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Highlight that pointers are nullable in Rust (unlike references)."
 msgstr ""
+"Rust では（参照とは異なり）ポインタが null になり得ることを強調します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Compile to reveal the error messages."
-msgstr ""
+msgstr "コンパイルしてエラーメッセージを表示します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Discuss"
-msgstr ""
+msgstr "議論"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "(Line 6) `println!(\"{:?}\", *a);`"
-msgstr ""
+msgstr "（6 行目）`println!(\"{:?}\", *a);`"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
-#, fuzzy
 msgid "Prefix star dereferences a raw pointer."
-msgstr "生ポインタの参照外し。"
+msgstr "前置のスターは生ポインタを参照外しします。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
@@ -43123,38 +43180,44 @@ msgid ""
 "dereferencing most of the time thanks to the Deref trait. This is referred "
 "to as \"auto-deref\"."
 msgstr ""
+"これは明示的な操作です。一方、通常の参照は Deref トレイトのおかげで、ほとんど"
+"の場合暗黙的に参照外しされます。これは「自動参照外し（auto-deref）」と呼ばれ"
+"ます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
-#, fuzzy
 msgid "Dereferencing a raw pointer is an unsafe operation."
-msgstr "生ポインタの参照外し。"
+msgstr "生ポインタの参照外しはアンセーフな操作です。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Requires an unsafe block."
-msgstr ""
+msgstr "unsafe ブロックが必要です。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "(Line 7) `println!(\"{:?}\", b.as_mut());`"
-msgstr ""
+msgstr "（7 行目）`println!(\"{:?}\", b.as_mut());`"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "`as_mut()` is an unsafe function."
-msgstr ""
+msgstr "`as_mut()` はアンセーフな関数です。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Calling an unsafe function requires an unsafe block."
-msgstr ""
+msgstr "アンセーフな関数を呼び出すには unsafe ブロックが必要です。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "Demonstrate: Fix the code (add unsafe blocks) and compile again to show the "
 "working program."
 msgstr ""
+"デモ: コードを修正し（unsafe ブロックを追加し）、再度コンパイルして、プログラ"
+"ムが動作することを示します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "Demonstrate: Replace `as *mut i32` with `as *mut _`, show that it compiles."
 msgstr ""
+"デモ: `as *mut i32` を `as *mut _` に置き換え、コンパイルできることを示しま"
+"す。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
@@ -43162,62 +43225,75 @@ msgid ""
 "that the source of the cast is a `&mut i32`. This reference type can only be "
 "converted to one pointer type, `*mut i32`."
 msgstr ""
+"キャストの対象の型は部分的に省略できます。Rust コンパイラは、キャスト元が "
+"`&mut i32` であることを知っています。この参照型は 1 つのポインタ型、`*mut "
+"i32` にしか変換できません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "We said that the unsafe code marks the responsibility shift from the "
 "compiler to the programmer."
 msgstr ""
+"アンセーフなコードは、責任がコンパイラからプログラマに移ることを示すと説明し"
+"ました。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "How do we convey that we thought about our unusual responsibilities while "
 "writing unsafe code? Safety comments."
 msgstr ""
+"アンセーフなコードを書く際に、通常とは異なる責任について検討したことをどのよ"
+"うに伝えればよいでしょうか？ 安全性コメントです。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Safety comments explain why unsafe code is correct."
-msgstr ""
+msgstr "安全性コメントは、アンセーフなコードが正しい理由を説明します。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Without a safety comment, unsafe code is not safe."
-msgstr ""
+msgstr "安全性コメントがなければ、アンセーフなコードは安全ではありません。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Discuss: Whether to use one large unsafe block or two smaller ones:"
 msgstr ""
+"議論: 1 つの大きな unsafe ブロックを使うか、2 つの小さなブロックを使うか:"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Possibility of using a single unsafe block rather than multiple."
-msgstr ""
+msgstr "複数ではなく 1 つの unsafe ブロックを使う可能性。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid "Using more allows safety comments as specific as possible."
 msgstr ""
+"より多くのブロックを使うと、安全性コメントをできるだけ具体的にできます。"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "// SAFETY: `a` is a non-null pointer to i32, it is initialized and still\n"
 "    // allocated.\n"
 msgstr ""
+"// SAFETY: `a` は i32 への null でないポインタであり、初期化済みで、まだ\n"
+"    // 割り当てられている。\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/references.md
 msgid ""
 "// SAFETY: `b` is a null pointer, which `as_mut()` converts to `None`.\n"
 msgstr ""
+"// SAFETY: `b` は null ポインタであり、`as_mut()` はこれを `None` に変換す"
+"る。\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/defining.md
 msgid "User-defined types are entitled to have their own safety preconditions"
-msgstr ""
+msgstr "ユーザー定義型は独自の安全性の前提条件を持つことができます"
 
 #: src/unsafe-deep-dive/safety-preconditions/defining.md
 msgid ""
 "Include documentation so that they can later be determined and satisfied"
-msgstr ""
+msgstr "後で前提条件を特定して満たせるように、ドキュメントを含めます"
 
 #: src/unsafe-deep-dive/safety-preconditions/ascii.md
 msgid "/// Text that is guaranteed to be encoded within 7-bit ASCII.\n"
-msgstr ""
+msgstr "/// 7 ビット ASCII でエンコードされていることが保証されたテキスト。\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/ascii.md
 msgid ""
@@ -43228,6 +43304,13 @@ msgid ""
 "    ///\n"
 "    /// Providing non-ASCII bytes results in undefined behavior.\n"
 msgstr ""
+"/// ASCII として有効かどうかをチェックせずに、バイトスライスから新しい "
+"`Ascii` を\n"
+"    /// 作成します。\n"
+"    ///\n"
+"    /// # Safety\n"
+"    ///\n"
+"    /// ASCII でないバイトを渡すと未定義の動作になります。\n"
 
 #: src/unsafe-deep-dive/safety-preconditions/ascii.md
 msgid ""
@@ -43235,6 +43318,9 @@ msgid ""
 "they share the same representation. However, `Ascii` requires that the high "
 "bit must not be used.\""
 msgstr ""
+"\"`Ascii` 型はバイトスライスの最小限のラッパーです。内部的には、両者は同じ表"
+"現を共有します。ただし、`Ascii` では最上位ビットを使用してはならないという要"
+"件があります。\""
 
 #: src/unsafe-deep-dive/safety-preconditions/ascii.md
 msgid ""
@@ -43242,6 +43328,8 @@ msgid ""
 "`debug_assert!` to test the preconditions during tests without impacting "
 "release builds."
 msgstr ""
+"任意: 例を拡張して、`debug_assert!` を使うと、リリースビルドに影響を与えずに"
+"テスト中に前提条件をテストできることに触れます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game.md
 msgid ""
@@ -43290,19 +43378,19 @@ msgstr ""
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Soundness is fundamental to Rust"
-msgstr ""
+msgstr "健全性は Rust の基本である"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Soundness ≈ impossible to cause memory safety problems"
-msgstr ""
+msgstr "健全性 ≈ メモリ安全性の問題を引き起こすことが不可能であること"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Sound functions have common “shapes”"
-msgstr ""
+msgstr "健全な関数には共通の「形」がある"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "“A fundamental principle of Rust code is that it is sound."
-msgstr ""
+msgstr "“Rust コードの基本原則は、健全であることです。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid ""
@@ -43310,66 +43398,77 @@ msgid ""
 "meantime, think of sound code as code that cannot trigger memory safety "
 "problems."
 msgstr ""
+"“健全性という用語の正式な定義はこの後すぐに作成します。それまでは、健全なコー"
+"ドとは、メモリ安全性の問題を引き起こすことができないコードだと考えてくださ"
+"い。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "“Sound code is made up of _sound functions_ and _sound operations_."
-msgstr ""
+msgstr "“健全なコードは、_健全な関数_ と _健全な操作_ で構成されます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid ""
 "“A sound function is a function where none of its possible inputs could "
 "provoke soundness problems."
 msgstr ""
+"“健全な関数とは、考えられるどの入力によっても健全性の問題が起こり得ない関数で"
+"す。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Sound functions have common shapes."
-msgstr ""
+msgstr "健全な関数には共通の形があります。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid "Those shapes are what we’ll look at now."
-msgstr ""
+msgstr "それらの形をこれから見ていきます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/rust-is-sound.md
 msgid ""
 "“We’ll start with one that’s implemented in Safe Rust, and then see what "
 "could happen when we introduce `unsafe` to different parts."
 msgstr ""
+"“まず Safe Rust で実装されたものから始め、次にさまざまな部分に `unsafe` を導"
+"入すると何が起こり得るかを見ていきます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory.md
 msgid "Copying memory - Introduction"
-msgstr ""
+msgstr "メモリのコピー - はじめに"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory.md
 msgid "/// Reads bytes from `source` and writes them to `dest`\n"
-msgstr ""
+msgstr "/// `source` からバイトを読み取り、`dest` に書き込みます\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory.md
 msgid "“Here is our initial function prototype.”"
-msgstr ""
+msgstr "“これが最初の関数プロトタイプです。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory.md
 msgid ""
 "“`copy` accepts two slices as arguments. `dest` (destination) is mutable, "
 "whereas `source` is not.”"
 msgstr ""
+"“`copy` は 2 つのスライスを引数として受け取ります。`dest`（コピー先）は可変で"
+"すが、`source` はそうではありません。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory.md
 msgid "“Let's see the shapes of sound Rust code.”"
-msgstr ""
+msgstr "“健全な Rust コードの形を見てみましょう。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "“The implementation only uses safe Rust."
-msgstr ""
+msgstr "“この実装では Safe Rust のみを使用しています。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "What can we learn from this?"
-msgstr ""
+msgstr "ここから何を学べるでしょうか？"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid ""
 "“It is impossible for `copy` to trigger memory safety issues when "
 "implemented in Safe Rust. This is true for all possible input arguments.”"
 msgstr ""
+"“Safe Rust で実装されている場合、`copy` がメモリ安全性の問題を引き起こすこと"
+"は不可能です。これは、考えられるすべての入力引数について成り立ちます。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid ""
@@ -43377,38 +43476,45 @@ msgid ""
 "trigger errors relating to handling pointers directly, such as needing null "
 "pointer or bounds checks.”"
 msgstr ""
+"“たとえば、Rust のイテレータを使うことで、null ポインタチェックや境界チェック"
+"が必要になるなど、ポインタを直接扱うことに関連するエラーを決して引き起こさな"
+"いようにできます。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "Ask: “Can you think of any others?”"
-msgstr ""
+msgstr "質問: 「他に何か思いつきますか？」"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "No aliasing issues"
-msgstr ""
+msgstr "エイリアシングの問題がない"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "Dangling pointers are impossible"
-msgstr ""
+msgstr "ダングリングポインタが発生し得ない"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "Alignment will be correct"
-msgstr ""
+msgstr "アラインメントが正しい"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid "Cannot accidentally read from uninitialized memory"
-msgstr ""
+msgstr "初期化されていないメモリを誤って読み取ることがない"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid ""
 "“We can say that the `copy` function is _sound_ because Rust ensures that "
 "all of the safety preconditions are satisfied.”"
 msgstr ""
+"“Rust がすべての安全性の前提条件が満たされることを保証するので、`copy` 関数"
+"は _健全_ であると言えます。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid ""
 "“From the point of view of the programmer, as this function is implemented "
 "in safe Rust, we can think of it as having no safety preconditions.”"
 msgstr ""
+"“プログラマの視点から見ると、この関数はセーフな Rust で実装されているので、安"
+"全性の前提条件を持たないと考えることができます。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/safe.md
 msgid ""
@@ -43416,153 +43522,173 @@ msgid ""
 "If there is insufficient space available in the `dest` slice, then data will "
 "not be copied across.”"
 msgstr ""
+"“これは、`copy` が常に呼び出し元の望みどおりに動作するという意味ではありませ"
+"ん。`dest` スライスに十分な空き領域がない場合、データはコピーされません。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid "// SAFETY: `i` must be in-bounds as it was produced by source.len()\n"
-msgstr ""
+msgstr "// SAFETY: `i` は source.len() から生成されたので、範囲内であるはず\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid "// SAFETY: `i` must be in-bounds as it was produced by dest.len()\n"
-msgstr ""
+msgstr "// SAFETY: `i` は dest.len() から生成されたので、範囲内であるはず\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid ""
 "“Here we have a safe function that encapsulates unsafe blocks that are used "
 "internally."
 msgstr ""
+"“ここには、内部で使用される unsafe ブロックをカプセル化したセーフな関数があり"
+"ます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid ""
 "“This implementation avoids iterators. Instead, the implementor is accessing "
 "memory manually.”"
 msgstr ""
+"“この実装ではイテレータを使いません。代わりに、実装者がメモリに手動でアクセス"
+"しています。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid "“Is this correct?” “Are there any problems?”"
-msgstr ""
+msgstr "“これは正しいでしょうか？” “何か問題はありますか？”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid ""
 "“Who has responsibility for ensuring that correctness? The author of the "
 "function."
-msgstr ""
+msgstr "“その正しさを保証する責任は誰にあるでしょうか？ 関数の作成者です。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md
 msgid ""
 "“A Safe Rust function that contains unsafe blocks remains sound if it’s "
 "impossible for an input to cause memory safety issues."
 msgstr ""
+"“unsafe ブロックを含む Safe Rust の関数は、どの入力によってもメモリ安全性の問"
+"題を引き起こすことが不可能であれば、健全なままです。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "The functionality of copying bytes from one place to the next remains the "
 "same."
-msgstr ""
+msgstr "ある場所から別の場所へバイトをコピーするという機能は変わりません。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "“However, we need to manually create a slice. To do that, we first need to "
 "find the end of the data."
 msgstr ""
+"“ただし、スライスを手動で作成する必要があります。そのためには、まずデータの終"
+"わりを見つける必要があります。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "“As we’re working with text, we’ll use the C convention of a null-terminated "
 "string."
-msgstr ""
+msgstr "“テキストを扱っているので、null 終端文字列という C の慣習を使います。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "Compile the code. See that the output remains the same."
-msgstr ""
+msgstr "コードをコンパイルします。出力が変わらないことを確認します。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "“An unsound function can still work correctly for some inputs. Just because "
 "your tests pass, does not mean that you have a sound function.”"
 msgstr ""
+"“不健全な関数でも、一部の入力に対しては正しく動作することがあります。テストに"
+"合格したからといって、関数が健全であるとは限りません。”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "“Can anyone spot any issues?”"
-msgstr ""
+msgstr "“何か問題に気づいた人はいますか？”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "Readability: difficult to quickly scan code"
-msgstr ""
+msgstr "可読性: コードをすばやく読み取るのが難しい"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
-#, fuzzy
 msgid "`source` pointer might be null"
-msgstr "ポインタは null 以外でなければならないこと。"
+msgstr "`source` ポインタが null である可能性がある"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "`source` pointer might be dangling, i.e. point to freed or uninitialized "
 "memory"
 msgstr ""
+"`source` ポインタがダングリングである、つまり解放済みのメモリや初期化されてい"
+"ないメモリを指している可能性がある"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "`source` might not be null-terminated"
-msgstr ""
+msgstr "`source` が null 終端されていない可能性がある"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "“Assume that we cannot change the function signature, what improvements "
 "could we make to the code to address these issues?”"
 msgstr ""
+"“関数のシグネチャを変更できないと仮定した場合、これらの問題に対処するために"
+"コードをどのように改善できるでしょうか？”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "Null pointer: Add null check with early return (`if source.is_null() "
 "{ return; }`)"
 msgstr ""
+"null ポインタ: 早期リターンを伴う null チェックを追加する（`if "
+"source.is_null() { return; }`）"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "Readability: Use a well-tested library rather than implementing “find first "
 "null byte” ourselves"
 msgstr ""
+"可読性: 「最初の null バイトを見つける」処理を自分で実装するのではなく、十分"
+"にテストされたライブラリを使う"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "“Some safety requirements are impossible to defensively check for, however, "
 "i.e.:”"
 msgstr ""
+"“ただし、防御的にチェックすることが不可能な安全性の要件もあります。たとえば:”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
-#, fuzzy
 msgid "dangling pointer"
-msgstr "浮動小数点数"
+msgstr "ダングリングポインタ"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "no null termination byte"
-msgstr ""
+msgstr "null 終端バイトがない"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "“How can we make this function sound?”"
-msgstr ""
+msgstr "“この関数を健全にするにはどうすればよいでしょうか？”"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
-#, fuzzy
 msgid "Either"
-msgstr "\"there\""
+msgstr "次のいずれか"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid ""
 "Change the type of the `source` input argument to something that has a known "
 "length, i.e. use a slice like the previous example."
 msgstr ""
+"`source` 入力引数の型を、長さがわかっているものに変更する。つまり、前の例のよ"
+"うにスライスを使う。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "Or"
-msgstr ""
+msgstr "または"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "Mark the function as unsafe"
-msgstr ""
+msgstr "関数を unsafe としてマークする"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md
 msgid "Document the safety preconditions"
-msgstr ""
+msgstr "安全性の前提条件をドキュメント化する"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid ""
@@ -43577,121 +43703,144 @@ msgid ""
 "///  - `source` data is not freed (its lifetime invariants are preserved)\n"
 "///  - `source` data contains fewer than `isize::MAX` bytes\n"
 msgstr ""
+"/// ...\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// この関数は容易に未定義の動作を引き起こす可能性があります。以下を確認して"
+"ください:\n"
+"///\n"
+"///  - `source` ポインタが null ではなく、ダングリングでもないこと\n"
+"///  - `source` のデータが、そのメモリ割り当て内で null バイトで終わっている"
+"こと\n"
+"///  - `source` のデータが解放されていないこと（そのライフタイムの不変条件が"
+"保たれていること）\n"
+"///  - `source` のデータが `isize::MAX` バイト未満であること\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "// SAFETY: Caller has provided a non-null pointer\n"
-msgstr ""
+msgstr "// SAFETY: 呼び出し元が null でないポインタを渡している\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "// SAFETY: Caller has provided a data with length < isize:MAX\n"
-msgstr ""
+msgstr "// SAFETY: 呼び出し元が長さ < isize:MAX のデータを渡している\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "// SAFETY: Caller maintains lifetime and aliasing requirements\n"
 msgstr ""
+"// SAFETY: 呼び出し元がライフタイムとエイリアシングの要件を維持している\n"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "Changes to previous iterations:"
-msgstr ""
+msgstr "前のバージョンからの変更点:"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "`copy` marked as unsafe"
-msgstr ""
+msgstr "`copy` を unsafe としてマーク"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "Safety preconditions are documented"
-msgstr ""
+msgstr "安全性の前提条件をドキュメント化"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "inline safety comments"
-msgstr ""
+msgstr "インラインの安全性コメント"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid ""
 "An unsafe function is sound when both its safety preconditions and its "
 "internal unsafe blocks are documented."
 msgstr ""
+"アンセーフな関数は、安全性の前提条件と内部の unsafe ブロックの両方がドキュメ"
+"ント化されていれば健全です。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "Fixes needed in `main`."
-msgstr ""
+msgstr "`main` で必要な修正。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid ""
 "`a` does not satisfy one of the preconditions of `copy` (source\\` data ends "
 "with a null byte within its memory allocation)"
 msgstr ""
+"`a` は `copy` の前提条件の 1 つ（source\\` のデータが、そのメモリ割り当て内"
+"で null バイトで終わっていること）を満たしていない"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "SAFETY comment needed"
-msgstr ""
+msgstr "SAFETY コメントが必要"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/crying-wolf.md
 msgid "“It is also possible to create so-called crying wolf functions."
-msgstr ""
+msgstr "“いわゆる「オオカミ少年」関数を作成することも可能です。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/crying-wolf.md
 msgid ""
 "“These are functions which are tagged as unsafe, but which have no safety "
 "preconditions that programmers need to check."
 msgstr ""
+"“これは、unsafe としてタグ付けされているものの、プログラマがチェックする必要"
+"のある安全性の前提条件を持たない関数です。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "3 Shapes of Sound Rust"
-msgstr ""
+msgstr "健全な Rust の 3 つの形"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
-#, fuzzy
 msgid "Functions written only in Safe Rust"
-msgstr "Rust から他の言語で記述された関数を呼び出す。"
+msgstr "Safe Rust のみで記述された関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "Functions that contain `unsafe` blocks which are impossible to misuse"
-msgstr ""
+msgstr "誤用が不可能な `unsafe` ブロックを含む関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "Unsafe functions that have their safety preconditions documented"
-msgstr ""
+msgstr "安全性の前提条件がドキュメント化されたアンセーフな関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "We want to write sound code."
-msgstr ""
+msgstr "私たちは健全なコードを書きたいと考えています。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "Sound code can only have the following shapes:"
-msgstr ""
+msgstr "健全なコードは、次の形しか取り得ません:"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "safe functions that contain no unsafe blocks"
-msgstr ""
+msgstr "unsafe ブロックを含まないセーフな関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid ""
 "safe functions that completely encapsulate unsafe blocks, meaning that the "
 "caller does not need to know about them"
 msgstr ""
+"unsafe ブロックを完全にカプセル化した、つまり呼び出し元がそれを知る必要がない"
+"セーフな関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid ""
 "unsafe functions that contain unsafe blocks but don't encapsulate them, and "
 "pass the proof burden to their caller"
 msgstr ""
+"unsafe ブロックを含むがカプセル化はせず、証明の責任を呼び出し元に渡すアンセー"
+"フな関数"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "Burden of proof"
-msgstr ""
+msgstr "証明の責任"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "safe functions with only Safe Rust -> compiler"
-msgstr ""
+msgstr "Safe Rust のみのセーフな関数 -> コンパイラ"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "safe functions with unsafe blocks -> function author"
-msgstr ""
+msgstr "unsafe ブロックを含むセーフな関数 -> 関数の作成者"
 
 #: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md
 msgid "unsafe functions -> function caller"
-msgstr ""
+msgstr "アンセーフな関数 -> 関数の呼び出し元"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/soundness.md
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
@@ -43700,11 +43849,12 @@ msgid ""
 "A sound function is one that can't trigger UB if its safety preconditions "
 "are satisfied."
 msgstr ""
+"健全な関数とは、その安全性の前提条件が満たされていれば UB を引き起こすことが"
+"ない関数です。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/soundness.md
-#, fuzzy
 msgid "Read the definition of sound functions."
-msgstr "// Rust の型と関数の定義をここに記述します。\n"
+msgstr "健全な関数の定義を読み上げます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/soundness.md
 msgid ""
@@ -43712,6 +43862,8 @@ msgid ""
 "responsible for satisfying the safety precondition; the compiler is not "
 "helping."
 msgstr ""
+"安全性の前提条件を満たす責任は呼び出し側を実装するプログラマにあり、コンパイ"
+"ラは助けてくれないことを受講者に改めて伝えます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/soundness.md
 msgid ""
@@ -43719,44 +43871,49 @@ msgid ""
 "plays by the rules. It documents its safety preconditions, and when the "
 "caller satisfies them, the function behaves well (no UB)."
 msgstr ""
+"くだけた言葉に言い換えます。健全性とは、関数が行儀よくルールを守ることを意味"
+"します。関数は安全性の前提条件をドキュメント化し、呼び出し元がそれを満たせ"
+"ば、関数は正しく動作します（UB はありません）。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Soundness Proof (Part 2)"
-msgstr ""
+msgstr "健全性の証明（パート 2）"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Corollary: All functions implemented in pure safe Rust are sound."
-msgstr ""
+msgstr "系: 純粋なセーフな Rust で実装されたすべての関数は健全である。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Proof:"
-msgstr ""
+msgstr "証明:"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Safe Rust code has no safety preconditions."
-msgstr ""
+msgstr "セーフな Rust のコードには安全性の前提条件がない。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid ""
 "Therefore, callers of functions implemented in pure safe Rust always "
 "trivially satisfy the empty set of preconditions."
 msgstr ""
+"したがって、純粋なセーフな Rust で実装された関数の呼び出し元は、前提条件の空"
+"集合を常に自明に満たす。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Safe Rust code can't trigger UB."
-msgstr ""
+msgstr "セーフな Rust のコードは UB を引き起こすことができない。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "QED."
-msgstr ""
+msgstr "証明終わり（QED）。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Read the corollary."
-msgstr ""
+msgstr "系を読み上げます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid "Explain the proof."
-msgstr ""
+msgstr "証明を説明します。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/corollary.md
 msgid ""
@@ -43764,21 +43921,25 @@ msgid ""
 "safety preconditions that the programmer has to think of, always plays by "
 "the rules, and never triggers UB."
 msgstr ""
+"くだけた言葉に言い換えます: セーフな Rust のコードはすべて行儀がよいです。プ"
+"ログラマが考慮しなければならない安全性の前提条件はなく、常にルールを守り、決"
+"して UB を引き起こしません。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
 msgid ""
 "An unsound function can trigger UB even if you satisfy the documented safety "
 "preconditions."
 msgstr ""
+"不健全な関数は、ドキュメント化された安全性の前提条件を満たしていても UB を引"
+"き起こす可能性があります。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
 msgid "Unsound code is _bad_."
-msgstr ""
+msgstr "不健全なコードは _悪い_ ものです。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
-#, fuzzy
 msgid "Read the definition of unsound functions."
-msgstr "// Rust の型と関数の定義をここに記述します。\n"
+msgstr "不健全な関数の定義を読み上げます。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
 msgid ""
@@ -43786,14 +43947,17 @@ msgid ""
 "understatement. Unsound code is BAD. Even if you play by the documented "
 "rules, unsound code can still trigger UB!"
 msgstr ""
+"くだけた言葉に言い換えます: 不健全なコードは行儀がよくありません。いいえ、そ"
+"れでは控えめすぎます。不健全なコードは「悪い」のです。ドキュメント化された"
+"ルールを守っても、不健全なコードは UB を引き起こす可能性があるのです！"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
 msgid "We don't want any unsound code in our repositories."
-msgstr ""
+msgstr "私たちのリポジトリに不健全なコードは一切あってほしくありません。"
 
 #: src/unsafe-deep-dive/rules-of-the-game/soundness-proof/unsoundness.md
 msgid "Finding unsound code is the **primary** goal of the code review."
-msgstr ""
+msgstr "不健全なコードを見つけることが、コードレビューの **主要な** 目的です。"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md
 msgid ""
