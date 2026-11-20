@@ -1817,7 +1817,7 @@ msgstr "ニュータイプパターン"
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid "Semantic Confusion"
-msgstr ""
+msgstr "意味の取り違え"
 
 #: src/SUMMARY.md
 msgid "Enforce Invariants"
@@ -1840,9 +1840,8 @@ msgid "Mutex"
 msgstr "Mutex"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
-#, fuzzy
 msgid "Drop Guards"
-msgstr "マッチガード"
+msgstr "ドロップガード"
 
 #: src/SUMMARY.md
 msgid "Drop Bomb"
@@ -1855,7 +1854,7 @@ msgstr "Drop ボムと forget"
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid "forget and drop functions"
-msgstr ""
+msgstr "forget 関数と drop 関数"
 
 #: src/SUMMARY.md
 msgid "Scope Guard"
@@ -1873,33 +1872,32 @@ msgstr "拡張トレイト"
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "Orphan Rule"
-msgstr ""
+msgstr "オーファンルール"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid "Extending Foreign Types"
-msgstr ""
+msgstr "外部の型の拡張"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid "Method Resolution Conflicts"
-msgstr ""
+msgstr "メソッド解決の競合"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid "Trait Method Conflicts"
-msgstr ""
+msgstr "トレイトメソッドの競合"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
-#, fuzzy
 msgid "Extending Other Traits"
-msgstr "ジェネリックトレイト"
+msgstr "他のトレイトの拡張"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid "Should I Define An Extension Trait?"
-msgstr ""
+msgstr "拡張トレイトを定義すべきか"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 msgid "Typestate Pattern"
@@ -1912,30 +1910,27 @@ msgstr "タイプステートパターンの例"
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "Beyond Simple Typestate"
-msgstr ""
+msgstr "単純なタイプステートを超えて"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
-#, fuzzy
 msgid "Typestate Pattern with Generics"
-msgstr "タイプステートパターン"
+msgstr "ジェネリクスを使用したタイプステートパターン"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
-#, fuzzy
 msgid "Serializer: implement Root"
-msgstr "サービスの実装"
+msgstr "シリアライザ: Root の実装"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
-#, fuzzy
 msgid "Serializer: implement Struct"
-msgstr "サービスの実装"
+msgstr "シリアライザ: Struct の実装"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
 msgid "Serializer: implement Property"
-msgstr ""
+msgstr "シリアライザ: Property の実装"
 
 #: src/SUMMARY.md
 msgid "Serializer: Complete implementation"
@@ -1947,19 +1942,18 @@ msgstr "借用チェックの不変条件"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
-#, fuzzy
 msgid "Lifetimes and Borrows: the Abstract Rules"
-msgstr "データ構造とライフタイム"
+msgstr "ライフタイムと借用: 抽象的なルール"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "Single-use values"
-msgstr ""
+msgstr "一度だけ使用できる値"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "Mutually Exclusive References / \"Aliasing XOR Mutability\""
-msgstr ""
+msgstr "相互排他的な参照 /「エイリアシング XOR 可変性」"
 
 #: src/SUMMARY.md
 msgid "PhantomData and Types"
@@ -1985,12 +1979,12 @@ msgstr "トークン型"
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid "Permission Tokens"
-msgstr ""
+msgstr "権限トークン"
 
 #: src/SUMMARY.md
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid "Token Types with Data: Mutex Guards"
-msgstr ""
+msgstr "データを持つトークン型: Mutex ガード"
 
 #: src/SUMMARY.md
 msgid "Branded pt 1: Variable-specific tokens"
@@ -34691,27 +34685,33 @@ msgstr "1 時間 30 分"
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid "A _newtype_ is a wrapper around an existing type, often a primitive:"
 msgstr ""
+"_ニュータイプ_ は、既存の型（多くの場合プリミティブ型）をラップするものです。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid "/// A unique user identifier, implemented as a newtype around `u64`.\n"
 msgstr ""
+"/// 一意のユーザー識別子。`u64` のニュータイプとして実装されています。\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid ""
 "Unlike type aliases, newtypes aren't interchangeable with the wrapped type:"
 msgstr ""
+"型エイリアスとは異なり、ニュータイプはラップされた型と相互に置き換えることは"
+"できません。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "// 🛠️❌\n"
-msgstr ""
+msgstr "// 🛠️❌\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid ""
 "The Rust compiler won't let you use methods or operators defined on the "
 "underlying type either:"
 msgstr ""
+"Rust コンパイラは、基になる型に定義されたメソッドや演算子を使うことも許しませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid ""
@@ -34719,10 +34719,13 @@ msgid ""
 "course, when they learned about [tuple structs](../../user-defined-types/"
 "tuple-structs.md)."
 msgstr ""
+"受講者は「Fundamentals」コースで [タプル構造体](../../user-defined-types/"
+"tuple-structs.md) について学んだときに、ニュータイプ パターンに出会っているは"
+"ずです。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid "Run the example to show students the error message from the compiler."
-msgstr ""
+msgstr "例を実行して、コンパイラのエラーメッセージを受講者に見せてください。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid ""
@@ -34730,6 +34733,9 @@ msgid ""
 "MessageId = u64`. The modified example should compile, thus highlighting the "
 "differences between the two approaches."
 msgstr ""
+"例を変更して、ニュータイプの代わりに `type MessageId = u64` のような型エイリ"
+"アスを使うようにします。変更した例はコンパイルできるはずで、これにより 2 つの"
+"アプローチの違いが明らかになります。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md
 msgid ""
@@ -34739,12 +34745,18 @@ msgid ""
 "reasonable to allow comparisons between `UserId`s, but it wouldn't make "
 "sense to allow arithmetic operations like addition or subtraction."
 msgstr ""
+"ニュータイプには、そのままでは何の振る舞いも付いていないことを強調してくださ"
+"い。基になる型のどのメソッドや演算子を転送するかは、意図的に決める必要があり"
+"ます。この `UserId` の例では、`UserId` 同士の比較を許可するのは妥当ですが、加"
+"算や減算のような算術演算を許可するのは意味がありません。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
 "When a function takes multiple arguments of the same type, call sites are "
 "unclear:"
 msgstr ""
+"関数が同じ型の引数を複数受け取ると、呼び出し側のコードがわかりにくくなりま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 #: src/idiomatic/leveraging-the-type-system/raii.md
@@ -34754,28 +34766,33 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
 msgid "// [...]\n"
-msgstr ""
+msgstr "// [...]\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
-#, fuzzy
 msgid "\"username\""
-msgstr "\"Hello {name}\""
+msgstr "\"username\""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
 "// In another part of the codebase, we swap arguments by mistake.\n"
 "    // Bug (best case), security vulnerability (worst case)\n"
 msgstr ""
+"// コードベースの別の場所で、誤って引数を入れ替えてしまう。\n"
+"    // バグ（最善の場合）、セキュリティ脆弱性（最悪の場合）\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid "The newtype pattern can prevent this class of errors at compile time:"
 msgstr ""
+"ニュータイプ パターンを使うと、この種のエラーをコンパイル時に防ぐことができま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
 "Run both examples to show students the successful compilation for the "
 "original example, and the compiler error returned by the modified example."
 msgstr ""
+"両方の例を実行して、元の例はコンパイルに成功し、変更した例はコンパイラエラー"
+"になることを受講者に見せてください。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
@@ -34783,6 +34800,9 @@ msgid ""
 "distinct types for distinct concepts, thus ruling out this class of errors "
 "entirely."
 msgstr ""
+"_意味的_ な観点を強調してください。ニュータイプ パターンを活用して、異なる概"
+"念には異なる型を使うべきです。そうすれば、この種のエラーを完全に排除できま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
@@ -34791,26 +34811,31 @@ msgid ""
 "is of paramount importance, consider using a struct with named fields as "
 "input:"
 msgstr ""
+"とはいえ、関数が同じ型の引数を複数受け取るのが正当な場合もあることに注意して"
+"ください。そのような場合、正しさが最も重要であれば、名前付きフィールドを持つ"
+"構造体を入力として使うことを検討してください。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
 "// No need to check the definition of the `login` function to spot the "
 "issue.\n"
-msgstr ""
+msgstr "// 問題に気づくために `login` 関数の定義を確認する必要はない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid ""
 "Users are forced, at the callsite, to assign values to each field, thus "
 "increasing the likelihood of spotting bugs."
 msgstr ""
+"ユーザーは呼び出し側で各フィールドに値を代入することを強制されるため、バグに"
+"気づきやすくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid "Enforce Invariants at Construction"
-msgstr ""
+msgstr "構築時に不変条件を強制する"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid "The newtype pattern can be leveraged to enforce _invariants_."
-msgstr ""
+msgstr "ニュータイプ パターンを活用して _不変条件_ を強制できます。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid ""
@@ -34818,6 +34843,8 @@ msgid ""
 "be used to _guarantee_ that instances of a given type satisfy a set of "
 "invariants."
 msgstr ""
+"ニュータイプ パターンを Rust のモジュールと可視性のシステムと組み合わせると、"
+"ある型のインスタンスが一連の不変条件を満たすことを _保証_ できます。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid ""
@@ -34828,6 +34855,11 @@ msgid ""
 "validation, thus ensuring that all instances of `Username` satisfy those "
 "checks."
 msgstr ""
+"上の例では、`Username` 構造体の中に格納された生の `String` は `pub` や "
+"`pub(in ...)` が付いていないため、他のモジュールやクレートから直接アクセスで"
+"きません。`Username` 型の利用者は、インスタンスを作るために `new` メソッドを"
+"使うことを強制されます。そして `new` が検証を行うので、`Username` のすべての"
+"インスタンスがそれらのチェックを満たすことが保証されます。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid ""
@@ -34836,10 +34868,13 @@ msgid ""
 "underlying value since `&str`, the returned type, restricts them to read-"
 "only access."
 msgstr ""
+"`as_str` メソッドを使うと、利用者は生の文字列表現にアクセスできます（たとえば"
+"データベースに保存するため）。しかし、戻り値の型である `&str` は読み取り専用"
+"のアクセスに制限するため、利用者は基になる値を変更できません。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid "Type-level invariants have second-order benefits."
-msgstr ""
+msgstr "型レベルの不変条件には、副次的な利点もあります。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md
 msgid ""
@@ -34848,10 +34883,13 @@ msgid ""
 "and \"defensive programming\" checks throughout the program, reducing noise "
 "and improving performance."
 msgstr ""
+"入力は境界で一度だけ検証され、プログラムの残りの部分は不変条件が守られている"
+"ことを前提にできます。プログラム全体での冗長な検証や「防御的プログラミング」"
+"のチェックを避けられるので、ノイズが減り、パフォーマンスも向上します。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid "Is It Truly Encapsulated?"
-msgstr ""
+msgstr "本当にカプセル化されているか？"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid ""
@@ -34860,25 +34898,31 @@ msgid ""
 "possible interactions, including trait implementations, that may allow users "
 "to bypass validation checks."
 msgstr ""
+"不変条件が本当に万全かどうかを判断するには、ニュータイプが公開する _API の全"
+"体_ を評価する必要があります。ユーザーが検証チェックを回避できてしまう可能性"
+"のある、トレイトの実装を含むすべての相互作用を考慮することが重要です。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid "// Validation checks...\n"
-msgstr ""
+msgstr "// 検証チェック...\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid "// ‼️\n"
-msgstr ""
+msgstr "// ‼️\n"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid ""
 "`DerefMut` allows users to get a mutable reference to the wrapped value."
 msgstr ""
+"`DerefMut` を使うと、ユーザーはラップされた値への可変参照を取得できます。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid ""
 "The mutable reference can be used to modify the underlying data in ways that "
 "may violate the invariants enforced by `Username::new`!"
 msgstr ""
+"この可変参照を使うと、`Username::new` が強制する不変条件に違反するような方法"
+"で、基になるデータを変更できてしまいます！"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid ""
@@ -34886,11 +34930,12 @@ msgid ""
 "scope to methods and traits that provide mutable access to the underlying "
 "data."
 msgstr ""
+"ニュータイプの API を監査するときは、基になるデータへの可変アクセスを提供する"
+"メソッドとトレイトにレビューの範囲を絞り込むことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
-#, fuzzy
 msgid "Remind students of privacy boundaries."
-msgstr "モジュールはプライバシーの境界です。"
+msgstr "プライバシーの境界について受講者に思い出させてください。"
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md
 msgid ""
@@ -34899,17 +34944,21 @@ msgid ""
 "newtype definition to its own separate module to reduce the scope of the "
 "audit."
 msgstr ""
+"特に、ニュータイプと同じモジュールで定義された関数やメソッドは、その基になる"
+"データに直接アクセスできます。可能であれば、ニュータイプの定義を専用の別モ"
+"ジュールに移して、監査の範囲を小さくしてください。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
-#, fuzzy
 msgid "RAII: `Drop` trait"
-msgstr "`Drop` トレイト"
+msgstr "RAII: `Drop` トレイト"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "RAII (**R**esource **A**cquisition **I**s **I**nitialization) ties the "
 "lifetime of a resource to the lifetime of a value."
 msgstr ""
+"RAII（**R**esource **A**cquisition **I**s **I**nitialization、リソース取得は"
+"初期化である）は、リソースのライフタイムを値のライフタイムに結び付けます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
@@ -34917,32 +34966,36 @@ msgid ""
 "scope/raii.html), and the `Drop` trait allows you to extend this to other "
 "resources, such as file descriptors or locks."
 msgstr ""
+"[Rust はメモリの管理に RAII を使用しており](https://doc.rust-lang.org/rust-"
+"by-example/scope/raii.html)、`Drop` トレイトを使うと、これをファイル記述子や"
+"ロックなどの他のリソースにも広げることができます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
-#, fuzzy
 msgid "b\"example\""
-msgstr "例"
+msgstr "b\"example\""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
-#, fuzzy
 msgid "\"example.txt\""
-msgstr "例"
+msgstr "\"example.txt\""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
-#, fuzzy
 msgid "\"content: {:?}\""
-msgstr "\"result: {:?}\""
+msgstr "\"content: {:?}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "Easy to miss: `file.close()` is never called. Ask the class if they noticed."
 msgstr ""
+"見落としやすい点: `file.close()` は一度も呼ばれていません。受講者に気づいたか"
+"どうか聞いてみてください。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "To release the file descriptor correctly, `file.close()` must be called "
 "after the last use — and also in early-return paths in case of errors."
 msgstr ""
+"ファイル記述子を正しく解放するには、最後に使った後で `file.close()` を呼び出"
+"す必要があり、エラー時の早期リターンの経路でも呼び出す必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
@@ -34950,14 +35003,17 @@ msgid ""
 "`Drop` trait to release the resource automatically. This ties cleanup to the "
 "lifetime of the `File` value."
 msgstr ""
+"ユーザーが `close()` を呼び出すことに頼る代わりに、`Drop` トレイトを実装して"
+"リソースを自動的に解放できます。これにより、後始末が `File` 値のライフタイム"
+"に結び付けられます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid "// libc::close(...);\n"
-msgstr ""
+msgstr "// libc::close(...);\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid "\"file descriptor was closed\""
-msgstr ""
+msgstr "\"file descriptor was closed\""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
@@ -34966,17 +35022,22 @@ msgid ""
 "closure inside `Drop` are silently discarded. See the implementation: "
 "<https://doc.rust-lang.org/src/std/os/fd/owned.rs.html#169-196>"
 msgstr ""
+"`Drop::drop()` は `Result` を返せないことに注意してください。失敗はすべて内部"
+"で処理するか、無視する必要があります。標準ライブラリでは、`Drop` 内での FD の"
+"クローズ中に発生したエラーは何も通知されずに破棄されます。実装を参照してくだ"
+"さい: <https://doc.rust-lang.org/src/std/os/fd/owned.rs.html#169-196>"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
-#, fuzzy
 msgid "When is `Drop::drop` called?"
-msgstr "`Drop::drop` が `self` をパラメータとして取らないのはなぜですか？"
+msgstr "`Drop::drop` はいつ呼び出されるか？"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "Normally, when the `file` variable in `main()` goes out of scope (either on "
 "return or due to a panic), `drop()` is called automatically."
 msgstr ""
+"通常は、`main()` 内の `file` 変数がスコープ外になったとき（リターン時またはパ"
+"ニックによって）に、`drop()` が自動的に呼び出されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
@@ -34984,22 +35045,29 @@ msgid ""
 "`File::close()`), the value is dropped when that function returns — not in "
 "`main`."
 msgstr ""
+"ファイルが別の関数にムーブされた場合（`File::close()` の場合がそうです）、値"
+"は `main` ではなく、その関数がリターンしたときにドロップされます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "In contrast, C++ runs destructors in the original scope even for moved-from "
 "values."
 msgstr ""
+"これに対して C++ では、ムーブ元の値であっても元のスコープでデストラクタが実行"
+"されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "Demo: insert `panic!(\"oops\")` at the start of `read_to_end()` and run it. "
 "`drop()` still runs during unwinding."
 msgstr ""
+"デモ: `read_to_end()` の先頭に `panic!(\"oops\")` を挿入して実行します。アン"
+"ワインド中にも `drop()` は実行されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid "The `Drop` trait has another important limitation: it is not `async`."
 msgstr ""
+"`Drop` トレイトにはもう 1 つ重要な制限があります。`async` ではないことです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
@@ -35007,52 +35075,61 @@ msgid ""
 "when cleaning up asynchronous resources like sockets, database connections, "
 "or tasks that must signal completion to another system."
 msgstr ""
+"つまり、デストラクタの中で `await` できません。これは、ソケット、データベース"
+"接続、別のシステムに完了を通知する必要があるタスクなど、非同期のリソースを後"
+"始末するときによく必要になります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "Learn more: <https://rust-lang.github.io/async-fundamentals-initiative/"
 "roadmap/async_drop.html>"
 msgstr ""
+"詳細: <https://rust-lang.github.io/async-fundamentals-initiative/roadmap/"
+"async_drop.html>"
 
 #: src/idiomatic/leveraging-the-type-system/raii.md
 msgid ""
 "There is an experimental `AsyncDrop` trait available on nightly: <https://"
 "doc.rust-lang.org/nightly/std/future/trait.AsyncDrop.html>"
 msgstr ""
+"nightly では実験的な `AsyncDrop` トレイトが利用できます: <https://doc.rust-"
+"lang.org/nightly/std/future/trait.AsyncDrop.html>"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "Drop can be skipped"
-msgstr ""
+msgstr "Drop はスキップされることがある"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "There are cases where destructors will not run."
-msgstr ""
+msgstr "デストラクタが実行されない場合があります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "\"OwnedFd::drop() called with raw fd: {:?}\""
-msgstr ""
+msgstr "\"OwnedFd::drop() called with raw fd: {:?}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "\"TmpFile::drop() called with owned fd: {:?}\""
-msgstr ""
+msgstr "\"TmpFile::drop() called with owned fd: {:?}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "// libc::unlink(\"/tmp/file\")\n"
 "        // panic!(\"TmpFile::drop() panics\");\n"
 msgstr ""
+"// libc::unlink(\"/tmp/file\")\n"
+"        // panic!(\"TmpFile::drop() panics\");\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "\"TmpFile::close(): not implemented yet\""
-msgstr ""
+msgstr "\"TmpFile::close(): not implemented yet\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "// std::mem::forget(file);\n"
-msgstr ""
+msgstr "// std::mem::forget(file);\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid "// file.close();\n"
-msgstr ""
+msgstr "// file.close();\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35060,6 +35137,9 @@ msgid ""
 "is skipped: the program can crash or exit, the value with the drop "
 "implementation can be leaked etc."
 msgstr ""
+"Drop が常に実行されるとは限りません。drop がスキップされるケースはいくつもあ"
+"ります。プログラムがクラッシュしたり終了したりする場合や、drop の実装を持つ値"
+"がリークされる場合などです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35068,28 +35148,35 @@ msgid ""
 "terminates the process immediately without any opportunity for a `drop()` "
 "method to be called."
 msgstr ""
+"[`std::process::exit`](https://doc.rust-lang.org/std/process/fn.exit.html) を"
+"呼び出すバージョンでは、`TmpFile::drop()` は一度も実行されません。`exit()` "
+"は `drop()` メソッドが呼ばれる機会を与えずに、直ちにプロセスを終了するからで"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "You can prevent accidental use of `exit` by denying the [`clippy::exit`]"
 "(https://rust-lang.github.io/rust-clippy/stable/index.html#exit) lint."
 msgstr ""
+"[`clippy::exit`](https://rust-lang.github.io/rust-clippy/stable/"
+"index.html#exit) lint を deny にすることで、`exit` の偶発的な使用を防ぐことが"
+"できます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "If you remove the `std::process::exit(0)` line, each `drop()` method in this "
 "simple case will run in turn."
 msgstr ""
+"`std::process::exit(0)` の行を削除すると、この単純なケースでは各 `drop()` メ"
+"ソッドが順番に実行されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
-#, fuzzy
 msgid ""
 "Try uncommenting the [`std::mem::forget`](https://doc.rust-lang.org/std/mem/"
 "fn.forget.html) call. What do you think will happen?"
 msgstr ""
-"[`std::mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html)を使っ"
-"て、コンパイラに値を忘れさせることができます (つまり、デストラクタが実行され"
-"ない)。"
+"[`std::mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html) の呼び"
+"出しのコメントを外してみてください。何が起こると思いますか？"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35097,50 +35184,65 @@ msgid ""
 "without running its **destructor** `Drop::drop()`. The destructor of "
 "`owned_fd` is still run."
 msgstr ""
+"`mem::forget()` は所有権を取得し、値 `file` の **デストラクタ** "
+"`Drop::drop()` を実行せずに、その値を「忘れ」ます。`owned_fd` のデストラクタ"
+"は引き続き実行されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "Remove the `mem::forget()` call, then uncomment the `file.close()` call "
 "below it. What do you expect now?"
 msgstr ""
+"`mem::forget()` の呼び出しを削除し、その下にある `file.close()` の呼び出しの"
+"コメントを外してください。今度はどうなると思いますか？"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "With the default `panic = \"unwind\"` setting, the stack still unwinds and "
 "destructors run, even when the panic starts in `main`."
 msgstr ""
+"デフォルトの `panic = \"unwind\"` 設定では、パニックが `main` で始まった場合"
+"でも、スタックはアンワインドされ、デストラクタが実行されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
-#, fuzzy
 msgid ""
 "With [`panic = \"abort\"`](https://doc.rust-lang.org/cargo/reference/"
 "profiles.html#panic) no destructors are run."
 msgstr ""
-"[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)（ワー"
-"クスペース）"
+"[`panic = \"abort\"`](https://doc.rust-lang.org/cargo/reference/"
+"profiles.html#panic) では、デストラクタは実行されません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "As a last step, uncomment the `panic!` inside `TmpFile::drop()` and run it. "
 "Ask the class: which destructors run before the abort?"
 msgstr ""
+"最後のステップとして、`TmpFile::drop()` 内の `panic!` のコメントを外して実行"
+"します。アボートの前にどのデストラクタが実行されるか、受講者に聞いてみてくだ"
+"さい。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "After a double panic, Rust no longer guarantees that remaining destructors "
 "will run:"
 msgstr ""
+"二重パニックの後は、残りのデストラクタが実行されることを Rust はもはや保証し"
+"ません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "Some cleanup that was already in progress may still complete (for example, "
 "field destructors of the value currently being dropped),"
 msgstr ""
+"すでに進行中だった後始末の一部は完了することがありますが（たとえば、現在ド"
+"ロップ中の値のフィールドのデストラクタ）、"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
 "but anything scheduled later in the unwind path might be skipped entirely."
 msgstr ""
+"アンワインドの経路でそれより後に予定されているものは、まったく実行されずにス"
+"キップされる可能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35148,6 +35250,9 @@ msgid ""
 "cleanup, nor assume that a double panic aborts without running any further "
 "destructors."
 msgstr ""
+"そのため、重要な外部の後始末を `drop()` だけに頼ることはできず、また二重パ"
+"ニックがそれ以上デストラクタを実行せずにアボートすると決めつけることもできな"
+"い、と言えるのです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35156,6 +35261,11 @@ msgid ""
 "disrupt unwinding and lead to unpredictable cleanup. It is best avoided "
 "unless there is a very specific need, such as in the case of a **drop bomb**."
 msgstr ""
+"言語によっては、デストラクタ内での例外を禁止または制限しています。Rust では "
+"`Drop::drop` 内でパニックすることが許されていますが、アンワインドを妨げ、予測"
+"できない後始末につながる可能性があるため、それが良い考えであることはほとんど"
+"ありません。**drop bomb** の場合のような非常に特殊な必要がない限り、避けるの"
+"が最善です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35164,6 +35274,9 @@ msgid ""
 "happens outside of the process (e.g., on local disk, or in another service "
 "in a distributed system)."
 msgstr ""
+"Drop はプロセスのスコープ内でリソースを後始末するのには適していますが、プロセ"
+"スの外部で何かが起こること（たとえばローカルディスク上や、分散システム内の別"
+"のサービスで）を確実に保証するための適切な手段ではありません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35171,6 +35284,9 @@ msgid ""
 "but in a real program you would still need an external cleanup mechanism "
 "such as a temp file reaper."
 msgstr ""
+"たとえば、`drop()` で一時ファイルを削除するのは簡単な例であれば問題ありません"
+"が、実際のプログラムでは、一時ファイルを回収する仕組みのような外部の後始末の"
+"仕組みが別途必要になります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md
 msgid ""
@@ -35178,10 +35294,14 @@ msgid ""
 "process-local resource. If `drop()` is skipped and the mutex is left locked, "
 "it has no lasting effects outside the process."
 msgstr ""
+"これに対して、ミューテックスのロック解除には `drop()` を頼ることができます。"
+"それはプロセスローカルなリソースだからです。`drop()` がスキップされてミュー"
+"テックスがロックされたままになっても、プロセスの外部に永続的な影響はありませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid "Mutex and MutexGuard"
-msgstr ""
+msgstr "Mutex と MutexGuard"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
@@ -35190,11 +35310,14 @@ msgid ""
 "You access the value by calling `lock`, which then returns a `MutexGuard` "
 "which will unlock the `Mutex` automatically when dropped."
 msgstr ""
+"これまでの例では、RAII はファイル記述子のような具体的なリソースを管理するため"
+"に使われていました。`Mutex` の場合、「リソース」は値への可変アクセスです。値"
+"にアクセスするには `lock` を呼び出します。これは `MutexGuard` を返し、"
+"`MutexGuard` はドロップされると `Mutex` のロックを自動的に解除します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
-#, fuzzy
 msgid "\"{guard:?}\""
-msgstr "\"{pair:?}\""
+msgstr "\"{guard:?}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
@@ -35202,12 +35325,18 @@ msgid ""
 "examples, the resource here is logical: temporary exclusive access to the "
 "data inside."
 msgstr ""
+"`Mutex` は値への排他的アクセスを制御します。これまでの RAII の例とは異なり、"
+"ここでのリソースは論理的なものです。つまり、中のデータへの一時的な排他的アク"
+"セスです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
 "This right is represented by a `MutexGuard`. Only one guard for this mutex "
 "can exist at a time. While it lives, it provides `&mut T` access."
 msgstr ""
+"この権利は `MutexGuard` によって表されます。このミューテックスのガードは、同"
+"時に 1 つしか存在できません。ガードが生存している間、`&mut T` アクセスが提供"
+"されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
@@ -35215,18 +35344,26 @@ msgid ""
 "access. This works through _interior mutability_, where a type manages its "
 "own borrowing rules internally to allow mutation through `&self`."
 msgstr ""
+"`lock()` は `&self` を受け取りますが、可変アクセスを持つ `MutexGuard` を返し"
+"ます。これは _内部可変性_ によって実現されています。内部可変性とは、型が自身"
+"の借用ルールを内部で管理して、`&self` を通じた変更を可能にするものです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
 "`MutexGuard` implements `Deref` and `DerefMut`, making access ergonomic. You "
 "lock the mutex and use the guard like a `&mut T`."
 msgstr ""
+"`MutexGuard` は `Deref` と `DerefMut` を実装しているので、アクセスが使いやす"
+"くなっています。ミューテックスをロックし、ガードを `&mut T` のように使いま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/mutex.md
 msgid ""
 "The mutex is released by `MutexGuard::drop()`. You never call an explicit "
 "unlock function."
 msgstr ""
+"ミューテックスは `MutexGuard::drop()` によって解放されます。明示的にロック解"
+"除の関数を呼び出すことはありません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
@@ -35234,25 +35371,28 @@ msgid ""
 "cleanup when it goes out of scope. In the case of `Mutex`, the `lock` method "
 "returns a `MutexGuard` that automatically unlocks the mutex on `drop`:"
 msgstr ""
+"Rust における **drop guard** とは、スコープ外になったときに何らかの後始末を行"
+"う一時的なオブジェクトです。`Mutex` の場合、`lock` メソッドは `drop` 時に"
+"ミューテックスのロックを自動的に解除する `MutexGuard` を返します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "The example above shows a simplified `Mutex` and its associated guard."
-msgstr ""
+msgstr "上の例は、簡略化した `Mutex` とそれに関連するガードを示しています。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
 "Even though it is not a production-ready implementation, it illustrates the "
 "core idea:"
-msgstr ""
+msgstr "本番環境で使える実装ではありませんが、中心となる考え方を示しています。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "the guard represents exclusive access,"
-msgstr ""
+msgstr "ガードは排他的アクセスを表し、"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
 "and its `Drop` implementation releases the lock when it goes out of scope."
-msgstr ""
+msgstr "その `Drop` 実装はスコープ外になったときにロックを解放します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
@@ -35261,10 +35401,14 @@ msgid ""
 "illustrate the core idea of a drop guard, not to demonstrate a proper Rust "
 "mutex design."
 msgstr ""
+"この例は、保護するデータを内部に持たない C++ スタイルのミューテックスを示して"
+"います。これは Rust では慣用的ではありませんが、ここでの目的は drop guard の"
+"中心となる考え方を示すことだけであり、適切な Rust のミューテックスの設計を示"
+"すことではありません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "For brevity, several features are omitted:"
-msgstr ""
+msgstr "簡潔にするため、いくつかの機能を省略しています。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
@@ -35272,17 +35416,23 @@ msgid ""
 "This toy example omits the value entirely to focus only on the drop guard "
 "mechanism."
 msgstr ""
+"実際の `Mutex<T>` は、保護対象の値をミューテックスの内部に格納します。  \n"
+"この簡単な例では、drop guard の仕組みだけに焦点を当てるため、値をまったく持た"
+"せていません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
 "Ergonomic access via `Deref` and `DerefMut` on `MutexGuard` (letting the "
 "guard behave like a `&T` or `&mut T`)."
 msgstr ""
+"`MutexGuard` の `Deref` と `DerefMut` による使いやすいアクセス（ガードを "
+"`&T` や `&mut T` のように振る舞わせる）。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
 "A fully blocking `.lock()` method and a non-blocking `try_lock` variant."
 msgstr ""
+"完全にブロックする `.lock()` メソッドと、ブロックしない `try_lock` 版。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid ""
@@ -35292,32 +35442,40 @@ msgid ""
 "parking_lot/latest/parking_lot/type.Mutex.html) is another worthwhile "
 "reference."
 msgstr ""
+"本番環境で使えるミューテックスの例として、[Rust の std ライブラリの `Mutex` "
+"実装](https://doc.rust-lang.org/std/sync/struct.Mutex.html) を調べてみること"
+"ができます。[`parking_lot` クレートの `Mutex`](https://docs.rs/parking_lot/"
+"latest/parking_lot/type.Mutex.html) も参考にする価値があります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid "Drop Bombs: Enforcing API Correctness"
-msgstr ""
+msgstr "Drop Bomb: API の正しい使用を強制する"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "Use `Drop` to enforce invariants and detect incorrect API usage. A \"drop "
 "bomb\" panics if a value is dropped without being explicitly finalized."
 msgstr ""
+"`Drop` を使って不変条件を強制し、API の誤った使用を検出します。「drop bomb」"
+"は、値が明示的に確定処理されないままドロップされるとパニックします。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "This pattern is often used when the finalizing operation (like `commit()` or "
 "`rollback()`) needs to return a `Result`, which cannot be done from `Drop`."
 msgstr ""
+"このパターンは、確定処理の操作（`commit()` や `rollback()` など）が `Result` "
+"を返す必要がある場合によく使われます。これは `Drop` からは行えないからです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid "\"COMMIT\""
-msgstr ""
+msgstr "\"COMMIT\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid "\"Transaction dropped without commit!\""
-msgstr ""
+msgstr "\"Transaction dropped without commit!\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
@@ -35325,16 +35483,22 @@ msgid ""
 "// Use `tx` to build the transaction, then commit it.\n"
 "    // Comment out the call to `commit` to see the panic.\n"
 msgstr ""
+"// `tx` を使ってトランザクションを構築し、コミットする。\n"
+"    // `commit` の呼び出しをコメントアウトすると、パニックが確認できる。\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "In some systems, a value must be finalized by a specific API before it is "
 "dropped."
 msgstr ""
+"システムによっては、値をドロップする前に、特定の API で確定処理をする必要があ"
+"ります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid "For example, a `Transaction` might need to be committed or rolled back."
 msgstr ""
+"たとえば、`Transaction` はコミットまたはロールバックする必要があるかもしれま"
+"せん。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
@@ -35342,6 +35506,9 @@ msgid ""
 "dropped in an unfinished state. The destructor panics if the transaction has "
 "not been explicitly finalized (for example, with `commit()`)."
 msgstr ""
+"drop bomb を使うと、`Transaction` のような値が未完了の状態のまま黙ってドロッ"
+"プされることがなくなります。トランザクションが明示的に確定処理されていない場"
+"合（たとえば `commit()` で）、デストラクタがパニックします。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
@@ -35349,18 +35516,25 @@ msgid ""
 "This ensures that once the transaction is finalized, the original object can "
 "no longer be used."
 msgstr ""
+"確定処理の操作（`commit()` など）は、通常 `self` を値で受け取ります。これによ"
+"り、トランザクションが確定処理された後は、元のオブジェクトを使えなくなりま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "A common reason to use this pattern is when cleanup cannot be done in "
 "`Drop`, either because it is fallible or asynchronous."
 msgstr ""
+"このパターンを使うよくある理由は、後始末が失敗しうるものであるか非同期である"
+"ために、`Drop` で後始末ができない場合です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "This pattern is appropriate even in public APIs. It can help users catch "
 "bugs early when they forget to explicitly finalize a transactional object."
 msgstr ""
+"このパターンは公開 API でも適切です。トランザクション的なオブジェクトを明示的"
+"に確定処理し忘れたときに、ユーザーがバグを早期に発見するのに役立ちます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
@@ -35368,29 +35542,37 @@ msgid ""
 "debug builds. Whether this is appropriate depends on the guarantees your API "
 "must enforce."
 msgstr ""
+"後始末を `Drop` で安全に行える場合、デバッグビルドでのみパニックするようにし"
+"ている API もあります。これが適切かどうかは、API が強制しなければならない保証"
+"によって決まります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "Panicking in release builds is reasonable when silent misuse would cause "
 "major correctness or security problems."
 msgstr ""
+"黙って誤用されると正しさやセキュリティに重大な問題が生じる場合は、リリースビ"
+"ルドでパニックするのが妥当です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "Question: Why do we need an `active` flag inside `Transaction`? Why can't "
 "`drop()` panic unconditionally?"
 msgstr ""
+"質問: `Transaction` の中に `active` フラグが必要なのはなぜでしょうか？ なぜ "
+"`drop()` は無条件にパニックできないのでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
 "Expected answer: `commit()` takes `self` by value and runs `drop()`, which "
 "would panic."
 msgstr ""
+"想定される回答: `commit()` は `self` を値で受け取って `drop()` を実行するの"
+"で、パニックしてしまうからです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
-#, fuzzy
 msgid "More to explore"
 msgstr "その他"
 
@@ -35399,6 +35581,8 @@ msgid ""
 "Several related patterns help enforce correct teardown or prevent accidental "
 "drops."
 msgstr ""
+"正しい終了処理を強制したり、偶発的なドロップを防いだりするのに役立つ関連パ"
+"ターンがいくつかあります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid ""
@@ -35407,18 +35591,22 @@ msgid ""
 "`.defuse()`. Comes with a `DebugDropBomb` variant that only activates in "
 "debug builds."
 msgstr ""
+"[`drop_bomb` クレート](https://docs.rs/drop_bomb/latest/drop_bomb/): "
+"`.defuse()` で明示的に解除しない限り、ドロップされるとパニックする小さなユー"
+"ティリティです。デバッグビルドでのみ有効になる `DebugDropBomb` という版も付属"
+"しています。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid "Drop Bombs: using `std::mem::forget`"
-msgstr ""
+msgstr "Drop Bomb: `std::mem::forget` を使う"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid "// Defuse the drop bomb by preventing Drop from ever running.\n"
-msgstr ""
+msgstr "// Drop が実行されないようにして drop bomb を解除する。\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid "// This is the \"drop bomb\"\n"
-msgstr ""
+msgstr "// これが「drop bomb」\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid ""
@@ -35428,6 +35616,11 @@ msgid ""
 "[`std::mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html), "
 "which prevents the `Drop::drop()` method from running."
 msgstr ""
+"この例では、前のスライドのフラグを削除し、drop メソッドが無条件にパニックする"
+"ようにしています。コミットが成功したときにそのパニックを避けるため、commit メ"
+"ソッドはトランザクションの所有権を取得して [`std::mem::forget`](https://"
+"doc.rust-lang.org/std/mem/fn.forget.html) を呼び出すようになりました。これに"
+"より、`Drop::drop()` メソッドは実行されません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid ""
@@ -35436,6 +35629,9 @@ msgid ""
 "is not the case for the `Transaction` in the example above, since it does "
 "not own any heap memory."
 msgstr ""
+"忘れられた値が、通常は `drop()` 実装で解放されるヒープ割り当てメモリを所有し"
+"ていた場合、その結果としてメモリリークが発生します。上の例の `Transaction` は"
+"ヒープメモリを所有していないので、これには当てはまりません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md
 msgid ""
@@ -35444,32 +35640,37 @@ msgid ""
 "by calling `std::mem::forget` on the value, which prevents its `Drop` "
 "implementation from running."
 msgstr ""
+"`mem::forget()` を戦略的に使うことで、実行時のフラグを不要にできます。トラン"
+"ザクションのコミットが成功したら、その値に対して `std::mem::forget` を呼び出"
+"して drop bomb を解除できます。これにより、その `Drop` 実装は実行されなくなり"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
-#, fuzzy
 msgid ""
 "Below are the signatures for the [`drop()`](https://doc.rust-lang.org/std/"
 "mem/fn.drop.html) and [`forget()`](https://doc.rust-lang.org/std/mem/"
 "fn.forget.html) functions:"
 msgstr ""
-"[`OsStr`](https://doc.rust-lang.org/std/ffi/struct.OsStr.html) と "
-"[`OsString`](https://doc.rust-lang.org/std/ffi/struct.OsString.html)"
+"以下は [`drop()`](https://doc.rust-lang.org/std/mem/fn.drop.html) 関数と "
+"[`forget()`](https://doc.rust-lang.org/std/mem/fn.forget.html) 関数のシグネ"
+"チャです。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid "// std::mem::forget\n"
-msgstr ""
+msgstr "// std::mem::forget\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid "// std::mem::drop\n"
-msgstr ""
+msgstr "// std::mem::drop\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid "Both `mem::forget()` and `mem::drop()` take ownership of the value `t`."
 msgstr ""
+"`mem::forget()` と `mem::drop()` はどちらも値 `t` の所有権を取得します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid "Despite having the same function signature, they have opposite effects:"
-msgstr ""
+msgstr "関数シグネチャは同じですが、効果は正反対です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid ""
@@ -35477,18 +35678,25 @@ msgid ""
 "struct.ManuallyDrop.html) to prevent the destructor `Drop::drop()` from "
 "being invoked."
 msgstr ""
+"`forget()` は [`ManuallyDrop`](https://doc.rust-lang.org/std/mem/"
+"struct.ManuallyDrop.html) を使って、デストラクタ `Drop::drop()` が呼び出され"
+"ないようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid ""
 "This is useful for scenarios such as implementing a drop bomb or otherwise "
 "opting out of destructor behavior."
 msgstr ""
+"これは、drop bomb を実装する場合や、それ以外でもデストラクタの動作を無効にし"
+"たい場合などに便利です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid ""
 "Be careful though, since any resources the value exclusively owns such as "
 "heap allocated memory or file handles will remain in an unreachable state."
 msgstr ""
+"ただし注意してください。ヒープ割り当てメモリやファイルハンドルなど、その値が"
+"排他的に所有しているリソースは、到達不能な状態のまま残ります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md
 msgid ""
@@ -35496,49 +35704,53 @@ msgid ""
 "moved into the function, it is automatically dropped which triggers its "
 "`Drop::drop()` implementation before the parent function returns."
 msgstr ""
+"`drop()` は値を破棄するための便利な関数です。`t` は関数にムーブされるので、呼"
+"び出し元の関数がリターンする前に自動的にドロップされ、その `Drop::drop()` 実"
+"装が実行されます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
-#, fuzzy
 msgid "Scope Guards"
-msgstr "スコープ付きスレッド"
+msgstr "スコープガード"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
 "A scope guard uses the `Drop` trait to run cleanup code automatically when a "
 "scope exits, even during unwinding."
 msgstr ""
+"スコープガードは `Drop` トレイトを使って、スコープを抜けるときに（アンワイン"
+"ド中であっても）後始末のコードを自動的に実行します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "\"download.tmp\""
-msgstr ""
+msgstr "\"download.tmp\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "\"cannot create temporary file\""
-msgstr ""
+msgstr "\"cannot create temporary file\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "// Set up cleanup immediately after file creation\n"
-msgstr ""
+msgstr "// ファイル作成の直後に後始末を設定する\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "\"download failed, deleting: {:?}\""
-msgstr ""
+msgstr "\"download failed, deleting: {:?}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "\"partial data...\""
-msgstr ""
+msgstr "\"partial data...\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "// Download succeeded, keep the file\n"
-msgstr ""
+msgstr "// ダウンロードが成功したので、ファイルを残す\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "\"Download '{path}' complete!\""
-msgstr ""
+msgstr "\"Download '{path}' complete!\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "// Otherwise, the guard runs and deletes the file\n"
-msgstr ""
+msgstr "// そうでなければ、ガードが実行されてファイルが削除される\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35546,6 +35758,9 @@ msgid ""
 "then use a scope guard to ensure that the file is deleted if the download "
 "fails."
 msgstr ""
+"この例はダウンロードの処理の流れをモデル化しています。まず一時ファイルを作成"
+"し、次にスコープガードを使って、ダウンロードが失敗した場合にファイルが確実に"
+"削除されるようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35553,6 +35768,8 @@ msgid ""
 "`Drop`\\-based cleanup without defining a custom type with a custom `Drop` "
 "implementation."
 msgstr ""
+"`scopeguard` クレートを使うと、独自の `Drop` 実装を持つ独自の型を定義しなくて"
+"も、1 回限りの `Drop`\\-ベースの後始末を簡単に定義できます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35560,6 +35777,8 @@ msgid ""
 "()` fails, the file will still be cleaned up. This ordering is essential for "
 "correctness."
 msgstr ""
+"ガードはファイルを作成した直後に作られるので、`writeln!()` が失敗した場合でも"
+"ファイルは後始末されます。この順序は正しさのために不可欠です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35567,6 +35786,9 @@ msgid ""
 "(in this case, `path`) and the cleanup closure that later receives this "
 "value."
 msgstr ""
+"`guard()` は `ScopeGuard` インスタンスを作成します。これはユーザー定義の値"
+"（この場合は `path`）と、後でこの値を受け取る後始末のクロージャを受け取りま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35575,16 +35797,22 @@ msgid ""
 "drop). In the success path, we call `into_inner` so the guard will not "
 "delete the file."
 msgstr ""
+"ガードのクロージャは、`ScopeGuard::into_inner` で _解除_ されない限り（値を取"
+"り出すことで、ガードはドロップ時に何もしなくなります）、スコープを抜けるとき"
+"に実行されます。成功時の経路では `into_inner` を呼び出すので、ガードはファイ"
+"ルを削除しません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid "A scope guard is similar to the `defer` feature in Go."
-msgstr ""
+msgstr "スコープガードは Go の `defer` 機能に似ています。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
 "This pattern is ideal for \"cleanup on failure\" scenarios, where a cleanup "
 "should run by default unless a success path is explicitly taken."
 msgstr ""
+"このパターンは、「失敗時の後始末」のシナリオ、つまり成功の経路を明示的にたど"
+"らない限りデフォルトで後始末を実行すべき場合に最適です。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35592,6 +35820,9 @@ msgid ""
 "the resource object. In this example, `File::drop()` closes the file but "
 "does not delete it."
 msgstr ""
+"このパターンは、リソースオブジェクトの後始末の方法を自分で制御できない場合に"
+"も便利です。この例では、`File::drop()` はファイルを閉じますが、削除はしませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md
 msgid ""
@@ -35600,26 +35831,30 @@ msgid ""
 "You can choose to run the guard on unwind only, or on success only, not just "
 "always."
 msgstr ""
+"`scopeguard` クレートは、[`Strategy`](https://docs.rs/scopeguard/latest/"
+"scopeguard/trait.Strategy.html) トレイトによる後始末の戦略もサポートしていま"
+"す。常に実行するだけでなく、アンワインド時のみ、または成功時のみガードを実行"
+"するように選択できます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
-#, fuzzy
 msgid "Drop: Option"
-msgstr "Option"
+msgstr "Drop: Option"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
 "// We have to go through the `Option` to get the `Handle`\n"
 "        // before we can use it.\n"
 msgstr ""
+"// `Handle` を使う前に、`Option` を通して\n"
+"        // `Handle` を取得する必要がある。\n"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid "\"write '{data}' to file '{}'\""
-msgstr ""
+msgstr "\"write '{data}' to file '{}'\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
-#, fuzzy
 msgid "\"Closing {}\""
-msgstr "\"Dropping {}\""
+msgstr "\"Closing {}\""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
@@ -35628,12 +35863,18 @@ msgid ""
 "normally, because we don't get ownership of the `File` object in `drop`, and "
 "therefore can't move out of the field."
 msgstr ""
+"この例では、`Drop` impl の中で内側の `Handle` に対して `close` を呼び出したい"
+"のですが、`close` には `Handle` の所有権が必要です。`drop` では `File` オブ"
+"ジェクトの所有権を得られないので、フィールドからムーブすることができず、通常"
+"はこれを行えません。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
 "Wrapping the handle in an `Option` gives us a way to move out of the field "
 "through a mutable reference."
 msgstr ""
+"ハンドルを `Option` でラップすると、可変参照を通じてフィールドからムーブする"
+"方法が得られます。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
@@ -35642,6 +35883,10 @@ msgid ""
 "Rust’s type system cannot express that relationship between `File` and its "
 "`Handle`, so we handle both cases manually."
 msgstr ""
+"主な欠点は使いやすさです。`Option` では、論理的に `None` が起こりえない場所で"
+"も、`Some` と `None` の両方のケースを処理しなければなりません。Rust の型シス"
+"テムは `File` とその `Handle` の間のこの関係を表現できないので、両方のケース"
+"を手動で処理します。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
@@ -35650,6 +35895,10 @@ msgid ""
 "preventing Rust from calling `Drop` for the value; you must handle teardown "
 "yourself."
 msgstr ""
+"`Option` の代わりに [`ManuallyDrop`](https://doc.rust-lang.org/std/mem/"
+"struct.ManuallyDrop.html) を使うこともできます。これは、Rust がその値に対し"
+"て `Drop` を呼び出さないようにすることで自動的な破棄を抑制します。終了処理は"
+"自分で行う必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
@@ -35657,6 +35906,9 @@ msgid ""
 "`ManuallyDrop` can replace `Option` to avoid handling `None` in places where "
 "the value should always exist."
 msgstr ""
+"前のスライドの [_scopeguard_ の例](./scope_guard.md) では、値が常に存在するは"
+"ずの箇所で `None` を扱わずに済むように、`ManuallyDrop` で `Option` を置き換え"
+"る方法を示しました。"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_option.md
 msgid ""
@@ -35664,6 +35916,9 @@ msgid ""
 "to the `ManuallyDrop<Handle>`, which lets us track whether the handle has "
 "already been manually consumed."
 msgstr ""
+"このような設計では通常、`ManuallyDrop<Handle>` の隣に別のフラグを置いてドロッ"
+"プの状態を追跡します。これにより、ハンドルがすでに手動で消費されたかどうかを"
+"追跡できます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35671,28 +35926,33 @@ msgid ""
 "allow your code to check if a string is a palindrome using method-calling "
 "syntax: `s.is_palindrome()`."
 msgstr ""
+"外部の型に新しいメソッドを**拡張**したい場合があります。たとえば、メソッド呼"
+"び出しの構文 `s.is_palindrome()` を使って、文字列が回文かどうかをコードで"
+"チェックできるようにしたい場合です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "It might feel natural to reach out for an `impl` block:"
-msgstr ""
+msgstr "`impl` ブロックを使うのが自然に思えるかもしれません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
 "The Rust compiler won't allow it, though. But you can use the **extension "
 "trait pattern** to work around this limitation."
 msgstr ""
+"しかし、Rust コンパイラはこれを許可しません。ただし、**拡張トレイトパターン**"
+"を使うと、この制限を回避できます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "A Rust item (be it a trait or a type) is referred to as:"
-msgstr ""
+msgstr "Rust のアイテム（トレイトまたは型）は、次のように呼ばれます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "**foreign**, if it isn't defined in the current crate"
-msgstr ""
+msgstr "現在のクレートで定義されていない場合は**外部**（foreign）"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "**local**, if it is defined in the current crate"
-msgstr ""
+msgstr "現在のクレートで定義されている場合は**ローカル**（local）"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35701,21 +35961,28 @@ msgid ""
 "items.impl.trait.orphan-rule), as we'll get a chance to explore in this "
 "section of the course."
 msgstr ""
+"この区別は [コヒーレンスとオーファンルール](https://doc.rust-lang.org/stable/"
+"reference/items/implementations.html#r-items.impl.trait.orphan-rule) に大きく"
+"関わります。これについては、講座のこのセクションで詳しく見ていきます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid "Compile the example to show the compiler error that's emitted."
-msgstr ""
+msgstr "例をコンパイルし、出力されるコンパイラエラーを示してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
 "Highlight how the compiler error message nudges you towards the extension "
 "trait pattern."
 msgstr ""
+"コンパイラのエラーメッセージが拡張トレイトパターンへと誘導していることを強調"
+"してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
 "Explain how many type-system restrictions in Rust aim to prevent _ambiguity_."
 msgstr ""
+"Rust の型システムの制約の多くは、_曖昧さ_ を防ぐことを目的としていることを説"
+"明してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35723,6 +35990,9 @@ msgid ""
 "foreign types? Different crates in your dependency tree might end up "
 "defining different methods on the same foreign type with the same name."
 msgstr ""
+"外部の型に新しい固有メソッドを定義できるとしたら、どうなるでしょうか？依存関"
+"係ツリー内の異なるクレートが、同じ外部の型に同じ名前で異なるメソッドを定義し"
+"てしまうかもしれません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35731,6 +36001,10 @@ msgid ""
 "unexpected behavior. If disambiguation happens explicitly, it can increase "
 "the cognitive load on developers who are reading your code."
 msgstr ""
+"曖昧さが生じる余地があれば、それを解消する方法が必要になります。曖昧さの解消"
+"が暗黙的に行われると、意外な動作や予期しない動作につながる可能性があります。"
+"曖昧さの解消を明示的に行うと、コードを読む開発者の認知的負荷が増える可能性が"
+"あります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35738,12 +36012,17 @@ msgid ""
 "type, it may cause compilation errors in _your_ code, as you may be forced "
 "to introduce explicit disambiguation."
 msgstr ""
+"さらに、あるクレートが外部の型に新しい固有メソッドを定義するたびに、_あなたの"
+"_ コードでコンパイルエラーが発生する可能性があります。明示的な曖昧さの解消を"
+"追加せざるを得なくなる場合があるからです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
 "Rust has decided to avoid the issue altogether by forbidding the definition "
 "of new inherent methods on foreign types."
 msgstr ""
+"Rust は、外部の型に新しい固有メソッドを定義することを禁止して、この問題を完全"
+"に回避することにしました。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md
 msgid ""
@@ -35751,42 +36030,46 @@ msgid ""
 "types, often called \"extension methods.\" This leads to different trade-"
 "offs in terms of potential ambiguities and the need for global reasoning."
 msgstr ""
+"他の言語（Kotlin、C#、Swift など）では、既存の型にメソッドを追加できます。こ"
+"れは多くの場合「拡張メソッド」と呼ばれます。この方法には、曖昧さが生じる可能"
+"性や、全体を見渡した推論が必要になる点で、異なるトレードオフがあります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "What prevents users from writing arbitrary trait implementations for any "
 "type?"
 msgstr ""
+"ユーザーが任意の型に対して任意のトレイト実装を書けないようにしているものは何"
+"でしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// Crate `postgresql-bindings`\n"
-msgstr ""
+msgstr "// クレート `postgresql-bindings`\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "/* details */"
-msgstr ""
+msgstr "/* 詳細 */"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// Crate `database-traits`, depends on `postgresql-bindings`\n"
-msgstr ""
+msgstr "// クレート `database-traits`。`postgresql-bindings` に依存\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
-#, fuzzy
 msgid "/* methods */"
-msgstr "メソッド"
+msgstr "/* メソッド */"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// ✅, `DbConnection` is local.\n"
-msgstr ""
+msgstr "// ✅、`DbConnection` はローカル。\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// Crate `mycoolnewdb` depends on `database-traits`\n"
-msgstr ""
+msgstr "// クレート `mycoolnewdb` は `database-traits` に依存\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// ✅, `MyCoolNewDbConn` is local.\n"
-msgstr ""
+msgstr "// ✅、`MyCoolNewDbConn` はローカル。\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
@@ -35794,10 +36077,14 @@ msgid ""
 "// This would lead to two implementations of `DbConnection` for "
 "PostgresqlConn!\n"
 msgstr ""
+"// `PostgresqlConn` も `DbConnection` も `mycoolnewdb` にとってローカルではな"
+"い。\n"
+"// これを許すと、PostgresqlConn に対する `DbConnection` の実装が 2 つ存在する"
+"ことになる！\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "// ❌🔨\n"
-msgstr ""
+msgstr "// ❌🔨\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
@@ -35805,6 +36092,8 @@ msgid ""
 "Two implementations of the same trait for the same type is a conflict with "
 "no solution."
 msgstr ""
+"Rust のトレイトは、エコシステム内で決して二重に実装できてはなりません。同じ型"
+"に対する同じトレイトの実装が 2 つあると、解決策のない衝突になります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
@@ -35812,53 +36101,68 @@ msgid ""
 "definitions and disallowing it, but what about between crates in the entire "
 "Rust ecosystem?"
 msgstr ""
+"クレート内であれば、複数の定義があるかどうかを検出して禁止することでこれを防"
+"げます。しかし、Rust エコシステム全体のクレート間ではどうでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "Types are either _local_ to a crate, they are defined there, or they're not."
 msgstr ""
+"型は、クレートに対して _ローカル_ である（そこで定義されている）か、そうでな"
+"いかのどちらかです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "In the example's \"crates\", `PostgresqlConn` is local to `postgresql-"
 "bindings`, `MyCoolNewDbConn` is local to `mycoolnewdb`."
 msgstr ""
+"例の「クレート」では、`PostgresqlConn` は `postgresql-bindings` に対してロー"
+"カルであり、`MyCoolNewDbConn` は `mycoolnewdb` に対してローカルです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "Traits are also either _local_ to a crate, they are defined there, or "
 "they're not."
 msgstr ""
+"トレイトも同様に、クレートに対して _ローカル_ である（そこで定義されている）"
+"か、そうでないかのどちらかです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "Again in the example, the `DbConnection` trait is local to `database-traits`."
 msgstr ""
+"これも例で言うと、`DbConnection` トレイトは `database-traits` に対してローカ"
+"ルです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "If something is local, you can write trait implementations for it."
-msgstr ""
+msgstr "何かがローカルであれば、それに対するトレイト実装を書くことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "If the trait is local, you can write implementations of that trait for any "
 "type."
 msgstr ""
+"トレイトがローカルであれば、そのトレイトの実装を任意の型に対して書くことがで"
+"きます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "If the type is local, you can write any trait implementations for that type."
 msgstr ""
+"型がローカルであれば、その型に対して任意のトレイト実装を書くことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid "Outside of these boundaries, trait implementations cannot be written."
-msgstr ""
+msgstr "これらの範囲外では、トレイト実装を書くことはできません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
 "This keeps implementations \"coherent\": Only one implementation of a trait "
 "for a type can exist across crates."
 msgstr ""
+"これにより、実装の「コヒーレンス」（一貫性）が保たれます。つまり、ある型に対"
+"するあるトレイトの実装は、クレートをまたいで 1 つしか存在できません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
@@ -35868,7 +36172,7 @@ msgstr ""
 #: src/idiomatic/polymorphism/generics/sized.md
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "ref:"
-msgstr ""
+msgstr "参照:"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/orphan-rule.md
 msgid ""
