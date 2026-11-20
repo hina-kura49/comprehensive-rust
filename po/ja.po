@@ -2378,9 +2378,8 @@ msgid "FFI"
 msgstr "FFI"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-interop.md
-#, fuzzy
 msgid "Language Interop"
-msgstr "言語の特徴"
+msgstr "言語間の相互運用"
 
 #: src/SUMMARY.md
 msgid "Strategies"
@@ -2388,35 +2387,32 @@ msgstr "戦略"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/type-safety.md
 msgid "Consideration: Type Safety"
-msgstr ""
+msgstr "考慮事項: 型安全性"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-differences.md
-#, fuzzy
 msgid "Language differences"
-msgstr "言語の特徴"
+msgstr "言語の違い"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "Different representations"
-msgstr "if let式"
+msgstr "異なる表現"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-differences/semantics.md
-#, fuzzy
 msgid "Different semantics"
-msgstr "ムーブセマンティクス"
+msgstr "異なるセマンティクス"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Rust ↔ C"
-msgstr ""
+msgstr "Rust ↔ C"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "C++ ↔ C"
-msgstr ""
+msgstr "C++ ↔ C"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Rust ↔ C++"
-msgstr ""
+msgstr "Rust ↔ C++"
 
 #: src/SUMMARY.md
 msgid "`abs(3)`"
@@ -45240,7 +45236,7 @@ msgstr "// SAFETY: self.data\n"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid "Ideal scenario:"
-msgstr ""
+msgstr "理想的なシナリオ："
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 #: src/unsafe-deep-dive/ffi/strategies.md
@@ -45254,6 +45250,14 @@ msgid ""
 "     Rust                                                    \"C++\"\n"
 "```"
 msgstr ""
+"```bob\n"
+"╭────────────╮                                          ╭────────────╮\n"
+"│            │                                          │            │\n"
+"│            │ <--------------------------------------> │            │\n"
+"│            │                                          │            │\n"
+"╰────────────╯                                          ╰────────────╯\n"
+"     Rust                                                    \"C++\"\n"
+"```"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid ""
@@ -45261,16 +45265,20 @@ msgid ""
 "languages via its foreign-function interface (FFI), with a special focus on "
 "interoperability with C++."
 msgstr ""
+"講座のこのセクションでは、外部関数インターフェース（FFI）を介した Rust と外部"
+"言語とのやり取りについて、特に C++ との相互運用性に焦点を当てて説明します。"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid ""
 "Ideally, users of Rust and the external language (in this case C++) could "
 "call each others’ methods directly."
 msgstr ""
+"理想的には、Rust と外部言語（この場合は C++）のユーザーは、互いのメソッドを直"
+"接呼び出せるとよいでしょう。"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid "This ideal scenario is very difficult to achieve:"
-msgstr ""
+msgstr "この理想的なシナリオを実現するのは非常に困難です："
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid ""
@@ -45278,24 +45286,29 @@ msgid ""
 "implies trade-offs Neither Rust nor C++ offer ABI stability[^1], making it "
 "difficult to build from a stable foundation"
 msgstr ""
+"言語ごとにセマンティクスが異なり、それらの間の対応付けにはトレードオフが伴い"
+"ます。Rust も C++ も ABI の安定性[^1]を提供していないため、安定した基盤の上に"
+"構築することが困難です"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid ""
 "Some C++ compiler vendors provide support for ABI stability within their "
 "toolchain."
 msgstr ""
+"一部の C++ コンパイラベンダーは、自社のツールチェーン内で ABI の安定性をサ"
+"ポートしています。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "Strategies of interop"
-msgstr ""
+msgstr "相互運用の戦略"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "Sharing data structures and symbols directly is very difficult:"
-msgstr ""
+msgstr "データ構造やシンボルを直接共有するのは非常に困難です："
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "FFI through the C ABI is much more feasible:"
-msgstr ""
+msgstr "C ABI を介した FFI の方がはるかに現実的です："
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 #: src/unsafe-deep-dive/ffi/language-differences.md
@@ -45309,27 +45322,34 @@ msgid ""
 "    Rust                  C               C                 \"C++\"\n"
 "````````"
 msgstr ""
+"````````bob\n"
+"╭────────────╮          ╭───╮           ╭───╮          ╭────────────╮\n"
+"│            │          │   │           │   │          │            │\n"
+"│            │ <----->  │   │ <~~~~~~~> │   │ <------> │            │ \n"
+"│            │          │   │           │   │          │            │\n"
+"╰────────────╯          ╰───╯           ╰───╯          ╰────────────╯\n"
+"    Rust                  C               C                 \"C++\"\n"
+"````````"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
-#, fuzzy
 msgid "Other strategies:"
-msgstr "参考資料"
+msgstr "その他の戦略："
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "Distributed system (RPC)"
-msgstr ""
+msgstr "分散システム（RPC）"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "Custom ABI (i.e. WebAssembly Interface Types)"
-msgstr ""
+msgstr "カスタム ABI（例：WebAssembly Interface Types）"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "_High-fidelity interop_"
-msgstr ""
+msgstr "_高忠実度の相互運用_"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "The ideal scenario is currently experimental."
-msgstr ""
+msgstr "理想的なシナリオは、現在のところ実験段階です。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid ""
@@ -45339,10 +45359,15 @@ msgid ""
 "domains. The second relies on dynamic dispatch and imports C++ objects into "
 "Rust as trait objects."
 msgstr ""
+"これを探求している 2 つのプロジェクトが [crubit](https://github.com/google/"
+"crubit) と [Zngur](https://hkalbasi.github.io/zngur/) です。前者は、互換性の"
+"ある型がドメインをまたいでシームレスに動作するように、それぞれの側にグルー"
+"コードを提供します。後者は動的ディスパッチに依存し、C++ のオブジェクトをトレ"
+"イトオブジェクトとして Rust にインポートします。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "_Low-fidelity interop_ work through a C API"
-msgstr ""
+msgstr "_低忠実度の相互運用_ は C API を介して行う"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid ""
@@ -45350,14 +45375,17 @@ msgid ""
 "C is a lossy codec. This strategy typically results in complicated code on "
 "both sides."
 msgstr ""
+"相互運用の典型的な戦略は、C 言語をインターフェースとして使うことです。C は情"
+"報が失われるコーデックです。この戦略では、通常、両側のコードが複雑になりま"
+"す。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "_Other strategies_ are less viable in a zero cost environment."
-msgstr ""
+msgstr "_その他の戦略_ は、ゼロコストの環境ではあまり現実的ではありません。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid "_Distributed systems_ impose runtime costs."
-msgstr ""
+msgstr "_分散システム_ は実行時のコストを伴います。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid ""
@@ -45366,329 +45394,340 @@ msgid ""
 "speaking, a transparent RPC is not a good idea. There’s network in the "
 "middle."
 msgstr ""
+"外部ライブラリのメソッドを呼び出すたびにシリアライズ／転送／デシリアライズの"
+"往復が発生するため、大きなオーバーヘッドが生じます。一般的に言って、透過的な "
+"RPC は良い考えではありません。間にネットワークが挟まるからです。"
 
 #: src/unsafe-deep-dive/ffi/strategies.md
 msgid ""
 "_Custom ABI_, such as wasm require a runtime or significant implementation "
 "cost."
 msgstr ""
+"wasm などの _カスタム ABI_ には、ランタイムか、大きな実装コストが必要です。"
 
 #: src/unsafe-deep-dive/ffi/language-differences.md
 msgid ""
 "Using C as the lowest common denominator means that lots of the richness "
 "available to Rust and C++ is lost."
 msgstr ""
+"C を最小公分母として使うということは、Rust や C++ で利用できる豊かな機能の多"
+"くが失われることを意味します。"
 
 #: src/unsafe-deep-dive/ffi/language-differences.md
 msgid ""
 "Each translation has the potential for semantic loss, runtime overhead, and "
 "subtle bugs."
 msgstr ""
+"変換のたびに、意味の喪失、実行時のオーバーヘッド、微妙なバグが生じる可能性が"
+"あります。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "b\"Hello, C\\0\""
-msgstr "\"Hello \""
+msgstr "b\"Hello, C\\0\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "b\"Hello, C++\\0\""
-msgstr "\"Hello \""
+msgstr "b\"Hello, C++\\0\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "b\"Hello, Rust\""
-msgstr "\"Hello from Rust!\""
+msgstr "b\"Hello, Rust\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
 msgid ""
 "Each language has its own opinion about how to implement things, which can "
 "lead to confusion and bugs. Consider three ways to represent text."
 msgstr ""
+"各言語には物事の実装方法について独自の考え方があり、それが混乱やバグにつなが"
+"ることがあります。テキストを表現する 3 つの方法を考えてみましょう。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
 msgid "Show how to convert the raw representations to a Rust string slice:"
-msgstr ""
+msgstr "生の表現を Rust の文字列スライスに変換する方法を示します："
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "// C representation to Rust\n"
-msgstr "/// ソフトウェア パッケージの表現。\n"
+msgstr "// C の表現から Rust へ\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
 msgid "\"{c}\""
-msgstr ""
+msgstr "\"{c}\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "// C++ representation to Rust \n"
-msgstr "/// ソフトウェア パッケージの表現。\n"
+msgstr "// C++ の表現から Rust へ \n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
 msgid "\"{cc}\""
-msgstr ""
+msgstr "\"{cc}\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "// Rust representation (bytes) to string slice\n"
-msgstr "/// ソフトウェア パッケージの表現。\n"
+msgstr "// Rust の表現（バイト列）から文字列スライスへ\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
-#, fuzzy
 msgid "\"{rust}\""
-msgstr "\"rust\""
+msgstr "\"{rust}\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/representations.md
 msgid ""
 "Aside: Rust has a c-prefixed string literal. It appends a null byte at the "
 "end, e.g. `c\"Rust\" == b\"Rust\\0\"`."
 msgstr ""
+"補足：Rust には c を接頭辞とする文字列リテラルがあります。これは末尾にヌルバ"
+"イトを付加します。例：`c\"Rust\" == b\"Rust\\0\"`。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid "/// Create a formatted time based on timestamp `t`.\n"
-msgstr ""
+msgstr "/// タイムスタンプ `t` に基づいて書式化された時刻を作成する。\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid ""
 "// SAFETY: `seconds` is generated by the system clock and will not cause\n"
 "    // overflow\n"
 msgstr ""
+"// SAFETY: `seconds` はシステムクロックによって生成され、\n"
+"    // オーバーフローを引き起こさない\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid ""
 "// SAFETY: ctime returns a pointer to a preallocated (non-null) buffer\n"
 msgstr ""
+"// SAFETY: ctime は事前に割り当てられた（null でない）バッファへのポインタを"
+"返す\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid "// SAFETY: ctime uses valid UTF-8\n"
-msgstr ""
+msgstr "// SAFETY: ctime は有効な UTF-8 を使う\n"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
-#, fuzzy
 msgid "\"{t:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{t:?}\""
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid ""
 "Some constructs that other languages allow cannot be expressed in the Rust "
 "language."
 msgstr ""
+"他の言語では許されている構成の中には、Rust 言語では表現できないものがありま"
+"す。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid ""
 "The `ctime` function modifies an internal buffer shared between calls. This "
 "cannot be represented as Rust’s lifetimes."
 msgstr ""
+"`ctime` 関数は、呼び出し間で共有される内部バッファを変更します。これは Rust "
+"のライフタイムとしては表現できません。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid "`'static` does not apply, as the semantics are different"
-msgstr ""
+msgstr "セマンティクスが異なるため、`'static` は当てはまらない"
 
 #: src/unsafe-deep-dive/ffi/language-differences/semantics.md
 msgid "`'a` does not apply, as the buffer outlives each call"
-msgstr ""
+msgstr "バッファは各呼び出しよりも長く存続するため、`'a` は当てはまらない"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Concern"
-msgstr ""
+msgstr "懸念事項"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "Rust"
-msgstr "\"Rust\""
+msgstr "Rust"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
-#, fuzzy
 msgid "C"
-msgstr "CR"
+msgstr "C"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "**Errors**"
-msgstr ""
+msgstr "**エラー**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "`Result<T, E>`, `Option<T>`"
-msgstr ""
+msgstr "`Result<T, E>`, `Option<T>`"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Magic return values, out-parameters, global `errno`"
-msgstr ""
+msgstr "マジック戻り値、出力引数、グローバルな `errno`"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "**Strings**"
-msgstr "文字列"
+msgstr "**文字列**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "`&str`/`String` (UTF-8, length-known)"
-msgstr ""
+msgstr "`&str`/`String`（UTF-8、長さが既知）"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Null-terminated `char*`, encoding undefined"
-msgstr ""
+msgstr "ヌル終端の `char*`、エンコーディングは未定義"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "**Nullability**"
-msgstr ""
+msgstr "**null 許容性**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Explicit via `Option<T>`"
-msgstr ""
+msgstr "`Option<T>` による明示的な表現"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "Any pointer may be null"
-msgstr "ポインタは null 以外でなければならないこと。"
+msgstr "どのポインタも null になりうる"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "**Ownership**"
-msgstr "所有権"
+msgstr "**所有権**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Affine types, lifetimes"
-msgstr ""
+msgstr "アフィン型、ライフタイム"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "Conventions"
-msgstr "条件文"
+msgstr "慣習"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "**Callbacks**"
-msgstr ""
+msgstr "**コールバック**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "`Fn`/`FnMut`/`FnOnce` closures"
-msgstr ""
+msgstr "`Fn`/`FnMut`/`FnOnce` クロージャ"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "Function pointer + `void* userdata`"
-msgstr "関数ポインタが使いにくい。"
+msgstr "関数ポインタ + `void* userdata`"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
-#, fuzzy
 msgid "**Panics**"
-msgstr "パニック（panic）"
+msgstr "**パニック**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Stack unwinding (or abort)"
-msgstr ""
+msgstr "スタックの巻き戻し（またはアボート）"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Abort"
-msgstr ""
+msgstr "アボート"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid ""
 "Errors: Must convert `Result` to abide by C conventions; easy to forget to "
 "check errors on C side."
 msgstr ""
+"エラー：C の慣習に従うように `Result` を変換する必要があり、C 側でエラーの"
+"チェックを忘れやすい。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid ""
 "Strings: Conversion cost; null bytes in Rust strings cause truncation; UTF-8 "
 "validation on ingress."
 msgstr ""
+"文字列：変換のコストがかかる。Rust の文字列に含まれるヌルバイトは切り詰めの原"
+"因となる。受け取る際に UTF-8 の検証が必要。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid ""
 "Nullability: Every pointer from C must be checked to create an "
 "`Option<NonNull<T>>`, implying unsafe blocks or runtime cost."
 msgstr ""
+"null 許容性：`Option<NonNull<T>>` を作成するために C から来るすべてのポインタ"
+"をチェックする必要があり、unsafe ブロックか実行時のコストが伴う。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid "Ownership: Must document and enforce object lifetimes manually."
 msgstr ""
+"所有権：オブジェクトのライフタイムを手動で文書化し、強制する必要がある。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid ""
 "Callbacks: Must decompose closures into fn pointer + context; lifetime of "
 "context is manual."
 msgstr ""
+"コールバック：クロージャを関数ポインタとコンテキストに分解する必要があり、コ"
+"ンテキストのライフタイムは手動で管理する。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-c.md
 msgid ""
 "Panics: Panic across FFI boundary is undefined behavior; must catch at "
 "boundary with `catch_unwind`."
 msgstr ""
+"パニック：FFI 境界をまたぐパニックは未定義の動作であり、境界で "
+"`catch_unwind` によって捕捉する必要がある。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "C++"
-msgstr "\"C++\""
+msgstr "C++"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
-#, fuzzy
 msgid "**Overloading**"
-msgstr "オーバーロード"
+msgstr "**オーバーロード**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "Manual/ad-hoc"
-msgstr ""
+msgstr "手動／その場しのぎ"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
-#, fuzzy
 msgid "Automatic"
-msgstr "静的"
+msgstr "自動"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
-#, fuzzy
 msgid "**Exceptions**"
-msgstr "例外"
+msgstr "**例外**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
-#, fuzzy
 msgid "Stack unwinding"
 msgstr "スタックの巻き戻し"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "**Destructors**"
-msgstr ""
+msgstr "**デストラクタ**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "Manual cleanup"
-msgstr ""
+msgstr "手動でのクリーンアップ"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "Automatic via destructors (RAII)"
-msgstr ""
+msgstr "デストラクタによる自動化（RAII）"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "**Non-POD types**"
-msgstr ""
+msgstr "**非 POD 型**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "Objects with constructors, vtables, virtual bases"
-msgstr ""
+msgstr "コンストラクタ、vtable、仮想基底クラスを持つオブジェクト"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "**Templates**"
-msgstr ""
+msgstr "**テンプレート**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid "Compile-time code generation"
-msgstr ""
+msgstr "コンパイル時のコード生成"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
 "C++ includes a number of features that don't exist in C with an FFI impact:"
-msgstr ""
+msgstr "C++ には、C には存在せず FFI に影響する機能が数多くあります："
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
 "Overloading: Overloads become impossible to express because of name mangling"
 msgstr ""
+"オーバーロード：名前マングリングのため、オーバーロードは表現できなくなる"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
@@ -45696,104 +45735,117 @@ msgid ""
 "error codes, as escaping exceptions in `extern \"C\"` functions constitute "
 "undefined behavior"
 msgstr ""
+"例外：`extern \"C\"` 関数から例外が漏れ出すと未定義の動作となるため、FFI 境界"
+"で例外を捕捉し、エラーコードに変換する必要がある"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
 "Destructors: C callers won't run destructors; must expose explicit "
 "`*_destroy()` functions"
 msgstr ""
+"デストラクタ：C の呼び出し元はデストラクタを実行しないため、明示的な "
+"`*_destroy()` 関数を公開する必要がある"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
 "Non-POD types: Must use opaque pointers across the FFI boundary as pass by "
 "value does not make sense"
 msgstr ""
+"非 POD 型：値渡しは意味をなさないため、FFI 境界ではオペークポインタを使う必要"
+"がある"
 
 #: src/unsafe-deep-dive/ffi/language-differences/cpp-and-c.md
 msgid ""
 "Templates: Cannot expose directly; must instantiate explicitly and wrap each "
 "specialization"
 msgstr ""
+"テンプレート：直接公開できないため、明示的にインスタンス化し、各特殊化をラッ"
+"プする必要がある"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "**Trivial relocatability**"
-msgstr ""
+msgstr "**トリビアルな再配置可能性**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "All moves are `memcpy`"
-msgstr ""
+msgstr "すべてのムーブは `memcpy`"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Self-referential types, move constructors can have side effects"
-msgstr ""
+msgstr "自己参照型があり、ムーブコンストラクタが副作用を持ちうる"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "**Destruction safety**"
-msgstr "配列編"
+msgstr "**破棄の安全性**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "`Drop::drop()` on original location only"
-msgstr ""
+msgstr "`Drop::drop()` は元の位置でのみ実行される"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Destructor may run on moved-from objects"
-msgstr ""
+msgstr "ムーブ元のオブジェクトに対してデストラクタが実行されることがある"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "**Exception safety**"
-msgstr "例外"
+msgstr "**例外安全性**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Panics (abort or unwind)"
-msgstr ""
+msgstr "パニック（アボートまたは巻き戻し）"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "Exceptions (unwind)"
-msgstr "例外"
+msgstr "例外（巻き戻し）"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "**ABI stability**"
-msgstr ""
+msgstr "**ABI の安定性**"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Explicitly unstable"
-msgstr ""
+msgstr "明示的に不安定"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "Vendor-specific"
-msgstr "OS 固有"
+msgstr "ベンダー固有"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "Even if it were possible to avoid interop via C, there are still some areas "
 "of the languages that impact FFI:"
 msgstr ""
+"C を介した相互運用を避けられたとしても、言語には FFI に影響する領域がまだいく"
+"つかあります："
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "_Trivial relocatability_"
-msgstr ""
+msgstr "_トリビアルな再配置可能性_"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "Cannot safely move C++ objects on the Rust side; must pin or keep in C++ "
 "heap."
 msgstr ""
+"Rust 側では C++ のオブジェクトを安全にムーブできないため、固定するか C++ の"
+"ヒープに置いておく必要がある。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "In Rust, object movement, which occurs during assignment or by being passed "
 "by value, always copies values bit by bit."
 msgstr ""
+"Rust では、代入時や値渡しの際に起こるオブジェクトのムーブは、常に値をビットご"
+"とにコピーします。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "C++ allows users to define their own semantics by allowing them to overload "
 "the assignment operator and create move and copy constructors."
 msgstr ""
+"C++ では、代入演算子をオーバーロードしたり、ムーブコンストラクタやコピーコン"
+"ストラクタを作成したりすることで、ユーザーが独自のセマンティクスを定義できま"
+"す。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
@@ -45801,39 +45853,45 @@ msgid ""
 "performance C++. Custom constructors can uphold safety invariants even when "
 "the object moves its position in memory."
 msgstr ""
+"高性能な C++ では自己参照型が自然なものになるため、これは相互運用に影響しま"
+"す。カスタムコンストラクタは、オブジェクトがメモリ上の位置を移動しても安全性"
+"の不変条件を維持できます。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid "Objects with the same semantics are impossible to define in Rust."
 msgstr ""
+"同じセマンティクスを持つオブジェクトを Rust で定義することはできません。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "_Destruction safety_"
-msgstr "配列編"
+msgstr "_破棄の安全性_"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "Moved-from C++ object semantics don't map; must prevent Rust from \"moving\" "
 "C++ types."
 msgstr ""
+"ムーブ元の C++ オブジェクトのセマンティクスは対応付けられないため、Rust が C+"
+"+ の型を「ムーブ」しないようにする必要がある。"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
-#, fuzzy
 msgid "_Exception safety_"
-msgstr "例外"
+msgstr "_例外安全性_"
 
 #: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md
 msgid ""
 "Neither can cross into the other safely; both must catch at the boundary."
 msgstr ""
+"どちらも安全に相手側へ渡ることはできないため、どちらも境界で捕捉する必要があ"
+"る。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Wrapping `abs(3)`"
-msgstr ""
+msgstr "`abs(3)` のラップ"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "In this slide, we’re establishing a pattern for writing wrappers."
-msgstr ""
+msgstr "このスライドでは、ラッパーを書くためのパターンを確立します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
@@ -45841,14 +45899,17 @@ msgid ""
 "function in Rust within an `extern` block Confirm which safety invariants "
 "need to be upheld Decide whether it’s possible to mark the function as safe"
 msgstr ""
+"関数のシグネチャの外部定義を見つける。`extern` ブロック内に一致する関数を "
+"Rust で書く。守る必要のある安全性の不変条件を確認する。関数をセーフとマークで"
+"きるかどうかを判断する。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Note that this doesn’t work _yet_."
-msgstr ""
+msgstr "これは _まだ_ 動作しないことに注意してください。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Add the extern block:"
-msgstr ""
+msgstr "extern ブロックを追加します："
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
@@ -45856,23 +45917,29 @@ msgid ""
 "against the C standard library (libc) by default, which brings its symbols "
 "into the program’s scope."
 msgstr ""
+"Cargo はデフォルトで C 標準ライブラリ（libc）とリンクし、そのシンボルがプログ"
+"ラムのスコープに取り込まれるため、多くの POSIX 関数を Rust で利用できることを"
+"説明します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
-#, fuzzy
 msgid ""
 "Show `man 3 abs` in the terminal or [a webpage](https://www.man7.org/linux/"
 "man-pages/man3/abs.3.html)."
-msgstr "[`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)"
+msgstr ""
+"ターミナルで `man 3 abs` を表示するか、[ウェブページ](https://www.man7.org/"
+"linux/man-pages/man3/abs.3.html)を表示します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
 "Explain that our function signature must match its definition: `int abs(int "
 "j);`."
 msgstr ""
+"関数のシグネチャはその定義 `int abs(int j);` と一致しなければならないことを説"
+"明します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Update the code block to use the C types."
-msgstr ""
+msgstr "C の型を使うようにコードブロックを更新します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
@@ -45881,50 +45948,62 @@ msgid ""
 "can determine the widths. According to the C standard, a `c_int` may be "
 "defined as an `i16` rather than the much more common `i32`."
 msgstr ""
+"理由について説明します：`ffi::c_int` を使うと、コードの移植性が高まります。標"
+"準ライブラリがターゲットプラットフォーム向けにコンパイルされるとき、そのプ"
+"ラットフォームが幅を決めることができます。C 標準によれば、`c_int` は、はるか"
+"に一般的な `i32` ではなく `i16` として定義されることもあります。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
 "(Optional) Show the [documentation for c_int](https://doc.rust-lang.org/std/"
 "ffi/type.c_int.html) to reveal that it is a type alias for `i32`."
 msgstr ""
+"（任意）[c_int のドキュメント](https://doc.rust-lang.org/std/ffi/"
+"type.c_int.html)を表示して、これが `i32` の型エイリアスであることを示します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
 "Attempt to compile to trigger “error: extern blocks must be unsafe” error "
 "message."
 msgstr ""
+"コンパイルを試みて、「error: extern blocks must be unsafe」というエラーメッ"
+"セージを発生させます。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Add the unsafe keyword to the block:"
-msgstr ""
+msgstr "ブロックに unsafe キーワードを追加します："
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
 "Check that learners understand the significance of this change. We are "
 "required to uphold type safety and other safety preconditions."
 msgstr ""
+"この変更の重要性を受講者が理解しているかどうかを確認します。型安全性やその他"
+"の安全性の前提条件を守ることが求められます。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Recompile."
-msgstr ""
+msgstr "再コンパイルします。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Add safe keyword to the abs function:"
-msgstr ""
+msgstr "abs 関数に safe キーワードを追加します："
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid ""
 "Explain that the `safe fn` marks `abs` as safe to call without an `unsafe` "
 "block."
 msgstr ""
+"`safe fn` によって、`abs` が `unsafe` ブロックなしで安全に呼び出せるとマーク"
+"されることを説明します。"
 
 #: src/unsafe-deep-dive/ffi/abs.md
 msgid "Completed program for reference:"
-msgstr ""
+msgstr "参考のための完成したプログラム："
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid "Wrapping `srand(3)` and `rand(3)`"
-msgstr ""
+msgstr "`srand(3)` と `rand(3)` のラップ"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
@@ -45932,17 +46011,21 @@ msgid ""
 "//     /// Seed the rng\n"
 "//     fn srand(seed: std::ffi::c_uint);\n"
 msgstr ""
+"// unsafe extern \"C\" {\n"
+"//     /// 乱数生成器のシードを設定する\n"
+"//     fn srand(seed: std::ffi::c_uint);\n"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
 "//     fn rand() -> std::ffi::c_int;\n"
 "// }\n"
 msgstr ""
+"//     fn rand() -> std::ffi::c_int;\n"
+"// }\n"
 
 #: src/unsafe-deep-dive/ffi/rand.md
-#, fuzzy
 msgid "\"{a:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{a:?}\""
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
@@ -45950,136 +46033,148 @@ msgid ""
 "trigger undefined behavior if they are written incorrectly. We’ll see how "
 "easy it is to trigger type safety problems."
 msgstr ""
+"このスライドでは、ラッパーの書き方を誤ると、非常に簡単に未定義の動作を引き起"
+"こしてしまうことを示します。型安全性の問題がいかに簡単に起こるかを見ていきま"
+"す。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
 "Explain that `rand` and `srand` functions are provided by the C standard "
 "library (libc)."
 msgstr ""
+"`rand` 関数と `srand` 関数は C 標準ライブラリ（libc）によって提供されているこ"
+"とを説明します。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
 "Explain that the functions are exported by the libc crate, but we can also "
 "write an FFI wrapper for them manually."
 msgstr ""
+"これらの関数は libc クレートによってエクスポートされていますが、手動で FFI "
+"ラッパーを書くこともできることを説明します。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
-#, fuzzy
 msgid "Show calling the functions from the exported."
-msgstr "他の言語から Rust 関数を呼び出す。"
+msgstr "エクスポートされたものから関数を呼び出す様子を示します。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid "Code compiles because libc is linked to Rust programs by default."
 msgstr ""
+"libc はデフォルトで Rust プログラムにリンクされるため、コードはコンパイルされ"
+"ます。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid "Explain that Rust will trust you if you use the wrong type(s)."
-msgstr ""
+msgstr "間違った型を使っても Rust はそれを信用することを説明します。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid "Modify `fn rand() -> std::ffi::c_int;` to return `char`."
-msgstr ""
+msgstr "`fn rand() -> std::ffi::c_int;` を `char` を返すように変更します。"
 
 #: src/unsafe-deep-dive/ffi/rand.md
 msgid ""
 "Avoiding type safety issues is a reason for using tools for generating "
 "wrappers, rather than doing it by hand."
 msgstr ""
+"型安全性の問題を避けることが、ラッパーを手作業で書くのではなく、ラッパー生成"
+"ツールを使う理由の 1 つです。"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
-#, fuzzy
 msgid "C Library Example"
-msgstr "Rust by Example"
+msgstr "C ライブラリの例"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* Return `false` to indicate that no token was found. */"
-msgstr ""
+msgstr "/* トークンが見つからなかったことを示すために `false` を返す。 */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* TextAnalyst constructor */"
-msgstr ""
+msgstr "/* TextAnalyst のコンストラクタ */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* TextAnalyst destructor */"
-msgstr ""
+msgstr "/* TextAnalyst のデストラクタ */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* Resets state to clear the current document */"
-msgstr ""
+msgstr "/* 状態をリセットして現在のドキュメントをクリアする */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* Use custom tokenizer (defaults to whitespace) */"
-msgstr ""
+msgstr "/* カスタムトークナイザを使う（デフォルトは空白） */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* Apply `callback` to each token */"
-msgstr ""
+msgstr "/* 各トークンに `callback` を適用する */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* Get human-readable error message */"
-msgstr ""
+msgstr "/* 人間が読めるエラーメッセージを取得する */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "/* TEXT_ANALYSIS_H */"
-msgstr ""
+msgstr "/* TEXT_ANALYSIS_H */"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid ""
 "C libraries will hide their implementation details with a `void*` argument."
-msgstr ""
+msgstr "C ライブラリは `void*` 引数を使って実装の詳細を隠します。"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid ""
 "Consider this header file of a natural language processing library that "
 "hides the `TextAnalyst` and `Analysis` types."
 msgstr ""
+"`TextAnalyst` 型と `Analysis` 型を隠している、自然言語処理ライブラリの次の"
+"ヘッダーファイルについて考えてみましょう。"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "This can be emulated in Rust with a type similar to this:"
-msgstr ""
+msgstr "これは Rust では次のような型でエミュレートできます："
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
-#, fuzzy
 msgid "Exercise: Ask learners to wrap this library."
-msgstr "演習: GUI ライブラリのモジュール"
+msgstr "演習：受講者にこのライブラリをラップしてもらいます。"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 msgid "// ffi.rs\n"
-msgstr ""
+msgstr "// ffi.rs\n"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "Example: String interning library"
-msgstr ""
+msgstr "例：文字列インターンライブラリ"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "C++ Header: interner.hpp"
-msgstr ""
+msgstr "C++ ヘッダー：interner.hpp"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid ""
 "// Returns a pointer to the interned string (valid for lifetime of "
 "interner)\n"
 msgstr ""
+"// インターンされた文字列へのポインタを返す（interner のライフタイムの間有"
+"効）\n"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "C header file: interner.h"
-msgstr ""
+msgstr "C ヘッダーファイル：interner.h"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "// interner.h (C API for FFI)\n"
-msgstr ""
+msgstr "// interner.h（FFI 用の C API）\n"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "C++ implementation (interner.cpp)"
-msgstr ""
+msgstr "C++ の実装（interner.cpp）"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "\"interner.hpp\""
-msgstr ""
+msgstr "\"interner.hpp\""
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "\"interner.h\""
-msgstr ""
+msgstr "\"interner.h\""
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid ""
@@ -46087,10 +46182,13 @@ msgid ""
 "need to guide learners on how to create an opaque pointer, either directly "
 "by explaining the code below or asking learners to do further research."
 msgstr ""
+"これはより大きな例です。文字列インターナのラッパーを書いてください。オペーク"
+"ポインタの作成方法について、以下のコードを説明するか、受講者にさらに調べても"
+"らうことで、受講者を導く必要があります。"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
 msgid "Once the raw wrapper is written, ask learners to create a safe wrapper."
-msgstr ""
+msgstr "生のラッパーが書けたら、受講者にセーフなラッパーを作成してもらいます。"
 
 #: src/thanks.md
 msgid ""
