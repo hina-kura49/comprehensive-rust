@@ -19136,60 +19136,67 @@ msgstr "// REV n を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch LEFT n\n"
-msgstr ""
+msgstr "// LEFT n を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch RIGHT n\n"
-msgstr ""
+msgstr "// RIGHT n を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch PEN UP\n"
-msgstr ""
+msgstr "// PEN UP を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch PEN DOWN\n"
-msgstr ""
+msgstr "// PEN DOWN を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch RED\n"
-msgstr ""
+msgstr "// RED を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch BLACK\n"
-msgstr ""
+msgstr "// BLACK を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Entry point: initialize push-down accumulator\n"
-msgstr ""
+msgstr "// エントリポイント: プッシュダウン アキュムレータを初期化する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
-#, fuzzy
 msgid "The push-down accumulator works as follows:"
-msgstr "各型の幅は次のとおりです。"
+msgstr "プッシュダウン アキュムレータは次のように動作します。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "The public entry point rule matching `$($tokens:tt)*` initializes the push-"
 "down buffer by delegating to `@accum [] $($tokens)*`."
 msgstr ""
+"`$($tokens:tt)*` にマッチする公開エントリポイントのルールが、`@accum [] $"
+"($tokens)*` に処理を委譲することで、プッシュダウン バッファを初期化します。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "Each internal rule matches a command at the head of the token stream and "
 "appends the corresponding `TurtleOp` variant to the buffer."
 msgstr ""
+"各内部ルールは、トークン ストリームの先頭にあるコマンドにマッチし、対応する "
+"`TurtleOp` バリアントをバッファに追加します。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "The remaining tokens `$($rest:tt)*` are recursively passed back into "
 "`turtle_directions!(@accum ...)`."
 msgstr ""
+"残りのトークン `$($rest:tt)*` は、再帰的に `turtle_directions!(@accum ...)` "
+"に渡されます。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "When all tokens are munched, the base case `@accum [ $($acc:expr),* ]` "
 "expands the accumulated buffer into a `vec![ $($acc),* ]`."
 msgstr ""
+"すべてのトークンが消費されると、基本ケース `@accum [ $($acc:expr),* ]` が、蓄"
+"積されたバッファを `vec![ $($acc),* ]` に展開します。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
@@ -19197,6 +19204,8 @@ msgid ""
 "a large number of parameters individually can make patterns messy and "
 "difficult to maintain."
 msgstr ""
+"再帰的な宣言的マクロや多層構造の宣言的マクロを設計する際、多数のパラメータを"
+"個別に受け渡していると、パターンが煩雑になり保守が難しくなることがあります。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
@@ -19205,29 +19214,38 @@ msgid ""
 "allowing them to be passed them through layers of recursion as a single "
 "unified `tt` metavariable:"
 msgstr ""
+"**TT バンドリング**とは、複数の引数を 1 つのトークングループ（例: `(param1: "
+"arg1, parmam2: arg2)`）の中にまとめ、単一の統合された `tt` メタ変数として再帰"
+"の各層に渡せるようにするパターンです。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
 "// Base case 1: Unpack bundle to handle finding our needle (`error`) in the "
 "haystack\n"
 msgstr ""
+"// 基本ケース 1: バンドルを展開して、干し草の山（haystack）の中から針"
+"（`error`）を見つけた場合を処理する\n"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
 "The signature of the recursive arm does not change regardless of how complex "
 "the bundled parameters may become."
 msgstr ""
+"バンドルされたパラメータがどれほど複雑になっても、再帰アームのシグネチャは変"
+"わりません。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
 "In the code example, `(present: fail, absent: pass)` represents the bundle, "
 "which is matched recursively as a single `$bundle:tt` and passed downstream."
 msgstr ""
+"コード例では、`(present: fail, absent: pass)` がバンドルを表しており、再帰的"
+"に単一の `$bundle:tt` としてマッチされ、下流に渡されます。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
 "Macros with substantial state are most likely to benefit from this technique."
-msgstr ""
+msgstr "この手法の恩恵を最も受けやすいのは、多くの状態を持つマクロです。"
 
 #: src/macros/macro_rules/techniques/tt-bundling.md
 msgid ""
@@ -19235,37 +19253,47 @@ msgid ""
 "case to better visualize the way that the recursive case pulls tokens off "
 "the front until we hit either of the base cases."
 msgstr ""
+"再帰ケースで `$_skip` 変数をデバッグ出力すると、いずれかの基本ケースに到達す"
+"るまで、再帰ケースが先頭からトークンを取り出していく様子をより分かりやすく可"
+"視化できます。"
 
 #: src/macros/hygiene.md
 msgid ""
 "A subtle aspect of macro systems is their degree of **hygiene**, or "
 "independence from the lexical environment of their expansion."
 msgstr ""
+"マクロシステムの微妙な側面の一つに、**衛生性**（hygiene）の度合い、つまり展開"
+"先のレキシカル環境からの独立性があります。"
 
 #: src/macros/hygiene.md
 msgid ""
 "Macro hygiene enables macros to avoid accidentally being influenced by or "
 "polluting the scope of the code surrounding their call sites."
 msgstr ""
+"マクロの衛生性により、マクロは呼び出し箇所の周囲のコードから意図せず影響を受"
+"けたり、そのスコープを汚染したりすることを避けられます。"
 
 #: src/macros/hygiene.md
-#, fuzzy
 msgid "In this section, we will cover:"
-msgstr "本日の内容:"
+msgstr "このセクションでは、以下の内容を取り上げます。"
 
 #: src/macros/hygiene.md
 msgid "What macro hygiene is and why it is important."
-msgstr ""
+msgstr "マクロの衛生性とは何か、またそれがなぜ重要なのか。"
 
 #: src/macros/hygiene.md
 msgid "How unhygienic macros can result in bugs or impede understanding code."
 msgstr ""
+"非衛生的なマクロがどのようにバグを引き起こしたり、コードの理解を妨げたりする"
+"のか。"
 
 #: src/macros/hygiene.md
 msgid ""
 "The extent to which Rust macros are hygienic and the how partial hygiene in "
 "Rust macros works."
 msgstr ""
+"Rust のマクロがどの程度衛生的なのか、また Rust のマクロにおける部分的な衛生性"
+"がどのように機能するのか。"
 
 #: src/macros/hygiene.md
 msgid ""
@@ -19276,24 +19304,36 @@ msgid ""
 "which they will expand is extremely limited. This can lead to bugs when "
 "names used in macros coincide with names used at their call sites."
 msgstr ""
+"多くのプリプロセッサベースの言語（C など）では、マクロは完全に非衛生的であ"
+"り、生のトークンだけを操作し、展開されるたびにレキシカル環境と異なる形で相互"
+"作用する可能性があることを説明します。つまり、マクロが展開されるコンテキスト"
+"に依存せずにマクロについて推論できる範囲は非常に限られます。その結果、マクロ"
+"内で使われる名前が呼び出し箇所で使われる名前と一致した場合に、バグにつながる"
+"可能性があります。"
 
 #: src/macros/hygiene.md
 msgid ""
 "The notion of hygiene may be familiar to students who know LISP, as it "
 "famously exhibits fully hygienic macros."
 msgstr ""
+"LISP を知っている受講者には、衛生性という概念はなじみがあるかもしれません。"
+"LISP は完全に衛生的なマクロを持つことでよく知られています。"
 
 #: src/macros/hygiene.md
 msgid ""
 "This slide serves as a transition into the detailed discussion of macro "
 "hygiene."
 msgstr ""
+"このスライドは、マクロの衛生性に関する詳しい説明への導入の役割を果たします。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "A macro systems is said to be **hygienic** if macros defined with it cannot "
 "accidentally capture or shadow identifiers from their expansion sites."
 msgstr ""
+"マクロシステムは、そのシステムで定義されたマクロが展開箇所の識別子を誤って"
+"キャプチャしたりシャドーイングしたりできない場合に、**衛生的**であるといわれ"
+"ます。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
@@ -19301,92 +19341,107 @@ msgid ""
 "uses, avoiding bugs when code invoking macros might unintentionally use the "
 "same identifier used internally by a macro."
 msgstr ""
+"これが望ましいのは、マクロをその使用箇所とは切り離して推論しやすくなり、マク"
+"ロを呼び出すコードが、マクロ内部で使われているのと同じ識別子を意図せず使って"
+"しまった場合のバグを避けられるからです。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "Macros in C and C++ using the C preprocessor are not hygienic, but Rust's "
 "macro system implements a limited form of hygiene."
 msgstr ""
+"C プリプロセッサを使う C や C++ のマクロは衛生的ではありませんが、Rust のマク"
+"ロシステムは限定的な形の衛生性を実装しています。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "Macro hygiene imposes two restrictions, corresponding to the two directions "
 "of influence between the macro's and the calling code's lexical environment."
 msgstr ""
+"マクロの衛生性は 2 つの制約を課します。これらは、マクロのレキシカル環境と呼び"
+"出し側のコードのレキシカル環境の間で影響が及ぶ 2 つの方向に対応しています。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "A macro system is **unhygienic** if a macro can either:"
-msgstr ""
+msgstr "マクロシステムは、マクロが次のいずれかを行える場合に**非衛生的**です。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "Implicitly access identifiers in the surrounding callsite scope."
-msgstr ""
+msgstr "周囲の呼び出し箇所のスコープにある識別子に暗黙的にアクセスする。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "Define a new local identifier that bleeds out and is implicitly accessible "
 "by the code surrounding its callsite."
 msgstr ""
+"新しいローカル識別子を定義し、それが外に漏れ出して、呼び出し箇所の周囲のコー"
+"ドから暗黙的にアクセスできるようになる。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "Example 1: Implicitly Accessing Calling Environment (Unhygienic)"
-msgstr ""
+msgstr "例 1: 呼び出し側の環境への暗黙的なアクセス（非衛生的）"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "// Unhygienic: attempts to implicitly read `local` from callsite\n"
-msgstr ""
+msgstr "// 非衛生的: 呼び出し箇所から `local` を暗黙的に読み取ろうとする\n"
 
 #: src/macros/hygiene/what-is-hygiene.md
-#, fuzzy
 msgid "\"Hello, Macros!\""
-msgstr "\"Hello, world!\""
+msgstr "\"Hello, Macros!\""
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "// In an unhygienic system, this would compile!\n"
-msgstr ""
+msgstr "// 非衛生的なシステムでは、これはコンパイルできてしまう！\n"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "Example 2: Leaking Local Variables (Unhygienic)"
-msgstr ""
+msgstr "例 2: ローカル変数の漏出（非衛生的）"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "// Unhygienic: intent is to leak `local` to callsite\n"
-msgstr ""
+msgstr "// 非衛生的: `local` を呼び出し箇所に漏らすことを意図している\n"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "In Rust, **neither of these examples compile**. Both produce the error: "
 "`error[E0425]: cannot find value 'local' in this scope`."
 msgstr ""
+"Rust では、**これらの例はどちらもコンパイルできません**。どちらも "
+"`error[E0425]: cannot find value 'local' in this scope` というエラーになりま"
+"す。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid ""
 "Rust's macro system treats variables hygienically, protecting from silent "
 "namespace pollution."
 msgstr ""
+"Rust のマクロシステムは変数を衛生的に扱い、気づかないうちに名前空間が汚染され"
+"ることを防ぎます。"
 
 #: src/macros/hygiene/what-is-hygiene.md
 msgid "However, declarative macros in Rust are not fully hygienic!"
-msgstr ""
+msgstr "ただし、Rust の宣言的マクロは完全に衛生的というわけではありません！"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid "Declarative macros in Rust are partially hygienic."
-msgstr ""
+msgstr "Rust の宣言的マクロは部分的に衛生的です。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
 "They are hygienic with respect to: local variables, parameters, loop labels, "
 "and the special `$crate` variable."
 msgstr ""
+"ローカル変数、パラメータ、ループラベル、特別な `$crate` 変数に関しては衛生的"
+"です。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
 "They are **not** hygienic with respect to: items, types, methods, and traits."
-msgstr ""
+msgstr "アイテム、型、メソッド、トレイトに関しては衛生的では**ありません**。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid "Rationale"
-msgstr ""
+msgstr "根拠"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
@@ -19395,6 +19450,10 @@ msgid ""
 "always need to accept all relevant items as arguments, imposing a floor "
 "beneath which we could not decrease lexical boilerplate."
 msgstr ""
+"Rust のマクロは、`impl` を定義する場合など、既存の型やトレイトを参照するため"
+"の略記としてよく使われます。この状況で衛生的なマクロであれば、関連するすべて"
+"のアイテムを常に引数として受け取る必要があり、レキシカルなボイラープレートを"
+"それ以上減らせない下限が生じてしまいます。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
@@ -19402,10 +19461,13 @@ msgid ""
 "for any internal operations that a macro may want to perform. Luckily for "
 "us, Rust does provide a solution for hygienic references to items."
 msgstr ""
+"一方で、衛生性は信頼性の高いコードを書くのに役立つため、マクロが行いたいあら"
+"ゆる内部処理にとって望ましいものです。幸いなことに、Rust にはアイテムを衛生的"
+"に参照するための解決策が用意されています。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid "Example: Non-Hygienic Paths"
-msgstr ""
+msgstr "例: 非衛生的なパス"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
@@ -19413,14 +19475,17 @@ msgid ""
 "\"print\"\n"
 "// function when invoked in different contexts.\n"
 msgstr ""
+"// アイテムの参照は衛生的ではない！ このマクロは、異なるコンテキストで呼び出"
+"されると\n"
+"// 別の \"print\" 関数を参照する可能性がある。\n"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid "\"::a::print()\""
-msgstr ""
+msgstr "\"::a::print()\""
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid "\"::print()\""
-msgstr ""
+msgstr "\"::print()\""
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
@@ -19428,6 +19493,9 @@ msgid ""
 "depending on the calling context. This could be useful as mere shorthand, "
 "but is not robustly useful for referring to one particular item."
 msgstr ""
+"`call_print` マクロの 2 つの展開は、呼び出し側のコンテキストに応じて異なるア"
+"イテムを参照します。これは単なる略記としては便利かもしれませんが、特定の 1 つ"
+"のアイテムを参照する手段としては堅牢ではありません。"
 
 #: src/macros/hygiene/rust-macro-hygiene.md
 msgid ""
@@ -19436,40 +19504,53 @@ msgid ""
 "different syntax context than a variable of the same name defined outside, "
 "which prevents collisions."
 msgstr ""
+"ローカル変数に衛生性を強制するために、コンパイラは「構文コンテキスト」を追跡"
+"していることを説明します。マクロ内で定義されたローカル変数は、外部で定義され"
+"た同名の変数とは異なる構文コンテキストを持つため、衝突が防がれます。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "**Procedural macros** are far more powerful than declarative macros. Instead "
 "of matching syntax templates, they are literal compiler plugins:"
 msgstr ""
+"**手続き型マクロ**は、宣言的マクロよりもはるかに強力です。構文テンプレートに"
+"マッチさせるのではなく、文字どおりのコンパイラ プラグインとして動作します。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "They are implemented as functions that receive one or two **token streams** "
 "and return a **token stream**."
 msgstr ""
+"1 つまたは 2 つの**トークン ストリーム**を受け取り、**トークン ストリーム**を"
+"返す関数として実装されます。"
 
 #: src/macros/proc-macros/welcome.md
 msgid "They are written in standard, fully featured Rust."
-msgstr ""
+msgstr "標準的な、すべての機能を備えた Rust で記述されます。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "They have complete programmatic access to the incoming token stream, "
 "allowing you to parse, modify, or generate complex code structures."
 msgstr ""
+"入力されたトークン ストリームにプログラムから完全にアクセスできるため、複雑な"
+"コード構造を解析、変更、生成できます。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "They require a dedicated library crate configured with `proc-macro = true` "
 "in its `Cargo.toml`."
 msgstr ""
+"`Cargo.toml` で `proc-macro = true` を設定した専用のライブラリ クレートが必要"
+"です。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "We will explore how procedural macros are defined, how they compile, and how "
 "to write them."
 msgstr ""
+"手続き型マクロがどのように定義され、どのようにコンパイルされるのか、またどの"
+"ように記述するのかを見ていきます。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
@@ -19477,6 +19558,8 @@ msgid ""
 "execute standard Rust procedures (functions) to transform code at compile "
 "time."
 msgstr ""
+"手続き型マクロが「手続き型」と呼ばれるのは、コンパイル時に標準的な Rust の手"
+"続き（関数）を実行してコードを変換するためであることを説明します。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
@@ -19484,27 +19567,32 @@ msgid ""
 "compiler during build time, they have a heavier impact on compilation speed "
 "compared to declarative macros."
 msgstr ""
+"手続き型マクロはライブラリとしてコンパイルされ、ビルド時にコンパイラによって"
+"読み込まれるため、宣言的マクロに比べてコンパイル速度への影響が大きいことを強"
+"調してください。"
 
 #: src/macros/proc-macros/welcome.md
 msgid ""
 "This slide serves as a transition into the detailed mechanics of procedural "
 "macros."
 msgstr ""
+"このスライドは、手続き型マクロの詳しい仕組みへの導入の役割を果たします。"
 
 #: src/macros/proc-macros/basics.md
 msgid ""
 "To write a procedural macro, you must define it in a separate library crate "
 "dedicated solely to macros."
 msgstr ""
+"手続き型マクロを記述するには、マクロ専用の別のライブラリ クレートで定義する必"
+"要があります。"
 
 #: src/macros/proc-macros/basics.md
-#, fuzzy
 msgid "Cargo.toml configuration"
-msgstr "Cargoとのインテグレーション"
+msgstr "Cargo.toml の設定"
 
 #: src/macros/proc-macros/basics.md
 msgid "Compiler Plugin Architecture"
-msgstr ""
+msgstr "コンパイラ プラグインのアーキテクチャ"
 
 #: src/macros/proc-macros/basics.md
 msgid ""
@@ -19512,6 +19600,9 @@ msgid ""
 "library. The compiler loads this library and runs the macro functions during "
 "the compilation of the consuming crate."
 msgstr ""
+"**ビルド時の実行:** マクロ クレートは、まず動的ライブラリとしてコンパイルされ"
+"ます。コンパイラはこのライブラリを読み込み、それを使用するクレートのコンパイ"
+"ル中にマクロ関数を実行します。"
 
 #: src/macros/proc-macros/basics.md
 msgid ""
@@ -19520,6 +19611,9 @@ msgid ""
 "helper libraries) are **build-time dependencies**, and are not compiled into "
 "the final client binary."
 msgstr ""
+"**依存関係の分離:** マクロ関数はコンパイル中に実行されるため、マクロ クレート"
+"がインポートする依存関係（解析用のヘルパー ライブラリなど）は**ビルド時の依存"
+"関係**となり、最終的なクライアントのバイナリにはコンパイルされません。"
 
 #: src/macros/proc-macros/basics.md
 msgid ""
@@ -19527,6 +19621,9 @@ msgid ""
 "mixed into standard library crates. If you try to define a procedural macro "
 "in a standard crate, the compiler will emit a compile-time error."
 msgstr ""
+"マクロのコードはコンパイラの _内部_ で実行されるため、通常のライブラリ クレー"
+"トに混在させることはできないことを説明します。通常のクレートで手続き型マクロ"
+"を定義しようとすると、コンパイラはコンパイル時エラーを出力します。"
 
 #: src/macros/proc-macros/basics.md
 msgid ""
@@ -19535,6 +19632,10 @@ msgid ""
 "threading) to perform compile-time tasks, though doing so should be kept to "
 "a minimum to keep compiles fast and secure."
 msgstr ""
+"このアーキテクチャにより、手続き型マクロのロジックはコンパイル時の処理を行う"
+"ために Rust 標準ライブラリ全体（ファイルアクセス、ネットワーク、マルチスレッ"
+"ド）を活用できることが保証されている点を指摘してください。ただし、コンパイル"
+"を高速かつ安全に保つため、そのような処理は最小限にとどめるべきです。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
@@ -19542,39 +19643,49 @@ msgid ""
 "the caller, but their implementation is a Rust function decorated with the "
 "`#[proc_macro]` attribute:"
 msgstr ""
+"**関数形式の手続き型マクロ**は、呼び出し側からは宣言的マクロと同じように見"
+"え、同じように使えますが、その実装は `#[proc_macro]` 属性が付与された Rust の"
+"関数です。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
 "// Process input tokens and return output tokens...\n"
 "    \"42\""
 msgstr ""
+"// 入力トークンを処理して出力トークンを返す...\n"
+"    \"42\""
 
 #: src/macros/proc-macros/function-like.md
-#, fuzzy
 msgid "Key properties:"
-msgstr "要点："
+msgstr "主な特性:"
 
 #: src/macros/proc-macros/function-like.md
 msgid "**Declaration:** Decorated with `#[proc_macro]`."
-msgstr ""
+msgstr "**宣言:** `#[proc_macro]` を付与します。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
 "**Function Signature:** Must accept a single `TokenStream` (the tokens "
 "inside the brackets of the callsite) and return a `TokenStream`."
 msgstr ""
+"**関数シグネチャ:** 単一の `TokenStream`（呼び出し箇所の括弧内のトークン）を"
+"受け取り、`TokenStream` を返す必要があります。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
 "**Flexible Invocation:** Like other function-like macros, callers can invoke "
 "them with any kind of brackets."
 msgstr ""
+"**柔軟な呼び出し:** 他の関数形式のマクロと同様に、呼び出し側はどの種類の括弧"
+"でも呼び出せます。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
 "Note that the `input` TokenStream contains only the tokens _inside_ the "
 "brackets, not the macro name or the exclamation mark."
 msgstr ""
+"`input` の TokenStream には括弧の _内側_ のトークンのみが含まれ、マクロ名や感"
+"嘆符は含まれないことに注意してください。"
 
 #: src/macros/proc-macros/function-like.md
 msgid ""
@@ -19582,10 +19693,13 @@ msgid ""
 "parse complex custom DSLs that cannot be expressed easily with declarative "
 "`macro_rules!` pattern-matching."
 msgstr ""
+"関数形式の手続き型マクロは、宣言的な `macro_rules!` のパターンマッチングでは"
+"簡単に表現できない複雑なカスタム DSL を解析する必要がある場合に役立つことを強"
+"調してください。"
 
 #: src/macros/proc-macros/function-like.md
 msgid "Mention that they may expand to expressions, statements, or items."
-msgstr ""
+msgstr "式、文、アイテムのいずれにも展開できることに言及してください。"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
@@ -19594,10 +19708,13 @@ msgid ""
 "of a type definition and return a token stream containing additional "
 "implementations:"
 msgstr ""
+"**導出（derive）手続き型マクロ**には `#[proc_macro_derive(TraitName)]` 属性を"
+"付与します。型定義のトークン ストリームを受け取り、追加の実装を含むトークン "
+"ストリームを返します。"
 
 #: src/macros/proc-macros/derive.md
 msgid "// Parse the struct/enum item, generate `MyDebug` implementation...\n"
-msgstr ""
+msgstr "// 構造体 / 列挙型のアイテムを解析し、`MyDebug` の実装を生成する...\n"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
@@ -19605,6 +19722,8 @@ msgid ""
 "type definition in the same scope. It does not replace the type definition "
 "itself."
 msgstr ""
+"**追加的な出力:** 返されたトークン ストリームは、型定義と同じスコープで型定義"
+"とともにコンパイルされます。型定義そのものを置き換えるわけではありません。"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
@@ -19612,12 +19731,17 @@ msgid ""
 "that can be used on struct fields or enum variants, configured in the derive "
 "declaration: `#[proc_macro_derive(MyTrait, attributes(my_helper))]`"
 msgstr ""
+"**ヘルパー属性:** 導出マクロは、構造体のフィールドや列挙型のバリアントで使用"
+"できる任意のヘルパー属性を宣言できます。これは derive の宣言で設定します: "
+"`#[proc_macro_derive(MyTrait, attributes(my_helper))]`"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
 "The `item` TokenStream represents the entire struct, enum, or union "
 "definition, including its attributes, generic parameters, braces, and fields."
 msgstr ""
+"`item` の TokenStream は、属性、ジェネリック パラメータ、波括弧、フィールドを"
+"含む、構造体、列挙型、または共用体の定義全体を表します。"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
@@ -19625,6 +19749,9 @@ msgid ""
 "to let users customize the code generation (e.g., `#[my_helper(rename = "
 "\"field\")]`)."
 msgstr ""
+"ヘルパー属性について説明します。ヘルパー属性は導出マクロによってマッチされ、"
+"ユーザーがコード生成をカスタマイズできるようにします（例: "
+"`#[my_helper(rename = \"field\")]`）。"
 
 #: src/macros/proc-macros/derive.md
 msgid ""
@@ -19634,6 +19761,11 @@ msgid ""
 "does `thiserror::Error`, for example); derive macros must be well behaved "
 "and document their effects."
 msgstr ""
+"`proc_macro_derive` の引数は、この導出マクロがどのようにインポートされ、起動"
+"されるかを決めますが、どのアイテムに対して `impl` ブロックを生成するかを実際"
+"に制約するものではないことに注意してください。導出マクロの中には複数のトレイ"
+"トを実装するものもあります（たとえば `thiserror::Error` がそうです）。導出マ"
+"クロは行儀よく振る舞い、その効果をドキュメント化しなければなりません。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
@@ -19641,6 +19773,8 @@ msgid ""
 "`#[proc_macro_attribute]` attribute. They allow you to define custom "
 "attributes that completely replace the items they are attached to:"
 msgstr ""
+"**属性手続き型マクロ**には `#[proc_macro_attribute]` 属性を付与します。これを"
+"使うと、付与先のアイテムを完全に置き換えるカスタム属性を定義できます。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
@@ -19648,28 +19782,37 @@ msgid ""
 "    // Process the attached function/item in `item`\n"
 "    // Return the new, fully rewritten item...\n"
 msgstr ""
+"// `attr` 内のパラメータ（例: GET, \"/path\"）を処理する\n"
+"    // `item` 内の付与された関数 / アイテムを処理する\n"
+"    // 完全に書き換えた新しいアイテムを返す...\n"
 
 #: src/macros/proc-macros/attr.md
 msgid "**Two Parameters:**"
-msgstr ""
+msgstr "**2 つのパラメータ:**"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
 "`attr`: The token stream containing any metadata parameters passed into the "
 "attribute (e.g., `GET, \"/\"` inside `#[route(GET, \"/\")]`)."
 msgstr ""
+"`attr`: 属性に渡されたメタデータ パラメータを含むトークン ストリーム（例: "
+"`#[route(GET, \"/\")]` 内の `GET, \"/\"`）。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
 "`item`: The token stream representing the entire attached item (e.g., a "
 "function or struct definition)."
 msgstr ""
+"`item`: 付与先のアイテム全体（関数や構造体の定義など）を表すトークン ストリー"
+"ム。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
 "**Replacement:** The returned token stream entirely replaces the input "
 "`item` in the AST."
 msgstr ""
+"**置き換え:** 返されたトークン ストリームは、AST 内の入力 `item` を完全に置き"
+"換えます。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
@@ -19678,6 +19821,9 @@ msgid ""
 "auxiliary code) so that it remains visible to the rest of the program, "
 "unless your specific intention is to delete it!"
 msgstr ""
+"属性マクロは入力アイテムを完全に置き換えるため、削除することが特に意図でない"
+"限り、プログラムの他の部分から引き続き見えるように、書き換えたアイテムを（生"
+"成した補助コードとともに）必ず出力する必要があることを説明します。"
 
 #: src/macros/proc-macros/attr.md
 msgid ""
@@ -19685,6 +19831,9 @@ msgid ""
 "to register route functions into global dispatch tables, or rewrite "
 "signatures for dependency injection."
 msgstr ""
+"人気のあるライブラリ（Axum や Rocket など）が、属性マクロを使ってルート関数を"
+"グローバルなディスパッチ テーブルに登録したり、依存性注入のためにシグネチャを"
+"書き換えたりしていることについて説明します。"
 
 #: src/macros/proc-macros/errors.md
 msgid ""
@@ -19692,35 +19841,41 @@ msgid ""
 "reporting strategies do not apply. If a macro receives malformed input, it "
 "must signal the error to the compiler."
 msgstr ""
+"手続き型マクロはコンパイル中に実行されるため、標準的な実行時のエラー報告の方"
+"法は適用されません。マクロが不正な形式の入力を受け取った場合は、そのエラーを"
+"コンパイラに通知する必要があります。"
 
 #: src/macros/proc-macros/errors.md
 msgid "There are two main ways to report errors in procedural macros:"
-msgstr ""
+msgstr "手続き型マクロでエラーを報告する主な方法は 2 つあります。"
 
 #: src/macros/proc-macros/errors.md
 msgid "1. Panicking"
-msgstr ""
+msgstr "1. パニックする"
 
 #: src/macros/proc-macros/errors.md
 msgid ""
 "If your macro code panics, the compiler will catch the panic, halt "
 "compilation, and print the panic message as a compiler error:"
 msgstr ""
+"マクロのコードがパニックすると、コンパイラはそのパニックを捕捉し、コンパイル"
+"を停止して、パニック メッセージをコンパイラ エラーとして出力します。"
 
 #: src/macros/proc-macros/errors.md
-#, fuzzy
 msgid "\"Invalid struct name\""
-msgstr "\"Invalid varint\""
+msgstr "\"Invalid struct name\""
 
 #: src/macros/proc-macros/errors.md
 msgid ""
 "This may occur by default if there are any bugs or programming errors in "
 "your procedural macro."
 msgstr ""
+"これは、手続き型マクロにバグやプログラミングの誤りがある場合に、デフォルトで"
+"発生することがあります。"
 
 #: src/macros/proc-macros/errors.md
 msgid "2. Emitting `compile_error!` (Preferred)"
-msgstr ""
+msgstr "2. `compile_error!` を出力する（推奨）"
 
 #: src/macros/proc-macros/errors.md
 msgid ""
@@ -19728,19 +19883,21 @@ msgid ""
 "the built-in `compile_error!` macro. This allows the compiler to highlight "
 "the exact span where the error occurred:"
 msgstr ""
+"より親切な方法は、組み込みの `compile_error!` マクロの呼び出しを含む "
+"`TokenStream` を返すことです。これにより、コンパイラはエラーが発生した正確な"
+"スパンをハイライト表示できます。"
 
 #: src/macros/proc-macros/errors.md
 msgid "// Returning an explicit compile error TokenStream:\n"
-msgstr ""
+msgstr "// 明示的なコンパイル エラーの TokenStream を返す:\n"
 
 #: src/macros/proc-macros/errors.md
 msgid "\"Expected a valid identifier\""
-msgstr ""
+msgstr "\"Expected a valid identifier\""
 
 #: src/macros/proc-macros/errors.md
-#, fuzzy
 msgid "// Generates compile_error!(\"...\")\n"
-msgstr "優秀なコンパイルエラー。"
+msgstr "// compile_error!(\"...\") を生成する\n"
 
 #: src/macros/proc-macros/errors.md
 msgid ""
@@ -19749,6 +19906,9 @@ msgid ""
 "a mistake (the error is tracked to the macro definition site rather than the "
 "particular call site)."
 msgstr ""
+"パニックは簡単ですが、開発者体験はひどいものになることを説明します。コンパイ"
+"ル全体が停止し、開発者がどこで誤りを犯したのかがわかりません（エラーは特定の"
+"呼び出し箇所ではなく、マクロの定義箇所に結び付けられます）。"
 
 #: src/macros/proc-macros/errors.md
 msgid ""
@@ -19757,6 +19917,10 @@ msgid ""
 "`Span` (the location of the bad token), which allows IDEs and compiler error "
 "messages to draw a red squiggly line directly under the offending code."
 msgstr ""
+"`compile_error!` を出力するのが、ユーザー入力の検証を扱う標準的で慣用的な方法"
+"であることを強調してください。エラー メッセージは特定の `Span`（不正なトーク"
+"ンの位置）に関連付けられるため、IDE やコンパイラのエラー メッセージで問題のあ"
+"るコードの真下に赤い波線を引くことができます。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
@@ -19764,6 +19928,9 @@ msgid ""
 "rely heavily on procedural macros to provide elegant, declarative, and type-"
 "safe APIs:"
 msgstr ""
+"Rust エコシステムで最も人気があり基盤となっているライブラリの多くは、洗練され"
+"た宣言的かつ型安全な API を提供するために、手続き型マクロに大きく依存していま"
+"す。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
@@ -19771,24 +19938,33 @@ msgid ""
 "code to convert Rust types to/from JSON, YAML, or binary formats based on "
 "field names and structural nesting."
 msgstr ""
+"**Serde（`#[derive(Serialize, Deserialize)]`）:** フィールド名と構造の入れ子"
+"に基づいて、Rust の型を JSON、YAML、またはバイナリ形式との間で変換するコード"
+"を自動生成します。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
 "**Tokio (`#[tokio::main]`):** Sets up runtime environments, wrapping "
 "standard main entry points asynchronously."
 msgstr ""
+"**Tokio（`#[tokio::main]`）:** ランタイム環境をセットアップし、通常の main エ"
+"ントリポイントを非同期にラップします。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
 "**Clap (`#[derive(Parser)]`):** Automatically builds complete, robust CLI "
 "command-line argument parsers based on struct declarations and doc comments."
 msgstr ""
+"**Clap（`#[derive(Parser)]`）:** 構造体の宣言とドキュメント コメントに基づい"
+"て、完全で堅牢な CLI コマンドライン引数パーサーを自動的に構築します。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
 "**SQLx (`query!`):** Validates SQL query strings against a live database at "
 "build time, converting database schemas directly to static Rust types."
 msgstr ""
+"**SQLx（`query!`）:** ビルド時に実際のデータベースに対して SQL クエリ文字列を"
+"検証し、データベース スキーマを直接静的な Rust の型に変換します。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
@@ -19796,12 +19972,16 @@ msgid ""
 "serialization, for example, requires explicit compiler support in many "
 "languages."
 msgstr ""
+"手続き型マクロが Rust の使いやすさに与える影響を強調してください。たとえばシ"
+"リアル化は、多くの言語では明示的なコンパイラのサポートを必要とします。"
 
 #: src/macros/proc-macros/in-the-wild.md
 msgid ""
 "SQLx's compile-time query verification is a prime example of compile-time "
 "code validation that is only possible with procedural macros."
 msgstr ""
+"SQLx のコンパイル時のクエリ検証は、手続き型マクロでのみ可能なコンパイル時の"
+"コード検証の代表的な例です。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
@@ -19809,38 +19989,50 @@ msgid ""
 "standard helper libraries designed specifically to parse and generate Rust "
 "code."
 msgstr ""
+"手続き型マクロを書くことは、基本的には、Rust コードを解析・生成するために特別"
+"に設計された標準的なヘルパー ライブラリの扱い方を学ぶことです。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
 "Because dealing with raw, low-level `TokenStream`s manually is tedious and "
 "difficult, we use a standard suite of specialized helper libraries:"
 msgstr ""
+"生の低レベルな `TokenStream` を手作業で扱うのは面倒で難しいため、標準的な一連"
+"の専用ヘルパー ライブラリを使用します。"
 
 #: src/macros/proc-macros/writing.md
 msgid "**`proc_macro`:** Provided by the compiler to interface token streams."
 msgstr ""
+"**`proc_macro`:** トークン ストリームとのインターフェースとしてコンパイラが提"
+"供します。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
 "**`proc_macro2`:** Wraps `proc_macro` to allow unit testing and out-of-"
 "compiler executions."
 msgstr ""
+"**`proc_macro2`:** `proc_macro` をラップし、ユニットテストやコンパイラ外での"
+"実行を可能にします。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
 "**`syn`:** A complete parser library that parses Rust token streams into "
 "structured Abstract Syntax Tree (AST) structures."
 msgstr ""
+"**`syn`:** Rust のトークン ストリームを構造化された抽象構文木（AST）の構造に"
+"解析する、完全なパーサー ライブラリです。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
 "**`quote`:** A templated code generation library that turns your Rust "
 "structures back into token streams."
 msgstr ""
+"**`quote`:** Rust の構造をトークン ストリームに戻す、テンプレート形式のコード"
+"生成ライブラリです。"
 
 #: src/macros/proc-macros/writing.md
 msgid "We will look at how each of these crates builds on top of one another."
-msgstr ""
+msgstr "これらの各クレートが互いにどのように積み重なっているかを見ていきます。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
@@ -19849,6 +20041,9 @@ msgid ""
 "(parsing), and generate a new string of tokens (transformation and code "
 "emission)."
 msgstr ""
+"手続き型マクロを書くことは、本質的には小さなコンパイラを書くことだと考えてみ"
+"てください。トークンの列を解析し（字句解析）、その構造をマッチングし（構文解"
+"析）、新しいトークンの列を生成します（変換とコード出力）。"
 
 #: src/macros/proc-macros/writing.md
 msgid ""
@@ -19856,16 +20051,21 @@ msgid ""
 "`syn` and `quote` crates do 95% of the heavy parsing and formatting work for "
 "you, allowing you to write more-readable macro code."
 msgstr ""
+"生のトークンを直接扱うことはほとんどないことを伝えて、受講者を安心させてくだ"
+"さい。`syn` クレートと `quote` クレートが、面倒な解析と整形の作業の 95% を代"
+"わりに行ってくれるため、より読みやすいマクロコードを書くことができます。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid ""
 "Here is how the standard dependency tree of a modern procedural macro crate "
 "is structured:"
 msgstr ""
+"最新の手続き型マクロ クレートの標準的な依存関係ツリーは、次のような構造になっ"
+"ています。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid "Each library builds on top of the layer below."
-msgstr ""
+msgstr "各ライブラリは、その下の層の上に構築されています。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid ""
@@ -19873,12 +20073,16 @@ msgid ""
 "simplifies implementation, making macro code safer and much easier to "
 "maintain."
 msgstr ""
+"`syn` と `quote` を使用するとマクロのビルド時間がわずかに増えますが、実装が大"
+"幅に簡素化され、マクロのコードがより安全になり、保守もずっと容易になります。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid ""
 "Explain that `proc_macro` is provided by the standard distribution, but is "
 "restricted to compiler execution."
 msgstr ""
+"`proc_macro` は標準のディストリビューションで提供されていますが、コンパイラ内"
+"での実行に限定されていることを説明します。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid ""
@@ -19886,12 +20090,17 @@ msgid ""
 "`proc_macro` types, but does not depend on the compiler's private internals. "
 "This is why testing libraries or other tools can work with token streams."
 msgstr ""
+"`proc_macro2` は、`proc_macro` のすべての型を再現した標準的なサードパーティ "
+"クレートですが、コンパイラの非公開の内部には依存していません。そのため、テス"
+"ト用ライブラリやその他のツールでトークン ストリームを扱うことができます。"
 
 #: src/macros/proc-macros/writing/deps.md
 msgid ""
 "`syn` and `quote` operate fully on `proc_macro2` types, allowing seamless "
 "integration."
 msgstr ""
+"`syn` と `quote` は完全に `proc_macro2` の型の上で動作するため、シームレスに"
+"統合できます。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid ""
@@ -19899,34 +20108,42 @@ msgid ""
 "for procedural macro manipulation. These are the actual types underlying the "
 "tokens we match in declarative macros:"
 msgstr ""
+"コンパイラが提供する `proc_macro` クレートは、手続き型マクロで操作するための"
+"主要な低レベルの型を定義しています。これらは、宣言的マクロでマッチさせるトー"
+"クンの実体となる型です。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid "**`TokenStream`:** An iterator over a sequence of `TokenTree` values."
-msgstr ""
+msgstr "**`TokenStream`:** `TokenTree` 値の並びに対するイテレータです。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid ""
 "**`TokenTree`:** An enum representing individual lexical units. It has four "
 "variants:"
 msgstr ""
+"**`TokenTree`:** 個々の字句単位を表す列挙型です。次の 4 つのバリアントがあり"
+"ます。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid "`Group`: A bracketed group of tokens (e.g., `(a + b)`, `{ ... }`)."
 msgstr ""
+"`Group`: 括弧で囲まれたトークンのグループ（例: `(a + b)`、`{ ... }`）。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid "`Ident`: An identifier or keyword (e.g., `foo`, `fn`, `let`, `false`)."
-msgstr ""
+msgstr "`Ident`: 識別子またはキーワード（例: `foo`、`fn`、`let`、`false`）。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid ""
 "`Punct`: A single punctuation character (e.g., `+`, `,`, `:`, but _not_ "
 "combined operators like `+=`, nor brackets)."
 msgstr ""
+"`Punct`: 単一の句読点文字（例: `+`、`,`、`:`。ただし `+=` のような複合演算子"
+"や括弧は _含まれません_）。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid "`Literal`: A literal value (e.g., `\"hello\"`, `42`, `3.14`)."
-msgstr ""
+msgstr "`Literal`: リテラル値（例: `\"hello\"`、`42`、`3.14`）。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid ""
@@ -19934,6 +20151,9 @@ msgid ""
 "to your `Cargo.toml` dependencies (just defining `proc-macro = true` makes "
 "it automatically available)."
 msgstr ""
+"`proc_macro` は組み込みのクレートなので、`Cargo.toml` の依存関係に追加する必"
+"要はないことを説明します（`proc-macro = true` を定義するだけで自動的に使用可"
+"能になります）。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro.md
 msgid ""
@@ -19942,6 +20162,10 @@ msgid ""
 "location (`Span`), which should be preserved so compiler error messages can "
 "point at the relevant code."
 msgstr ""
+"`TokenStream` は `to_string()` と `parse()` を使って文字列との間で相互に変換"
+"できますが、そうすると元のソースコード上の位置（`Span`）との関係が失われま"
+"す。コンパイラのエラー メッセージが該当するコードを指し示せるように、この関係"
+"は保持すべきです。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
@@ -19949,12 +20173,17 @@ msgid ""
 "internals, meaning its types cannot be instantiated or manipulated outside "
 "of the compiler's plugin environment."
 msgstr ""
+"組み込みの `proc_macro` クレートはコンパイラの内部と密接に結合しているため、"
+"その型をコンパイラのプラグイン環境の外でインスタンス化したり操作したりするこ"
+"とはできません。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
 "The **`proc_macro2`** library is a standard third-party crate that mirrors "
 "the entire API of the built-in `proc_macro` crate, with some key advantages:"
 msgstr ""
+"**`proc_macro2`** ライブラリは、組み込みの `proc_macro` クレートの API 全体を"
+"模倣した標準的なサードパーティ クレートであり、次のような主な利点があります。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
@@ -19962,6 +20191,9 @@ msgid ""
 "macros because `proc_macro2::TokenStream` can be instantiated and asserted "
 "on in standard library tests."
 msgstr ""
+"**ユニットテスト:** `proc_macro2::TokenStream` は通常のライブラリのテストでイ"
+"ンスタンス化してアサーションを行えるため、手続き型マクロに対して標準的なユ"
+"ニットテストを書くことができます。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
@@ -19969,18 +20201,25 @@ msgid ""
 "other execution contexts, such as build scripts (`build.rs`) or binary CLI "
 "tools."
 msgstr ""
+"**スタンドアロンでの実行:** ビルド スクリプト（`build.rs`）やバイナリの CLI "
+"ツールなど、他の実行コンテキストでもライブラリがトークン ストリームを扱えるよ"
+"うになります。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
 "**Seamless interoperability:** Types from `proc_macro2` are easily converted "
 "to and from standard `proc_macro` types using `.into()`."
 msgstr ""
+"**シームレスな相互運用性:** `proc_macro2` の型は、`.into()` を使って標準の "
+"`proc_macro` の型との間で簡単に変換できます。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
 "Mention that `proc_macro2` is an essential dependency for almost any "
 "procedural macro crate."
 msgstr ""
+"`proc_macro2` は、ほぼすべての手続き型マクロ クレートにとって不可欠な依存関係"
+"であることに言及してください。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
@@ -19988,12 +20227,17 @@ msgid ""
 "`proc_macro2` makes it possible to write unit tests that parse strings into "
 "token streams and assert on the outputs."
 msgstr ""
+"これは、マクロの開発ではテストが非常に重要であり、`proc_macro2` を使うと、文"
+"字列をトークン ストリームに解析して出力に対してアサーションを行うユニットテス"
+"トを書けるようになるからです。"
 
 #: src/macros/proc-macros/writing/deps/proc_macro2.md
 msgid ""
 "Popular libraries like `syn` and `quote` fully rely on `proc_macro2` types "
 "as their base inputs/outputs."
 msgstr ""
+"`syn` や `quote` などの人気のあるライブラリは、基本の入力 / 出力として "
+"`proc_macro2` の型に全面的に依存しています。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid ""
@@ -20002,14 +20246,19 @@ msgid ""
 "Rust syntax) and **`quote`** (which constructs `syn` values from literal "
 "code fragments) to do the heavy lifting of parsing and code generation."
 msgstr ""
+"`TokenStream` を直接扱うのは低レベルで面倒です。手続き型マクロを効果的に書く"
+"ために、作成者は多くの場合、**`syn`**（Rust 構文のパーサー）と **`quote`**"
+"（リテラルのコード断片から `syn` の値を構築するもの）に頼り、解析とコード生成"
+"の大変な作業を任せます。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid "The workflow of a typical procedural macro is:"
-msgstr ""
+msgstr "典型的な手続き型マクロのワークフローは次のとおりです。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid "**Input:** Accept a raw `proc_macro::TokenStream` from the compiler."
 msgstr ""
+"**入力:** コンパイラから生の `proc_macro::TokenStream` を受け取ります。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid ""
@@ -20017,28 +20266,38 @@ msgid ""
 "Abstract Syntax Tree (AST) representing Rust language items (e.g., structs, "
 "fields, functions)."
 msgstr ""
+"**解析（`syn`）:** トークン ストリームを、Rust 言語のアイテム（構造体、フィー"
+"ルド、関数など）を表す、構造化された型安全な抽象構文木（AST）に変換します。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid ""
 "**Processing:** Inspect the AST struct and perform your custom logic to "
 "decide what code needs to be generated."
 msgstr ""
+"**処理:** AST の構造体を調べ、独自のロジックを実行して、生成する必要がある"
+"コードを決定します。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid ""
 "**Generation (`quote`):** Use a templated macro to generate a new "
 "`proc_macro2::TokenStream`."
 msgstr ""
+"**生成（`quote`）:** テンプレート形式のマクロを使用して、新しい "
+"`proc_macro2::TokenStream` を生成します。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid ""
 "**Output:** Convert it back to `proc_macro::TokenStream` and return it to "
 "the compiler."
 msgstr ""
+"**出力:** それを `proc_macro::TokenStream` に変換し直し、コンパイラに返しま"
+"す。"
 
 #: src/macros/proc-macros/writing/deps/syn-quote.md
 msgid "We will look at how `syn` parses code and how `quote` generates code."
 msgstr ""
+"`syn` がどのようにコードを解析し、`quote` がどのようにコードを生成するのかを"
+"見ていきます。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid ""
@@ -20048,19 +20307,25 @@ msgid ""
 "straightforward as it mirrors the structure of Rust syntax itself. Here we "
 "illustrate the use of `syn` for a Derive macro:"
 msgstr ""
+"**`syn`** クレートは、生の `TokenStream` を、Rust コードのあらゆる要素を表現"
+"できる構造化された AST の型に解析する、完全で堅牢なパーサーを提供します。"
+"`syn` の API は広範ですが、Rust の構文そのものの構造を反映しているため、比較"
+"的わかりやすく感じられるはずです。ここでは、導出マクロでの `syn` の使い方を示"
+"します。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "// Parse raw tokens into a structured `DeriveInput` AST:\n"
-msgstr ""
+msgstr "// 生のトークンを構造化された `DeriveInput` AST に解析する:\n"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "// Inspect struct metadata:\n"
-msgstr ""
+msgstr "// 構造体のメタデータを調べる:\n"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid ""
 "**`DeriveInput`:** The standard AST structure for a struct, enum, or union."
 msgstr ""
+"**`DeriveInput`:** 構造体、列挙型、または共用体を表す標準的な AST 構造です。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid ""
@@ -20070,24 +20335,31 @@ msgid ""
 "type into which to parse the token stream after an `as` separator, notation "
 "that resembles a Rust cast."
 msgstr ""
+"**`parse_macro_input!`:** 入力のトークン ストリームを簡単に解析するために "
+"`syn` が提供する専用のマクロ ヘルパーです。入力の形式が不正な場合のコンパイル"
+"時の構文エラーを自動的に処理します。このマクロは、`as` という区切りの後に、"
+"トークン ストリームの解析先となる型の名前を受け取ります。この記法は Rust の"
+"キャストに似ています。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "Explore `DeriveInput`, which three main components:"
-msgstr ""
+msgstr "`DeriveInput` の 3 つの主要な構成要素を見ていきます。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "`ident`: The name of the struct/enum."
-msgstr ""
+msgstr "`ident`: 構造体 / 列挙型の名前。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "`generics`: Generic parameters, lifetemes, and constraints."
-msgstr ""
+msgstr "`generics`: ジェネリック パラメータ、ライフタイム、制約。"
 
 #: src/macros/proc-macros/writing/deps/syn-ast.md
 msgid ""
 "`data`: An enum containing `syn::DataStruct`, `syn::DataEnum`, or "
 "`syn::DataUnion`, which lets you iterate over variants and fields."
 msgstr ""
+"`data`: `syn::DataStruct`、`syn::DataEnum`、または `syn::DataUnion` を含む列"
+"挙型で、これを使ってバリアントやフィールドを反復処理できます。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
@@ -20095,35 +20367,42 @@ msgid ""
 "templating engine for generating Rust code. It lets you write standard Rust "
 "syntax and interpolate existing code from variables in scope:"
 msgstr ""
+"**`quote`** クレートは `quote!` マクロを提供します。これは Rust コードを生成"
+"するための強力なテンプレートエンジンです。通常の Rust 構文で記述し、スコープ"
+"内の変数にある既存のコードを埋め込むことができます。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid "// e.g. \"Student\"\n"
-msgstr ""
+msgstr "// 例: \"Student\"\n"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid "// Generate a TokenStream using standard Rust syntax as a template:\n"
 msgstr ""
+"// 通常の Rust 構文をテンプレートとして使い、TokenStream を生成します:\n"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
-#, fuzzy
 msgid "\"My name is {}\""
-msgstr "\"Woof, my name is {}!\""
+msgstr "\"My name is {}\""
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid "// Convert to proc_macro::TokenStream:\n"
-msgstr ""
+msgstr "// proc_macro::TokenStream に変換します:\n"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
 "**Interpolation:** Use `#var_name` to insert a variable (like an identifier, "
 "type, or other token stream) directly into the template."
 msgstr ""
+"**埋め込み（interpolation）:** `#var_name` を使うと、変数（識別子、型、その他"
+"のトークンストリームなど）をテンプレートに直接挿入できます。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
 "**Repetitions:** Use `#(#var_list),*` to expand a list of variables "
 "separated by commas, similar to how repetitions work in declarative macros."
 msgstr ""
+"**繰り返し:** `#(#var_list),*` を使うと、変数のリストをカンマ区切りで展開でき"
+"ます。これは宣言型マクロでの繰り返しの仕組みと似ています。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
@@ -20131,24 +20410,34 @@ msgid ""
 "at the end of our procedural macro function to convert it to a standard "
 "`proc_macro::TokenStream` for the compiler."
 msgstr ""
+"`quote!` が返すのは `proc_macro2::TokenStream` であることに注意してください。"
+"手続き型マクロ関数の最後で `.into()` を呼び出し、コンパイラ向けの標準の "
+"`proc_macro::TokenStream` に変換します。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
 "Highlight how clean this makes code generation. Instead of manually pushing "
 "string slices or tokens, you write literal Rust code blocks with templates."
 msgstr ""
+"これによってコード生成がいかにすっきりするかを強調してください。文字列スライ"
+"スやトークンを手作業で追加していく代わりに、テンプレート付きの Rust コードブ"
+"ロックをそのまま書けます。"
 
 #: src/macros/proc-macros/writing/deps/quote-macro.md
 msgid ""
 "Mention that repetition is often useful when iterating over all fields of a "
 "struct."
 msgstr ""
+"構造体のすべてのフィールドを反復処理する場合に、繰り返しがよく役立つことを説"
+"明してください。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
 "In this exercise, you will walk through the conceptual implementation of a "
 "custom **`Display` derive macro** using the `syn` and `quote` crates."
 msgstr ""
+"この演習では、`syn` クレートと `quote` クレートを使って、独自の **`Display` "
+"導出マクロ** の実装を概念的にたどります。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
@@ -20158,24 +20447,29 @@ msgid ""
 "them with `syn`, generates the output with `quote!`, and asserts that the "
 "generated code is correct."
 msgstr ""
+"ここでは別個の `proc-macro = true` クレートを用意せず、単一ファイルの環境で実"
+"行するため、通常の Rust 関数を書きます。この関数は、（`proc_macro2` と "
+"`quote!` を使って）模擬したトークンストリームを受け取り、`syn` でパースし、"
+"`quote!` で出力を生成し、生成されたコードが正しいことをアサートします。"
 
 #: src/macros/proc-macros/exercise.md
-#, fuzzy
 msgid "Your task:"
-msgstr "あなたのクレート"
+msgstr "課題:"
 
 #: src/macros/proc-macros/exercise.md
 msgid "Implement the `derive_display_impl` function to:"
-msgstr ""
+msgstr "`derive_display_impl` 関数を実装して、次のことを行ってください。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
 "Parse the incoming token stream `input` into a `syn::DeriveInput` struct."
 msgstr ""
+"受け取ったトークンストリーム `input` を `syn::DeriveInput` 構造体にパースす"
+"る。"
 
 #: src/macros/proc-macros/exercise.md
 msgid "Extract the name (identifier) of the struct."
-msgstr ""
+msgstr "構造体の名前（識別子）を取り出す。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
@@ -20183,19 +20477,22 @@ msgid ""
 "struct name, which formats the struct using its name, names of its fields, "
 "and their values. (e.g., printing `MyAwesomeType { a: 50, }`)."
 msgstr ""
+"その構造体名に対して `std::fmt::Display` を実装するトークンストリームを生成し"
+"て返す。この実装は、構造体の名前、フィールド名、フィールドの値を使って構造体"
+"をフォーマットします（例: `MyAwesomeType { a: 50, }` と出力する）。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
 "The names of the struct's fields can be obtained with the provided "
 "`struct_fields` function."
 msgstr ""
+"構造体のフィールド名は、用意されている `struct_fields` 関数で取得できます。"
 
 #: src/macros/proc-macros/exercise.md
 msgid "This will rely on a `Cargo.toml` resembling:"
-msgstr ""
+msgstr "これには次のような `Cargo.toml` が必要です。"
 
 #: src/macros/proc-macros/exercise.md
-#, fuzzy
 msgid ""
 "```toml\n"
 "[package]\n"
@@ -20216,22 +20513,24 @@ msgid ""
 msgstr ""
 "```toml\n"
 "[package]\n"
-"name = \"link-checker\"\n"
+"name = \"proc-macro-exercise\"\n"
 "version = \"0.1.0\"\n"
-"edition = \"2021\"\n"
+"edition = \"2024\"\n"
 "publish = false\n"
 "\n"
+"[[bin]]\n"
+"name = \"proc-macro-exercise\"\n"
+"path = \"exercise.rs\"\n"
+"\n"
 "[dependencies]\n"
-"reqwest = { version = \"0.11.12\", features = [\"blocking\", \"rustls-"
-"tls\"] }\n"
-"scraper = \"0.13.0\"\n"
-"thiserror = \"1.0.37\"\n"
+"proc-macro2 = \"1.0\"\n"
+"quote = \"1.0\"\n"
+"syn = \"2.0\"\n"
 "```"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"named field name\""
-msgstr "\"Invalid length\""
+msgstr "\"named field name\""
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
@@ -20239,122 +20538,123 @@ msgid ""
 "    // TODO: Extract the identifier of the struct.\n"
 "    // TODO: Generate the impl std::fmt::Display using quote!.\n"
 msgstr ""
+"// TODO: 入力の TokenStream を DeriveInput にパースします。\n"
+"    // TODO: 構造体の識別子を取り出します。\n"
+"    // TODO: quote! を使って impl std::fmt::Display を生成します。\n"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"Generated code:\\n{}\""
-msgstr "コードの生成"
+msgstr "\"Generated code:\\n{}\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid ""
 "// Check for patterns that should definitely be present in generated code.\n"
-msgstr ""
+msgstr "// 生成されたコードに必ず含まれるはずのパターンをチェックします。\n"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "\"impl std :: fmt :: Display for MyAwesomeType\""
-msgstr ""
+msgstr "\"impl std :: fmt :: Display for MyAwesomeType\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "\"\\\"MyAwesomeType\\\"\""
-msgstr ""
+msgstr "\"\\\"MyAwesomeType\\\"\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "\"self . field\""
-msgstr ""
+msgstr "\"self . field\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid ""
 "// Compile program using the impl to ensure generated code impls `Display`.\n"
 msgstr ""
+"// 生成されたコードが `Display` を実装していることを確かめるため、その impl "
+"を使うプログラムをコンパイルします。\n"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"{a}\""
-msgstr "\"a: {a}\""
+msgstr "\"{a}\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "\"rustc on generated code produced errors or warnings\""
-msgstr ""
+msgstr "\"rustc on generated code produced errors or warnings\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "// Invoke the rustc binary to compile generated code\n"
-msgstr ""
+msgstr "// rustc バイナリを呼び出して、生成されたコードをコンパイルします\n"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"rustc\""
-msgstr "\"rust\""
+msgstr "\"rustc\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "\"--verbose\""
-msgstr ""
+msgstr "\"--verbose\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"-\""
-msgstr "\"\""
+msgstr "\"-\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"Failed to spawn child process\""
-msgstr "\"failed to send response\""
+msgstr "\"Failed to spawn child process\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"Failed to open stdin\""
-msgstr "\"Failed to open {path}\""
+msgstr "\"Failed to open stdin\""
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "// Print the stderr retrieved from rustc\n"
-msgstr ""
+msgstr "// rustc から取得した stderr を出力します\n"
 
 #: src/macros/proc-macros/exercise.md src/macros/proc-macros/solution.md
 msgid "// Return error on non-empty stderr\n"
-msgstr ""
+msgstr "// stderr が空でなければエラーを返します\n"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
 "`parse2(input)` is the `proc_macro2` version of `parse_macro_input!`, which "
 "we can use for unit testing or within normal Rust functions."
 msgstr ""
+"`parse2(input)` は `parse_macro_input!` の `proc_macro2` 版で、単体テストや通"
+"常の Rust 関数の中で使うことができます。"
 
 #: src/macros/proc-macros/exercise.md
 msgid ""
 "The return value of `derive_display_impl` is a `proc_macro2::TokenStream`, "
 "which can be converted to a string using `to_string()` for easy debugging."
 msgstr ""
+"`derive_display_impl` の戻り値は `proc_macro2::TokenStream` です。これは "
+"`to_string()` で文字列に変換できるので、簡単にデバッグできます。"
 
 #: src/macros/proc-macros/solution.md
 msgid ""
 "Here is the implementation of the `Display` derive macro using `syn` and "
 "`quote`:"
-msgstr ""
+msgstr "`syn` と `quote` を使った `Display` 導出マクロの実装は次のとおりです。"
 
 #: src/macros/proc-macros/solution.md
 msgid "// Parse the input TokenStream into DeriveInput\n"
-msgstr ""
+msgstr "// 入力の TokenStream を DeriveInput にパースします\n"
 
 #: src/macros/proc-macros/solution.md
 msgid "// Extract the identifier (name) of the struct\n"
-msgstr ""
+msgstr "// 構造体の識別子（名前）を取り出します\n"
 
 #: src/macros/proc-macros/solution.md
 msgid "// Generate the Display implementation using quote!\n"
-msgstr ""
+msgstr "// quote! を使って Display の実装を生成します\n"
 
 #: src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"{} {{\""
-msgstr "\"{} {}\""
+msgstr "\"{} {{\""
 
 #: src/macros/proc-macros/solution.md
-#, fuzzy
 msgid "\"{}: {}\""
-msgstr "\"{} {}\""
+msgstr "\"{}: {}\""
 
 #: src/macros/proc-macros/solution.md
 msgid "\"}}\""
-msgstr ""
+msgstr "\"}}\""
 
 #: src/android.md
 msgid "Welcome to Rust in Android"
