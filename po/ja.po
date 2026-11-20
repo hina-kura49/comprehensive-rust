@@ -38036,6 +38036,8 @@ msgid ""
 "execution and the results are only available once the whole transaction is "
 "finished."
 msgstr ""
+"動機: このデータベース API では、クエリは非同期実行のために開始され、結果はト"
+"ランザクション全体が完了して初めて利用可能になります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
@@ -38043,35 +38045,44 @@ msgid ""
 "results before they are made available. This API misuse could make the app "
 "read incomplete or incorrect data."
 msgstr ""
+"ユーザーはクエリがすぐに実行されると考え、結果が利用可能になる前に読み取ろう"
+"とするかもしれません。このような API の誤用により、アプリが不完全なデータや"
+"誤ったデータを読み取ってしまう可能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "While an obvious misunderstanding, situations such as this can happen in "
 "practice."
-msgstr ""
+msgstr "明らかな誤解ではありますが、このような状況は実際に起こりえます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "Ask: Has anyone misunderstood an API by not reading the docs for proper use?"
 msgstr ""
+"質問: 正しい使い方についてのドキュメントを読まずに、API を誤解したことがある"
+"人はいますか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "Expect: Examples of early-career or in-university mistakes and "
 "misunderstandings."
-msgstr ""
+msgstr "想定される回答: キャリアの初期や大学在学中の間違いや誤解の例。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "As an API grows in size and user base, a smaller percentage of users has "
 "deep knowledge of the system the API represents."
 msgstr ""
+"API の規模とユーザー層が大きくなるにつれて、その API が表すシステムについて深"
+"い知識を持つユーザーの割合は小さくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "This example shows how we can use Aliasing XOR Mutability to prevent this "
 "kind of misuse."
 msgstr ""
+"この例は、エイリアシング XOR 可変性を使って、この種の誤用を防ぐ方法を示してい"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
@@ -38079,12 +38090,17 @@ msgid ""
 "that the queries execute immediately rather than kicked off for asynchronous "
 "execution."
 msgstr ""
+"プログラマーが、クエリは非同期実行のために開始されるのではなくすぐに実行され"
+"ると思い込んでいると、コードが準備の整う前に結果を読み取ってしまう可能性があ"
+"ります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "The constructor for the `Transaction` type takes a mutable reference to the "
 "database connection, and stores it in the returned `Transaction` value."
 msgstr ""
+"`Transaction` 型のコンストラクタは、データベース接続への可変参照を受け取り、"
+"それを返される `Transaction` 値に格納します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
@@ -38092,6 +38108,9 @@ msgid ""
 "\"`Transaction` is outlived by the `DatabaseConnection` that was passed to "
 "it\" in this case."
 msgstr ""
+"ここでの明示的なライフタイムを怖がる必要はありません。この場合は単に"
+"「`Transaction` よりも、それに渡された `DatabaseConnection` のほうが長く存続"
+"する」という意味です。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
@@ -38099,18 +38118,24 @@ msgid ""
 "from other usage, such as starting further transactions or reading the "
 "results."
 msgstr ""
+"参照が可変なのは、さらに別のトランザクションを開始したり結果を読み取ったりと"
+"いった他の用途から、`DatabaseConnection` を完全に締め出すためです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "While a `Transaction` exists, we can't touch the `DatabaseConnection` "
 "variable that was created from it."
 msgstr ""
+"`Transaction` が存在する間は、その作成元である `DatabaseConnection` 変数に触"
+"れることができません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "Demonstrate: uncomment the `db.results()` line. Doing so will result in a "
 "compile error, as `db` is already mutably borrowed."
 msgstr ""
+"デモ: `db.results()` の行のコメントを外します。`db` はすでに可変で借用されて"
+"いるため、コンパイルエラーになります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
@@ -38118,26 +38143,33 @@ msgid ""
 "lets us enforce the invariant \"users can only look at query results if "
 "there is no active transactions.\""
 msgstr ""
+"注: クエリ結果を公開せずにゲッター関数の背後に置くことで、「アクティブなトラ"
+"ンザクションがない場合にのみ、ユーザーはクエリ結果を見ることができる」という"
+"不変条件を強制できます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "If the query results were placed in a public struct field, this invariant "
 "could be violated."
 msgstr ""
+"クエリ結果が公開の構造体フィールドに置かれていたら、この不変条件は破られる可"
+"能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid "PhantomData 1/4: De-duplicating Same Data & Semantics"
-msgstr ""
+msgstr "PhantomData 1/4: 同じデータとセマンティクスの重複を排除する"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid ""
 "The newtype pattern can sometimes come up against the DRY principle, how do "
 "we solve this?"
 msgstr ""
+"ニュータイプ パターンは DRY 原則とぶつかることがあります。これをどう解決すれ"
+"ばよいでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid "// And so on ...\n"
-msgstr ""
+msgstr "// 以下同様 ...\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid ""
@@ -38145,54 +38177,59 @@ msgid ""
 "but we're having to implement the same traits over and over again for the "
 "same data."
 msgstr ""
+"問題: ニュータイプ パターンを使って権限を区別したいのですが、同じデータに対し"
+"て同じトレイトを何度も実装しなければならなくなっています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid ""
 "Ask: Assume the details of each implementation here are the same between "
 "types, what are ways we can avoid repeating ourselves?"
 msgstr ""
+"質問: ここでの各実装の詳細が型の間で同じだと仮定すると、繰り返しを避けるには"
+"どのような方法があるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "Expect:"
-msgstr ""
+msgstr "想定される回答:"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid "Make this an enum, not distinct data types."
-msgstr ""
+msgstr "個別のデータ型ではなく列挙型にする。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid ""
 "Bundle the user ID with permission tokens like `struct Admin(u64, "
 "UserPermission, ModeratorPermission, AdminPermission);`"
 msgstr ""
+"`struct Admin(u64, UserPermission, ModeratorPermission, AdminPermission);` の"
+"ように、ユーザー ID を権限トークンとまとめる。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid "Adding a type parameter which encodes permissions."
-msgstr ""
+msgstr "権限をエンコードする型パラメータを追加する。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 msgid "Mentioning `PhantomData` ahead of schedule (it's in the title)."
-msgstr ""
+msgstr "予定より先に `PhantomData` に言及する（タイトルにあるため）。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "PhantomData 2/4: Type-level tagging"
-msgstr ""
+msgstr "PhantomData 2/4: 型レベルのタグ付け"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Let's solve the problem from the previous slide by adding a type parameter."
-msgstr ""
+msgstr "型パラメータを追加して、前のスライドの問題を解決しましょう。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "// use std::marker::PhantomData;\n"
-msgstr ""
+msgstr "// use std::marker::PhantomData;\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
-#, fuzzy
 msgid "// Admins are users\n"
-msgstr "// 枠線用に 4 つのパディングを追加します。\n"
+msgstr "// 管理者はユーザーでもある\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
@@ -38201,31 +38238,41 @@ msgid ""
 "// impl <T> Eq for UserTag<T> {/* ... */}\n"
 "// And so on ...\n"
 msgstr ""
+"// impl <T> Debug for UserTag<T> {/* ... */}\n"
+"// impl <T> PartialEq for UserTag<T> {/* ... */}\n"
+"// impl <T> Eq for UserTag<T> {/* ... */}\n"
+"// 以下同様 ...\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "/* All functionality for users and above */"
-msgstr ""
+msgstr "/* ユーザー以上の権限向けのすべての機能 */"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "/* All functionality for only admins */"
-msgstr ""
+msgstr "/* 管理者専用のすべての機能 */"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Here we're using a type parameter and gating permissions behind \"tag\" "
 "types that implement different permission traits."
 msgstr ""
+"ここでは型パラメータを使い、異なる権限トレイトを実装する「タグ」型によって権"
+"限を制限しています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Tag types, or marker types, are zero-sized types that have some semantic "
 "meaning to users and API designers."
 msgstr ""
+"タグ型（マーカー型）は、ユーザーや API 設計者にとって何らかの意味論的な意味を"
+"持つ、サイズがゼロの型です。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Ask: What issues does having it be an actual instance of that type pose?"
 msgstr ""
+"質問: それがその型の実際のインスタンスであることには、どのような問題がありま"
+"すか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
@@ -38233,24 +38280,30 @@ msgid ""
 "we're allocating more memory than we need to when all we care for is type "
 "information that is only relevant at compile-time."
 msgstr ""
+"回答: サイズがゼロの型（`()` や `struct MyTag;` など）でない場合、関心がある"
+"のはコンパイル時にのみ意味を持つ型情報だけなのに、必要以上のメモリを割り当て"
+"ることになります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "Demonstrate: remove the `tag` value entirely, then compile!"
-msgstr ""
+msgstr "デモ: `tag` の値を完全に削除してから、コンパイルしてみましょう。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "This won't compile, as there's an unused (phantom) type parameter."
 msgstr ""
+"未使用の（ファントム）型パラメータがあるため、これはコンパイルできません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "This is where `PhantomData` comes in!"
-msgstr ""
+msgstr "ここで `PhantomData` の出番です。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Demonstrate: Uncomment the `PhantomData` import, and make `ChatId<T>` the "
 "following:"
 msgstr ""
+"デモ: `PhantomData` のインポートのコメントを外し、`ChatId<T>` を次のようにし"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
@@ -38259,16 +38312,21 @@ msgid ""
 "PhantomData<UserTag> = PhantomData;` or with the `PhantomData::default()` "
 "implementation."
 msgstr ""
+"`PhantomData<T>` は型パラメータを持つ、サイズがゼロの型です。他の ZST と同様"
+"に、`let phantom: PhantomData<UserTag> = PhantomData;` や "
+"`PhantomData::default()` の実装を使ってその値を作成できます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
 "Demonstrate: implement `From<u64>` for `ChatId<T>`, emphasizing the "
 "construction of `PhantomData`"
 msgstr ""
+"デモ: `ChatId<T>` に対して `From<u64>` を実装し、`PhantomData` の作成を強調し"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid "// Or `PhantomData::default()`\n"
-msgstr ""
+msgstr "// または `PhantomData::default()`\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 msgid ""
@@ -38276,67 +38334,84 @@ msgid ""
 "the same structure but different methods, e.g., have `TaggedData<Start>` "
 "implement methods or trait implementations that `TaggedData<End>` doesn't."
 msgstr ""
+"`PhantomData` はタイプステート パターンの一部として使用でき、同じ構造を持ちな"
+"がら異なるメソッドを持つデータを実現できます。たとえば、`TaggedData<End>` に"
+"はないメソッドやトレイト実装を `TaggedData<Start>` に持たせることができます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "PhantomData 3/4: Lifetimes for External Resources"
-msgstr ""
+msgstr "PhantomData 3/4: 外部リソースのためのライフタイム"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "The invariants of external resources often match what we can do with "
 "lifetime rules."
 msgstr ""
+"外部リソースの不変条件は、多くの場合、ライフタイムのルールでできることと一致"
+"します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "/// Direct FFI to a database library in C.\n"
 "/// We got this API as is, we have no influence over it.\n"
 msgstr ""
+"/// C のデータベース ライブラリへの直接の FFI。\n"
+"/// この API はそのまま提供されたもので、私たちには変更できない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "// maximum 255 databases open at the same time\n"
-msgstr ""
+msgstr "// 同時に開けるデータベースは最大 255 個\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
-#, fuzzy
 msgid "// ... etc.\n"
-msgstr "// ...\n"
+msgstr "// ... など\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Remember the transaction API from the [Aliasing XOR Mutability](./aliasing-"
 "xor-mutability.md) example."
 msgstr ""
+"[エイリアシング XOR 可変性](./aliasing-xor-mutability.md) の例のトランザク"
+"ション API を思い出してください。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "We held onto a mutable reference to the database connection within the "
 "transaction type to lock out the database while a transaction is active."
 msgstr ""
+"トランザクションがアクティブな間はデータベースを締め出すために、トランザク"
+"ション型の中でデータベース接続への可変参照を保持していました。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "In this example, we want to implement a `Transaction` API on top of an "
 "external, non-Rust API."
 msgstr ""
+"この例では、Rust 以外の外部 API の上に `Transaction` API を実装したいと考えて"
+"います。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "We start by defining a `Transaction` type that holds onto `&mut "
 "DatabaseConnection`."
 msgstr ""
+"まず、`&mut DatabaseConnection` を保持する `Transaction` 型を定義します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Ask: What are the limits of this implementation? Assume the `u8` is accurate "
 "implementation-wise and enough information for us to use the external API."
 msgstr ""
+"質問: この実装の限界は何でしょうか？`u8` は実装上正確であり、外部 API を使用"
+"するのに十分な情報であると仮定します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Indirection takes up 7 bytes more than we need to on a 64-bit platform, as "
 "well as costing a pointer dereference at runtime."
 msgstr ""
+"間接参照は、64 ビット プラットフォームでは必要より 7 バイト多くのメモリを使"
+"い、さらに実行時にポインタの参照外しのコストもかかります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
@@ -38344,36 +38419,44 @@ msgid ""
 "created it, but we don't want the `Transaction` object to store a real "
 "reference."
 msgstr ""
+"問題: トランザクションに、それを作成したデータベース接続を借用させたいのです"
+"が、`Transaction` オブジェクトに実際の参照を格納させたくはありません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Ask: What happens when we remove the mutable reference in `Transaction` "
 "while keeping the lifetime parameter?"
 msgstr ""
+"質問: ライフタイム パラメータを残したまま、`Transaction` 内の可変参照を削除す"
+"るとどうなるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "Expect: Unused lifetime parameter!"
-msgstr ""
+msgstr "想定される回答: 未使用のライフタイム パラメータ。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Like with the type tagging from the previous slides, we can bring in "
 "`PhantomData` to capture this unused lifetime parameter for us."
 msgstr ""
+"前のスライドの型のタグ付けと同様に、`PhantomData` を導入して、この未使用のラ"
+"イフタイム パラメータを捕捉できます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "The difference is that we will need to use the lifetime alongside another "
 "type, but that other type does not matter too much."
 msgstr ""
+"違いは、ライフタイムを別の型と一緒に使う必要があることですが、その別の型はそ"
+"れほど重要ではありません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "Demonstrate: change `Transaction` to the following:"
-msgstr ""
+msgstr "デモ: `Transaction` を次のように変更します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid "Update the `DatabaseConnection::new_transaction()` method:"
-msgstr ""
+msgstr "`DatabaseConnection::new_transaction()` メソッドを更新します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
@@ -38381,18 +38464,23 @@ msgid ""
 "`DatabaseConnection` that created it, but with less runtime memory footprint "
 "that the store-a-reference version did."
 msgstr ""
+"これにより、作成元の `DatabaseConnection` に結び付けられた所有されたデータ"
+"ベース接続が得られますが、参照を格納するバージョンよりも実行時のメモリ使用量"
+"が少なくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "Because `PhantomData` is a zero-sized type (like `()` or `struct "
 "MyZeroSizedType;`), the size of `Transaction` is now the same as `u8`."
 msgstr ""
+"`PhantomData` はサイズがゼロの型（`()` や `struct MyZeroSizedType;` など）で"
+"あるため、`Transaction` のサイズは `u8` と同じになりました。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
 "The implementation that held onto a reference instead was as large as a "
 "`usize`."
-msgstr ""
+msgstr "代わりに参照を保持していた実装は、`usize` と同じ大きさでした。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
@@ -38403,6 +38491,11 @@ msgid ""
 "referential types while encoding lifetime & safety expectations in the "
 "relevant data types."
 msgstr ""
+"型と値の間の関係をこのようにエンコードする方法は、アンセーフと組み合わせると"
+"非常に強力です。ライフタイムをほぼ任意に操作できるようになるからです。これは"
+"危険でもありますが、外部の機械的に検証された証明などのツールと組み合わせれ"
+"ば、関連するデータ型にライフタイムと安全性の期待をエンコードしつつ、循環型や"
+"自己参照型を安全にエンコードできます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md
 msgid ""
@@ -38412,35 +38505,41 @@ msgid ""
 "are still ways to use escape hatches and then _show that the ways you used "
 "those escape hatches are consistent and safe._"
 msgstr ""
+"[GhostCell (2021)](https://plv.mpi-sws.org/rustbelt/ghostcell/) の論文とその"
+"[関連する実装](https://gitlab.mpi-sws.org/FP/ghostcell)は、この種の取り組みを"
+"よく示しています。借用チェッカーは制約が厳しいものの、抜け道を使ったうえで、_"
+"その抜け道の使い方が一貫していて安全であることを示す_ 方法はまだあります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "PhantomData 4/4: OwnedFd & BorrowedFd"
-msgstr ""
+msgstr "PhantomData 4/4: OwnedFd と BorrowedFd"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "`BorrowedFd` is a prime example of `PhantomData` in action."
-msgstr ""
+msgstr "`BorrowedFd` は `PhantomData` が実際に使われている代表的な例です。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "// Create a file with a raw syscall with write-only and create permissions.\n"
 msgstr ""
+"// 書き込み専用と作成の権限を指定して、生のシステムコールでファイルを作成す"
+"る。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
-#, fuzzy
 msgid "\"c_str.txt\""
-msgstr "\"diary.txt\""
+msgstr "\"c_str.txt\""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "// Pass the ownership of an integer file descriptor to an `OwnedFd`.\n"
 "    // `OwnedFd::drop()` closes the file descriptor.\n"
 msgstr ""
+"// 整数のファイル記述子の所有権を `OwnedFd` に渡す。\n"
+"    // `OwnedFd::drop()` はファイル記述子をクローズする。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
-#, fuzzy
 msgid "\"Could not open file with syscall!\""
-msgstr "\"Could not open {:?}\""
+msgstr "\"Could not open file with syscall!\""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
@@ -38448,24 +38547,29 @@ msgid ""
 "    // `BorrowedFd::drop()` does not close the file because it doesn't own "
 "it!\n"
 msgstr ""
+"// `OwnedFd` から `BorrowedFd` を作成する。\n"
+"    // `BorrowedFd::drop()` はファイルを所有していないので、ファイルをクロー"
+"ズしない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "// std::mem::drop(owned_fd); // ❌🔨\n"
-msgstr ""
+msgstr "// std::mem::drop(owned_fd); // ❌🔨\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "// owned_fd will be dropped here, and the file will be closed.\n"
-msgstr ""
+msgstr "// owned_fd はここでドロップされ、ファイルがクローズされる。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "A file descriptor represents a specific process's access to a file."
-msgstr ""
+msgstr "ファイル記述子は、特定のプロセスによるファイルへのアクセスを表します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "Reminder: Device and OS-specific features are exposed as if they were files "
 "on unix-style systems."
 msgstr ""
+"補足: Unix 系のシステムでは、デバイスや OS 固有の機能がファイルであるかのよう"
+"に公開されています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
@@ -38473,22 +38577,29 @@ msgid ""
 "borrowedfdfd) is an owned wrapper type for a file descriptor. It _owns_ the "
 "file descriptor, and closes it when dropped."
 msgstr ""
+"[`OwnedFd`](https://rust-lang.github.io/rfcs/3128-io-safety.html#ownedfd-and-"
+"borrowedfdfd) は、ファイル記述子を所有するラッパー型です。ファイル記述子を _"
+"所有_ し、ドロップされるとそれをクローズします。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "Note: We have our own implementation of it here, draw attention to the "
 "explicit `Drop` implementation."
 msgstr ""
+"注: ここでは独自の実装を用意しています。明示的な `Drop` 実装に注目させてくだ"
+"さい。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "`BorrowedFd` is its borrowed counterpart, it does not need to close the file "
 "when it is dropped."
 msgstr ""
+"`BorrowedFd` はその借用版で、ドロップされたときにファイルをクローズする必要は"
+"ありません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid "Note: We have not explicitly implemented `Drop` for `BorrowedFd`."
-msgstr ""
+msgstr "注: `BorrowedFd` に対しては `Drop` を明示的に実装していません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
@@ -38496,6 +38607,9 @@ msgid ""
 "invariant \"if this file descriptor exists, the OS file descriptor is still "
 "open even though it is not responsible for closing that file descriptor.\""
 msgstr ""
+"`BorrowedFd` は `PhantomData` で捕捉したライフタイムを使って、「このファイル"
+"記述子が存在する限り、OS のファイル記述子はまだ開いている。ただし、このファイ"
+"ル記述子はそれをクローズする責任を負わない」という不変条件を強制します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
@@ -38503,18 +38617,26 @@ msgid ""
 "value in your program that lasts as long as that specific `BorrowedFd` or "
 "outlives it (in this case an `OwnedFd`)."
 msgstr ""
+"`BorrowedFd` のライフタイムパラメータは、その特定の `BorrowedFd` と同じかそれ"
+"より長く存続する別の値（この場合は `OwnedFd`）がプログラム内に存在することを"
+"要求します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "Demonstrate: Uncomment the `std::mem::drop(owned_fd)` line and try to "
 "compile to show that `borrowed_fd` relies on the lifetime of `owned_fd`."
 msgstr ""
+"デモ: `std::mem::drop(owned_fd)` の行のコメントを外してコンパイルを試み、"
+"`borrowed_fd` が `owned_fd` のライフタイムに依存していることを示してくださ"
+"い。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
 "This has been encoded by the API designers to mean _that other value is what "
 "keeps the access to the file open_."
 msgstr ""
+"これは API の設計者によって、_その別の値こそがファイルへのアクセスを開いたま"
+"まにしているもの_ という意味としてエンコードされています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md
 msgid ""
@@ -38523,40 +38645,51 @@ msgid ""
 "worry about handling this correct file descriptor aliasing and closing logic "
 "themselves."
 msgstr ""
+"ある値が少なくとも別の値と同じ期間存続しなければならないというこの関係を "
+"Rust の借用チェッカーが強制するため、この API のユーザーは、ファイルディスク"
+"リプタのエイリアシングとクローズを正しく扱うロジックを自分で気にする必要があ"
+"りません。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "Types with private constructors can be used to act as proof of invariants."
 msgstr ""
+"プライベートなコンストラクタを持つ型は、不変条件の証明として機能させることが"
+"できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid "// A public type with private fields behind a module boundary.\n"
 msgstr ""
+"// モジュール境界の内側にプライベートなフィールドを持つパブリックな型。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid "\"We have a token, so we can make assumptions.\""
-msgstr ""
+msgstr "\"We have a token, so we can make assumptions.\""
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
-#, fuzzy
 msgid "// We have a token, so we can do this work.\n"
-msgstr "// ディレクトリの最後に到達しました。\n"
+msgstr "// トークンがあるので、この処理を行えます。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid "// We could not get a token, so we can't call `protected_work`.\n"
 msgstr ""
+"// トークンを取得できなかったので、`protected_work` は呼び出せません。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "Motivation: We want to be able to restrict user's access to functionality "
 "until they've performed a specific task."
 msgstr ""
+"動機: ユーザーが特定のタスクを実行するまで、機能へのアクセスを制限できるよう"
+"にしたいとします。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "We can do this by defining a type the API consumer cannot construct on their "
 "own, through the privacy rules of structs and modules."
 msgstr ""
+"これは、構造体とモジュールのプライバシールールを利用して、API の利用者が自分"
+"では構築できない型を定義することで実現できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
@@ -38564,16 +38697,20 @@ msgid ""
 "restrict construction unless a value is guaranteed to hold up an invariant "
 "at runtime."
 msgstr ""
+"[ニュータイプ](./newtype-pattern.md) も同様にプライバシールールを利用して、値"
+"が実行時に不変条件を満たすことが保証されている場合を除き、構築を制限します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid "Ask: What is the purpose of the `proof: ()` field here?"
-msgstr ""
+msgstr "質問: ここでの `proof: ()` フィールドの目的は何でしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "Without `proof: ()`, `Token` would have no private fields and users would be "
 "able to construct values of `Token` arbitrarily."
 msgstr ""
+"`proof: ()` がなければ、`Token` にはプライベートなフィールドがなくなり、ユー"
+"ザーは `Token` の値を任意に構築できてしまいます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
@@ -38582,6 +38719,9 @@ msgid ""
 "show how users would be able to construct `Token` if it had no private "
 "fields."
 msgstr ""
+"デモ: `main` でトークンを手動で構築しようとして、コンパイルエラーを示してくだ"
+"さい。デモ: `Token` から `proof` フィールドを削除して、プライベートなフィール"
+"ドがなければユーザーが `Token` を構築できてしまうことを示してください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
@@ -38589,48 +38729,62 @@ msgid ""
 "outside that module can't construct the value on their own as they don't "
 "have permission to access the `proof` field."
 msgstr ""
+"`Token` 型をモジュール境界（`token`）の内側に置くことで、そのモジュールの外部"
+"のユーザーは `proof` フィールドにアクセスする権限がないため、自分で値を構築で"
+"きなくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "The API developer gets to define methods and functions that produce these "
 "tokens. The user does not."
 msgstr ""
+"これらのトークンを生成するメソッドや関数を定義できるのは API の開発者です。"
+"ユーザーにはできません。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "The token becomes a proof that one has met the API developer's conditions of "
 "access for those tokens."
 msgstr ""
+"トークンは、そのトークンに対して API の開発者が定めたアクセス条件を満たしたこ"
+"との証明になります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "Ask: How might an API developer accidentally introduce ways to circumvent "
 "this?"
 msgstr ""
+"質問: API の開発者は、これを回避する方法をどのようにして誤って作り込んでしま"
+"う可能性があるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types.md
 msgid ""
 "Expect answers like \"serialization implementations\", other parser/\"from "
 "string\" implementations, or an implementation of `Default`."
 msgstr ""
+"「シリアライズの実装」、その他のパーサーや「文字列からの変換」の実装、あるい"
+"は `Default` の実装といった回答が想定されます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid "Token types work well as a proof of checked permission."
 msgstr ""
+"トークン型は、権限がチェック済みであることの証明としてうまく機能します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
 "// We don't have to check that we have permissions, because\n"
 "// the AdminToken argument is equivalent to such a check.\n"
 msgstr ""
+"// 権限があるかどうかをチェックする必要はありません。\n"
+"// AdminToken 引数がそのようなチェックと同等だからです。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid "\"CoolUser\""
-msgstr ""
+msgstr "\"CoolUser\""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid "\"Incorrect password! Could not prove privileges.\""
-msgstr ""
+msgstr "\"Incorrect password! Could not prove privileges.\""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
@@ -38639,6 +38793,9 @@ msgid ""
 "privileges are gained. The `AdminToken` type acts as \"proof of correct user "
 "privileges.\""
 msgstr ""
+"この例は、チャットクライアントでパスワードによって管理者権限を取得し、その権"
+"限を得たらユーザーにモデレーターのランクを与える処理をモデル化したものです。"
+"`AdminToken` 型は「正しいユーザー権限の証明」として機能します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
@@ -38646,17 +38803,22 @@ msgid ""
 "get a `AdminToken` to perform administrator actions within a specific "
 "environment (here, a chat client)."
 msgstr ""
+"ユーザーはコード内でパスワードを求められ、パスワードが正しければ、特定の環境"
+"（ここではチャットクライアント）内で管理者操作を行うための `AdminToken` を取"
+"得します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
 "Once the permissions are gained, we can call the `add_moderator` function."
-msgstr ""
+msgstr "権限を取得すると、`add_moderator` 関数を呼び出せるようになります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
 "We can't call that function without the token type, so by being able to call "
 "it at all all we can assume we have permissions."
 msgstr ""
+"トークン型がなければその関数は呼び出せないので、そもそも呼び出せるということ"
+"は、権限を持っていると見なせるということです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid ""
@@ -38664,16 +38826,20 @@ msgid ""
 "that the foundation of useful tokens is preventing their arbitrary "
 "construction."
 msgstr ""
+"デモ: もう一度 `main` で `AdminToken` を構築しようとして、有用なトークンの基"
+"礎は任意の構築を防ぐことにあると改めて示してください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
 "Sometimes, a token type needs additional data. A mutex guard is an example "
 "of a token that represents permission + data."
 msgstr ""
+"トークン型に追加のデータが必要な場合もあります。ミューテックスガードは、権限"
+"とデータの両方を表すトークンの一例です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid "// The acquired MutexGuard is proof of exclusive access.\n"
-msgstr ""
+msgstr "// 取得した MutexGuard は排他的アクセスの証明です。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
@@ -38681,12 +38847,17 @@ msgid ""
 "covered Mutexes earlier in this course already (See: RAII/Mutex), but here "
 "we're looking at `MutexGuard` specifically."
 msgstr ""
+"ミューテックスは、値への読み取り / 書き込みアクセスの相互排他を強制します。"
+"ミューテックスについてはこのコースですでに説明しました（RAII/Mutex を参照）"
+"が、ここでは特に `MutexGuard` に注目します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
 "`MutexGuard` is a value generated by a `Mutex` that proves you have read/"
 "write access at that point in time."
 msgstr ""
+"`MutexGuard` は `Mutex` によって生成される値で、その時点で読み取り / 書き込み"
+"アクセス権を持っていることを証明します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
@@ -38694,18 +38865,25 @@ msgid ""
 "with `Deref` and `DerefMut` implementations that give access to the data of "
 "`Mutex` while the underlying `Mutex` keeps that data private from the user."
 msgstr ""
+"`MutexGuard` は、自身を生成した `Mutex` への参照も保持しており、`Deref` と "
+"`DerefMut` の実装によって `Mutex` のデータへのアクセスを提供します。一方、内"
+"部の `Mutex` はそのデータをユーザーに対してプライベートに保ちます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
 "If `mutex.lock()` does not return a `MutexGuard`, you don't have permission "
 "to change the value within the mutex."
 msgstr ""
+"`mutex.lock()` が `MutexGuard` を返さなければ、ミューテックス内の値を変更する"
+"権限はありません。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
 "Not only do you have no permission, but you have no means to access the "
 "mutex data unless you gain a `MutexGuard`."
 msgstr ""
+"権限がないだけでなく、`MutexGuard` を取得しない限り、ミューテックスのデータに"
+"アクセスする手段もありません。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
@@ -38713,6 +38891,9 @@ msgid ""
 "to the data itself, acting only as a flag that a user must remember to check "
 "every time they read or manipulate data."
 msgstr ""
+"これは C++ とは対照的です。C++ では、ミューテックスやロックガードはデータ自体"
+"へのアクセスを制御せず、ユーザーがデータを読み取ったり操作したりするたびに"
+"チェックを忘れずに行わなければならないフラグとして機能するだけです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/mutex-guard.md
 msgid ""
@@ -38720,48 +38901,62 @@ msgid ""
 "change its value. Show how there's no deref implementation for it, and no "
 "other way to get to the data held by it other than getting a mutex guard."
 msgstr ""
+"デモ: `mutex` 変数を可変にしてから、参照外しによって値を変更しようとしてくだ"
+"さい。それに対する deref の実装がなく、ミューテックスガードを取得する以外に、"
+"保持されているデータにアクセスする方法がないことを示してください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "Variable-Specific Tokens (Branding 1/4)"
-msgstr ""
+msgstr "変数固有のトークン（ブランディング 1/4）"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "What if we want to tie a token to a specific variable?"
-msgstr ""
+msgstr "トークンを特定の変数に結び付けたい場合はどうでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "// Works fine!\n"
-msgstr ""
+msgstr "// 問題なく動作します！\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "// let data_2 = Bytes { bytes: vec![0, 1] };\n"
 "        // data_2.get_proven(&token_1); // Panics! Can we prevent this?\n"
 msgstr ""
+"// let data_2 = Bytes { bytes: vec![0, 1] };\n"
+"        // data_2.get_proven(&token_1); // パニックします！これを防げるでしょ"
+"うか？\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "What if we want to tie a token to a _specific variable_ in our code? Can we "
 "do this in Rust's type system?"
 msgstr ""
+"トークンをコード内の _特定の変数_ に結び付けたい場合はどうでしょうか？Rust の"
+"型システムでこれを実現できるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Motivation: We want to have a Token Type that represents a known, valid "
 "index into a byte array."
 msgstr ""
+"動機: バイト配列に対する、既知の有効なインデックスを表すトークン型が欲しいと"
+"します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Once we have these proven indexes we would be able to avoid bounds checks "
 "entirely, as the tokens would act as the _proof of an existing index_."
 msgstr ""
+"このような証明済みのインデックスがあれば、トークンが _インデックスが存在する"
+"ことの証明_ として機能するため、境界チェックを完全に回避できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Since the index is known to be valid, `get_proven()` can skip the bounds "
 "check."
 msgstr ""
+"インデックスが有効であることがわかっているので、`get_proven()` は境界チェック"
+"を省略できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
@@ -38769,42 +38964,54 @@ msgid ""
 "used on a different array. If an index is out of bounds in this case, it is "
 "undefined behavior."
 msgstr ""
+"この例では、ある配列の証明済みインデックスが別の配列で使われるのを防ぐものが"
+"何もありません。この場合にインデックスが範囲外であれば、未定義の動作になりま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "Demonstrate: Uncomment the `data_2.get_proven(&token_1);` line."
-msgstr ""
+msgstr "デモ: `data_2.get_proven(&token_1);` の行のコメントを外してください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "The code here panics! We want to prevent this \"crossover\" of token types "
 "for indexes at compile time."
 msgstr ""
+"ここのコードはパニックします！インデックスのトークン型のこのような「混同」"
+"を、コンパイル時に防ぎたいのです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "Ask: How might we try to do this?"
-msgstr ""
+msgstr "質問: これをどのように実現できるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Expect students to not reach a good implementation from this, but be willing "
 "to experiment and follow through on suggestions."
 msgstr ""
+"受講者がここから良い実装にたどり着くことは期待せず、試行錯誤して提案を最後ま"
+"で試してみる姿勢を求めてください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid "Ask: What are the alternatives, why are they not good enough?"
-msgstr ""
+msgstr "質問: 代替手段には何があり、なぜそれでは不十分なのでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Expect runtime checking of index bounds, especially as both `Vec::get` and "
 "`Bytes::get_index` already uses runtime checking."
 msgstr ""
+"インデックスの範囲を実行時にチェックするという回答が想定されます。特に、"
+"`Vec::get` と `Bytes::get_index` はどちらもすでに実行時チェックを使用していま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "Runtime bounds checking does not prevent the erroneous crossover in the "
 "first place, it only guarantees a panic."
 msgstr ""
+"実行時の境界チェックは、誤った混同をそもそも防ぐものではなく、パニックを保証"
+"するだけです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
@@ -38812,61 +39019,71 @@ msgid ""
 "is an advanced technique that expands applicability of token types to more "
 "API designs."
 msgstr ""
+"ここで行うようなトークンの関連付けはブランディングと呼ばれます。これは、トー"
+"クン型をより多くの API 設計に適用できるようにする高度な手法です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md
 msgid ""
 "[`GhostCell`](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf) is a "
 "prominent user of this, later slides will touch on it."
 msgstr ""
+"[`GhostCell`](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf) はこの手"
+"法を活用している代表的な例で、後のスライドで触れます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "`PhantomData` and Lifetime Subtyping (Branding 2/4)"
-msgstr ""
+msgstr "`PhantomData` とライフタイムのサブタイピング（ブランディング 2/4）"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "Idea:"
-msgstr ""
+msgstr "アイデア:"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "Use a lifetime as a unique brand for each token."
-msgstr ""
+msgstr "ライフタイムを各トークンに固有のブランドとして使用します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Make lifetimes sufficiently distinct so that they don't implicitly convert "
 "into each other."
-msgstr ""
+msgstr "ライフタイムを十分に区別して、互いに暗黙的に変換されないようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
-#, fuzzy
 msgid "// The main focus\n"
-msgstr "// ベースケース。\n"
+msgstr "// 主な焦点\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "// We want this to NOT compile\n"
-msgstr ""
+msgstr "// これがコンパイル「されない」ようにしたい\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "In Rust, lifetimes can have subtyping relations between one another."
 msgstr ""
+"Rust では、ライフタイム同士がサブタイピングの関係を持つことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "This kind of relation allows the compiler to determine if one lifetime "
 "outlives another."
 msgstr ""
+"この種の関係により、コンパイラはあるライフタイムが別のライフタイムより長く存"
+"続するかどうかを判断できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Determining if a lifetime outlives another also allows us to say _the "
 "shortest common lifetime is the one that ends first_."
 msgstr ""
+"あるライフタイムが別のライフタイムより長く存続するかどうかを判断できると、_共"
+"通の最短ライフタイムは先に終わる方である_ と言うこともできます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "This is useful in many cases, as it means two different lifetimes can be "
 "treated as if they were the same in the regions they do overlap."
 msgstr ""
+"これは多くの場合に便利です。2 つの異なるライフタイムを、それらが重なる領域で"
+"は同じものとして扱えるということだからです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -38874,41 +39091,52 @@ msgid ""
 "distinguish values so we say that a token only applies to a single variable "
 "without having to create a newtype for every single variable we declare."
 msgstr ""
+"通常はこれが望ましい動作です。しかしここでは、ライフタイムを値を区別する手段"
+"として使いたいのです。そうすれば、宣言するすべての変数に対してニュータイプを"
+"作成しなくても、トークンが 1 つの変数にのみ適用されると言えるようになります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "**Goal**: We want two lifetimes that the Rust compiler cannot determine if "
 "one outlives the other."
 msgstr ""
+"**目標**: 一方が他方より長く存続するかどうかを Rust コンパイラが判断できない "
+"2 つのライフタイムが欲しい。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "We are using `try_coerce_lifetimes` as a compile-time check to see if the "
 "lifetimes have a common shorter lifetime (AKA being subtyped)."
 msgstr ""
+"`try_coerce_lifetimes` は、ライフタイム同士に共通のより短いライフタイムがある"
+"か（つまりサブタイプ関係にあるか）を確認するためのコンパイル時チェックとして"
+"使用しています。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Note: This slide compiles, by the end of this slide it should only compile "
 "when `try_coerce_lifetimes` is commented out."
 msgstr ""
+"注: このスライドはコンパイルできますが、このスライドの終わりまでには、"
+"`try_coerce_lifetimes` をコメントアウトしたときにのみコンパイルできるようにす"
+"る必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
-#, fuzzy
 msgid "There are two important parts of this code:"
-msgstr "このメソッドで `B` を指定するには、次の 2 つの方法があります。"
+msgstr "このコードには重要な部分が 2 つあります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "The `impl for<'a>` bound on the closure passed to `lifetime_separator`."
 msgstr ""
+"`lifetime_separator` に渡されるクロージャに対する `impl for<'a>` 制約。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "The way lifetimes are used in the parameter for `PhantomData`."
-msgstr ""
+msgstr "`PhantomData` のパラメータでのライフタイムの使い方。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "`for<'a>` bound on a Closure"
-msgstr ""
+msgstr "クロージャに対する `for<'a>` 制約"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -38916,6 +39144,9 @@ msgid ""
 "to a function type and asking that the body of the function to work for all "
 "possible lifetimes."
 msgstr ""
+"`for<'a>` は、関数型にライフタイムのジェネリックパラメータを導入し、関数の本"
+"体があらゆるライフタイムに対して動作することを求める手段として使用していま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -38925,12 +39156,19 @@ msgid ""
 "its arguments are going to have. The caller is substituting in actual "
 "lifetime, the function itself cannot."
 msgstr ""
+"これにより、関数の引数のその特定のライフタイムについてコンパイラが仮定を置く"
+"能力の一部も取り除かれます。引数が実際に持つことになる「本当の」ライフタイム"
+"に関係なく、Rust の借用チェックのルールを満たさなければならないからです。実際"
+"のライフタイムを当てはめるのは呼び出し元であり、関数自身にはそれができませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "This is analogous to a forall (Ɐ) quantifier in mathematics, or the way we "
 "introduce `<T>` as type variables, but only for lifetimes in trait bounds."
 msgstr ""
+"これは数学における全称（Ɐ）量化子や、型変数として `<T>` を導入する方法に似て"
+"いますが、トレイト制約におけるライフタイムに対してのみ使われます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -38939,63 +39177,82 @@ msgid ""
 "U>(first: T, second: U)` with two arguments of the same type, the body of "
 "this function cannot determine if `T` and `U` are the same type."
 msgstr ""
+"型 `T` に対してジェネリックな関数を書くとき、関数の内部からその型を特定するこ"
+"とはできません。関数 `fn foo<T, U>(first: T, second: U)` を同じ型の 2 つの引"
+"数で呼び出したとしても、この関数の本体は `T` と `U` が同じ型かどうかを判断で"
+"きません。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "This also prevents _the API consumer_ from defining a lifetime themselves, "
 "which would allow them to circumvent the restrictions we want to impose."
 msgstr ""
+"これにより、_API の利用者_ が自分でライフタイムを定義することも防げます。それ"
+"ができてしまうと、課したい制限を回避されてしまいます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "PhantomData and Lifetime Variance"
-msgstr ""
+msgstr "PhantomData とライフタイムの変性"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "We already know `PhantomData`, which can introduce a formal no-op usage of "
 "an otherwise unused type or a lifetime parameter."
 msgstr ""
+"`PhantomData` についてはすでに学びました。これを使うと、本来使われていない型"
+"やライフタイムパラメータを、形式的に何もしない形で使用できます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "Ask: What can we do with `PhantomData`?"
-msgstr ""
+msgstr "質問: `PhantomData` で何ができるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Expect mentions of the Typestate pattern, tying together the lifetimes of "
 "owned values."
 msgstr ""
+"タイプステートパターンや、所有された値のライフタイムを結び付けることへの言及"
+"が想定されます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "Ask: In other languages, what is subtyping?"
-msgstr ""
+msgstr "質問: 他の言語では、サブタイピングとは何でしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Expect mentions of inheritance, being able to use a value of type `B` when a "
 "asked for a value of type `A` because `B` is a \"subtype\" of `A`."
 msgstr ""
+"継承への言及や、`B` が `A` の「サブタイプ」であるため、型 `A` の値が求められ"
+"るところで型 `B` の値を使用できる、といった回答が想定されます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid "Rust does have Subtyping! But only for lifetimes."
 msgstr ""
+"Rust にもサブタイピングはあります！ただし、ライフタイムに対してのみです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Ask: If one lifetime is a subtype of another lifetime, what might that mean?"
 msgstr ""
+"質問: あるライフタイムが別のライフタイムのサブタイプであるとは、どういう意味"
+"でしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "A lifetime is a \"subtype\" of another lifetime when it _outlives_ that "
 "other lifetime."
 msgstr ""
+"あるライフタイムが別のライフタイムより _長く存続する_ とき、そのライフタイム"
+"は別のライフタイムの「サブタイプ」です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "The way that lifetimes used by `PhantomData` behave depends not only on "
 "where the lifetime \"comes from\" but on how the reference is defined too."
 msgstr ""
+"`PhantomData` で使われるライフタイムの振る舞いは、そのライフタイムが「どこか"
+"ら来るか」だけでなく、参照がどのように定義されているかにも依存します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39003,6 +39260,9 @@ msgid ""
 "lang.org/stable/reference/subtyping.html#r-subtyping.variance) of the "
 "lifetime inside of `InvariantLifetime` is too lenient."
 msgstr ""
+"これがコンパイルできるのは、`InvariantLifetime` 内のライフタイムの [**変性**]"
+"(https://doc.rust-lang.org/stable/reference/subtyping.html#r-"
+"subtyping.variance) が緩すぎるためです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39010,18 +39270,25 @@ msgid ""
 "just treat it as a kind of ladder of restrictiveness on the ability of "
 "lifetimes to establish subtyping relations."
 msgstr ""
+"注: ここで受講者に変性を完全に理解してもらうことは期待しないでください。ライ"
+"フタイムがサブタイピングの関係を確立する能力に対する、制限の強さの段階のよう"
+"なものとして扱ってください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Ask: How can we make it more restrictive? How do we make a reference type "
 "more restrictive in Rust?"
 msgstr ""
+"質問: どうすればより制限を強くできるでしょうか？Rust で参照型の制限をより強く"
+"するにはどうすればよいでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Expect or demonstrate: Making it `&'id mut ()` instead. This will not be "
 "enough!"
 msgstr ""
+"想定される回答、またはデモ: 代わりに `&'id mut ()` にします。これでは不十分で"
+"す！"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39030,12 +39297,18 @@ msgid ""
 "inferred except on _identical lifetimes_. That is, the only subtype of `'a` "
 "the compiler can know is `'a` itself."
 msgstr ""
+"_同一のライフタイム_ 以外ではサブタイピングを推論できないような、ライフタイム"
+"に対する [**変性**](https://doc.rust-lang.org/stable/reference/"
+"subtyping.html#r-subtyping.variance) を使う必要があります。つまり、コンパイラ"
+"が知り得る `'a` のサブタイプは `'a` 自身だけ、という状態です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
 "Note: Again, do not try to get the whole class to understand variance. Treat "
 "it as a ladder of restrictiveness for now."
 msgstr ""
+"注: 繰り返しになりますが、クラス全体に変性を理解させようとしないでください。"
+"今のところは制限の強さの段階として扱ってください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39044,6 +39317,10 @@ msgid ""
 "(invariant in lifetime and type), and finally `*mut &'id ()` (invariant in "
 "lifetime but not type)."
 msgstr ""
+"デモ: `&'id ()`（ライフタイムと型について共変）、`&'id mut ()`（ライフタイム"
+"について共変、型について不変）、`*mut &'id mut ()`（ライフタイムと型について"
+"不変）、そして最後に `*mut &'id ()`（ライフタイムについて不変だが型については"
+"不変ではない）と順に変えていきます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39051,6 +39328,9 @@ msgid ""
 "candidates for how to bind lifetimes to `PhantomData` so they can't be "
 "compared to one another in this context."
 msgstr ""
+"最後の 2 つはコンパイルできないはずです。つまり、この文脈でライフタイム同士を"
+"比較できないように `PhantomData` にライフタイムを結び付ける方法の候補がようや"
+"く見つかったということです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39061,6 +39341,12 @@ msgid ""
 "ability subtype because it cannot reason about mutable raw pointers within "
 "the borrow checker."
 msgstr ""
+"理由: `*mut` は [可変の生ポインタ](https://doc.rust-lang.org/reference/types/"
+"pointer.html#r-type.pointer.raw) を意味します。Rust には可変ポインタがありま"
+"す！しかし、安全な Rust ではそれについて推論することはできません。これをライ"
+"フタイムを持つ参照への可変の生ポインタにすると、コンパイラのサブタイプ判定能"
+"力が妨げられます。借用チェッカーの中では可変の生ポインタについて推論できない"
+"からです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39069,6 +39355,9 @@ msgid ""
 "`PhantomData` that is restrictive enough to prevent this slide from "
 "compiling."
 msgstr ""
+"まとめ: このスライドがコンパイルできなくなるほど制限の強い変性を "
+"`PhantomData` 内のライフタイムに選ぶことで、コンパイラがライフタイム同士を"
+"「十分に似ている」と判断するのを防ぐ方法を紹介しました。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39076,6 +39365,9 @@ msgid ""
 "each other, but whose types are automatically made different from one "
 "another per-variable without much boilerplate."
 msgstr ""
+"つまり、同じスコープに共存できるものの、その型が変数ごとに自動的に互いに異な"
+"るものになる変数を、それほどボイラープレートを書かずに作成できるようになりま"
+"した。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md
 msgid ""
@@ -39083,26 +39375,29 @@ msgid ""
 "ranked trait bound**](https://doc.rust-lang.org/reference/subtyping.html?"
 "search=Hiher#r-subtype.higher-ranked)."
 msgstr ""
+"`for<'a>` 量化子は関数型専用ではありません。これは [**高階トレイト制約**]"
+"(https://doc.rust-lang.org/reference/subtyping.html?search=Hiher#r-"
+"subtype.higher-ranked) です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Implementing Branded Types (Branding 3/4)"
-msgstr ""
+msgstr "ブランド型の実装（ブランディング 3/4）"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "Constructing branded types is different to how we construct non-branded "
 "types."
-msgstr ""
+msgstr "ブランド型の構築方法は、ブランドのない型の構築方法とは異なります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "// The data we want to modify in this context.\n"
-msgstr ""
+msgstr "// このコンテキストで変更したいデータ。\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "// The function that uniquely brands the lifetime of a `Bytes`\n"
-msgstr ""
+msgstr "// `Bytes` のライフタイムに一意のブランドを付ける関数\n"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
@@ -39110,59 +39405,71 @@ msgid ""
 "those indexes to be usable by different variables of the same type. We also "
 "don't want those indexes to escape a scope."
 msgstr ""
+"動機: ある型に対する「証明済みインデックス」が欲しいのですが、それらのイン"
+"デックスが同じ型の別の変数で使えるようにはしたくありません。また、それらのイ"
+"ンデックスがスコープの外に出ることも避けたいのです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Our Branded Type will be `Bytes`: a byte array."
-msgstr ""
+msgstr "ブランド型は `Bytes`、つまりバイト配列です。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Our Branded Token will be `ProvenIndex`: an index known to be in range."
 msgstr ""
+"ブランドトークンは `ProvenIndex`、つまり範囲内にあることがわかっているイン"
+"デックスです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "There are several notable parts to this implementation:"
-msgstr ""
+msgstr "この実装には注目すべき点がいくつかあります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "`new` does not return a `Bytes`, instead asking for \"starting data\" and a "
 "use-once Closure that is passed a `Bytes` when it is called."
 msgstr ""
+"`new` は `Bytes` を返さず、代わりに「初期データ」と、呼び出し時に `Bytes` を"
+"渡される 1 回限りのクロージャを要求します。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "That `new` function has a `for<'a>` on its trait bound."
-msgstr ""
+msgstr "その `new` 関数のトレイト制約には `for<'a>` が付いています。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "We have both a getter for an index and a getter for a values with a proven "
 "index."
 msgstr ""
+"インデックスのゲッターと、証明済みインデックスで値を取得するゲッターの両方が"
+"あります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
-#, fuzzy
 msgid "Ask: Why does `new` not return a `Bytes`?"
-msgstr "なぜ`lock()`は`Result`を返すのでしょう？"
+msgstr "質問: なぜ `new` は `Bytes` を返さないのでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "Answer: Because we need `Bytes` to have a unique lifetime controlled by the "
 "API."
 msgstr ""
+"回答: `Bytes` に、API によって制御される一意のライフタイムを持たせる必要があ"
+"るからです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "Ask: So what if `new()` returned `Bytes`, what is the specific harm that it "
 "would cause?"
 msgstr ""
+"質問: では、`new()` が `Bytes` を返したとしたら、具体的にどのような害があるで"
+"しょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Answer: Think about the signature of that hypothetical `new()` method:"
-msgstr ""
+msgstr "回答: その仮想的な `new()` メソッドのシグネチャを考えてみてください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "`fn new<'a>() -> Bytes<'a> { ... }`"
-msgstr ""
+msgstr "`fn new<'a>() -> Bytes<'a> { ... }`"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
@@ -39170,19 +39477,24 @@ msgid ""
 "our ability to guarantee that the lifetimes between different instances of "
 "`Bytes` are unique and unable to be subtyped to one another."
 msgstr ""
+"これでは API のユーザーがライフタイム `'a` を選べてしまい、`Bytes` の異なるイ"
+"ンスタンス間のライフタイムが一意で、互いにサブタイプ関係を持てないことを保証"
+"できなくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Ask: Why do we need both a `get_index` and a `get_proven`?"
-msgstr ""
+msgstr "質問: なぜ `get_index` と `get_proven` の両方が必要なのでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "Expect \"Because we can't know if an index is occupied at compile time\""
 msgstr ""
+"「インデックスが使用されているかどうかはコンパイル時にはわからないから」とい"
+"う回答が想定されます。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid "Ask: Then what's the point of the proven indexes?"
-msgstr ""
+msgstr "質問: では、証明済みインデックスにはどのような意味があるのでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
@@ -39190,22 +39502,29 @@ msgid ""
 "occupied specific to individual variables, unable to erroneously be used on "
 "the wrong one."
 msgstr ""
+"回答: どのインデックスが使用されているかという知識を個々の変数に固有のものと"
+"して保ち、誤って別の変数に使われないようにしつつ、境界チェックを回避できるこ"
+"とです。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md
 msgid ""
 "Note: The focus is not on only on avoiding overuse of bounds checks, but "
 "also on preventing that \"cross over\" of indexes."
 msgstr ""
+"注: 重点は、境界チェックの使いすぎを避けることだけでなく、インデックスのその"
+"「混同」を防ぐことにもあります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "Branded Types in Action (Branding 4/4)"
-msgstr ""
+msgstr "ブランド型の実践（ブランディング 4/4）"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
 "// bytes_2.get_proven(&index_1); // ❌🔨\n"
 "            \"Computations done!\""
 msgstr ""
+"// bytes_2.get_proven(&index_1); // ❌🔨\n"
+"            \"Computations done!\""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "\"{result}\""
@@ -39216,46 +39535,56 @@ msgid ""
 "We now have the implementation ready, we can now write a program where token "
 "types that are proofs of existing indexes cannot be shared between variables."
 msgstr ""
+"実装の準備ができたので、既存のインデックスの証明であるトークン型を変数間で共"
+"有できないプログラムを書けるようになりました。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
 "Demonstration: Uncomment the `bytes_2.get_proven(&index_1);` line and show "
 "that it does not compile when we use indexes from different variables."
 msgstr ""
+"デモ: `bytes_2.get_proven(&index_1);` の行のコメントを外し、別の変数のイン"
+"デックスを使うとコンパイルできないことを示してください。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
 "Ask: What operations can we perform that we can guarantee would produce a "
 "proven index?"
 msgstr ""
+"質問: 証明済みインデックスを生成することが保証できる操作には、どのようなもの"
+"があるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "Expect a \"push\" implementation, suggested demo:"
-msgstr ""
+msgstr "「push」の実装が想定されます。デモの例:"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
 "Ask: Can we make this not just about a byte array, but as a general wrapper "
 "on `Vec<T>`?"
 msgstr ""
+"質問: これをバイト配列専用ではなく、`Vec<T>` の汎用的なラッパーにできるでしょ"
+"うか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "Trivial: Yes!"
-msgstr ""
+msgstr "簡単です。できます！"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "Maybe demonstrate: Generalising `Bytes<'id>` into `BrandedVec<'id, T>`"
-msgstr ""
+msgstr "可能であればデモ: `Bytes<'id>` を `BrandedVec<'id, T>` に一般化する"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid "Ask: What other areas could we use something like this?"
-msgstr ""
+msgstr "質問: このような仕組みは他にどのような分野で使えるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
 "The resulting token API is **highly restrictive**, but the things that it "
 "makes possible to prove as safe within the Rust type system are meaningful."
 msgstr ""
+"その結果得られるトークン API は **非常に制限が強い** ものですが、それによっ"
+"て Rust の型システム内で安全だと証明できるようになる事柄には意味があります。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
@@ -39265,6 +39594,11 @@ msgid ""
 "type to make sure cells can't \"escape\" a context where we know where "
 "operations similar to those shown in these examples are safe."
 msgstr ""
+"[GhostCell](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf) は、Rust で"
+"安全な循環データ構造（およびその他、以前は表現が難しかったデータ構造）を実現"
+"できる構造体です。これはこの種のトークン型を使用して、これらの例で示したよう"
+"な操作が安全であるとわかっているコンテキストから、セルが「逃げ出す」ことがな"
+"いようにしています。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
@@ -39273,6 +39607,10 @@ msgid ""
 "of this use case in more depth as a gentle introduction to how `GhostCell` "
 "itself is implemented and used in practice."
 msgstr ""
+"この「ブランド型」の一連のスライドは、論文にある `BrandedVec` の実装に基づい"
+"ています。論文では、このユースケースの実装の詳細の多くをより深く扱っており、"
+"`GhostCell` 自体がどのように実装され、実際にどのように使われるかへのやさしい"
+"入門となっています。"
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md
 msgid ""
@@ -39280,6 +39618,9 @@ msgid ""
 "that the things it allows within this kind of context (lifetime branding) "
 "are safe."
 msgstr ""
+"GhostCell は、この種のコンテキスト（ライフタイムのブランディング）内で許可し"
+"ている事柄が安全であることを証明するために、Rust の型システムの外部での形式的"
+"なチェックも用いています。"
 
 #: src/idiomatic/polymorphism.md
 msgid ""
