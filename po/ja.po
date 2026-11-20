@@ -1447,7 +1447,7 @@ msgstr "ドライバ"
 
 #: src/SUMMARY.md src/bare-metal/aps/safemmio/registers.md
 msgid "safe-mmio"
-msgstr ""
+msgstr "safe-mmio"
 
 #: src/SUMMARY.md src/error-handling/result.md src/bare-metal/aps/exceptions.md
 #: src/bare-metal/aps/aarch64-rt/exceptions.md
@@ -1455,9 +1455,8 @@ msgid "Exceptions"
 msgstr "例外"
 
 #: src/SUMMARY.md src/bare-metal/aps/aarch64-rt.md
-#, fuzzy
 msgid "aarch64-rt"
-msgstr "aarch64-paging"
+msgstr "aarch64-rt"
 
 #: src/SUMMARY.md
 msgid "Useful Crates"
@@ -25301,7 +25300,6 @@ msgid "Some useful crates for bare-metal Rust development."
 msgstr "ベアメタルRust開発に役立つクレートの紹介。"
 
 #: src/bare-metal.md
-#, fuzzy
 msgid ""
 "For the microcontroller part of the course we will use the [BBC micro:bit]"
 "(https://microbit.org/) v2 as an example. It's a [development board](https://"
@@ -25309,10 +25307,11 @@ msgid ""
 "with some LEDs and buttons, an I2C-connected accelerometer and compass, and "
 "an on-board SWD debugger."
 msgstr ""
-"マイクロコントローラ向けの学習では[BBC micro:bit](https://microbit.org/) v2を"
-"題材として使います。これは、Nordic nRF51822マイコンベースの[開発ボード]"
-"(https://tech.microbit.org/hardware/) で、いくつかのLEDやボタンスイッチ、I2C"
-"接続の加速度センサやコンパス、そしてオンボードSWDデバッガを搭載しています。"
+"講座のマイクロコントローラのパートでは、[BBC micro:bit](https://"
+"microbit.org/) v2 を例として使います。これは Nordic nRF52833 マイクロコント"
+"ローラをベースにした [開発ボード](https://tech.microbit.org/hardware/) で、い"
+"くつかの LED とボタン、I2C 接続の加速度センサとコンパス、そしてオンボード "
+"SWD デバッガを搭載しています。"
 
 #: src/bare-metal.md
 msgid ""
@@ -25335,6 +25334,10 @@ msgid ""
 "need to share the USB device with Linux, via `chrome://os-settings/crostini/"
 "sharedUsbDevices`."
 msgstr ""
+"デバイスが利用可能であれば、`lsusb` の出力に「NXP ARM mbed」と表示されるはず"
+"です。Chromebook 上の Linux 環境を使用している場合は、`chrome://os-settings/"
+"crostini/sharedUsbDevices` から USB デバイスを Linux と共有する必要がありま"
+"す。"
 
 #: src/bare-metal.md src/bare-metal/microcontrollers/debugging.md
 msgid "On MacOS:"
@@ -25491,11 +25494,9 @@ msgstr ""
 "lang.org/stable/std/alloc/trait.GlobalAlloc.html)を実装しなければなりません。"
 
 #: src/bare-metal/alloc.md
-#, fuzzy
 msgid "// SAFETY: `HEAP` is only used here and `entry` is only called once.\n"
 msgstr ""
-"// `HEAP` はここでのみ使用され、`entry` は一度だけ呼び出されるため、安全で"
-"す。\n"
+"// SAFETY: `HEAP` はここでのみ使用され、`entry` は一度だけ呼び出されます。\n"
 
 #: src/bare-metal/alloc.md
 msgid "// Give the allocator some memory to allocate.\n"
@@ -25511,15 +25512,14 @@ msgid "\"A string\""
 msgstr "\"A string\""
 
 #: src/bare-metal/alloc.md
-#, fuzzy
 msgid ""
 "`buddy_system_allocator` is a crate implementing a basic buddy system "
 "allocator. Other crates are available, or you can write your own or hook "
 "into your existing allocator."
 msgstr ""
-"`buddy_system_allocator`はサードパーティのクレートで、単純なバディシステムア"
-"ロケータです。その他にも利用できるクレートはありますし、自前で実装したり、別"
-"のアロケータに自分のコードをフックすることも可能です。"
+"`buddy_system_allocator` は、基本的なバディシステムアロケータを実装したクレー"
+"トです。他にも利用できるクレートはありますし、自前で実装したり、既存のアロ"
+"ケータにフックしたりすることもできます。"
 
 #: src/bare-metal/alloc.md
 msgid ""
@@ -25609,13 +25609,12 @@ msgstr ""
 "// GPIO 0 の 21 番ピンと 28 番ピンをプッシュプル出力として設定します。\n"
 
 #: src/bare-metal/microcontrollers/mmio.md
-#, fuzzy
 msgid ""
 "// SAFETY: The pointers are to valid peripheral control registers, and no\n"
 "    // aliases exist.\n"
 msgstr ""
-"// ポインタは有効な周辺機器制御レジスタを指しており、\n"
-"    // エイリアスが存在しないため、安全です。\n"
+"// SAFETY: ポインタは有効な周辺機器制御レジスタを指しており、\n"
+"    // エイリアスは存在しません。\n"
 
 #: src/bare-metal/microcontrollers/mmio.md
 #: src/bare-metal/microcontrollers/pacs.md
@@ -25653,32 +25652,30 @@ msgstr ""
 "れた周辺I/Oに対するほぼ安全（mostly-safe）なRustラッパーを生成します。"
 
 #: src/bare-metal/microcontrollers/pacs.md
-#, fuzzy
 msgid ""
 "SVD (System View Description) files are XML files typically provided by "
 "silicon vendors that describe the memory map of the device."
 msgstr ""
-"SVD (System View Description)ファイルはXMLファイルでデバイスのメモリマップを"
-"記述したものであり、通常シリコンベンダにより提供されます。"
+"SVD（System View Description）ファイルは、デバイスのメモリマップを記述した "
+"XML ファイルで、通常はシリコンベンダにより提供されます。"
 
 #: src/bare-metal/microcontrollers/pacs.md
-#, fuzzy
 msgid ""
 "They are organized by peripheral, register, field and value, with names, "
 "descriptions, addresses and so on."
 msgstr ""
-"周辺I/Oごとに、レジスタ、フィールドと値、名前、説明、アドレスなどにより構成さ"
-"れています。"
+"周辺 I/O、レジスタ、フィールド、値ごとに構成されており、名前、説明、アドレス"
+"などを含みます。"
 
 #: src/bare-metal/microcontrollers/pacs.md
-#, fuzzy
 msgid ""
 "SVD files are frequently buggy and incomplete, so there are various projects "
 "that patch the mistakes, add missing details, and publish the generated "
 "crates."
 msgstr ""
-"SVDファイルにはよく誤りがあり、また情報が不足していることも多いので、様々なプ"
-"ロジェクトがそれを修正・追加し、クレートとして公開しています。"
+"SVD ファイルにはよく誤りがあり、情報が不足していることも多いので、誤りを修正"
+"し、不足している詳細を追加して、生成したクレートを公開している様々なプロジェ"
+"クトがあります。"
 
 #: src/bare-metal/microcontrollers/pacs.md
 msgid "`cortex-m-rt` provides the vector table, among other things."
@@ -25741,13 +25738,12 @@ msgstr ""
 "提供します。"
 
 #: src/bare-metal/microcontrollers/board-support.md
-#, fuzzy
 msgid ""
 "In this case the board support crate is just providing more useful names, "
 "and a bit of initialization."
 msgstr ""
-"この例では、ボードサポートクレートは単に分かりやすい名前を提供し、少しの初期"
-"化を実施しているだけです。"
+"この例では、ボードサポートクレートは単により分かりやすい名前と、少しの初期化"
+"処理を提供しているだけです。"
 
 #: src/bare-metal/microcontrollers/board-support.md
 msgid ""
@@ -25774,26 +25770,23 @@ msgid "// pin_input.is_high(); // Error, moved.\n"
 msgstr "// pin_input.is_high(); // エラー、移動済み。\n"
 
 #: src/bare-metal/microcontrollers/type-state.md
-#, fuzzy
 msgid ""
 "Pins don't implement `Copy` or `Clone`, so only one instance of each can "
 "exist. Once a pin is moved out of the port struct, nobody else can take it."
 msgstr ""
-"この例では、ピンを表すタイプは`Copy`も`Clone`も実装していません。そのため、た"
-"だ一つのインスタンスだけが存在可能です。ピンがポート構造体からムーブされる"
-"と、他の誰もそのピンにアクセスすることはできなくなります。"
+"ピンは `Copy` も `Clone` も実装していないので、それぞれただ一つのインスタンス"
+"しか存在できません。ピンがポート構造体からムーブされると、他の誰もそのピンを"
+"取得することはできません。"
 
 #: src/bare-metal/microcontrollers/type-state.md
-#, fuzzy
 msgid ""
 "Changing the configuration of a pin consumes the old pin instance, so you "
 "can't use the old instance afterwards."
 msgstr ""
-"ピンの設定を変更することは古いピンのインスタンスを消費することになります。そ"
-"のため、それ以降は古いインスタンスを使い続けることはできなくなります。"
+"ピンの設定を変更すると古いピンのインスタンスが消費されるので、それ以降は古い"
+"インスタンスを使うことはできません。"
 
 #: src/bare-metal/microcontrollers/type-state.md
-#, fuzzy
 msgid ""
 "The type of a value indicates the state it is in: e.g., in this case, the "
 "configuration state of a GPIO pin. This encodes the state machine into the "
@@ -25801,10 +25794,10 @@ msgid ""
 "without properly configuring it first. Illegal state transitions are caught "
 "at compile time."
 msgstr ""
-"変数の型はその状態を表すようになっています。例えば、この例では型がGPIOピンの"
-"状態を表しています。このようにステートマシンをタイプシステムに織り込むこと"
-"で、正しい設定をせずにピンを使ってしまうことがなくなります。不正な状態遷移に"
-"関してはコンパイル時に発見されるようになります。"
+"値の型はその値の状態を表します。例えば、この例では GPIO ピンの設定状態を表し"
+"ています。このようにステートマシンを型システムに組み込むことで、ピンを最初に"
+"正しく設定せずに特定の方法で使おうとしてしまうことがなくなります。不正な状態"
+"遷移はコンパイル時に検出されます。"
 
 #: src/bare-metal/microcontrollers/type-state.md
 msgid ""
@@ -25820,13 +25813,12 @@ msgid "Many HAL crates follow this pattern."
 msgstr "多くのHALクレートがこのパターンを用いています。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
-#, fuzzy
 msgid ""
 "The [`embedded-hal`](https://crates.io/crates/embedded-hal) crate provides a "
 "number of traits covering common microcontroller peripherals:"
 msgstr ""
-"[`embedded-hal`](https://crates.io/crates/embedded-hal)クレートはマイクロコン"
-"トローラの周辺I/Oに関して共通に必要とされる多くのトレイトを提供します。"
+"[`embedded-hal`](https://crates.io/crates/embedded-hal) クレートは、マイクロ"
+"コントローラの一般的な周辺 I/O をカバーする多くのトレイトを提供します。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid "GPIO"
@@ -25834,15 +25826,15 @@ msgstr "GPIO"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid "PWM"
-msgstr ""
+msgstr "PWM"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid "Delay timers"
-msgstr ""
+msgstr "遅延タイマ"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid "I2C and SPI buses and devices"
-msgstr ""
+msgstr "I2C および SPI のバスとデバイス"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid ""
@@ -25851,23 +25843,29 @@ msgid ""
 "can`](https://crates.io/crates/embedded-can) and [`rand_core`](https://"
 "crates.io/crates/rand_core) respectively."
 msgstr ""
+"バイトストリーム（例えば UART）、CAN バス、RNG 向けの同様のトレイトは、それぞ"
+"れ [`embedded-io`](https://crates.io/crates/embedded-io)、[`embedded-can`]"
+"(https://crates.io/crates/embedded-can)、[`rand_core`](https://crates.io/"
+"crates/rand_core) に分離されています。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
-#, fuzzy
 msgid ""
 "Other crates then implement [drivers](https://github.com/rust-embedded/"
 "awesome-embedded-rust#driver-crates) in terms of these traits, e.g. an "
 "accelerometer driver might need an I2C or SPI device instance."
 msgstr ""
-"多くのクレートはこれらのトレイトに対応することで[ドライバ](https://"
-"github.com/rust-embedded/awesome-embedded-rust#driver-crates)を実装します。例"
-"えば、加速度センサのドライバにはI2CやSPIバスの実装が必要かもしれません。"
+"他のクレートは、これらのトレイトを用いて [ドライバ](https://github.com/rust-"
+"embedded/awesome-embedded-rust#driver-crates) を実装します。例えば、加速度セ"
+"ンサのドライバには I2C または SPI デバイスのインスタンスが必要になるかもしれ"
+"ません。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid ""
 "The traits cover using the peripherals but not initializing or configuring "
 "them, as initialization and configuration is highly platform-specific."
 msgstr ""
+"初期化や設定はプラットフォームに強く依存するため、これらのトレイトは周辺 I/O "
+"の使用をカバーしますが、初期化や設定はカバーしません。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
 msgid ""
@@ -25878,23 +25876,22 @@ msgstr ""
 "装も存在します。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
-#, fuzzy
 msgid ""
 "[`embedded-hal-async`](https://crates.io/crates/embedded-hal-async) provides "
 "async versions of the traits."
 msgstr ""
-"[`embedded-hal`](https://crates.io/crates/embedded-hal)クレートはマイクロコン"
-"トローラの周辺I/Oに関して共通に必要とされる多くのトレイトを提供します。"
+"[`embedded-hal-async`](https://crates.io/crates/embedded-hal-async) は、これ"
+"らのトレイトの非同期版を提供します。"
 
 #: src/bare-metal/microcontrollers/embedded-hal.md
-#, fuzzy
 msgid ""
 "[`embedded-hal-nb`](https://crates.io/crates/embedded-hal-nb) provides "
 "another approach to non-blocking I/O, based on the [`nb`](https://crates.io/"
 "crates/nb) crate."
 msgstr ""
-"[`embedded-hal`](https://crates.io/crates/embedded-hal)クレートはマイクロコン"
-"トローラの周辺I/Oに関して共通に必要とされる多くのトレイトを提供します。"
+"[`embedded-hal-nb`](https://crates.io/crates/embedded-hal-nb) は、[`nb`]"
+"(https://crates.io/crates/nb) クレートに基づく、ノンブロッキング I/O に対する"
+"別のアプローチを提供します。"
 
 #: src/bare-metal/microcontrollers/probe-rs.md
 msgid ""
@@ -25958,12 +25955,11 @@ msgstr ""
 "イヤデバッグです。"
 
 #: src/bare-metal/microcontrollers/probe-rs.md
-#, fuzzy
 msgid ""
 "probe-rs is a library that you can integrate into your own tools if you want "
 "to."
 msgstr ""
-"probe-rsは自分で独自のツールを統合したい場合に利用できるライブラリです。"
+"probe-rs は、必要に応じて独自のツールに組み込むことができるライブラリです。"
 
 #: src/bare-metal/microcontrollers/probe-rs.md
 msgid ""
@@ -25980,13 +25976,12 @@ msgid "cargo-embed is a binary built using the probe-rs library."
 msgstr "cargo-embedはprobe-rsライブラリを利用して生成されたバイナリです。"
 
 #: src/bare-metal/microcontrollers/probe-rs.md
-#, fuzzy
 msgid ""
 "RTT (Real Time Transfers) is a mechanism to transfer data between the debug "
 "host and the target through a number of ring buffers."
 msgstr ""
-"RTT (Real Time Transfers)はデバッグホストとターゲット間のデータを多くのリング"
-"バッファを介してやりとりするためのメカニズムです。"
+"RTT（Real Time Transfers）は、いくつかのリングバッファを介してデバッグホスト"
+"とターゲットの間でデータをやりとりするためのメカニズムです。"
 
 #: src/bare-metal/microcontrollers/debugging.md
 msgid "_Embed.toml_:"
@@ -26020,58 +26015,51 @@ msgid "[RTIC](https://rtic.rs/)"
 msgstr "[RTIC](https://rtic.rs/)"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid "\"Real-Time Interrupt-driven Concurrency\"."
-msgstr "\"Real-Time Interrupt-driven Concurrency\"の略"
+msgstr "\"Real-Time Interrupt-driven Concurrency\" の略。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid ""
 "Shared resource management, message passing, task scheduling, timer queue."
 msgstr ""
-"共有リソース管理、メッセージパッシング、タスクスケジューリング、タイマキュー"
-"を提供"
+"共有リソース管理、メッセージパッシング、タスクスケジューリング、タイマ"
+"キュー。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
 msgid "[Embassy](https://embassy.dev/)"
 msgstr "[Embassy](https://embassy.dev/)"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid "`async` executors with priorities, timers, networking, USB."
-msgstr "優先度付き`async` エグゼキュータ、タイマ、ネットワーク、USB"
+msgstr "優先度付きの `async` エグゼキュータ、タイマ、ネットワーク、USB。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
 msgid "[TockOS](https://www.tockos.org/documentation/getting-started)"
 msgstr "[TockOS](https://www.tockos.org/documentation/getting-started)"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid ""
 "Security-focused RTOS with preemptive scheduling and Memory Protection Unit "
 "support."
 msgstr ""
-"セキュリティに焦点をあてたRTOSで、プリエンプティブ・スケジューリングとMemory "
-"Protection Unitをサポート"
+"セキュリティに焦点をあてた RTOS で、プリエンプティブ・スケジューリングと "
+"Memory Protection Unit をサポート。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
 msgid "[Hubris](https://hubris.oxide.computer/)"
 msgstr "[Hubris](https://hubris.oxide.computer/)"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid ""
 "Microkernel RTOS from Oxide Computer Company with memory protection, "
 "unprivileged drivers, IPC."
 msgstr ""
-"Oxide Computer CompanyによるマイクロカーネルのRTOSでメモリ保護、非特権ドライ"
-"バ、IPCを提供"
+"Oxide Computer Company によるマイクロカーネル RTOS で、メモリ保護、非特権ドラ"
+"イバ、IPC を提供。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
-#, fuzzy
 msgid "[Bindings for FreeRTOS](https://github.com/lobaro/FreeRTOS-rust)."
-msgstr ""
-"[FreeRTOSに対するRustバインディング](https://github.com/lobaro/FreeRTOS-rust)"
+msgstr "[FreeRTOS のバインディング](https://github.com/lobaro/FreeRTOS-rust)。"
 
 #: src/bare-metal/microcontrollers/other-projects.md
 msgid ""
@@ -26168,15 +26156,14 @@ msgid ""
 msgstr "TWIはI2Cの別名なので、I2CマスタはTWIMという名前になっています。"
 
 #: src/exercises/bare-metal/compass.md
-#, fuzzy
 msgid ""
 "The LSM303AGR driver needs something implementing the "
 "`embedded_hal::i2c::I2c` trait. The [`microbit::hal::Twim`](https://docs.rs/"
 "microbit-v2/latest/microbit/hal/struct.Twim.html) struct implements this."
 msgstr ""
-"LSM303AGRドライバは`embedded_hal::blocking::i2c::WriteRead`を実装するものを必"
-"要とします。 [`microbit::hal::Twim`](https://docs.rs/microbit-v2/latest/"
-"microbit/hal/struct.Twim.html)構造体がこれを実装しています。"
+"LSM303AGR ドライバは、`embedded_hal::i2c::I2c` トレイトを実装するものを必要と"
+"します。[`microbit::hal::Twim`](https://docs.rs/microbit-v2/latest/microbit/"
+"hal/struct.Twim.html) 構造体がこれを実装しています。"
 
 #: src/exercises/bare-metal/compass.md
 msgid ""
@@ -26291,39 +26278,41 @@ msgid ""
 "So far we've talked about microcontrollers, such as the Arm Cortex-M series. "
 "These are typically small systems with very limited resources."
 msgstr ""
+"ここまでは、Arm Cortex-M シリーズのようなマイクロコントローラについて説明して"
+"きました。これらは通常、リソースが非常に限られた小さなシステムです。"
 
 #: src/bare-metal/aps.md
 msgid ""
 "Larger systems with more resources are typically called application "
 "processors, built around processors such as the ARM Cortex-A or Intel Atom."
 msgstr ""
+"より多くのリソースを持つ大きなシステムは通常アプリケーションプロセッサと呼ば"
+"れ、ARM Cortex-A や Intel Atom などのプロセッサを中心に構成されています。"
 
 #: src/bare-metal/aps.md
-#, fuzzy
 msgid ""
 "For simplicity we'll just work with QEMU's aarch64 ['virt'](https://qemu-"
 "project.gitlab.io/qemu/system/arm/virt.html) board."
 msgstr ""
-"ここまではArm Cortex-Mシリーズのようなマイクロコントローラについて見てきまし"
-"た。今度はCortex-Aを対象として何かを書いてみましょう。簡単化のために、ここで"
-"は（本物のハードウェアではなく）QEMUのaarch64 ['virt'](https://qemu-"
-"project.gitlab.io/qemu/system/arm/virt.html)ボードを利用します。"
+"簡単にするために、ここでは QEMU の aarch64 ['virt'](https://qemu-"
+"project.gitlab.io/qemu/system/arm/virt.html) ボードを使います。"
 
 #: src/bare-metal/aps.md
-#, fuzzy
 msgid ""
 "Broadly speaking, microcontrollers don't have an MMU or multiple levels of "
 "privilege (exception levels on Arm CPUs, rings on x86)."
 msgstr ""
-"大まかに言って、マイクロコントローラがMMUや複数の特権レベル（Arm CPUにおける"
-"例外レベル、x86におけるリング）を持たないのに対し、アプリケーションプロセッサ"
-"はこれらを持っています。"
+"大まかに言って、マイクロコントローラは MMU や複数の特権レベル（Arm CPU におけ"
+"る例外レベル、x86 におけるリング）を持ちません。"
 
 #: src/bare-metal/aps.md
 msgid ""
 "Application processors have more resources, and often run an operating "
 "system, instead of directly executing the target application on startup."
 msgstr ""
+"アプリケーションプロセッサはより多くのリソースを持ち、起動時に対象のアプリ"
+"ケーションを直接実行するのではなく、オペレーティングシステムを実行することが"
+"よくあります。"
 
 #: src/bare-metal/aps.md
 msgid ""
@@ -26340,15 +26329,15 @@ msgid ""
 "We will still address this board as bare-metal, as if we were writing an "
 "operating system."
 msgstr ""
+"それでも、オペレーティングシステムを書いているかのように、このボードをベアメ"
+"タルとして扱います。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "Before we can start running Rust code, we need to do some initialization."
-msgstr "Rustのコードを実行できるようになる前にいくつかの初期化が必要です。"
+msgstr "Rust のコードを実行し始める前に、いくつかの初期化が必要です。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "```armasm\n"
 "/**\n"
@@ -26438,6 +26427,22 @@ msgid ""
 "```"
 msgstr ""
 "```armasm\n"
+"/**\n"
+" * これはイメージ用の汎用的なエントリポイントです。ロードされたイメージを\n"
+" * 実行できるように準備するために必要な処理を行います。\n"
+" * 具体的には、以下を行います。\n"
+" *\n"
+" * - 仮想アドレスから物理アドレスへの恒等マップで MMU を設定し、\n"
+" *   キャッシュを有効にする\n"
+" * - 浮動小数点を有効にする\n"
+" * - x25 以上のレジスタを使用して bss セクションをゼロにする\n"
+" * - イメージ内のセクションを指すようにスタックを準備する\n"
+" * - 例外ベクターを設定する\n"
+" * - Rust の `main` 関数に分岐する\n"
+" *\n"
+" * x0-x3 にはブートパラメータが含まれている可能性があるため、\n"
+" * Rust のエントリポイントのためにこれらを保持します。\n"
+" */\n"
 ".section .init.entry, \"ax\"\n"
 ".global entry\n"
 "entry:\n"
@@ -26515,18 +26520,19 @@ msgid ""
 "necessary to understand this in detail -- the takeaway is that some low-"
 "level setup is needed to meet Rust's expectations of the system."
 msgstr ""
+"このコードは `src/bare-metal/aps/examples/src/entry.S` にあります。詳細まで理"
+"解する必要はありません。要点は、Rust がシステムに期待する条件を満たすために、"
+"いくつかの低レベルのセットアップが必要だということです。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "This is the same as it would be for C: initializing the processor state, "
 "zeroing the BSS, and setting up the stack pointer."
 msgstr ""
-"この初期化内容はCの場合と同じになります。プロセッサ状態を初期化して、BSSをゼ"
-"ロ埋めして、スタックポインタを設定します。"
+"この初期化内容は C の場合と同じです。プロセッサ状態を初期化し、BSS をゼロ埋め"
+"し、スタックポインタを設定します。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "The BSS (block starting symbol, for historical reasons) is the part of the "
 "object file that contains statically allocated variables that are "
@@ -26534,19 +26540,18 @@ msgid ""
 "on zeroes. The compiler assumes that the loader will take care of zeroing "
 "them."
 msgstr ""
-"BSS（歴史的な理由によりblock starting symbolと呼ばれているもの）はオブジェク"
-"トファイルにおいてゼロ初期化される静的な変数を含む部分です。この部分はゼロに"
-"よる領域の浪費を避けるためにイメージからは除外されています。コンパイラはロー"
-"ダがこの領域をゼロ初期化することを想定しているのです。"
+"BSS（歴史的な理由により block starting symbol と呼ばれているもの）は、オブ"
+"ジェクトファイルのうち、ゼロに初期化される静的に割り当てられた変数を含む部分"
+"です。この部分は、ゼロによる領域の浪費を避けるためにイメージからは除外されて"
+"います。コンパイラは、ローダがこの領域をゼロ埋めすることを想定しています。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "The BSS may already be zeroed, depending on how memory is initialized and "
 "the image is loaded, but we zero it to be sure."
 msgstr ""
-"メモリの初期化方法やイメージのロード方法によってはBSSはすでにゼロ埋めされてい"
-"ることがありますが、ここでは念の為にゼロ埋めしています。"
+"メモリの初期化方法やイメージのロード方法によっては BSS はすでにゼロ埋めされて"
+"いることがありますが、ここでは念のためにゼロ埋めしています。"
 
 #: src/bare-metal/aps/entry-point.md
 msgid ""
@@ -26557,17 +26562,16 @@ msgstr ""
 "す。それをしないと："
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "Unaligned accesses will fault. We build the Rust code for the `aarch64-"
 "unknown-none` target that sets `+strict-align` to prevent the compiler from "
 "generating unaligned accesses, so it should be fine in this case, but this "
 "is not necessarily the case in general."
 msgstr ""
-"アラインされていないアクセスがフォールトになります。我々はコンパイラがアライ"
-"ンされていないアクセスを生成しないように`+strict-align`オプション を設定する"
-"`aarch64-unknown-none` ターゲット向けにRustコードをビルドします。そのためここ"
-"では問題にはなりませんが、一般的にはそうとは言えません。"
+"アラインされていないアクセスはフォールトになります。ここでは、コンパイラがア"
+"ラインされていないアクセスを生成しないように `+strict-align` を設定する "
+"`aarch64-unknown-none` ターゲット向けに Rust コードをビルドするので、この場合"
+"は問題ありませんが、一般的には必ずしもそうとは限りません。"
 
 #: src/bare-metal/aps/entry-point.md
 msgid ""
@@ -26589,17 +26593,16 @@ msgstr ""
 "物理アドレスをキーとしてアクセスされます）"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "For simplicity, we just use a hardcoded pagetable (see `idmap.S`) that "
 "identity maps the first 1 GiB of address space for devices, the next 1 GiB "
 "for DRAM, and another 1 GiB higher up for more devices. This matches the "
 "memory layout that QEMU uses."
 msgstr ""
-"単純化のために、ハードコードしたページテーブル（`idmap.S`参照）を利用します。"
-"このページテーブルは最初の1GiBをデバイス用に、次の1GiBをDRAM用に、次の1GiBを"
-"さらなるデバイス用に透過的にマップします。これはQEMUのメモリレイアウトに合致"
-"します。"
+"簡単にするために、ハードコードされたページテーブル（`idmap.S` を参照）を使用"
+"します。このページテーブルは、アドレス空間の最初の 1 GiB をデバイス用に、次"
+"の 1 GiB を DRAM 用に、さらに上位の 1 GiB を追加のデバイス用に恒等マップしま"
+"す。これは QEMU が使用するメモリレイアウトと一致します。"
 
 #: src/bare-metal/aps/entry-point.md
 msgid ""
@@ -26609,15 +26612,14 @@ msgstr ""
 "例外ベクタ（`vbar_el1`）も設定します。これに関しては後ほど詳しく見ます。"
 
 #: src/bare-metal/aps/entry-point.md
-#, fuzzy
 msgid ""
 "All examples this afternoon assume we will be running at exception level 1 "
 "(EL1). If you need to run at a different exception level, you'll need to "
 "modify `entry.S` accordingly."
 msgstr ""
-"今日の午後に扱うすべての例は例外レベル１（EL1）で実行されることを想定していま"
-"す。もし、別の例外レベルで実行する必要がある場合には、`entry.S`をそれに合わせ"
-"て変更する必要があります。"
+"今日の午後に扱うすべての例は、例外レベル 1（EL1）で実行されることを想定してい"
+"ます。別の例外レベルで実行する必要がある場合は、それに合わせて `entry.S` を変"
+"更する必要があります。"
 
 #: src/bare-metal/aps/inline-assembly.md
 msgid "Inline assembly"
@@ -26634,13 +26636,12 @@ msgstr ""
 "ル）を発行する場合です："
 
 #: src/bare-metal/aps/inline-assembly.md
-#, fuzzy
 msgid ""
 "// SAFETY: this only uses the declared registers and doesn't do anything\n"
 "    // with memory.\n"
 msgstr ""
-"// 宣言されたレジスタのみを使用し、メモリについては\n"
-"    // 何もしないため、安全です。\n"
+"// SAFETY: 宣言されたレジスタのみを使用し、メモリについては\n"
+"    // 何もしません。\n"
 
 #: src/bare-metal/aps/inline-assembly.md
 msgid "\"hvc #0\""
@@ -26698,26 +26699,24 @@ msgstr ""
 "ファームウェアとハイパーバイザにより実装されています。"
 
 #: src/bare-metal/aps/inline-assembly.md
-#, fuzzy
 msgid ""
 "The `0 => _` syntax means initialize the register to 0 before running the "
 "inline assembly code, and ignore its contents afterwards. We need to use "
 "`inout` rather than `in` because the call could potentially clobber the "
 "contents of the registers."
 msgstr ""
-"`0 => _` というシンタックスは、インラインアセンブリを実行する前にレジスタをゼ"
-"ロで初期化し、実行後はその値は気にしないということを示しています。`in`ではな"
-"く`inout`を使う必要があるのは、この実行でレジスタの値を上書きしてしまう可能性"
-"があるからです。"
+"`0 => _` という構文は、インラインアセンブリコードを実行する前にレジスタを 0 "
+"に初期化し、実行後はその内容を無視することを意味します。この呼び出しによって"
+"レジスタの内容が上書きされる可能性があるため、`in` ではなく `inout` を使う必"
+"要があります。"
 
 #: src/bare-metal/aps/inline-assembly.md
-#, fuzzy
 msgid ""
 "This `main` function needs to be `#[unsafe(no_mangle)]` and `extern \"C\"` "
 "because it is called from our entry point in `entry.S`."
 msgstr ""
-"この `main` 関数は`entry.S`にあるエントリポイントから呼ばれるため、"
-"`#[no_mangle]`と`extern \"C\"`を必要とします。"
+"この `main` 関数は `entry.S` にあるエントリポイントから呼ばれるため、"
+"`#[unsafe(no_mangle)]` と `extern \"C\"` を必要とします。"
 
 #: src/bare-metal/aps/inline-assembly.md
 msgid ""
@@ -26726,6 +26725,9 @@ msgid ""
 "reviewer attention to attributes that might cause undefined behavior if used "
 "incorrectly."
 msgstr ""
+"`#[no_mangle]` だけでも十分ですが、[RFC3325](https://rust-lang.github.io/"
+"rfcs/3325-unsafe-attributes.html) では、誤って使用すると未定義の動作を引き起"
+"こす可能性のある属性にレビュアーの注意を引くために、この表記を使用します。"
 
 #: src/bare-metal/aps/inline-assembly.md
 msgid ""
@@ -26755,34 +26757,36 @@ msgid "Volatile memory access for MMIO"
 msgstr "MMIOに対するvolatileアクセス"
 
 #: src/bare-metal/aps/mmio.md
-#, fuzzy
 msgid ""
 "Use [`pointer::read_volatile`](https://doc.rust-lang.org/stable/core/"
 "primitive.pointer.html#method.read_volatile) and [`pointer::write_volatile`]"
 "(https://doc.rust-lang.org/stable/core/"
 "primitive.pointer.html#method.write_volatile)."
 msgstr ""
-"[`str`](https://doc.rust-lang.org/std/primitive.str.html) と [`String`]"
-"(https://doc.rust-lang.org/std/string/struct.String.html)"
+"[`pointer::read_volatile`](https://doc.rust-lang.org/stable/core/"
+"primitive.pointer.html#method.read_volatile) と [`pointer::write_volatile`]"
+"(https://doc.rust-lang.org/stable/core/"
+"primitive.pointer.html#method.write_volatile) を使用します。"
 
 #: src/bare-metal/aps/mmio.md
 msgid ""
 "Never hold a reference to a location being accessed with these methods. Rust "
 "may read from (or write to, for `&mut`) a reference at any time."
 msgstr ""
+"これらのメソッドでアクセスする場所への参照を決して保持しないでください。Rust "
+"は参照からいつでも読み取る（`&mut` の場合は書き込む）可能性があります。"
 
 #: src/bare-metal/aps/mmio.md
-#, fuzzy
 msgid ""
 "Use `&raw` to get fields of structs without creating an intermediate "
 "reference."
 msgstr ""
-"`addr_of!`を用いると、中間的な参照を作らずに構造体のフィールドにアクセスする"
-"ことができます。"
+"`&raw` を使用すると、中間的な参照を作らずに構造体のフィールドを取得できます。"
 
 #: src/bare-metal/aps/mmio.md
 msgid "// SAFETY: Some device is mapped at this address.\n"
 msgstr ""
+"// SAFETY: このアドレスには何らかのデバイスがマッピングされています。\n"
 
 #: src/bare-metal/aps/mmio.md
 msgid ""
@@ -26794,39 +26798,39 @@ msgstr ""
 "ようにするためのものです。"
 
 #: src/bare-metal/aps/mmio.md
-#, fuzzy
 msgid ""
 "If you write and then read, e.g. via a mutable reference, the compiler may "
 "assume that the value read is the same as the value just written, and not "
 "bother actually reading memory."
 msgstr ""
-"通常は、例えばある可変参照に対してライトしリードすると、コンパイラはライトし"
-"たのと同じ値がリードで読み出されると想定し、実際にメモリをリードする必要はな"
-"いと判断します。"
+"例えば可変参照を介して書き込んでから読み取ると、コンパイラは読み取った値が直"
+"前に書き込んだ値と同じであると想定し、実際にメモリを読み取ることを省略するか"
+"もしれません。"
 
 #: src/bare-metal/aps/mmio.md
-#, fuzzy
 msgid ""
 "Some existing crates for volatile access to hardware do hold references, but "
 "this is unsound. Whenever a reference exists, the compiler may choose to "
 "dereference it."
 msgstr ""
-"ハードウェアへのvolatileアクセスを行うための既存のクレートには参照を保持する"
-"ものがありますが、これは健全ではありません。参照が存在する間はいつでもコンパ"
-"イラがその参照を外して（MMIO領域にアクセスして）しまう可能性があります。"
+"ハードウェアへの volatile アクセスを行うための既存のクレートには参照を保持す"
+"るものがありますが、これは健全ではありません。参照が存在する場合はいつでも、"
+"コンパイラがその参照を外すことを選択する可能性があります。"
 
 #: src/bare-metal/aps/mmio.md
-#, fuzzy
 msgid "Use `&raw` to get struct field pointers from a pointer to the struct."
 msgstr ""
-"構造体のポインタからそのフィールドへのポインタを得るには`addr_of!` マクロを"
-"使ってください。"
+"構造体へのポインタから構造体のフィールドへのポインタを得るには、`&raw` を使用"
+"してください。"
 
 #: src/bare-metal/aps/mmio.md
 msgid ""
 "For compatibility with old versions of Rust you can use the [`addr_of!`]"
 "(https://doc.rust-lang.org/stable/core/ptr/macro.addr_of.html) macro instead."
 msgstr ""
+"古いバージョンの Rust との互換性のために、代わりに [`addr_of!`](https://"
+"doc.rust-lang.org/stable/core/ptr/macro.addr_of.html) マクロを使用することも"
+"できます。"
 
 #: src/bare-metal/aps/uart.md
 msgid "Let's write a UART driver"
@@ -26878,14 +26882,12 @@ msgid "// Wait until there is room in the TX buffer.\n"
 msgstr "// TX バッファに空きができるまで待機します。\n"
 
 #: src/bare-metal/aps/uart.md
-#, fuzzy
 msgid ""
 "// SAFETY: We know that the base address points to the control\n"
 "        // registers of a PL011 device which is appropriately mapped.\n"
 msgstr ""
-"// ベースアドレスが、適切にマッピングされた PL011 デバイスのコントロール レジ"
-"スタを\n"
-"        // 指していることがわかっているため、安全です。\n"
+"// SAFETY: ベースアドレスが、適切にマッピングされた PL011 デバイスの制御\n"
+"        // レジスタを指していることがわかっています。\n"
 
 #: src/bare-metal/aps/uart.md src/bare-metal/aps/better-uart/driver.md
 #: src/bare-metal/aps/safemmio/driver.md
@@ -26945,13 +26947,12 @@ msgstr ""
 "と良いでしょう。"
 
 #: src/bare-metal/aps/uart/traits.md
-#, fuzzy
 msgid ""
 "// SAFETY: `Uart` just contains a pointer to device memory, which can be\n"
 "// accessed from any context.\n"
 msgstr ""
-"// デバイスメモリへのポインタのみが含まれ、どのコンテキストからでも\n"
-"// アクセスできるため、安全です。\n"
+"// SAFETY: `Uart` はデバイスメモリへのポインタのみを含んでおり、それは\n"
+"// どのコンテキストからでもアクセスできます。\n"
 
 #: src/bare-metal/aps/uart/traits.md
 msgid ""
@@ -26966,18 +26967,19 @@ msgid ""
 "`Send` is an auto-trait, but not implemented automatically because it is not "
 "implemented for pointers."
 msgstr ""
+"`Send` は自動トレイトですが、ポインタに対して実装されていないため、自動的には"
+"実装されません。"
 
 #: src/bare-metal/aps/uart/using.md src/bare-metal/aps/logging/using.md
 msgid "Using it"
 msgstr "使用例"
 
 #: src/bare-metal/aps/uart/using.md
-#, fuzzy
 msgid ""
 "Let's write a small program using our driver to write to the serial console."
 msgstr ""
-"我々のドライバを使って、シリアルコンソールにライトし、そして入力されたバイト"
-"をエコーする小さなプログラムを書いてみましょう。"
+"ドライバを使ってシリアルコンソールに書き込む小さなプログラムを書いてみましょ"
+"う。"
 
 #: src/bare-metal/aps/uart/using.md src/bare-metal/aps/safemmio/using.md
 #: src/bare-metal/aps/logging/using.md src/bare-metal/aps/aarch64-rt.md
@@ -26988,13 +26990,12 @@ msgstr "/// プライマリ PL011 UART のベースアドレス。\n"
 #: src/bare-metal/aps/uart/using.md src/bare-metal/aps/safemmio/using.md
 #: src/bare-metal/aps/logging/using.md src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
-#, fuzzy
 msgid ""
 "// SAFETY: `PL011_BASE_ADDRESS` is the base address of a PL011 device, and\n"
 "    // nothing else accesses that address range.\n"
 msgstr ""
-"// `PL011_BASE_ADDRESS` が PL011 デバイスのベースアドレスであり、\n"
-"    // 他からこのアドレス範囲にアクセスされることがないため、安全です。\n"
+"// SAFETY: `PL011_BASE_ADDRESS` は PL011 デバイスのベースアドレスであり、\n"
+"    // 他にこのアドレス範囲にアクセスするものはありません。\n"
 
 #: src/bare-metal/aps/uart/using.md src/bare-metal/aps/safemmio/using.md
 #: src/bare-metal/aps/logging/using.md src/bare-metal/aps/aarch64-rt.md
@@ -27024,7 +27025,6 @@ msgid "A better UART driver"
 msgstr "UARTドライバの改善"
 
 #: src/bare-metal/aps/better-uart.md
-#, fuzzy
 msgid ""
 "The PL011 actually has [more registers](https://developer.arm.com/"
 "documentation/ddi0183/g/programmers-model/summary-of-registers), and adding "
@@ -27032,11 +27032,11 @@ msgid ""
 "read. Additionally, some of them are bit fields, which would be nice to "
 "access in a structured way."
 msgstr ""
-"実際のところPL011には[もっと多くのレジスタ](https://developer.arm.com/"
-"documentation/ddi0183/g/programmers-model/summary-of-registers)があり、それら"
-"にアクセスするためにオフセットを足してポインタを得ることは間違えになりやす"
-"く、可読性を低下させます。さらに、いくつかはビットフィールドなので、構造化さ"
-"れた方法でアクセスできたほうが良いでしょう。"
+"実際のところ PL011 には [もっと多くのレジスタ](https://developer.arm.com/"
+"documentation/ddi0183/g/programmers-model/summary-of-registers) があり、それ"
+"らにアクセスするためにオフセットを足してポインタを構築するのは間違えやすく、"
+"読みにくくなります。さらに、いくつかはビットフィールドなので、構造化された方"
+"法でアクセスできたほうが良いでしょう。"
 
 #: src/bare-metal/aps/better-uart.md
 msgid "Offset"
@@ -27195,9 +27195,8 @@ msgid "3"
 msgstr "3"
 
 #: src/bare-metal/aps/better-uart.md
-#, fuzzy
 msgid "There are also some ID registers that have been omitted for brevity."
-msgstr "いくつかのIDレジスタは簡単化のための省略しています。"
+msgstr "簡潔にするため、いくつかの ID レジスタは省略しています。"
 
 #: src/bare-metal/aps/better-uart/bitflags.md
 msgid ""
@@ -27248,13 +27247,12 @@ msgid "/// Ring indicator.\n"
 msgstr "/// 着呼表示。\n"
 
 #: src/bare-metal/aps/better-uart/bitflags.md
-#, fuzzy
 msgid ""
 "The `bitflags!` macro creates a newtype something like `struct Flags(u16)`, "
 "along with a bunch of method implementations to get and set flags."
 msgstr ""
-"`bitflags!`マクロは`Flags(u16)`のような新しいタイプを生成し、フラグを読み書き"
-"するための多くのメソッド実装を一緒に提供します。"
+"`bitflags!` マクロは `struct Flags(u16)` のようなニュータイプを生成し、フラグ"
+"を取得・設定するための多くのメソッド実装も一緒に生成します。"
 
 #: src/bare-metal/aps/better-uart/registers.md
 msgid "Multiple registers"
@@ -27291,7 +27289,6 @@ msgid "/// Driver for a PL011 UART.\n"
 msgstr "/// PL011 UART のドライバ。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
-#, fuzzy
 msgid ""
 "/// Constructs a new instance of the UART driver for a PL011 device with "
 "the\n"
@@ -27305,25 +27302,23 @@ msgid ""
 "as\n"
 "    /// device memory and not have any other aliases.\n"
 msgstr ""
-"/// 指定されたベースアドレスに存在する\n"
-"    /// PL011 デバイス用の UART ドライバの新しいインスタンスを作成します。\n"
+"/// 指定されたレジスタのセットを持つ PL011 デバイス用の\n"
+"    /// UART ドライバの新しいインスタンスを作成します。\n"
 "    ///\n"
 "    /// # 安全性\n"
 "    ///\n"
-"    /// 指定されたベースアドレスは PL011 デバイスの 8 つの MMIO 制御レジスタ"
-"を指していなければなりません。\n"
+"    /// 指定されたポインタは PL011 デバイスの 8 つの MMIO 制御レジスタを指し"
+"ていなければなりません。\n"
 "    /// これらはデバイスメモリとしてプロセスのアドレス空間に\n"
-"    /// マッピングされ、他のエイリアスはありません。\n"
+"    /// マッピングされ、他のエイリアスがあってはなりません。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
-#, fuzzy
 msgid ""
 "// SAFETY: We know that self.registers points to the control registers\n"
 "        // of a PL011 device which is appropriately mapped.\n"
 msgstr ""
-"// self.registers が、適切にマッピングされた PL011 デバイスのコントロール レ"
-"ジスタを\n"
-"        // 指していることがわかっているため、安全です。\n"
+"// SAFETY: self.registers が、適切にマッピングされた PL011 デバイスの制御\n"
+"        // レジスタを指していることがわかっています。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
 #: src/bare-metal/aps/safemmio/driver.md
@@ -27335,14 +27330,12 @@ msgstr ""
 "    /// 返します。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
-#, fuzzy
 msgid ""
 "// SAFETY: We know that self.registers points to the control\n"
 "            // registers of a PL011 device which is appropriately mapped.\n"
 msgstr ""
-"// self.registers が、適切にマッピングされた PL011 デバイスのコントロール レ"
-"ジスタを\n"
-"        // 指していることがわかっているため、安全です。\n"
+"// SAFETY: self.registers が、適切にマッピングされた PL011 デバイスの\n"
+"            // 制御レジスタを指していることがわかっています。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
 #: src/bare-metal/aps/safemmio/driver.md
@@ -27350,14 +27343,13 @@ msgid "// TODO: Check for error conditions in bits 8-11.\n"
 msgstr "// TODO: ビット 8～11 でエラー状態をチェックします。\n"
 
 #: src/bare-metal/aps/better-uart/driver.md
-#, fuzzy
 msgid ""
 "Note the use of `&raw const` / `&raw mut` to get pointers to individual "
 "fields without creating an intermediate reference, which would be unsound."
 msgstr ""
-"`addr_of!`と`addr_of_mut!` を使用して個々のフィールドに対するポインタを取得す"
-"ることで、不健全となってしまう中間的な参照を作らずに済んでいることに注目して"
-"ください。"
+"`&raw const` / `&raw mut` を使用して個々のフィールドへのポインタを取得するこ"
+"とで、不健全となってしまう中間的な参照を作らずに済んでいることに注目してくだ"
+"さい。"
 
 #: src/bare-metal/aps/better-uart/driver.md
 msgid ""
@@ -27365,82 +27357,97 @@ msgid ""
 "`safe-mmio` example which comes next. You can run it in QEMU with `make "
 "qemu` under `src/bare-metal/aps/examples` if you need to."
 msgstr ""
+"この例は、次に説明する `safe-mmio` の例とよく似ているため、スライドには含まれ"
+"ていません。必要であれば、`src/bare-metal/aps/examples` で `make qemu` を実行"
+"すると QEMU で実行できます。"
 
 #: src/bare-metal/aps/safemmio/registers.md
-#, fuzzy
 msgid ""
 "The [`safe-mmio`](https://crates.io/crates/safe-mmio) crate provides types "
 "to wrap registers that can be read or written safely."
 msgstr ""
-"[`spin`](https://crates.io/crates/spin) クレートはこれらの多くのプリミティブ"
-"と等価なスピンロックベースのものを提供します。"
+"[`safe-mmio`](https://crates.io/crates/safe-mmio) クレートは、安全に読み書き"
+"できるレジスタをラップする型を提供します。"
 
 #: src/bare-metal/aps/safemmio/registers.md
-#, fuzzy
 msgid "Can't read"
-msgstr "プレーンなスレッド"
+msgstr "読み取り不可"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid "Read has no side-effects"
-msgstr ""
+msgstr "読み取りに副作用なし"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid "Read has side-effects"
-msgstr ""
+msgstr "読み取りに副作用あり"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid "Can't write"
-msgstr ""
+msgstr "書き込み不可"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "[`ReadPure`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
 "struct.ReadPure.html)"
 msgstr ""
+"[`ReadPure`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadPure.html)"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "[`ReadOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
 "struct.ReadOnly.html)"
 msgstr ""
+"[`ReadOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadOnly.html)"
 
 #: src/bare-metal/aps/safemmio/registers.md
-#, fuzzy
 msgid "Can write"
-msgstr "`Read` と `Write`"
+msgstr "書き込み可"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "[`WriteOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
 "struct.WriteOnly.html)"
 msgstr ""
+"[`WriteOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.WriteOnly.html)"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "[`ReadPureWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
 "struct.ReadPureWrite.html)"
 msgstr ""
+"[`ReadPureWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadPureWrite.html)"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "[`ReadWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
 "struct.ReadWrite.html)"
 msgstr ""
+"[`ReadWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadWrite.html)"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid "Reading `dr` has a side effect: it pops a byte from the receive FIFO."
 msgstr ""
+"`dr` の読み取りには副作用があります。受信 FIFO から 1 バイトを取り出します。"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "Reading `rsr` (and other registers) has no side-effects. It is a 'pure' read."
 msgstr ""
+"`rsr`（および他のレジスタ）の読み取りには副作用がありません。「純粋な」読み取"
+"りです。"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
 "There are a number of different crates providing safe abstractions around "
 "MMIO operations; we recommend the `safe-mmio` crate."
 msgstr ""
+"MMIO 操作に関する安全な抽象化を提供するクレートはいくつもありますが、`safe-"
+"mmio` クレートをお勧めします。"
 
 #: src/bare-metal/aps/safemmio/registers.md
 msgid ""
@@ -27450,6 +27457,11 @@ msgid ""
 "pops a byte from the receive FIFO. `ReadPure` means that reads have no side-"
 "effects, they are purely reading data."
 msgstr ""
+"`ReadPure` と `ReadOnly` の違い（`ReadPureWrite` と `ReadWrite` の違いも同"
+"様）は、レジスタの読み取りがデバイスの状態を変更する副作用を持ちうるかどうか"
+"です。例えば、データレジスタを読み取ると受信 FIFO から 1 バイトが取り出されま"
+"す。`ReadPure` は、読み取りに副作用がなく、純粋にデータを読み取るだけであるこ"
+"とを意味します。"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
@@ -27457,10 +27469,12 @@ msgid ""
 "the\n"
 "    /// given set of registers.\n"
 msgstr ""
+"/// 指定されたレジスタのセットを持つ PL011 デバイス用の\n"
+"    /// UART ドライバの新しいインスタンスを作成します。\n"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid "The driver no longer needs any unsafe code!"
-msgstr ""
+msgstr "ドライバにはもうアンセーフなコードは一切必要ありません！"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
@@ -27469,12 +27483,18 @@ msgid ""
 "and unique for the given lifetime, so it can provide safe methods to read "
 "and write fields."
 msgstr ""
+"`UniqueMmioPointer` は、MMIO デバイスまたはレジスタへの生ポインタのラッパーで"
+"す。`UniqueMmioPointer::new` の呼び出し元は、そのポインタが指定されたライフタ"
+"イムの間有効かつ一意であることを保証するので、フィールドを読み書きするための"
+"安全なメソッドを提供できます。"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
 "Note that `Uart::new` is now safe; `UniqueMmioPointer::new` is unsafe "
 "instead."
 msgstr ""
+"`Uart::new` が安全になったことに注目してください。代わりに "
+"`UniqueMmioPointer::new` がアンセーフになっています。"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
@@ -27483,23 +27503,27 @@ msgid ""
 "to work around a bug where the compiler can emit instructions that prevent "
 "MMIO virtualization."
 msgstr ""
+"これらの MMIO アクセスは一般に `read_volatile` と `write_volatile` のラッパー"
+"ですが、aarch64 では、MMIO の仮想化を妨げる命令をコンパイラが生成してしまうこ"
+"とがあるバグを回避するために、代わりにアセンブリで実装されています。"
 
 #: src/bare-metal/aps/safemmio/driver.md
-#, fuzzy
 msgid ""
 "The `field!` and `field_shared!` macros internally use `&raw mut` and `&raw "
 "const` to get pointers to individual fields without creating an intermediate "
 "reference, which would be unsound."
 msgstr ""
-"`addr_of!`と`addr_of_mut!` を使用して個々のフィールドに対するポインタを取得す"
-"ることで、不健全となってしまう中間的な参照を作らずに済んでいることに注目して"
-"ください。"
+"`field!` マクロと `field_shared!` マクロは、内部で `&raw mut` と `&raw "
+"const` を使用して個々のフィールドへのポインタを取得し、不健全となってしまう中"
+"間的な参照を作らずに済むようにしています。"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
 "`field!` needs a mutable reference to a `UniqueMmioPointer`, and returns a "
 "`UniqueMmioPointer` that allows reads with side effects and writes."
 msgstr ""
+"`field!` は `UniqueMmioPointer` への可変参照を必要とし、副作用のある読み取り"
+"と書き込みが可能な `UniqueMmioPointer` を返します。"
 
 #: src/bare-metal/aps/safemmio/driver.md
 msgid ""
@@ -27507,6 +27531,8 @@ msgid ""
 "`UniqueMmioPointer` or a `SharedMmioPointer`. It returns a "
 "`SharedMmioPointer` that only allows pure reads."
 msgstr ""
+"`field_shared!` は、`UniqueMmioPointer` または `SharedMmioPointer` への共有参"
+"照で動作します。純粋な読み取りのみが可能な `SharedMmioPointer` を返します。"
 
 #: src/bare-metal/aps/safemmio/using.md
 msgid ""
@@ -27530,18 +27556,16 @@ msgid "b'q'"
 msgstr "b'q'"
 
 #: src/bare-metal/aps/safemmio/using.md
-#, fuzzy
 msgid "\"\\n\\nBye!\""
-msgstr "\"Bye!\""
+msgstr "\"\\n\\nBye!\""
 
 #: src/bare-metal/aps/safemmio/using.md
-#, fuzzy
 msgid ""
 "Run the example in QEMU with `make qemu_safemmio` under `src/bare-metal/aps/"
 "examples`."
 msgstr ""
-"この例を`src/bare-metal/aps/examples`において`make qemu_psci`とすることでQEMU"
-"により実行してみましょう。"
+"`src/bare-metal/aps/examples` で `make qemu_safemmio` を実行して、QEMU でこの"
+"例を実行してください。"
 
 #: src/bare-metal/aps/logging.md
 msgid ""
@@ -27561,14 +27585,14 @@ msgid "/// Initialises UART logger.\n"
 msgstr "/// UART ロガーを初期化します。\n"
 
 #: src/bare-metal/aps/logging.md
-#, fuzzy
 msgid ""
 "The first unwrap in `log` will succeed because we initialize `LOGGER` before "
 "calling `set_logger`. The second will succeed because `Uart::write_str` "
 "always returns `Ok`."
 msgstr ""
-"`LOGGER` を`set_logger`を呼び出す前に初期化しているので、log` におけるunwrap"
-"はセーフです。"
+"`set_logger` を呼び出す前に `LOGGER` を初期化しているので、`log` における最初"
+"の unwrap は成功します。`Uart::write_str` は常に `Ok` を返すので、2 番目の "
+"unwrap も成功します。"
 
 #: src/bare-metal/aps/logging/using.md
 msgid "We need to initialise the logger before we use it."
@@ -27646,7 +27670,7 @@ msgstr ""
 
 #: src/bare-metal/aps/exceptions.md
 msgid "The assembly code for the exception vector:"
-msgstr ""
+msgstr "例外ベクターのアセンブリコード："
 
 #: src/bare-metal/aps/aarch64-rt.md
 msgid ""
@@ -27654,69 +27678,78 @@ msgid ""
 "vector that we implemented before. We just need to mark our main function "
 "with the `entry!` macro."
 msgstr ""
+"`aarch64-rt` クレートは、以前に実装したアセンブリのエントリポイントと例外ベク"
+"ターを提供します。main 関数を `entry!` マクロでマークするだけで済みます。"
 
 #: src/bare-metal/aps/aarch64-rt.md
 msgid ""
 "It also provides the `initial_pagetable!` macro to let us define an initial "
 "static pagetable in Rust, rather than in assembly code like we did before."
 msgstr ""
+"また、以前のようにアセンブリコードで定義するのではなく、Rust で初期の静的ペー"
+"ジテーブルを定義できるようにする `initial_pagetable!` マクロも提供します。"
 
 #: src/bare-metal/aps/aarch64-rt.md
 msgid ""
 "We can also use the UART driver from the `arm-pl011-uart` crate rather than "
 "writing our own."
 msgstr ""
+"自分で UART ドライバを書く代わりに、`arm-pl011-uart` クレートのドライバを使う"
+"こともできます。"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "/// Attributes to use for device memory in the initial identity map.\n"
-msgstr ""
+msgstr "/// 初期恒等マップでデバイスメモリに使用する属性。\n"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "/// Attributes to use for normal memory in the initial identity map.\n"
-msgstr ""
+msgstr "/// 初期恒等マップで通常のメモリに使用する属性。\n"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "// 1 GiB of device memory.\n"
-msgstr ""
+msgstr "// 1 GiB のデバイスメモリ。\n"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "// 1 GiB of normal memory.\n"
-msgstr ""
+msgstr "// 1 GiB の通常のメモリ。\n"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "// Another 1 GiB of device memory starting at 256 GiB.\n"
-msgstr ""
+msgstr "// 256 GiB から始まる、もう 1 GiB のデバイスメモリ。\n"
 
 #: src/bare-metal/aps/aarch64-rt.md
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "\"system_off returned\""
-msgstr ""
+msgstr "\"system_off returned\""
 
 #: src/bare-metal/aps/aarch64-rt.md
-#, fuzzy
 msgid ""
 "Run the example in QEMU with `make qemu_rt` under `src/bare-metal/aps/"
 "examples`."
 msgstr ""
-"この例を`src/bare-metal/aps/examples`において`make qemu`とすることでQEMUによ"
-"り実行してみましょう。"
+"`src/bare-metal/aps/examples` で `make qemu_rt` を実行して、QEMU でこの例を実"
+"行してください。"
 
 #: src/bare-metal/aps/aarch64-rt/exceptions.md
 msgid ""
 "`aarch64-rt` provides a trait to define exception handlers, and a macro to "
 "generate the assembly code for the exception vector to call them."
 msgstr ""
+"`aarch64-rt` は、例外ハンドラを定義するためのトレイトと、それらを呼び出す例外"
+"ベクターのアセンブリコードを生成するマクロを提供します。"
 
 #: src/bare-metal/aps/aarch64-rt/exceptions.md
 msgid ""
 "The trait has default implementations for each method which simply panic, so "
 "we can omit methods for exceptions we don't expect to happen."
 msgstr ""
+"このトレイトには、単にパニックするだけのデフォルト実装が各メソッドに用意され"
+"ているので、発生しないと想定される例外のメソッドは省略できます。"
 
 #: src/bare-metal/aps/aarch64-rt/exceptions.md
 msgid ""
@@ -27724,6 +27757,8 @@ msgid ""
 "exception vector to call into the Rust code, similar to the `exceptions.S` "
 "we had before."
 msgstr ""
+"`exception_handlers` マクロは、以前の `exceptions.S` と同様に、Rust コードを"
+"呼び出す例外ベクターを含む `global_asm!` ブロックを生成します。"
 
 #: src/bare-metal/aps/aarch64-rt/exceptions.md
 msgid ""
@@ -27733,15 +27768,18 @@ msgid ""
 "lower EL, and update the values to be restored when the exception handler "
 "returns."
 msgstr ""
+"`RegisterStateRef` は、例外が発生したときにアセンブリコードによってレジスタの"
+"値が保存されたスタックフレームへの参照をラップします。これは例えば、下位の "
+"EL からの SMC または HVC 呼び出しのパラメータを取り出したり、例外ハンドラから"
+"戻るときに復元される値を更新したりするのに使用できます。"
 
 #: src/bare-metal/aps/other-projects.md
 msgid "[oreboot](https://github.com/oreboot/oreboot)"
 msgstr "[oreboot](https://github.com/oreboot/oreboot)"
 
 #: src/bare-metal/aps/other-projects.md
-#, fuzzy
 msgid "\"coreboot without the C\"."
-msgstr "\"Cのない（つまり、C言語を使わない）coreboot\""
+msgstr "\"C を使わない coreboot\"。"
 
 #: src/bare-metal/aps/other-projects.md
 msgid "Supports x86, aarch64 and RISC-V."
@@ -27760,22 +27798,20 @@ msgstr ""
 "raspberrypi-OS-tutorials)"
 
 #: src/bare-metal/aps/other-projects.md
-#, fuzzy
 msgid ""
 "Initialization, UART driver, simple bootloader, JTAG, exception levels, "
 "exception handling, page tables."
 msgstr ""
-"初期化、UARTドライバ、単純なブートローダ、JTAG、例外レベル、例外ハンドラ、"
-"ページテーブル"
+"初期化、UART ドライバ、単純なブートローダ、JTAG、例外レベル、例外ハンドリン"
+"グ、ページテーブル。"
 
 #: src/bare-metal/aps/other-projects.md
-#, fuzzy
 msgid ""
 "Some caveats around cache maintenance and initialization in Rust, not "
 "necessarily a good example to copy for production code."
 msgstr ""
-"キャッシュメンテナンスとRustの初期化に関してちょっと疑わしいところがあるの"
-"で、製品コードで真似するには必ずしも良い例ではありません。"
+"Rust でのキャッシュメンテナンスと初期化に関していくつか注意点があり、製品コー"
+"ドで真似するのに必ずしも良い例ではありません。"
 
 #: src/bare-metal/aps/other-projects.md
 msgid "[`cargo-call-stack`](https://crates.io/crates/cargo-call-stack)"
@@ -27786,29 +27822,28 @@ msgid "Static analysis to determine maximum stack usage."
 msgstr "スタックの最大使用量に関する静的解析。"
 
 #: src/bare-metal/aps/other-projects.md
-#, fuzzy
 msgid ""
 "The RaspberryPi OS tutorial runs Rust code before the MMU and caches are "
 "enabled. This will read and write memory (e.g. the stack). However, this has "
 "the problems mentioned at the beginning of this session regarding unaligned "
 "access and cache coherency."
 msgstr ""
-"RaspberryPi OS チュートリアルはMMUやキャッシュを有効化する前にRustコードを実"
-"行しています。これにより、例えばスタックメモリをreadしたりwriteしたりすること"
-"になります。しかし："
+"RaspberryPi OS チュートリアルでは、MMU とキャッシュを有効にする前に Rust コー"
+"ドを実行しています。これによりメモリ（例えばスタック）の読み書きが行われま"
+"す。しかし、これには、このセッションの冒頭で述べた、アラインされていないアク"
+"セスとキャッシュコヒーレンシに関する問題があります。"
 
 #: src/bare-metal/useful-crates.md
 msgid "Useful crates"
 msgstr "便利クレート"
 
 #: src/bare-metal/useful-crates.md
-#, fuzzy
 msgid ""
 "We'll look at a few crates that solve some common problems in bare-metal "
 "programming."
 msgstr ""
-"ベアメタルプログラミングにおいて共通に発生する問題に対する解を与えるクレート"
-"についていくつか紹介します。"
+"ベアメタルプログラミングでよくある問題を解決するクレートをいくつか見ていきま"
+"す。"
 
 #: src/bare-metal/useful-crates/zerocopy.md
 msgid ""
@@ -27886,26 +27921,24 @@ msgid "// Set `TTBR0_EL1` to activate the page table.\n"
 msgstr "// `TTBR0_EL1` を設定してページテーブルを有効にします。\n"
 
 #: src/bare-metal/useful-crates/aarch64-paging.md
-#, fuzzy
 msgid ""
 "This is used in Android for the [Protected VM Firmware](https://"
 "cs.android.com/android/platform/superproject/main/+/main:packages/modules/"
 "Virtualization/guest/pvmfw/)."
 msgstr ""
-"これはAndroidで[Protected VM Firmware](https://cs.android.com/android/"
-"platform/superproject/+/master:packages/modules/Virtualization/pvmfw/)のため"
-"に利用されています。"
+"これは Android で [Protected VM Firmware](https://cs.android.com/android/"
+"platform/superproject/main/+/main:packages/modules/Virtualization/guest/"
+"pvmfw/) のために利用されています。"
 
 #: src/bare-metal/useful-crates/aarch64-paging.md
-#, fuzzy
 msgid ""
 "There's no easy way to run this example by itself, as it needs to run on "
 "real hardware or under QEMU."
 msgstr ""
-"この例は本物のハードウェアかQEMUを必要とするので、簡単には実行できません。"
+"この例は本物のハードウェアか QEMU 上で実行する必要があるため、単体で簡単に実"
+"行する方法はありません。"
 
 #: src/bare-metal/useful-crates/buddy_system_allocator.md
-#, fuzzy
 msgid ""
 "[`buddy_system_allocator`](https://crates.io/crates/buddy_system_allocator) "
 "is a crate that implements a basic buddy system allocator. It can be used "
@@ -27919,13 +27952,15 @@ msgid ""
 "space for PCI BARs:"
 msgstr ""
 "[`buddy_system_allocator`](https://crates.io/crates/buddy_system_allocator) "
-"はサードパーティのクレートで、基本的なバディシステムアローケータを実装してい"
-"ます。このクレートは[`GlobalAlloc`](https://doc.rust-lang.org/core/alloc/"
-"trait.GlobalAlloc.html) を実装する [`LockedHeap`](https://docs.rs/"
-"buddy_system_allocator/0.9.0/buddy_system_allocator/struct.LockedHeap.html) "
-"により（ [以前](../alloc.md)見たように）標準の`alloc` クレートを利用可能にす"
-"るために使えますし、別のアドレス空間をアロケートするためにも使えます。例え"
-"ば、PCI BARに対するMMIO領域をアロケートしたい場合には以下のようにできます："
+"は、基本的なバディシステムアロケータを実装したクレートです。このクレートは、"
+"（[以前](../alloc.md)見たように）標準の `alloc` クレートを使えるように"
+"（[`LockedHeap`](https://docs.rs/buddy_system_allocator/0.9.0/"
+"buddy_system_allocator/struct.LockedHeap.html) を使って）[`GlobalAlloc`]"
+"(https://doc.rust-lang.org/core/alloc/trait.GlobalAlloc.html) を実装するため"
+"にも、（[`FrameAllocator`](https://docs.rs/buddy_system_allocator/0.9.0/"
+"buddy_system_allocator/struct.FrameAllocator.html) を使って）別のアドレス空間"
+"をアロケートするためにも使えます。例えば、PCI BAR に対する MMIO 領域をアロ"
+"ケートしたい場合には以下のようにできます："
 
 #: src/bare-metal/useful-crates/buddy_system_allocator.md
 msgid "PCI BARs always have alignment equal to their size."
@@ -27942,7 +27977,6 @@ msgstr ""
 "用できないため実行できません）"
 
 #: src/bare-metal/useful-crates/tinyvec.md
-#, fuzzy
 msgid ""
 "Sometimes you want something that can be resized like a `Vec`, but without "
 "heap allocation. [`tinyvec`](https://crates.io/crates/tinyvec) provides "
@@ -27950,19 +27984,18 @@ msgid ""
 "allocated or on the stack, that keeps track of how many elements are used "
 "and panics if you try to use more than are allocated."
 msgstr ""
-"時には`Vec`のようにリサイズできる領域をヒープを使わずに確保したいと思うことが"
-"あります。[`tinyvec`](https://crates.io/crates/tinyvec)は静的に確保、またはス"
-"タック上に確保した配列またはスライスを割当領域とするベクタを提供します。この"
-"実装では、いくつの要素が使われているかが管理され、確保された以上に使おうとす"
-"るとパニックします。"
+"時には `Vec` のようにリサイズできるものを、ヒープアロケーションなしで使いたい"
+"ことがあります。[`tinyvec`](https://crates.io/crates/tinyvec) はそれを提供し"
+"ます。これは配列またはスライスを裏付けとするベクタで、静的に確保することもス"
+"タック上に置くこともできます。いくつの要素が使われているかを管理し、確保され"
+"た以上に使おうとするとパニックします。"
 
 #: src/bare-metal/useful-crates/tinyvec.md
-#, fuzzy
 msgid ""
 "`tinyvec` requires that the element type implement `Default` for "
 "initialization."
 msgstr ""
-"`tinyvec` は初期化のために要素となるタイプが`Default`を実装することを必要とし"
+"`tinyvec` は、初期化のために要素の型が `Default` を実装していることを必要とし"
 "ます。"
 
 #: src/bare-metal/useful-crates/tinyvec.md
@@ -27997,25 +28030,23 @@ msgstr ""
 "気をつけてください。"
 
 #: src/bare-metal/useful-crates/spin.md
-#, fuzzy
 msgid ""
 "`spin` also has a ticket lock mutex implementation; equivalents of `RwLock`, "
 "`Barrier` and `Once` from `std::sync`; and `Lazy` for lazy initialization."
 msgstr ""
-"`spin` はチケットロックのミューテックス実装も持っています。これは`std::sync`"
-"における`RwLock`, `Barrier`、`Once` と等価であり、またレイジー初期化の観点で"
-"は`Lazy`と等価なものです。"
+"`spin` には、チケットロックによるミューテックスの実装もあります。また、"
+"`std::sync` の `RwLock`、`Barrier`、`Once` に相当するものや、遅延初期化のため"
+"の `Lazy` もあります。"
 
 #: src/bare-metal/useful-crates/spin.md
-#, fuzzy
 msgid ""
 "The [`once_cell`](https://crates.io/crates/once_cell) crate also has some "
 "useful types for late initialization with a slightly different approach to "
 "`spin::once::Once`."
 msgstr ""
-"[`once_cell`](https://crates.io/crates/once_cell) クレートも"
-"`spin::once::Once`とは少し異なるアプローチの遅延初期化のための有用な型をいく"
-"つか持っています。"
+"[`once_cell`](https://crates.io/crates/once_cell) クレートにも、"
+"`spin::once::Once` とは少し異なるアプローチで遅延初期化を行うための有用な型が"
+"いくつかあります。"
 
 #: src/bare-metal/useful-crates/spin.md
 msgid ""
@@ -28040,7 +28071,6 @@ msgid "vmbase"
 msgstr "vmbase"
 
 #: src/bare-metal/android/vmbase.md
-#, fuzzy
 msgid ""
 "For VMs running under crosvm on aarch64, the [vmbase](https://"
 "android.googlesource.com/platform/packages/modules/Virtualization/+/refs/"
@@ -28048,10 +28078,11 @@ msgid ""
 "defaults for the build rules, along with an entry point, UART console "
 "logging and more."
 msgstr ""
-"[vmbase](https://android.googlesource.com/platform/packages/modules/"
-"Virtualization/+/refs/heads/master/vmbase/)というライブラリは、aarch64上の"
-"crosvm下で実行されるVMに対して、エントリポイント、UARTコンソールロギングなど"
-"に加えて、リンカスクリプトと有用なデフォルトビルドルールを提供してくれます。"
+"aarch64 上の crosvm で実行される VM に対して、[vmbase](https://"
+"android.googlesource.com/platform/packages/modules/Virtualization/+/refs/"
+"heads/main/libs/libvmbase/) ライブラリは、エントリポイントや UART コンソール"
+"ロギングなどに加えて、リンカスクリプトとビルドルールの有用なデフォルトを提供"
+"します。"
 
 #: src/bare-metal/android/vmbase.md
 msgid ""
@@ -28163,9 +28194,8 @@ msgid "_build.rs_ (you shouldn't need to change this):"
 msgstr "_build.rs_（変更する必要はありません）:"
 
 #: src/exercises/bare-metal/rtc.md
-#, fuzzy
 msgid "_memory.ld_ (you shouldn't need to change this):"
-msgstr "_image.ld_（変更する必要はありません）:"
+msgstr "_memory.ld_（変更する必要はありません）:"
 
 #: src/exercises/bare-metal/rtc.md
 msgid "_Makefile_ (you shouldn't need to change this):"
@@ -28204,24 +28234,22 @@ msgid "\"main({:#x}, {:#x}, {:#x}, {:#x})\""
 msgstr "\"main({:#x}, {:#x}, {:#x}, {:#x})\""
 
 #: src/exercises/bare-metal/solutions-afternoon.md
-#, fuzzy
 msgid ""
 "// SAFETY: `GICD_BASE_ADDRESS` and `GICR_BASE_ADDRESS` are the base\n"
 "    // addresses of a GICv3 distributor and redistributor respectively, and\n"
 "    // nothing else accesses those address ranges.\n"
 msgstr ""
-"// `GICD_BASE_ADDRESS` と `GICR_BASE_ADDRESS` がそれぞれ GICv3 の\n"
+"// SAFETY: `GICD_BASE_ADDRESS` と `GICR_BASE_ADDRESS` はそれぞれ GICv3 の\n"
 "    // ディストリビューターと再ディストリビューターのベースアドレスであり、\n"
-"    // 他にはこれらのアドレス範囲にアクセスするものがないため、安全です。\n"
+"    // 他にこれらのアドレス範囲にアクセスするものはありません。\n"
 
 #: src/exercises/bare-metal/solutions-afternoon.md
-#, fuzzy
 msgid ""
 "// SAFETY: `PL031_BASE_ADDRESS` is the base address of a PL031 device, and\n"
 "    // nothing else accesses that address range.\n"
 msgstr ""
-"// `PL031_BASE_ADDRESS` が PL031 デバイスのベースアドレスであり、\n"
-"    // それ以外はこのアドレス範囲にアクセスしないため、安全です。\n"
+"// SAFETY: `PL031_BASE_ADDRESS` は PL031 デバイスのベースアドレスであり、\n"
+"    // 他にこのアドレス範囲にアクセスするものはありません。\n"
 
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "\"RTC: {time}\""
@@ -28292,6 +28320,8 @@ msgid ""
 "/// Constructs a new instance of the RTC driver for a PL031 device with the\n"
 "    /// given set of registers.\n"
 msgstr ""
+"/// 指定されたレジスタセットを持つ PL031 デバイス用の RTC ドライバの\n"
+"    /// 新しいインスタンスを作成します。\n"
 
 #: src/exercises/bare-metal/solutions-afternoon.md
 msgid "/// Reads the current RTC value.\n"
