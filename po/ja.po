@@ -17643,31 +17643,37 @@ msgstr ""
 
 #: src/macros/macro_rules/welcome.md
 msgid "They are defined using the `macro_rules!` construct."
-msgstr ""
+msgstr "`macro_rules!` 構文を使用して定義します。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "They allow you to write custom pattern matches on tokens, expanding them "
 "into standard Rust code."
 msgstr ""
+"トークンに対する独自のパターンマッチを記述し、それを標準的な Rust コードに展"
+"開できます。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "They are partially hygienic: local variables and labels defined inside them "
 "do not leak outside."
 msgstr ""
+"部分的に衛生的です。内部で定義されたローカル変数やラベルは外部に漏れ出しませ"
+"ん。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "They introduce minimal compile-time overhead and have no external crate "
 "dependencies."
 msgstr ""
+"コンパイル時のオーバーヘッドは最小限で、外部クレートへの依存関係もありませ"
+"ん。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "We will learn how to write, configure, and match patterns in declarative "
 "macros."
-msgstr ""
+msgstr "宣言的マクロでパターンを記述、設定、マッチさせる方法を学びます。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
@@ -17676,53 +17682,68 @@ msgid ""
 "of the output you want to produce. This is much like C preprocessor macros, "
 "but with richer pattern matching."
 msgstr ""
+"宣言的マクロが「例によるマクロ」と呼ばれることがあるのは、マッチさせたい構文"
+"の例と、生成したい出力の例を書くからだと説明してください。これは C プリプロ"
+"セッサマクロとよく似ていますが、より豊富なパターンマッチングを備えています。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "Highlight that they are defined directly in your standard code, making them "
 "convenient to add without extra setup."
 msgstr ""
+"宣言的マクロは通常のコードの中で直接定義されるため、特別な準備なしに手軽に追"
+"加できることを強調してください。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
 "This slide acts as a transition into how declarative macros are defined and "
 "used."
 msgstr ""
+"このスライドは、宣言的マクロの定義方法と使い方への導入の役割を果たします。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "Let's look at a simple declarative macro that mimics the behavior of `vec!"
 "[]` for empty vector creation:"
 msgstr ""
+"空のベクターを作成する `vec![]` の動作を模倣する、簡単な宣言的マクロを見てみ"
+"ましょう。"
 
 #: src/macros/macro_rules/example.md
-#, fuzzy
 msgid "\"Vector: {:?}\""
-msgstr "\"coords: {:?}\""
+msgstr "\"Vector: {:?}\""
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "The macro is introduced with the `macro_rules!` construct, declaring a macro "
 "named `my_vec`."
 msgstr ""
+"このマクロは `macro_rules!` 構文で導入され、`my_vec` という名前のマクロを宣言"
+"しています。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "**Match Arm:** The left-hand side `()` is the matcher. The pattern here "
 "matches only empty inputs."
 msgstr ""
+"**マッチアーム:** 左辺の `()` がマッチャーです。ここでのパターンは空の入力に"
+"のみマッチします。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "**Transcriber:** The right-hand side `{ Vec::new() }` is the transcriber. It "
 "specifies what the macro invocation will expand to for this pattern."
 msgstr ""
+"**トランスクライバ:** 右辺の `{ Vec::new() }` がトランスクライバです。このパ"
+"ターンに対して、マクロ呼び出しが何に展開されるかを指定します。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "Explain that `macro_rules!` is itself a macro, which uses a special, unique "
 "language syntax for defining declarative macros."
 msgstr ""
+"`macro_rules!` 自体もマクロであり、宣言的マクロを定義するための特別な独自の構"
+"文を使用することを説明してください。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
@@ -17730,82 +17751,104 @@ msgid ""
 "(conventional for array-like objects), any brackets (`my_vec!()` or `my_vec!"
 "{}`) would also work."
 msgstr ""
+"`my_vec![]` は角括弧で呼び出されています（配列のようなオブジェクトでの慣例）"
+"が、どの括弧（`my_vec!()` や `my_vec!{}`）でも動作することを思い出してくださ"
+"い。"
 
 #: src/macros/macro_rules/example.md
 msgid ""
 "In this case, `my_vec![]` matches empty tokens and transcribes directly to "
 "`Vec::new()`."
 msgstr ""
+"この場合、`my_vec![]` は空のトークンにマッチし、そのまま `Vec::new()` に変換"
+"されます。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "A declarative macro consists of one or more **macro rules**, similar to how "
 "a Rust `match` expression consists of a sequence of match arms:"
 msgstr ""
+"Rust の `match` 式が一連のマッチアームで構成されるのと同様に、宣言的マクロは "
+"1 つ以上の **マクロルール** で構成されます。"
 
 #: src/macros/macro_rules/defining.md
 msgid "// Left-side: Matcher        Right-side: Transcriber\n"
-msgstr ""
+msgstr "// 左辺: マッチャー        右辺: トランスクライバ\n"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "**Macro Rule:** An arm of the macro containing a Matcher and a Transcriber "
 "separated by `=>`."
 msgstr ""
+"**マクロルール:** マッチャーとトランスクライバを `=>` で区切った、マクロの"
+"アームです。"
 
 #: src/macros/macro_rules/defining.md
 msgid "**Matcher:** A pattern that matches an input token stream."
-msgstr ""
+msgstr "**マッチャー:** 入力トークンストリームにマッチするパターンです。"
 
 #: src/macros/macro_rules/defining.md
 msgid "**Transcriber:** The code segment template that expands when matched."
 msgstr ""
+"**トランスクライバ:** マッチしたときに展開されるコード片のテンプレートです。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "**Meta-variables:** Variables defined on the left and expanded on the right, "
 "prefixed with `$` (e.g., `$bar`)."
 msgstr ""
+"**メタ変数:** 左辺で定義され右辺で展開される、`$` を接頭辞とする変数です"
+"（例: `$bar`）。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "**Fragment Specifiers:** Indicate to which syntactic category the meta-"
 "variable is restricted (e.g., `ident` or `expr`)."
 msgstr ""
+"**フラグメント指定子:** メタ変数がどの構文カテゴリに制限されるかを示します"
+"（例: `ident` や `expr`）。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "Like `match` in normal Rust, the compiler attempts to match each rule "
 "sequentially, from top to bottom."
 msgstr ""
+"通常の Rust の `match` と同様に、コンパイラは各ルールを上から下へ順にマッチさ"
+"せようとします。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "If a rule matches the input token stream completely, it selects that arm and "
 "transcribes the output."
 msgstr ""
+"ルールが入力トークンストリームに完全にマッチすると、そのアームが選択され、出"
+"力が生成されます。"
 
 #: src/macros/macro_rules/defining.md
 msgid ""
 "If no arms match, or if any pattern is ambiguous when matching tokens (there "
 "is no backtrack or lookahead), the compiler emits an error."
 msgstr ""
+"どのアームもマッチしない場合や、トークンのマッチング時にいずれかのパターンが"
+"曖昧な場合（バックトラックや先読みは行われません）、コンパイラはエラーを出し"
+"ます。"
 
 #: src/macros/macro_rules/pattern-matching.md
 msgid ""
 "You can match on exact, literal tokens inside macro patterns. This is "
 "extremely useful for building custom DSLs or structured syntax matching:"
 msgstr ""
+"マクロのパターン内では、リテラルのトークンそのものにマッチさせることができま"
+"す。これは独自の DSL や構造化された構文のマッチングを構築する際にとても便利で"
+"す。"
 
 #: src/macros/macro_rules/pattern-matching.md
-#, fuzzy
 msgid "\"Starting...\""
-msgstr "\"Starting program.\""
+msgstr "\"Starting...\""
 
 #: src/macros/macro_rules/pattern-matching.md
-#, fuzzy
 msgid "\"Stopping...\""
-msgstr "\"Setting up IMU...\""
+msgstr "\"Stopping...\""
 
 #: src/macros/macro_rules/pattern-matching.md
 msgid ""
@@ -17814,12 +17857,17 @@ msgid ""
 "as `=>`, `,`, `:`, etc.) can be sequenced to design readable and mnemonic "
 "input syntax for your macros."
 msgstr ""
+"この例では、トークン `start`、`stop`、`restart` はリテラルの識別子として完全"
+"一致でマッチします。リテラルの識別子と独自の記号（`=>`、`,`、`:` など）を並べ"
+"ることで、読みやすく覚えやすいマクロの入力構文を設計できます。"
 
 #: src/macros/macro_rules/pattern-matching.md
 msgid ""
 "Note that the macro in the example invokes itself recursively in its "
 "transcriber body."
 msgstr ""
+"この例のマクロは、トランスクライバの本体で自分自身を再帰的に呼び出しているこ"
+"とに注目してください。"
 
 #: src/macros/macro_rules/pattern-matching.md
 msgid ""
@@ -17828,12 +17876,18 @@ msgid ""
 "to the literal tokens being matched. They are treated purely as structural "
 "matches."
 msgstr ""
+"マクロはトークンストリームをパースするため、マッチ対象のリテラルトークンには"
+"通常の Rust のルール（変数を宣言する必要がある、モジュールが存在する必要があ"
+"る、など）は適用されないことを指摘してください。これらは純粋に構造的なマッチ"
+"として扱われます。"
 
 #: src/macros/macro_rules/pattern-matching.md
 msgid ""
 "Macros can invoke themselves and other macros, which can be useful for some "
 "more advanced macro design patterns which will be discussed later."
 msgstr ""
+"マクロは自分自身や他のマクロを呼び出すことができ、これは後で説明する、より高"
+"度なマクロの設計パターンで役立ちます。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
@@ -17844,6 +17898,11 @@ msgid ""
 "the repetitive definitions; the resulting boilerplate is only the handful of "
 "tokens required to invoke a macro."
 msgstr ""
+"通常の Rust では、関数を定義する際に避けられない構文上のボイラープレート"
+"（`fn` キーワード、引数と戻り値の型の指定、本体）があります。マクロを使うと、"
+"繰り返しの多い関数定義のボイラープレートを、定義ごとに異なりうるトークンだけ"
+"に減らせます。残るボイラープレートは、マクロを呼び出すのに必要なわずかなトー"
+"クンだけです。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
@@ -17851,6 +17910,8 @@ msgid ""
 "`add`, `sub`, and `mul`), their types and general structure will be "
 "identical, with only the name and operation varying."
 msgstr ""
+"たとえば、さまざまな算術演算（`add`、`sub`、`mul` など）の関数を定義する場"
+"合、それらの型と全体の構造は同一で、名前と演算だけが異なります。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
@@ -17859,6 +17920,10 @@ msgid ""
 "overhead if the closure is not inlined. Macros can similarly avoid "
 "repetition without the possibility of runtime overhead."
 msgstr ""
+"状況によっては、`|a, b| a + b` のようなクロージャを渡すことで構文の繰り返しを"
+"避けられますが、クロージャがインライン化されない場合は実行時のオーバーヘッド"
+"が生じる可能性があります。マクロも同様に繰り返しを避けられますが、実行時の"
+"オーバーヘッドが生じる可能性はありません。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
@@ -17866,6 +17931,8 @@ msgid ""
 "arithmetic function definitions using pattern matching on identifiers and "
 "operator tokens."
 msgstr ""
+"この演習では、識別子と演算子トークンに対するパターンマッチングを使って算術関"
+"数の定義を生成する、`define_op!` というマクロを実装します。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
@@ -17874,77 +17941,82 @@ msgid ""
 "e.g. `$var: ident` or `$e: expr`. We will cover the various fragment "
 "specifiers in detail in the coming sections."
 msgstr ""
+"入力中の任意のトークンへのマッチは、`$`、変数名、フラグメント指定子で導入され"
+"るメタ変数で実現されることを思い出してください（例: `$var: ident` や `$e: "
+"expr`）。各種のフラグメント指定子については、この後のセクションで詳しく説明し"
+"ます。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid "The syntax for `define_op!` should support accept input like this:"
-msgstr ""
+msgstr "`define_op!` の構文は、次のような入力を受け付ける必要があります。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid "This invocation should expand to:"
-msgstr ""
+msgstr "この呼び出しは次のように展開される必要があります。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 #: src/macros/macro_rules/repetition/exercise.md
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
-#, fuzzy
 msgid "Instructions:"
-msgstr "構造体（structs）"
+msgstr "手順:"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid "Implement the `define_op!` macro."
-msgstr ""
+msgstr "`define_op!` マクロを実装します。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
 "Capture the function name as an `ident` and the arithmetic operator as a "
 "`tt` (Token Tree)."
 msgstr ""
+"関数名を `ident` として、算術演算子を `tt`（トークン木）としてキャプチャしま"
+"す。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
-#, fuzzy
 msgid "// TODO: Implement the `define_op!` macro.\n"
-msgstr "// TODO: `main` で使用する `min` 関数を実装します。\n"
+msgstr "// TODO: `define_op!` マクロを実装します。\n"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid "// Use the macro to define add, sub, and mul functions:\n"
-msgstr ""
+msgstr "// マクロを使って add、sub、mul 関数を定義します:\n"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 #: src/macros/macro_rules/pattern-matching/solution.md
-#, fuzzy
 msgid "\"10 + 2 = {}\""
-msgstr "\"{:?} + {:?} = {:?}\""
+msgstr "\"10 + 2 = {}\""
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 #: src/macros/macro_rules/pattern-matching/solution.md
-#, fuzzy
 msgid "\"10 - 2 = {}\""
-msgstr "\"y = 2, x = {i:?}\""
+msgstr "\"10 - 2 = {}\""
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 #: src/macros/macro_rules/pattern-matching/solution.md
-#, fuzzy
 msgid "\"10 * 2 = {}\""
-msgstr "\"y = 2, x = {i:?}\""
+msgstr "\"10 * 2 = {}\""
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
 "Explain that the `tt` specifier is useful for matching parts of syntax that "
 "are not free-standing expressions as token trees."
 msgstr ""
+"`tt` 指定子は、それ単体では式にならない構文の一部をトークン木としてマッチさせ"
+"るのに便利であることを説明してください。"
 
 #: src/macros/macro_rules/pattern-matching/exercise.md
 msgid ""
 "This demonstrates code generation with less syntactic overhead than "
 "abstracting with functions or traits."
 msgstr ""
+"これは、関数やトレイトで抽象化するよりも少ない構文上のオーバーヘッドでコード"
+"を生成できることを示しています。"
 
 #: src/macros/macro_rules/pattern-matching/solution.md
 msgid ""
 "Here is the implementation of the `define_op!` macro that dynamically "
 "defines mathematical functions:"
-msgstr ""
+msgstr "数学関数を動的に定義する `define_op!` マクロの実装は次のとおりです。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
@@ -17952,93 +18024,109 @@ msgid ""
 "expect and capture as a meta-variable. Here are the most commonly used "
 "specifiers:"
 msgstr ""
+"**フラグメント指定子** は、どのカテゴリの構文を想定してメタ変数としてキャプ"
+"チャするかをマクロコンパイラに伝えます。よく使われる指定子は次のとおりです。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`ident`: An identifier (i.e., variable or item names such as `foo` or `_x`)."
-msgstr ""
+msgstr "`ident`: 識別子（つまり、`foo` や `_x` のような変数名やアイテム名）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`expr`: A single expression (e.g., `2 + 2`, `a.method()`, `match x { ... }`)."
-msgstr ""
+msgstr "`expr`: 1 つの式（例: `2 + 2`、`a.method()`、`match x { ... }`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`literal`: A literal value (e.g., `\"hello\"`, `42`, `true`, or `-4.0_f32`)."
-msgstr ""
+msgstr "`literal`: リテラル値（例: `\"hello\"`、`42`、`true`、`-4.0_f32`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid "`stmt`: A single statement without a semicolon (e.g., `let x = 5`)."
-msgstr ""
+msgstr "`stmt`: セミコロンを含まない 1 つの文（例: `let x = 5`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid "`pat`: A pattern (e.g., `[_, 0, ..]`)."
-msgstr ""
+msgstr "`pat`: パターン（例: `[_, 0, ..]`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid "`ty`: A type (e.g., `i32`, `Vec<String>`, `&str`)."
-msgstr ""
+msgstr "`ty`: 型（例: `i32`、`Vec<String>`、`&str`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`path`: A path of segments separated by `::` (e.g., "
 "`std::collections::HashMap`)."
 msgstr ""
+"`path`: `::` で区切られたセグメントからなるパス（例: "
+"`std::collections::HashMap`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`item`: A complete item definition (e.g., `fn foo() {}`, `struct Bar;`)."
-msgstr ""
+msgstr "`item`: 完全なアイテム定義（例: `fn foo() {}`、`struct Bar;`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`tt`: A single token tree (recall that this is either a single token or a "
 "bracketed token group)."
 msgstr ""
+"`tt`: 1 つのトークン木（これは 1 つのトークン、または括弧で囲まれたトークンの"
+"グループであることを思い出してください）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid "Less common specifiers include:"
-msgstr ""
+msgstr "あまり使われない指定子には次のものがあります。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid "`lifetime`: A lifetime like `'a`."
-msgstr ""
+msgstr "`lifetime`: `'a` のようなライフタイム。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`block`: A block of statements enclosed in braces (e.g., `{ let x = 5; x }`)."
-msgstr ""
+msgstr "`block`: 波括弧で囲まれた文のブロック（例: `{ let x = 5; x }`）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`vis`: An optional visibility specifier in an item, e.g. `pub` or "
 "`pub(crate)`, or nothing."
 msgstr ""
+"`vis`: アイテムに付く省略可能な可視性指定子（例: `pub` や `pub(crate)`、また"
+"は何もなし）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "`meta`: The possible _contents_ of a `#[...]` attribute (not the full "
 "attribute with hash and brackets)."
 msgstr ""
+"`meta`: `#[...]` 属性の _中身_ として可能なもの（ハッシュと括弧を含む属性全体"
+"ではありません）。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "Explain that fragment specifiers act like type annotations for macro "
 "parameters. They restrict what tokens can match."
 msgstr ""
+"フラグメント指定子はマクロのパラメータに対する型注釈のような役割を果たし、"
+"マッチできるトークンを制限することを説明してください。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "For example, if you use `$x:expr`, the input must be parsable as a valid "
 "Rust expression."
 msgstr ""
+"たとえば `$x:expr` を使うと、入力は有効な Rust の式としてパースできるものでな"
+"ければなりません。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "When the macro is expanded, the compiler inserts the matched AST fragment "
 "directly, which guarantees semantic structure and operator precedence."
 msgstr ""
+"マクロが展開されるとき、コンパイラはマッチした AST フラグメントをそのまま挿入"
+"するため、意味上の構造と演算子の優先順位が保証されます。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
@@ -18048,12 +18136,19 @@ msgid ""
 "specifier where possible, which will catch more syntactic edge cases and "
 "integrate more seamlessly into the language."
 msgstr ""
+"これらの指定子の中には重なり合うものがあります。たとえば `block` を直接使う代"
+"わりに、`stmt` を使ってブロック用のパターンを自分で書くこともできます。一般"
+"に、できるだけ意味的に最も適切なフラグメント指定子を選ぶようにしてください。"
+"そうすることで、構文上のエッジケースをより多く捕捉でき、言語とよりスムーズに"
+"統合できます。"
 
 #: src/macros/macro_rules/fragment-specifiers.md
 msgid ""
 "There are some additional, obscure fragment specifiers such as `expr_2021` "
 "and `pat_param`."
 msgstr ""
+"ほかにも、`expr_2021` や `pat_param` のような、あまり知られていないフラグメン"
+"ト指定子があります。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid ""
@@ -18061,70 +18156,79 @@ msgid ""
 "single syntactic element and doubles it into a tuple pair containing two of "
 "that element: `(x, x)`."
 msgstr ""
+"この演習では、1 つの構文要素を受け取り、それを 2 つ含むタプルのペア `(x, x)` "
+"に複製する `pair!` というマクロを実装します。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid ""
 "Your `pair!` macro should work across three different syntactic contexts:"
 msgstr ""
+"`pair!` マクロは、次の 3 つの異なる構文上のコンテキストで動作する必要がありま"
+"す。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid "**Types:** `pair!(i32)` expands to `(i32, i32)`."
-msgstr ""
+msgstr "**型:** `pair!(i32)` は `(i32, i32)` に展開されます。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid ""
 "**Patterns:** `pair!(7)` and `pair!(_)` expand to `(7, 7)` and `(_, _)`, "
 "respectively."
 msgstr ""
+"**パターン:** `pair!(7)` と `pair!(_)` は、それぞれ `(7, 7)` と `(_, _)` に展"
+"開されます。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid "**Expressions:** `pair!(1 + 2)` expands to `(1 + 2, 1 + 2)`."
-msgstr ""
+msgstr "**式:** `pair!(1 + 2)` は `(1 + 2, 1 + 2)` に展開されます。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid ""
 "Define the `pair!` macro with rules for types (`ty`), patterns (`pat`), and "
 "expressions (`expr`)."
 msgstr ""
+"型（`ty`）、パターン（`pat`）、式（`expr`）のルールを持つ `pair!` マクロを定"
+"義します。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 msgid ""
 "Order the rules appropriately so that type names, patterns, and expressions "
 "are correctly captured."
 msgstr ""
+"型名、パターン、式が正しくキャプチャされるように、ルールを適切な順序に並べま"
+"す。"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
-#, fuzzy
 msgid "// TODO: Implement the `pair!` macro.\n"
-msgstr "// TODO: `main` で使用する `min` 関数を実装します。\n"
+msgstr "// TODO: `pair!` マクロを実装します。\n"
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 #: src/macros/macro_rules/fragment-specifiers/solution.md
-#, fuzzy
 msgid "\"Doubled type: {p:?}\""
-msgstr "\"Could not open {:?}\""
+msgstr "\"Doubled type: {p:?}\""
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 #: src/macros/macro_rules/fragment-specifiers/solution.md
-#, fuzzy
 msgid "\"Doubled expr: {doubled:?}\""
-msgstr "\"debuggable: {debuggable:?}\""
+msgstr "\"Doubled expr: {doubled:?}\""
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 #: src/macros/macro_rules/fragment-specifiers/solution.md
 msgid "\"Pattern position: matched {e:?}\""
-msgstr ""
+msgstr "\"Pattern position: matched {e:?}\""
 
 #: src/macros/macro_rules/fragment-specifiers/exercise.md
 #: src/macros/macro_rules/fragment-specifiers/solution.md
 msgid "\"Did not match\""
-msgstr ""
+msgstr "\"Did not match\""
 
 #: src/macros/macro_rules/fragment-specifiers/solution.md
 msgid ""
 "Here is the implementation of the `pair!` macro using the `ty`, `pat`, and "
 "`expr` fragment specifiers:"
 msgstr ""
+"`ty`、`pat`、`expr` のフラグメント指定子を使った `pair!` マクロの実装は次のと"
+"おりです。"
 
 #: src/macros/macro_rules/fragment-specifiers/solution.md
 msgid ""
@@ -18133,6 +18237,9 @@ msgid ""
 "in different locations in a codebase with the specific meaning varying based "
 "on its argument."
 msgstr ""
+"**コンテキストの柔軟性:** 宣言的マクロは型、パターン、式の位置で展開できるた"
+"め、`pair!` のような 1 つのマクロを、引数によって具体的な意味を変えながら、"
+"コードベースのさまざまな場所で使用できます。"
 
 #: src/macros/macro_rules/fragment-specifiers/solution.md
 msgid ""
@@ -18141,6 +18248,10 @@ msgid ""
 "`pat` is the first pattern that can match the token `7`. The expression "
 "invocation passes an `as` cast, which cannot appear in patterns."
 msgstr ""
+"ここでは微妙なことが起きています。展開はコンテキストではなく入力によって決ま"
+"ります。`pat` はトークン `7` にマッチできる最初のパターンなので、`pair!(7)` "
+"は常にパターンに展開されます。式としての呼び出しでは `as` キャストを渡してい"
+"ますが、これはパターンには現れることができません。"
 
 #: src/macros/macro_rules/repetition.md
 msgid ""
@@ -18148,46 +18259,48 @@ msgid ""
 "This is defined using the repetition syntax on both the left and right sides "
 "of the match rules:"
 msgstr ""
+"宣言的マクロは、任意の長さのアイテムのリストにマッチし、展開することができま"
+"す。これは、マッチルールの左辺と右辺の両方で繰り返し構文を使って定義します。"
 
 #: src/macros/macro_rules/repetition.md
 msgid "`$( ... ) SEPARATOR OPERATOR`"
-msgstr ""
+msgstr "`$( ... ) SEPARATOR OPERATOR`"
 
 #: src/macros/macro_rules/repetition.md
 msgid ""
 "**Separator:** An optional token separating each matched item (typically `,` "
 "or `;`)."
 msgstr ""
+"**区切り文字:** マッチした各アイテムを区切る、省略可能なトークン（通常は `,` "
+"または `;`）。"
 
 #: src/macros/macro_rules/repetition.md
-#, fuzzy
 msgid "**Operators:**"
-msgstr "演算子"
+msgstr "**演算子:**"
 
 #: src/macros/macro_rules/repetition.md
 msgid "`*`: Match zero or more repetitions."
-msgstr ""
+msgstr "`*`: 0 回以上の繰り返しにマッチします。"
 
 #: src/macros/macro_rules/repetition.md
 msgid "`+`: Match one or more repetitions."
-msgstr ""
+msgstr "`+`: 1 回以上の繰り返しにマッチします。"
 
 #: src/macros/macro_rules/repetition.md
 msgid "`?`: Match zero or one (optional)."
-msgstr ""
+msgstr "`?`: 0 回または 1 回（省略可能）にマッチします。"
 
 #: src/macros/macro_rules/repetition.md
 msgid "// Match one or more expressions separated by commas:\n"
-msgstr ""
+msgstr "// カンマで区切られた 1 つ以上の式にマッチします:\n"
 
 #: src/macros/macro_rules/repetition.md
 msgid "// Expand the repetition:\n"
-msgstr ""
+msgstr "// 繰り返しを展開します:\n"
 
 #: src/macros/macro_rules/repetition.md
-#, fuzzy
 msgid "\"Value: {}\""
-msgstr "\"as u8: {}\""
+msgstr "\"Value: {}\""
 
 #: src/macros/macro_rules/repetition.md
 msgid ""
@@ -18195,6 +18308,8 @@ msgid ""
 "contain the exact meta-variables defined inside the left-hand side's "
 "repetition block."
 msgstr ""
+"右辺の繰り返しブロック `$( ... )*` には、左辺の繰り返しブロック内で定義された"
+"メタ変数そのものが含まれていなければならないことを説明してください。"
 
 #: src/macros/macro_rules/repetition.md
 msgid ""
@@ -18203,10 +18318,14 @@ msgid ""
 "that used on the right-hand side to join elements in the output stream. "
 "Here, the output separator is empty, resulting in sequential statements."
 msgstr ""
+"入力ストリームのパースに使われる左辺の区切り文字（`$( $val:expr ),+` のカン"
+"マ `,`）は、出力ストリームで要素をつなぐために右辺で使われる区切り文字と異"
+"なっていてもよいことに注意してください。ここでは出力の区切り文字が空なので、"
+"文が順に並ぶ結果になります。"
 
 #: src/macros/macro_rules/repetition.md
 msgid "You can use any punctuation token (except delimiters) as a separator."
-msgstr ""
+msgstr "区切り文字には、（デリミタを除く）任意の句読点トークンを使用できます。"
 
 #: src/macros/macro_rules/repetition.md
 msgid ""
@@ -18215,12 +18334,18 @@ msgid ""
 "separator may be accepted explicitly after a `*` or `+` repetition operator: "
 "`$($e:expr),+ $(,)?`"
 msgstr ""
+"Rust 自体のほとんどの構文要素は、区切り文字を終端文字としても受け付けます。繰"
+"り返し構文で末尾の区切り文字を許可するには、`*` または `+` の繰り返し演算子の"
+"後に、省略可能な区切り文字を明示的に受け付けるようにします: `$($e:expr),+ $"
+"(,)?`"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "In the earlier pattern matching exercise, you created a `define_op!` macro "
 "that defined a single binary operation for `i32` at a time."
 msgstr ""
+"以前のパターンマッチングの演習では、`i32` に対する二項演算を一度に 1 つ定義す"
+"る `define_op!` マクロを作成しました。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
@@ -18230,55 +18355,71 @@ msgid ""
 "generic wrapper type across multiple underlying numeric types in a single "
 "macro invocation."
 msgstr ""
+"この演習では、マクロのマッチャーの繰り返し構文を使って、その考え方を "
+"`define_ops!` マクロへと一般化します。新しいマクロでは、1 回のマクロ呼び出し"
+"で、複数の基礎となる数値型に対して、ジェネリックなラッパ型に任意の数の "
+"`std::ops` トレイトを実装できるようにする必要があります。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid "The desired macro syntax is:"
-msgstr ""
+msgstr "目的のマクロ構文は次のとおりです。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "This invocation should implement `std::ops::Add`, `std::ops::Sub`, and "
 "`std::ops::Mul` for `Scalar<i32>`, `Scalar<f32>`, and `Scalar<f64>`."
 msgstr ""
+"この呼び出しにより、`Scalar<i32>`、`Scalar<f32>`、`Scalar<f64>` に対して "
+"`std::ops::Add`、`std::ops::Sub`、`std::ops::Mul` が実装される必要がありま"
+"す。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "Given a wrapper struct `#[derive(Debug, PartialEq)] struct Scalar<T>(pub "
 "T);`, implement the `define_ops!` macro."
 msgstr ""
+"ラッパ構造体 `#[derive(Debug, PartialEq)] struct Scalar<T>(pub T);` が与えら"
+"れたとき、`define_ops!` マクロを実装します。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "Parse a comma-separated list of types (`$( $t:ty ),+`) followed by a colon "
 "(`:`)."
 msgstr ""
+"カンマ区切りの型のリスト（`$( $t:ty ),+`）と、それに続くコロン（`:`）をパース"
+"します。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "Parse a comma-separated list of trait mappings (`$( $trait_name:ident :: "
 "$fn_name:ident => $op:tt ),*`)."
 msgstr ""
+"カンマ区切りのトレイトの対応付けのリスト（`$( $trait_name:ident :: "
+"$fn_name:ident => $op:tt ),*`）をパースします。"
 
 #: src/macros/macro_rules/repetition/exercise.md
 msgid ""
 "In the macro expansion, use nested repetition `$($( ... )*)*` to generate "
 "`impl std::ops::$trait_name for Scalar<$t>` blocks."
 msgstr ""
+"マクロの展開では、ネストした繰り返し `$($( ... )*)*` を使って `impl "
+"std::ops::$trait_name for Scalar<$t>` ブロックを生成します。"
 
 #: src/macros/macro_rules/repetition/exercise.md
-#, fuzzy
 msgid "// TODO: Implement the `define_ops!` macro.\n"
-msgstr "// TODO: `main` で使用する `min` 関数を実装します。\n"
+msgstr "// TODO: `define_ops!` マクロを実装します。\n"
 
 #: src/macros/macro_rules/repetition/solution.md
 msgid ""
 "Here is the implementation of the generalized `define_ops!` macro using "
 "`std::ops` traits and nested macro repetition:"
 msgstr ""
+"`std::ops` トレイトとネストしたマクロの繰り返しを使った、一般化された "
+"`define_ops!` マクロの実装は次のとおりです。"
 
 #: src/macros/macro_rules/repetition/solution.md
 msgid "// Base case: no types left to handle\n"
-msgstr ""
+msgstr "// ベースケース: 処理する型が残っていない\n"
 
 #: src/macros/macro_rules/repetition/solution.md
 msgid ""
@@ -18286,58 +18427,77 @@ msgid ""
 "`impl std::ops::$trait_name for Scalar<$t>` block for every combination of "
 "type `$t` and operator `$op`."
 msgstr ""
+"マクロのトランスクライバは、ネストした繰り返し `$($( ... )*)*` を使って、型 "
+"`$t` と演算子 `$op` のすべての組み合わせについて `impl std::ops::$trait_name "
+"for Scalar<$t>` ブロックを展開します。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "As your declarative macros become more sophisticated, simple patterns may "
 "not be enough to express your intended logic."
 msgstr ""
+"宣言的マクロが高度になるにつれて、単純なパターンだけでは意図したロジックを表"
+"現しきれなくなることがあります。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "Rust programmers have established several design patterns for structuring "
 "more complex macros:"
 msgstr ""
+"Rust プログラマーは、より複雑なマクロを構成するためのいくつかのデザインパター"
+"ンを確立しています。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**Optional Parameters:** Using multiple match arms or optional matchers to "
 "handle default values."
 msgstr ""
+"**省略可能なパラメータ:** 複数のマッチアームや省略可能なマッチャーを使ってデ"
+"フォルト値を扱います。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**Named Parameters:** Explicitly labeling parameters at the callsite (e.g., "
 "`key=value`) to improve readability."
 msgstr ""
+"**名前付きパラメータ:** 呼び出し箇所でパラメータに明示的にラベルを付け（例: "
+"`key=value`）、読みやすさを向上させます。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**Internal Rules:** Prefixing helper match arms with a unique symbol (like "
 "`@`) to modularize code."
 msgstr ""
+"**内部ルール:** ヘルパー用のマッチアームに独自の記号（`@` など）を接頭辞とし"
+"て付け、コードをモジュール化します。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**Incremental Token Munchers:** Eating tokens off the front of a stream "
 "recursively."
 msgstr ""
+"**インクリメンタル トークンマンチャー:** ストリームの先頭からトークンを再帰的"
+"に食べていきます。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**Push-Down Accumulators:** Collecting tokens recursively into a buffer to "
 "build a structured output."
 msgstr ""
+"**プッシュダウン アキュムレータ:** トークンを再帰的にバッファへ集めて、構造化"
+"された出力を構築します。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
 "**TT Bundling:** Grouping multiple arguments inside a single Token Tree to "
 "simplify passing them down."
 msgstr ""
+"**TT バンドリング:** 複数の引数を 1 つのトークン木の中にまとめて、受け渡しを"
+"簡単にします。"
 
 #: src/macros/macro_rules/techniques.md
 msgid "We will consider each of these advanced techniques in turn."
-msgstr ""
+msgstr "これらの高度なテクニックを順番に見ていきます。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
@@ -18347,6 +18507,11 @@ msgid ""
 "logic in a procedural macro, which may be more straightforward at the cost "
 "of additional ceremony."
 msgstr ""
+"これらのパターンは高度な Rust のコードベースでは標準的なイディオムですが、単"
+"純なマクロには必要ないことを受講者に伝えて安心させてください。複雑な宣言的マ"
+"クロにするか、ロジックを手続き型マクロで実装するかは、プログラマーが判断して"
+"選ぶ必要があります。手続き型マクロは、追加の手間がかかる代わりに、より素直に"
+"書ける場合があります。"
 
 #: src/macros/macro_rules/techniques.md
 msgid ""
@@ -18354,6 +18519,9 @@ msgid ""
 "or mutable state during expansion, recursion and token-level manipulation "
 "are the primary ways to achieve complex code generation."
 msgstr ""
+"宣言的マクロには展開中に通常のローカル変数や可変の状態がないため、複雑なコー"
+"ド生成を実現する主な方法は再帰とトークンレベルの操作であることを説明してくだ"
+"さい。"
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid ""
@@ -18363,39 +18531,45 @@ msgid ""
 "reuse each other via recursion, which is a common pattern in declarative "
 "macros regardless of edition."
 msgstr ""
+"`?` 繰り返し演算子は省略可能なパラメータに使えますが、古い Rust エディション"
+"（2018 と 2015）ではこれをエミュレートする必要があります。これは、段階的に連"
+"なる複数のマッチャーアームを定義することで実現できます。それぞれの右辺は再帰"
+"によって互いを再利用できます。これはエディションに関係なく、宣言的マクロでよ"
+"く使われるパターンです。"
 
 #: src/macros/macro_rules/techniques/optional-params.md
-#, fuzzy
 msgid "// Single parameter:\n"
-msgstr "// 単純なバリアント\n"
+msgstr "// パラメータが 1 つの場合:\n"
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid ""
 "// Recurse instead of `println!(\"{}:{}: {}\", file!(), line!(), $msg)`:\n"
 msgstr ""
+"// `println!(\"{}:{}: {}\", file!(), line!(), $msg)` の代わりに再帰します:\n"
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid "// With optional formatting parameters:\n"
-msgstr ""
+msgstr "// 省略可能なフォーマットパラメータがある場合:\n"
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid "\"{}:{}: \""
-msgstr ""
+msgstr "\"{}:{}: \""
 
 #: src/macros/macro_rules/techniques/optional-params.md
-#, fuzzy
 msgid "\"my message\""
-msgstr "\"Message {i}\""
+msgstr "\"my message\""
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid "\"my message with param {}!\""
-msgstr ""
+msgstr "\"my message with param {}!\""
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid ""
 "Highlight how `concat!` is used at compile time to combine the file/line "
 "prefix with the user's log message literal."
 msgstr ""
+"`concat!` がコンパイル時に使われ、ファイル / 行のプレフィックスとユーザーのロ"
+"グメッセージのリテラルを結合していることを強調してください。"
 
 #: src/macros/macro_rules/techniques/optional-params.md
 msgid ""
@@ -18403,6 +18577,9 @@ msgid ""
 "compiler matches sequentially, and if a broader arm is placed above a "
 "narrower one, the narrower arm may never be reached."
 msgstr ""
+"`match` と同様に、アームの順序が重要であることを思い出してください。コンパイ"
+"ラは順にマッチを試みるため、より広いアームがより狭いアームの上に置かれている"
+"と、狭いアームには到達しない可能性があります。"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid ""
@@ -18410,24 +18587,29 @@ msgid ""
 "declarative macro APIs with named parameters. For macros with many "
 "arguments, this may significantly increase readability at the callsite:"
 msgstr ""
+"リテラルの識別子をキーと値の記述子として使うと、名前付きパラメータを持つ宣言"
+"的マクロの API を構築できます。引数が多いマクロでは、呼び出し箇所の読みやすさ"
+"が大きく向上する場合があります。"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid "// Callers pass named parameters:\n"
-msgstr ""
+msgstr "// 呼び出し側は名前付きパラメータを渡します:\n"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid "// Calls zero()\n"
-msgstr ""
+msgstr "// zero() を呼び出します\n"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid "// Calls clear()\n"
-msgstr ""
+msgstr "// clear() を呼び出します\n"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid ""
 "**Structural Identifiers:** `type:` and `function:` are matched as literal "
 "tokens."
 msgstr ""
+"**構造的な識別子:** `type:` と `function:` はリテラルのトークンとしてマッチし"
+"ます。"
 
 #: src/macros/macro_rules/techniques/named-params.md
 msgid ""
@@ -18435,6 +18617,8 @@ msgid ""
 "type and which is the method, instead of relying on positional parameter "
 "index ordering."
 msgstr ""
+"**意図の明確化:** 位置によるパラメータの順序に頼る代わりに、どの識別子が型で"
+"どれがメソッドなのかが呼び出し箇所で明確に示されます。"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid ""
@@ -18442,45 +18626,45 @@ msgid ""
 "(often called **internal rules**) prefixed with a unique, non-standard "
 "token, such as `@`."
 msgstr ""
+"複雑なマクロを実装する際によく使われるパターンは、`@` のような独自の非標準"
+"トークンを接頭辞として付けたヘルパーアーム（**内部ルール** と呼ばれることが多"
+"い）を定義することです。"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid ""
 "These internal arms are not meant to be called by users, but are used "
 "internally by the macro's public entry points to delegate and reuse logic:"
 msgstr ""
+"これらの内部アームはユーザーが呼び出すためのものではなく、マクロの公開エント"
+"リーポイントがロジックを委譲・再利用するために内部で使用します。"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid "// Internal helper rules:\n"
-msgstr ""
+msgstr "// 内部ヘルパールール:\n"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "\"all-lit: {}\""
-msgstr "\"int: {}\""
+msgstr "\"all-lit: {}\""
 
 #: src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "\"some-lit: {}\""
-msgstr "\"int: {}\""
+msgstr "\"some-lit: {}\""
 
 #: src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "// Public entrypoints:\n"
-msgstr "// プログラムのエントリーポイント\n"
+msgstr "// 公開エントリーポイント:\n"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "\"format: {} {}\""
-msgstr "\"{} {}\""
+msgstr "\"format: {} {}\""
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid "\"wow\""
-msgstr ""
+msgstr "\"wow\""
 
 #: src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "\"non-literal\""
-msgstr "\"none\""
+msgstr "\"non-literal\""
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid ""
@@ -18488,6 +18672,9 @@ msgid ""
 "begin a standard Rust item or expression, ensuring public users don't "
 "accidentally invoke these helper arms."
 msgstr ""
+"`@` は単なる慣例であることに注意してください。`@` は標準の Rust のアイテムや"
+"式の先頭に来ることができないため、うまく機能し、公開 API の利用者がこれらのヘ"
+"ルパーアームを誤って呼び出さないようにできます。"
 
 #: src/macros/macro_rules/techniques/internal-rules.md
 msgid ""
@@ -18495,6 +18682,9 @@ msgid ""
 "(`print_literals!`) while selecting the next branch to take using the `@`\\-"
 "prefixed tokens."
 msgstr ""
+"公開マッチャーアームの流れを、（`print_literals!` への）再帰呼び出しを通じて"
+"追い、`@` が接頭辞として付いたトークンを使って次に進む分岐がどのように選ばれ"
+"るかを示してください。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18502,24 +18692,25 @@ msgid ""
 "input token streams by \"eating\" (matching) one or more tokens off the "
 "front of the stream, and recursively passing the remainder back to itself."
 msgstr ""
+"**インクリメンタル TT マンチャー** は、ストリームの先頭から 1 つ以上のトーク"
+"ンを「食べ」（マッチし）、残りを再帰的に自分自身へ渡すことで入力トークンスト"
+"リームを処理する、再帰的なマクロのパターンです。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid "// Base case: Only one method call remains\n"
-msgstr ""
+msgstr "// ベースケース: メソッド呼び出しが 1 つだけ残っている\n"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
-#, fuzzy
 msgid "\"Hello, World\""
-msgstr "\"Hello World\""
+msgstr "\"Hello, World\""
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid "// Expands recursively to: s.len().trailing_zeros()\n"
-msgstr ""
+msgstr "// 再帰的に s.len().trailing_zeros() へ展開されます\n"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
-#, fuzzy
 msgid "\"Trailing zeros in length: {}\""
-msgstr "\"lines in file: {}\""
+msgstr "\"Trailing zeros in length: {}\""
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18528,11 +18719,13 @@ msgid ""
 "probably the right choice, but for more complex parsers other techniques may "
 "be more appropriate."
 msgstr ""
+"TT マンチャーは複雑な独自の文法をパースできますが、その一方で、読みにくくデ"
+"バッグしにくい場合があります。小さな組み込み DSL にはおそらく適した選択です"
+"が、より複雑なパーサーには他のテクニックのほうが適している場合があります。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
-#, fuzzy
 msgid "Limitations"
-msgstr "CXXの限界"
+msgstr "制限事項"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18541,6 +18734,10 @@ msgid ""
 "in the size of their input. For large inputs, compile times can bloat, and "
 "you might exceed the compiler's default macro recursion limit."
 msgstr ""
+"再帰呼び出しは入力の残り全体を渡す一方で、各ステップでは固定サイズの部分しか"
+"取り除かないため、TT マンチャーの処理量は入力サイズの 2 乗に比例します。入力"
+"が大きいとコンパイル時間が膨らみ、コンパイラのデフォルトのマクロ再帰上限を超"
+"えてしまう可能性があります。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18550,6 +18747,10 @@ msgid ""
 "pattern of sticking to `tt` matchers on the left, we mostly avoid this "
 "limitation."
 msgstr ""
+"また、パーサーの曖昧さを防ぐために必要な、コンパイラ組み込みのフォローセット"
+"制約（末尾の `tt` の直前にどのフラグメント指定子を置けるか）に関する制限もあ"
+"ります。左辺では `tt` マッチャーだけを使うというパターンに従えば、この制限は"
+"ほぼ回避できます。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18557,6 +18758,9 @@ msgid ""
 "token tree (including identifiers, literals, or bracketed groups), allowing "
 "the recursive call to accept \"anything else\" in `$tail`."
 msgstr ""
+"ここでは `tt` 指定子が重要であることを説明してください。`tt` は任意の 1 つの"
+"トークン木（識別子、リテラル、括弧で囲まれたグループを含む）にマッチするた"
+"め、再帰呼び出しで `$tail` に「それ以外の何でも」を受け付けることができます。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
@@ -18564,24 +18768,34 @@ msgid ""
 "expanding to `chain!(s.len(), trailing_zeros)`, which then matches the base "
 "case, expanding to `s.len().trailing_zeros()`."
 msgstr ""
+"`chain!(s, len, trailing_zeros)` が再帰ケースにマッチして `chain!(s.len(), "
+"trailing_zeros)` に展開され、それがさらにベースケースにマッチして "
+"`s.len().trailing_zeros()` に展開される流れに注目してください。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
 "Warn about rule ordering: a repeated `tt` matcher will also match a single "
 "`tt`, so rules expecting the latter should come first."
 msgstr ""
+"ルールの順序について注意を促してください。繰り返しの `tt` マッチャーは単一の "
+"`tt` にもマッチするため、単一の `tt` を想定するルールを先に置く必要がありま"
+"す。"
 
 #: src/macros/macro_rules/techniques/token-munchers.md
 msgid ""
 "Discuss tradeoffs: if a macro is complex enough to require a TT muncher, "
 "there is a chance it may be better expressed as a procedural macro."
 msgstr ""
+"トレードオフについて説明してください。TT マンチャーが必要になるほど複雑なマク"
+"ロは、手続き型マクロとして表現したほうがよい可能性があります。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
 "In this exercise, you will create an incremental TT muncher macro called "
 "`turtle_directions!`."
 msgstr ""
+"この演習では、`turtle_directions!` というインクリメンタル TT マンチャーのマク"
+"ロを作成します。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
@@ -18590,62 +18804,70 @@ msgid ""
 "punctuation between instructions. This DSL will be used to construct a "
 "`cons`\\-list-style `TurtleProgram` value."
 msgstr ""
+"このマクロは、タートルグラフィックスの命令用のドメイン固有言語（DSL）をパース"
+"します。この DSL は、命令の間に句読点を一切置かないという昔ながらのスタイルを"
+"保っています。この DSL は、`cons` リスト形式の `TurtleProgram` 値を構築するた"
+"めに使われます。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
-#, fuzzy
 msgid "Turtle Operation DSL"
-msgstr "Try演算子"
+msgstr "タートル操作の DSL"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
 "The `turtle_directions!` macro should parse the following unpunctuated "
 "commands:"
 msgstr ""
+"`turtle_directions!` マクロは、句読点のない次のコマンドをパースする必要があり"
+"ます。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "`FWD n`: moves forward by `n` steps (`TurtleProgram::Forward(n, rest)`)"
-msgstr ""
+msgstr "`FWD n`: `n` ステップ前進します（`TurtleProgram::Forward(n, rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
 "`REV n`: moves backward by `n` steps (`TurtleProgram::Reverse(n, rest)`)"
-msgstr ""
+msgstr "`REV n`: `n` ステップ後退します（`TurtleProgram::Reverse(n, rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "`LEFT n`: turns left by `n` degrees (`TurtleProgram::Left(n, rest)`)"
-msgstr ""
+msgstr "`LEFT n`: `n` 度左に回転します（`TurtleProgram::Left(n, rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "`RIGHT n`: turns right by `n` degrees (`TurtleProgram::Right(n, rest)`)"
-msgstr ""
+msgstr "`RIGHT n`: `n` 度右に回転します（`TurtleProgram::Right(n, rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "`PEN UP`: lifts the pen (`TurtleProgram::PenUp(rest)`)"
-msgstr ""
+msgstr "`PEN UP`: ペンを上げます（`TurtleProgram::PenUp(rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "`PEN DOWN`: lowers the pen (`TurtleProgram::PenDown(rest)`)"
-msgstr ""
+msgstr "`PEN DOWN`: ペンを下ろします（`TurtleProgram::PenDown(rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
 "`RED` and `BLACK`: set the pen color (`TurtleProgram::SetColor(color, rest)`)"
 msgstr ""
+"`RED` と `BLACK`: ペンの色を設定します（`TurtleProgram::SetColor(color, "
+"rest)`）"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
 "Where `rest` is a `Box<TurtleProgram>` representing the remaining steps of "
 "the program."
 msgstr ""
+"ここで `rest` は、プログラムの残りのステップを表す `Box<TurtleProgram>` で"
+"す。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid "Implement the `turtle_directions!` macro in the following program:"
-msgstr ""
+msgstr "次のプログラムで `turtle_directions!` マクロを実装してください。"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
-#, fuzzy
 msgid "// TODO: Implement the `turtle_directions!` macro.\n"
-msgstr "// TODO: `main` で使用する `min` 関数を実装します。\n"
+msgstr "// TODO: `turtle_directions!` マクロを実装します。\n"
 
 #: src/macros/macro_rules/techniques/token-munchers/exercise.md
 msgid ""
@@ -18653,21 +18875,26 @@ msgid ""
 "`RED`, or `FWD n`) at the head of the token stream allows parsing each "
 "command according to the number and kind of expected tokens to follow."
 msgstr ""
+"トークンストリームの先頭で特定のキーワードトークンの並び（例: `PEN UP`、"
+"`RED`、`FWD n`）にマッチさせることで、後に続くと想定されるトークンの数と種類"
+"に応じて各コマンドをパースできることを強調してください。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
 "Here is the implementation of the `turtle_directions!` TT muncher macro:"
-msgstr ""
+msgstr "`turtle_directions!` TT マンチャーマクロの実装は次のとおりです。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid "The macro processes the input sequence incrementally:"
-msgstr ""
+msgstr "このマクロは入力シーケンスを少しずつ処理します。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
 "Each rule matches a specific command pattern at the head of the token stream "
 "(such as `FWD $n:tt`, `PEN UP`, or `PEN DOWN`)."
 msgstr ""
+"各ルールは、トークンストリームの先頭にある特定のコマンドパターン（`FWD "
+"$n:tt`、`PEN UP`、`PEN DOWN` など）にマッチします。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
@@ -18675,12 +18902,16 @@ msgid ""
 "variant, passing `Box::new(turtle_directions!($($rest)*))` as the rest of "
 "the program."
 msgstr ""
+"マッチしたコマンドは対応する `TurtleProgram` バリアントでラップされ、プログラ"
+"ムの残りとして `Box::new(turtle_directions!($($rest)*))` が渡されます。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
 "Recursion continues on the remaining tokens `$($rest:tt)*` until no tokens "
 "remain, matching the empty `()` base case and giving `TurtleProgram::Done`."
 msgstr ""
+"再帰は残りのトークン `$($rest:tt)*` に対してトークンがなくなるまで続き、最後"
+"に空の `()` のベースケースにマッチして `TurtleProgram::Done` になります。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
@@ -18688,11 +18919,13 @@ msgid ""
 "set rules prohibit `$($rest:tt)*` from directly following `$n:expr` without "
 "punctuation."
 msgstr ""
+"数値の引数に `$n:tt` を使っているのは、組み込みのフォローセットのルールによ"
+"り、`$n:expr` の直後に句読点なしで `$($rest:tt)*` を続けることが禁止されてい"
+"るためです。"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
-#, fuzzy
 msgid "Extra Credit"
-msgstr "クレジット"
+msgstr "追加課題"
 
 #: src/macros/macro_rules/techniques/token-munchers/solution.md
 msgid ""
@@ -18700,6 +18933,9 @@ msgid ""
 "the repetition of `TurtleProgram::$OPERATION($ARG, "
 "Box::new(turtle_directions!(` in most of its arms."
 msgstr ""
+"このマクロのほとんどのアームで `TurtleProgram::$OPERATION($ARG, "
+"Box::new(turtle_directions!(` が繰り返されないように、定義をさらに整理する方"
+"法を考えてみてください。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
@@ -18708,6 +18944,9 @@ msgid ""
 "token lists like `a, b, c` from helper macros to be embedded inside "
 "templates."
 msgstr ""
+"関数形式のマクロ呼び出しはすべて有効な Rust の構文（最も多いのは式）に評価さ"
+"れなければならないため、`a, b, c` のようなばらばらのトークンのリストをヘル"
+"パーマクロで直接生成して返し、テンプレートに埋め込むことはできません。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
@@ -18716,27 +18955,32 @@ msgid ""
 "structure (such as a bracketed list) and feeding that buffer into subsequent "
 "macro calls:"
 msgstr ""
+"**プッシュダウン アキュムレータ** は、専用のバッファ構造（括弧で囲まれたリス"
+"トなど）の中にトークンを再帰的に蓄積し、そのバッファを後続のマクロ呼び出しに"
+"渡すことで、この式の制約を回避するためのパターンです。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid "\"hi!\""
-msgstr ""
+msgstr "\"hi!\""
 
 #: src/macros/macro_rules/techniques/accumulators.md
-#, fuzzy
 msgid "\"Array: {:?}\""
-msgstr "\"v: {:?}\""
+msgstr "\"Array: {:?}\""
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
 "**Token Accumulation:** The right-hand side `[]` buffer accumulates "
 "expression clones sequentially."
 msgstr ""
+"**トークンの蓄積:** 右辺の `[]` バッファに、式のクローンが順に蓄積されます。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
 "**AST Soundness:** Every intermediate macro recursion is structured as a "
 "valid macro call expression, which keeps the AST parser happy."
 msgstr ""
+"**AST の健全性:** 途中のマクロ再帰はすべて有効なマクロ呼び出し式として構成さ"
+"れるため、AST パーサーが問題なく処理できます。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
@@ -18744,6 +18988,9 @@ msgid ""
 "compiler expects the macro to expand into a single valid expression, but a "
 "list of comma-separated expressions is not a single expression."
 msgstr ""
+"`params!() => { \"foo\", \"bar\" }` のようなヘルパーマクロが失敗する理由を説"
+"明してください。コンパイラはマクロが 1 つの有効な式に展開されることを想定して"
+"いますが、カンマ区切りの式のリストは 1 つの式ではありません。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
@@ -18752,23 +18999,30 @@ msgid ""
 "list inside `[]` until it reaches the base case `[0, ...]`, which finally "
 "returns the completed array `[...]`."
 msgstr ""
+"プッシュダウン アキュムレータがこれをどう回避するかを示してください。"
+"`init_array!` は `accum!` に処理を委譲し、`accum!` は `[]` 内で伸びていくリス"
+"トを含む構造化されたマクロ呼び出しを渡し続けます。そしてベースケース "
+"`[0, ...]` に到達すると、最終的に完成した配列 `[...]` を返します。"
 
 #: src/macros/macro_rules/techniques/accumulators.md
 msgid ""
 "Mention that this pattern is exceptionally powerful for complex template "
 "formatting, but has a high cognitive overhead to write and maintain."
 msgstr ""
+"このパターンは複雑なテンプレートの整形に非常に強力ですが、書いて保守するため"
+"の認知的負荷が高いことに触れてください。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
-#, fuzzy
 msgid "Exercise: Turtle Graphics Vector"
-msgstr "演習: ジェネリックなロガー"
+msgstr "演習: タートルグラフィックスのベクター"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
 "In the previous exercise, you built a recursively nested `TurtleProgram` "
 "using a TT muncher."
 msgstr ""
+"前の演習では、TT マンチャーを使って再帰的にネストした `TurtleProgram` を構築"
+"しました。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
@@ -18778,63 +19032,75 @@ msgid ""
 "($acc:expr),* ]` as it munches the input stream, ultimately constructing a "
 "`Vec<TurtleOp>`."
 msgstr ""
+"この演習では、`turtle_directions!` マクロを **プッシュダウン アキュムレータ"
+"** を使うように変更します。列挙型のバリアントをネストする代わりに、マクロは入"
+"力ストリームを食べながら、パースした `TurtleOp` バリアントを括弧で囲まれた"
+"バッファ `[ $($acc:expr),* ]` に蓄積し、最終的に `Vec<TurtleOp>` を構築しま"
+"す。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "Instruction DSL"
-msgstr ""
+msgstr "命令の DSL"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
 "The `turtle_directions!` macro parses the following unpunctuated commands "
 "into a `Vec<TurtleOp>`:"
 msgstr ""
+"`turtle_directions!` マクロは、句読点のない次のコマンドをパースして "
+"`Vec<TurtleOp>` にします。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`FWD n` -> `TurtleOp::Forward(n)`"
-msgstr ""
+msgstr "`FWD n` -> `TurtleOp::Forward(n)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`REV n` -> `TurtleOp::Reverse(n)`"
-msgstr ""
+msgstr "`REV n` -> `TurtleOp::Reverse(n)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`LEFT n` -> `TurtleOp::Left(n)`"
-msgstr ""
+msgstr "`LEFT n` -> `TurtleOp::Left(n)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`RIGHT n` -> `TurtleOp::Right(n)`"
-msgstr ""
+msgstr "`RIGHT n` -> `TurtleOp::Right(n)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`PEN UP` -> `TurtleOp::PenUp`"
-msgstr ""
+msgstr "`PEN UP` -> `TurtleOp::PenUp`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`PEN DOWN` -> `TurtleOp::PenDown`"
-msgstr ""
+msgstr "`PEN DOWN` -> `TurtleOp::PenDown`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`RED` -> `TurtleOp::SetColor(Color::Red)`"
-msgstr ""
+msgstr "`RED` -> `TurtleOp::SetColor(Color::Red)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "`BLACK` -> `TurtleOp::SetColor(Color::Black)`"
-msgstr ""
+msgstr "`BLACK` -> `TurtleOp::SetColor(Color::Black)`"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
 "Implement `turtle_directions!` using internal rule push-down accumulation."
 msgstr ""
+"内部ルールによるプッシュダウン アキュムレーションを使って `turtle_directions!"
+"` を実装してください。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid "Evaluate to `vec![ ... ]` when all tokens have been consumed."
 msgstr ""
+"すべてのトークンを消費したら、`vec![ ... ]` に評価されるようにしてください。"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
 "// TODO: Implement the `turtle_directions!` macro using a push-down "
 "accumulator.\n"
 msgstr ""
+"// TODO: プッシュダウン アキュムレータを使って `turtle_directions!` マクロを"
+"実装する。\n"
 
 #: src/macros/macro_rules/techniques/accumulators/exercise.md
 msgid ""
@@ -18844,21 +19110,29 @@ msgid ""
 "expressions without storing them inside a container/buffer parameter like `[$"
 "($acc:expr),*]`."
 msgstr ""
+"`Vec<T>` や配列のようなフラットなコレクションを構築する際に、プッシュダウン "
+"アキュムレーションが必要な理由を説明してください。マクロの個々の再帰呼び出し"
+"は、`[$($acc:expr),*]` のようなコンテナ / バッファのパラメータの中に格納しな"
+"い限り、カンマ区切りのリストの断片をばらばらに周囲の式へ出力することはできま"
+"せん。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "Here is the implementation of the `turtle_directions!` macro using a push-"
 "down accumulator:"
 msgstr ""
+"以下は、プッシュダウン アキュムレータを使った `turtle_directions!` マクロの実"
+"装です。"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid ""
 "// Base case: no more tokens, expand accumulated operations into a Vec\n"
 msgstr ""
+"// 基本ケース: トークンが残っていないので、蓄積した操作を Vec に展開する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch REV n\n"
-msgstr ""
+msgstr "// REV n を消費する\n"
 
 #: src/macros/macro_rules/techniques/accumulators/solution.md
 msgid "// Munch LEFT n\n"
