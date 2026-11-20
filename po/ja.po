@@ -2285,7 +2285,7 @@ msgstr "初期化"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "MaybeUninit<T>"
-msgstr ""
+msgstr "MaybeUninit<T>"
 
 #: src/SUMMARY.md
 msgid "Arrays of uninit"
@@ -2294,7 +2294,7 @@ msgstr "未初期化の配列"
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid "MaybeUninit::zeroed()"
-msgstr ""
+msgstr "MaybeUninit::zeroed()"
 
 #: src/SUMMARY.md
 msgid "ptr::write vs assignment"
@@ -2348,14 +2348,13 @@ msgid "C++ implementation"
 msgstr "C++ での実装"
 
 #: src/SUMMARY.md src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
-#, fuzzy
 msgid "Modeled in Rust"
-msgstr "文字列のムーブ"
+msgstr "Rust でのモデル化"
 
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid "With a raw pointer"
-msgstr ""
+msgstr "生ポインタを使用する場合"
 
 #: src/SUMMARY.md
 msgid "With an integer offset"
@@ -2364,7 +2363,7 @@ msgstr "整数オフセットを使う"
 #: src/SUMMARY.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid "With `Pin<Ptr>`"
-msgstr ""
+msgstr "`Pin<Ptr>` を使用する場合"
 
 #: src/SUMMARY.md
 msgid "`Pin<Ptr>` and `Drop`"
@@ -44020,25 +44019,30 @@ msgstr ""
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "`MaybeUninit<T>` allows Rust to refer to uninitialized memory."
 msgstr ""
+"`MaybeUninit<T>` を使うと、Rust で初期化されていないメモリを参照できます。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
-#, fuzzy
 msgid "\"{uninit:?}\""
-msgstr "\"{list:?}\""
+msgstr "\"{uninit:?}\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "“Safe Rust is unable to refer to data that’s potentially uninitialized”"
 msgstr ""
+"“Safe Rust では、初期化されていない可能性のあるデータを参照することはできませ"
+"ん”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "“Yet, all data arrives at the program as uninitialized.”"
 msgstr ""
+"“しかし、すべてのデータは初期化されていない状態でプログラムに届きます。”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid ""
 "“Therefore, we need some bridge in the type system to allow memory to "
 "transition. `MaybeUninit<T>` is that type.”"
 msgstr ""
+"“そのため、メモリの状態を遷移させるための橋渡しが型システムに必要です。"
+"`MaybeUninit<T>` がその型です。”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid ""
@@ -44046,49 +44050,54 @@ msgid ""
 "semantics are very different. The equivalent of `Option::None` for "
 "`MaybeUninit<T>` is uninitialized memory, which is only safe to write to.”"
 msgstr ""
+"“`MaybeUninit<T>` は `Option<T>` 型とよく似ていますが、そのセマンティクスは大"
+"きく異なります。`MaybeUninit<T>` における `Option::None` に相当するものは初期"
+"化されていないメモリであり、安全に行えるのは書き込みだけです。”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit.md
 msgid "“Reading from memory that may be uninitialized is extremely dangerous.”"
-msgstr ""
+msgstr "“初期化されていない可能性のあるメモリからの読み取りは極めて危険です。”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid "MaybeUninit and arrays"
-msgstr ""
+msgstr "MaybeUninit と配列"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid "b\"RUST\""
-msgstr ""
+msgstr "b\"RUST\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid "// Initialize elements by writing values to the memory\n"
-msgstr ""
+msgstr "// メモリに値を書き込んで要素を初期化する\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
 "// When a portion of an array is initialized, one can\n"
 "    // use unsafe to isolate it\n"
 msgstr ""
+"// 配列の一部が初期化されたら、unsafe を使って\n"
+"    // その部分を切り出すことができる\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
-#, fuzzy
 msgid "\"{text}\""
-msgstr "\"Bye {text}!\""
+msgstr "\"{text}\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
-#, fuzzy
 msgid "// We must manually drop the initialized elements\n"
-msgstr "// 要素でベクターを初期化する正規マクロ。\n"
+msgstr "// 初期化された要素は手動でドロップしなければならない\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
 "To create an array of uninitialized memory, the `::uninit()` constructor can "
 "be used within a `const` context."
 msgstr ""
+"初期化されていないメモリの配列を作成するには、`const` コンテキスト内で "
+"`::uninit()` コンストラクタを使用できます。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid "Use `ptr::write` to initialize values as per normal."
-msgstr ""
+msgstr "通常どおり、`ptr::write` を使って値を初期化します。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44096,6 +44105,10 @@ msgid ""
 "to be initialized, which may not occur when reusing a buffer. This example "
 "uses a pointer to isolate the initialized bytes to create a string slice."
 msgstr ""
+"`.assume_init()` は配列に対してはそれほど簡単には使えません。すべての値が初期"
+"化されている必要がありますが、バッファを再利用する場合はそうならないことがあ"
+"ります。この例では、ポインタを使って初期化済みのバイトを切り出し、文字列スラ"
+"イスを作成しています。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44103,6 +44116,9 @@ msgid ""
 "ownership and correctly implementing drop. Reminder: `MaybeUninit<T>` will "
 "not call drop on its `T`."
 msgstr ""
+"部分的に初期化された配列のサブスライスを作成する際は、所有権と drop の正しい"
+"実装に注意してください。注意: `MaybeUninit<T>` はその `T` に対して drop を呼"
+"び出しません。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44110,6 +44126,9 @@ msgid ""
 "is the difference between an array of uninitialized memory and an array that "
 "contains uninitialized elements."
 msgstr ""
+"`MaybeUninit<[u8;2048]>` は `[MaybeUninit::<u8>; 2048]` とは別物です。これ"
+"は、初期化されていないメモリの配列と、初期化されていない要素を含む配列の違い"
+"です。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44117,6 +44136,9 @@ msgid ""
 "the whole array and then call `assume_init`, or you must keep it as "
 "`MaybeUninit<[u8; 2048]>` and avoid touching it as `[u8; 2048]`."
 msgstr ""
+"`MaybeUninit<[u8;2048]>` は「全部か無か」です。配列全体を完全に初期化してか"
+"ら `assume_init` を呼び出すか、`MaybeUninit<[u8; 2048]>` のまま保持して "
+"`[u8; 2048]` として触らないようにしなければなりません。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44124,6 +44146,9 @@ msgid ""
 "take a sub-slice of just the initialized prefix and treat it as `[u8]` via "
 "`std::slice::from_raw_parts`."
 msgstr ""
+"`[MaybeUninit<u8>; 2048]` では、要素を 1 つずつ初期化し、初期化済みの先頭部分"
+"だけのサブスライスを取り出して、`std::slice::from_raw_parts` を介して `[u8]` "
+"として扱うことができます。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44131,6 +44156,9 @@ msgid ""
 "initialized. For this example, we only pass `&buf[..input.len()]` after "
 "writing exactly those bytes."
 msgstr ""
+"`slice_assume_init_ref` が安全なのは、スライス内のすべての要素が初期化されて"
+"いる場合だけです。この例では、ちょうどそのバイトを書き込んだ後にのみ "
+"`&buf[..input.len()]` を渡しています。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md
 msgid ""
@@ -44138,16 +44166,19 @@ msgid ""
 "initialized elements. Skipping this leaks memory. However, calling it on an "
 "uninitialized element is undefined behavior."
 msgstr ""
+"`T` に drop が必要な場合は、初期化済みの要素に対して手動で "
+"`assume_init_drop()` を呼び出す必要があります。これを省くとメモリリークが発生"
+"します。ただし、初期化されていない要素に対して呼び出すと未定義の動作になりま"
+"す。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid "// SAFETY: All values of `x` have been written to\n"
-msgstr ""
+msgstr "// SAFETY: `x` のすべての値が書き込まれている\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
-#, fuzzy
 msgid "\"{x:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{x:?}\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid ""
@@ -44155,12 +44186,16 @@ msgid ""
 "MaybeUninit<T>::uninit(). It instructs the compiler to fill the bits of T "
 "with zeros.”"
 msgstr ""
+"“MaybeUninit<T>::zeroed() は MaybeUninit<T>::uninit() の代わりとなるコンスト"
+"ラクタです。T のビットをゼロで埋めるようコンパイラに指示します。”"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid ""
 "Q: “Although the memory has been written to, the type remains "
 "`MaybeUninit<T>`. Can anyone think of why?”"
 msgstr ""
+"質問: 「メモリには書き込まれていますが、型は `MaybeUninit<T>` のままです。な"
+"ぜだと思いますか？」"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid ""
@@ -44168,36 +44203,37 @@ msgid ""
 "case is references, but this applies to many other types as well. Consider "
 "the `NonZeroUsize` integer type and others in its family."
 msgstr ""
+"回答: 一部の型では、値がゼロ以外または null 以外である必要があります。典型的"
+"な例は参照ですが、これは他の多くの型にも当てはまります。`NonZeroUsize` 整数型"
+"やその仲間の型について考えてみましょう。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "MaybeUninit.write() vs assignment"
-msgstr ""
+msgstr "MaybeUninit.write() と代入の比較"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
-#, fuzzy
 msgid "// Initialize\n"
-msgstr "/// UART ロガーを初期化します。\n"
+msgstr "// 初期化\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
-#, fuzzy
 msgid "// Overwrite\n"
-msgstr "/// オーバーラン エラー。\n"
+msgstr "// 上書き\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "\"Hi again\""
-msgstr ""
+msgstr "\"Hi again\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "// Assignment replaces the whole MaybeUninit value.\n"
-msgstr ""
+msgstr "// 代入は MaybeUninit の値全体を置き換える。\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "\"Goodbye\""
-msgstr ""
+msgstr "\"Goodbye\""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "// Ensure inner value is dropped\n"
-msgstr ""
+msgstr "// 内部の値が確実にドロップされるようにする\n"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid ""
@@ -44205,6 +44241,9 @@ msgid ""
 "differ from most types. `MaybeUninit<T>` does not call the destructor on its "
 "`T`."
 msgstr ""
+"drop のセマンティクスがほとんどの型と異なるため、内部の値を置き換えるとメモリ"
+"リークが発生する可能性があります。`MaybeUninit<T>` はその `T` のデストラクタ"
+"を呼び出しません。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid ""
@@ -44213,6 +44252,10 @@ msgid ""
 "when the memory might be uninitialized, but it also means you will leak if "
 "there was already a live value there."
 msgstr ""
+"`MaybeUninit::write()` は `ptr::write` を使用します。つまり、古い内容を読み"
+"取ったりドロップしたりせずに、その場でメモリを初期化します。これはメモリが初"
+"期化されていない可能性がある場合にはまさに望ましい動作ですが、すでに有効な値"
+"がそこにあった場合はリークすることも意味します。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid ""
@@ -44222,62 +44265,70 @@ msgid ""
 "If the old slot held an initialized value, it is leaked just like with "
 "`write()`."
 msgstr ""
+"代入（例: `buf = MaybeUninit::new(value)`）は `MaybeUninit` 全体を置き換えま"
+"す。古い `MaybeUninit` はムーブされてからドロップされますが、`MaybeUninit` に"
+"は `T` のためのデストラクタがないため、内部の値はドロップされません。古いス"
+"ロットに初期化済みの値があった場合、`write()` と同様にリークします。"
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid ""
 "If you need normal drop behavior, you need to tell Rust that the value is "
 "initialized with `assume_init` or one of the related methods."
 msgstr ""
+"通常の drop の動作が必要な場合は、`assume_init` または関連するメソッドのいず"
+"れかを使って、値が初期化済みであることを Rust に伝える必要があります。"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "How to Initialize Memory"
-msgstr ""
+msgstr "メモリを初期化する方法"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
-#, fuzzy
 msgid "Steps:"
-msgstr "手順"
+msgstr "手順:"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "Create `MaybeUninit<T>`"
-msgstr ""
+msgstr "`MaybeUninit<T>` を作成する"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "Write a value to it"
-msgstr ""
+msgstr "値を書き込む"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "Notify Rust that the memory is initialized"
-msgstr ""
+msgstr "メモリが初期化済みであることを Rust に通知する"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "// Step 1: Create MaybeUninit\n"
-msgstr ""
+msgstr "// ステップ 1: MaybeUninit を作成する\n"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "// Step 2: Write a valid value to the memory\n"
-msgstr ""
+msgstr "// ステップ 2: 有効な値をメモリに書き込む\n"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid "// Step 3: Inform the type system that the memory location is valid\n"
-msgstr ""
+msgstr "// ステップ 3: そのメモリ位置が有効であることを型システムに伝える\n"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
-#, fuzzy
 msgid "\"{init}\""
-msgstr "\"{info}\""
+msgstr "\"{init}\""
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid ""
 "To work with uninitialized memory, follow this general workflow: create, "
 "write, confirm."
 msgstr ""
+"初期化されていないメモリを扱うには、作成、書き込み、確定という一般的な手順に"
+"従います。"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid ""
 "Create `MaybeUninit<T>`. The `::uninit()` constructor is the most general-"
 "purpose one, but there are others which perform a write as well."
 msgstr ""
+"`MaybeUninit<T>` を作成します。`::uninit()` コンストラクタが最も汎用的なもの"
+"ですが、書き込みも同時に行うものもあります。"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid ""
@@ -44285,34 +44336,40 @@ msgid ""
 "safe Rust is useful because you must ensure that the value you write is "
 "valid."
 msgstr ""
+"T の値を書き込みます。これはセーフな Rust から行えることに注目してください。"
+"書き込む値が有効であることを保証する必要があるため、セーフな Rust の範囲にと"
+"どまることは有用です。"
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md
 msgid ""
 "Confirm to the type system that the memory is now initialized with the "
 "`.assume_init()` method."
 msgstr ""
+"`.assume_init()` メソッドで、メモリが初期化済みになったことを型システムに確定"
+"させます。"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid "Partial Initialization"
-msgstr ""
+msgstr "部分的な初期化"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid "// let mut buf = [0u8; 2048];\n"
-msgstr ""
+msgstr "// let mut buf = [0u8; 2048];\n"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
-#, fuzzy
 msgid "b\"Hello, Rust!\""
-msgstr "\"Hello from Rust!\""
+msgstr "b\"Hello, Rust!\""
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid ""
 "// SAFETY: We initialized exactly 'len' bytes of `buf` with UTF-8 text\n"
 msgstr ""
+"// SAFETY: `buf` のちょうど 'len' バイトを UTF-8 テキストで初期化した\n"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid "This code simulates receiving data from some external source."
 msgstr ""
+"このコードは、外部ソースからデータを受信する処理をシミュレートしています。"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid ""
@@ -44320,6 +44377,9 @@ msgid ""
 "don't know how many bytes you'll receive. Using `MaybeUninit<T>` lets you "
 "allocate the buffer once without paying for a redundant initialization pass."
 msgstr ""
+"外部ソースからバッファにバイトを読み込む場合、通常は何バイト受信するかわかり"
+"ません。`MaybeUninit<T>` を使うと、冗長な初期化処理のコストを払わずにバッファ"
+"を一度だけ割り当てられます。"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid ""
@@ -44327,12 +44387,17 @@ msgid ""
 "2048]`), the whole buffer would be flushed with zeroes. `MaybeUninit<T>` "
 "tells the compiler to reserve space, but not to touch the memory yet."
 msgstr ""
+"標準の構文（`buf = [0u8; 2048]`）で配列を作成すると、バッファ全体がゼロで埋め"
+"られます。`MaybeUninit<T>` は、領域を予約するがまだメモリには触れないようコン"
+"パイラに指示します。"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid ""
 "Q: Which part of the code snippet is performing a similar role to "
 "`.assume_init()`? A: The pointer cast and the implicit read."
 msgstr ""
+"質問: コードスニペットのどの部分が `.assume_init()` と同様の役割を果たしてい"
+"るでしょうか？ 回答: ポインタのキャストと暗黙的な読み取りです。"
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md
 msgid ""
@@ -44341,6 +44406,10 @@ msgid ""
 "from `*const MaybeUninit<u8>` to `*const u8` and build a slice covering only "
 "the initialised portion."
 msgstr ""
+"配列全体に対して `assume_init()` を呼び出すことはできません。ほとんどの要素が"
+"初期化されていないままなので、それは不健全です。代わりに、ポインタを `*const "
+"MaybeUninit<u8>` から `*const u8` にキャストし、初期化済みの部分だけをカバー"
+"するスライスを構築します。"
 
 #: src/unsafe-deep-dive/pinning.md
 msgid "This segment of the course covers:"
@@ -44431,11 +44500,11 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "A pinned type cannot change its memory address (move)"
-msgstr ""
+msgstr "固定された型はメモリアドレスを変更（ムーブ）できない"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "The pointed-to value cannot be moved by safe code"
-msgstr ""
+msgstr "参照先の値はセーフなコードからはムーブできない"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
@@ -44444,110 +44513,125 @@ msgid ""
 "used to enforce pinning. `Pin` owns its contents and nothing in its safe API "
 "triggers a move."
 msgstr ""
+"`Pin<Ptr>` は所有権システムを利用して、固定された値へのアクセス方法を制御しま"
+"す。言語を変更するのではなく、Rust の所有権システムを使って固定を強制します。"
+"`Pin` はその中身を所有しており、そのセーフな API にはムーブを引き起こすものが"
+"ありません。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "This is explained in"
-msgstr ""
+msgstr "これについては次で説明されています："
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "Conceptually, pinning prevents the default movement behavior."
-msgstr ""
+msgstr "概念的には、固定はデフォルトのムーブの動作を防ぎます。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "This appears to be a change in the language itself."
-msgstr ""
+msgstr "これは言語そのものの変更のように見えます。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "However, the `Pin` wrapper doesn't actually change anything fundamental "
 "about the language."
 msgstr ""
+"しかし、`Pin` ラッパーは実際には言語の基本的な部分を何も変更していません。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "`Pin` doesn't expose safe APIs that would allow a move. Thus, it can prevent "
 "bitwise copy."
 msgstr ""
+"`Pin` はムーブを可能にするようなセーフな API を公開していません。そのため、"
+"ビット単位のコピーを防ぐことができます。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "Unsafe APIs allow library authors to wrap types that do not implement "
 "`Unpin`, but they must uphold the same guarantees."
 msgstr ""
+"アンセーフな API を使うと、ライブラリの作成者は `Unpin` を実装していない型を"
+"ラップできますが、同じ保証を守らなければなりません。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid "The documentation of `Pin` uses the term \"pointer types\"."
 msgstr ""
+"`Pin` のドキュメントでは「ポインタ型」（pointer types）という用語が使われてい"
+"ます。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "The term \"pointer type\" is much more broad than the pointer primitive type "
 "in the language."
 msgstr ""
+"「ポインタ型」という用語は、言語のプリミティブなポインタ型よりもはるかに広い"
+"意味を持ちます。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "A \"pointer type\" wraps every type that implements `Deref` with a target "
 "that implements `Unpin`."
 msgstr ""
+"「ポインタ型」は、`Unpin` を実装するターゲットを持つ `Deref` を実装したすべて"
+"の型をラップします。"
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md
 msgid ""
 "Rust style note: This trait bound is enforced through trait bounds on the "
 "`::new()` constructor, rather than on the type itself."
 msgstr ""
+"Rust のスタイルに関する注記：このトレイト境界は、型そのものではなく、"
+"`::new()` コンストラクタのトレイト境界によって強制されます。"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
-#, fuzzy
 msgid "What a move is in Rust"
-msgstr "Rustとは？"
+msgstr "Rust におけるムーブとは"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Always a bitwise copy, even for types that do not implement `Copy`:"
-msgstr ""
+msgstr "`Copy` を実装していない型であっても、常にビット単位のコピーです："
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "b'R'"
-msgstr ""
+msgstr "b'R'"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "b'U'"
-msgstr ""
+msgstr "b'U'"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "b'S'"
-msgstr ""
+msgstr "b'S'"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "b'T'"
-msgstr ""
+msgstr "b'T'"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
-#, fuzzy
 msgid ""
 "Generated [LLVM IR](https://play.rust-lang.org/?"
 "version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72) "
 "for calling `move_and_expect()`:"
 msgstr ""
-"[Rust プレイグラウンド](https://play.rust-lang.org/?"
-"version=stable&mode=debug&edition=2021&gist=3ce2ad13ea1302f6572cb15cd96becf0) "
-"で上記のコードをテストします。"
+"`move_and_expect()` を呼び出すために生成された [LLVM IR](https://play.rust-"
+"lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72)："
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "`memcpy` from variable `%b` to `%_12`"
-msgstr ""
+msgstr "変数 `%b` から `%_12` への `memcpy`"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Call to `move_and_inspect` with `%_12` (the copy)"
-msgstr ""
+msgstr "`%_12`（コピー）を引数とする `move_and_inspect` の呼び出し"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Note that `DynamicBuffer` does not implement `Copy`."
-msgstr ""
+msgstr "`DynamicBuffer` は `Copy` を実装していないことに注意してください。"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Implication: a value's memory address is not stable."
-msgstr ""
+msgstr "つまり、値のメモリアドレスは安定していません。"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid ""
@@ -44557,10 +44641,15 @@ msgid ""
 "and look at the or [the Compiler Explorer](https://rust.godbolt.org/z/"
 "6o6nP7do4)."
 msgstr ""
+"ムーブがビット単位のコピーであることを示すには、[プレイグラウンドでコードを開"
+"いて](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72)"
+"確認するか、[Compiler Explorer](https://rust.godbolt.org/z/6o6nP7do4) を確認"
+"してください。"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Optional for those who prefer assembly output:"
-msgstr ""
+msgstr "アセンブリ出力を好む人向け（任意）："
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid ""
@@ -44568,16 +44657,21 @@ msgid ""
 "focus the cursor assembly output in the `main` function on lines 128-136 "
 "(should be highlighted in pink)."
 msgstr ""
+"Compiler Explorer は生成されたアセンブリについて説明するのに便利です。`main` "
+"関数のアセンブリ出力の 128-136 行目（ピンクでハイライトされているはずです）に"
+"カーソルを合わせてください。"
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md
 msgid "Relevant code generated output `move_and_inspect`:"
-msgstr ""
+msgstr "`move_and_inspect` について生成された出力のうち関連する部分："
 
 #: src/unsafe-deep-dive/pinning/definition-of-pin.md
 msgid ""
 "`Pin` is a minimal wrapper around a _pointer type_, which is defined as a "
 "type that implements `Deref`."
 msgstr ""
+"`Pin` は _ポインタ型_ を包む最小限のラッパーです。ポインタ型とは、`Deref` を"
+"実装する型として定義されます。"
 
 #: src/unsafe-deep-dive/pinning/definition-of-pin.md
 msgid ""
@@ -44585,51 +44679,66 @@ msgid ""
 "implements `Unpin` (`Deref<Target: Unpin>`). This allows `Pin` to rely on "
 "the type system to enforce its guarantees."
 msgstr ""
+"ただし、`Pin::new()` は、`Unpin` を実装するターゲットに参照外しされる型"
+"（`Deref<Target: Unpin>`）のみを受け付けます。これにより、`Pin` は型システム"
+"に頼ってその保証を強制できます。"
 
 #: src/unsafe-deep-dive/pinning/definition-of-pin.md
 msgid ""
 "Types that do not implement `Unpin`, i.e., types that require pinning, must "
 "create a `Pin` via the unsafe `Pin::new_unchecked()`."
 msgstr ""
+"`Unpin` を実装していない型、つまり固定が必要な型は、アンセーフな "
+"`Pin::new_unchecked()` を使って `Pin` を作成しなければなりません。"
 
 #: src/unsafe-deep-dive/pinning/definition-of-pin.md
 msgid ""
 "Aside: Unlike other `new()`/`new_unchecked()` method pairs, `new` does not "
 "do any runtime checking. The check is a zero-cost compile-time check."
 msgstr ""
+"補足：他の `new()`/`new_unchecked()` メソッドの組とは異なり、`new` は実行時の"
+"チェックを一切行いません。このチェックはゼロコストのコンパイル時チェックで"
+"す。"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid "Why Pin is difficult to use"
-msgstr ""
+msgstr "Pin が使いにくい理由"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
-#, fuzzy
 msgid "`Pin<Ptr>` is \"just\" a type defined in the standard library"
-msgstr "標準ライブラリの非同期バージョン。"
+msgstr "`Pin<Ptr>` は標準ライブラリで定義された「ただの」型である"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
 "This satisfied the needs of its original audience, the creators of async "
 "runtimes, without needing to extending the core language"
 msgstr ""
+"これにより、コア言語を拡張することなく、本来の利用者である非同期ランタイムの"
+"作成者のニーズを満たすことができた"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
 "That audience could accept some of its ergonomic downsides, as users of "
 "`async` would rarely interact with `Pin` directly"
 msgstr ""
+"`async` のユーザーが `Pin` を直接扱うことはまれなので、その利用者は使い勝手の"
+"面での欠点をある程度受け入れることができた"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
 "\"You might wonder why Pin is so awkward to use. The answer is largely "
 "historical.\""
 msgstr ""
+"「なぜ Pin はこれほど扱いにくいのかと思うかもしれません。その答えは主に歴史的"
+"なものです。」"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
 "\"`Pin<Ptr>` offered a simpler implementation for the Rust project than "
 "alternatives\"."
 msgstr ""
+"「`Pin<Ptr>` は、Rust プロジェクトにとって他の選択肢よりもシンプルな実装でし"
+"た」。"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
@@ -44637,115 +44746,135 @@ msgid ""
 "async runtimes. The Rust team chose a simpler (for the compiler) but less "
 "ergonomic design.\""
 msgstr ""
+"「Pin は主に、非同期ランタイムを書く世界中で約 100 人の人々のために設計されま"
+"した。Rust チームは（コンパイラにとって）よりシンプルですが、使い勝手の劣る設"
+"計を選びました。」"
 
 #: src/unsafe-deep-dive/pinning/why-difficult.md
 msgid ""
 "\"More user-friendly proposals existed but were rejected as too complex for "
 "the primary audience, who could handle the complexity.\""
 msgstr ""
+"「よりユーザーフレンドリーな提案も存在しましたが、主な利用者は複雑さに対処で"
+"きたため、その利用者にとっては複雑すぎるとして却下されました。」"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
-#, fuzzy
 msgid "Unpin trait"
-msgstr "Asyncトレイト"
+msgstr "Unpin トレイト"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid ""
 "`Unpin` type allows types to move freely, even when they're wrapped by a "
 "`Pin`"
 msgstr ""
+"`Unpin` 型は、`Pin` でラップされている場合でも、型が自由にムーブできるように"
+"する"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Most types implement `Unpin`, because it is an \"`auto trait`\""
 msgstr ""
+"ほとんどの型は `Unpin` を実装している。これは「`auto trait`」であるため"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "`auto trait` behavior can be changed:"
-msgstr ""
+msgstr "`auto trait` の動作は変更できる："
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "`!Unpin` types must never move"
-msgstr ""
+msgstr "`!Unpin` 型は決してムーブしてはならない"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid ""
 "Types containing a `PhantomPinned` field do not implement `Unpin` by default"
 msgstr ""
+"`PhantomPinned` フィールドを含む型は、デフォルトでは `Unpin` を実装しない"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid ""
 "Explain that when a trait implements `Unpin`, the pinning behavior of "
 "`Pin<Ptr>` does not get invoked. The value is free to move."
 msgstr ""
+"トレイトが `Unpin` を実装している場合、`Pin<Ptr>` による固定の動作は発動しな"
+"いことを説明します。値は自由にムーブできます。"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid ""
 "Explain that almost all types implement `Unpin`; automatically implemented "
 "by the compiler."
 msgstr ""
+"ほぼすべての型が `Unpin` を実装しており、コンパイラによって自動的に実装される"
+"ことを説明します。"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid ""
 "Types implementing `Unpin` are saying: 'I promise I have no self-references, "
 "so moving me is always safe.'"
 msgstr ""
+"`Unpin` を実装する型は、「自己参照を持たないことを約束するので、私をムーブす"
+"るのは常に安全です」と言っていることになります。"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Ask: What types might be `!Unpin`?"
-msgstr ""
+msgstr "質問：どのような型が `!Unpin` になりうるでしょうか？"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Compiler-generated futures"
-msgstr ""
+msgstr "コンパイラが生成する Future"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Types containing a `PhantomPinned` field"
-msgstr ""
+msgstr "`PhantomPinned` フィールドを含む型"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Some types wrapping C++ objects"
-msgstr ""
+msgstr "C++ のオブジェクトをラップする一部の型"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "`!Unpin` types cannot be moved once pinned"
-msgstr ""
+msgstr "`!Unpin` 型は、一度固定されるとムーブできない"
 
 #: src/unsafe-deep-dive/pinning/phantompinned.md
-#, fuzzy
 msgid "Definition"
-msgstr "説明"
+msgstr "定義"
 
 #: src/unsafe-deep-dive/pinning/phantompinned.md
 msgid "Usage"
-msgstr ""
+msgstr "使用法"
 
 #: src/unsafe-deep-dive/pinning/phantompinned.md
 msgid "`PhantomPinned` is a marker type."
-msgstr ""
+msgstr "`PhantomPinned` はマーカー型です。"
 
 #: src/unsafe-deep-dive/pinning/phantompinned.md
 msgid ""
 "If a type contains a `PhantomPinned`, it will not implement `Unpin` by "
 "default."
 msgstr ""
+"型が `PhantomPinned` を含む場合、その型はデフォルトでは `Unpin` を実装しませ"
+"ん。"
 
 #: src/unsafe-deep-dive/pinning/phantompinned.md
 msgid ""
 "This has the effect of enforcing pinning when `DynamicBuffer` is wrapped by "
 "`Pin`."
 msgstr ""
+"これにより、`DynamicBuffer` が `Pin` でラップされたときに固定が強制されるとい"
+"う効果があります。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid ""
 "A \"self-referential buffer\" is a type that has a reference to one of its "
 "own fields:"
 msgstr ""
+"「自己参照バッファ」とは、自身のフィールドの 1 つへの参照を持つ型のことです："
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid ""
 "This kind of structure is not typical in Rust, because there's no way to "
 "update the cursor's address when instances of `SelfReferentialBuffer` move."
 msgstr ""
+"`SelfReferentialBuffer` のインスタンスがムーブしたときにカーソルのアドレスを"
+"更新する方法がないため、この種の構造は Rust では一般的ではありません。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md
 msgid ""
@@ -44753,140 +44882,157 @@ msgid ""
 "garbage collection, and also C++ that allows users to define their own "
 "behavior during moves and copies."
 msgstr ""
+"しかし、このような構成は、ガベージコレクションを提供する他の言語や、ムーブや"
+"コピーの際の動作をユーザーが独自に定義できる C++ では、より自然なものです。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid "Modelled in C++"
-msgstr ""
+msgstr "C++ でのモデル化"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid "<cstddef>"
-msgstr ""
+msgstr "<cstddef>"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid "Investigate on [Compiler Explorer](https://godbolt.org/z/ascME6aje)"
-msgstr ""
+msgstr "[Compiler Explorer](https://godbolt.org/z/ascME6aje) で調べる"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid ""
 "The `SelfReferentialBuffer` contains two members, `data` is a kilobyte of "
 "memory and `cursor` is a pointer into the former."
 msgstr ""
+"`SelfReferentialBuffer` には 2 つのメンバーがあり、`data` は 1 キロバイトのメ"
+"モリ、`cursor` は前者を指すポインタです。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid ""
 "Its move constructor ensures that cursor is updated to the new memory "
 "address."
 msgstr ""
+"そのムーブコンストラクタは、cursor が新しいメモリアドレスに更新されることを保"
+"証します。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md
 msgid "This type can't be expressed easily in Rust."
-msgstr ""
+msgstr "この型は Rust では簡単には表現できません。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
-#, fuzzy
 msgid "/// Raw pointers\n"
-msgstr "/// 未加工の割り込みステータス\n"
+msgstr "/// 生ポインタ\n"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
-#, fuzzy
 msgid "/// Integer offsets\n"
-msgstr "// GPIO 周辺機器オフセット\n"
+msgstr "/// 整数オフセット\n"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid "/// Pinning\n"
-msgstr ""
+msgstr "/// 固定\n"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid "Original C++ class definition for reference"
-msgstr ""
+msgstr "参考のための元の C++ クラス定義"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid ""
 "The next few slides show three approaches to creating a Rust type with the "
 "same semantics as the original C++."
 msgstr ""
+"次のいくつかのスライドでは、元の C++ と同じセマンティクスを持つ Rust の型を作"
+"成する 3 つのアプローチを示します。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid ""
 "Using raw pointers: matches C++ very closely, but using the resulting type "
 "is extremely hazardous"
-msgstr ""
+msgstr "生ポインタを使う：C++ に非常に近いが、得られた型を使うのは非常に危険"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid ""
 "Storing integer offsets: more natural in Rust, but references need to be "
 "created manually"
 msgstr ""
+"整数オフセットを格納する：Rust ではより自然だが、参照を手動で作成する必要があ"
+"る"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md
 msgid "Pinning: allows raw pointers with fewer `unsafe` blocks"
-msgstr ""
+msgstr "固定：より少ない `unsafe` ブロックで生ポインタを使える"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid "// Danger: must be called after every move\n"
-msgstr ""
+msgstr "// 危険：ムーブのたびに呼び出さなければならない\n"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid "\"cursor is out of bounds\""
-msgstr ""
+msgstr "\"cursor is out of bounds\""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid "Avoid spending too much time here."
-msgstr ""
+msgstr "ここに時間をかけすぎないようにしてください。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
-#, fuzzy
 msgid "Talking points:"
-msgstr "要点："
+msgstr "話すポイント："
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid ""
 "Emphasize that `unsafe` appears frequently. This is a hint that another "
 "design may be more appropriate."
 msgstr ""
+"`unsafe` が頻繁に現れることを強調してください。これは、別の設計の方が適切かも"
+"しれないというヒントです。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid "`unsafe` blocks lack safety comments. Therefore, this code is unsound."
 msgstr ""
+"`unsafe` ブロックに安全性コメントがありません。そのため、このコードは健全では"
+"ありません。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid ""
 "`unsafe` blocks are too broad. Good practice uses smaller `unsafe` blocks "
 "with specific behavior, specific preconditions and specific safety comments."
 msgstr ""
+"`unsafe` ブロックの範囲が広すぎます。良いやり方は、特定の動作、特定の前提条"
+"件、特定の安全性コメントを持つ、より小さな `unsafe` ブロックを使うことです。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
-#, fuzzy
 msgid "Questions:"
-msgstr "実装"
+msgstr "質問："
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md
 msgid ""
 "Q: Should the `read()` and `write()` methods be marked as unsafe?  \n"
 "A: Yes, because `self.cursor` will be a null pointer unless written to."
 msgstr ""
+"Q: `read()` メソッドと `write()` メソッドはアンセーフとマークすべきでしょう"
+"か？  \n"
+"A: はい。書き込まれない限り `self.cursor` はヌルポインタになるからです。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-offset.md
-#, fuzzy
 msgid "With Offset"
-msgstr "オフセット"
+msgstr "オフセットを使う"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-offset.md
 msgid ""
 "In Rust, it's more idiomatic to use an offset variable and to create "
 "references on-demand."
 msgstr ""
+"Rust では、オフセット変数を使い、必要に応じて参照を作成する方がより慣用的で"
+"す。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid ""
 "Pinning allows Rust programmers to create a type which is much more similar "
 "to C++ classes."
 msgstr ""
+"固定を使うと、Rust プログラマは C++ のクラスにずっと近い型を作成できます。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid "/// A self-referential buffer that cannot be moved.\n"
-msgstr ""
+msgstr "/// ムーブできない自己参照バッファ。\n"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid ""
@@ -44894,6 +45040,9 @@ msgid ""
 "returns `Pin<Box<Self>>` rather than `Self`. This incurs a heap allocation "
 "because `Pin<Ptr>` must work with a pointer type like `Box`."
 msgstr ""
+"関数のシグネチャが変わったことに注意してください。たとえば、`::new()` は "
+"`Self` ではなく `Pin<Box<Self>>` を返します。`Pin<Ptr>` は `Box` のようなポイ"
+"ンタ型と組み合わせて使う必要があるため、ヒープ割り当てが発生します。"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-pin.md
 msgid ""
@@ -44904,10 +45053,16 @@ msgid ""
 "safety contract of `Pin` is that once a value is pinned, its memory location "
 "is fixed until it is dropped."
 msgstr ""
+"`::new()` では、`Pin::get_unchecked_mut()` を使って、バッファが固定された _後"
+"で_ バッファへの可変参照を取得します。`cursor` を初期化するために一時的に固定"
+"の保証を破っているので、これは `unsafe` です。この時点以降に "
+"`SelfReferentialBuffer` をムーブしないようにしなければなりません。`Pin` の安"
+"全性に関する契約は、値が一度固定されると、ドロップされるまでそのメモリ位置が"
+"固定されるというものです。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid "<code>Pin\\<Ptr\\></code> and <code>Drop</code>"
-msgstr ""
+msgstr "<code>Pin\\<Ptr\\></code> と <code>Drop</code>"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44915,11 +45070,13 @@ msgid ""
 "trait. The `drop` method takes `&mut self`, which allows moving the value. "
 "However, pinned values must not be moved."
 msgstr ""
+"固定された `!Unpin` 型における重要な課題は、`Drop` トレイトの実装です。"
+"`drop` メソッドは `&mut self` を受け取るので、値をムーブできてしまいます。し"
+"かし、固定された値はムーブしてはなりません。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
-#, fuzzy
 msgid "An Incorrect `Drop` Implementation"
-msgstr "サービスの実装"
+msgstr "誤った `Drop` の実装"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44927,6 +45084,9 @@ msgid ""
 "assignment, `ptr::read`, and `mem::replace` can silently break the pinning "
 "guarantee."
 msgstr ""
+"`drop` の中で誤って値をムーブしてしまうことはよくあります。代入、"
+"`ptr::read`、`mem::replace` などの操作は、気づかないうちに固定の保証を破るこ"
+"とがあります。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44934,6 +45094,8 @@ msgid ""
 "        // When `_dupe` is dropped at the end of the function, it's a double "
 "free!\n"
 msgstr ""
+"// 悪い例：`ptr::read` は `self.data` を `self` からムーブする。\n"
+"        // 関数の最後で `_dupe` がドロップされると、二重解放になる！\n"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44942,6 +45104,9 @@ msgid ""
 "or duplicating data, invalidating internal pointers without the type "
 "system's knowledge."
 msgstr ""
+"固定された型はメモリの安定性を保証します。`ptr::read` や `mem::replace` など"
+"の操作は、データをムーブまたは複製することで、型システムが知らないうちに内部"
+"ポインタを無効にし、これらの保証を気づかないうちに破ることがあります。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44949,11 +45114,13 @@ msgid ""
 "end of the method, it will be dropped along with `self`. This double drop is "
 "undefined behavior."
 msgstr ""
+"この `drop()` メソッドでは、`_dupe` は `self.data` のビット単位のコピーです。"
+"メソッドの最後で、`self` とともにドロップされます。この二重のドロップは未定義"
+"の動作です。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
-#, fuzzy
 msgid "A Correct `Drop` Implementation"
-msgstr "サービスの実装"
+msgstr "正しい `Drop` の実装"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44961,23 +45128,25 @@ msgid ""
 "value is not moved. A common pattern is to create a helper function that "
 "operates on `Pin<&mut T>`."
 msgstr ""
+"`!Unpin` 型に対して `Drop` を正しく実装するには、値がムーブされないようにしな"
+"ければなりません。よくあるパターンは、`Pin<&mut T>` を操作するヘルパー関数を"
+"作成することです。"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid "// SAFETY: `this` is pinned before we create the self-reference.\n"
-msgstr ""
+msgstr "// SAFETY: 自己参照を作成する前に `this` は固定されている。\n"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid "// This function can only be called on a pinned `SelfRef`.\n"
-msgstr ""
+msgstr "// この関数は固定された `SelfRef` に対してのみ呼び出せる。\n"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid "// `self` is pinned, so we must not move out of it.\n"
-msgstr ""
+msgstr "// `self` は固定されているので、そこからムーブしてはならない。\n"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
-#, fuzzy
 msgid "\"dropping {}\""
-msgstr "\"Dropping {}\""
+msgstr "\"dropping {}\""
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid ""
@@ -44985,39 +45154,42 @@ msgid ""
 "        // the value is used. We use `new_unchecked` because we know `self`\n"
 "        // will not be moved again.\n"
 msgstr ""
+"// `drop` は値が使われる最後の機会なので、`drop_pinned` を安全に\n"
+"        // 呼び出せる。`self` が再びムーブされることはないとわかっているの"
+"で、\n"
+"        // `new_unchecked` を使う。\n"
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
-#, fuzzy
 msgid "\"Hello, \""
-msgstr "\"Hello \""
+msgstr "\"Hello, \""
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md
 msgid "// `Drop` runs without moving the pinned value\n"
-msgstr ""
+msgstr "// `Drop` は固定された値をムーブせずに実行される\n"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "Worked Example: Implementing `Drop` for `!Unpin` types"
-msgstr ""
+msgstr "実例：`!Unpin` 型に対する `Drop` の実装"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "// SAFETY: Safe because we are reading bytes from a String\n"
-msgstr ""
+msgstr "// SAFETY: String からバイトを読み取っているので安全\n"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
-#, fuzzy
 msgid "\"Rust 🦀\""
-msgstr "\"Rust\""
+msgstr "\"Rust 🦀\""
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
-#, fuzzy
 msgid "\"Batch: {:?}\""
-msgstr "\"v: {:?}\""
+msgstr "\"Batch: {:?}\""
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid ""
 "This example uses the `Drop` trait to add data for some post-processing, "
 "such as telemetry or logging."
 msgstr ""
+"この例では、`Drop` トレイトを使って、テレメトリやロギングなどの後処理のための"
+"データを追加します。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid ""
@@ -45025,41 +45197,46 @@ msgid ""
 "leaving `self.data` in an invalid state. `self.data` will be dropped again "
 "at the end of the method, which is a double free."
 msgstr ""
+"**この Safety コメントは誤りです。** `ptr::read` はビット単位のコピーを作成"
+"し、`self.data` を無効な状態のままにします。`self.data` はメソッドの最後で再"
+"びドロップされるので、二重解放になります。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "Ask the class to fix the code."
-msgstr ""
+msgstr "クラスの参加者にコードを修正してもらいましょう。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "**Suggestion 0: Redesign**"
-msgstr ""
+msgstr "**提案 0：再設計**"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "Redesign the post-processing system to work without `Drop`."
-msgstr ""
+msgstr "`Drop` なしで動作するように後処理システムを再設計します。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "**Suggestion 1: Clone**"
-msgstr ""
+msgstr "**提案 1：Clone**"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "Using `.clone()` is an obvious first choice, but it allocates memory."
 msgstr ""
+"`.clone()` を使うのは明らかな第一の選択肢ですが、メモリを割り当てます。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid "**Suggestion 2: ManuallyDrop**"
-msgstr ""
+msgstr "**提案 2：ManuallyDrop**"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
 msgid ""
 "Wrapping `CustomString` in `ManuallyDrop` prevents the (second) automatic "
 "drop at the end of the `Drop` impl."
 msgstr ""
+"`CustomString` を `ManuallyDrop` でラップすると、`Drop` の impl の最後での"
+"（2 回目の）自動ドロップを防げます。"
 
 #: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md
-#, fuzzy
 msgid "// SAFETY: self.data\n"
-msgstr "// ...\n"
+msgstr "// SAFETY: self.data\n"
 
 #: src/unsafe-deep-dive/ffi/language-interop.md
 msgid "Ideal scenario:"
