@@ -22514,16 +22514,15 @@ msgstr ""
 "用します。"
 
 #: src/chromium.md
-#, fuzzy
 msgid ""
 "Today, we'll call into Rust to do something silly with strings. If you've "
 "got a corner of the code where you're displaying a UTF-8 string to the user, "
 "feel free to follow this recipe in your part of the codebase instead of the "
 "exact part we talk about."
 msgstr ""
-"本日は、Rust で文字列を使って面白いことをしたいと思います。もし自分の担当部分"
-"にUTF8 文字列を表示するコードがある場合は、ここで述べた部分ではなく、自分の"
-"コードに対してこの手順を実行して構いません。"
+"本日は、Rust を呼び出して文字列でちょっとした遊びをします。自分の担当部分に "
+"UTF-8 文字列をユーザーに表示するコードがある場合は、ここで扱う部分ではなく、"
+"自分のコードベースの該当部分でこの手順を試しても構いません。"
 
 #: src/chromium/setup.md
 msgid ""
@@ -22562,19 +22561,17 @@ msgid "About the exercises"
 msgstr "演習について"
 
 #: src/chromium/setup.md
-#, fuzzy
 msgid ""
 "This part of the course has a series of exercises that build on each other. "
 "We'll be doing them spread throughout the course instead of just at the end. "
 "If you don't have time to complete a certain part, don't worry: you can "
 "catch up in the next slot."
 msgstr ""
-"コースのこのパートには、相互に関連した一連の演習があります。コースの最後だけ"
-"でなく、全体を通して演習を行います。特定のパートを完了する時間がない場合も、"
-"後で追いつけばよいため心配はいりません。"
+"コースのこのパートには、相互に積み重なる一連の演習があります。演習はコースの"
+"最後だけでなく、全体を通して行います。特定のパートを完了する時間がなくても心"
+"配はいりません。次の枠で追いつくことができます。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "The Rust community typically uses `cargo` and libraries from [crates.io]"
 "(https://crates.io/). Chromium is built using `gn` and `ninja` and a curated "
@@ -22628,9 +22625,8 @@ msgstr ""
 "す。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid "Mini exercise"
-msgstr "練習問題"
+msgstr "ミニ演習"
 
 #: src/chromium/cargo.md
 msgid "Split into small groups and:"
@@ -22670,7 +22666,6 @@ msgstr ""
 "演習の前半に関するメモとヒント（「Cargo がメリットをもたらすシナリオ」）:"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "It's fantastic that when writing a tool, or prototyping a part of Chromium, "
 "one has access to the rich ecosystem of crates.io libraries. There is a "
@@ -22737,7 +22732,6 @@ msgstr ""
 "ます。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "Perhaps surprisingly, Rust is becoming increasingly popular in the industry "
 "for writing command line tools. The breadth and ergonomics of libraries is "
@@ -22746,11 +22740,10 @@ msgid ""
 msgstr ""
 "意外かもしれませんが、業界ではコマンドライン ツールの作成に使用する言語とし"
 "て、Rust の人気が高まっています。ライブラリの幅とエルゴノミクスの点で Python "
-"に匹敵しつつも、豊富な型システムのおかげで堅牢で、（インタプリタ言語ではなく"
-"コンパイル言語なので）実行速度が高速です。"
+"に匹敵しつつも、（豊富な型システムのおかげで）より堅牢で、（インタプリタ言語"
+"ではなくコンパイル言語なので）実行速度が高速です。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "Participating in the Rust ecosystem requires using standard Rust tools like "
 "Cargo. Libraries that want to get external contributions, and want to be "
@@ -22758,9 +22751,9 @@ msgid ""
 "should use Cargo."
 msgstr ""
 "Rust エコシステムに参加するには、Cargo などの標準の Rust ツールを使用する必要"
-"があります。外部からコントリビューションを受け、Chromium 以外（Bazel や "
-"Android / Soong のビルド環境など）での使用が推奨されるライブラリでは、Cargo "
-"を使用することをおすすめします。"
+"があります。外部からのコントリビューションを受けたいライブラリや、Chromium 以"
+"外（Bazel や Android/Soong のビルド環境など）で使用されたいライブラリでは、"
+"Cargo を使用する必要があります。"
 
 #: src/chromium/cargo.md
 msgid "Examples of Chromium-related projects that are `cargo`\\-based:"
@@ -22787,7 +22780,6 @@ msgstr ""
 "`clap` を使用し、構成ファイルには `toml` を使用します。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "Disclaimer: a unique reason for using `cargo` was unavailability of `gn` "
 "when building and bootstrapping Rust standard library when building Rust "
@@ -22798,16 +22790,15 @@ msgstr ""
 "とでした。"
 
 #: src/chromium/cargo.md
-#, fuzzy
 msgid ""
 "`run_gnrt.py` uses Chromium's copy of `cargo` and `rustc`. `gnrt` depends on "
 "third-party libraries downloaded from the internet, but `run_gnrt.py` asks "
 "`cargo` that only `--locked` content is allowed via `Cargo.lock`.)"
 msgstr ""
-"`run_gnrt.py` は、Chromiumプロジェクト内の `cargo` と `rustc` のコピーを使用"
-"します。`gnrt` はインターネットからダウンロードされたサードパーティ ライブラ"
-"リに依存しており、`run_gnrt.py` で `Cargo.lock` を介して `--locked` コンテン"
-"ツのみを許可することを `cargo` に要求します。"
+"`run_gnrt.py` は、Chromium 内の `cargo` と `rustc` のコピーを使用します。"
+"`gnrt` はインターネットからダウンロードされたサードパーティ ライブラリに依存"
+"していますが、`run_gnrt.py` は `Cargo.lock` を介して `--locked` コンテンツの"
+"みを許可するよう `cargo` に要求します。）"
 
 #: src/chromium/cargo.md
 msgid ""
@@ -22874,13 +22865,17 @@ msgid ""
 "chromium/chromium/src/+/main:docs/rust.md;l=22). Rust can be used for both "
 "first-party and third-party code."
 msgstr ""
+"Chromium の Rust ポリシーは[こちら](https://source.chromium.org/chromium/"
+"chromium/src/+/main:docs/rust.md;l=22)にあります。Rust はファーストパーティの"
+"コードとサードパーティのコードの両方に使用できます。"
 
 #: src/chromium/policy.md
 msgid "Using Rust for pure first-party code looks like this:"
 msgstr ""
+"純粋なファーストパーティのコードに Rust を使用する場合は、次のようになりま"
+"す。"
 
 #: src/chromium/policy.md
-#, fuzzy
 msgid ""
 "```bob\n"
 "\"C++\"                           Rust\n"
@@ -22899,26 +22894,17 @@ msgid ""
 msgstr ""
 "```bob\n"
 "\"C++\"                           Rust\n"
-".- - - - - - - - - -.           .- - - - - - - - - - - - - - - - - - - - - - "
-"-.\n"
-":                   :           :                                             :\n"
-": 既存の Chromium   :           :  \"Chromium Rust\"             \"既存の "
-"Rust\"  :\n"
-": \"C++\"             :           :  \"ラッパー\"                  クレー"
-"ト       :\n"
-": +---------------+ :           : +----------------+          +-------------"
-"+ :\n"
-": |               | :           : |                |          |             "
-"| :\n"
-": |         o-----+-+-----------+-+->            o-+----------+-->          "
-"| :\n"
-": |               | : 言語      : |                | Crate    |             "
-"| :\n"
-": +---------------+ : 境界      : +----------------+ API      +-------------"
-"+ :\n"
-":                   :           :                                             :\n"
-"`- - - - - - - - - -'           `- - - - - - - - - - - - - - - - - - - - - - "
-"-'\n"
+".- - - - - - - - - -.           .- - - - - - - - - - -.\n"
+":                   :           :                     :\n"
+": 既存の Chromium   :           :  Chromium Rust      :\n"
+": \"C++\"             :           :  コード             :\n"
+": +---------------+ :           : +----------------+  :\n"
+": |               | :           : |                |  :\n"
+": |         o-----+-+-----------+-+->              |  :\n"
+": |               | : 言語      : |                |  :\n"
+": +---------------+ : 境界      : +----------------+  :\n"
+":                   :           :                     :\n"
+"`- - - - - - - - - -'           `- - - - - - - - - - -'\n"
 "```"
 
 #: src/chromium/policy.md
@@ -22927,6 +22913,9 @@ msgid ""
 "amount of first-party glue code, because very few Rust libraries directly "
 "expose a C/C++ API."
 msgstr ""
+"サードパーティのケースもよくあります。C/C++ API を直接公開している Rust ライ"
+"ブラリはほとんどないため、通常は少量のファーストパーティのグルーコードも必要"
+"になります。"
 
 #: src/chromium/policy.md
 msgid ""
@@ -22983,33 +22972,34 @@ msgid ""
 "The scenario of using a third-party crate is the more complex one, so "
 "today's course will focus on:"
 msgstr ""
+"サードパーティのクレートを使用するシナリオのほうが複雑なので、本日のコースで"
+"は以下に焦点を当てます。"
 
 #: src/chromium/policy.md
 msgid "Bringing in third-party Rust libraries (\"crates\")"
 msgstr "サードパーティの Rust ライブラリ（「クレート」）を導入する。"
 
 #: src/chromium/policy.md
-#, fuzzy
 msgid ""
 "Writing glue code to be able to use those crates from Chromium C++. (The "
 "same techniques are used when working with first-party Rust code)."
-msgstr "Chromium C++ からクレートを使用できるようにグルーコードを記述する。"
+msgstr ""
+"Chromium C++ からクレートを使用できるようにグルーコードを記述する（ファースト"
+"パーティの Rust コードを扱う場合にも同じ手法が使われます）。"
 
 #: src/chromium/build-rules.md
-#, fuzzy
 msgid "Build rules"
 msgstr "ビルドのルール"
 
 #: src/chromium/build-rules.md
-#, fuzzy
 msgid ""
 "Rust code is typically built using `cargo`. Chromium builds with `gn` and "
 "`ninja` for efficiency --- its static rules allow maximum parallelism. Rust "
 "is no exception."
 msgstr ""
 "Rust コードは通常、`cargo` を使用してビルドされます。Chromium は効率を高める"
-"ために `gn` と `ninja`を使用してビルドされますが、その静的ルールによって最大"
-"限の並列処理が可能になります。Rust も例外ではありません。"
+"ために `gn` と `ninja` を使用してビルドされます。その静的ルールによって最大限"
+"の並列処理が可能になります。Rust も例外ではありません。"
 
 #: src/chromium/build-rules.md
 msgid "Adding Rust code to Chromium"
@@ -23250,13 +23240,12 @@ msgstr ""
 "的な vim/CoC バインディング = space o）。"
 
 #: src/chromium/build-rules/vscode.md
-#, fuzzy
 msgid ""
 "Demo **type annotations** (there are quite a few nice examples in the "
 "`QrCode::with_bits` method)"
 msgstr ""
-"**type annotations**のデモを行います（`QrCode::with_bits` メソッドにいくつか"
-"の適切な例があります）。"
+"**型アノテーション**のデモを行います（`QrCode::with_bits` メソッドにいくつか"
+"の良い例があります）。"
 
 #: src/chromium/build-rules/vscode.md
 msgid ""
@@ -23268,7 +23257,6 @@ msgstr ""
 "必要があることを説明してください（このセッションの演習全体で数回行います）。"
 
 #: src/exercises/chromium/build-rules.md
-#, fuzzy
 msgid "Build rules exercise"
 msgstr "ビルドのルールに関する演習"
 
@@ -23284,17 +23272,16 @@ msgstr ""
 #: src/bare-metal/aps/uart/using.md src/bare-metal/aps/safemmio/using.md
 #: src/bare-metal/aps/logging/using.md
 msgid "// SAFETY: There is no other global function of this name.\n"
-msgstr ""
+msgstr "// SAFETY: この名前の他のグローバル関数はありません。\n"
 
 #: src/exercises/chromium/build-rules.md
-#, fuzzy
 msgid ""
 "**Important:** note that `no_mangle` here is considered a type of unsafety "
 "by the Rust compiler, so you'll need to allow unsafe code in your `gn` "
 "target."
 msgstr ""
-"**重要**: ここでの `no_mangle` は Rust コンパイラでは安全でない型とみなされる"
-"ため、`gn` ターゲットで安全でないコードを許可する必要があります。"
+"**重要**: ここでの `no_mangle` は Rust コンパイラではアンセーフの一種とみなさ"
+"れるため、`gn` ターゲットでアンセーフなコードを許可する必要があります。"
 
 #: src/exercises/chromium/build-rules.md
 msgid ""
@@ -23344,13 +23331,12 @@ msgstr ""
 "ション"
 
 #: src/exercises/chromium/build-rules.md
-#, fuzzy
 msgid ""
 "Information about [`#[unsafe(no_mangle)]`](https://doc.rust-lang.org/beta/"
 "reference/abi.html#the-no_mangle-attribute)"
 msgstr ""
-"[`#[no_mangle]`](https://doc.rust-lang.org/beta/reference/abi.html#the-"
-"no_mangle-attribute) に関する情報"
+"[`#[unsafe(no_mangle)]`](https://doc.rust-lang.org/beta/reference/"
+"abi.html#the-no_mangle-attribute) に関する情報"
 
 #: src/exercises/chromium/build-rules.md
 msgid ""
@@ -23388,15 +23374,14 @@ msgstr ""
 "きます。コースの後半で、C++ を Rust に直接接続します。"
 
 #: src/exercises/chromium/build-rules.md
-#, fuzzy
 msgid ""
 "`allow_unsafe = true` is required here because `#[unsafe(no_mangle)]` might "
 "allow Rust to generate two functions with the same name, and Rust can no "
 "longer guarantee that the right one is called."
 msgstr ""
-"ここで `allow_unsafe = true` は必須です。`#[no_mangle]` により、Rust は同じ名"
-"前の関数を2つ生成するようになり、Rust は正しい関数が呼び出されることを保証で"
-"きなくなるためです。"
+"ここで `allow_unsafe = true` は必須です。`#[unsafe(no_mangle)]` により、Rust "
+"が同じ名前の関数を 2 つ生成できてしまう可能性があり、その場合 Rust は正しい関"
+"数が呼び出されることを保証できなくなるためです。"
 
 #: src/exercises/chromium/build-rules.md
 msgid ""
@@ -23493,7 +23478,6 @@ msgstr ""
 "を使用して Rust を有効化または無効化できるようになっています）。"
 
 #: src/chromium/testing.md
-#, fuzzy
 msgid ""
 "Hypothetical/WIP PNG integration may need memory-safe implementations of "
 "pixel transformations that are provided by `libpng` but missing in the `png` "
@@ -23502,8 +23486,8 @@ msgid ""
 msgstr ""
 "仮定の、または開発中の PNG 統合では、`libpng` では提供されているのに、`png` "
 "クレートでは欠落しているピクセル変換（RGBA => BGRA、ガンマ補正など）のメモリ"
-"セーフな実装が必要となる場合があります。このような機能の開発においては、別途"
-"Rustでテストを作成することが役立つ場合があります。"
+"セーフな実装が必要となる場合があります。このような機能では、Rust で別途テスト"
+"を作成することが役立つ場合があります。"
 
 #: src/chromium/testing/rust-gtest-interop.md
 msgid ""
@@ -23531,9 +23515,8 @@ msgstr ""
 "が失敗してもパニックせず、テストを終了しません）。"
 
 #: src/chromium/testing/rust-gtest-interop.md
-#, fuzzy
 msgid "Example:"
-msgstr "例"
+msgstr "例:"
 
 #: src/chromium/testing/build-gn.md
 msgid ""
@@ -23658,9 +23641,8 @@ msgstr ""
 "用します。"
 
 #: src/exercises/chromium/testing.md
-#, fuzzy
 msgid "Testing exercise"
-msgstr "練習問題"
+msgstr "テストに関する演習"
 
 #: src/exercises/chromium/testing.md
 msgid "Time for another exercise!"
@@ -23704,7 +23686,6 @@ msgstr ""
 "CXX というツールを使用しています。"
 
 #: src/chromium/interoperability-with-cpp.md
-#, fuzzy
 msgid ""
 "You describe your whole language boundary in an interface definition "
 "language (which closely resembles Rust) and then CXX tools generate "
@@ -23784,7 +23765,6 @@ msgstr ""
 "ります。"
 
 #: src/chromium/interoperability-with-cpp.md
-#, fuzzy
 msgid ""
 "`rust::String` and `CxxString` types understand and maintain differences in "
 "string representation across the languages (e.g. `rust::String::lossy` can "
@@ -23792,7 +23772,7 @@ msgid ""
 "terminate a string)."
 msgstr ""
 "`rust::String` 型と `CxxString` 型は、言語間の文字列表現の違いを理解し、維持"
-"します（たとえば、`rust::String::lossy` は、非 UTF8 の入力から Rust 文字列を"
+"します（たとえば、`rust::String::lossy` は、非 UTF-8 の入力から Rust 文字列を"
 "作成できます。また、`rust::String::c_str` は文字列を NUL 終端できます）。"
 
 #: src/chromium/interoperability-with-cpp/example-bindings.md
@@ -23831,9 +23811,8 @@ msgid "Native support for C++'s `std::unique_ptr` in Rust"
 msgstr "Rust での C++ の `std::unique_ptr` のネイティブ サポート"
 
 #: src/chromium/interoperability-with-cpp/example-bindings.md
-#, fuzzy
 msgid "Native support for Rust slices in C++"
-msgstr "Rust での C++ の `std::unique_ptr` のネイティブ サポート"
+msgstr "C++ での Rust スライスのネイティブ サポート"
 
 #: src/chromium/interoperability-with-cpp/example-bindings.md
 msgid "Calls from C++ to Rust, and Rust types (in the top part)"
@@ -23844,16 +23823,15 @@ msgid "Calls from Rust to C++, and C++ types (in the bottom part)"
 msgstr "Rust から C++ および C++ の型への呼び出し（下部）"
 
 #: src/chromium/interoperability-with-cpp/example-bindings.md
-#, fuzzy
 msgid ""
 "**Common misconception:** It _looks_ like a C++ header is being parsed by "
 "Rust, but this is misleading. This header is never interpreted by Rust, but "
 "simply `#include`d in the generated C++ code for the benefit of C++ "
 "compilers."
 msgstr ""
-"**よくある誤解**: Rust で C++ ヘッダーが解析されているように見えますが、これ"
-"は誤解です。このヘッダーは Rust では解釈されず、C++ コンパイラのために生成さ"
-"れた C++ コードに `#include` されているだけです。"
+"**よくある誤解**: Rust で C++ ヘッダーが解析されているように _見えます_ が、"
+"これは誤解です。このヘッダーは Rust では一切解釈されず、C++ コンパイラのため"
+"に、生成された C++ コードに `#include` されているだけです。"
 
 #: src/chromium/interoperability-with-cpp/limitations-of-cxx.md
 msgid ""
@@ -23982,9 +23960,8 @@ msgstr ""
 "せんでした。"
 
 #: src/chromium/interoperability-with-cpp/error-handling-qr.md
-#, fuzzy
 msgid "CXX Error Handling: QR Example"
-msgstr "エラー処理"
+msgstr "CXX のエラー処理: QR の例"
 
 #: src/chromium/interoperability-with-cpp/error-handling-qr.md
 msgid ""
@@ -24038,9 +24015,8 @@ msgstr ""
 "ん。"
 
 #: src/chromium/interoperability-with-cpp/error-handling-png.md
-#, fuzzy
 msgid "CXX Error Handling: PNG Example"
-msgstr "エラー処理"
+msgstr "CXX のエラー処理: PNG の例"
 
 #: src/chromium/interoperability-with-cpp/error-handling-png.md
 msgid ""
@@ -24188,7 +24164,6 @@ msgstr ""
 "す。これは前のセクションで手動で行ったのとまったく同じです。"
 
 #: src/exercises/chromium/interoperability-with-cpp.md
-#, fuzzy
 msgid "Exercise: Interoperability with C++"
 msgstr "演習: C++との相互運用性"
 
@@ -24207,13 +24182,12 @@ msgstr ""
 "メータを受け取らず、値も返しません。"
 
 #: src/exercises/chromium/interoperability-with-cpp.md
-#, fuzzy
 msgid ""
 "Modify your previous `hello_from_rust` function to remove `extern \"C\"` and "
 "`#[unsafe(no_mangle)]`. This is now just a standard Rust function."
 msgstr ""
-"前の `hello_from_rust` 関数を変更して `extern \"C\"` と `#[no_mangle]` を削除"
-"します。これで標準の Rust 関数になります。"
+"前の `hello_from_rust` 関数を変更して `extern \"C\"` と "
+"`#[unsafe(no_mangle)]` を削除します。これで標準の Rust 関数になります。"
 
 #: src/exercises/chromium/interoperability-with-cpp.md
 msgid "Modify your `gn` target to build these bindings."
@@ -24391,17 +24365,14 @@ msgid "Property"
 msgstr "プロパティ"
 
 #: src/chromium/adding-third-party-crates.md
-#, fuzzy
 msgid "C++ library"
-msgstr "ライブラリ"
+msgstr "C++ ライブラリ"
 
 #: src/chromium/adding-third-party-crates.md
-#, fuzzy
 msgid "Rust crate"
-msgstr "Rustクレート"
+msgstr "Rust クレート"
 
 #: src/chromium/adding-third-party-crates.md
-#, fuzzy
 msgid "Build system"
 msgstr "ビルドシステム"
 
@@ -24503,7 +24474,6 @@ msgstr ""
 "```"
 
 #: src/chromium/adding-third-party-crates/configuring-cargo-toml.md
-#, fuzzy
 msgid ""
 "As with any other `Cargo.toml`, you can specify [more details about the "
 "dependencies](https://doc.rust-lang.org/cargo/reference/specifying-"
@@ -24515,14 +24485,14 @@ msgstr ""
 "効にする `features` を指定します。"
 
 #: src/chromium/adding-third-party-crates/configuring-cargo-toml.md
-#, fuzzy
 msgid ""
 "When adding a crate to Chromium, you'll frequently need to provide "
 "additional information in an additional file, `gnrt_config.toml`, which "
 "we'll meet next."
 msgstr ""
-"Chromium にクレートを追加する際は、多くの場合、 `gnrt_config.toml`という追加"
-"ファイルに情報を指定する必要があります。これについては後で説明します。"
+"Chromium にクレートを追加する際は、多くの場合、追加のファイル "
+"`gnrt_config.toml` に追加情報を指定する必要があります。このファイルについては"
+"次に説明します。"
 
 #: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md
 msgid ""
@@ -24593,7 +24563,6 @@ msgid "This `vendor` command may download:"
 msgstr "この `vendor` コマンドにより、以下がダウンロードされる場合があります。"
 
 #: src/chromium/adding-third-party-crates/downloading-crates.md
-#, fuzzy
 msgid "Your crate"
 msgstr "あなたのクレート"
 
@@ -24650,13 +24619,12 @@ msgid "An appropriate `README.chromium`"
 msgstr "適切な `README.chromium` があること"
 
 #: src/chromium/adding-third-party-crates/generating-gn-build-rules.md
-#, fuzzy
 msgid ""
 "The \"major semver version\" is a [Rust \"semver\" version number](https://"
 "doc.rust-lang.org/cargo/reference/semver.html)."
 msgstr ""
-"[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)（ワー"
-"クスペース）"
+"「メジャー semver バージョン」とは、[Rust の「semver」バージョン番号]"
+"(https://doc.rust-lang.org/cargo/reference/semver.html) のことです。"
 
 #: src/chromium/adding-third-party-crates/generating-gn-build-rules.md
 msgid ""
@@ -24723,7 +24691,6 @@ msgid "Checking platform or CPU to configure features on and off"
 msgstr "プラットフォームまたは CPU を確認して機能を有効または無効にする"
 
 #: src/chromium/adding-third-party-crates/resolving-problems.md
-#, fuzzy
 msgid "Generating code"
 msgstr "コードの生成"
 
@@ -24896,7 +24863,6 @@ msgid "Auditing Third Party Crates"
 msgstr "サードパーティ クレートの監査"
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md
-#, fuzzy
 msgid ""
 "Adding new libraries is subject to Chromium's standard [policies](https://"
 "chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/"
@@ -24910,9 +24876,8 @@ msgstr ""
 "chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/"
 "rust.md#Third_party-review) が適用されますが、当然ながらセキュリティ審査の対"
 "象にもなります。1 つのクレートだけでなく推移的依存関係も取り込む場合、審査す"
-"べきコードが多数存在することがあります。その一方で、安全な Rust コードの取り"
-"込みに関しては、悪い副作用は限定的となります。クレートの審査はどのように行わ"
-"れるべきでしょうか。"
+"べきコードが大量になることがあります。その一方で、安全な Rust コードが持ちう"
+"る悪い副作用は限定的です。どのように審査すべきでしょうか。"
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md
 msgid ""
@@ -24971,15 +24936,14 @@ msgid "Check for any use of `fs` or `net` APIs"
 msgstr "`fs`および`net`のAPI が使用されているかどうかを確認します。"
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md
-#, fuzzy
 msgid ""
 "Read all the code at a sufficient level to look for anything out of place "
 "that might have been maliciously inserted. (You can't realistically aim for "
 "100% perfection here: there is often too much code.)"
 msgstr ""
-"悪意を持って不正に挿入された可能性のある部分がないか探すのに十分なレベルで"
-"コードを読みます（多くの場合、コードが多すぎて完璧にチェックすることはできま"
-"せん）。"
+"悪意を持って挿入された可能性のある不審な箇所がないか探すのに十分なレベルで、"
+"すべてのコードを読みます（現実的には 100% 完璧を目指すことはできません。多く"
+"の場合、コードが多すぎるためです）。"
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md
 msgid ""
@@ -25023,7 +24987,6 @@ msgstr ""
 "Chromium リポジトリに追加する必要があります。"
 
 #: src/chromium/adding-third-party-crates/checking-in.md
-#, fuzzy
 msgid ""
 "**Important:** you need to use `git add -f` because otherwise `.gitignore` "
 "files may result in some files being skipped."
@@ -25125,13 +25088,12 @@ msgid "`uwuify`."
 msgstr "`uwuify`"
 
 #: src/exercises/chromium/third-party.md
-#, fuzzy
 msgid ""
 "If students are downloading even more than that, they likely forgot to turn "
 "off the default features."
 msgstr ""
-"受講者が上記以外のクレートをダウンロードしている場合は、デフォルトの機能を無"
-"効にするのを忘れている可能性があります。"
+"受講者がそれよりもさらに多くのクレートをダウンロードしている場合は、デフォル"
+"トの機能を無効にするのを忘れている可能性があります。"
 
 #: src/exercises/chromium/third-party.md
 msgid ""
@@ -25221,18 +25183,16 @@ msgstr ""
 "が完成しているはずです。"
 
 #: src/exercises/chromium/bringing-it-together.md
-#, fuzzy
 msgid ""
 "UTF-16 vs UTF-8. Students should be aware that Rust strings are always "
 "UTF-8, and will typically decide that it's better to do the conversion on "
 "the C++ side using `base::UTF16ToUTF8` and back again."
 msgstr ""
-"UTF16 と UTF8 について、受講者は Rust 文字列が常に UTF8 であることに注意する"
-"必要があります。おそらく、C++ 側で `base::UTF16ToUTF8` を使用して変換、逆変換"
-"する方がよいと判断するでしょう。"
+"UTF-16 と UTF-8 について。受講者は Rust の文字列が常に UTF-8 であることを認識"
+"しておく必要があります。通常は、C++ 側で `base::UTF16ToUTF8` を使用して変換"
+"し、また逆変換する方がよいと判断するでしょう。"
 
 #: src/exercises/chromium/bringing-it-together.md
-#, fuzzy
 msgid ""
 "If students decide to do the conversion on the Rust side, they'll need to "
 "consider [`String::from_utf16`](https://doc.rust-lang.org/std/string/"
@@ -25240,10 +25200,10 @@ msgid ""
 "which [CXX supported types can transfer many u16s](https://cxx.rs/binding/"
 "slice.html)."
 msgstr ""
-"Rust 側で変換を行う場合は、[`String::from_utf16`](https://doc.rust-lang.org/"
-"std/string/struct.String.html#method.from_utf16)の利用、エラー処理、[多くの "
-"u16s を転送可能な CXX でサポートされている型](https://cxx.rs/binding/"
-"slice.html) はどれかを検討する必要があります。"
+"受講者が Rust 側で変換を行うことにした場合は、[`String::from_utf16`](https://"
+"doc.rust-lang.org/std/string/struct.String.html#method.from_utf16) の利用、エ"
+"ラー処理、そして [多数の u16 を転送できる CXX のサポート対象の型](https://"
+"cxx.rs/binding/slice.html) はどれかを検討する必要があります。"
 
 #: src/exercises/chromium/bringing-it-together.md
 msgid ""
@@ -25264,7 +25224,6 @@ msgstr ""
 "可能性があるため、Rust データのように移動できないためです。"
 
 #: src/exercises/chromium/bringing-it-together.md
-#, fuzzy
 msgid ""
 "The C++ target containing `ResourceBundle::MaybeMangleLocalizedString` will "
 "need to depend on a `rust_static_library` target. The student likely already "
@@ -25297,6 +25256,10 @@ msgid ""
 "[`//chromium/src/codelabs/rust` subdirectory in Chromium](https://"
 "source.chromium.org/chromium/chromium/src/+/main:codelabs/rust/)."
 msgstr ""
+"または、パッチセットの適用や Chromium のコアコードとの統合を必要としない「ス"
+"タンドアロン」の解答がよければ、[Chromium の `//chromium/src/codelabs/rust` "
+"サブディレクトリ](https://source.chromium.org/chromium/chromium/src/+/"
+"main:codelabs/rust/) にあります。"
 
 #: src/bare-metal.md
 msgid "Welcome to Bare Metal Rust"
