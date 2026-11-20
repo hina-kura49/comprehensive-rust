@@ -2009,16 +2009,15 @@ msgstr "ポリモーフィズム"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/python.md
 msgid "What is Polymorphism?"
-msgstr ""
+msgstr "ポリモーフィズムとは"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid "Kinds of Polymorphism"
-msgstr ""
+msgstr "ポリモーフィズムの種類"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/generics/deriving-traits.md
-#, fuzzy
 msgid "Deriving Traits"
-msgstr "導出"
+msgstr "トレイトの導出"
 
 #: src/SUMMARY.md
 msgid "Default Implementations"
@@ -2037,28 +2036,24 @@ msgid "Statically Sized and Dynamically Sized types"
 msgstr "静的サイズ型と動的サイズ型"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/generics/monomorphization.md
-#, fuzzy
 msgid "Monomorphization and Binary Size"
-msgstr "単相化"
+msgstr "単相化とバイナリサイズ"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/generics/sealed-traits.md
-#, fuzzy
 msgid "Sealed Traits"
-msgstr "Unsafeなトレイトの実装"
+msgstr "シールドトレイト"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/enums/inspecting.md
-#, fuzzy
 msgid "Inspecting Enums"
-msgstr "列挙型のデストラクト"
+msgstr "列挙型の検査"
 
 #: src/SUMMARY.md
 msgid "Heterogeneous Collections"
 msgstr "異種コレクション"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/enums/traits.md
-#, fuzzy
 msgid "Re-exposing Traits"
-msgstr "トレイトの実装"
+msgstr "トレイトの再公開"
 
 #: src/SUMMARY.md
 msgid "`dyn`"
@@ -2073,22 +2068,20 @@ msgid "Generics vs Trait Objects"
 msgstr "ジェネリクスとトレイトオブジェクト"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/dyn/limits.md
-#, fuzzy
 msgid "Limits of Trait Objects"
-msgstr "所有されたトレイトオブジェクト"
+msgstr "トレイトオブジェクトの制限"
 
 #: src/SUMMARY.md
 msgid "The `Any` Trait"
 msgstr "`Any` トレイト"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/dyn/sealing-with-enums.md
-#, fuzzy
 msgid "Sealing with Enums"
-msgstr "BindgenによるCの呼び出し"
+msgstr "列挙型によるシーリング"
 
 #: src/SUMMARY.md src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid "Enums vs `dyn`"
-msgstr ""
+msgstr "列挙型と `dyn`"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/idiomatic/welcome.md
@@ -39643,16 +39636,19 @@ msgid ""
 "In a dynamic language like Python, we don't have to do anything special to "
 "allow a function to accept arguments of different types:"
 msgstr ""
+"Python のような動的言語では、関数が異なる型の引数を受け付けられるようにするた"
+"めに、特別なことをする必要はありません。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
 "But Rust's static type system requires us to specify the types of our "
 "functions' arguments:"
 msgstr ""
+"しかし、Rust の静的型システムでは、関数の引数の型を指定する必要があります。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid "// print_value(\"hello\"); // ❌ Mismatched types!\n"
-msgstr ""
+msgstr "// print_value(\"hello\"); // ❌ 型が一致しません！\n"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
@@ -39662,6 +39658,10 @@ msgid ""
 "the exact types they expect, and we must use a mechanism like generics to "
 "support polymorphism."
 msgstr ""
+"Python のような動的言語から来た方にとっては、ポリモーフィズムという概念は新し"
+"いものかもしれません。動的言語ではすべての関数が暗黙的にポリモーフィックだか"
+"らです。しかし Rust では、関数は想定どおりの型の引数しか受け付けず、ポリモー"
+"フィズムをサポートするにはジェネリクスなどの仕組みを使う必要があります。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
@@ -39670,6 +39670,9 @@ msgid ""
 "function correctly, the compiler won't allow a user of that function to pass "
 "in a string."
 msgstr ""
+"静的型付けは、コンパイラが API の正しい使い方を強制できるようにする強力なツー"
+"ルです。関数が正しく動作するために `i32` を受け取る必要がある場合、コンパイラ"
+"はその関数のユーザーが文字列を渡すことを許しません。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
@@ -39678,40 +39681,55 @@ msgid ""
 "want our `print_value` function to be able to print both numbers and "
 "strings, but as written it can only accept `i32` values."
 msgstr ""
+"しかし、型の扱いが柔軟なコードを書きたい場合には、静的型付けは制約になりま"
+"す。このスライドの例では、`print_value` 関数で数値と文字列の両方を出力したい"
+"かもしれませんが、このままでは `i32` の値しか受け付けません。"
 
 #: src/idiomatic/polymorphism/python.md
 msgid ""
 "Edit `print_value` to make it generic using `Display` to print different "
 "kinds of values:"
 msgstr ""
+"`print_value` を編集し、`Display` を使ってジェネリックにすることで、さまざま"
+"な種類の値を出力できるようにしてください。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid "In Rust we have 3 different mechanisms for writing polymorphic code:"
 msgstr ""
+"Rust には、ポリモーフィックなコードを書くための 3 つの異なる仕組みがありま"
+"す。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
 "**Generics** - Static polymorphism where code abstracts over types but the "
 "types are fully known at compile time."
 msgstr ""
+"**ジェネリクス** - コードは型を抽象化するものの、型はコンパイル時に完全に判明"
+"している静的ポリモーフィズム。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
 "**Enums** - Dynamic polymorphism where a fixed set of known types are "
 "selected between at runtime."
 msgstr ""
+"**列挙型** - 既知の型の固定された集合の中から実行時に選択する動的ポリモーフィ"
+"ズム。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
 "**`dyn`** - Dynamic polymorphism where any type meeting a particular trait "
 "interface can be used."
 msgstr ""
+"**`dyn`** - 特定のトレイトインターフェースを満たす任意の型を使用できる動的ポ"
+"リモーフィズム。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
 "When discussing polymorphism in Rust, it's helpful to differentiate between "
 "**static** polymorphism and **dynamic** polymorphism."
 msgstr ""
+"Rust のポリモーフィズムについて議論する際は、**静的** ポリモーフィズムと **動"
+"的** ポリモーフィズムを区別すると役立ちます。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
@@ -39721,6 +39739,11 @@ msgid ""
 "have access to the full set of features that traits expose. This is "
 "accomplished with **generics** in Rust."
 msgstr ""
+"**静的ポリモーフィズム** とは、型を抽象化するものの、型の情報がコンパイラに完"
+"全に知られている場合のことです。これにより、実行時のオーバーヘッドを追加する"
+"ことなく、異なる型のコンテキストでコードを再利用でき、トレイトが公開する機能"
+"をすべて利用できます。Rust では、これは **ジェネリクス** によって実現されま"
+"す。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
@@ -39728,12 +39751,16 @@ msgid ""
 "at runtime, and we don't know at compile time which specific type will be "
 "used."
 msgstr ""
+"**動的ポリモーフィズム** とは、実行時に異なる型の中から選択する必要があり、コ"
+"ンパイル時にはどの特定の型が使われるかわからない場合のことです。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
 "When we have a fixed set of known types to choose from, we can use **enums** "
 "to track at runtime which one we have."
 msgstr ""
+"選択肢となる既知の型の固定された集合がある場合は、**列挙型** を使用して、実行"
+"時にどれを持っているかを追跡できます。"
 
 #: src/idiomatic/polymorphism/polymorphism-kinds.md
 msgid ""
@@ -39741,18 +39768,25 @@ msgid ""
 "users may introduce new types that we don't know about, then we use "
 "**`dyn`** to allow extensibility."
 msgstr ""
+"どの型が使われるかを事前に知ることができない場合、たとえば下流のユーザーがこ"
+"ちらの知らない新しい型を導入する可能性がある場合は、**`dyn`** を使用して拡張"
+"性を持たせます。"
 
 #: src/idiomatic/polymorphism/generics.md
 msgid ""
 "Generics are used when we want to abstract over types, but we expect the "
 "users of our code to know the concrete types."
 msgstr ""
+"ジェネリクスは、型を抽象化したいものの、コードのユーザーが具体的な型を知って"
+"いることが想定される場合に使用します。"
 
 #: src/idiomatic/polymorphism/generics.md
 msgid ""
 "Generics are our mechanism for **static polymorphism**, which is "
 "polymorphism where the types are fully known at compile time."
 msgstr ""
+"ジェネリクスは **静的ポリモーフィズム**、つまり型がコンパイル時に完全に判明し"
+"ているポリモーフィズムのための仕組みです。"
 
 #: src/idiomatic/polymorphism/generics.md
 msgid ""
@@ -39761,6 +39795,10 @@ msgid ""
 "doesn't know what type of element will be stored in it. But in order to use "
 "a `Vec`, you must specify a concrete type to use for the element."
 msgstr ""
+"その一例が `Vec` で、格納する要素の型に対してジェネリックです。`Vec` 自体はポ"
+"リモーフィックであり、どのような型の要素が格納されるかを知らない形で書かれて"
+"います。しかし、`Vec` を使用するには、要素に使用する具体的な型を指定する必要"
+"があります。"
 
 #: src/idiomatic/polymorphism/generics.md
 msgid ""
@@ -39769,6 +39807,9 @@ msgid ""
 "generics give you a way to abstract over those different types **without "
 "duplicating logic**."
 msgstr ""
+"ジェネリクスは **コードの再利用** のための仕組みです。扱う特定の型にかかわら"
+"ず本質的に同じである共通のロジックがある場合、ジェネリクスを使うと、**ロジッ"
+"クを重複させることなく** それらの異なる型を抽象化できます。"
 
 #: src/idiomatic/polymorphism/generics.md
 msgid ""
@@ -39778,37 +39819,40 @@ msgid ""
 "Later we will look at two mechanisms for doing dynamic polymorphism: Enums "
 "and `dyn`."
 msgstr ""
+"動的な要素はないことに注意してください。型はコンパイル時に完全に判明している"
+"必要があり、`Vec` の要素の型を実行時に選択する方法はありません。つまり、**実"
+"行時ポリモーフィズム** が必要な場合、ジェネリクスは選択肢になりません。後ほ"
+"ど、動的ポリモーフィズムを実現する 2 つの仕組み、列挙型と `dyn` を見ていきま"
+"す。"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
-#, fuzzy
 msgid "Trait Bounds on Generics"
-msgstr "トレイト制約"
+msgstr "ジェネリクスに対するトレイト制約"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
-#, fuzzy
 msgid "\"Item: {}\""
-msgstr "\"emoji: {}\""
+msgstr "\"Item: {}\""
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
-#, fuzzy
 msgid "// Works with integers\n"
-msgstr "// 割り込みなしで 3 秒間待機します。\n"
+msgstr "// 整数で動作します\n"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
-#, fuzzy
 msgid "\"Hello, Rust!\""
-msgstr "\"Hello from Rust!\""
+msgstr "\"Hello, Rust!\""
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
 msgid "// Works with strings\n"
-msgstr ""
+msgstr "// 文字列で動作します\n"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
 msgid ""
 "Generic functions rely on traits to determine what operations are valid for "
 "a generic type."
 msgstr ""
+"ジェネリック関数は、ジェネリック型に対してどの操作が有効かを判断するためにト"
+"レイトに依存します。"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
 msgid ""
@@ -39817,19 +39861,19 @@ msgid ""
 "and demonstrate that we're not allowed to make assumptions about what "
 "methods it has."
 msgstr ""
+"ジェネリック型パラメータにトレイト制約がなければ、その型の振る舞いには一切ア"
+"クセスできません。`print_with_length` のトレイト制約を削除し、その型がどのよ"
+"うなメソッドを持つかについて仮定を置くことが許されないことを示してください。"
 
 #: src/idiomatic/polymorphism/generics/trait-bounds.md
-#, fuzzy
 msgid "https://doc.rust-lang.org/reference/trait-bounds.html"
-msgstr ""
-"[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)（ワー"
-"クスペース）"
+msgstr "https://doc.rust-lang.org/reference/trait-bounds.html"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
 "// Many traits have simple implementations that can be generated "
 "automatically.\n"
-msgstr ""
+msgstr "// 多くのトレイトには、自動的に生成できる単純な実装があります。\n"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
@@ -39837,6 +39881,9 @@ msgid ""
 "write. For these traits, it's possible to have the compiler generate the "
 "implementation for us using a derive macro."
 msgstr ""
+"多くのトレイトには、機械的に簡単に書ける自明な実装があります。そのようなトレ"
+"イトについては、derive マクロを使用してコンパイラに実装を生成させることができ"
+"ます。"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
@@ -39845,6 +39892,9 @@ msgid ""
 "need to write out the boilerplate ourselves. Replace the manual "
 "implementation with the corresponding derive."
 msgstr ""
+"たとえば、`Clone` トレイトは通常、構造体のすべてのフィールドをクローンするだ"
+"けで実装されます。これが型に求める動作であれば、そのボイラープレートを自分で"
+"書く必要はありません。手動の実装を対応する derive に置き換えてください。"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
@@ -39853,12 +39903,17 @@ msgid ""
 "derived `Clone` impl is automatically updated, whereas the manual impl has "
 "to be updated by hand."
 msgstr ""
+"導出されたトレイト実装は、型定義と自動的に同期した状態に保たれます。"
+"`DrawingBuffer` にフィールドを追加して、導出された `Clone` 実装は自動的に更新"
+"される一方、手動の実装は手で更新しなければならないことを示してください。"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
 "Many standard library traits support being derived, and it's common for "
 "traits defined in the ecosystem to also support this."
 msgstr ""
+"標準ライブラリの多くのトレイトは導出をサポートしており、エコシステムで定義さ"
+"れたトレイトもこれをサポートしていることがよくあります。"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
@@ -39866,37 +39921,40 @@ msgid ""
 "support for your own traits with a macro. Doing so is covered in the Macros "
 "course."
 msgstr ""
+"トレイトはデフォルトでは導出をサポートしていませんが、マクロを使って独自のト"
+"レイトに導出のサポートを実装できます。その方法はマクロの講座で扱います。"
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
-#, fuzzy
 msgid "references:"
-msgstr "参照"
+msgstr "参考資料："
 
 #: src/idiomatic/polymorphism/generics/deriving-traits.md
 msgid ""
 "https://doc.rust-lang.org/reference/attributes/derive.html#r-"
 "attributes.derive"
 msgstr ""
+"https://doc.rust-lang.org/reference/attributes/derive.html#r-"
+"attributes.derive"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
-#, fuzzy
 msgid "Default Method Implementations"
-msgstr "実装の更新"
+msgstr "メソッドのデフォルト実装"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid "// Required Method\n"
-msgstr ""
+msgstr "// 必須のメソッド\n"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
-#, fuzzy
 msgid "// Default implementation\n"
-msgstr "実装の更新"
+msgstr "// デフォルト実装\n"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid ""
 "Traits often have methods that are implemented for you already, once you "
 "implement the required methods."
 msgstr ""
+"トレイトには、必須のメソッドを実装すれば、すでに実装済みとなるメソッドがよく"
+"あります。"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid ""
@@ -39904,6 +39962,9 @@ msgid ""
 "This implementation can be written in terms of other methods available, such "
 "as other methods in the trait or methods of a supertrait."
 msgstr ""
+"関数本体が存在する場合、そのトレイトメソッドはデフォルト実装を持ちます。この"
+"実装は、トレイト内の他のメソッドやスーパートレイトのメソッドなど、利用可能な"
+"他のメソッドを使って書くことができます。"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid ""
@@ -39912,55 +39973,65 @@ msgid ""
 "for functions that can be implemented in terms of those methods (like "
 "`Ord`'s `max`/`min`/`clamp`)."
 msgstr ""
+"実装が必要な基本的な機能を提供するメソッド（`Ord` の `compare` など）があり、"
+"それらのメソッドを使って実装できる関数（`Ord` の `max`/`min`/`clamp` など）に"
+"はデフォルト実装が用意されている、という形をよく目にします。"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid ""
 "Default methods can be overridden by derive macros, as derive macros produce "
 "arbitrary ASTs in the implementation."
 msgstr ""
+"導出マクロは実装内で任意の AST を生成するため、デフォルトのメソッドは導出マク"
+"ロによってオーバーライドされることがあります。"
 
 #: src/idiomatic/polymorphism/generics/default-impls.md
 msgid ""
 "https://doc.rust-lang.org/reference/items/traits.html#r-"
 "items.traits.associated-item-decls"
 msgstr ""
+"https://doc.rust-lang.org/reference/items/traits.html#r-"
+"items.traits.associated-item-decls"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
-#, fuzzy
 msgid "Supertraits / Trait Dependencies"
-msgstr "推移的依存関係"
+msgstr "スーパートレイト / トレイトの依存関係"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "Traits can be extended by new traits."
-msgstr ""
+msgstr "トレイトは新しいトレイトによって拡張できます。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "/* methods common to all animals */"
-msgstr ""
+msgstr "/* すべての動物に共通のメソッド */"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "/* methods only for mammals */"
-msgstr ""
+msgstr "/* 哺乳類専用のメソッド */"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "// From stdlib\n"
-msgstr ""
+msgstr "// 標準ライブラリから\n"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "/* methods for Ord */"
-msgstr ""
+msgstr "/* Ord のメソッド */"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
 "When authoring a trait, you can specify traits that a type must also "
 "implement. These are called _supertraits_."
 msgstr ""
+"トレイトを作成する際に、型が併せて実装しなければならないトレイトを指定できま"
+"す。これを _スーパートレイト_ と呼びます。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
 "For the example above, any type that implements `Mammal` must also implement "
 "`Animal`."
 msgstr ""
+"上の例では、`Mammal` を実装する型はすべて `Animal` も実装しなければなりませ"
+"ん。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
@@ -39968,33 +40039,41 @@ msgid ""
 "complex real-world taxonomies (like fauna, machine hardware, operating "
 "system specifics, etc)."
 msgstr ""
+"このようなトレイトの階層によって、現実世界の複雑な分類体系（動物相、マシンの"
+"ハードウェア、オペレーティングシステム固有の事情など）の振る舞いに基づいてシ"
+"ステムを設計できます。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid "This is distinct from object inheritance! But it looks similar."
-msgstr ""
+msgstr "これはオブジェクトの継承とは異なります。ただし、見た目は似ています。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
 "Object inheritance allows for overrides and brings in the behavior of the "
 "inherited types by default."
 msgstr ""
+"オブジェクトの継承では、オーバーライドが可能で、継承元の型の振る舞いがデフォ"
+"ルトで取り込まれます。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
 "A trait having a supertrait doesn't mean that trait can override method "
 "implementations as default implementations."
 msgstr ""
+"トレイトがスーパートレイトを持つからといって、そのトレイトがメソッドの実装を"
+"デフォルト実装としてオーバーライドできるわけではありません。"
 
 #: src/idiomatic/polymorphism/generics/supertraits.md
 msgid ""
 "https://doc.rust-lang.org/reference/items/traits.html?highlight=supertrait#r-"
 "items.traits.supertraits"
 msgstr ""
+"https://doc.rust-lang.org/reference/items/traits.html?highlight=supertrait#r-"
+"items.traits.supertraits"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
-#, fuzzy
 msgid "Blanket Trait Implementations"
-msgstr "実装の更新"
+msgstr "トレイトのブランケット実装"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
@@ -40002,16 +40081,21 @@ msgid ""
 "once, generally based on the behavior provided by another trait. These are "
 "referred to as **blanket implementations**."
 msgstr ""
+"ジェネリックな `impl` ブロックを使うと、一般に別のトレイトが提供する振る舞い"
+"に基づいて、複数の型に対して一度にトレイトを実装できます。これを **ブランケッ"
+"ト実装** と呼びます。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
 "// A blanket implementation! If something implements Display, it implements\n"
 "// PrettyPrint.\n"
 msgstr ""
+"// ブランケット実装です。Display を実装しているものは、\n"
+"// PrettyPrint も実装します。\n"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid "\"{self}\""
-msgstr ""
+msgstr "\"{self}\""
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
@@ -40020,18 +40104,25 @@ msgid ""
 "to a generic type, but can also be used to implement a trait for multiple "
 "types at once."
 msgstr ""
+"`impl` ブロックはジェネリックにすることができ、それによって複数の型に一度に実"
+"装を適用できます。これはジェネリック型に `impl` ブロックを適用する際によく使"
+"われますが、複数の型に一度にトレイトを実装するためにも使えます。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
 "When an `impl` block applies to multiple types, we refer this as a \"blanket "
 "impl\"."
 msgstr ""
+"`impl` ブロックが複数の型に適用される場合、これを「ブランケット実装（blanket "
+"impl）」と呼びます。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
 "In the example above we have a blanket implementation for all types that "
 "implement `Display`."
 msgstr ""
+"上の例では、`Display` を実装するすべての型に対するブランケット実装がありま"
+"す。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
@@ -40039,47 +40130,49 @@ msgid ""
 "from implementing the same trait twice, so a blanket impl prevents the trait "
 "from being implemented directly on a covered type."
 msgstr ""
+"ブランケット実装は、トレイトの実装方法を制限することがあります。Rust では型が"
+"同じトレイトを 2 回実装することはできないため、ブランケット実装があると、その"
+"対象となる型にトレイトを直接実装することはできなくなります。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
 "Demonstrate this by adding an implementation for `String` and show the "
 "resulting error."
-msgstr ""
+msgstr "`String` に対する実装を追加して、発生するエラーを示してください。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
 msgid ""
 "Avoid a blanket impl if users are likely to want to customize the behavior "
 "of the implementation beyond what the blanket impl provides."
 msgstr ""
+"ブランケット実装が提供する範囲を超えて実装の振る舞いをカスタマイズしたいと"
+"ユーザーが考える可能性が高い場合は、ブランケット実装を避けてください。"
 
 #: src/idiomatic/polymorphism/generics/blanket-impls.md
-#, fuzzy
 msgid ""
 "https://doc.rust-lang.org/reference/glossary.html#blanket-implementation"
 msgstr ""
-"[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)（ワー"
-"クスペース）"
+"https://doc.rust-lang.org/reference/glossary.html#blanket-implementation"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
-#, fuzzy
 msgid "Conditional Method Implementations"
-msgstr "実装の更新"
+msgstr "条件付きのメソッド実装"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid "// No trait bounds on the type definition.\n"
-msgstr ""
+msgstr "// 型定義にはトレイト境界を付けません。\n"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid "// Instead bounds are put on the implementations for the type.\n"
-msgstr ""
+msgstr "// 代わりに、型の実装に境界を付けます。\n"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid "// alternatively\n"
-msgstr ""
+msgstr "// または\n"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid "// Specifies the trait bound in a where expression\n"
-msgstr ""
+msgstr "// where 句でトレイト境界を指定します\n"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid ""
@@ -40087,10 +40180,13 @@ msgid ""
 "for that type that depend on what the parameters are or what traits they "
 "implement."
 msgstr ""
+"ジェネリックパラメータを持つ型を作成する際には、パラメータが何であるか、ある"
+"いはパラメータがどのトレイトを実装しているかに応じた実装を、その型に対して書"
+"くことができます。"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid "These methods are only available when the type meets those conditions."
-msgstr ""
+msgstr "これらのメソッドは、型がその条件を満たす場合にのみ使用できます。"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid ""
@@ -40098,6 +40194,8 @@ msgid ""
 "`Ord`, this is the preferred way of putting a trait bound on a parameter of "
 "a type."
 msgstr ""
+"内部の型が常に `Ord` であってほしい順序付き集合のような場合には、これが型のパ"
+"ラメータにトレイト境界を付ける方法として推奨されます。"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid ""
@@ -40105,68 +40203,79 @@ msgid ""
 "downstream issues for everywhere the type is mentioned with a generic "
 "parameter."
 msgstr ""
+"型自体の定義に境界を付けないのは、そうするとジェネリックパラメータ付きでその"
+"型が言及されるすべての箇所で、下流に問題が生じるためです。"
 
 #: src/idiomatic/polymorphism/generics/conditional-methods.md
 msgid ""
 "We can maintain invariants just fine with conditional method implementations."
-msgstr ""
+msgstr "条件付きのメソッド実装でも、不変条件は問題なく維持できます。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid "Statically Sized and Dynamically Sized Types"
-msgstr ""
+msgstr "静的サイズ型と動的サイズ型"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid "/* : Sized */"
-msgstr ""
+msgstr "/* : Sized */"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid ""
 "Motivation: Being able to specify between types whose size are known and "
 "compile time and types whose size are known at runtime is useful for"
 msgstr ""
+"動機：サイズがコンパイル時にわかる型と、サイズが実行時にわかる型を区別して指"
+"定できることは、次の点で役立ちます"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid ""
 "The Sized trait is automatically implemented by types with a known size at "
 "compile-time."
 msgstr ""
+"Sized トレイトは、コンパイル時にサイズがわかっている型に自動的に実装されま"
+"す。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid ""
 "This trait is also automatically added to any type parameter that doesn't "
 "opt-out of being sized."
 msgstr ""
+"このトレイトは、サイズを持つことをオプトアウトしていないすべての型パラメータ"
+"にも自動的に追加されます。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid "Most types implement `Sized`: they have a compile-time known size."
 msgstr ""
+"ほとんどの型は `Sized` を実装しています。つまり、コンパイル時にサイズがわかっ"
+"ています。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid ""
 "Types like `[T]`, `str` and `dyn Trait` are all dynamically sized types. "
 "Their size is stored as part of the reference to the value of that type."
 msgstr ""
+"`[T]`、`str`、`dyn Trait` などの型はすべて動的サイズ型です。そのサイズは、そ"
+"の型の値への参照の一部として格納されます。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
 msgid "Type parameters automatically implement `Sized` unless specified."
-msgstr ""
+msgstr "型パラメータは、指定しない限り自動的に `Sized` を実装します。"
 
 #: src/idiomatic/polymorphism/generics/sized.md
-#, fuzzy
 msgid ""
 "https://doc.rust-lang.org/stable/reference/dynamically-sized-types.html#r-"
 "dynamic-sized"
 msgstr ""
-"[build scripting](https://doc.rust-lang.org/cargo/reference/build-"
-"scripts.html)（ビルドスクリプト）"
+"https://doc.rust-lang.org/stable/reference/dynamically-sized-types.html#r-"
+"dynamic-sized"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid "// instance one, &Vec<u32> -> ()\n"
-msgstr ""
+msgstr "// インスタンス 1、&Vec<u32> -> ()\n"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid "// instance two, &Vec<f32> -> ()\n"
-msgstr ""
+msgstr "// インスタンス 2、&Vec<f32> -> ()\n"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid ""
@@ -40174,18 +40283,25 @@ msgid ""
 "unique, concrete version of that function at compile time. Generics do not "
 "exist at runtime, only specific types."
 msgstr ""
+"ジェネリクスを持つ関数や型の各インスタンスは、コンパイル時にその関数の一意で"
+"具体的なバージョンに変換されます。実行時にはジェネリクスは存在せず、特定の型"
+"だけが存在します。"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid ""
 "This comes with a strong baseline performance and capacity for optimization, "
 "but at a cost of binary size and compile time."
 msgstr ""
+"これにより、基本的なパフォーマンスが高く、最適化の余地も大きくなりますが、そ"
+"の代償としてバイナリサイズとコンパイル時間が増えます。"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid ""
 "There are plenty of ways to trim binary size and compilation times, but "
 "we're not covering them here."
 msgstr ""
+"バイナリサイズやコンパイル時間を削減する方法は数多くありますが、ここでは扱い"
+"ません。"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid ""
@@ -40193,6 +40309,9 @@ msgid ""
 "incurred for instances of a type or functions on a type used in the final "
 "program or dynamic library."
 msgstr ""
+"使った分だけコストを払う：単相化によるバイナリサイズの増加は、最終的なプログ"
+"ラムや動的ライブラリで使用される型のインスタンスや型の関数に対してのみ発生し"
+"ます。"
 
 #: src/idiomatic/polymorphism/generics/monomorphization.md
 msgid ""
@@ -40200,6 +40319,9 @@ msgid ""
 "circumstances like WebAssembly in-browser or embedded systems development, "
 "you may want to be mindful about designing with generics in mind."
 msgstr ""
+"気にすべき場面：単相化はコンパイル時間とバイナリサイズに影響します。ブラウザ"
+"内の WebAssembly や組み込みシステムの開発のような状況では、ジェネリクスを念頭"
+"に置いて設計に注意を払うとよいでしょう。"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
@@ -40209,33 +40331,46 @@ msgid ""
 "define a trait where we control all of the implementations. To do this, we "
 "can create a **sealed trait**."
 msgstr ""
+"トレイトは通常は拡張可能です。つまり、下流のユーザーが自分の型に対して私たち"
+"のトレイトを実装でき、私たちのジェネリックなコードがそれらの下流の型を扱えま"
+"す。たいていはこれが望ましいのですが、すべての実装を自分たちで管理するトレイ"
+"トを定義したい場合もあります。そのためには **シールドトレイト** を作成しま"
+"す。"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
 "// Private module, preventing users from accessing the `Sealed` trait.\n"
 msgstr ""
+"// 非公開モジュール。ユーザーが `Sealed` トレイトにアクセスできないようにしま"
+"す。\n"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
 "// The trait itself must be public, or we can't use it as\n"
 "    // part of our public API.\n"
 msgstr ""
+"// トレイト自体は公開しなければなりません。そうしないと、\n"
+"    // 公開 API の一部として使用できません。\n"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
 "// Implement `Sealed` for types that should implement our\n"
 "    // public public.\n"
 msgstr ""
+"// 公開トレイトを実装すべき型に対して\n"
+"    // `Sealed` を実装します。\n"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid "// Use `Sealed` as the supertrait for our public trait.\n"
-msgstr ""
+msgstr "// 公開トレイトのスーパートレイトとして `Sealed` を使用します。\n"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
 "Motivation: We want trait-driven code in a crate, but we don't want projects "
 "that depend on this crate to be able to implement a trait."
 msgstr ""
+"動機：クレート内でトレイト駆動のコードを使いたいが、このクレートに依存するプ"
+"ロジェクトにはトレイトを実装させたくない場合。"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
@@ -40243,12 +40378,16 @@ msgid ""
 "preventing downstream users from being able to implement that trait for "
 "their types."
 msgstr ""
+"これを実現するために使う仕組みは、スーパートレイトへのアクセスを制限して、下"
+"流のユーザーが自分の型にそのトレイトを実装できないようにすることです。"
 
 #: src/idiomatic/polymorphism/generics/sealed-traits.md
 msgid ""
 "This is similar to enums, which inherently wrap a limited set of types, but "
 "applies to traits, which by default are extensible."
 msgstr ""
+"これは、本質的に限られた型の集合をラップする列挙型に似ていますが、デフォルト"
+"で拡張可能なトレイトに適用されます。"
 
 #: src/idiomatic/polymorphism/enums.md
 msgid ""
@@ -40256,23 +40395,24 @@ msgid ""
 "powerful tool that allows us to safely and robustly describe situations like "
 "this."
 msgstr ""
+"実行時に複数の異なる型を扱う必要がある場合があります。列挙型は、このような状"
+"況を安全かつ堅牢に記述できる強力なツールです。"
 
 #: src/idiomatic/polymorphism/enums.md
 msgid "\"123\""
-msgstr ""
+msgstr "\"123\""
 
 #: src/idiomatic/polymorphism/enums.md
-#, fuzzy
 msgid "\"[456, true, false]\""
-msgstr "`true`、`false`"
+msgstr "\"[456, true, false]\""
 
 #: src/idiomatic/polymorphism/enums.md
 msgid "r#\"{ \"key\": \"value\" }\"#"
-msgstr ""
+msgstr "r#\"{ \"key\": \"value\" }\"#"
 
 #: src/idiomatic/polymorphism/enums.md
 msgid "\"Parse the JSON string...\""
-msgstr ""
+msgstr "\"Parse the JSON string...\""
 
 #: src/idiomatic/polymorphism/enums.md
 msgid ""
@@ -40280,6 +40420,9 @@ msgid ""
 "have different types of value at runtime, and we can't know statically which "
 "type we'll have at any given time."
 msgstr ""
+"ポリモーフィズムのもう一つのカテゴリは **動的ポリモーフィズム** です。これ"
+"は、実行時に異なる型の値を持つことができ、どの時点でどの型の値を持つかを静的"
+"には知ることができないものです。"
 
 #: src/idiomatic/polymorphism/enums.md
 msgid ""
@@ -40287,6 +40430,8 @@ msgid ""
 "types of JSON value, and which one we return depends on the contents of the "
 "input string."
 msgstr ""
+"例として、JSON 文字列のパースを考えてみましょう。JSON の値にはいくつかの異な"
+"る型があり、どれを返すかは入力文字列の内容によって決まります。"
 
 #: src/idiomatic/polymorphism/enums.md
 msgid ""
@@ -40294,44 +40439,47 @@ msgid ""
 "type needs to describe all of the possible types a JSON value can be. Enums "
 "are a natural way of describing this kind of situation in Rust."
 msgstr ""
+"`parse_json` 関数は単一の具体的な型を返さなければならず、その型は JSON の値が"
+"取りうるすべての型を記述する必要があります。Rust では、このような状況を記述す"
+"る自然な方法が列挙型です。"
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid ""
 "We can easily inspect the contents of an enum using **pattern matching**:"
 msgstr ""
+"**パターンマッチング** を使うと、列挙型の中身を簡単に調べることができます。"
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid "\"We got an object: {obj:?}\""
-msgstr ""
+msgstr "\"We got an object: {obj:?}\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid "\"We got an array: {array:?}\""
-msgstr ""
+msgstr "\"We got an array: {array:?}\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
-#, fuzzy
 msgid "\"We got a string: {string:?}\""
-msgstr "\"picked a tuple: {:?}\""
+msgstr "\"We got a string: {string:?}\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
-#, fuzzy
 msgid "\"We got a number: {num}\""
-msgstr "\"picked a number: {:?}\""
+msgstr "\"We got a number: {num}\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
-#, fuzzy
 msgid "\"We got a bool: {b}\""
-msgstr "\"bool: {}\""
+msgstr "\"We got a bool: {b}\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid "\"We got a null\""
-msgstr ""
+msgstr "\"We got a null\""
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid ""
 "Continuing with our JSON parsing example, we can easily determine which kind "
 "of value we got by pattern matching on the resulting enum."
 msgstr ""
+"JSON パースの例の続きとして、結果の列挙型に対してパターンマッチングを行うこと"
+"で、どの種類の値が得られたかを簡単に判別できます。"
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid ""
@@ -40339,6 +40487,8 @@ msgid ""
 "types at runtime, but want to retain type information and the ability to "
 "directly inspect the concrete value."
 msgstr ""
+"そのため、列挙型は、実行時に異なる型を扱いたいが、型情報や具体的な値を直接調"
+"べる機能は保持したい、という場面に適しています。"
 
 #: src/idiomatic/polymorphism/enums/inspecting.md
 msgid ""
@@ -40348,22 +40498,30 @@ msgid ""
 "downcasting with `dyn`, but doing so requires extra setup that isn't "
 "necessary with enums."
 msgstr ""
+"これは列挙型が `dyn` に対して持つ大きな利点です。`dyn` では特定の具体的な型に"
+"簡単にダウンキャストできず、一般にトレイトのインターフェースを経由することに"
+"制限されます。後で `dyn` でもダウンキャストをサポートできることを見ますが、そ"
+"のためには列挙型では不要な追加の準備が必要です。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid "Heterogeneous Collections with Enums"
-msgstr ""
+msgstr "列挙型による異種コレクション"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
 "Enums give us a way to create collections that can store different types of "
 "element at runtime:"
 msgstr ""
+"列挙型を使うと、実行時に異なる型の要素を格納できるコレクションを作成できま"
+"す。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
 "A common situation where we might need dynamic polymorphism is when we want "
 "to store different types of value in the same collection."
 msgstr ""
+"動的ポリモーフィズムが必要になりがちな典型的な状況は、異なる型の値を同じコレ"
+"クションに格納したい場合です。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
@@ -40371,6 +40529,9 @@ msgid ""
 "list. `Vec` doesn't support this directly: All elements of the `Vec` must be "
 "the same type."
 msgstr ""
+"上の例では、`Cat` と `Dog` の両方を同じリストに格納したいと考えています。"
+"`Vec` はこれを直接はサポートしていません。`Vec` のすべての要素は同じ型でなけ"
+"ればなりません。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
@@ -40378,6 +40539,9 @@ msgid ""
 "unified type representation that can be stored in a `Vec`, while allowing "
 "individual elements of the `Vec` to be different types."
 msgstr ""
+"2 つの異なるペットの型を 1 つの `AnyPet` 列挙型でラップすると、`Vec` に格納で"
+"きる統一された型表現が得られ、しかも `Vec` の個々の要素を異なる型にすることが"
+"できます。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
@@ -40386,6 +40550,11 @@ msgid ""
 "well for libraries or applications that define the full set of possible "
 "types, but does not allow downstream users to extend our list of pet types."
 msgstr ""
+"このためには、ありうるペットの型をすべて事前に知っている必要があります。"
+"`AnyPet` 列挙型の異なるバリアントとして明示的に列挙しなければならないためで"
+"す。これは、ありうる型の完全な集合を定義するライブラリやアプリケーションでは"
+"うまく機能しますが、下流のユーザーがペットの型のリストを拡張することはできま"
+"せん。"
 
 #: src/idiomatic/polymorphism/enums/heterogeneous.md
 msgid ""
@@ -40393,22 +40562,25 @@ msgid ""
 "downstream extension at the cost of being harder to downcast and requiring "
 "dynamic dispatch."
 msgstr ""
+"後で、同じことを `dyn` でも行えることを見ます。`dyn` では下流での拡張が可能で"
+"すが、その代わりにダウンキャストが難しくなり、動的ディスパッチが必要になりま"
+"す。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
 "Sometimes we use an enum to abstract over multiple types that implement the "
 "same trait, and want the enum to also re-expose the trait's interface."
 msgstr ""
+"同じトレイトを実装する複数の型を列挙型で抽象化し、その列挙型でもトレイトのイ"
+"ンターフェースを再公開したい場合があります。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
-#, fuzzy
 msgid "\"Woof! My name is {}~!\""
-msgstr "\"Woof, my name is {}!\""
+msgstr "\"Woof! My name is {}~!\""
 
 #: src/idiomatic/polymorphism/enums/traits.md
-#, fuzzy
 msgid "\"Meow! I am {} years old\""
-msgstr "\"{} is {} years old\""
+msgstr "\"Meow! I am {} years old\""
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
@@ -40416,6 +40588,9 @@ msgid ""
 "underlying types (`Cat` and `Dog` in this case) implement a trait (`Pet`), "
 "our wrapper enum doesn't automatically expose that same trait interface."
 msgstr ""
+"動的ポリモーフィズムに列挙型を使うことの欠点の一つは、基になる型（この場合は "
+"`Cat` と `Dog`）がトレイト（`Pet`）を実装していても、ラッパーの列挙型が自動的"
+"に同じトレイトのインターフェースを公開するわけではないことです。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
@@ -40423,12 +40598,16 @@ msgid ""
 "enum and dispatching to the corresponding trait method on the underlying "
 "types."
 msgstr ""
+"一般に、列挙型に対してマッチングを行い、基になる型の対応するトレイトメソッド"
+"にディスパッチすることで、ラッパーの列挙型にトレイトを実装できます。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
 "This is dynamic dispatch, but using the enum's discriminant instead of a "
 "vtable in order to lookup the correct function to call."
 msgstr ""
+"これは動的ディスパッチですが、呼び出すべき正しい関数を探すのに vtable ではな"
+"く列挙型の判別子を使っています。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
@@ -40437,6 +40616,10 @@ msgid ""
 "have a situation like this, whereas `dyn` gives us this behavior purely from "
 "the `Pet` impls on `Cat` and `Dog`."
 msgstr ""
+"これは `dyn` と比べたときの列挙型の使い勝手の面での欠点です。`AnyPet` に対す"
+"る `Pet` の実装は純粋なボイラープレートであり、このような状況になるたびに繰り"
+"返し書く必要があります。一方、`dyn` では `Cat` と `Dog` に対する `Pet` の実装"
+"だけからこの振る舞いが得られます。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
@@ -40444,6 +40627,9 @@ msgid ""
 "[enum_dispatch](https://crates.io/crates/enum_dispatch), which handles the "
 "work of generating the wrapper enum and implementing the trait."
 msgstr ""
+"このボイラープレートを自分で書くのを避けるには、[enum_dispatch](https://"
+"crates.io/crates/enum_dispatch) のようなクレートを使用できます。このクレート"
+"は、ラッパーの列挙型を生成し、トレイトを実装する作業を引き受けてくれます。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
@@ -40451,77 +40637,96 @@ msgid ""
 "enum (e.g. the ability to pattern match on it) while also exposing a way to "
 "do dynamic dispatch through the trait's interface."
 msgstr ""
+"この方法の利点は、列挙型の便利な特性（パターンマッチングできることなど）を保"
+"ちながら、トレイトのインターフェースを通じて動的ディスパッチを行う方法も公開"
+"できることです。"
 
 #: src/idiomatic/polymorphism/enums/traits.md
 msgid ""
 "This also enables us to use `AnyPet` with generic functions like "
 "`do_pet_stuff`, which we can also do with `dyn`."
 msgstr ""
+"これにより、`do_pet_stuff` のようなジェネリック関数で `AnyPet` を使うこともで"
+"きます。これは `dyn` でも可能です。"
 
 #: src/idiomatic/polymorphism/dyn.md
 msgid "`dyn Trait` for Dynamic Dispatch in Rust"
-msgstr ""
+msgstr "Rust における動的ディスパッチのための `dyn Trait`"
 
 #: src/idiomatic/polymorphism/dyn.md
-#, fuzzy
 msgid "\"Hello dyn!\""
-msgstr "\"Hello \""
+msgstr "\"Hello dyn!\""
 
 #: src/idiomatic/polymorphism/dyn.md
 msgid ""
 "Our other main mechanism of doing dynamic polymorphism is `dyn`, which gives "
 "us dynamic dispatch through a trait interface."
 msgstr ""
+"動的ポリモーフィズムを行うもう一つの主要な仕組みが `dyn` で、トレイトのイン"
+"ターフェースを通じた動的ディスパッチを提供します。"
 
 #: src/idiomatic/polymorphism/dyn.md
 msgid ""
 "For any trait that is _dyn compatible_ we can coerce a reference to a value "
 "of that trait into a `dyn Trait` value."
 msgstr ""
+"_dyn 互換_ なトレイトであれば、そのトレイトを実装する値への参照を `dyn "
+"Trait` の値に型強制できます。"
 
 #: src/idiomatic/polymorphism/dyn.md
 msgid ""
 "We call these _trait objects_. Their type is not known at compile time, but "
 "their behavior is: what is implemented by the trait itself."
 msgstr ""
+"これらを _トレイトオブジェクト_ と呼びます。その型はコンパイル時にはわかりま"
+"せんが、振る舞い、つまりトレイト自体が実装するものはわかっています。"
 
 #: src/idiomatic/polymorphism/dyn.md
 msgid ""
 "When you _need_ OOP-style heterogeneous data structures, you can reach for "
 "`Box<dyn Trait>`, but try to keep it homogeneous and generic-based first!"
 msgstr ""
+"OOP スタイルの異種データ構造が _どうしても必要な_ 場合は `Box<dyn Trait>` を"
+"使うことができますが、まずは同種でジェネリクスに基づいた形を保つようにしてく"
+"ださい。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "Dyn-compatible traits"
-msgstr ""
+msgstr "dyn 互換なトレイト"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "// dyn compatible\n"
-msgstr ""
+msgstr "// dyn 互換\n"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "// dyn compatible, but you can't use this method when it's dyn\n"
-msgstr ""
+msgstr "// dyn 互換だが、dyn のときはこのメソッドを使用できない\n"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "// no longer dyn compatible\n"
-msgstr ""
+msgstr "// もはや dyn 互換ではない\n"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
 "Not all traits are able to be invoked as trait objects. A trait that can be "
 "invoked is referred to as a _dyn compatible_ trait."
 msgstr ""
+"すべてのトレイトがトレイトオブジェクトとして呼び出せるわけではありません。呼"
+"び出すことができるトレイトを _dyn 互換_ なトレイトと呼びます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid "This was previously called _object safe traits_ or _object safety_."
 msgstr ""
+"これは以前は _オブジェクト安全なトレイト_ または _オブジェクト安全性_ と呼ば"
+"れていました。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
 "Dynamic dispatch offloads a lot of compile-time type information into "
 "runtime vtable information."
 msgstr ""
+"動的ディスパッチは、コンパイル時の型情報の多くを実行時の vtable の情報に移し"
+"ます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
@@ -40529,6 +40734,9 @@ msgid ""
 "vtable, either the trait stops being dyn compatible or those methods are "
 "excluded from being able to be used in a dyn context."
 msgstr ""
+"ある概念が vtable に意味のある形で格納できるものと相容れない場合、そのトレイ"
+"トは dyn 互換でなくなるか、それらのメソッドが dyn のコンテキストでは使用でき"
+"ないものとして除外されます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
@@ -40536,6 +40744,8 @@ msgid ""
 "when it has no associated constants/types, and no methods that depend on "
 "generics."
 msgstr ""
+"トレイトが dyn 互換になるのは、そのスーパートレイトがすべて dyn 互換であり、"
+"関連定数や関連型を持たず、ジェネリクスに依存するメソッドを持たない場合です。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
@@ -40543,85 +40753,107 @@ msgid ""
 "associated types/constants or return values of `Self` (i.e. the Clone trait "
 "is not dyn compatible.)"
 msgstr ""
+"dyn 互換でないトレイトに最もよく遭遇するのは、関連型や関連定数を持つ場合や、"
+"`Self` の値を返す場合です（たとえば、Clone トレイトは dyn 互換ではありませ"
+"ん）。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
 "This is because the associated data would have to be stored in vtables, "
 "taking up extra memory."
 msgstr ""
+"これは、関連するデータを vtable に格納しなければならず、余分なメモリを消費す"
+"るためです。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
 "For methods like `clone`, this disqualifies dyn compatibility because the "
 "output type depends on the concrete type of `self`."
 msgstr ""
+"`clone` のようなメソッドでは、出力の型が `self` の具体的な型に依存するため、"
+"dyn 互換性が失われます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-compatible.md
 msgid ""
 "https://doc.rust-lang.org/1.91.1/reference/items/traits.html#r-"
 "items.traits.dyn-compatible"
 msgstr ""
+"https://doc.rust-lang.org/1.91.1/reference/items/traits.html#r-"
+"items.traits.dyn-compatible"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid "Generic Function Parameters vs dyn Trait"
-msgstr ""
+msgstr "ジェネリックな関数パラメータと dyn Trait の比較"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid ""
 "We have two means of writing polymorphic functions, how do they compare?"
 msgstr ""
+"ポリモーフィックな関数を書く手段は 2 つありますが、両者を比べるとどうでしょう"
+"か。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid "// Two functions are generated, each using static dispatch.\n"
-msgstr ""
+msgstr "// 2 つの関数が生成され、それぞれが静的ディスパッチを使います。\n"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid "// One function for both input types using dynamic dispatch.\n"
 msgstr ""
+"// 動的ディスパッチを使い、両方の入力型に対して 1 つの関数を使います。\n"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid "We can write polymorphic functions over generics or over trait objects."
 msgstr ""
+"ポリモーフィックな関数は、ジェネリクスでもトレイトオブジェクトでも書くことが"
+"できます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid ""
 "When writing functions with generic parameters, for each unique type that "
 "substitutes a parameter a new version of that function is generated."
 msgstr ""
+"ジェネリックパラメータを持つ関数を書くと、パラメータに代入される一意の型ごと"
+"に、その関数の新しいバージョンが生成されます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid ""
 "We went over this in monomorphization: in exchange for binary size, we gain "
 "a greater capacity for optimization."
 msgstr ""
+"これは単相化のところで説明しました。バイナリサイズと引き換えに、より大きな最"
+"適化の余地が得られます。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid ""
 "When writing functions that take a trait object, only one version of that "
 "function will exist in the final binary (not counting inlining.)"
 msgstr ""
+"トレイトオブジェクトを受け取る関数を書くと、最終的なバイナリにはその関数の"
+"バージョンが 1 つだけ存在します（インライン化は数えません）。"
 
 #: src/idiomatic/polymorphism/dyn/dyn-vs-generics.md
 msgid ""
 "Generic parameters are zero-cost other than binary size. Types must be "
 "homogenous (all instances of T can only be the same type)."
 msgstr ""
+"ジェネリックパラメータは、バイナリサイズを除けばゼロコストです。型は同種でな"
+"ければなりません（T のすべてのインスタンスは同じ型でなければなりません）。"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid "// 4 bytes, owned value\n"
-msgstr ""
+msgstr "// 4 バイト、所有された値\n"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid "// 8 bytes, reference\n"
-msgstr ""
+msgstr "// 8 バイト、参照\n"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid "// 16 bytes, wide pointer\n"
-msgstr ""
+msgstr "// 16 バイト、ワイドポインタ\n"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid "Trait objects are a limited way of solving problems."
-msgstr ""
+msgstr "トレイトオブジェクトは、問題を解決する手段としては限定的なものです。"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid ""
@@ -40629,10 +40861,13 @@ msgid ""
 "need to specify that the trait in question has Any as a supertrait or that "
 "the trait object is over the main trait and `Any`."
 msgstr ""
+"トレイトオブジェクトから具体的な型にダウンキャストしたい場合は、対象のトレイ"
+"トが Any をスーパートレイトとして持つように指定するか、トレイトオブジェクトが"
+"メインのトレイトと `Any` の両方を対象とするようにする必要があります。"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid "Even then, you will still need to cast a `dyn MyTrait` to `dyn Any`"
-msgstr ""
+msgstr "それでもなお、`dyn MyTrait` を `dyn Any` にキャストする必要があります"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid ""
@@ -40640,72 +40875,83 @@ msgid ""
 "to hold not just the pointer to the data itself but another pointer for the "
 "vtable."
 msgstr ""
+"トレイトオブジェクトにはメモリのオーバーヘッドがあります。トレイトオブジェク"
+"トは「ワイドポインタ」であり、データ自体へのポインタだけでなく、vtable への別"
+"のポインタも保持する必要があります。"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid ""
 "Trait objects, being dynamically sized types, can only be used practically "
 "via reference or pointer types."
 msgstr ""
+"トレイトオブジェクトは動的サイズ型であるため、実際には参照型やポインタ型を介"
+"してしか使用できません。"
 
 #: src/idiomatic/polymorphism/dyn/limits.md
 msgid ""
 "There is a baseline overhead of dereferencing the value and relevant trait "
 "methods when using trait objects."
 msgstr ""
+"トレイトオブジェクトを使用する際には、値と関連するトレイトメソッドの参照外し"
+"による基本的なオーバーヘッドがあります。"
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid "Heterogeneous data with `dyn trait`"
-msgstr ""
+msgstr "`dyn trait` による異種データ"
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
-#, fuzzy
 msgid "\"λ\""
-msgstr "\"\""
+msgstr "\"λ\""
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid "\"Woah\""
-msgstr ""
+msgstr "\"Woah\""
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid "// We know \"item\" implements Display, but we know nothing else!\n"
 msgstr ""
+"// \"item\" が Display を実装していることはわかっていますが、それ以外は何もわ"
+"かりません。\n"
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
-#, fuzzy
 msgid "\"Display output: {}\""
-msgstr "\"char count: {}\""
+msgstr "\"Display output: {}\""
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid ""
 "`dyn Trait`, being a dynamic dispatch tool, lets us store heterogeneous data "
 "in collections."
 msgstr ""
+"`dyn Trait` は動的ディスパッチのためのツールであり、コレクションに異種のデー"
+"タを格納できるようにします。"
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid ""
 "In this example, we're storing types that all implement `std::fmt::Display` "
 "and printing all items in that collection to screen."
 msgstr ""
+"この例では、すべて `std::fmt::Display` を実装する型を格納し、そのコレクション"
+"内のすべての要素を画面に出力しています。"
 
 #: src/idiomatic/polymorphism/dyn/heterogeneous.md
 msgid "Compare this to how we did heterogenous collections with enums."
-msgstr ""
+msgstr "列挙型を使って異種コレクションを実現した方法と比べてみてください。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid "Any Trait and Downcasting"
-msgstr ""
+msgstr "Any トレイトとダウンキャスト"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid "// We can get a unique identifier for the type.\n"
-msgstr ""
+msgstr "// 型の一意の識別子を取得できます。\n"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid "// We can check if our object is a particular type.\n"
-msgstr ""
+msgstr "// オブジェクトが特定の型かどうかを確認できます。\n"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid "// We can attempt to downcast to a concrete type.\n"
-msgstr ""
+msgstr "// 具体的な型へのダウンキャストを試みることができます。\n"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
@@ -40714,53 +40960,73 @@ msgid ""
 "to determine what the concrete type is, and Rust won't allow us to blindly "
 "cast to a type that may not be correct."
 msgstr ""
+"デフォルトでは、トレイトオブジェクトを具体的な型にダウンキャストすることはで"
+"きません。トレイトオブジェクトには具体的な型を判別できるような実行時の型情報"
+"がなく、Rust は正しくない可能性のある型に盲目的にキャストすることを許さないた"
+"めです。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "The `Any` trait allows us to downcast values back from dyn values into "
 "concrete values by adding the necessary runtime type information."
 msgstr ""
+"`Any` トレイトは、必要な実行時の型情報を追加することで、dyn の値を具体的な値"
+"にダウンキャストして戻せるようにします。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "This is an auto trait: like Send/Sync/Sized, it is automatically implemented "
 "for any type that meets specific criteria."
 msgstr ""
+"これは自動トレイトです。Send/Sync/Sized と同様に、特定の条件を満たすすべての"
+"型に自動的に実装されます。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "The criteria for Any is that a type is `'static`. That is, the type does not "
 "contain any non-`'static` lifetimes within it."
 msgstr ""
+"Any の条件は、型が `'static` であることです。つまり、その型が内部に "
+"`'static` でないライフタイムを含まないことです。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "Any offers two related behaviors: downcasting, and runtime checking of types "
 "being the same."
 msgstr ""
+"Any は、ダウンキャストと、型が同じであるかどうかの実行時チェックという、2 つ"
+"の関連する振る舞いを提供します。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "In the example above, we see the ability to downcast from `Any` into "
 "`ThisImplementsAny` automatically."
 msgstr ""
+"上の例では、`Any` から `ThisImplementsAny` に自動的にダウンキャストできること"
+"がわかります。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "We also see `Any::is` being used to check to see what type the value is."
 msgstr ""
+"また、値がどの型であるかを確認するために `Any::is` が使われていることもわかり"
+"ます。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "`Any` does not implement reflection for a type, it just adds the runtime "
 "type information necessary to safely determine the concrete type at runtime."
 msgstr ""
+"`Any` は型のリフレクションを実装するものではありません。実行時に具体的な型を"
+"安全に判別するために必要な実行時の型情報を追加するだけです。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
 "You can add downcasting support to your own traits by using `Any` as a "
 "supertrait."
 msgstr ""
+"`Any` をスーパートレイトとして使うことで、独自のトレイトにダウンキャストのサ"
+"ポートを追加できます。"
 
 #: src/idiomatic/polymorphism/dyn/any-trait.md
 msgid ""
@@ -40769,24 +41035,35 @@ msgid ""
 "though, as generics already have full type information and access to all "
 "functionality provided by traits."
 msgstr ""
+"これはジェネリクスでも機能します。ジェネリックなコードで `Any` をトレイト境界"
+"として使い、具体的な型に「ダウンキャスト」できます。ただし、ジェネリクスはす"
+"でに完全な型情報を持ち、トレイトが提供するすべての機能にアクセスできるため、"
+"これはあまり一般的ではありません。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
 "Motivation: API is designed around a specific list of types that are valid "
 "for it, users of the API are not expected to extend it."
 msgstr ""
+"動機：API が、その API で有効な特定の型のリストを前提に設計されており、API の"
+"ユーザーがそれを拡張することは想定されていない場合。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
 "Enums in Rust are _algebraic data types_, we can define different structures "
 "for each variant."
 msgstr ""
+"Rust の列挙型は _代数的データ型_ であり、バリアントごとに異なる構造を定義でき"
+"ます。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
 "For some domains, this might be enough polymorphism for the problem. "
 "Experiment and see what works, what solutions seem to make more sense."
 msgstr ""
+"分野によっては、これで問題に十分なポリモーフィズムが得られるかもしれません。"
+"実際に試して、何がうまくいくか、どの解決策がより理にかなっているかを確かめて"
+"ください。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
@@ -40794,6 +41071,9 @@ msgid ""
 "types are valid inputs and can construct those types using the available "
 "methods to do so."
 msgstr ""
+"API のユーザー向けの部分が列挙型を参照するようにすることで、ユーザーはどの型"
+"が有効な入力かを知ることができ、そのために用意されたメソッドを使ってそれらの"
+"型を構築できます。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
@@ -40802,6 +41082,10 @@ msgid ""
 "constructors that build and maintain those invariants, then you can be sure "
 "that inputs to a generic method uphold their invariants."
 msgstr ""
+"列挙型を構成する型が、API の内部で維持される不変条件を持ち、ユーザーがそれら"
+"の型を構築する唯一の方法が、その不変条件を確立し維持するコンストラクタを通じ"
+"たものであれば、ジェネリックなメソッドへの入力がその不変条件を満たしているこ"
+"とを確信できます。"
 
 #: src/idiomatic/polymorphism/dyn/sealing-with-enums.md
 msgid ""
@@ -40809,6 +41093,8 @@ msgid ""
 "construct, then sanitisation and interpretation may need to be taken into "
 "consideration."
 msgstr ""
+"逆に、列挙型を構成する型がユーザーが自由に構築できる型である場合は、サニタイ"
+"ズや解釈について考慮する必要があるかもしれません。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
@@ -40816,24 +41102,31 @@ msgid ""
 "and in many cases both approaches can be used to solve the same problem. The "
 "main trade-offs between the two are:"
 msgstr ""
+"列挙型と `dyn` は動的ポリモーフィズムに対する 2 つの異なるアプローチを提供し"
+"ており、多くの場合、どちらのアプローチでも同じ問題を解決できます。両者の主な"
+"トレードオフは次のとおりです。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
 "Enums make \"downcasting\" to a subtype easy via pattern matching. "
 "Downcasting is possible with `dyn` but is more cumbersome."
 msgstr ""
+"列挙型では、パターンマッチングによってサブタイプへの「ダウンキャスト」が簡単"
+"に行えます。`dyn` でもダウンキャストは可能ですが、より手間がかかります。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
 "`dyn` allows for downstream code to introduce new types, whereas enums do "
 "not."
 msgstr ""
+"`dyn` では下流のコードが新しい型を導入できますが、列挙型ではできません。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
 "When deciding whether to use an enum or `dyn`, there are two questions to "
 "ask:"
 msgstr ""
+"列挙型と `dyn` のどちらを使うかを決める際には、次の 2 つの問いを考えます。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
@@ -40841,12 +41134,17 @@ msgid ""
 "expect to go through a trait interface without needing to know the concrete "
 "type?"
 msgstr ""
+"具体的なサブタイプにダウンキャストできる必要があるか。それとも、具体的な型を"
+"知る必要はなく、主にトレイトのインターフェースを経由することを想定している"
+"か。"
 
 #: src/idiomatic/polymorphism/enum-vs-dyn.md
 msgid ""
 "Do I know the full set of types up front, or do I need to allow downstream "
 "code to extend the set of types I will be handling?"
 msgstr ""
+"型の完全な集合を事前に知っているか。それとも、扱う型の集合を下流のコードが拡"
+"張できるようにする必要があるか。"
 
 #: src/idiomatic/from-oop-to-rust.md
 msgid "From OOP to Rust: Composition, Not Inheritance"
