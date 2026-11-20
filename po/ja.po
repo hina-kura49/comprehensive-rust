@@ -559,7 +559,7 @@ msgstr "借用チェック"
 
 #: src/SUMMARY.md src/borrowing.md src/borrowing/examples.md
 msgid "Borrow Errors"
-msgstr ""
+msgstr "借用エラー"
 
 #: src/SUMMARY.md src/borrowing.md src/borrowing/interior-mutability.md
 msgid "Interior Mutability"
@@ -574,9 +574,8 @@ msgid "`RefCell`"
 msgstr "`RefCell`"
 
 #: src/SUMMARY.md src/borrowing.md src/borrowing/exercise.md
-#, fuzzy
 msgid "Exercise: Wizard's Inventory"
-msgstr "演習: エレベーターでのイベント"
+msgstr "演習: 魔法使いの持ち物"
 
 #: src/SUMMARY.md src/running-the-course/course-structure.md
 #: src/welcome-day-3-afternoon.md src/lifetimes.md
@@ -585,29 +584,24 @@ msgid "Lifetimes"
 msgstr "ライフタイム"
 
 #: src/SUMMARY.md src/lifetimes.md
-#, fuzzy
 msgid "Borrowing and Functions"
-msgstr "Unsafe関数の書き方"
+msgstr "借用と関数"
 
 #: src/SUMMARY.md src/lifetimes.md src/lifetimes/returning-borrows.md
-#, fuzzy
 msgid "Returning Borrows"
-msgstr "文字列（String）"
+msgstr "借用を返す"
 
 #: src/SUMMARY.md src/lifetimes.md src/lifetimes/multiple-borrows.md
-#, fuzzy
 msgid "Multiple Borrows"
-msgstr "複数のレジスタ"
+msgstr "複数の借用"
 
 #: src/SUMMARY.md src/lifetimes.md src/lifetimes/borrow-both.md
-#, fuzzy
 msgid "Borrow Both"
-msgstr "借用チェック"
+msgstr "両方を借用する"
 
 #: src/SUMMARY.md src/lifetimes.md src/lifetimes/borrow-one.md
-#, fuzzy
 msgid "Borrow One"
-msgstr "借用"
+msgstr "片方を借用する"
 
 #: src/SUMMARY.md src/lifetimes.md src/lifetimes/lifetime-elision.md
 msgid "Lifetime Elision"
@@ -10651,49 +10645,53 @@ msgstr "3 日目のトレーニングにようこそ"
 
 #: src/welcome-day-3.md
 msgid "We have now seen all the core language features:"
-msgstr ""
+msgstr "これで、言語の主要な機能をすべて見てきました："
 
 #: src/welcome-day-3.md
 msgid ""
 "**Foundations:** Basic types, control flow, functions, and data structures."
-msgstr ""
+msgstr "**基礎：** 基本的な型、制御フロー、関数、データ構造。"
 
 #: src/welcome-day-3.md
-#, fuzzy
 msgid "**Pattern Matching:** Destructuring data effectively."
-msgstr "パターン マッチング: 構造からのデータの抽出。"
+msgstr "**パターンマッチング：** データを効果的に分解する方法。"
 
 #: src/welcome-day-3.md
 msgid "**Polymorphism:** Methods, Traits, and Generics."
-msgstr ""
+msgstr "**ポリモーフィズム：** メソッド、トレイト、ジェネリクス。"
 
 #: src/welcome-day-3.md
 msgid ""
 "**Standard Library:** Using essential types like `Option`, `Result`, `Vec`, "
 "and `String`."
 msgstr ""
+"**標準ライブラリ：** `Option`、`Result`、`Vec`、`String` などの重要な型の使"
+"用。"
 
 #: src/welcome-day-3.md
 msgid "**Closures:** Anonymous functions that can capture their environment."
-msgstr ""
+msgstr "**クロージャ：** 環境をキャプチャできる無名関数。"
 
 #: src/welcome-day-3.md
 msgid ""
 "You can write any type and associate behavior with it. We are now shifting "
 "gears to apply these concepts to memory management and system design."
 msgstr ""
+"任意の型を記述し、それに振る舞いを関連付けることができるようになりました。こ"
+"こからは方向を変えて、これらの概念をメモリ管理とシステム設計に適用していきま"
+"す。"
 
 #: src/welcome-day-3.md src/welcome-day-4-afternoon.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 2 hours and 20 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 20 分です。"
+msgstr ""
+"このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 20 分です。内容は"
+"次のとおりです。"
 
 #: src/memory-management.md
-#, fuzzy
 msgid "Drop"
-msgstr "`Drop`"
+msgstr "Drop"
 
 #: src/memory-management/review.md
 msgid "Programs allocate memory in two ways:"
@@ -10728,9 +10726,8 @@ msgid "Values have dynamic sizes determined at runtime."
 msgstr "値のサイズは動的で、実行時に決定されます。"
 
 #: src/memory-management/review.md
-#, fuzzy
 msgid "Slightly slower than the stack: some bookkeeping needed."
-msgstr "スタックよりやや低速で、何らかののブックキーピングが必要です。"
+msgstr "スタックよりやや低速で、何らかのブックキーピングが必要です。"
 
 #: src/memory-management/review.md
 msgid "No guarantee of memory locality."
@@ -10789,7 +10786,7 @@ msgstr ""
 
 #: src/memory-management/review.md
 msgid "\"capacity = {capacity}, ptr = {ptr:#x}, len = {len}\""
-msgstr ""
+msgstr "\"capacity = {capacity}, ptr = {ptr:#x}, len = {len}\""
 
 #: src/memory-management/approaches.md
 msgid "Traditionally, languages have fallen into two broad categories:"
@@ -10830,11 +10827,8 @@ msgstr ""
 "ランタイム システムにより、メモリは参照できなくなるまで解放されません。"
 
 #: src/memory-management/approaches.md
-#, fuzzy
 msgid "Typically implemented with reference counting or garbage collection."
-msgstr ""
-"通常、参照カウント、ガベージ コレクション、または RAII を使用して実装されま"
-"す。"
+msgstr "通常、参照カウントまたはガベージコレクションを使用して実装されます。"
 
 #: src/memory-management/approaches.md
 msgid "Rust offers a new mix:"
@@ -10870,17 +10864,16 @@ msgstr ""
 "ります。"
 
 #: src/memory-management/approaches.md
-#, fuzzy
 msgid ""
 "C++ has tools like smart pointers (`unique_ptr`, `shared_ptr`) that take "
 "advantage of language guarantees about calling destructors to ensure memory "
 "is freed when a function returns. It is still quite easy to misuse these "
 "tools and create similar bugs to C."
 msgstr ""
-"C++ にはスマート ポインタ（`unique_ptr`、`shared_ptr` など）のツールがあり、"
-"デストラクタの呼び出しに関する言語保証を利用して、関数が戻ったときにメモリが"
-"解放されるようにします。これらのツールを誤用して C と同様のバグを作成すること"
-"がよくあります。"
+"C++ にはスマートポインタ（`unique_ptr`、`shared_ptr`）などのツールがあり、デ"
+"ストラクタの呼び出しに関する言語保証を利用して、関数が戻ったときにメモリが確"
+"実に解放されるようにします。それでも、これらのツールを誤用して C と同様のバグ"
+"を作り込んでしまうことはかなり簡単です。"
 
 #: src/memory-management/approaches.md
 msgid ""
@@ -10895,7 +10888,6 @@ msgstr ""
 "ムコストがかかり、適切なチューニングが困難です。"
 
 #: src/memory-management/approaches.md
-#, fuzzy
 msgid ""
 "Rust's ownership and borrowing model can, in many cases, get the performance "
 "of C, with alloc and free operations precisely where they are required -- "
@@ -10904,12 +10896,11 @@ msgid ""
 "are even crates available to support runtime garbage collection (not covered "
 "in this class)."
 msgstr ""
-"Rust の所有権と借用モデルは、多くの場合、割り当てオペレーションと解放オペレー"
-"ションを正確に必要な場所で行うことにより、ゼロコストで C のパフォーマンスを実"
-"現できます。また、C++ のスマートポインタに似たツールも用意されています。必要"
-"に応じて、参照カウントなどの他のオプションを利用できます。また、ランタイムガ"
-"ベージコレクションをサポートするためのサードパーティのクレートも使用できます"
-"（このクラスでは扱いません）。"
+"Rust の所有権と借用モデルは、多くの場合、割り当てと解放のオペレーションを正確"
+"に必要な場所で行うことにより、ゼロコストで C のパフォーマンスを実現できます。"
+"また、C++ のスマートポインタに似たツールも用意されています。必要に応じて、参"
+"照カウントなどの他のオプションを利用でき、ランタイムガベージコレクションをサ"
+"ポートするクレートさえあります（このクラスでは扱いません）。"
 
 #: src/memory-management/ownership.md
 msgid ""
@@ -10936,15 +10927,14 @@ msgstr ""
 "ストラクタを実行してリソースを解放できます。"
 
 #: src/memory-management/ownership.md
-#, fuzzy
 msgid ""
 "Students familiar with garbage collection implementations will know that a "
 "garbage collector starts with a set of \"roots\" to find all reachable "
 "memory. Rust's \"single owner\" principle is a similar idea."
 msgstr ""
-"ガベージ コレクションの実装に精通している受講者は、ガベージ コレクタが一連の"
-"「ルート」から開始して到達可能なすべてのメモリを見つけることを知っています。"
-"Rust の「単一オーナー」の原則も、同様の考え方に基づいています。"
+"ガベージコレクションの実装に精通している受講者は、ガベージコレクタが一連の"
+"「ルート」から開始して到達可能なすべてのメモリを見つけることを知っているで"
+"しょう。Rust の「単一オーナー」の原則も、同様の考え方です。"
 
 #: src/memory-management/move.md
 msgid "An assignment will transfer _ownership_ between variables:"
@@ -10956,7 +10946,7 @@ msgstr "\"Hello!\""
 
 #: src/memory-management/move.md
 msgid "// dbg!(s1);\n"
-msgstr ""
+msgstr "// dbg!(s1);\n"
 
 #: src/memory-management/move.md
 msgid "The assignment of `s1` to `s2` transfers ownership."
@@ -10980,7 +10970,6 @@ msgid "After move to `s2`:"
 msgstr "`s2` に移動した後:"
 
 #: src/memory-management/move.md
-#, fuzzy
 msgid ""
 "```bob\n"
 " Stack                             Heap\n"
@@ -11005,20 +10994,20 @@ msgid ""
 msgstr ""
 "```bob\n"
 " スタック                             ヒープ\n"
-".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - -.\n"
-":                           :     :                           :\n"
-":    s1 \"（アクセス不可）\"    :     :                           :\n"
-":   +-----------+-------+   :     :   +----+----+----+----+   :\n"
-":   | ptr       |   o---+---+--+--+-->| R  | u  | s  | t  |   :\n"
-":   | len       |     4 |   :  |  :   +----+----+----+----+   :\n"
-":   | capacity  |     4 |   :  |  :                           :\n"
-":   +-----------+-------+   :  |  :                           :\n"
-":                           :  |  `- - - - - - - - - - - - - -'\n"
+".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - -.\n"
+":                           :     :                                     :\n"
+":    s1 \"（アクセス不可）\"  :     :                                     :\n"
+":   +-----------+-------+   :     :   +----+----+----+----+----+----+   :\n"
+":   | ptr       |   o---+---+--+--+-->| H  | e  | l  | l  | o  | !  |   :\n"
+":   | len       |     6 |   :  |  :   +----+----+----+----+----+----+   :\n"
+":   | capacity  |     6 |   :  |  :                                     :\n"
+":   +-----------+-------+   :  |  :                                     :\n"
+":                           :  |  `- - - - - - - - - - - - - - - - - - -'\n"
 ":    s2                     :  |\n"
 ":   +-----------+-------+   :  |\n"
 ":   | ptr       |   o---+---+--'\n"
-":   | len       |     4 |   :\n"
-":   | capacity  |     4 |   :\n"
+":   | len       |     6 |   :\n"
+":   | capacity  |     6 |   :\n"
 ":   +-----------+-------+   :\n"
 ":                           :\n"
 "`- - - - - - - - - - - - - -'\n"
@@ -11123,9 +11112,8 @@ msgstr ""
 "低減されています。"
 
 #: src/memory-management/move.md
-#, fuzzy
 msgid "Defensive Copies in Modern C++"
-msgstr "現代C++の二重解放"
+msgstr "現代の C++ における防御的コピー"
 
 #: src/memory-management/move.md
 msgid "Modern C++ solves this differently:"
@@ -11182,13 +11170,12 @@ msgstr ""
 "ラマーは `s1` を引き続き使用できます。"
 
 #: src/memory-management/move.md
-#, fuzzy
 msgid ""
 "Unlike Rust, `=` in C++ can run arbitrary code as determined by the type "
 "that is being copied or moved."
 msgstr ""
-"Rust とは異なり、C++ の `=` は、コピーまたは移動される型によって決定される任"
-"意のコードを実行できます。"
+"Rust とは異なり、C++ の `=` は、コピーまたはムーブされる型によって決定される"
+"任意のコードを実行できます。"
 
 #: src/memory-management/clone.md
 msgid ""
@@ -11197,13 +11184,12 @@ msgid ""
 msgstr "値のコピーを作成したい場合は、`Clone` トレイトを使用できます。"
 
 #: src/memory-management/clone.md
-#, fuzzy
 msgid ""
 "The idea of `Clone` is to make it easy to spot where heap allocations are "
 "occurring. Look for `.clone()` and a few others like `vec!` or `Box::new`."
 msgstr ""
-"`Clone` はヒープ割当が起きる場所を見つけやすくすることを目的としたものです。"
-"`.clone()` のほか、`Vec::new` や `Box::new` などを探してください。"
+"`Clone` の考え方は、ヒープ割り当てが発生する場所を見つけやすくすることです。"
+"`.clone()` のほか、`vec!` や `Box::new` などいくつかのものを探してください。"
 
 #: src/memory-management/clone.md
 msgid ""
@@ -11218,12 +11204,16 @@ msgid ""
 "`clone` generally performs a deep copy of the value, meaning that if you "
 "e.g. clone an array, all of the elements of the array are cloned as well."
 msgstr ""
+"`clone` は通常、値のディープコピーを行います。つまり、たとえば配列をクローン"
+"すると、配列のすべての要素もクローンされます。"
 
 #: src/memory-management/clone.md
 msgid ""
 "The behavior for `clone` is user-defined, so it can perform custom cloning "
 "logic if needed."
 msgstr ""
+"`clone` の動作はユーザー定義であるため、必要に応じて独自のクローン処理ロジッ"
+"クを実行できます。"
 
 #: src/memory-management/copy-types.md
 msgid ""
@@ -11312,6 +11302,10 @@ msgid ""
 "valid to make a copy of a shared reference, creating a copy of a mutable "
 "reference would violate Rust's borrowing rules."
 msgstr ""
+"共有参照は `Copy`/`Clone` ですが、可変参照はそうではありません。これは、Rust "
+"では可変参照が排他的である必要があるためです。共有参照のコピーを作成すること"
+"は有効ですが、可変参照のコピーを作成すると Rust の借用規則に違反してしまいま"
+"す。"
 
 #: src/memory-management/drop.md
 msgid "The `Drop` Trait"
@@ -11347,14 +11341,12 @@ msgid "\"d\""
 msgstr "\"d\""
 
 #: src/memory-management/drop.md
-#, fuzzy
 msgid "\"Exiting innermost block\""
-msgstr "\"Exiting block B\""
+msgstr "\"Exiting innermost block\""
 
 #: src/memory-management/drop.md
-#, fuzzy
 msgid "\"Exiting next block\""
-msgstr "\"Exiting block B\""
+msgstr "\"Exiting next block\""
 
 #: src/memory-management/drop.md
 msgid "\"Exiting main\""
@@ -11396,7 +11388,6 @@ msgstr ""
 "す。"
 
 #: src/memory-management/drop.md
-#, fuzzy
 msgid ""
 "This is useful for objects that do some work on `drop`: releasing locks, "
 "closing files, etc."
@@ -11521,9 +11512,8 @@ msgid "\"0.1\""
 msgstr "\"0.1\""
 
 #: src/smart-pointers.md
-#, fuzzy
 msgid "Box<T>"
-msgstr "`Box<T>`"
+msgstr "Box<T>"
 
 #: src/smart-pointers.md
 msgid "Rc"
@@ -11552,13 +11542,12 @@ msgstr ""
 "trait.Deref.html#more-on-deref-coercion)ことができます。"
 
 #: src/smart-pointers/box.md
-#, fuzzy
 msgid ""
 "Recursive data types or data types with dynamic sizes cannot be stored "
 "inline without a pointer indirection. `Box` accomplishes that indirection:"
 msgstr ""
-"再帰データ型、またはサイズが動的なデータ型では、`Box` を使用する必要がありま"
-"す。"
+"再帰的なデータ型や動的なサイズを持つデータ型は、ポインタによる間接参照なしに"
+"はインラインで格納できません。`Box` はその間接参照を実現します："
 
 #: src/smart-pointers/box.md
 msgid "/// A non-empty list: first element and the rest of the list.\n"
@@ -11625,13 +11614,12 @@ msgid "A `Box` can be useful when you:"
 msgstr "`Box` は次のような場合に役立ちます。"
 
 #: src/smart-pointers/box.md
-#, fuzzy
 msgid ""
 "have a type whose size can't be known at compile time, but the Rust compiler "
 "wants to know an exact size."
 msgstr ""
-"コンパイル時にサイズを把握できない型があるが、Rust コンパイラがその正確なサイ"
-"ズを知る必要がある場合。"
+"コンパイル時にサイズを把握できない型があるが、Rust コンパイラが正確なサイズを"
+"知る必要がある場合。"
 
 #: src/smart-pointers/box.md
 msgid ""
@@ -11662,16 +11650,16 @@ msgstr ""
 "にヒープ内の List の次の要素を指すだけだけだからです。"
 
 #: src/smart-pointers/box.md
-#, fuzzy
 msgid ""
 "Remove the `Box` in the List definition and show the compiler error. We get "
 "the message \"recursive without indirection\", because for data recursion, "
 "we have to use indirection, a `Box` or reference of some kind, instead of "
 "storing the value directly."
 msgstr ""
-"List 定義の `Box` を削除して、コンパイラ エラーを表示します。\"Recursive "
-"with indirection\" は、値を直接保持するのではなく、Boxや何らかの参照を使用し"
-"たら良いことを示唆するものです。"
+"List 定義の `Box` を削除して、コンパイラ エラーを表示します。\"recursive "
+"without indirection\" というメッセージが表示されます。これは、データの再帰で"
+"は、値を直接格納するのではなく、間接参照（`Box` または何らかの参照）を使用す"
+"る必要があるためです。"
 
 #: src/smart-pointers/box.md
 msgid ""
@@ -11679,6 +11667,9 @@ msgid ""
 "This makes `Box` one of the types that allow the compiler to optimize "
 "storage of some enums (the \"niche optimization\")."
 msgstr ""
+"`Box` は C++ の `std::unique_ptr` に似ていますが、空/null にすることはできま"
+"せん。このため `Box` は、コンパイラが一部の列挙型の格納を最適化できる（「ニッ"
+"チの最適化」）型の 1 つとなっています。"
 
 #: src/smart-pointers/rc.md
 msgid ""
@@ -11695,15 +11686,16 @@ msgid ""
 "Each `Rc` points to the same shared data structure, containing strong and "
 "weak pointers and the value:"
 msgstr ""
+"各 `Rc` は、強いポインタと弱いポインタ、および値を含む同じ共有データ構造を指"
+"します："
 
 #: src/smart-pointers/rc.md
-#, fuzzy
 msgid ""
 "See [`Arc`](../concurrency/shared-state/arc.md) and [`Mutex`](https://"
 "doc.rust-lang.org/std/sync/struct.Mutex.html) if you are in a multi-threaded "
 "context."
 msgstr ""
-"マルチスレッドのコンテキストに関しては、[`Arc`](../concurrency/shared_state/"
+"マルチスレッドのコンテキストでは、[`Arc`](../concurrency/shared-state/"
 "arc.md) と [`Mutex`](https://doc.rust-lang.org/std/sync/struct.Mutex.html) を"
 "ご覧ください。"
 
@@ -11764,13 +11756,16 @@ msgid ""
 "Pet`. However, we can also use trait objects with smart pointers like `Box` "
 "to create an owned trait object: `Box<dyn Pet>`."
 msgstr ""
+"以前、トレイトオブジェクトを参照とともに使用する方法（例：`&dyn Pet`）を見ま"
+"した。しかし、`Box` などのスマートポインタとともにトレイトオブジェクトを使用"
+"して、所有権を持つトレイトオブジェクト `Box<dyn Pet>` を作成することもできま"
+"す。"
 
 #: src/smart-pointers/trait-objects.md
 msgid "Memory layout after allocating `pets`:"
 msgstr "`pets`を割り当てた後のメモリレイアウト："
 
 #: src/smart-pointers/trait-objects.md
-#, fuzzy
 msgid ""
 "```bob\n"
 " Stack                             Heap\n"
@@ -11831,60 +11826,59 @@ msgid ""
 msgstr ""
 "```bob\n"
 " スタック                             ヒープ\n"
-".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - - - - "
-"- -.\n"
-":                           :     :                                             :\n"
-":    pets                   :     :                     +----+----+----+----"
-"+   :\n"
-":   +-----------+-------+   :     :   +-----+-----+  .->| F  | i  | d  | o  "
-"|   :\n"
-":   | ptr       |   o---+---+-----+-->| o o | o o |  |  +----+----+----+----"
-"+   :\n"
-":   | len       |     2 |   :     :   +-|-|-+-|-|-+  "
-"`---------.                :\n"
-":   | capacity  |     2 |   :     :     | |   | |    data      "
-"|                :\n"
-":   +-----------+-------+   :     :     | |   | |   +-------+--|-------"
-"+        :\n"
-":                           :     :     | |   | '-->| name  |  o, 4, 4 "
-"|        :\n"
-":                           :     :     | |   |     | age   |        5 "
-"|        :\n"
-"`- - - - - - - - - - - - - -'     :     | |   |     +-------+----------"
-"+        :\n"
-"                                  :     | |   "
+".- - - - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - - "
+"- - - -.\n"
+":                               :     :                                             :\n"
+":    \"pets: Vec<Box<dyn Pet>>\"  :     :   \"data: Cat\"         +----+----"
+"+----+----+ :\n"
+":   +-----------+-------+       :     :  +-------+-------+    | F  | i  | d  "
+"| o  | :\n"
+":   | ptr       |   o---+-------+--.  :  | lives |     9 |    +----+----+----"
+"+----+ :\n"
+":   | len       |     2 |       :  |  :  +-------+-------+      "
+"^                   :\n"
+":   | capacity  |     2 |       :  |  :       ^                 "
+"|                   :\n"
+":   +-----------+-------+       :  |  :       |                 "
+"'-------.           :\n"
+":                               :  |  :       |               data:"
+"\"Dog\"|           :\n"
+":                               :  |  :       |              +-------"
+"+--|-------+   :\n"
+"`- - - - - - - - - - - - - - - -'  |  :   +---|-+-----+      | name  |  o, "
+"4, 4 |   :\n"
+"                                   `--+-->| o o | o o-|----->| age   "
+"|        5 |   :\n"
+"                                      :   +-|---+-|---+      +-------"
+"+----------+   :\n"
+"                                      :     |     "
 "|                                 :\n"
-"                                  :     | |   |      "
-"vtable                     :\n"
-"                                  :     | |   |     +----------------------"
-"+    :\n"
-"                                  :     | |   '---->| \"<Dog as Pet>::talk\" "
-"|    :\n"
-"                                  :     | |         +----------------------"
-"+    :\n"
-"                                  :     | "
-"|                                     :\n"
-"                                  :     | |    "
-"data                             :\n"
-"                                  :     | |   +-------+-------"
-"+                 :\n"
-"                                  :     | '-->| lives |     9 "
-"|                 :\n"
-"                                  :     |     +-------+-------"
-"+                 :\n"
-"                                  :     "
-"|                                       :\n"
-"                                  :     |      "
-"vtable                           :\n"
-"                                  :     |     +----------------------"
-"+          :\n"
-"                                  :     '---->| \"<Cat as Pet>::talk\" "
-"|          :\n"
-"                                  :           +----------------------"
-"+          :\n"
-"                                  :                                             :\n"
-"                                  '- - - - - - - - - - - - - - - - - - - - - "
-"- -'\n"
+"                                      `- - -| - - |- - - - - - - - - - - - - "
+"- - - -'\n"
+"                                            |     |\n"
+"                                            |     |                      "
+"\"Program text\"\n"
+"                                      .- - -| - - |- - - - - - - - - - - - - "
+"- - - -.\n"
+"                                      :     |     |       "
+"vtable                    :\n"
+"                                      :     |     |      "
+"+----------------------+   :\n"
+"                                      :     |     `----->| \"<Dog as "
+"Pet>::talk\" |   :\n"
+"                                      :     |            "
+"+----------------------+   :\n"
+"                                      :     |             "
+"vtable                    :\n"
+"                                      :     |            "
+"+----------------------+   :\n"
+"                                      :     '----------->| \"<Cat as "
+"Pet>::talk\" |   :\n"
+"                                      :                  "
+"+----------------------+   :\n"
+"                                      :                                             :\n"
+"                                      '- - - - - - - - - - - - - - - - - - - "
+"- - - -'\n"
 "```"
 
 #: src/smart-pointers/trait-objects.md
@@ -11963,7 +11957,6 @@ msgid "\"{}\""
 msgstr "\"{}\""
 
 #: src/smart-pointers/exercise.md
-#, fuzzy
 msgid ""
 "A binary tree is a tree-type data structure where every node has two "
 "children (left and right). We will create a tree where each node stores a "
@@ -11974,7 +11967,9 @@ msgstr ""
 "バイナリツリーは、すべてのノードに 2 つの子（左と右）があるツリー型のデータ構"
 "造です。ここでは、各ノードが値を格納するツリーを作成します。ある特定のノード "
 "N について、N の左側のサブツリー内のすべてのノードにはより小さい値が含まれ、"
-"N の右側のサブツリー内のすべてのノードにはより大きい値が含まれます。"
+"N の右側のサブツリー内のすべてのノードにはより大きい値が含まれます。ある値は"
+"ツリー内に 1 回だけ格納されるようにします。つまり、重複するノードはありませ"
+"ん。"
 
 #: src/smart-pointers/exercise.md
 msgid "Implement the following types, so that the given tests pass."
@@ -11999,27 +11994,28 @@ msgstr ""
 "/// 同じ値が複数回追加された場合、その値は 1 回だけ格納される。\n"
 
 #: src/smart-pointers/exercise.md
-#, fuzzy
 msgid ""
 "// Implement `new` for `Node`.\n"
 "// Implement `new`, `insert`, `len`, and `has` for `Subtree`.\n"
-msgstr "// `new`、`insert`、`len`、`has` を実装します。\n"
+msgstr ""
+"// `Node` に対して `new` を実装します。\n"
+"// `Subtree` に対して `new`、`insert`、`len`、`has` を実装します。\n"
 
 #: src/smart-pointers/exercise.md src/smart-pointers/solution.md
 msgid "// not a unique item\n"
 msgstr "// 固有のアイテムではない\n"
 
 #: src/welcome-day-3-afternoon.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 2 hours and 30 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 55 分です。"
+msgstr ""
+"このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 30 分です。内容は"
+"次のとおりです。"
 
 #: src/borrowing.md src/unsafe-rust.md
-#, fuzzy
 msgid "This segment should take about 1 hour and 15 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 5 分です"
+msgstr "このセグメントの所要時間は約 1 時間 15 分です。内容は次のとおりです。"
 
 #: src/borrowing/shared.md
 msgid ""
@@ -12046,12 +12042,10 @@ msgstr ""
 "関数の引数と戻り値も含めています。"
 
 #: src/borrowing/shared.md
-#, fuzzy
 msgid "Notes on stack returns and inlining:"
-msgstr "スタックの戻り値に関する注意事項:"
+msgstr "スタックからの戻り値とインライン化に関する注意事項："
 
 #: src/borrowing/shared.md
-#, fuzzy
 msgid ""
 "Demonstrate that the return from `add` is cheap because the compiler can "
 "eliminate the copy operation, by inlining the call to add into main. Change "
@@ -12062,19 +12056,22 @@ msgid ""
 "\"DEBUG\" optimization level, the addresses should change, while they stay "
 "the same when changing to the \"RELEASE\" setting:"
 msgstr ""
-"コンパイラはコピー オペレーションを省略できるため、`add` からのリターンはコス"
-"トであることを示します。スタック アドレスを出力するように上記のコードを変更"
-"し、[Playground](https://play.rust-lang.org/?"
-"version=stable&mode=release&edition=2021&gist=0cb13be1c05d7e3446686ad9947c4671)"
-"で実行するか、[Godbolt](https://rust.godbolt.org/) のアセンブリを確認します。"
-"「DEBUG」最適化レベルではアドレスが変更されますが、「RELEASE」設定に変更した"
-"場合はアドレスが変更されません。"
+"`add` の呼び出しを main にインライン化することでコンパイラがコピー オペレー"
+"ションを省略できるため、`add` からのリターンが低コストであることを示します。"
+"スタック アドレスを出力するように上記のコードを変更し、[Playground](https://"
+"play.rust-lang.org/?"
+"version=stable&mode=release&edition=2024&gist=0cb13be1c05d7e3446686ad9947c4671) "
+"で実行するか、[Godbolt](https://rust.godbolt.org/) でアセンブリを確認します。"
+"「DEBUG」最適化レベルではアドレスが変わりますが、「RELEASE」設定に変更すると"
+"アドレスは変わりません："
 
 #: src/borrowing/shared.md
 msgid ""
 "The Rust compiler can do automatic inlining, that can be disabled on a "
 "function level with `#[inline(never)]`."
 msgstr ""
+"Rust コンパイラは自動的にインライン化を行うことができ、これは関数単位で "
+"`#[inline(never)]` を使用して無効にできます。"
 
 #: src/borrowing/shared.md
 msgid ""
@@ -12083,21 +12080,26 @@ msgid ""
 "of the value depends on the ABI, e.g. on amd64 the two i32 that is making up "
 "the point will be returned in 2 registers (eax and edx)."
 msgstr ""
+"無効にすると、出力されるアドレスはすべての最適化レベルで変化します。Godbolt "
+"や Playground を見ると、この場合、値の返し方は ABI に依存することがわかりま"
+"す。たとえば amd64 では、point を構成する 2 つの i32 は 2 つのレジスタ（eax "
+"と edx）で返されます。"
 
 #: src/borrowing/borrowck.md
-#, fuzzy
 msgid ""
 "Rust's _borrow checker_ puts constraints on the ways you can borrow values. "
 "We've already seen that a reference cannot _outlive_ the value it borrows:"
 msgstr ""
-"Rust の _借用チェッカー_ は、値を借用する方法に制限を設けます。任意の値に対し"
-"て、常に次の制限が課されます。"
+"Rust の _借用チェッカー_ は、値を借用する方法に制約を課します。参照は、借用元"
+"の値よりも _長く存続する_ ことはできないことをすでに見ました："
 
 #: src/borrowing/borrowck.md
 msgid ""
 "There's also a second main rule that the borrow checker enforces: The "
 "_aliasing_ rule. For a given value, at any time:"
 msgstr ""
+"借用チェッカーが適用する主要なルールがもう 1 つあります。それが _エイリアシン"
+"グ_ ルールです。任意の値に対して、常に次のことが成り立ちます："
 
 #: src/borrowing/borrowck.md
 msgid "You can have one or more shared references to the value, _or_"
@@ -12113,6 +12115,9 @@ msgid ""
 "references. We review it here to show students that the borrow checking is "
 "following a few different rules to validate borrowing."
 msgstr ""
+"「長く存続する（outlives）」ルールは、最初に参照を見たときにすでに示しまし"
+"た。ここでそれを復習するのは、借用チェックが借用を検証するためにいくつかの異"
+"なるルールに従っていることを受講者に示すためです。"
 
 #: src/borrowing/borrowck.md
 msgid ""
@@ -12123,15 +12128,16 @@ msgstr ""
 "じて不変として借用されているため、コンパイルできません。"
 
 #: src/borrowing/borrowck.md
-#, fuzzy
 msgid ""
 "Note that the requirement is that conflicting references not _exist_ at the "
 "same point. It does not matter where the reference is dereferenced. Try "
 "commenting out `*c = 20` and show that the compiler error still occurs even "
 "if we never use `c`."
 msgstr ""
-"要件は、競合する参照が同じ時点に存在しないことです。参照がどこで外されていて"
-"も構いません。"
+"要件は、競合する参照が同じ時点に _存在_ しないことである点に注意してくださ"
+"い。参照がどこで参照外しされるかは関係ありません。`*c = 20` をコメントアウト"
+"して、`c` を一度も使用しなくてもコンパイラ エラーが発生することを示してくださ"
+"い。"
 
 #: src/borrowing/borrowck.md
 msgid ""
@@ -12140,15 +12146,18 @@ msgid ""
 "this produces a similar error. This is because direct mutation of a value "
 "effectively creates a temporary mutable reference."
 msgstr ""
+"借用の競合を引き起こすのに、中間の参照 `c` は必要ない点に注意してください。"
+"`c` を `a` の直接の変更に置き換えて、同様のエラーが発生することを示してくださ"
+"い。これは、値を直接変更すると、実質的に一時的な可変参照が作成されるためで"
+"す。"
 
 #: src/borrowing/borrowck.md
-#, fuzzy
 msgid ""
 "Move the `dbg!` statement for `b` before the scope that introduces `c` to "
 "make the code compile."
 msgstr ""
-"`b` の `println!` ステートメントを `c` を導入するスコープの前に移動して、コー"
-"ドをコンパイル出来るようにします。"
+"`b` の `dbg!` ステートメントを `c` を導入するスコープの前に移動して、コードを"
+"コンパイルできるようにします。"
 
 #: src/borrowing/borrowck.md
 msgid ""
@@ -12169,6 +12178,11 @@ msgid ""
 "version=stable&mode=debug&edition=2024&gist=8f5896878611566845fe3b0f4dc5af68) "
 "demonstrates that behavior."
 msgstr ""
+"技術的には、再借用によって、あるデータへの複数の可変参照が同時に存在すること"
+"があります。これにより、元の参照を無効にすることなく、可変参照を関数に渡すこ"
+"とができます。[このプレイグラウンドの例](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=8f5896878611566845fe3b0f4dc5af68) "
+"でその動作を確認できます。"
 
 #: src/borrowing/borrowck.md
 msgid ""
@@ -12176,18 +12190,18 @@ msgid ""
 "not occur in multi-threaded code, since only one thread can have mutable "
 "access to a piece of data at a time."
 msgstr ""
+"Rust は排他参照の制約を使用して、マルチスレッドのコードでデータ競合が発生しな"
+"いようにしています。あるデータに対して可変アクセスを持てるスレッドは、一度に "
+"1 つだけだからです。"
 
 #: src/borrowing/borrowck.md
-#, fuzzy
 msgid ""
 "Rust also uses this constraint to optimize code. For example, a value behind "
 "a shared reference can be safely cached in a register for the lifetime of "
 "that reference."
 msgstr ""
-"排他参照制約は非常に強力です。Rust はこの制約を使用して、データへの競合が発生"
-"しないようにするとともに、コードを最適化しています。たとえば、共有参照を通し"
-"て得られる値は、その参照が存続する間、安全にレジスタにキャッシュすることが出"
-"来ます"
+"Rust はこの制約をコードの最適化にも使用しています。たとえば、共有参照の背後に"
+"ある値は、その参照のライフタイムの間、安全にレジスタにキャッシュできます。"
 
 #: src/borrowing/borrowck.md
 msgid ""
@@ -12198,6 +12212,12 @@ msgid ""
 "version=stable&mode=debug&edition=2024&gist=f293a31f2d4d0d31770486247c2e8437) "
 "for an example of this."
 msgstr ""
+"構造体のフィールドは互いに独立して借用できますが、構造体のメソッドを呼び出す"
+"と構造体全体が借用されるため、個々のフィールドへの参照が無効になる可能性があ"
+"ります。この例については、[このプレイグラウンドのスニペット](https://"
+"play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=f293a31f2d4d0d31770486247c2e8437) "
+"をご覧ください。"
 
 #: src/borrowing/examples.md
 msgid ""
@@ -12205,10 +12225,13 @@ msgid ""
 "consider the case of modifying a collection while there are references to "
 "its elements:"
 msgstr ""
+"これらの借用規則がメモリエラーをどのように防ぐかの具体例として、コレクション"
+"の要素への参照が存在する間にそのコレクションを変更する場合を考えてみましょ"
+"う："
 
 #: src/borrowing/examples.md
 msgid "Similarly, consider the case of iterator invalidation:"
-msgstr ""
+msgstr "同様に、イテレータの無効化の場合を考えてみましょう："
 
 #: src/borrowing/examples.md
 msgid ""
@@ -12216,6 +12239,9 @@ msgid ""
 "into it can potentially invalidate existing references to the collection's "
 "elements if the collection has to reallocate."
 msgstr ""
+"どちらの場合も、コレクションに新しい要素をプッシュして変更すると、コレクショ"
+"ンの再割り当てが必要になった場合に、コレクションの要素への既存の参照が無効に"
+"なる可能性があります。"
 
 #: src/borrowing/interior-mutability.md
 msgid ""
@@ -12238,42 +12264,40 @@ msgstr ""
 "通常はランタイム チェックを実行することで安全性を確保します。"
 
 #: src/borrowing/interior-mutability.md
-#, fuzzy
 msgid ""
 "The main thing to take away from this slide is that Rust provides _safe_ "
 "ways to modify data behind a shared reference. There are a variety of ways "
 "to ensure that safety, and the next sub-slides present a few of them."
 msgstr ""
-"このスライドで重要なのは、Rust には、共有参照の背後にあるデータを変更する安全"
-"な方法が用意されているということです。安全性を確保するにはさまざまな方法があ"
-"りますが、ここでは `RefCell` と `Cell` を取り上げます。"
+"このスライドで重要なのは、Rust には、共有参照の背後にあるデータを変更する _安"
+"全な_ 方法が用意されているということです。安全性を確保するにはさまざまな方法"
+"があり、次のサブスライドではそのいくつかを紹介します。"
 
 #: src/borrowing/interior-mutability/cell.md
-#, fuzzy
 msgid ""
 "`Cell` wraps a value and allows getting or setting the value using only a "
 "shared reference to the `Cell`. However, it does not allow any references to "
 "the inner value. Since there are no references, borrowing rules cannot be "
 "broken."
 msgstr ""
-"`Cell` は、値をラップし、`Cell` の共有参照を通してでもその値を取得または設定"
-"可能にしています。ただし、その内包する値への参照は許していません。"
+"`Cell` は値をラップし、`Cell` への共有参照のみを使用してその値を取得または設"
+"定できるようにします。ただし、内部の値への参照は一切許可しません。参照が存在"
+"しないため、借用規則が破られることはありません。"
 
 #: src/borrowing/interior-mutability/cell.md
 #: src/borrowing/interior-mutability/refcell.md
 msgid "// Note that `cell` is NOT declared as mutable.\n"
-msgstr ""
+msgstr "// `cell` は可変として宣言されていないことに注意してください。\n"
 
 #: src/borrowing/interior-mutability/cell.md
-#, fuzzy
 msgid ""
 "`Cell` is a simple means to ensure safety: it has a `set` method that takes "
 "`&self`. This needs no runtime check, but requires moving values, which can "
 "have its own cost."
 msgstr ""
-"`Cell` は安全性を確保するためのよりシンプルな手段であり、`&self` を受け取る "
-"`set` メソッドを備えています。ランタイム チェックは必要ありませんが、値を移動"
-"する必要があり、それによってコストが発生することがあります。"
+"`Cell` は安全性を確保するためのシンプルな手段であり、`&self` を受け取る "
+"`set` メソッドを備えています。ランタイム チェックは必要ありませんが、値をムー"
+"ブする必要があり、それ自体にコストがかかる場合があります。"
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
@@ -12281,18 +12305,26 @@ msgid ""
 "alternative types `Ref` and `RefMut` that emulate `&T`/`&mut T` without "
 "actually being Rust references."
 msgstr ""
+"`RefCell` は、実際には Rust の参照ではないものの `&T`/`&mut T` をエミュレート"
+"する代替の型 `Ref` と `RefMut` を提供することで、ラップされた値へのアクセスと"
+"変更を可能にします。"
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
 "These types perform dynamic checks using a counter in the `RefCell` to "
 "prevent existence of a `RefMut` alongside another `Ref`/`RefMut`."
 msgstr ""
+"これらの型は、`RefCell` 内のカウンタを使用して動的なチェックを行い、`RefMut` "
+"が別の `Ref`/`RefMut` と同時に存在しないようにします。"
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
 "By implementing `Deref` (and `DerefMut` for `RefMut`), these types allow "
 "calling methods on the inner value without allowing references to escape."
 msgstr ""
+"これらの型は `Deref`（`RefMut` の場合は `DerefMut` も）を実装することで、参照"
+"が外部に漏れることを許さずに、内部の値に対するメソッドの呼び出しを可能にしま"
+"す。"
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
@@ -12300,11 +12332,13 @@ msgid ""
 "        // let other = cell.borrow();\n"
 "        // println!(\"{}\", other);\n"
 msgstr ""
+"// これは実行時にエラーを引き起こします。\n"
+"        // let other = cell.borrow();\n"
+"        // println!(\"{}\", other);\n"
 
 #: src/borrowing/interior-mutability/refcell.md
-#, fuzzy
 msgid "\"{cell:?}\""
-msgstr "\"{:?}\""
+msgstr "\"{cell:?}\""
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
@@ -12323,6 +12357,9 @@ msgid ""
 "`borrow_mut` before we print the cell. Trying to print a borrowed `RefCell` "
 "just shows the message `\"{borrowed}\"`."
 msgstr ""
+"この例の追加のブロックは、セルを出力する前に、`borrow_mut` の呼び出しによって"
+"作成された借用を終了させるためのものです。借用中の `RefCell` を出力しようとす"
+"ると、`\"{borrowed}\"` というメッセージが表示されるだけです。"
 
 #: src/borrowing/interior-mutability/refcell.md
 msgid ""
@@ -12330,30 +12367,40 @@ msgid ""
 "first use. Making these useful requires some more knowledge than students "
 "have at this time."
 msgstr ""
+"`OnceCell` と `OnceLock` もあり、これらは初回使用時の初期化を可能にします。こ"
+"れらを活用するには、現時点で受講者が持っている以上の知識が必要です。"
 
 #: src/borrowing/exercise.md
 msgid ""
 "In this exercise, you will manage a wizard's inventory using what you have "
 "learned about borrowing and ownership."
 msgstr ""
+"この演習では、借用と所有権について学んだことを使って、魔法使いの持ち物を管理"
+"します。"
 
 #: src/borrowing/exercise.md
 msgid ""
 "The wizard has a collection of spells. You need to implement functions to "
 "add spells to the inventory and to cast spells from them."
 msgstr ""
+"魔法使いは呪文のコレクションを持っています。持ち物に呪文を追加する関数と、そ"
+"こから呪文を唱える関数を実装する必要があります。"
 
 #: src/borrowing/exercise.md
 msgid ""
 "Spells have a limited number of uses. When a spell has no uses left, it must "
 "be removed from the wizard's inventory."
 msgstr ""
+"呪文には使用回数の制限があります。使用回数が残っていない呪文は、魔法使いの持"
+"ち物から削除しなければなりません。"
 
 #: src/borrowing/exercise.md
 msgid ""
 "// TODO: Implement `add_spell` to take ownership of a spell and add it to\n"
 "    // the wizard's inventory.\n"
 msgstr ""
+"// TODO: 呪文の所有権を取得して魔法使いの持ち物に追加する `add_spell` を\n"
+"    // 実装します。\n"
 
 #: src/borrowing/exercise.md
 msgid ""
@@ -12365,26 +12412,32 @@ msgid ""
 "    // If the wizard doesn't have enough mana, the spell should fail.\n"
 "    // If the spell has no uses left, it is removed from the inventory.\n"
 msgstr ""
+"// TODO: 持ち物から呪文を借用して唱える `cast_spell` を実装します。\n"
+"    // 魔法使いのマナは呪文のコストだけ減少し、呪文の使用回数は\n"
+"    // 1 減少する必要があります。\n"
+"    //\n"
+"    // 魔法使いのマナが足りない場合、呪文は失敗します。\n"
+"    // 呪文の使用回数が残っていない場合は、持ち物から削除されます。\n"
 
 #: src/borrowing/exercise.md src/borrowing/solution.md
 msgid "\"Fireball\""
-msgstr ""
+msgstr "\"Fireball\""
 
 #: src/borrowing/exercise.md src/borrowing/solution.md
 msgid "\"Ice Blast\""
-msgstr ""
+msgstr "\"Ice Blast\""
 
 #: src/borrowing/exercise.md src/borrowing/solution.md
 msgid "// Casts successfully\n"
-msgstr ""
+msgstr "// 成功する\n"
 
 #: src/borrowing/exercise.md src/borrowing/solution.md
 msgid "// Casts successfully, then removed\n"
-msgstr ""
+msgstr "// 成功した後、削除される\n"
 
 #: src/borrowing/exercise.md src/borrowing/solution.md
 msgid "// Fails (not found)\n"
-msgstr ""
+msgstr "// 失敗する（見つからない）\n"
 
 #: src/borrowing/exercise.md
 msgid ""
@@ -12392,32 +12445,37 @@ msgid ""
 "borrowing, specifically the rule that you cannot mutate a collection while "
 "holding a reference to one of its elements."
 msgstr ""
+"この演習の目的は、所有権と借用の主要な概念、特にコレクションの要素の 1 つへの"
+"参照を保持している間はそのコレクションを変更できないというルールを練習するこ"
+"とです。"
 
 #: src/borrowing/exercise.md
 msgid ""
 "`add_spell` should take ownership of a `Spell` and move it into the "
 "`Wizard`'s inventory."
 msgstr ""
+"`add_spell` は `Spell` の所有権を取得し、それを `Wizard` の持ち物にムーブする"
+"必要があります。"
 
 #: src/borrowing/exercise.md
 msgid "`cast_spell` is the core of the exercise. It needs to:"
-msgstr ""
+msgstr "`cast_spell` はこの演習の中心です。次のことを行う必要があります："
 
 #: src/borrowing/exercise.md
 msgid "Find the spell (by index or by reference)."
-msgstr ""
+msgstr "呪文を（インデックスまたは参照で）見つける。"
 
 #: src/borrowing/exercise.md
 msgid "Check mana and decrement it."
-msgstr ""
+msgstr "マナを確認して減らす。"
 
 #: src/borrowing/exercise.md
 msgid "Decrement the spell's `uses`."
-msgstr ""
+msgstr "呪文の `uses` を減らす。"
 
 #: src/borrowing/exercise.md
 msgid "Remove the spell if `uses == 0`."
-msgstr ""
+msgstr "`uses == 0` の場合は呪文を削除する。"
 
 #: src/borrowing/exercise.md
 msgid ""
@@ -12428,33 +12486,35 @@ msgid ""
 "how to structure code to satisfy the borrow checker (e.g., by using indices "
 "or by ensuring the borrow ends before the mutation)."
 msgstr ""
+"**借用チェッカーとの競合：** 受講者が呪文への参照（例：`let spell = &mut "
+"self.spells[i]`）を保持したまま、その参照が同じスコープ内でまだ「生きている」"
+"間に `self.spells.remove(i)` を呼び出そうとすると、借用チェッカーがエラーを出"
+"します。これは、借用チェッカーを満たすようにコードを構成する方法（例：イン"
+"デックスを使用する、変更の前に借用が終わるようにする）を示す絶好の機会です。"
 
 #: src/borrowing/solution.md
 msgid "Solution: Wizard's Inventory"
-msgstr ""
+msgstr "解答: 魔法使いの持ち物"
 
 #: src/borrowing/solution.md
-#, fuzzy
 msgid "\"Spell {} not found!\""
-msgstr "\"Character not found\""
+msgstr "\"Spell {} not found!\""
 
 #: src/borrowing/solution.md
 msgid "\"Casting {}! Mana left: {}. Uses left: {}\""
-msgstr ""
+msgstr "\"Casting {}! Mana left: {}. Uses left: {}\""
 
 #: src/borrowing/solution.md
 msgid "\"Not enough mana to cast {}!\""
-msgstr ""
+msgstr "\"Not enough mana to cast {}!\""
 
 #: src/lifetimes.md
-#, fuzzy
 msgid "This segment should take about 1 hour and 5 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 5 分です"
+msgstr "このセグメントの所要時間は約 1 時間 5 分です。内容は次のとおりです。"
 
 #: src/lifetimes/simple-borrows.md
-#, fuzzy
 msgid "Borrowing with Functions"
-msgstr "C 関数との通信"
+msgstr "関数による借用"
 
 #: src/lifetimes/simple-borrows.md
 msgid ""
@@ -12462,15 +12522,17 @@ msgid ""
 "flow into and out of functions. In the simplest case borrows last for the "
 "duration of the function call:"
 msgstr ""
+"借用チェックの一環として、コンパイラは借用が関数にどのように流れ込み、流れ出"
+"るかを推論する必要があります。最も単純なケースでは、借用は関数呼び出しの間だ"
+"け続きます："
 
 #: src/lifetimes/simple-borrows.md
-#, fuzzy
 msgid "// Borrow `val` for the function call.\n"
-msgstr "ヒープ: 関数呼び出しに依存しない値の保持領域。"
+msgstr "// 関数呼び出しのために `val` を借用します。\n"
 
 #: src/lifetimes/simple-borrows.md
 msgid "// Borrow has ended and we're free to mutate.\n"
-msgstr ""
+msgstr "// 借用が終了したので、自由に変更できます。\n"
 
 #: src/lifetimes/simple-borrows.md
 msgid ""
@@ -12478,22 +12540,29 @@ msgid ""
 "our ability to mutate `val`, but once the function call returns the borrow "
 "has ended and we're free to mutate again."
 msgstr ""
+"この例では、`borrows` の呼び出しのために `val` を借用しています。これにより "
+"`val` を変更する能力が制限されますが、関数呼び出しが戻ると借用は終了し、再び"
+"自由に変更できるようになります。"
 
 #: src/lifetimes/returning-borrows.md
 msgid ""
 "But we can also have our function return a reference! This means that a "
 "borrow flows back out of a function:"
 msgstr ""
+"しかし、関数から参照を返すこともできます！これは、借用が関数から流れ出ること"
+"を意味します："
 
 #: src/lifetimes/returning-borrows.md
 msgid "// x = 5; // 🛠️❌ `x` is still borrowed!\n"
-msgstr ""
+msgstr "// x = 5; // 🛠️❌ `x` はまだ借用されています！\n"
 
 #: src/lifetimes/returning-borrows.md
 msgid ""
 "Rust functions can return references, meaning that a borrow can flow back "
 "out of a function."
 msgstr ""
+"Rust の関数は参照を返すことができます。つまり、借用が関数から流れ出ることがあ"
+"ります。"
 
 #: src/lifetimes/returning-borrows.md
 msgid ""
@@ -12501,28 +12570,35 @@ msgid ""
 "derived from one of its arguments. This means that the return value of the "
 "function will extend the borrow for one or more argument borrows."
 msgstr ""
+"関数が参照（または別の種類の借用）を返す場合、それはおそらく引数のいずれかか"
+"ら派生したものです。つまり、関数の戻り値は、1 つ以上の引数の借用を延長するこ"
+"とになります。"
 
 #: src/lifetimes/returning-borrows.md
 msgid ""
 "This case is still fairly simple, in that only one borrow is passed into the "
 "function, so the returned borrow has to be the same one."
 msgstr ""
+"このケースはまだかなり単純です。関数に渡される借用は 1 つだけなので、返される"
+"借用はそれと同じものでなければなりません。"
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
 "But what about when there are multiple borrows passed into a function and "
 "one being returned?"
-msgstr ""
+msgstr "では、複数の借用が関数に渡され、1 つが返される場合はどうでしょうか？"
 
 #: src/lifetimes/multiple-borrows.md
 msgid "\"Return either `a` or `b`\""
-msgstr ""
+msgstr "\"Return either `a` or `b`\""
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
 "// Which one is still borrowed?\n"
 "    // Should either mutation be allowed?\n"
 msgstr ""
+"// どちらがまだ借用されているでしょうか？\n"
+"    // どちらかの変更は許可されるべきでしょうか？\n"
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
@@ -12531,6 +12607,9 @@ msgid ""
 "students to think about which of our argument borrows should be extended by "
 "the return value."
 msgstr ""
+"このコードは、ライフタイム アノテーションがないため、現時点ではコンパイルでき"
+"ません。コンパイルできるようにする前に、この機会を利用して、どの引数の借用が"
+"戻り値によって延長されるべきかを受講者に考えてもらいましょう。"
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
@@ -12539,6 +12618,9 @@ msgid ""
 "Which one should be extended? Do we need to see the body of `multiple` to "
 "figure this out?"
 msgstr ""
+"`multiple` に 2 つの借用を渡し、1 つが戻ってくるので、引数のライフタイムのい"
+"ずれかの借用を延長する必要があります。どちらを延長すべきでしょうか？これを判"
+"断するために `multiple` の本体を見る必要があるでしょうか？"
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
@@ -12546,6 +12628,8 @@ msgid ""
 "reason about the borrows flowing out, instead it looks only at the signature "
 "of the function for borrow analysis."
 msgstr ""
+"借用チェックの際、コンパイラは流れ出る借用を推論するために `multiple` の本体"
+"を見ることはなく、借用の解析には関数のシグネチャのみを見ます。"
 
 #: src/lifetimes/multiple-borrows.md
 msgid ""
@@ -12553,6 +12637,9 @@ msgid ""
 "be borrowed by the returned reference. Show students the compiler errors and "
 "introduce the lifetime syntax:"
 msgstr ""
+"この場合、返される参照によって `a` と `b` のどちらが借用されるかを判断するの"
+"に十分な情報がありません。受講者にコンパイラ エラーを示し、ライフタイムの構文"
+"を紹介してください："
 
 #: src/lifetimes/borrow-both.md
 msgid ""
@@ -12560,6 +12647,9 @@ msgid ""
 "this case we use the lifetime annotations to tell the compiler that both "
 "borrows may flow into the return value."
 msgstr ""
+"この例は、`a` と `b` のどちらかが返される可能性がある関数です。この場合、ライ"
+"フタイム アノテーションを使用して、両方の借用が戻り値に流れ込む可能性があるこ"
+"とをコンパイラに伝えます。"
 
 #: src/lifetimes/borrow-both.md
 msgid ""
@@ -12568,12 +12658,18 @@ msgid ""
 "    // a += 7;\n"
 "    // b += 7;\n"
 msgstr ""
+"// どちらがまだ借用されているでしょうか？\n"
+"    // どちらかの変更は許可されるべきでしょうか？\n"
+"    // a += 7;\n"
+"    // b += 7;\n"
 
 #: src/lifetimes/borrow-both.md
 msgid ""
 "The `pick` function will return either `a` or `b` depending on the value of "
 "`c`, which means we can't know at compile time which one will be returned."
 msgstr ""
+"`pick` 関数は `c` の値に応じて `a` または `b` を返します。つまり、どちらが返"
+"されるかをコンパイル時に知ることはできません。"
 
 #: src/lifetimes/borrow-both.md
 msgid ""
@@ -12581,18 +12677,25 @@ msgid ""
 "`b`, along with the return type. This means that the returned reference will "
 "borrow BOTH `a` and `b`!"
 msgstr ""
+"これをコンパイラに表現するために、`a` と `b` の両方に、戻り値の型と同じライフ"
+"タイムを使用します。つまり、返される参照は `a` と `b` の「両方」を借用するこ"
+"とになります！"
 
 #: src/lifetimes/borrow-both.md
 msgid ""
 "Uncomment both of the commented lines and show that `r` is borrowing both "
 "`a` and `b`, even though at runtime it will only point to one of them."
 msgstr ""
+"コメントアウトされた 2 行のコメントを両方とも外し、実行時には一方しか指さない"
+"にもかかわらず、`r` が `a` と `b` の両方を借用していることを示してください。"
 
 #: src/lifetimes/borrow-both.md
 msgid ""
 "Change the first argument to `pick` to show that the result is the same "
 "regardless of if `a` or `b` is returned."
 msgstr ""
+"`pick` の最初の引数を変更して、`a` と `b` のどちらが返されるかに関係なく結果"
+"が同じであることを示してください。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12600,24 +12703,29 @@ msgid ""
 "one of them. The lifetime annotations explicitly tie the returned borrow to "
 "the corresponding argument borrow."
 msgstr ""
+"この例では、`find_nearest` は複数の借用を受け取りますが、そのうち 1 つだけを"
+"返します。ライフタイム アノテーションは、返される借用を対応する引数の借用に明"
+"示的に結び付けます。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
 "/// Searches `points` for the point closest to `query`.\n"
 "/// Assumes there's at least one point in `points`.\n"
 msgstr ""
+"/// `points` の中から `query` に最も近い点を探します。\n"
+"/// `points` には少なくとも 1 つの点があることを前提とします。\n"
 
 #: src/lifetimes/borrow-one.md
 msgid "\"at least one point expected\""
-msgstr ""
+msgstr "\"at least one point expected\""
 
 #: src/lifetimes/borrow-one.md
 msgid "// query // What happens if we do this instead?\n"
-msgstr ""
+msgstr "// query // 代わりにこうするとどうなるでしょうか？\n"
 
 #: src/lifetimes/borrow-one.md
 msgid "// `query` isn't borrowed at this point.\n"
-msgstr ""
+msgstr "// この時点で `query` は借用されていません。\n"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12625,12 +12733,17 @@ msgid ""
 "focus on the signature of the function. The actual logic in the function is "
 "somewhat complex and isn't important for the purpose of borrow analysis."
 msgstr ""
+"関数のシグネチャにより焦点を当てるために、`find_nearest` の定義を折りたたむと"
+"便利かもしれません。関数内の実際のロジックはやや複雑で、借用の解析という目的"
+"には重要ではありません。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
 "When we call `find_nearest` the returned reference doesn't borrow `query`, "
 "and so we are free to drop it while `nearest` is still active."
 msgstr ""
+"`find_nearest` を呼び出したとき、返される参照は `query` を借用しないため、"
+"`nearest` がまだ有効な間でも `query` を自由にドロップできます。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12638,12 +12751,18 @@ msgid ""
 "`find_nearest` to return `query` instead. Show the compiler error to the "
 "students."
 msgstr ""
+"しかし、間違った借用を返すとどうなるでしょうか？`find_nearest` の最後の行を、"
+"代わりに `query` を返すように変更してください。受講者にコンパイラ エラーを示"
+"します。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
 "The first thing we have to do is add a lifetime annotation to `query`. Show "
 "students that we can add a second lifetime `'b` to `find_nearest`."
 msgstr ""
+"まず最初に、`query` にライフタイム アノテーションを追加する必要があります。"
+"`find_nearest` に 2 つ目のライフタイム `'b` を追加できることを受講者に示して"
+"ください。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12652,6 +12771,9 @@ msgid ""
 "lifetime, enforcing that the function adheres to the contract set by the "
 "function's signature."
 msgstr ""
+"新しいエラーを受講者に示してください。借用チェッカーは、関数本体のロジックが"
+"実際に正しいライフタイムを持つ参照を返すことを検証し、関数が関数のシグネチャ"
+"で定められた契約を守ることを強制します。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12660,6 +12782,11 @@ msgid ""
 "then allow us to return `query`. This is an example of lifetime subtyping, "
 "which allows us to return a longer lifetime where a shorter one is expected."
 msgstr ""
+"エラー内の「help」メッセージは、ライフタイム境界 `'b: 'a` を追加して、`'b` が"
+"少なくとも `'a` と同じ期間存続することを示せることを指摘しています。そうすれ"
+"ば `query` を返せるようになります。これはライフタイムのサブタイピングの例で、"
+"短いライフタイムが期待される場所で、より長いライフタイムを返すことができま"
+"す。"
 
 #: src/lifetimes/borrow-one.md
 msgid ""
@@ -12668,19 +12795,21 @@ msgid ""
 "longer than any other lifetime, so it's always safe to return in place of a "
 "shorter lifetime."
 msgstr ""
+"`'static` ライフタイム（例えば `static` 変数への参照）を返すことでも、同様の"
+"ことができます。`'static` ライフタイムは他のどのライフタイムよりも長いことが"
+"保証されているため、短いライフタイムの代わりに返しても常に安全です。"
 
 #: src/lifetimes/lifetime-elision.md
-#, fuzzy
 msgid ""
 "Lifetimes for function argument and return types must be fully specified, "
 "but Rust allows explicit lifetimes to be elided in most cases with [a few "
 "simple rules](https://doc.rust-lang.org/nomicon/lifetime-elision.html). This "
 "is not inference -- it is just a syntactic shorthand."
 msgstr ""
-"関数の引数や戻り値のライフタイムは完全に指定する必要がありますが、Rust ではほ"
-"とんどの場合、[いくつかの簡単なルール](https://doc.rust-lang.org/nomicon/"
-"lifetime-elision.html)により、ライフタイムを省略できます。これは推論ではな"
-"く、構文の省略形にすぎません。"
+"関数の引数や戻り値の型のライフタイムは完全に指定する必要がありますが、Rust で"
+"はほとんどの場合、[いくつかの簡単なルール](https://doc.rust-lang.org/nomicon/"
+"lifetime-elision.html)により、明示的なライフタイムを省略できます。これは推論"
+"ではなく、構文上の省略形にすぎません。"
 
 #: src/lifetimes/lifetime-elision.md
 msgid "Each argument which does not have a lifetime annotation is given one."
@@ -12689,22 +12818,21 @@ msgstr ""
 "られます。"
 
 #: src/lifetimes/lifetime-elision.md
-#, fuzzy
 msgid ""
 "If there is only one argument lifetime, it is given to all un-annotated "
 "borrows in the return type."
 msgstr ""
-"引数のライフタイムが 1 つしかない場合、アノテーションのない戻り値すべてにその"
-"ライフタイムが与えられます。"
+"引数のライフタイムが 1 つしかない場合、戻り値の型の中でアノテーションのない借"
+"用すべてにそのライフタイムが与えられます。"
 
 #: src/lifetimes/lifetime-elision.md
-#, fuzzy
 msgid ""
 "If there are multiple argument lifetimes, but the first one is for `self`, "
 "that lifetime is given to all un-annotated borrows in the return type."
 msgstr ""
-"引数のライフタイムが複数あり、最初のライフタイムが `self` である場合、アノ"
-"テーションのない戻り値すべてにそのライフタイムが与えられます。"
+"引数のライフタイムが複数あり、最初のライフタイムが `self` のものである場合、"
+"戻り値の型の中でアノテーションのない借用すべてにそのライフタイムが与えられま"
+"す。"
 
 #: src/lifetimes/lifetime-elision.md
 msgid ""
@@ -12712,12 +12840,17 @@ msgid ""
 "functions. `only_args` is completed by the first rule, `identity` is "
 "completed by the second, and `Foo::get` is completed by the third."
 msgstr ""
+"例の各関数に、ライフタイム省略のルールを順に適用してみせてください。"
+"`only_args` は 1 つ目のルールで、`identity` は 2 つ目のルールで、`Foo::get` "
+"は 3 つ目のルールで完成します。"
 
 #: src/lifetimes/lifetime-elision.md
 msgid ""
 "If all lifetimes have not been filled in by applying the three elision rules "
 "then you will get a compiler error telling you to add annotations manually."
 msgstr ""
+"3 つの省略ルールを適用してもすべてのライフタイムが埋まらない場合は、アノテー"
+"ションを手動で追加するよう求めるコンパイラエラーが発生します。"
 
 #: src/lifetimes/struct-lifetimes.md
 msgid ""
@@ -12732,28 +12865,27 @@ msgstr "\"The quick brown fox jumps over the lazy dog.\""
 
 #: src/lifetimes/struct-lifetimes.md
 msgid "// drop(doc);\n"
-msgstr ""
+msgstr "// drop(doc);\n"
 
 #: src/lifetimes/struct-lifetimes.md
-#, fuzzy
 msgid ""
 "In the above example, the annotation on `Highlight` enforces that the data "
 "underlying the contained `&str` lives at least as long as any instance of "
 "`Highlight` that uses that data. A struct cannot live longer than the data "
 "it references."
 msgstr ""
-"上記の例では、`Highlight` のアノテーションにより、内包される`&str` の参照先の"
-"データは、少なくともそのデータを使用する `Highlight` のインスタンスが存在する"
-"限り存続しなければならなくなります。"
+"上記の例では、`Highlight` のアノテーションにより、内包される `&str` の参照先"
+"のデータは、少なくともそのデータを使用する `Highlight` のインスタンスが存在す"
+"る限り存続しなければならなくなります。構造体は、参照しているデータよりも長く"
+"存続することはできません。"
 
 #: src/lifetimes/struct-lifetimes.md
-#, fuzzy
 msgid ""
 "If `doc` is dropped before the end of the lifetime of `noun` or `verb`, the "
 "borrow checker throws an error."
 msgstr ""
-"`fox`（または `dog`）のライフタイムが終了する前に `text` が使用されると、借用"
-"チェッカーはエラーをスローします。"
+"`noun` または `verb` のライフタイムが終了する前に `doc` がドロップされると、"
+"借用チェッカーはエラーをスローします。"
 
 #: src/lifetimes/struct-lifetimes.md
 msgid ""
@@ -12810,12 +12942,10 @@ msgid "We'll use the following proto:"
 msgstr "次の proto を使用します。"
 
 #: src/lifetimes/exercise.md
-#, fuzzy
 msgid "Messages"
-msgstr "\"Message {i}\""
+msgstr "メッセージ"
 
 #: src/lifetimes/exercise.md
-#, fuzzy
 msgid ""
 "A proto message is encoded as a series of fields, one after the next. Each "
 "is implemented as a \"tag\" followed by the value. The tag contains a field "
@@ -12825,41 +12955,41 @@ msgid ""
 msgstr ""
 "proto メッセージは、連続するフィールドとしてエンコードされます。それぞれが後"
 "ろに値を伴う「タグ」として実装されます。タグにはフィールド番号（例: `Person` "
-"メッセージの `id` フィールドには `2`）と、バイト ストリームからペイロードがど"
-"のように決定されるかを定義するワイヤータイプが含まれます。"
+"メッセージの `id` フィールドには `2`）と、バイトストリームからペイロードがど"
+"のように決定されるかを定義するワイヤータイプが含まれます。これらは 1 つの整数"
+"にまとめられており、下の `unpack_tag` でデコードされます。"
 
 #: src/lifetimes/exercise.md
 msgid "Varint"
-msgstr ""
+msgstr "Varint"
 
 #: src/lifetimes/exercise.md
-#, fuzzy
 msgid ""
 "Integers, including the tag, are represented with a variable-length encoding "
 "called VARINT. Luckily, `parse_varint` is defined for you below."
 msgstr ""
 "タグを含む整数は、VARINT と呼ばれる可変長エンコードで表されます。幸いにも、"
-"`parse_varint` は以下ですでに定義されています。また、このコードでは、"
-"`Person` フィールドと `PhoneNumber` フィールドを処理し、メッセージを解析して"
-"これらのコールバックに対する一連の呼び出しに変換するコールバックも定義してい"
-"ます。"
+"`parse_varint` は以下ですでに定義されています。"
 
 #: src/lifetimes/exercise.md
-#, fuzzy
 msgid "Wire Types"
-msgstr "共有の型"
+msgstr "ワイヤータイプ"
 
 #: src/lifetimes/exercise.md
 msgid ""
 "Proto defines several wire types, only two of which are used in this "
 "exercise."
 msgstr ""
+"Proto ではいくつかのワイヤータイプが定義されていますが、この演習で使用するの"
+"はそのうち 2 つだけです。"
 
 #: src/lifetimes/exercise.md
 msgid ""
 "The `Varint` wire type contains a single varint, and is used to encode proto "
 "values of type `int32` such as `Person.id`."
 msgstr ""
+"`Varint` ワイヤータイプは 1 つの varint を含み、`Person.id` などの `int32` 型"
+"の proto 値をエンコードするために使用されます。"
 
 #: src/lifetimes/exercise.md
 msgid ""
@@ -12869,18 +12999,20 @@ msgid ""
 "containing sub-messages such as `Person.phones`, where the payload contains "
 "an encoding of the sub-message."
 msgstr ""
+"`Len` ワイヤータイプは、varint で表された長さと、その後に続くそのバイト数のペ"
+"イロードを含みます。これは `Person.name` などの `string` 型の proto 値をエン"
+"コードするために使用されます。また、`Person.phones` のようにサブメッセージを"
+"含む proto 値のエンコードにも使用され、その場合ペイロードにはサブメッセージの"
+"エンコードが含まれます。"
 
 #: src/lifetimes/exercise.md
-#, fuzzy
 msgid ""
 "The given code also defines callbacks to handle `Person` and `PhoneNumber` "
 "fields, and to parse a message into a series of calls to those callbacks."
 msgstr ""
-"タグを含む整数は、VARINT と呼ばれる可変長エンコードで表されます。幸いにも、"
-"`parse_varint` は以下ですでに定義されています。また、このコードでは、"
-"`Person` フィールドと `PhoneNumber` フィールドを処理し、メッセージを解析して"
-"これらのコールバックに対する一連の呼び出しに変換するコールバックも定義してい"
-"ます。"
+"また、このコードでは、`Person` フィールドと `PhoneNumber` フィールドを処理"
+"し、メッセージを解析してこれらのコールバックに対する一連の呼び出しに変換する"
+"コールバックも定義しています。"
 
 #: src/lifetimes/exercise.md
 msgid ""
@@ -12899,7 +13031,6 @@ msgid "/// The Varint WireType indicates the value is a single VARINT.\n"
 msgstr "/// Varint WireType は、値が単一の VARINT であることを示します。\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid ""
 "// The I64 WireType indicates that the value is precisely 8 bytes in\n"
 "    // little-endian order containing a 64-bit signed integer or double "
@@ -12909,22 +13040,25 @@ msgid ""
 "a\n"
 "    /// VARINT followed by exactly that number of bytes.\n"
 msgstr ""
-"//I64、  -- この演習では不要\n"
-"    /// Len WireType は、値が VARINT で表され、その後にちょうどそのバイト数"
-"が\n"
+"// I64 WireType は、値が 64 ビット符号付き整数または double 型を含むリトルエ"
+"ンディアンで、\n"
+"    // 正確に 8 バイトであることを示します。\n"
+"    //I64,  -- この演習では不要\n"
+"    /// Len WireType は、値が VARINT で表された長さであり、その後にちょうどそ"
+"のバイト数が\n"
 "    /// 続くものであることを示します。\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid ""
 "// The I32 WireType indicates that the value is precisely 4 bytes in\n"
 "    // little-endian order containing a 32-bit signed integer or float "
 "type.\n"
 "    //I32,  -- not needed for this exercise\n"
 msgstr ""
-"/// I32 WireType は、値が 32 ビット符号付き整数を含むリトル エンディアン"
-"で、\n"
-"    /// 正確に 4 バイトであることを示します。\n"
+"// I32 WireType は、値が 32 ビット符号付き整数または float 型を含むリトルエン"
+"ディアンで、\n"
+"    // 正確に 4 バイトであることを示します。\n"
+"    //I32,  -- この演習では不要\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "/// A field's value, typed based on the wire type.\n"
@@ -12935,9 +13069,8 @@ msgid "//I64(i64),  -- not needed for this exercise\n"
 msgstr "//I64（i64）、  -- この演習では不要\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid "//I32(i32),  -- not needed for this exercise\n"
-msgstr "//I64（i64）、  -- この演習では不要\n"
+msgstr "//I32(i32),  -- この演習では不要\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "/// A field, containing the field number and its value.\n"
@@ -12948,31 +13081,28 @@ msgid "//1 => WireType::I64,  -- not needed for this exercise\n"
 msgstr "//1 => WireType::I64、  -- この演習では不要\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid "//5 => WireType::I32,  -- not needed for this exercise\n"
-msgstr "//1 => WireType::I64、  -- この演習では不要\n"
+msgstr "//5 => WireType::I32,  -- この演習では不要\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid "\"Invalid wire type: {value}\""
-msgstr "\"Invalid wire-type\""
+msgstr "\"Invalid wire type: {value}\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Expected string to be a `Len` field\""
-msgstr ""
+msgstr "\"Expected string to be a `Len` field\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid "\"Invalid string\""
-msgstr "\"Invalid varint\""
+msgstr "\"Invalid string\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Expected bytes to be a `Len` field\""
-msgstr ""
+msgstr "\"Expected bytes to be a `Len` field\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Expected `u64` to be a `Varint` field\""
-msgstr ""
+msgstr "\"Expected `u64` to be a `Varint` field\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid ""
@@ -12981,7 +13111,7 @@ msgstr "/// VARINT を解析し、解析した値と残りのバイトを返し�
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Not enough bytes for varint\""
-msgstr ""
+msgstr "\"Not enough bytes for varint\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid ""
@@ -12997,7 +13127,7 @@ msgstr "// 7 バイトを超える値は無効です。\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Too many bytes for varint\""
-msgstr ""
+msgstr "\"Too many bytes for varint\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "/// Convert a tag into a field number and a WireType.\n"
@@ -13042,41 +13172,40 @@ msgid "\"\""
 msgstr "\"\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
-#, fuzzy
 msgid "\"beautiful name\""
-msgstr "\"Hello {name}\""
+msgstr "\"beautiful name\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"Evan\""
-msgstr ""
+msgstr "\"Evan\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"+1234-777-9090\""
-msgstr ""
+msgstr "\"+1234-777-9090\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"home\""
-msgstr ""
+msgstr "\"home\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "// Put that all together into a single parse.\n"
-msgstr ""
+msgstr "// すべてをまとめて 1 回の解析にします。\n"
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"maxwell\""
-msgstr ""
+msgstr "\"maxwell\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"+1202-555-1212\""
-msgstr ""
+msgstr "\"+1202-555-1212\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"+1800-867-5308\""
-msgstr ""
+msgstr "\"+1800-867-5308\""
 
 #: src/lifetimes/exercise.md src/lifetimes/solution.md
 msgid "\"mobile\""
-msgstr ""
+msgstr "\"mobile\""
 
 #: src/lifetimes/exercise.md
 msgid ""
@@ -13086,10 +13215,15 @@ msgid ""
 "enum, but for simplicity in this exercise we panic if any errors are "
 "encountered. On day 4 we'll cover error handling in Rust in more detail."
 msgstr ""
+"この演習では、protobuf の解析が失敗する可能性のあるケースがいくつかあります。"
+"例えば、データバッファに残っているバイトが 4 バイト未満のときに `i32` を解析"
+"しようとした場合です。通常の Rust コードでは `Result` 列挙型を使って処理しま"
+"すが、この演習では簡単にするため、エラーが発生した場合はパニックにします。"
+"Rust のエラー処理については、4 日目に詳しく説明します。"
 
 #: src/lifetimes/solution.md
 msgid "// cast for simplicity\n"
-msgstr ""
+msgstr "// 簡単にするためにキャスト\n"
 
 #: src/lifetimes/solution.md
 msgid "// skip everything else\n"
