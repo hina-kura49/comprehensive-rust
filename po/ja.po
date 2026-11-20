@@ -800,104 +800,95 @@ msgstr "マクロ： AM"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/intro.md
 msgid "What Is A Macro"
-msgstr ""
+msgstr "マクロとは"
 
 #: src/SUMMARY.md src/macros/intro/why.md
 msgid "What Are Macros For"
-msgstr ""
+msgstr "マクロの用途"
 
 #: src/SUMMARY.md src/macros/intro/how.md
 msgid "How Do Macros Work"
-msgstr ""
+msgstr "マクロの仕組み"
 
 #: src/SUMMARY.md src/macros/intro/cpp-vs-rust-macros.md
 msgid "C Preprocessor vs. Rust Macros"
-msgstr ""
+msgstr "C プリプロセッサと Rust のマクロ"
 
 #: src/SUMMARY.md src/macros/intro/cpp-example.md
 msgid "A C Preprocessor Macro Example"
-msgstr ""
+msgstr "C プリプロセッサマクロの例"
 
 #: src/SUMMARY.md src/macros/intro/rust-example.md
-#, fuzzy
 msgid "A Rust Macro Example"
-msgstr "Rust by Example"
+msgstr "Rust のマクロの例"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/design.md
-#, fuzzy
 msgid "Macros In Rust"
-msgstr "マクロ"
+msgstr "Rust のマクロ"
 
 #: src/SUMMARY.md src/macros/defining.md
 msgid "Ways To Define Macros"
-msgstr ""
+msgstr "マクロの定義方法"
 
 #: src/SUMMARY.md src/macros/kinds.md
 msgid "Where Macros Can Apply"
-msgstr ""
+msgstr "マクロを適用できる場所"
 
 #: src/SUMMARY.md src/macros/kinds/function-like.md
-#, fuzzy
 msgid "Function-Like Macros"
-msgstr "関数"
+msgstr "関数風マクロ"
 
 #: src/SUMMARY.md src/macros/kinds/derive.md src/macros/proc-macros/derive.md
-#, fuzzy
 msgid "Derive Macros"
-msgstr "マクロ"
+msgstr "導出マクロ"
 
 #: src/SUMMARY.md src/macros/kinds/attr.md src/macros/proc-macros/attr.md
 msgid "Attribute Macros"
-msgstr ""
+msgstr "属性マクロ"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/tokens.md
 msgid "Macros, Tokens, and Syntax"
-msgstr ""
+msgstr "マクロ、トークン、構文"
 
 #: src/SUMMARY.md src/macros/brackets.md
 msgid "Brackets and Token Trees"
-msgstr ""
+msgstr "括弧とトークン木"
 
 #: src/SUMMARY.md src/macros/streams.md
 msgid "Token Streams"
-msgstr ""
+msgstr "トークンストリーム"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/macro_rules/welcome.md
-#, fuzzy
 msgid "Macros By Example"
-msgstr "Rust by Example"
+msgstr "例によるマクロ"
 
 #: src/SUMMARY.md src/macros/macro_rules/example.md
 msgid "A Macros-By-Example Example"
-msgstr ""
+msgstr "例によるマクロの例"
 
 #: src/SUMMARY.md src/macros/macro_rules/defining.md
 msgid "Defining Macros By Example"
-msgstr ""
+msgstr "例によるマクロの定義"
 
 #: src/SUMMARY.md src/macros/macro_rules/pattern-matching/exercise.md
-#, fuzzy
 msgid "Exercise: Saving Some Typing"
-msgstr "演習: ビルダー型"
+msgstr "演習: タイピングを減らす"
 
 #: src/SUMMARY.md src/macros/macro_rules/fragment-specifiers.md
 msgid "Fragment Specifiers"
-msgstr ""
+msgstr "フラグメント指定子"
 
 #: src/SUMMARY.md src/macros/macro_rules/fragment-specifiers/exercise.md
-#, fuzzy
 msgid "Exercise: Pair Macro"
-msgstr "演習: バイナリツリー"
+msgstr "演習: ペアマクロ"
 
 #: src/SUMMARY.md src/macros/macro_rules/repetition.md
-#, fuzzy
 msgid "Repetition"
-msgstr "Option"
+msgstr "繰り返し"
 
 #: src/SUMMARY.md src/macros/macro_rules/repetition/exercise.md
-#, fuzzy
 msgid "Exercise: Generalized Operations"
-msgstr "演習: ジェネリックな `min`"
+msgstr "演習: 一般化された演算"
 
 #: src/SUMMARY.md
 msgid "Macros: Afternoon"
@@ -905,33 +896,31 @@ msgstr "マクロ： PM"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/macro_rules/techniques.md
 msgid "Declarative Macro Techniques"
-msgstr ""
+msgstr "宣言的マクロのテクニック"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/optional-params.md
 msgid "Optional Parameters"
-msgstr ""
+msgstr "省略可能なパラメータ"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/named-params.md
 msgid "Named Positional Parameters"
-msgstr ""
+msgstr "名前付きの位置パラメータ"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/internal-rules.md
-#, fuzzy
 msgid "Internal Rules"
-msgstr "インターフェイス"
+msgstr "内部ルール"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/token-munchers.md
 msgid "Token Munchers"
-msgstr ""
+msgstr "トークンマンチャー"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/token-munchers/exercise.md
-#, fuzzy
 msgid "Exercise: Turtle Graphics"
-msgstr "演習: ネストされた配列"
+msgstr "演習: タートルグラフィックス"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/accumulators.md
 msgid "Push-Down Accumulators"
-msgstr ""
+msgstr "プッシュダウンアキュムレータ"
 
 #: src/SUMMARY.md
 msgid "Exercise: Turtle Graphics II"
@@ -939,76 +928,72 @@ msgstr "演習: タートルグラフィックス II"
 
 #: src/SUMMARY.md src/macros/macro_rules/techniques/tt-bundling.md
 msgid "TT Bundling"
-msgstr ""
+msgstr "TT バンドリング"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/hygiene.md
 msgid "Hygiene"
-msgstr ""
+msgstr "衛生性"
 
 #: src/SUMMARY.md src/macros/hygiene/what-is-hygiene.md
 msgid "What Is Macro Hygiene"
-msgstr ""
+msgstr "マクロの衛生性とは"
 
 #: src/SUMMARY.md src/macros/hygiene/rust-macro-hygiene.md
 msgid "Hygiene In Rust Macros"
-msgstr ""
+msgstr "Rust のマクロの衛生性"
 
 #: src/SUMMARY.md src/macros/welcome.md src/macros/defining.md
 #: src/macros/proc-macros/welcome.md
 msgid "Procedural Macros"
-msgstr ""
+msgstr "手続き型マクロ"
 
 #: src/SUMMARY.md src/macros/proc-macros/basics.md
 msgid "Procedural Macro Basics"
-msgstr ""
+msgstr "手続き型マクロの基本"
 
 #: src/SUMMARY.md src/macros/proc-macros/function-like.md
 msgid "Function-Like Procedural Macros"
-msgstr ""
+msgstr "関数風の手続き型マクロ"
 
 #: src/SUMMARY.md src/macros/proc-macros/errors.md
 msgid "Handling Errors"
-msgstr ""
+msgstr "エラー処理"
 
 #: src/SUMMARY.md src/macros/proc-macros/in-the-wild.md
 msgid "Procedural Macros In The Wild"
-msgstr ""
+msgstr "実際の手続き型マクロ"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing.md
 msgid "Writing Procedural Macros"
-msgstr ""
+msgstr "手続き型マクロの書き方"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps.md
-#, fuzzy
 msgid "Dependencies"
-msgstr "推移的依存関係"
+msgstr "依存関係"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps/proc_macro.md
-#, fuzzy
 msgid "The `proc_macro` Crate"
-msgstr "`Drop` トレイト"
+msgstr "`proc_macro` クレート"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps/proc_macro2.md
-#, fuzzy
 msgid "The `proc_macro2` Crate"
-msgstr "`Drop` トレイト"
+msgstr "`proc_macro2` クレート"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps/syn-quote.md
 msgid "The `syn` and `quote` Crates"
-msgstr ""
+msgstr "`syn` クレートと `quote` クレート"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps/syn-ast.md
 msgid "The `syn` AST"
-msgstr ""
+msgstr "`syn` の AST"
 
 #: src/SUMMARY.md src/macros/proc-macros/writing/deps/quote-macro.md
 msgid "The `quote!` macro"
-msgstr ""
+msgstr "`quote!` マクロ"
 
 #: src/SUMMARY.md src/macros/proc-macros/exercise.md
-#, fuzzy
 msgid "Exercise: `Display` Derive"
-msgstr "演習: バイナリツリー"
+msgstr "演習: `Display` の導出"
 
 #: src/SUMMARY.md
 msgid "Android"
@@ -16447,9 +16432,8 @@ msgstr ""
 "トが必要です。"
 
 #: src/macros/welcome.md
-#, fuzzy
 msgid "Welcome to Macros in Rust"
-msgstr "Rustでの並行性へようこそ"
+msgstr "Rust のマクロへようこそ"
 
 #: src/macros/welcome.md
 msgid ""
@@ -16457,90 +16441,100 @@ msgid ""
 "meta-programming, allowing to abbreviate and generate code without runtime "
 "overhead."
 msgstr ""
+"**Rust のマクロ**の講座へようこそ。マクロはメタプログラミングのための強力な"
+"ツールであり、実行時のオーバーヘッドなしにコードを短く記述したり生成したりで"
+"きます。"
 
 #: src/macros/welcome.md
-#, fuzzy
 msgid "In this course, we will cover:"
-msgstr "本日の内容:"
+msgstr "この講座では、次の内容を取り上げます。"
 
 #: src/macros/welcome.md
 msgid "What macros are and why they are useful."
-msgstr ""
+msgstr "マクロとは何か、なぜ便利なのか。"
 
 #: src/macros/welcome.md
 msgid "The distinction between **declarative** and **procedural** macros."
-msgstr ""
+msgstr "**宣言的**マクロと**手続き型**マクロの違い。"
 
 #: src/macros/welcome.md
 msgid "How the compiler processes tokens and constructs syntax trees."
-msgstr ""
+msgstr "コンパイラがトークンを処理し、構文木を構築する仕組み。"
 
 #: src/macros/welcome.md
 msgid "How to define Macros By Example and how they are matched, and expanded."
-msgstr ""
+msgstr "例によるマクロの定義方法と、そのマッチングおよび展開の仕組み。"
 
 #: src/macros/welcome.md
 msgid "Advanced declarative macro techniques."
-msgstr ""
+msgstr "宣言的マクロの高度なテクニック。"
 
 #: src/macros/welcome.md
 msgid "Macro hygiene and scoping."
-msgstr ""
+msgstr "マクロの衛生性とスコープ。"
 
 #: src/macros/welcome.md
 msgid ""
 "How to write procedural macros, along with typical structure and patterns."
-msgstr ""
+msgstr "手続き型マクロの書き方と、典型的な構造およびパターン。"
 
 #: src/macros/welcome.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 6 hours and 5 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 55 分です。"
+msgstr ""
+"このセッションの所要時間は、10 分間の休憩を入れて約 6 時間 5 分です。内容は次"
+"のとおりです。"
 
 #: src/macros/welcome.md src/idiomatic/leveraging-the-type-system.md
-#, fuzzy
 msgid "1 hour and 35 minutes"
-msgstr "[テスト](./testing.md)（1 時間 5 分）"
+msgstr "1 時間 35 分"
 
 #: src/macros/intro.md
 msgid ""
 "Before looking at macros in detail, it is helpful to build a conceptual "
 "model of what macros are and how they fit into the compilation pipeline."
 msgstr ""
+"マクロを詳しく見る前に、マクロとは何か、そしてコンパイルのパイプラインにどの"
+"ように組み込まれるのかについて、概念的なモデルを作っておくと役立ちます。"
 
 #: src/macros/intro.md
 msgid "At their core, macros are **meta-programming**:"
-msgstr ""
+msgstr "マクロの本質は**メタプログラミング**です。"
 
 #: src/macros/intro.md
 msgid "They take input code (expressed as tokens) and emit output code."
 msgstr ""
+"入力コード（トークンで表現されたもの）を受け取り、出力コードを生成します。"
 
 #: src/macros/intro.md
 msgid ""
 "They execute during compilation, expanding before type checking and semantic "
 "analysis."
-msgstr ""
+msgstr "コンパイル中に実行され、型チェックと意味解析の前に展開されます。"
 
 #: src/macros/intro.md
 msgid ""
 "They allow expressing patterns and abstractions that cannot be written with "
 "generics or standard functions."
 msgstr ""
+"ジェネリクスや通常の関数では記述できないパターンや抽象化を表現できます。"
 
 #: src/macros/intro.md
 msgid ""
 "We will explore how compilers process source code, and how different macro "
 "systems hook into this process."
 msgstr ""
+"コンパイラがソースコードをどのように処理するのか、そしてさまざまなマクロシス"
+"テムがこの処理にどのように組み込まれるのかを見ていきます。"
 
 #: src/macros/intro.md
 msgid ""
 "Ask students if they have used macros in other languages (e.g., C/C++ "
 "preprocessor, Lisp, or Clojure)."
 msgstr ""
+"他の言語（C/C++ のプリプロセッサ、Lisp、Clojure など）でマクロを使用したこと"
+"があるかどうか、受講者に尋ねてください。"
 
 #: src/macros/intro/why.md
 msgid ""
@@ -16548,18 +16542,25 @@ msgid ""
 "used only when worthwhile. They are used to solve problems that cannot be "
 "easily solved with standard Rust language features:"
 msgstr ""
+"マクロは強力なツールですが、それ自体に複雑さが伴うため、それに見合う価値があ"
+"る場合にのみ使用すべきです。マクロは、Rust の標準的な言語機能では簡単に解決で"
+"きない問題を解決するために使用されます。"
 
 #: src/macros/intro/why.md
 msgid ""
 "**Reducing Boilerplate:** Implementing traits via `#[derive(...)]` or "
 "reducing syntactic repetition."
 msgstr ""
+"**ボイラープレートの削減:** `#[derive(...)]` によるトレイトの実装や、構文上の"
+"繰り返しの削減。"
 
 #: src/macros/intro/why.md
 msgid ""
 "**Variadic Interfaces:** Functions that take a variable number of arguments "
 "of different types (like `println!` and `vec!`)."
 msgstr ""
+"**可変長のインターフェース:** さまざまな型の引数を可変個受け取る関数"
+"（`println!` や `vec!` など）。"
 
 #: src/macros/intro/why.md
 msgid ""
@@ -16567,12 +16568,17 @@ msgid ""
 "(e.g., `println!`'s format strings, or macros that statically expand HTML "
 "templates or parse SQL queries)."
 msgstr ""
+"**ドメイン固有言語（DSL）:** Rust の内部で独自の構文を作成すること（例: "
+"`println!` のフォーマット文字列や、HTML テンプレートを静的に展開したり SQL ク"
+"エリをパースしたりするマクロ）。"
 
 #: src/macros/intro/why.md
 msgid ""
 "**Compile-Time Computation:** Inspecting configuration files, environment "
 "variables, or data at build time (e.g., `include_str!`, `env!`)."
 msgstr ""
+"**コンパイル時の計算:** ビルド時に設定ファイル、環境変数、データを調べること"
+"（例: `include_str!`、`env!`）。"
 
 #: src/macros/intro/why.md
 msgid ""
@@ -16582,6 +16588,11 @@ msgid ""
 "abstraction can be achieved in another way, and when defining macros, try to "
 "align with syntactic and naming patterns followed in non-macro Rust code."
 msgstr ""
+"各マクロは独自の入力構文を定義でき、通常の Rust コードでは使用できない操作を"
+"実行できるため、マクロを使うとコードが読みにくくなることがあります。同じ抽象"
+"化を別の方法で実現できる場合はマクロの使用を避け、マクロを定義する場合は、マ"
+"クロではない Rust コードで使われている構文や命名のパターンに合わせるようにし"
+"てください。"
 
 #: src/macros/intro/why.md
 msgid ""
@@ -16589,12 +16600,17 @@ msgid ""
 "signature (fixed number of arguments of specific types) and cannot generate "
 "new types or modules."
 msgstr ""
+"通常の Rust コードの制限と対比してください。関数のシグネチャは固定されており"
+"（特定の型の引数を固定数受け取る）、新しい型やモジュールを生成することはでき"
+"ません。"
 
 #: src/macros/intro/how.md
 msgid ""
 "To understand how macros work, it helps to look at the pipeline of how a "
 "compiler processes your code:"
 msgstr ""
+"マクロの仕組みを理解するには、コンパイラがコードを処理するパイプラインを見る"
+"と役立ちます。"
 
 #: src/macros/intro/how.md
 msgid ""
@@ -16602,6 +16618,8 @@ msgid ""
 "a sequence of characters in some character set (in Rust, Unicode characters "
 "in UTF-8)."
 msgstr ""
+"**ソースコード:** プログラマが書いた生のテキストファイルで、何らかの文字セッ"
+"トの文字の並びで構成されます（Rust の場合は UTF-8 の Unicode 文字）。"
 
 #: src/macros/intro/how.md
 msgid ""
@@ -16609,6 +16627,8 @@ msgid ""
 "sequence of **tokens** (e.g., `fn`, `main`, identifiers, punctuation, "
 "literals)."
 msgstr ""
+"**字句解析（レキシング）:** コンパイラは生のテキストを区切って、**トークン**"
+"の並びにします（例: `fn`、`main`、識別子、句読点、リテラル）。"
 
 #: src/macros/intro/how.md
 msgid ""
@@ -16616,105 +16636,117 @@ msgid ""
 "compiler organizes the sequence of tokens into an **Abstract Syntax Tree "
 "(AST)** that captures the hierarchical structure of the program."
 msgstr ""
+"**構文解析（パース）:** コンパイラは言語の文法に基づいてトークンの並びを整理"
+"し、プログラムの階層構造を表す**抽象構文木（AST）**を作ります。"
 
 #: src/macros/intro/how.md
-#, fuzzy
 msgid "Source Code"
-msgstr "ソース"
+msgstr "ソースコード"
 
 #: src/macros/intro/how.md
 msgid "Tokenized Rust (Approx.)"
-msgstr ""
+msgstr "トークン化された Rust（概略）"
 
 #: src/macros/intro/how.md
 msgid "AST Rust (Approx.)"
-msgstr ""
+msgstr "AST の Rust（概略）"
 
 #: src/macros/intro/how.md
 msgid "`fn main() {}`"
-msgstr ""
+msgstr "`fn main() {}`"
 
 #: src/macros/intro/how.md
 msgid "`Ident: fn`, `Ident: main`, `Group: ()`, `Group: {}`"
-msgstr ""
+msgstr "`Ident: fn`, `Ident: main`, `Group: ()`, `Group: {}`"
 
 #: src/macros/intro/how.md
 msgid "`Fn: ident=main, block=...`"
-msgstr ""
+msgstr "`Fn: ident=main, block=...`"
 
 #: src/macros/intro/how.md
 msgid ""
 "Different macro systems hook into different parts of this pipeline, offering "
 "different tradeoffs between expressiveness and safety."
 msgstr ""
+"マクロシステムによって、このパイプラインのどの部分に組み込まれるかが異なり、"
+"表現力と安全性のトレードオフも異なります。"
 
 #: src/macros/intro/how.md
 msgid ""
 "We'll look at the macro system used in C and C++ via the C Preprocessor, "
 "which is well-known, and contrast this with Rust's macro system."
 msgstr ""
+"よく知られている、C プリプロセッサを通じて C と C++ で使用されるマクロシステ"
+"ムを見て、Rust のマクロシステムと対比します。"
 
 #: src/macros/intro/how.md
 msgid ""
 "Explain that the AST is a structured tree that represents what the program "
 "actually means semantically."
 msgstr ""
+"AST は、プログラムが意味的に実際に何を意味するのかを表す構造化された木である"
+"ことを説明してください。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
 "The fundamental difference between C-style preprocessor macros and Rust "
 "macros lies in **where they hook into compilation**:"
 msgstr ""
+"C スタイルのプリプロセッサマクロと Rust のマクロの根本的な違いは、**コンパイ"
+"ルのどこに組み込まれるか**にあります。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "C Preprocessor Macros"
-msgstr ""
+msgstr "C プリプロセッサマクロ"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Hook into the **Tokenizing** step."
-msgstr ""
+msgstr "**トークン化**のステップに組み込まれます。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
 "Cannot inspect tokens in detail, but can rearrange and duplicate them (and "
 "sometimes append them)."
 msgstr ""
+"トークンを詳しく調べることはできませんが、並べ替えたり複製したり（場合によっ"
+"ては連結したり）することはできます。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Can create syntactically invalid output."
-msgstr ""
+msgstr "構文的に無効な出力を生成する可能性があります。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
 "Lack scoping and hygiene, so constructing robust abstractions is difficult."
-msgstr ""
+msgstr "スコープと衛生性がないため、堅牢な抽象化を構築するのは困難です。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
-#, fuzzy
 msgid "Rust Macros"
-msgstr "マクロ"
+msgstr "Rust のマクロ"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Hook into the **Abstract Syntax Tree (AST)** generation step."
-msgstr ""
+msgstr "**抽象構文木（AST）**の生成ステップに組み込まれます。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Operate on structured **Token Trees** rather than raw text."
-msgstr ""
+msgstr "生のテキストではなく、構造化された**トークン木**を操作します。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Must emit valid Rust syntax."
-msgstr ""
+msgstr "有効な Rust の構文を出力する必要があります。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid "Maintain **partial hygiene** to prevent accidental name collisions."
-msgstr ""
+msgstr "**部分的な衛生性**を保ち、意図しない名前の衝突を防ぎます。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
 "Explain that C macros must guess unused identifiers for internal use, and "
 "can access variables not mentioned in their arguments."
 msgstr ""
+"C のマクロは、内部で使用するために未使用の識別子を推測で選ぶ必要があり、引数"
+"に含まれていない変数にもアクセスできることを説明してください。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
@@ -16722,6 +16754,9 @@ msgid ""
 "later in compilation, i.e. C syntax or types; they are basically dumb copy-"
 "paste."
 msgstr ""
+"C プリプロセッサマクロは、コンパイルの後の段階の情報（C の構文や型）にアクセ"
+"スできないことを強調してください。基本的には単純なコピー＆ペーストにすぎませ"
+"ん。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
@@ -16730,12 +16765,17 @@ msgid ""
 "usable as a separate pass, so this integration can't be used to improve the "
 "behavior of C macros."
 msgstr ""
+"より良いエラー報告のために、C プリプロセッサは実際には Clang や GCC のコンパ"
+"イラに統合されていますが、そのセマンティクス上、独立したパスとしても使用でき"
+"る必要があるため、この統合を C マクロの動作の改善に活かすことはできません。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
 "Contrast this with Rust, where macro expansion is inherently part of the "
 "compilation process. This lets Rust macros work structurally."
 msgstr ""
+"これと対比して、Rust ではマクロの展開は本質的にコンパイル処理の一部です。その"
+"ため、Rust のマクロは構造的に動作できます。"
 
 #: src/macros/intro/cpp-vs-rust-macros.md
 msgid ""
@@ -16743,28 +16783,32 @@ msgid ""
 "bindings inside Rust macros do not bleed out into the surrounding code (and "
 "vice versa) by default."
 msgstr ""
+"「部分的な衛生性」の概念を紹介し、デフォルトでは Rust のマクロ内のローカル変"
+"数の束縛が周囲のコードに漏れ出さない（その逆も同様）ことを説明してください。"
 
 #: src/macros/intro/cpp-example.md
 msgid "C and C++ macros perform literal, raw text replacement."
-msgstr ""
+msgstr "C と C++ のマクロは、文字どおりの生のテキスト置換を行います。"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
 "This allows developers substantial freedom to write C or C++ programs as "
 "sequences of tokens that look little like normal code before preprocessing:"
 msgstr ""
+"これにより、開発者は C や C++ のプログラムを、プリプロセス前には通常のコード"
+"とはほとんど似ていないトークンの並びとして、かなり自由に書くことができます。"
 
 #: src/macros/intro/cpp-example.md
 msgid "<iostream>"
-msgstr ""
+msgstr "<iostream>"
 
 #: src/macros/intro/cpp-example.md src/macros/intro/rust-example.md
 msgid "\"Uh-Oh!\""
-msgstr ""
+msgstr "\"Uh-Oh!\""
 
 #: src/macros/intro/cpp-example.md
 msgid "Key takeaways from this example:"
-msgstr ""
+msgstr "この例の重要なポイント:"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
@@ -16773,6 +16817,10 @@ msgid ""
 "preprocessing runs before compilation, the compiler just sees the braces to "
 "which these macros expand."
 msgstr ""
+"**独自の構文:** 波括弧の代わりに `BEGIN` と `END` を使うことは C 自体では許可"
+"されておらず、ほとんどの読み手を驚かせるでしょう。しかし、プリプロセスはコン"
+"パイルの前に実行されるため、コンパイラにはこれらのマクロが展開された結果の波"
+"括弧しか見えません。"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
@@ -16781,18 +16829,27 @@ msgid ""
 "macro's effect depend on the context in which it is invoked (e.g., suppose "
 "`idx` was a pointer to a `struct BTreeIndex`)."
 msgstr ""
+"**非衛生的な状態へのアクセス:** `EXPECT` マクロは、`main` で定義されマクロに"
+"渡されていない `idx` に暗黙的にアクセスします。そのため、マクロの効果は呼び出"
+"されるコンテキストに依存します（たとえば、`idx` が `struct BTreeIndex` へのポ"
+"インタだった場合を考えてみてください）。"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
 "Explain the C preprocessor operates as a pure copy-paste system. It replaces "
 "tokens line by line without any syntactic structure check."
 msgstr ""
+"C プリプロセッサは純粋なコピー＆ペーストのシステムとして動作することを説明し"
+"てください。構文構造をまったくチェックせずに、行ごとにトークンを置き換えま"
+"す。"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
 "Notice how `EXPECT(< 10)` expands to `if (idx < 10) {}`. The macro assumes "
 "`idx` exists and is accessible."
 msgstr ""
+"`EXPECT(< 10)` が `if (idx < 10) {}` に展開されることに注目してください。この"
+"マクロは `idx` が存在し、アクセス可能であることを前提としています。"
 
 #: src/macros/intro/cpp-example.md
 msgid ""
@@ -16800,12 +16857,15 @@ msgid ""
 "compiler error at the _expansion site_, not the macro definition site, which "
 "can lead to confusing and hard-to-debug compiler errors."
 msgstr ""
+"`idx` がない関数内で `EXPECT` を使用すると、マクロの定義箇所ではなく _展開箇"
+"所_ でコンパイラエラーが発生するため、わかりにくくデバッグしにくいコンパイラ"
+"エラーにつながる可能性があります。"
 
 #: src/macros/intro/rust-example.md
 msgid ""
 "Here is a comparable implementation of the previous custom syntax example "
 "written in Rust:"
-msgstr ""
+msgstr "前述の独自構文の例を、Rust で同等に実装したものを次に示します。"
 
 #: src/macros/intro/rust-example.md src/macros/kinds/function-like.md
 #: src/macros/kinds/derive.md src/macros/macro_rules/example.md
@@ -16861,19 +16921,20 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/abs.md src/unsafe-deep-dive/ffi/rand.md
 #: src/unsafe-deep-dive/ffi/c-library-example.md
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md
-#, fuzzy
 msgid "// Copyright 2026 Google LLC\n"
-msgstr "# Copyright 2023 Google LLC"
+msgstr "// Copyright 2026 Google LLC\n"
 
 #: src/macros/intro/rust-example.md
 msgid "Compared to C:"
-msgstr ""
+msgstr "C との比較:"
 
 #: src/macros/intro/rust-example.md
 msgid ""
 "**Syntactic Safety:** The input is structurally validated. `$code` must be a "
 "valid Rust statement and `$name` must be a valid Rust identifier."
 msgstr ""
+"**構文上の安全性:** 入力は構造的に検証されます。`$code` は有効な Rust の文、"
+"`$name` は有効な Rust の識別子でなければなりません。"
 
 #: src/macros/intro/rust-example.md
 msgid ""
@@ -16881,6 +16942,9 @@ msgid ""
 "expression `$test`, rather than having the macro rely on a hidden, "
 "implicitly named local variable."
 msgstr ""
+"**衛生性:** `expect!` では、テスト `idx < 10` が式 `$test` として明示的に渡さ"
+"れます。マクロが、暗黙的に名前が決まった隠れたローカル変数に依存することはあ"
+"りません。"
 
 #: src/macros/intro/rust-example.md
 msgid ""
@@ -16889,28 +16953,37 @@ msgid ""
 "`$code`, a semicolon (which is required to separate a statement from the "
 "next syntactic construct) and then our `END` token."
 msgstr ""
+"`procedure!` が、識別子 `$name`、リテラルトークン `BEGIN`、文 `$code`、セミコ"
+"ロン（文を次の構文要素と区切るために必要）、そして `END` トークンの順に並んだ"
+"ものにマッチするパターンを定義していることを順に説明してください。"
 
 #: src/macros/intro/rust-example.md
 msgid ""
 "Note that even though the syntax is custom, the Rust compiler ensures that "
 "the inputs to macros are well-formed before passing them to the macro."
 msgstr ""
+"構文が独自のものであっても、Rust コンパイラはマクロへの入力をマクロに渡す前"
+"に、それが適格であることを確認する点に注意してください。"
 
 #: src/macros/design.md
 msgid ""
 "Rust macros provide structured code generation. There are **three kinds** of "
 "macros, and **two ways** they are implemented."
 msgstr ""
+"Rust のマクロは、構造化されたコード生成を提供します。マクロには **3 つの種類"
+"**があり、**2 つの方法**で実装されます。"
 
 #: src/macros/design.md
 msgid "Kinds of Macros"
-msgstr ""
+msgstr "マクロの種類"
 
 #: src/macros/design.md
 msgid ""
 "**Derive Macros:** Added to type definitions (structs, enums, unions) to "
 "auto-implement traits (e.g., `#[derive(Default)]`)."
 msgstr ""
+"**導出マクロ:** 型定義（構造体、列挙型、共用体）に付与して、トレイトを自動的"
+"に実装します（例: `#[derive(Default)]`）。"
 
 #: src/macros/design.md
 msgid ""
@@ -16918,17 +16991,21 @@ msgid ""
 "expr context (e.g., `println!(\"Hello!\")`, `vec![1, 2, 3]`, or "
 "`include_bytes!(\"manifest.bin\")`)."
 msgstr ""
+"**関数風マクロ:** アイテム、文、式のコンテキストで感嘆符を付けて呼び出します"
+"（例: `println!(\"Hello!\")`、`vec![1, 2, 3]`、`include_bytes!"
+"(\"manifest.bin\")`）。"
 
 #: src/macros/design.md
 msgid ""
 "**Attribute Macros:** Attached as custom attributes to any item, like "
 "functions or modules (e.g., `#[tokio::main]`)."
 msgstr ""
+"**属性マクロ:** 関数やモジュールなどの任意のアイテムに、カスタム属性として付"
+"与します（例: `#[tokio::main]`）。"
 
 #: src/macros/design.md
-#, fuzzy
 msgid "Implementation Forms"
-msgstr "トレイトの実装"
+msgstr "実装の形式"
 
 #: src/macros/design.md
 msgid ""
@@ -16936,6 +17013,8 @@ msgid ""
 "itself, based on pattern matching; these can only be used to define function-"
 "like macros."
 msgstr ""
+"**宣言的マクロ（別名「例によるマクロ」）:** 言語自体の一部であり、パターン"
+"マッチングに基づきます。関数風マクロの定義にのみ使用できます。"
 
 #: src/macros/design.md
 msgid ""
@@ -16943,6 +17022,9 @@ msgid ""
 "transform token streams. These can perform arbitrary operations at compile "
 "time, including I/O if desired."
 msgstr ""
+"**手続き型マクロ:** トークンストリームを変換する、コンパイラプラグインとして"
+"実行される Rust の関数です。コンパイル時に任意の操作を実行でき、必要であれば "
+"I/O も行えます。"
 
 #: src/macros/design.md
 msgid ""
@@ -16950,94 +17032,105 @@ msgid ""
 "`println!`, `vec!`, `format!`) and derive macros (like `#[derive(Clone, "
 "Debug)]`)."
 msgstr ""
+"受講者はすでに関数風マクロ（`println!`、`vec!`、`format!` など）と導出マクロ"
+"（`#[derive(Clone, Debug)]` など）を使用していることを強調してください。"
 
 #: src/macros/design.md
 msgid ""
 "Explain that attribute macros are very popular in libraries like Tokio or "
 "Axum, often transforming functions similar to Python decorators."
 msgstr ""
+"属性マクロは Tokio や Axum などのライブラリで非常によく使われており、Python "
+"のデコレータのように関数を変換することが多いと説明してください。"
 
 #: src/macros/defining.md
 msgid ""
 "There are two separate ways of implementing macros in Rust. Each has "
 "distinct advantages and trade-offs:"
 msgstr ""
+"Rust でマクロを実装する方法は 2 つあります。それぞれに異なる利点とトレードオ"
+"フがあります。"
 
 #: src/macros/defining.md
-#, fuzzy
 msgid "Feature"
-msgstr "Future"
+msgstr "特徴"
 
 #: src/macros/defining.md
 msgid "Declarative Macros"
-msgstr ""
+msgstr "宣言的マクロ"
 
 #: src/macros/defining.md
 msgid "**Usage**"
-msgstr ""
+msgstr "**用途**"
 
 #: src/macros/defining.md
 msgid "Function-like macros only"
-msgstr ""
+msgstr "関数風マクロのみ"
 
 #: src/macros/defining.md
 msgid "All three kinds (Derive, Attr, Function-like)"
-msgstr ""
+msgstr "3 種類すべて（導出、属性、関数風）"
 
 #: src/macros/defining.md
 msgid "**Location**"
-msgstr ""
+msgstr "**場所**"
 
 #: src/macros/defining.md
 msgid "Implemented within your normal crate"
-msgstr ""
+msgstr "通常のクレート内で実装"
 
 #: src/macros/defining.md
 msgid "Must be defined in a separate `proc-macro` crate"
-msgstr ""
+msgstr "別の `proc-macro` クレートで定義する必要がある"
 
 #: src/macros/defining.md
 msgid "**Pros**"
-msgstr ""
+msgstr "**長所**"
 
 #: src/macros/defining.md
 msgid ""
 "\\- Low boilerplate<br>\\- No extra compilation step<br>\\- Easy to write "
 "and reuse"
 msgstr ""
+"\\- ボイラープレートが少ない<br>\\- 追加のコンパイルステップが不要<br>\\- 書"
+"きやすく再利用しやすい"
 
 #: src/macros/defining.md
 msgid ""
 "\\- Extremely powerful and expressive<br>\\- Written in standard Rust<br>\\- "
 "Full programmatic control"
 msgstr ""
+"\\- 非常に強力で表現力が高い<br>\\- 標準的な Rust で記述<br>\\- プログラムで"
+"完全に制御可能"
 
 #: src/macros/defining.md
-#, fuzzy
 msgid "**Cons**"
-msgstr "定数"
+msgstr "**短所**"
 
 #: src/macros/defining.md
 msgid ""
 "\\- Bespoke pattern-matching syntax<br>\\- Cannot inspect arbitrary token "
 "structures"
 msgstr ""
+"\\- 独自のパターンマッチング構文<br>\\- 任意のトークン構造を調べることはでき"
+"ない"
 
 #: src/macros/defining.md
 msgid "\\- Can slow down build time<br>\\- Substantial boilerplate required"
 msgstr ""
+"\\- ビルド時間が長くなる可能性がある<br>\\- 大量のボイラープレートが必要"
 
 #: src/macros/defining.md
 msgid "**Hygiene**"
-msgstr ""
+msgstr "**衛生性**"
 
 #: src/macros/defining.md
 msgid "Partially/mixed hygienic by default"
-msgstr ""
+msgstr "デフォルトで部分的 / 混合的に衛生的"
 
 #: src/macros/defining.md
 msgid "Configurable / custom hygiene"
-msgstr ""
+msgstr "設定可能 / カスタムの衛生性"
 
 #: src/macros/defining.md
 msgid ""
@@ -17045,18 +17138,25 @@ msgid ""
 "executed _inside_ the compiler while compiling the consuming code. This is "
 "why they require a separate crate."
 msgstr ""
+"手続き型マクロは文字どおりライブラリとしてコンパイルされ、それを利用するコー"
+"ドのコンパイル中にコンパイラの _内部_ で実行されることを説明してください。そ"
+"のため、別のクレートが必要になります。"
 
 #: src/macros/defining.md
 msgid ""
 "Emphasize that you should always prefer declarative macros for simple code "
 "generation due to their much smaller impact on build times."
 msgstr ""
+"ビルド時間への影響がはるかに小さいため、単純なコード生成には常に宣言的マクロ"
+"を優先すべきであることを強調してください。"
 
 #: src/macros/kinds.md
 msgid ""
 "Macros can be attached to or invoked at different positions in your code. "
 "There are three major cases to consider:"
 msgstr ""
+"マクロは、コード内のさまざまな位置に付与したり、そこで呼び出したりできます。"
+"考慮すべき主なケースは 3 つあります。"
 
 #: src/macros/kinds.md
 msgid ""
@@ -17064,12 +17164,16 @@ msgid ""
 "patterns, or items, expanding to any syntax that could occupy the invocation "
 "position."
 msgstr ""
+"**関数風マクロ:** 式、文、型、パターン、アイテムとして呼び出され、呼び出し位"
+"置に置くことができる任意の構文に展開されます。"
 
 #: src/macros/kinds.md
 msgid ""
 "**Derive Macros:** Attached specifically to `struct`, `enum`, or `union` "
 "items, to generate trait impls based on the type definition."
 msgstr ""
+"**導出マクロ:** `struct`、`enum`、`union` のアイテムに限定して付与され、型定"
+"義に基づいてトレイトの impl を生成します。"
 
 #: src/macros/kinds.md
 msgid ""
@@ -17077,16 +17181,20 @@ msgid ""
 "functions, modules, structs, etc.), allowing complete replacement of the "
 "attached item."
 msgstr ""
+"**属性マクロ:** Rust の標準的な任意の `item`（関数、モジュール、構造体など）"
+"に付与され、付与されたアイテムを完全に置き換えることができます。"
 
 #: src/macros/kinds.md
 msgid "We will now see how each of these looks and behaves."
-msgstr ""
+msgstr "それぞれがどのような見た目で、どのように動作するかを見ていきましょう。"
 
 #: src/macros/kinds.md
 msgid ""
 "Mention that \"items\" in Rust are top-level declarations (which can nest!) "
 "such as structs, modules, traits, and functions."
 msgstr ""
+"Rust の「アイテム」とは、構造体、モジュール、トレイト、関数などのトップレベル"
+"の宣言（ネストも可能です）であることを説明してください。"
 
 #: src/macros/kinds.md
 msgid ""
@@ -17095,6 +17203,9 @@ msgid ""
 "append new implementations alongside; meanwhile, attribute macros can "
 "rewrite their targets entirely."
 msgstr ""
+"マクロの位置によって制限の強さが異なることを明確にしてください。たとえば、導"
+"出マクロは付与された構造体を変更できず、新しい実装を横に追加することしかでき"
+"ません。一方、属性マクロは対象を完全に書き換えることができます。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
@@ -17102,26 +17213,28 @@ msgid ""
 "following their identifier. They look like function calls, but they can "
 "accept arbitrary tokens inside their brackets."
 msgstr ""
+"**関数風マクロ**は、識別子の後に感嘆符（`!`）を付けて呼び出します。関数呼び出"
+"しのように見えますが、括弧内に任意のトークンを受け取ることができます。"
 
 #: src/macros/kinds/function-like.md
-#, fuzzy
 msgid "// Invoked as an expression:\n"
-msgstr "// 式を囲む括弧は不要\n"
+msgstr "// 式として呼び出す:\n"
 
 #: src/macros/kinds/function-like.md
 msgid "// Invoked as a statement:\n"
-msgstr ""
+msgstr "// 文として呼び出す:\n"
 
 #: src/macros/kinds/function-like.md
-#, fuzzy
 msgid "\"Hello, World! {:?}\""
-msgstr "\"Hello, world!\""
+msgstr "\"Hello, World! {:?}\""
 
 #: src/macros/kinds/function-like.md
 msgid ""
 "**Flexible brackets:** Can be invoked with parentheses `()`, square brackets "
 "`[]`, or curly braces `{}`."
 msgstr ""
+"**柔軟な括弧:** 丸括弧 `()`、角括弧 `[]`、波括弧 `{}` のいずれでも呼び出せま"
+"す。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
@@ -17129,24 +17242,32 @@ msgid ""
 "closing brackets are forbidden (so the compiler can tell where the macro "
 "invocation ends, regardless of how the macro processes those tokens)."
 msgstr ""
+"**入力:** Rust のトークンの任意の並びを含めることができますが、対応の取れてい"
+"ない開き括弧や閉じ括弧は禁止されています（これにより、マクロがそれらのトーク"
+"ンをどのように処理するかに関係なく、コンパイラはマクロ呼び出しの終わりを判断"
+"できます）。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
 "**Placement:** Can appear as expressions, statements, types, patterns, or "
 "items."
-msgstr ""
+msgstr "**配置:** 式、文、型、パターン、アイテムとして記述できます。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
 "**Implementation:** These are the only kind of macro that can be implemented "
 "as either a **declarative** macro (`macro_rules!`) or a **procedural** macro."
 msgstr ""
+"**実装:** **宣言的**マクロ（`macro_rules!`）と**手続き型**マクロのどちらでも"
+"実装できる唯一の種類のマクロです。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
 "Mention that while they look like function calls, they are expanded during "
 "compilation. They do not exist at runtime."
 msgstr ""
+"関数呼び出しのように見えますが、コンパイル中に展開されることを説明してくださ"
+"い。実行時には存在しません。"
 
 #: src/macros/kinds/function-like.md
 msgid ""
@@ -17154,6 +17275,9 @@ msgid ""
 "because it behaves like an array, `println!` uses `()` because it behaves "
 "like a function call, and custom macros defining items often use `{}`."
 msgstr ""
+"括弧の選択はスタイル上の慣習の問題です。`vec!` は配列のように動作するため "
+"`[]` を使用し、`println!` は関数呼び出しのように動作するため `()` を使用しま"
+"す。アイテムを定義するカスタムマクロでは `{}` がよく使われます。"
 
 #: src/macros/kinds/derive.md
 msgid ""
@@ -17161,33 +17285,41 @@ msgid ""
 "them with the `#[derive(...)]` attribute. They generate new code next to the "
 "type, typically implementing traits automatically."
 msgstr ""
+"**導出マクロ**は、構造体、列挙型、共用体の前に `#[derive(...)]` 属性を置くこ"
+"とで付与されます。型の隣に新しいコードを生成し、通常はトレイトを自動的に実装"
+"します。"
 
 #: src/macros/kinds/derive.md
-#, fuzzy
 msgid "\"Default result: {:?}\""
-msgstr "\"result: {:?}\""
+msgstr "\"Default result: {:?}\""
 
 #: src/macros/kinds/derive.md
 msgid ""
 "**Targeted:** Can only be applied to type definitions using the `struct`, "
 "`enum`, or `union` keywords."
 msgstr ""
+"**対象が限定されている:** `struct`、`enum`、`union` キーワードを使用した型定"
+"義にのみ適用できます。"
 
 #: src/macros/kinds/derive.md
 msgid ""
 "**Additive:** They cannot modify or delete the original type definition; "
 "they can only output additional code (such as `impl` blocks)."
 msgstr ""
+"**追加的:** 元の型定義を変更したり削除したりすることはできず、追加のコード"
+"（`impl` ブロックなど）を出力することしかできません。"
 
 #: src/macros/kinds/derive.md src/macros/kinds/attr.md
 msgid "**Implementation:** Always implemented as procedural macros."
-msgstr ""
+msgstr "**実装:** 常に手続き型マクロとして実装されます。"
 
 #: src/macros/kinds/derive.md
 msgid ""
 "Explain that `#[derive(Debug)]` generates an implementation of "
 "`std::fmt::Debug` for the struct."
 msgstr ""
+"`#[derive(Debug)]` が構造体に対する `std::fmt::Debug` の実装を生成することを"
+"説明してください。"
 
 #: src/macros/kinds/derive.md
 msgid ""
@@ -17195,6 +17327,9 @@ msgid ""
 "placed on struct fields, like `#[serde(rename = \"name\")]` or `#[default]` "
 "in the example), which configure the generated code."
 msgstr ""
+"導出マクロは「ヘルパー属性」（例の `#[serde(rename = \"name\")]` や "
+"`#[default]` のように構造体のフィールドに付ける属性）もサポートでき、これに"
+"よって生成されるコードを設定できることに注意してください。"
 
 #: src/macros/kinds/derive.md
 msgid ""
@@ -17203,6 +17338,9 @@ msgid ""
 "in the same namespace, so they must be designed carefully to avoid namespace "
 "collisions."
 msgstr ""
+"導出マクロは、型と同じモジュール内で一緒にコンパイルされることを説明してくだ"
+"さい。生成されるアイテム（ヘルパー関数やヘルパートレイトなど）は同じ名前空間"
+"に存在するため、名前空間の衝突を避けるように慎重に設計する必要があります。"
 
 #: src/macros/kinds/attr.md
 msgid ""
@@ -17210,31 +17348,37 @@ msgid ""
 "`item` (including functions, modules, structs, etc.). They have full power "
 "to inspect, rewrite, or completely replace the item they are attached to."
 msgstr ""
+"**属性マクロ**は、Rust の標準的な任意の `item`（関数、モジュール、構造体な"
+"ど）にカスタム属性として付与されます。付与されたアイテムを調べたり、書き換え"
+"たり、完全に置き換えたりする完全な能力を持っています。"
 
 #: src/macros/kinds/attr.md
 msgid "// A popular example from the Tokio library:\n"
-msgstr ""
+msgstr "// Tokio ライブラリのよく知られた例:\n"
 
 #: src/macros/kinds/attr.md
-#, fuzzy
 msgid "\"Hello from an async main!\""
-msgstr "\"Hello from Rust!\""
+msgstr "\"Hello from an async main!\""
 
 #: src/macros/kinds/attr.md
 msgid "**Universal:** Can be applied to any declaration/item."
-msgstr ""
+msgstr "**汎用的:** 任意の宣言 / アイテムに適用できます。"
 
 #: src/macros/kinds/attr.md
 msgid ""
 "**Transformational:** Unlike derive macros, they can entirely replace their "
 "target with different code."
 msgstr ""
+"**変換的:** 導出マクロとは異なり、対象を別のコードで完全に置き換えることがで"
+"きます。"
 
 #: src/macros/kinds/attr.md
 msgid ""
 "**Parameters:** Can optionally accept custom metadata parameters, e.g., "
 "`#[route(GET, \"/\")]`."
 msgstr ""
+"**パラメータ:** 必要に応じて、カスタムのメタデータパラメータを受け取ることが"
+"できます（例: `#[route(GET, \"/\")]`）。"
 
 #: src/macros/kinds/attr.md
 msgid ""
@@ -17243,6 +17387,10 @@ msgid ""
 "on the future, and executes the async block. This completely rewrites the "
 "function signature!"
 msgstr ""
+"`#[tokio::main]` が `async fn main()` を、Tokio ランタイムをインスタンス化し"
+"て実行し、Future をブロッキングで待機して非同期ブロックを実行する同期的な "
+"`fn main()` に変換する仕組みについて説明してください。これは関数のシグネチャ"
+"を完全に書き換えます。"
 
 #: src/macros/kinds/attr.md
 msgid ""
@@ -17250,12 +17398,17 @@ msgid ""
 "extremely powerful but require careful error handling to avoid completely "
 "obscuring compile errors for the user."
 msgstr ""
+"属性マクロはアイテムを完全に書き換えられるため非常に強力ですが、ユーザーに対"
+"してコンパイルエラーが完全にわかりにくくなるのを避けるため、慎重なエラー処理"
+"が必要であることを強調してください。"
 
 #: src/macros/tokens.md
 msgid ""
 "Rather than manipulating raw text, Rust macros operate on **tokens** and "
 "**token trees**."
 msgstr ""
+"Rust のマクロは、生のテキストを操作するのではなく、**トークン**と**トークン木"
+"**を操作します。"
 
 #: src/macros/tokens.md
 msgid ""
@@ -17263,21 +17416,29 @@ msgid ""
 "(e.g., identifiers like `foo`, operators like `+`, punctuation like `,`, and "
 "literals like `123`)."
 msgstr ""
+"**トークン**は、言語の字句要素のうち、それ以上分割できない最小のものです"
+"（例: `foo` のような識別子、`+` のような演算子、`,` のような句読点、`123` の"
+"ようなリテラル）。"
 
 #: src/macros/tokens.md
 msgid ""
 "**Token trees** are formed by grouping streams of tokens and token groups."
 msgstr ""
+"**トークン木**は、トークンのストリームとトークングループをまとめることで形成"
+"されます。"
 
 #: src/macros/tokens.md
 msgid "When a macro is called, the compiler passes it such a stream."
 msgstr ""
+"マクロが呼び出されると、コンパイラはこのようなストリームをマクロに渡します。"
 
 #: src/macros/tokens.md
 msgid ""
 "The macro processes this input stream and must return another stream of "
 "tokens-and-groups that replaces the macro invocation."
 msgstr ""
+"マクロはこの入力ストリームを処理し、マクロ呼び出しを置き換える、トークンとグ"
+"ループからなる別のストリームを返す必要があります。"
 
 #: src/macros/tokens.md
 msgid ""
@@ -17285,62 +17446,76 @@ msgid ""
 "ensures that macros can never construct or return syntactically invalid, un-"
 "lexable text."
 msgstr ""
+"この構造により、コンパイラは字句の境界を検証でき、マクロが構文的に無効なテキ"
+"ストや字句解析できないテキストを構築したり返したりすることは決してありませ"
+"ん。"
 
 #: src/macros/tokens.md
 msgid ""
 "Reiterate that because macro expansion happens _during_ AST generation, the "
 "macro receives structured tokens, not characters."
 msgstr ""
+"マクロの展開は AST の生成 _中_ に行われるため、マクロが受け取るのは文字ではな"
+"く構造化されたトークンであることを改めて伝えてください。"
 
 #: src/macros/tokens.md
 msgid ""
 "Explain that this differs completely from preprocessors (like C/C++), which "
 "perform string/text-level substitution before tokenization."
 msgstr ""
+"これは、トークン化の前に文字列 / テキストレベルの置換を行うプリプロセッサ（C/"
+"C++ など）とはまったく異なることを説明してください。"
 
 #: src/macros/tokens.md
 msgid ""
 "Mention that this token-level manipulation is what makes Rust macros more "
 "robust and syntax-safe."
 msgstr ""
+"このトークンレベルの操作こそが、Rust のマクロをより堅牢で構文的に安全なものに"
+"していることを説明してください。"
 
 #: src/macros/brackets.md
 msgid ""
 "A **token tree** can represent either a single token, or a **group** of "
 "tokens enclosed by matching delimiters (brackets):"
 msgstr ""
+"**トークン木**は、単一のトークン、または対応する区切り文字（括弧）で囲まれた"
+"トークンの**グループ**のいずれかを表すことができます。"
 
 #: src/macros/brackets.md
 msgid "**Single tokens (leaf nodes):** `foo`, `+`, `,`, `123`."
-msgstr ""
+msgstr "**単一のトークン（葉ノード）:** `foo`、`+`、`,`、`123`。"
 
 #: src/macros/brackets.md
 msgid ""
 "**Grouped tokens (internal nodes):** Enclosed by parentheses `()`, braces `{}"
 "`, or square brackets `[]`."
 msgstr ""
+"**グループ化されたトークン（内部ノード）:** 丸括弧 `()`、波括弧 `{}`、角括弧 "
+"`[]` で囲まれます。"
 
 #: src/macros/brackets.md
 msgid "For example, the token stream: `foo + (bar * baz)`"
-msgstr ""
+msgstr "たとえば、トークンストリーム `foo + (bar * baz)` は、"
 
 #: src/macros/brackets.md
 msgid "Is parsed into **3 separate token trees**:"
-msgstr ""
+msgstr "**3 つの別々のトークン木**にパースされます。"
 
 #: src/macros/brackets.md
 msgid "`foo` (a single token)"
-msgstr ""
+msgstr "`foo`（単一のトークン）"
 
 #: src/macros/brackets.md
 msgid "`+` (a single token)"
-msgstr ""
+msgstr "`+`（単一のトークン）"
 
 #: src/macros/brackets.md
 msgid ""
 "`(bar * baz)` (a token group containing three child token trees: `bar`, `*`, "
 "and `baz`)"
 msgstr ""
+"`(bar * baz)`（3 つの子トークン木 `bar`、`*`、`baz` を含むトークングループ）"
 
 #: src/macros/brackets.md
 msgid ""
@@ -17348,6 +17523,9 @@ msgid ""
 "strictly disallowed**. You cannot pass unbalanced parentheses or braces into "
 "or out of a macro!"
 msgstr ""
+"グループ化は字句解析の _最中_ に行われるため、**対応の取れていないグループは"
+"厳しく禁止されています**。対応の取れていない丸括弧や波括弧をマクロに渡した"
+"り、マクロから返したりすることはできません。"
 
 #: src/macros/brackets.md
 msgid ""
@@ -17355,24 +17533,30 @@ msgid ""
 "`let x = {` and close it with another macro or tokens outside the macro. The "
 "entire block must be passed or returned as a single, well-formed token group."
 msgstr ""
+"つまり、マクロを使って `let x = {` のようなブロックの半分だけを生成し、別のマ"
+"クロやマクロ外のトークンでそれを閉じることはできない点に注意してください。ブ"
+"ロック全体を、単一の適格なトークングループとして渡すか返す必要があります。"
 
 #: src/macros/streams.md
 msgid ""
 "A **token stream** is a sequence of token trees. It is the fundamental input "
 "and output format for both declarative and procedural macros in Rust:"
 msgstr ""
+"**トークンストリーム**はトークン木の並びです。Rust の宣言的マクロと手続き型マ"
+"クロの両方にとって、基本的な入出力の形式です。"
 
 #: src/macros/streams.md
 msgid ""
 "**Macro Input:** The tokens passed inside the brackets of the macro "
 "invocation."
-msgstr ""
+msgstr "**マクロの入力:** マクロ呼び出しの括弧内に渡されるトークン。"
 
 #: src/macros/streams.md
 msgid ""
 "**Macro Output:** The new tokens returned by the macro that replace the "
 "macro invocation."
 msgstr ""
+"**マクロの出力:** マクロ呼び出しを置き換える、マクロが返す新しいトークン。"
 
 #: src/macros/streams.md
 msgid ""
@@ -17380,6 +17564,9 @@ msgid ""
 "but also must be syntactically valid Rust. The generated syntax is inserted "
 "into the AST of the program where the macro is invoked."
 msgstr ""
+"宣言的マクロの場合、出力は単にトークンストリームとして構造化されているだけで"
+"なく、構文的に有効な Rust でなければなりません。生成された構文は、マクロが呼"
+"び出された位置でプログラムの AST に挿入されます。"
 
 #: src/macros/streams.md
 msgid ""
@@ -17387,6 +17574,8 @@ msgid ""
 "it\n"
 "// tokenizes (which requires any brackets to be balanced).\n"
 msgstr ""
+"// 入力トークンストリームは、トークン化できる限り（そのためには括弧の対応が\n"
+"// 取れている必要があります）、有効な Rust の構文である必要はありません。\n"
 
 #: src/macros/streams.md
 msgid ""
@@ -17394,15 +17583,17 @@ msgid ""
 "    // Since expansion inserts a structured AST fragment, precedence is "
 "preserved!\n"
 msgstr ""
+"// マクロはトークン 1 + 2 を返します\n"
+"    // 展開では構造化された AST の断片が挿入されるため、優先順位が保たれま"
+"す！\n"
 
 #: src/macros/streams.md
-#, fuzzy
 msgid "\"3 * 10 = {}\""
-msgstr "\"a = {}, b = {}\""
+msgstr "\"3 * 10 = {}\""
 
 #: src/macros/streams.md
 msgid "// Outputs \"30\"\n"
-msgstr ""
+msgstr "// \"30\" を出力します\n"
 
 #: src/macros/streams.md
 msgid ""
@@ -17410,12 +17601,17 @@ msgid ""
 "expansions in safety parentheses (unlike C macros, where literal replacement "
 "would cause `1 + 2 * 10` to equal `21`)."
 msgstr ""
+"マクロの出力は AST のサブツリーとして挿入されるため、展開結果を安全のための括"
+"弧で囲む必要はありません（C のマクロでは文字どおりの置換によって `1 + 2 * "
+"10` が `21` になってしまいますが、それとは異なります）。"
 
 #: src/macros/streams.md
 msgid ""
 "This slide shows `macro_rules!` defining a declarative macro. We do not need "
 "to visit this in detail yet, as we will do so on the next slide."
 msgstr ""
+"このスライドでは、`macro_rules!` で宣言的マクロを定義しています。次のスライド"
+"で詳しく扱うので、ここではまだ詳しく見る必要はありません。"
 
 #: src/macros/streams.md
 msgid ""
@@ -17423,12 +17619,18 @@ msgid ""
 "tokens do not need to form valid Rust code on their own (for example, "
 "`special_print!(#foo(bar:123))` uses `#` and `:` in custom ways)."
 msgstr ""
+"トークンストリームにはトークンの任意の並びを含められることを説明してくださ"
+"い。トークンはそれ自体で有効な Rust コードを形成する必要はありません（たとえ"
+"ば、`special_print!(#foo(bar:123))` では `#` と `:` を独自の方法で使用してい"
+"ます）。"
 
 #: src/macros/streams.md
 msgid ""
 "When a macro expands, the _emitted_ token stream must make syntactic sense "
 "at the position where the macro is invoked."
 msgstr ""
+"マクロが展開されるとき、_出力される_ トークンストリームは、マクロが呼び出され"
+"た位置で構文的に意味をなす必要があります。"
 
 #: src/macros/macro_rules/welcome.md
 msgid ""
@@ -17436,6 +17638,8 @@ msgid ""
 "` macros) are the most common form of macros in Rust and the easiest to "
 "write."
 msgstr ""
+"**例によるマクロ**（**宣言的マクロ**、または `macro_rules!` マクロとも呼ばれ"
+"ます）は、Rust で最も一般的な形式のマクロであり、最も簡単に書けます。"
 
 #: src/macros/macro_rules/welcome.md
 msgid "They are defined using the `macro_rules!` construct."
