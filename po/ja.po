@@ -1603,9 +1603,8 @@ msgstr "Future"
 
 #: src/SUMMARY.md src/concurrency/async.md
 #: src/concurrency/async/state-machine.md
-#, fuzzy
 msgid "State Machine"
-msgstr "パターンマッチング"
+msgstr "ステートマシン"
 
 #: src/SUMMARY.md src/concurrency/async.md src/concurrency/async/runtimes.md
 msgid "Runtimes"
@@ -28387,33 +28386,32 @@ msgstr ""
 "しています。"
 
 #: src/concurrency/welcome.md
-#, fuzzy
 msgid ""
 "The Rust type system plays an important role in making many concurrency bugs "
 "compile time errors. This idea is known as _fearless concurrency_ since you "
 "can rely on the compiler to ensure correctness at runtime."
 msgstr ""
-"Rustの型システムは多くの並行性にまつわるバグをコンパイル時のバグにとどめると"
-"いう点で、重要な役割を果たします。これは時に _fearless concurrency_ （「怖く"
-"ない並行性」） と呼ばれます。なぜなら、コンパイラに実行時での正しさを保証する"
-"ことをまかせてよいためです。"
+"Rust の型システムは、多くの並行性のバグをコンパイル時のエラーにするという点で"
+"重要な役割を果たします。実行時の正しさの保証をコンパイラに任せられることか"
+"ら、この考え方は _fearless concurrency_（「怖くない並行性」）と呼ばれます。"
 
 #: src/concurrency/welcome.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 3 hours and 20 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 20 分です。"
+msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 3 時間 20 分です。"
 
 #: src/concurrency/welcome.md
 msgid ""
 "Rust lets us access OS concurrency toolkit: threads, sync. primitives, etc."
 msgstr ""
+"Rust では、OS の並行性ツールキット（スレッド、同期プリミティブなど）にアクセ"
+"スできます。"
 
 #: src/concurrency/welcome.md
 msgid ""
 "The type system gives us safety for concurrency without any special features."
-msgstr ""
+msgstr "型システムにより、特別な機能を使わなくても並行性の安全性が得られます。"
 
 #: src/concurrency/welcome.md
 msgid ""
@@ -28421,6 +28419,9 @@ msgid ""
 "(e.g., a called function that might mutate an argument or save references to "
 "it to read later) save us from multi-threading issues."
 msgstr ""
+"単一スレッド内での「並行」アクセス（例えば、呼び出した関数が引数を変更した"
+"り、後で読むためにその参照を保存したりする場合）に役立つのと同じ仕組みが、マ"
+"ルチスレッドの問題からも守ってくれます。"
 
 #: src/concurrency/threads/plain.md
 msgid "Rust threads work similarly to threads in other languages:"
@@ -28439,160 +28440,169 @@ msgid ""
 "Spawning new threads does not automatically delay program termination at the "
 "end of `main`."
 msgstr ""
+"新しいスレッドを生成しても、`main` の終わりでのプログラムの終了が自動的に遅ら"
+"されることはありません。"
 
 #: src/concurrency/threads/plain.md
 msgid "Thread panics are independent of each other."
 msgstr "スレッドパニックは互いに独立です。"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "Panics can carry a payload, which can be unpacked with [`Any::downcast_ref`]"
 "(https://doc.rust-lang.org/std/any/trait.Any.html#method.downcast_ref)."
 msgstr ""
-"パニックはペイロードを保持していることがあり、それは`downcast_ref`で展開可能"
-"です。"
+"パニックはペイロードを保持でき、それは [`Any::downcast_ref`](https://"
+"doc.rust-lang.org/std/any/trait.Any.html#method.downcast_ref) で取り出せま"
+"す。"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid "Run the example."
-msgstr "例の実行方法:"
+msgstr "例を実行してください。"
 
 #: src/concurrency/threads/plain.md
 msgid ""
 "5ms timing is loose enough that main and spawned threads stay mostly in "
 "lockstep."
 msgstr ""
+"5ms のタイミングは十分に緩いので、メインスレッドと生成されたスレッドはおおむ"
+"ね歩調を合わせて動きます。"
 
 #: src/concurrency/threads/plain.md
 msgid "Notice that the program ends before the spawned thread reaches 10!"
 msgstr ""
+"生成されたスレッドが 10 に達する前にプログラムが終了することに注目してくださ"
+"い。"
 
 #: src/concurrency/threads/plain.md
 msgid ""
 "This is because `main` ends the program and spawned threads do not make it "
 "persist."
 msgstr ""
+"これは、`main` がプログラムを終了させ、生成されたスレッドはプログラムを存続さ"
+"せないためです。"
 
 #: src/concurrency/threads/plain.md
 msgid "Compare to `pthreads`/C++ `std::thread`/`boost::thread` if desired."
 msgstr ""
+"必要に応じて、`pthreads`/C++ の `std::thread`/`boost::thread` と比較してくだ"
+"さい。"
 
 #: src/concurrency/threads/plain.md
 msgid "How do we wait around for the spawned thread to complete?"
-msgstr ""
+msgstr "生成されたスレッドが完了するのを待つにはどうすればよいでしょうか？"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html) "
 "returns a `JoinHandle`. Look at the docs."
 msgstr ""
-"[`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html) は、ヒープ上の"
-"データへの所有ポインタです。"
+"[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html) は "
+"`JoinHandle` を返します。ドキュメントを見てみましょう。"
 
 #: src/concurrency/threads/plain.md
 msgid ""
 "`JoinHandle` has a [`.join()`](https://doc.rust-lang.org/std/thread/"
 "struct.JoinHandle.html#method.join) method that blocks."
 msgstr ""
+"`JoinHandle` には、ブロックする [`.join()`](https://doc.rust-lang.org/std/"
+"thread/struct.JoinHandle.html#method.join) メソッドがあります。"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "Use `let handle = thread::spawn(...)` and later `handle.join()` to wait for "
 "the thread to finish and have the program count all the way to 10."
 msgstr ""
-"`let handle = thread::spawn(…)`と後に`handle.join()`を使って、スレッドが完了"
-"するのを待ってみてください。"
+"`let handle = thread::spawn(...)` とし、後で `handle.join()` を使ってスレッド"
+"の終了を待ち、プログラムが 10 まで数え切るようにしてください。"
 
 #: src/concurrency/threads/plain.md
 msgid "Now what if we want to return a value?"
-msgstr ""
+msgstr "では、値を返したい場合はどうでしょうか？"
 
 #: src/concurrency/threads/plain.md
 msgid "Look at docs again:"
-msgstr ""
+msgstr "もう一度ドキュメントを見てみましょう:"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html)'s "
 "closure returns `T`"
 msgstr ""
-"しかし、そのために[スコープ付きスレッド](https://doc.rust-lang.org/std/"
-"thread/fn.scope.html)を使うことができます:"
+"[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html) のク"
+"ロージャは `T` を返します"
 
 #: src/concurrency/threads/plain.md
 msgid ""
 "`JoinHandle` [`.join()`](https://doc.rust-lang.org/std/thread/"
 "struct.JoinHandle.html#method.join) returns `thread::Result<T>`"
 msgstr ""
+"`JoinHandle` の [`.join()`](https://doc.rust-lang.org/std/thread/"
+"struct.JoinHandle.html#method.join) は `thread::Result<T>` を返します"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "Use the `Result` return value from `handle.join()` to get access to the "
 "returned value."
 msgstr ""
-"`handle.join()`の返り値の`Result`を使って、パニックペイロードへのアクセスを得"
-"てみてください。 これは[`Any`](https://doc.rust-lang.org/std/any/index.html)"
-"について話すのに良いタイミングです。"
+"`handle.join()` の戻り値の `Result` を使って、返された値にアクセスしてくださ"
+"い。"
 
 #: src/concurrency/threads/plain.md
 msgid "Ok, what about the other case?"
-msgstr ""
+msgstr "では、もう一方のケースはどうでしょうか？"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid "Trigger a panic in the thread. Note that this doesn't panic `main`."
 msgstr ""
-"スレッド内でパニックを引き起こしてみて、それがどのように`main`に影響しないか"
-"を観察してみてください。"
+"スレッド内でパニックを発生させてください。これは `main` をパニックさせないこ"
+"とに注意してください。"
 
 #: src/concurrency/threads/plain.md
-#, fuzzy
 msgid ""
 "Access the panic payload. This is a good time to talk about [`Any`](https://"
 "doc.rust-lang.org/std/any/index.html)."
 msgstr ""
-"`handle.join()`の返り値の`Result`を使って、パニックペイロードへのアクセスを得"
-"てみてください。 これは[`Any`](https://doc.rust-lang.org/std/any/index.html)"
-"について話すのに良いタイミングです。"
+"パニックのペイロードにアクセスしてください。これは [`Any`](https://doc.rust-"
+"lang.org/std/any/index.html) について話すのに良いタイミングです。"
 
 #: src/concurrency/threads/plain.md
 msgid "Now we can return values from threads! What about taking inputs?"
 msgstr ""
+"これでスレッドから値を返せるようになりました。では、入力を受け取るにはどうす"
+"ればよいでしょうか？"
 
 #: src/concurrency/threads/plain.md
 msgid "Capture something by reference in the thread closure."
-msgstr ""
+msgstr "スレッドのクロージャで何かを参照によってキャプチャしてください。"
 
 #: src/concurrency/threads/plain.md
 msgid "An error message indicates we must move it."
-msgstr ""
+msgstr "エラーメッセージから、それをムーブしなければならないことがわかります。"
 
 #: src/concurrency/threads/plain.md
 msgid "Move it in, see we can compute and then return a derived value."
-msgstr ""
+msgstr "それをムーブし、計算を行って派生した値を返せることを確認してください。"
 
 #: src/concurrency/threads/plain.md
 msgid "If we want to borrow?"
-msgstr ""
+msgstr "借用したい場合はどうでしょうか？"
 
 #: src/concurrency/threads/plain.md
 msgid ""
 "Main kills child threads when it returns, but another function would just "
 "return and leave them running."
 msgstr ""
+"main は戻るときに子スレッドを終了させますが、別の関数であれば単に戻るだけで、"
+"子スレッドは実行されたまま残ります。"
 
 #: src/concurrency/threads/plain.md
 msgid "That would be stack use-after-return, which violates memory safety!"
-msgstr ""
+msgstr "それはスタックの use-after-return になり、メモリ安全性に違反します。"
 
 #: src/concurrency/threads/plain.md
 msgid "How do we avoid this? See next slide."
-msgstr ""
+msgstr "これを避けるにはどうすればよいでしょうか？次のスライドを見てください。"
 
 #: src/concurrency/threads/scoped.md
 msgid "Normal threads cannot borrow from their environment:"
@@ -28623,39 +28633,37 @@ msgstr ""
 "ること、または任意の数のスレッドからイミュータブルで借用すること。"
 
 #: src/concurrency/channels.md src/concurrency/async-control-flow.md
-#, fuzzy
 msgid "This segment should take about 20 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 20 分です"
+msgstr "このセグメントの所要時間は約 20 分です。"
 
 #: src/concurrency/channels/senders-receivers.md
-#, fuzzy
 msgid ""
 "Rust channels have two parts: a [`Sender<T>`](https://doc.rust-lang.org/std/"
 "sync/mpsc/struct.Sender.html) and a [`Receiver<T>`](https://doc.rust-"
 "lang.org/std/sync/mpsc/struct.Receiver.html). The two parts are connected "
 "via the channel, but you only see the end-points."
 msgstr ""
-"Rustのチャネルには二つの部品があります： `Sender<T>` と`Receiver<T>`です。こ"
-"の２つの部品はチャネルによって繋がっていますが、見ることができるのはエンドポ"
-"イントだけです。"
+"Rust のチャネルには 2 つの部分があります。[`Sender<T>`](https://doc.rust-"
+"lang.org/std/sync/mpsc/struct.Sender.html) と [`Receiver<T>`](https://"
+"doc.rust-lang.org/std/sync/mpsc/struct.Receiver.html) です。この 2 つの部分は"
+"チャネルによってつながっていますが、見えるのはエンドポイントだけです。"
 
 #: src/concurrency/channels/senders-receivers.md
 msgid "\"Received: {:?}\""
 msgstr "\"Received: {:?}\""
 
 #: src/concurrency/channels/senders-receivers.md
-#, fuzzy
 msgid ""
 "[`mpsc`](https://doc.rust-lang.org/std/sync/mpsc/index.html) stands for "
 "Multi-Producer, Single-Consumer. `Sender` and `SyncSender` implement `Clone` "
 "(so you can make multiple producers) but `Receiver` does not."
 msgstr ""
-"`mpsc` は Multi-Producer, Single-Consumerの略称です。 `Sender`と`SyncSender`"
-"は`Clone`を実装している（よって複数のproducerが作成可能）のですが、`Receiver`"
-"についてはそうではありません。"
+"[`mpsc`](https://doc.rust-lang.org/std/sync/mpsc/index.html) は Multi-"
+"Producer, Single-Consumer の略です。`Sender` と `SyncSender` は `Clone` を実"
+"装しています（そのため複数のプロデューサーを作れます）が、`Receiver` は実装し"
+"ていません。"
 
 #: src/concurrency/channels/senders-receivers.md
-#, fuzzy
 msgid ""
 "[`send()`](https://doc.rust-lang.org/std/sync/mpsc/"
 "struct.Sender.html#method.send) and [`recv()`](https://doc.rust-lang.org/std/"
@@ -28663,16 +28671,19 @@ msgid ""
 "`Err`, it means the counterpart `Sender` or `Receiver` is dropped and the "
 "channel is closed."
 msgstr ""
-"`send()`と`recv()`は`Result`を返します。もし`Err`が返された場合、これは、対応"
-"する`Sender`か`Receiver`のいずれかがドロップされ、チャンネルが閉じられたこと"
-"を意味します。"
+"[`send()`](https://doc.rust-lang.org/std/sync/mpsc/"
+"struct.Sender.html#method.send) と [`recv()`](https://doc.rust-lang.org/std/"
+"sync/mpsc/struct.Receiver.html#method.recv) は `Result` を返します。`Err` が"
+"返された場合は、相手側の `Sender` または `Receiver` がドロップされ、チャネル"
+"が閉じられたことを意味します。"
 
 #: src/concurrency/channels/unbounded.md
-#, fuzzy
 msgid ""
 "You get an unbounded and asynchronous channel with [`mpsc::channel()`]"
 "(https://doc.rust-lang.org/std/sync/mpsc/fn.channel.html):"
-msgstr "Unboundedで非同期的なチャネルは`mpsc::channel()`によって得られます："
+msgstr ""
+"[`mpsc::channel()`](https://doc.rust-lang.org/std/sync/mpsc/fn.channel.html) "
+"により、Unbounded で非同期的なチャネルが得られます："
 
 #: src/concurrency/channels/unbounded.md src/concurrency/channels/bounded.md
 msgid "\"Message {i}\""
@@ -28695,55 +28706,58 @@ msgid ""
 "An unbounded channel will allocate as much space as is necessary to store "
 "pending messages. The `send()` method will not block the calling thread."
 msgstr ""
+"Unbounded チャネルは、保留中のメッセージを格納するのに必要なだけの領域を確保"
+"します。`send()` メソッドは呼び出し元のスレッドをブロックしません。"
 
 #: src/concurrency/channels/unbounded.md
-#, fuzzy
 msgid ""
 "A call to `send()` will abort with an error (that is why it returns "
 "`Result`) if the channel is closed. A channel is closed when the receiver is "
 "dropped."
 msgstr ""
-"もしもチャネルが閉じられた場合、`send`の呼び出しはエラーとともに中断します。"
-"（`send`が`Result`を返すのはこのためです。）受け取り側がドロップされたとき"
-"に、チャネルは閉じられます。"
+"チャネルが閉じられている場合、`send()` の呼び出しはエラーで中断します"
+"（`Result` を返すのはこのためです）。チャネルは受信側がドロップされたときに閉"
+"じられます。"
 
 #: src/concurrency/channels/bounded.md
-#, fuzzy
 msgid ""
 "With bounded (synchronous) channels, [`send()`](https://doc.rust-lang.org/"
 "std/sync/mpsc/struct.SyncSender.html#method.send) can block the current "
 "thread:"
 msgstr ""
-"Bounded（かつ同期的）なチャネルを用いたとき、`send`は現在のスレッドをブロック"
-"することがあります："
+"Bounded（同期的）なチャネルでは、[`send()`](https://doc.rust-lang.org/std/"
+"sync/mpsc/struct.SyncSender.html#method.send) が現在のスレッドをブロックする"
+"ことがあります："
 
 #: src/concurrency/channels/bounded.md
-#, fuzzy
 msgid ""
 "Calling `send()` will block the current thread until there is space in the "
 "channel for the new message. The thread can be blocked indefinitely if there "
 "is nobody who reads from the channel."
 msgstr ""
-"`send`を呼んだときにチャネルに空きがなければ、現在のスレッドはブロックされま"
-"す。もし誰もチャネルから値を読み取らない場合は、このスレッドは無期限にブロッ"
-"クされることがあります。"
+"`send()` を呼び出すと、チャネルに新しいメッセージのための空きができるまで現在"
+"のスレッドはブロックされます。チャネルから誰も読み取らない場合、スレッドは無"
+"期限にブロックされることがあります。"
 
 #: src/concurrency/channels/bounded.md
 msgid ""
 "Like unbounded channels, a call to `send()` will abort with an error if the "
 "channel is closed."
 msgstr ""
+"Unbounded チャネルと同様に、チャネルが閉じられている場合、`send()` の呼び出し"
+"はエラーで中断します。"
 
 #: src/concurrency/channels/bounded.md
-#, fuzzy
 msgid ""
 "A bounded channel with a size of zero is called a \"rendezvous channel\". "
 "Every send will block the current thread until another thread calls "
 "[`recv()`](https://doc.rust-lang.org/std/sync/mpsc/"
 "struct.Receiver.html#method.recv)."
 msgstr ""
-"サイズが０のBoundedチャネルは「ランデブーチャネル」と呼ばれます。別のスレッド"
-"が`read`を呼ぶまでは、それぞれのsendは現在のスレッドをブロックします。"
+"サイズが 0 の Bounded チャネルは「ランデブーチャネル」と呼ばれます。別のス"
+"レッドが [`recv()`](https://doc.rust-lang.org/std/sync/mpsc/"
+"struct.Receiver.html#method.recv) を呼び出すまで、それぞれの送信は現在のス"
+"レッドをブロックします。"
 
 #: src/concurrency/send-sync.md
 msgid "Send"
@@ -28754,13 +28768,12 @@ msgid "Sync"
 msgstr "Sync"
 
 #: src/concurrency/send-sync/marker-traits.md
-#, fuzzy
 msgid ""
 "How does Rust know to forbid shared access across threads? The answer is in "
 "two traits:"
 msgstr ""
-"Rustはどのようにスレッド間での値の共有アクセスを禁止するのでしょうか？その答"
-"えとなるのが、以下の２つのトレイトです："
+"Rust はどのようにしてスレッド間での共有アクセスを禁止すべきだとわかるのでしょ"
+"うか？その答えは、以下の 2 つのトレイトにあります："
 
 #: src/concurrency/send-sync/marker-traits.md
 msgid ""
@@ -28779,17 +28792,16 @@ msgstr ""
 "をまたいで`&T`のムーブが安全に行える場合、型`T`は`Sync`である。"
 
 #: src/concurrency/send-sync/marker-traits.md
-#, fuzzy
 msgid ""
 "`Send` and `Sync` are [unsafe traits](../../unsafe-rust/unsafe-traits.md). "
 "The compiler will automatically derive them for your types as long as they "
 "only contain `Send` and `Sync` types. You can also implement them manually "
 "when you know it is valid."
 msgstr ""
-"`Send`と`Sync`は[unsafeなトレイト](../unsafe/unsafe-traits.md)です。 あなたが"
-"新たに定義する型が`Send`と`Sync`の型のみを含む場合、コンパイラはその新しい型"
-"に対して`Send`と`Sync`を自動的に導出します。そうでなくても妥当であるならば"
-"`Send`と`Sync`を自分自身で実装することもできます。"
+"`Send` と `Sync` は [アンセーフなトレイト](../../unsafe-rust/unsafe-"
+"traits.md) です。型が `Send` と `Sync` の型のみを含む場合、コンパイラはその型"
+"に対してこれらを自動的に導出します。妥当であることがわかっている場合は、手動"
+"で実装することもできます。"
 
 #: src/concurrency/send-sync/marker-traits.md
 msgid ""
@@ -28899,9 +28911,8 @@ msgid "`Mutex<T>`: Explicitly thread-safe via internal locking."
 msgstr "`Mutex<T>`: 内部ロックにより明示的にスレッドセーフ。"
 
 #: src/concurrency/send-sync/examples.md
-#, fuzzy
 msgid "`mpsc::Sender<T>`: As of 1.72.0."
-msgstr "`mpsc::Sender<T>`"
+msgstr "`mpsc::Sender<T>`: 1.72.0 以降。"
 
 #: src/concurrency/send-sync/examples.md
 msgid "`AtomicBool`, `AtomicU8`, ...: Uses special atomic instructions."
@@ -28944,24 +28955,24 @@ msgid "`!Send + Sync`"
 msgstr "`!Send + Sync`"
 
 #: src/concurrency/send-sync/examples.md
-#, fuzzy
 msgid ""
 "These types are safe to access (via shared references) from multiple "
 "threads, but they cannot be moved to another thread:"
 msgstr ""
-"このような型はスレッドセーフですが、別のスレッドにムーブすることはできませ"
-"ん："
+"以下の型は（共有参照を介して）複数のスレッドから安全にアクセスできますが、別"
+"のスレッドにムーブすることはできません："
 
 #: src/concurrency/send-sync/examples.md
-#, fuzzy
 msgid ""
 "`MutexGuard<T>`: Uses OS level primitives which must be deallocated on the "
 "thread which created them. However, an already-locked mutex can have its "
 "guarded variable read by any thread with which the guard is shared (unless "
 "`T` itself is `!Sync`)."
 msgstr ""
-"`MutexGuard<T>`: プリミティブを作成したスレッド自身により、割り当てを解除され"
-"るべきであるようなOSレベルのプリミティブを利用。"
+"`MutexGuard<T>`: 作成したスレッド上で解放されなければならない OS レベルのプリ"
+"ミティブを使用します。ただし、すでにロックされたミューテックスについては、"
+"ガードを共有しているどのスレッドからでも、保護された変数を読み取ることができ"
+"ます（`T` 自体が `!Sync` である場合を除きます）。"
 
 #: src/concurrency/send-sync/examples.md
 msgid "`!Send + !Sync`"
@@ -28994,26 +29005,24 @@ msgid "Arc"
 msgstr "Arc"
 
 #: src/concurrency/shared-state/arc.md
-#, fuzzy
 msgid ""
 "[`Arc<T>`](https://doc.rust-lang.org/std/sync/struct.Arc.html) allows "
 "shared, read-only ownership via `Arc::clone`:"
 msgstr ""
-"[`Arc<T>`](https://doc.rust-lang.org/std/sync/struct.Arc.html) は読み取り専用"
-"の共有アクセスを`Arc::clone`により可能にします："
+"[`Arc<T>`](https://doc.rust-lang.org/std/sync/struct.Arc.html) は、"
+"`Arc::clone` による読み取り専用の共有所有権を可能にします："
 
 #: src/concurrency/shared-state/arc.md
 msgid "/// A struct that prints which thread drops it.\n"
-msgstr ""
+msgstr "/// どのスレッドがドロップしたかを出力する構造体。\n"
 
 #: src/concurrency/shared-state/arc.md
-#, fuzzy
 msgid "\"Dropped by {:?}\""
-msgstr "\"Dropping {}\""
+msgstr "\"Dropped by {:?}\""
 
 #: src/concurrency/shared-state/arc.md
 msgid "// Sleep for 0-500ms.\n"
-msgstr ""
+msgstr "// 0～500ms スリープします。\n"
 
 #: src/concurrency/shared-state/arc.md
 msgid "\"{thread_id:?}: {v:?}\""
@@ -29021,12 +29030,13 @@ msgstr "\"{thread_id:?}: {v:?}\""
 
 #: src/concurrency/shared-state/arc.md
 msgid "// Now only the spawned threads will hold clones of `v`.\n"
-msgstr ""
+msgstr "// これで、生成されたスレッドだけが `v` のクローンを保持します。\n"
 
 #: src/concurrency/shared-state/arc.md
 msgid ""
 "// When the last spawned thread finishes, it will drop `v`'s contents.\n"
 msgstr ""
+"// 最後に生成されたスレッドが終了すると、`v` の中身がドロップされます。\n"
 
 #: src/concurrency/shared-state/arc.md
 msgid ""
@@ -29066,7 +29076,6 @@ msgid "`std::sync::Weak` can help."
 msgstr "`std::sync::Weak` が役立ちます。"
 
 #: src/concurrency/shared-state/mutex.md
-#, fuzzy
 msgid ""
 "[`Mutex<T>`](https://doc.rust-lang.org/std/sync/struct.Mutex.html) ensures "
 "mutual exclusion _and_ allows mutable access to `T` behind a read-only "
@@ -29074,8 +29083,9 @@ msgid ""
 "mutability.md)):"
 msgstr ""
 "[`Mutex<T>`](https://doc.rust-lang.org/std/sync/struct.Mutex.html) は相互排他"
-"を保証し、 _かつ_ 読み取り専用のインターフェースの裏側で `T` へのミュータブル"
-"なアクセスを可能にします："
+"を保証し、_かつ_ 読み取り専用のインターフェースの背後で `T` へのミュータブル"
+"なアクセスを可能にします（[内部可変性](../../borrowing/interior-"
+"mutability.md) の別の形態です）："
 
 #: src/concurrency/shared-state/mutex.md
 msgid "\"v: {:?}\""
@@ -29117,13 +29127,12 @@ msgstr ""
 "ます。"
 
 #: src/concurrency/shared-state/mutex.md
-#, fuzzy
 msgid ""
 "`Mutex<T>` implements both `Send` and `Sync` if and only if `T` implements "
 "`Send`."
 msgstr ""
-"`T`が`Send`を実装している場合で、かつその場合に限り、`Mutex<T>` は`Send`と"
-"`Sync`の両方を実装します。"
+"`T` が `Send` を実装している場合に限り、`Mutex<T>` は `Send` と `Sync` の両方"
+"を実装します。"
 
 #: src/concurrency/shared-state/mutex.md
 msgid "A read-write lock counterpart: `RwLock`."
@@ -29185,13 +29194,13 @@ msgstr ""
 "めによく見られるパターンです。"
 
 #: src/concurrency/shared-state/example.md
-#, fuzzy
 msgid ""
 "`v: Arc<_>` needs to be cloned to make a new reference for each new spawned "
 "thread. Note `move` was added to the lambda signature."
 msgstr ""
-"`v: Arc<_>`は別のスレッドにムーブされる前に、`v2`としてクローンされる必要があ"
-"ります。`move` がラムダ式に追加されたことに注意してください。"
+"`v: Arc<_>` は、新しく生成されるスレッドごとに新しい参照を作るためにクローン"
+"する必要があります。ラムダのシグネチャに `move` が追加されたことに注意してく"
+"ださい。"
 
 #: src/concurrency/shared-state/example.md
 msgid ""
@@ -29202,16 +29211,14 @@ msgstr ""
 
 #: src/concurrency/sync-exercises.md src/concurrency/async-exercises.md
 #: src/unsafe-deep-dive/introduction.md
-#, fuzzy
 msgid "This segment should take about 1 hour and 10 minutes. It contains:"
-msgstr "このセグメントの所要時間は約 1 時間 10 分です"
+msgstr "このセグメントの所要時間は約 1 時間 10 分です。"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 msgid "The dining philosophers problem is a classic problem in concurrency:"
 msgstr "食事する哲学者の問題は、並行性に関する古典的な問題です。"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
-#, fuzzy
 msgid ""
 "Five philosophers dine together at the same table. Each philosopher has "
 "their own place at the table. There is a chopstick between each plate. The "
@@ -29222,13 +29229,13 @@ msgid ""
 "are thinking, not eating. After an individual philosopher finishes eating, "
 "they will put down both chopsticks."
 msgstr ""
-"5 人の哲学者が同じテーブルで食事をしています。それぞれの哲学者がテーブルの定"
-"位置に座り、皿の間にはフォークが 1 本置かれています。提供される料理はスパゲッ"
-"ティで、2 本のフォークで食べる必要があります。哲学者は思索と食事を交互に繰り"
-"返すことしかできません。さらに、哲学者は左右両方のフォークを持っている場合に"
-"のみ、スパゲッティを食べることができます。したがって、2 つのフォークは、両隣"
-"の哲学者が食べるのではなく考えている場合にのみ使用できます。それぞれの哲学者"
-"は、食べ終わった後、両方のフォークを置きます。"
+"5 人の哲学者が同じテーブルで食事をしています。それぞれの哲学者はテーブルに自"
+"分の席を持っています。皿と皿の間には箸が 1 本ずつ置かれています。提供される料"
+"理はスパゲッティで、食べるには 2 本の箸が必要です。哲学者は考えることと食べる"
+"ことを交互に行うことしかできません。さらに、哲学者は左右両方の箸を持っている"
+"ときにだけスパゲッティを食べることができます。したがって、2 本の箸が使えるの"
+"は、両隣の哲学者が食べておらず考えているときだけです。それぞれの哲学者は、食"
+"べ終わると両方の箸を置きます。"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 msgid ""
@@ -29242,14 +29249,13 @@ msgstr ""
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/dining-philosophers.md
-#, fuzzy
 msgid ""
 "// left_chopstick: ...\n"
 "    // right_chopstick: ...\n"
 "    // thoughts: ...\n"
 msgstr ""
-"// left_fork: ...\n"
-"    // right_fork: ...\n"
+"// left_chopstick: ...\n"
+"    // right_chopstick: ...\n"
 "    // thoughts: ...\n"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
@@ -29260,9 +29266,8 @@ msgid "\"Eureka! {} has a new idea!\""
 msgstr "\"Eureka! {} has a new idea!\""
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
-#, fuzzy
 msgid "// Pick up chopsticks...\n"
-msgstr "// Pick up forks...\n"
+msgstr "// 箸を取る...\n"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 #: src/concurrency/sync-exercises/solutions.md
@@ -29303,9 +29308,8 @@ msgstr "\"Pythagoras\""
 #: src/concurrency/sync-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/solutions.md
-#, fuzzy
 msgid "// Create chopsticks\n"
-msgstr "// フォークを作成する\n"
+msgstr "// 箸を作成する\n"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/dining-philosophers.md
@@ -29328,7 +29332,6 @@ msgid "You can use the following `Cargo.toml`:"
 msgstr "次の `Cargo.toml` を使用できます。"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
-#, fuzzy
 msgid ""
 "```toml\n"
 "[package]\n"
@@ -29341,7 +29344,7 @@ msgstr ""
 "[package]\n"
 "name = \"dining-philosophers\"\n"
 "version = \"0.1.0\"\n"
-"edition = \"2021\"\n"
+"edition = \"2024\"\n"
 "```"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
@@ -29349,12 +29352,16 @@ msgid ""
 "Encourage students to focus first on implementing a solution that \"mostly\" "
 "works."
 msgstr ""
+"まずは「おおむね」動作する解答を実装することに集中するよう、受講者に促してく"
+"ださい。"
 
 #: src/concurrency/sync-exercises/dining-philosophers.md
 msgid ""
 "The deadlock in the simplest solution is a general concurrency problem and "
 "highlights that Rust does not automatically prevent this sort of bug."
 msgstr ""
+"最も単純な解答で起こるデッドロックは並行性に関する一般的な問題であり、Rust が"
+"この種のバグを自動的に防ぐわけではないことを示しています。"
 
 #: src/concurrency/sync-exercises/link-checker.md
 msgid ""
@@ -29375,11 +29382,16 @@ msgid ""
 "(https://docs.rs/scraper/). Finally, we'll need some way of handling errors, "
 "we will use [`thiserror`](https://docs.rs/thiserror/)."
 msgstr ""
+"そのためには、[`reqwest`](https://docs.rs/reqwest/) のような HTTP クライアン"
+"トが必要です。また、リンクを見つける方法も必要ですが、これには [`scraper`]"
+"(https://docs.rs/scraper/) を使えます。最後に、エラーを処理する方法も必要なの"
+"で、[`thiserror`](https://docs.rs/thiserror/) を使います。"
 
 #: src/concurrency/sync-exercises/link-checker.md
-#, fuzzy
 msgid "Create a new Cargo project and `reqwest` it as a dependency with:"
-msgstr "新しい Cargo プロジェクトを作成し、次の依存関係を追加します。"
+msgstr ""
+"新しい Cargo プロジェクトを作成し、次のようにして `reqwest` を依存関係として"
+"追加します："
 
 #: src/concurrency/sync-exercises/link-checker.md
 msgid ""
@@ -29396,7 +29408,6 @@ msgstr ""
 "`cargo add` の呼び出しにより、`Cargo.toml` ファイルは次のように更新されます。"
 
 #: src/concurrency/sync-exercises/link-checker.md
-#, fuzzy
 msgid ""
 "```toml\n"
 "[package]\n"
@@ -29415,14 +29426,13 @@ msgstr ""
 "[package]\n"
 "name = \"link-checker\"\n"
 "version = \"0.1.0\"\n"
-"edition = \"2021\"\n"
+"edition = \"2024\"\n"
 "publish = false\n"
 "\n"
 "[dependencies]\n"
-"reqwest = { version = \"0.11.12\", features = [\"blocking\", \"rustls-"
-"tls\"] }\n"
-"scraper = \"0.13.0\"\n"
-"thiserror = \"1.0.37\"\n"
+"reqwest = { version = \"0.13.1\", features = [\"blocking\"] }\n"
+"scraper = \"0.25.0\"\n"
+"thiserror = \"2.0.18\"\n"
 "```"
 
 #: src/concurrency/sync-exercises/link-checker.md
@@ -29504,30 +29514,31 @@ msgid ""
 "is to get stuck on some \"real\" issue and work through it with the support "
 "of other students or the instructor."
 msgstr ""
+"これは複雑な演習で、受講者が他の演習よりも大きなプロジェクトに取り組む機会を"
+"与えることを目的としています。この演習の成功条件は、何らかの「現実の」問題に"
+"行き詰まり、他の受講者や講師のサポートを受けながらそれを乗り越えることです。"
 
 #: src/concurrency/sync-exercises/solutions.md
 msgid "\"{} is trying to eat\""
 msgstr "\"{} is trying to eat\""
 
 #: src/concurrency/sync-exercises/solutions.md
-#, fuzzy
 msgid ""
 "// To avoid a deadlock, we have to break the symmetry\n"
 "        // somewhere. This will swap the chopsticks without deinitializing\n"
 "        // either of them.\n"
 msgstr ""
 "// デッドロックを避けるために、どこかで対称性を\n"
-"        // 崩す必要があります。下記のコードでは、\n"
-"        // 領域を開放することなく2つのフォークを交換します。\n"
+"        // 崩す必要があります。これにより、どちらの箸も\n"
+"        // 初期化解除することなく 2 本の箸を入れ替えます。\n"
 
 #: src/concurrency/sync-exercises/solutions.md
 msgid "\"{thought}\""
 msgstr "\"{thought}\""
 
 #: src/concurrency/sync-exercises/solutions.md
-#, fuzzy
 msgid "Link Checker"
-msgstr "マルチスレッド・リンクチェッカー"
+msgstr "リンクチェッカー"
 
 #: src/concurrency/sync-exercises/solutions.md
 msgid ""
@@ -29545,6 +29556,7 @@ msgstr ""
 #: src/concurrency/sync-exercises/solutions.md
 msgid "// To multiplex the non-cloneable Receiver, wrap it in Arc<Mutex<_>>.\n"
 msgstr ""
+"// クローンできない Receiver を多重化するために、Arc<Mutex<_>> で包みます。\n"
 
 #: src/concurrency/sync-exercises/solutions.md
 msgid "// The sender got dropped. No more commands coming in.\n"
@@ -29604,22 +29616,20 @@ msgstr ""
 "います。"
 
 #: src/concurrency/welcome-async.md
-#, fuzzy
 msgid ""
 "JavaScript's `Promise` is similar, but again callback-based. The language "
 "runtime implements the event loop, so the majority of the details of Promise "
 "resolution are hidden."
 msgstr ""
-"JavaScriptの`Promise`は似ているものの、これもまたもやコールバックに基づきま"
-"す。 この言語のランタイムはイベントループにより実装されているため、多くの"
-"Promise解決の詳細は隠されています。"
+"JavaScript の `Promise` も似ていますが、これもまたコールバックに基づいていま"
+"す。言語のランタイムがイベントループを実装しているため、Promise の解決の詳細"
+"の大部分は隠されています。"
 
 #: src/concurrency/welcome-async.md
-#, fuzzy
 msgid ""
 "Including 10 minute breaks, this session should take about 3 hours and 30 "
 "minutes. It contains:"
-msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 2 時間 20 分です。"
+msgstr "このセッションの所要時間は、10 分間の休憩を入れて約 3 時間 30 分です。"
 
 #: src/concurrency/async.md
 msgid "async/await"
@@ -29646,12 +29656,12 @@ msgstr ""
 "れうる操作や本物の並行処理はここには含まれません。"
 
 #: src/concurrency/async/async-await.md
-#, fuzzy
 msgid ""
 "The \"async\" keyword is syntactic sugar. The compiler replaces the return "
 "type with a future."
 msgstr ""
-"「async」キーワードは糖衣構文です。コンパイラは返り値をfutureに置き換えます。"
+"「async」キーワードは糖衣構文です。コンパイラは戻り値の型を future に置き換え"
+"ます。"
 
 #: src/concurrency/async/async-await.md
 msgid ""
@@ -29662,13 +29672,12 @@ msgstr ""
 "示を含めない限り、`main`をasyncにすることはできません。"
 
 #: src/concurrency/async/async-await.md
-#, fuzzy
 msgid ""
 "You need an executor to run async code. `block_on` blocks the current thread "
 "until the provided future has run to completion."
 msgstr ""
-"非同期のコードを実行するためには、エグゼキュータが必要です。`block_on`は、与"
-"えられたfutureが最後まで実行されるまで、現在のスレッドをブロックします。"
+"非同期のコードを実行するには、エグゼキュータが必要です。`block_on` は、与えら"
+"れた future が完了するまで現在のスレッドをブロックします。"
 
 #: src/concurrency/async/async-await.md
 msgid ""
@@ -29679,13 +29688,12 @@ msgstr ""
 "は現在のスレッドをブロックしません。"
 
 #: src/concurrency/async/async-await.md
-#, fuzzy
 msgid ""
 "`.await` can only be used inside an `async` function (or block; these are "
 "introduced later)."
 msgstr ""
-"`.await`はasync関数(またはasync ブロック)の中でのみ利用できます。(async関数・"
-"ブロックについては後ほど紹介します。)"
+"`.await` は `async` 関数（またはブロック。これらは後で紹介します）の中でのみ"
+"使用できます。"
 
 #: src/concurrency/async/futures.md
 msgid ""
@@ -29728,24 +29736,22 @@ msgstr ""
 "な実装を見るにはリンクをクリックしてください。"
 
 #: src/concurrency/async/futures.md
-#, fuzzy
 msgid ""
 "`Context` allows a Future to schedule itself to be polled again when an "
 "event such as a timeout occurs."
 msgstr ""
-"`Context`は、特定のイベントが発生した時に、Futureが自分自身を再びポーリングさ"
-"れるようにスケジュールすることを可能にします。"
+"`Context` により、Future はタイムアウトなどのイベントが発生したときに再びポー"
+"リングされるよう、自分自身をスケジュールできます。"
 
 #: src/concurrency/async/futures.md
-#, fuzzy
 msgid ""
 "`Pin` ensures that the Future isn't moved in memory, so that pointers into "
 "that future remain valid. This is required to allow references to remain "
 "valid after an `.await`. We will address `Pin` in the \"Pitfalls\" segment."
 msgstr ""
-"`Pin`はfutureへのポインタが有効であり続けるために、Futureがメモリの中で移動さ"
-"れないことを確実にします。これは、参照が`.await`の後に有効であり続けるために"
-"必要です。"
+"`Pin` は、Future がメモリ内でムーブされないことを保証し、その future へのポイ"
+"ンタが有効であり続けるようにします。これは、`.await` の後も参照が有効であり続"
+"けるために必要です。`Pin` については「落とし穴」のセグメントで取り上げます。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
@@ -29754,61 +29760,67 @@ msgid ""
 "details of this transform are complex, but it is beneficial to have a "
 "schematic understanding of what is happening. The following function"
 msgstr ""
+"Rust は、async 関数やブロックを、`Future` を実装する隠れた型に変換し、ステー"
+"トマシンを使って関数の進行状況を追跡します。この変換の詳細は複雑ですが、何が"
+"起きているかを大まかに理解しておくと役に立ちます。次の関数は"
 
 #: src/concurrency/async/state-machine.md
 msgid "/// Sum two D10 rolls plus a modifier.\n"
-msgstr ""
+msgstr "/// 10 面ダイスを 2 回振った合計に修正値を加えます。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid "is transformed to something like"
-msgstr ""
+msgstr "次のようなものに変換されます"
 
 #: src/concurrency/async/state-machine.md
 msgid "// Function has not begun yet.\n"
-msgstr ""
+msgstr "// 関数はまだ開始されていません。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid "// Waiting for first `.await` to complete.\n"
-msgstr ""
+msgstr "// 最初の `.await` の完了を待っています。\n"
 
 #: src/concurrency/async/state-machine.md
-#, fuzzy
 msgid "// Waiting for second `.await` to complete.\n"
-msgstr "// 割り込みなしで 3 秒間待機します。\n"
+msgstr "// 2 番目の `.await` の完了を待っています。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid "// Create future for first dice roll.\n"
-msgstr ""
+msgstr "// 1 回目のダイスロールの future を作成します。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid "// Poll sub-future for first dice roll.\n"
-msgstr ""
+msgstr "// 1 回目のダイスロールのサブ future をポーリングします。\n"
 
 #: src/concurrency/async/state-machine.md
-#, fuzzy
 msgid "// Create future for second roll.\n"
-msgstr "/// 送信可。\n"
+msgstr "// 2 回目のロールの future を作成します。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid "// Poll sub-future for second dice roll.\n"
-msgstr ""
+msgstr "// 2 回目のダイスロールのサブ future をポーリングします。\n"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "This example is illustrative, and isn't an accurate representation of the "
 "Rust compiler's transformation. The important things to notice here are:"
 msgstr ""
+"この例は説明のためのもので、Rust コンパイラによる変換を正確に表したものではあ"
+"りません。ここで注目すべき重要な点は次のとおりです："
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "Calling an async function does nothing but construct and return a future."
 msgstr ""
+"async 関数を呼び出しても、future を作成して返す以外には何も行いません。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "All local variables are stored in the function's future, using an enum to "
 "identify where execution is currently suspended."
 msgstr ""
+"すべてのローカル変数は関数の future に格納され、列挙型を使って現在どこで実行"
+"が中断されているかを識別します。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
@@ -29817,18 +29829,25 @@ msgid ""
 "handles that updated state, polling the future until it returns "
 "`Poll::Ready`."
 msgstr ""
+"async 関数内の `.await` は、すべての生存中の変数と待機対象の future を含む新"
+"しい状態に変換されます。その後、`loop` がその更新された状態を処理し、future "
+"が `Poll::Ready` を返すまでポーリングします。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "Execution continues eagerly until a `Poll::Pending` occurs. In this simple "
 "example, every future is ready immediately."
 msgstr ""
+"実行は `Poll::Pending` が発生するまで先へ進み続けます。この単純な例では、すべ"
+"ての future がすぐに完了します。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "`main` contains a naïve executor, which just busy-loops until the future is "
 "ready. We will discuss real executors shortly."
 msgstr ""
+"`main` には素朴なエグゼキュータが含まれており、future が完了するまで単にビ"
+"ジーループします。実際のエグゼキュータについてはこの後すぐに説明します。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
@@ -29837,23 +29856,30 @@ msgid ""
 "functions it calls. This can result in unexpectedly large compiler-generated "
 "`Future` types."
 msgstr ""
+"深くネストした async 関数のスタックに対する `Future` のデータ構造を想像してみ"
+"てください。各関数の `Future` には、その関数が呼び出す関数の `Future` 構造体"
+"が含まれます。その結果、コンパイラが生成する `Future` 型が予想外に大きくなる"
+"ことがあります。"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "This also means that recursive async functions are challenging. Compare to "
 "the common error of building recursive type, such as"
 msgstr ""
+"これは、再帰的な async 関数が難しいことも意味します。再帰的な型を作るときによ"
+"くある次のようなエラーと比べてみてください"
 
 #: src/concurrency/async/state-machine.md
 msgid ""
 "The fix for a recursive type is to add a layer of indrection, such as with "
 "`Box`. Similarly, a recursive async function must box the recursive future:"
 msgstr ""
+"再帰的な型を修正するには、`Box` などで間接参照の層を追加します。同様に、再帰"
+"的な async 関数では再帰する future をボックス化する必要があります："
 
 #: src/concurrency/async/state-machine.md
-#, fuzzy
 msgid "\"{n}\""
-msgstr "\"{n}! = {}\""
+msgstr "\"{n}\""
 
 #: src/concurrency/async/runtimes.md
 msgid ""
@@ -29866,20 +29892,18 @@ msgstr ""
 "ありませんが、いくつかのランタイムの選択肢があります: "
 
 #: src/concurrency/async/runtimes.md
-#, fuzzy
 msgid ""
 "[Tokio](https://tokio.rs/): performant, with a well-developed ecosystem of "
 "functionality like [Hyper](https://hyper.rs/) for HTTP or [Tonic](https://"
 "github.com/hyperium/tonic) for gRPC."
 msgstr ""
-"[Tokio](https://tokio.rs/) - パフォーマンスが高い。HTTP向けの[Hyper](https://"
-"hyper.rs/)やgRPC向けの[Tonic](https://github.com/hyperium/tonic)のような発達"
-"したエコシステムも持っている"
+"[Tokio](https://tokio.rs/): パフォーマンスが高い。HTTP 向けの [Hyper]"
+"(https://hyper.rs/) や gRPC 向けの [Tonic](https://github.com/hyperium/"
+"tonic) のような機能の、よく発達したエコシステムを持つ。"
 
 #: src/concurrency/async/runtimes.md
-#, fuzzy
 msgid "[smol](https://docs.rs/smol/latest/smol/): simple and lightweight"
-msgstr "[smol](https://docs.rs/smol/latest/smol/) - シンプルで軽量"
+msgstr "[smol](https://docs.rs/smol/latest/smol/): シンプルで軽量"
 
 #: src/concurrency/async/runtimes.md
 msgid ""
@@ -29914,9 +29938,8 @@ msgstr ""
 "とも最後まで実行されるJavaScriptのPromiseとは異なります。"
 
 #: src/concurrency/async/runtimes/tokio.md
-#, fuzzy
 msgid "Tokio provides:"
-msgstr "Tokioは以下を提供します: "
+msgstr "Tokio は以下を提供します："
 
 #: src/concurrency/async/runtimes/tokio.md
 msgid "A multi-threaded runtime for executing asynchronous code."
@@ -29957,15 +29980,14 @@ msgid "**Further exploration:**"
 msgstr "**さらなる探求:**"
 
 #: src/concurrency/async/runtimes/tokio.md
-#, fuzzy
 msgid ""
 "Why does `count_to` not get to 10? This is an example of async cancellation. "
 "`tokio::spawn` returns a handle which can be awaited to wait until it "
 "finishes."
 msgstr ""
-"どうして`count_to`は（通常は）10に辿り着かないのでしょうか？これは非同期処理"
-"のキャンセルの例です。 `tokio::spawn`は完了まで待機するためのハンドラを返しま"
-"す。"
+"どうして `count_to` は 10 に辿り着かないのでしょうか？これは非同期処理のキャ"
+"ンセルの例です。`tokio::spawn` は、完了するまで待機するために await できるハ"
+"ンドルを返します。"
 
 #: src/concurrency/async/runtimes/tokio.md
 msgid "Try `count_to(10).await` instead of spawning."
@@ -30045,15 +30067,13 @@ msgstr ""
 "いますか？それらのfutureは何ですか？"
 
 #: src/concurrency/async/tasks.md
-#, fuzzy
 msgid ""
 "This is the first time we've seen an `async` block. This is similar to a "
 "closure, but does not take any arguments. Its return value is a Future, "
 "similar to an `async fn`."
 msgstr ""
-"私たちが`async`ブロックを見かけるのは初めてですね。これはクロージャと似ていま"
-"すが、何も引数は取りません。この返り値はFutureであり、`async fn`と似ていま"
-"す。"
+"`async` ブロックが登場するのはこれが初めてです。これはクロージャに似ています"
+"が、引数を取りません。その戻り値は、`async fn` と同様に Future です。"
 
 #: src/concurrency/async/tasks.md
 msgid ""
@@ -30064,12 +30084,10 @@ msgstr ""
 "善してみましょう。"
 
 #: src/concurrency/async-control-flow/channels.md
-#, fuzzy
 msgid ""
 "Several crates have support for asynchronous channels. For instance `tokio`:"
 msgstr ""
-"いくつかのクレートは`async`/`await`をサポートしています。例えば、`tokio`チャ"
-"ネルは:"
+"いくつかのクレートが非同期チャネルをサポートしています。例えば `tokio` です："
 
 #: src/concurrency/async-control-flow/channels.md
 msgid "\"Received {count} pings so far.\""
@@ -30098,13 +30116,12 @@ msgstr ""
 "ましょう。"
 
 #: src/concurrency/async-control-flow/channels.md
-#, fuzzy
 msgid ""
 "Overall, the interface is similar to the `sync` channels as seen in the "
 "[morning class](../channels.md)."
 msgstr ""
-"一般的に、このインターフェースは、[朝の講座](concurrency/channels.md)で見られ"
-"たような`sync`チャネルに似ています。"
+"全体として、このインターフェースは [午前の講座](../channels.md) で見た "
+"`sync` チャネルに似ています。"
 
 #: src/concurrency/async-control-flow/channels.md
 msgid "Try removing the `std::mem::drop` call. What happens? Why?"
@@ -30158,9 +30175,8 @@ msgid "\"BAD_URL\""
 msgstr "\"BAD_URL\""
 
 #: src/concurrency/async-control-flow/join.md
-#, fuzzy
 msgid "\"{page_sizes_dict:?}\""
-msgstr "\"{page_counts:#?}\""
+msgstr "\"{page_sizes_dict:?}\""
 
 #: src/concurrency/async-control-flow/join.md
 msgid ""
@@ -30174,13 +30190,12 @@ msgstr ""
 "される予定です。"
 
 #: src/concurrency/async-control-flow/join.md
-#, fuzzy
 msgid ""
 "The risk of `join` is that one of the futures may never resolve, this would "
 "cause your program to stall."
 msgstr ""
-"`join`のリスクは、複数のfutureのうちの１つでも解決されないとプログラムがス"
-"トールしてしまうということです。 "
+"`join` のリスクは、future の 1 つが永遠に解決されない可能性があることです。そ"
+"うなるとプログラムがストールしてしまいます。"
 
 #: src/concurrency/async-control-flow/join.md
 msgid ""
@@ -30209,7 +30224,6 @@ msgstr ""
 "return_when=asyncio.FIRST_COMPLETED)`と比べることができます。"
 
 #: src/concurrency/async-control-flow/select.md
-#, fuzzy
 msgid ""
 "Similar to a match expression, the body of `select!` has a number of arms, "
 "each of the form `pattern = future => expression`. When a `future` is ready, "
@@ -30217,28 +30231,27 @@ msgid ""
 "run with the resulting variables bound. The `expression` result becomes the "
 "result of the `select!` macro."
 msgstr ""
-"Matchステートメントのように、`select!`の本体にはいくつかの 「腕」があり、それ"
-"ぞれは`pattern = future => statement`の形をとっています。 `future`の準備が"
-"整った時、その`statement`は`future`の結果に紐づく`pattern`の変数を用いて実行"
-"されます。"
+"match 式と同様に、`select!` の本体にはいくつかのアームがあり、それぞれ "
+"`pattern = future => expression` の形をしています。`future` の準備ができる"
+"と、その戻り値が `pattern` によって分解されます。そして、その結果の変数が束縛"
+"された状態で `expression` が実行されます。`expression` の結果が `select!` マ"
+"クロの結果になります。"
 
 #: src/concurrency/async-control-flow/select.md
-#, fuzzy
 msgid "\"got: {msg}\""
-msgstr "\"Main: got {msg}\""
+msgstr "\"got: {msg}\""
 
 #: src/concurrency/async-control-flow/select.md
 msgid "\"timeout\""
-msgstr ""
+msgstr "\"timeout\""
 
 #: src/concurrency/async-control-flow/select.md
-#, fuzzy
 msgid "\"Failed to send greeting\""
-msgstr "\"Failed to send ping.\""
+msgstr "\"Failed to send greeting\""
 
 #: src/concurrency/async-control-flow/select.md
 msgid "\"Listener failed\""
-msgstr ""
+msgstr "\"Listener failed\""
 
 #: src/concurrency/async-control-flow/select.md
 msgid ""
@@ -30246,6 +30259,9 @@ msgid ""
 "or for a timeout. Change the `sleep` to sleep longer to see it fail. Why "
 "does the `send` also fail in this situation?"
 msgstr ""
+"ここでの `listener` async ブロックはよくある形式で、何らかの非同期イベントか"
+"タイムアウトを待ちます。`sleep` をより長くスリープするように変更して、失敗す"
+"ることを確認してください。この状況で `send` も失敗するのはなぜでしょうか？"
 
 #: src/concurrency/async-control-flow/select.md
 msgid ""
@@ -30253,18 +30269,20 @@ msgid ""
 "where a task reacts to events in a loop. That has some pitfalls, which will "
 "be discussed in the next segment."
 msgstr ""
+"`select!` は、タスクがループ内でイベントに反応する「アクター」アーキテクチャ"
+"において、ループの中でもよく使われます。これにはいくつかの落とし穴があり、次"
+"のセグメントで説明します。"
 
 #: src/concurrency/async-pitfalls.md
-#, fuzzy
 msgid ""
 "Async / await provides convenient and efficient abstraction for concurrent "
 "asynchronous programming. However, the async/await model in Rust also comes "
 "with its share of pitfalls and footguns. We illustrate some of them in this "
 "chapter."
 msgstr ""
-"async / await は、同時実行非同期プログラミングのための便利で効率的な抽象化を"
-"提供します。しかし、Rust の async / await モデルには、注意点や誤用されやすい"
-"機能もいくつかあるため、この章ではその点について説明します。"
+"async / await は、並行非同期プログラミングのための便利で効率的な抽象化を提供"
+"します。しかし、Rust の async / await モデルには、それなりの落とし穴や誤用し"
+"やすい点もあります。この章ではそのいくつかを説明します。"
 
 #: src/concurrency/async-pitfalls.md
 msgid "Pin"
@@ -30327,7 +30345,6 @@ msgstr ""
 "Future に変換します。"
 
 #: src/concurrency/async-pitfalls/blocking-executor.md
-#, fuzzy
 msgid ""
 "You should not think of tasks as OS threads. They do not map 1 to 1 and "
 "executors will allow multiple tasks to run on a single OS thread. This is "
@@ -30336,13 +30353,12 @@ msgid ""
 "OS threads (e.g., CUDA). Prefer `tokio::task::spawn_blocking` in such "
 "situations."
 msgstr ""
-"タスクは OS スレッドとはみなすべきではありません。これらは 1 対 1 に対応して"
-"おらず、ほとんどのエグゼキュータは、単一の OS スレッドで多くのタスクを実行す"
-"ることを許可します。これは、FFI を介して他のライブラリとやり取りする場合に特"
-"に問題となります。FFI では、そのライブラリはスレッド ローカル ストレージに依"
-"存しているか、特定の OS スレッド（CUDA など）にマッピングされている可能性があ"
-"るためです。そのような場合は `tokio::task::spawn_blocking` を使用することをお"
-"すすめします。"
+"タスクを OS スレッドとして考えるべきではありません。これらは 1 対 1 に対応し"
+"ておらず、エグゼキュータは単一の OS スレッドで複数のタスクを実行することを許"
+"可します。これは、FFI を介して他のライブラリとやり取りする場合に特に問題とな"
+"ります。そのライブラリがスレッドローカルストレージに依存していたり、特定の "
+"OS スレッドに対応付けられていたり（CUDA など）する可能性があるためです。その"
+"ような場合は `tokio::task::spawn_blocking` を使用することをおすすめします。"
 
 #: src/concurrency/async-pitfalls/blocking-executor.md
 msgid ""
@@ -30360,6 +30376,10 @@ msgid ""
 "references (pointers) to other local variables. To ensure those remain "
 "valid, the future can never be moved to a different memory location."
 msgstr ""
+"async 関数やブロックは、`Future` を実装し、すべてのローカル変数を含む型を作成"
+"することを思い出してください。それらの変数の中には、他のローカル変数への参照"
+"（ポインタ）を保持するものがあります。それらが有効であり続けるようにするた"
+"め、future を別のメモリ位置にムーブすることは決してできません。"
 
 #: src/concurrency/async-pitfalls/pin.md
 msgid ""
@@ -30453,15 +30473,14 @@ msgstr ""
 "す。"
 
 #: src/concurrency/async-pitfalls/pin.md
-#, fuzzy
 msgid ""
 "This compiles, but once the timeout expires it is `Poll::Ready` on every "
 "iteration (a fused future would help with this). Update to reset "
 "`timeout_fut` every time it expires:"
 msgstr ""
-"これはコンパイルされますが、タイムアウトになると、すべての反復処理で "
-"`Poll::Ready` になります（融合された Future がこれに役立ちます）。期限が切れ"
-"るたびに `timeout_fut` をリセットするように更新します。"
+"これはコンパイルされますが、タイムアウトが切れると、すべての反復で "
+"`Poll::Ready` になります（融合された future があればこれに役立ちます）。期限"
+"が切れるたびに `timeout_fut` をリセットするように更新します："
 
 #: src/concurrency/async-pitfalls/pin.md
 msgid ""
@@ -30520,43 +30539,49 @@ msgid ""
 "support for using return-position `impl Trait` in traits, as the desugaring "
 "for `async fn` includes `-> impl Future<Output = ...>`."
 msgstr ""
+"トレイト内の async メソッドは 1.75 リリースで安定化されました。`async fn` の"
+"脱糖には `-> impl Future<Output = ...>` が含まれるため、これにはトレイト内で"
+"戻り値の位置に `impl Trait` を使用するためのサポートが必要でした。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
 "However, even with the native support, there are specific pitfalls around "
 "`async fn`:"
 msgstr ""
+"しかし、ネイティブサポートがあっても、`async fn` には特有の落とし穴がありま"
+"す："
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
 "Return-position `impl Trait` captures all in-scope lifetimes (so certain "
 "patterns of borrowing cannot be expressed)."
 msgstr ""
+"戻り値の位置の `impl Trait` は、スコープ内のすべてのライフタイムをキャプチャ"
+"します（そのため、特定の借用のパターンは表現できません）。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
 "Async traits cannot be used with [trait objects](../../smart-pointers/trait-"
 "objects.md) (`dyn Trait` support)."
 msgstr ""
+"async トレイトは [トレイトオブジェクト](../../smart-pointers/trait-"
+"objects.md) とともに使用できません（`dyn Trait` のサポート）。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
-#, fuzzy
 msgid ""
 "The [async_trait](https://docs.rs/async-trait/) crate provides a workaround "
 "for `dyn` support through a macro, with specific caveats:"
 msgstr ""
-"クレート [async_trait](https://docs.rs/async-trait/latest/async_trait/) は、"
-"マクロによる回避策を提供します。"
+"[async_trait](https://docs.rs/async-trait/) クレートは、マクロによって `dyn` "
+"をサポートするための回避策を提供しますが、特有の注意点があります："
 
 #: src/concurrency/async-pitfalls/async-traits.md
-#, fuzzy
 msgid "\"Running all sleepers...\""
-msgstr "\"running all sleepers..\""
+msgstr "\"Running all sleepers...\""
 
 #: src/concurrency/async-pitfalls/async-traits.md
-#, fuzzy
 msgid "\"Slept for {} ms\""
-msgstr "\"slept for {}ms\""
+msgstr "\"Slept for {} ms\""
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
@@ -30567,7 +30592,6 @@ msgstr ""
 "います。このヒープ割り当てには、パフォーマンス オーバーヘッドが伴います。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
-#, fuzzy
 msgid ""
 "The challenges in language support for `async trait` are too deep to "
 "describe in-depth in this class. See [this blog post](https://"
@@ -30575,10 +30599,10 @@ msgid ""
 "hard/) by Niko Matsakis if you are interested in digging deeper. See also "
 "these keywords:"
 msgstr ""
-"`async trait` の言語サポートにおける課題は、Rust の中でも難解な部類に入るた"
-"め、ここでは詳しく説明する必要はないでしょう。Niko Matsakis が [こちらの投稿]"
+"`async trait` の言語サポートにおける課題は、この講座で詳しく説明するには深す"
+"ぎます。さらに掘り下げたい場合は、Niko Matsakis による [こちらのブログ投稿]"
 "(https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-"
-"are-hard/) で詳しく説明していますので、深く掘り下げたい方はご覧ください。"
+"are-hard/) をご覧ください。以下のキーワードも参照してください："
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
@@ -30586,6 +30610,9 @@ msgid ""
 "return-types): short for [return-position `impl Trait`](../../generics/impl-"
 "trait.md)."
 msgstr ""
+"[RPIT](https://doc.rust-lang.org/reference/types/impl-trait.html#abstract-"
+"return-types): [戻り値の位置の `impl Trait`](../../generics/impl-trait.md)"
+"（return-position `impl Trait`）の略。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
 msgid ""
@@ -30593,15 +30620,17 @@ msgid ""
 "traits.html): short for return-position `impl Trait` in trait (RPIT in "
 "trait)."
 msgstr ""
+"[RPITIT](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-"
+"traits.html): トレイト内での戻り値の位置の `impl Trait`（return-position "
+"`impl Trait` in trait、RPIT in trait）の略。"
 
 #: src/concurrency/async-pitfalls/async-traits.md
-#, fuzzy
 msgid ""
 "Try creating a new sleeper struct that will sleep for a random amount of "
 "time and adding it to the `Vec`."
 msgstr ""
-"ランダムな時間スリープする新しいスリーパー構造体を作成し、Vec に追加してみま"
-"しょう。"
+"ランダムな時間スリープする新しいスリーパー構造体を作成し、`Vec` に追加してみ"
+"ましょう。"
 
 #: src/concurrency/async-pitfalls/cancellation.md
 msgid ""
@@ -30700,18 +30729,16 @@ msgstr ""
 
 #: src/concurrency/async-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/solutions.md
-#, fuzzy
 msgid "Dining Philosophers --- Async"
-msgstr "食事する哲学者"
+msgstr "食事する哲学者 --- 非同期"
 
 #: src/concurrency/async-exercises/dining-philosophers.md
-#, fuzzy
 msgid ""
 "See [dining philosophers](../sync-exercises/dining-philosophers.md) for a "
 "description of the problem."
 msgstr ""
-"この問題の詳細については、[食事する哲学者](dining-philosophers.md) をご覧くだ"
-"さい。"
+"問題の説明については、[食事する哲学者](../sync-exercises/dining-"
+"philosophers.md) をご覧ください。"
 
 #: src/concurrency/async-exercises/dining-philosophers.md
 msgid ""
@@ -30725,12 +30752,14 @@ msgstr ""
 
 #: src/concurrency/async-exercises/dining-philosophers.md
 msgid "// Keep trying until we have both chopsticks\n"
-msgstr ""
+msgstr "// 両方の箸を手に入れるまで試行し続ける\n"
 
 #: src/concurrency/async-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/solutions.md
 msgid "// tokio scheduler doesn't deadlock with 5 philosophers, so have 2.\n"
 msgstr ""
+"// tokio のスケジューラは 5 人の哲学者ではデッドロックしないので、2 人にす"
+"る。\n"
 
 #: src/concurrency/async-exercises/dining-philosophers.md
 #: src/concurrency/async-exercises/solutions.md
@@ -30746,7 +30775,6 @@ msgstr ""
 "`Cargo.toml` を使用できます。"
 
 #: src/concurrency/async-exercises/dining-philosophers.md
-#, fuzzy
 msgid ""
 "```toml\n"
 "[package]\n"
@@ -30763,7 +30791,7 @@ msgstr ""
 "[package]\n"
 "name = \"dining-philosophers-async-dine\"\n"
 "version = \"0.1.0\"\n"
-"edition = \"2021\"\n"
+"edition = \"2024\"\n"
 "\n"
 "[dependencies]\n"
 "tokio = { version = \"1.26.0\", features = [\"sync\", \"time\", \"macros\", "
@@ -30817,7 +30845,6 @@ msgid "_Cargo.toml_:"
 msgstr "_Cargo.toml_:"
 
 #: src/concurrency/async-exercises/chat-app.md
-#, fuzzy
 msgid ""
 "```toml\n"
 "[package]\n"
@@ -30837,13 +30864,13 @@ msgstr ""
 "[package]\n"
 "name = \"chat-async\"\n"
 "version = \"0.1.0\"\n"
-"edition = \"2021\"\n"
+"edition = \"2024\"\n"
 "\n"
 "[dependencies]\n"
-"futures-util = { version = \"0.3.30\", features = [\"sink\"] }\n"
-"http = \"1.0.0\"\n"
-"tokio = { version = \"1.28.1\", features = [\"full\"] }\n"
-"tokio-websockets = { version = \"0.5.1\", features = [\"client\", "
+"futures-util = { version = \"0.3.32\", features = [\"sink\"] }\n"
+"http = \"1.4.1\"\n"
+"tokio = { version = \"1.52.3\", features = [\"full\"] }\n"
+"tokio-websockets = { version = \"0.13.2\", features = [\"client\", "
 "\"fastrand\", \"server\", \"sha1_smol\"] }\n"
 "```"
 
@@ -30852,14 +30879,13 @@ msgid "The required APIs"
 msgstr "必要な API"
 
 #: src/concurrency/async-exercises/chat-app.md
-#, fuzzy
 msgid ""
 "You are going to need the following functions from `tokio` and "
 "[`tokio_websockets`](https://docs.rs/tokio-websockets/). Take time to "
 "familiarize yourself with the API."
 msgstr ""
 "`tokio` と [`tokio_websockets`](https://docs.rs/tokio-websockets/) の以下の関"
-"数が必要になります。少し時間をかけて API に対する理解を深めてください。"
+"数が必要になります。少し時間をかけて API に慣れてください。"
 
 #: src/concurrency/async-exercises/chat-app.md
 msgid ""
@@ -31026,6 +31052,8 @@ msgid ""
 "// Keep trying until we have both chopsticks\n"
 "        // Pick up chopsticks...\n"
 msgstr ""
+"// 両方の箸を手に入れるまで試行し続ける\n"
+"        // 箸を取る...\n"
 
 #: src/concurrency/async-exercises/solutions.md
 msgid "// The locks are dropped here\n"
