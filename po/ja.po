@@ -36179,35 +36179,39 @@ msgid ""
 "https://doc.rust-lang.org/stable/reference/items/implementations.html#r-"
 "items.impl.trait.orphan-rule"
 msgstr ""
+"https://doc.rust-lang.org/stable/reference/items/implementations.html#r-"
+"items.impl.trait.orphan-rule"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
 "An **extension trait** is a local trait definition whose primary purpose is "
 "to attach new methods to foreign types."
 msgstr ""
+"**拡張トレイト**とは、外部の型に新しいメソッドを追加することを主な目的とし"
+"た、ローカルなトレイト定義です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid "// Bring the extension trait into scope...\n"
-msgstr ""
+msgstr "// 拡張トレイトをスコープに入れる...\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid "// ...then invoke its methods as if they were inherent methods\n"
-msgstr ""
+msgstr "// ...そして、そのメソッドを固有メソッドであるかのように呼び出す\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "\"dad\""
-msgstr ""
+msgstr "\"dad\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid "\"grandma\""
-msgstr ""
+msgstr "\"grandma\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
 "The `Ext` suffix is conventionally attached to the name of extension traits."
-msgstr ""
+msgstr "拡張トレイトの名前には、慣例として `Ext` という接尾辞を付けます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
@@ -36215,16 +36219,18 @@ msgid ""
 "it is therefore not intended to be implemented outside the crate that "
 "defines it."
 msgstr ""
+"これにより、そのトレイトが主に拡張の目的で使われるものであり、したがって定義"
+"元のクレートの外で実装されることを意図していないことが伝わります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
-#, fuzzy
 msgid ""
 "Refer to the [\"Extension Trait\" RFC](https://rust-lang.github.io/rfcs/0445-"
 "extension-trait-conventions.html) as the authoritative source for naming "
 "conventions."
 msgstr ""
-"[Rust RFC Book](https://rust-lang.github.io/rfcs/0246-const-vs-static.html) "
-"によると、定数変数は使用時にインライン化されます。"
+"命名規則の正式な情報源としては、[「Extension Trait」RFC](https://rust-"
+"lang.github.io/rfcs/0445-extension-trait-conventions.html) を参照してくださ"
+"い。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
@@ -36233,10 +36239,16 @@ msgid ""
 "rule_](https://github.com/rust-lang/rfcs/blob/master/text/2451-re-"
 "rebalancing-coherence.md#what-is-coherence-and-why-do-we-care)."
 msgstr ""
+"外部の型に対する拡張トレイトの実装は、トレイト自体と同じクレートになければな"
+"りません。そうでないと、Rust の [_オーファンルール_](https://github.com/rust-"
+"lang/rfcs/blob/master/text/2451-re-rebalancing-coherence.md#what-is-"
+"coherence-and-why-do-we-care) によってブロックされます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid "The extension trait must be in scope when its methods are invoked."
 msgstr ""
+"拡張トレイトのメソッドを呼び出すときは、その拡張トレイトがスコープ内にある必"
+"要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
@@ -36244,6 +36256,9 @@ msgid ""
 "that's emitted if you try to invoke an extension method without having the "
 "corresponding extension trait in scope."
 msgstr ""
+"例の `use` ステートメントをコメントアウトし、対応する拡張トレイトがスコープに"
+"ない状態で拡張メソッドを呼び出そうとしたときに出力されるコンパイラエラーを示"
+"してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
@@ -36252,6 +36267,10 @@ msgid ""
 "(`use ext::StringExt as _`) to minimize the likelihood of a naming conflict "
 "with other imported traits."
 msgstr ""
+"上の例では、インポートされた他のトレイトとの名前の衝突が起こる可能性を最小限"
+"にするために、[_アンダースコアインポート_](https://doc.rust-lang.org/stable/"
+"reference/items/use-declarations.html#r-items.use.as-underscore)（`use "
+"ext::StringExt as _`）を使用しています。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
@@ -36260,42 +36279,57 @@ msgid ""
 "_symbol_, instead, is not directly accessible. This prevents you, for "
 "example, from using that trait in a `where` clause."
 msgstr ""
+"アンダースコアインポートでは、トレイトはスコープ内にあるとみなされ、そのトレ"
+"イトを実装する型に対してそのメソッドを呼び出すことができます。一方、その _シ"
+"ンボル_ には直接アクセスできません。そのため、たとえばそのトレイトを `where` "
+"句で使用することはできません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-foreign-types.md
 msgid ""
 "Since extension traits aren't meant to be used in `where` clauses, they are "
 "conventionally imported via an underscore import."
 msgstr ""
+"拡張トレイトは `where` 句で使用することを想定していないため、慣例としてアン"
+"ダースコアインポートでインポートされます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
 "What happens when you have a name conflict between an inherent method and an "
 "extension method?"
-msgstr ""
+msgstr "固有メソッドと拡張メソッドの間で名前が衝突すると、どうなるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
 "// Which `count_ones` method is invoked?\n"
 "    // The one from `CountOnesExt`? Or the inherent one from `i32`?\n"
 msgstr ""
+"// どちらの `count_ones` メソッドが呼び出されるか？\n"
+"    // `CountOnesExt` のものか？それとも `i32` の固有メソッドか？\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
 "A foreign type may, in a newer version, add a new inherent method with the "
 "same name as our extension method."
 msgstr ""
+"外部の型が新しいバージョンで、自分たちの拡張メソッドと同じ名前の固有メソッド"
+"を新たに追加する可能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
 "Ask: What will happen in the example above? Will there be a compiler error? "
 "Will one of the two methods be given higher priority? Which one?"
 msgstr ""
+"質問: 上の例ではどうなるでしょうか？コンパイラエラーになるでしょうか？2 つの"
+"メソッドのうち一方が優先されるでしょうか？それはどちらでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
 "Add a `panic!(\"Extension trait\");` in the body of "
 "`CountOnesExt::count_ones` to clarify which method is being invoked."
 msgstr ""
+"どちらのメソッドが呼び出されているかを明らかにするために、"
+"`CountOnesExt::count_ones` の本体に `panic!(\"Extension trait\");` を追加して"
+"ください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
@@ -36305,6 +36339,11 @@ msgid ""
 "Generally it will prioritize the inherent method over the trait method, but "
 "the method resolution rules can be subtle and surprising."
 msgstr ""
+"固有メソッドとトレイトメソッドが同じ名前と同じレシーバ型を持つ場合、Rust の "
+"[メソッド解決](https://doc.rust-lang.org/stable/reference/expressions/method-"
+"call-expr.html) のルールによって、どちらか一方が自動的に選択されます。一般的"
+"には、トレイトメソッドよりも固有メソッドが優先されますが、メソッド解決のルー"
+"ルは微妙で、意外な結果になることがあります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
@@ -36313,6 +36352,10 @@ msgid ""
 "`self` (instead of `&self`) and show that the inherent method is once again "
 "called."
 msgstr ""
+"デモ: 呼び出しを `(&-1i32).count_ones()` に変更し、今度はトレイトメソッドが呼"
+"び出されることを示してください。次に、トレイトメソッドが（`&self` ではなく）"
+"`self` を受け取るように変更し、再び固有メソッドが呼び出されることを示してくだ"
+"さい。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
@@ -36320,6 +36363,9 @@ msgid ""
 "Rust's method resolution algorithm is complex and may surprise users of your "
 "code."
 msgstr ""
+"拡張トレイトのメソッドと固有メソッドの間で名前が衝突しないようにしてくださ"
+"い。Rust のメソッド解決アルゴリズムは複雑であり、コードのユーザーを驚かせる可"
+"能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md
 msgid ""
@@ -36330,18 +36376,28 @@ msgid ""
 "Specialization\"](https://github.com/dtolnay/case-studies/blob/master/"
 "autoref-specialization/README.md) for the specific details."
 msgstr ""
+"Rust のメソッド解決アルゴリズムで使われる優先順位付きの探索と、自動的な "
+"`Deref` との相互作用を利用すると、stable ツールチェーンで [特殊化](https://"
+"github.com/rust-lang/rust/issues/31844) をエミュレートできます。これは主にマ"
+"クロで生成されるコードで使われます。詳細については [「Autoref "
+"Specialization」](https://github.com/dtolnay/case-studies/blob/master/"
+"autoref-specialization/README.md) を参照してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "What happens when you have a name conflict between two different trait "
 "methods implemented for the same type?"
 msgstr ""
+"同じ型に実装された 2 つの異なるトレイトのメソッドの間で名前が衝突すると、どう"
+"なるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "// Which method is invoked?\n"
 "// The one from `Ext1`? Or the one from `Ext2`?\n"
 msgstr ""
+"// どちらのメソッドが呼び出されるか？\n"
+"// `Ext1` のものか？それとも `Ext2` のものか？\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
@@ -36350,28 +36406,41 @@ msgid ""
 "the same type may define a method with a name that conflicts with your own "
 "extension method."
 msgstr ""
+"拡張しているトレイトが新しいバージョンで、自分の拡張メソッドと同じ名前のトレ"
+"イトメソッドを新たに追加する可能性があります。また、同じ型に対する別の拡張ト"
+"レイトが、自分の拡張メソッドと名前が衝突するメソッドを定義する可能性もありま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "Ask: what will happen in the example above? Will there be a compiler error? "
 "Will one of the two methods be given higher priority? Which one?"
 msgstr ""
+"質問: 上の例ではどうなるでしょうか？コンパイラエラーになるでしょうか？2 つの"
+"メソッドのうち一方が優先されるでしょうか？それはどちらでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "The compiler rejects the code because it cannot determine which method to "
 "invoke. Neither `Ext1` nor `Ext2` has a higher priority than the other."
 msgstr ""
+"どちらのメソッドを呼び出すべきか判断できないため、コンパイラはこのコードを拒"
+"否します。`Ext1` と `Ext2` のどちらも、もう一方より優先されることはありませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid "To resolve this conflict, you must specify which trait you want to use."
 msgstr ""
+"この衝突を解決するには、どちらのトレイトを使用するかを指定する必要がありま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "Demonstrate: call `Ext1::is_palindrome(\"dad\")` or "
 "`Ext2::is_palindrome(\"dad\")` instead of `\"dad\".is_palindrome()`."
 msgstr ""
+"デモ: `\"dad\".is_palindrome()` の代わりに `Ext1::is_palindrome(\"dad\")` ま"
+"たは `Ext2::is_palindrome(\"dad\")` を呼び出してください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
@@ -36379,34 +36448,41 @@ msgid ""
 "explicit [fully-qualified syntax](https://doc.rust-lang.org/reference/"
 "expressions/call-expr.html#disambiguating-function-calls)."
 msgstr ""
+"より複雑なシグネチャを持つメソッドの場合は、より明示的な [フルパス記法]"
+"(https://doc.rust-lang.org/reference/expressions/call-"
+"expr.html#disambiguating-function-calls) を使う必要があるかもしれません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md
 msgid ""
 "Demonstrate: replace `\"dad\".is_palindrome()` with `<str as "
 "Ext1>::is_palindrome(\"dad\")` or `<str as Ext2>::is_palindrome(\"dad\")`."
 msgstr ""
+"デモ: `\"dad\".is_palindrome()` を `<str as Ext1>::is_palindrome(\"dad\")` ま"
+"たは `<str as Ext2>::is_palindrome(\"dad\")` に置き換えてください。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "As with types, it may be desirable to **extend foreign traits**. In "
 "particular, to attach new methods to _all_ implementors of a given trait."
 msgstr ""
+"型の場合と同様に、**外部のトレイトを拡張**したい場合があります。特に、あるト"
+"レイトを実装する _すべての_ 型に新しいメソッドを追加したい場合です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "\"'{}'\""
-msgstr ""
+msgstr "\"'{}'\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "\"'dad'\""
-msgstr ""
+msgstr "\"'dad'\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "\"'4'\""
-msgstr ""
+msgstr "\"'4'\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "\"'true'\""
-msgstr ""
+msgstr "\"'true'\""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36414,6 +36490,9 @@ msgid ""
 "can be called on string slices, numbers, and booleans since they all "
 "implement the `Display` trait."
 msgstr ""
+"_複数の_ 型に一度に新しい動作を追加したことを強調してください。文字列スライ"
+"ス、数値、ブール値はいずれも `Display` トレイトを実装しているので、これらに対"
+"して `.quoted()` を呼び出すことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36421,6 +36500,9 @@ msgid ""
 "(https://doc.rust-lang.org/stable/reference/glossary.html#blanket-"
 "implementation)."
 msgstr ""
+"この形の拡張トレイトパターンでは、[_ブランケット実装_](https://doc.rust-"
+"lang.org/stable/reference/glossary.html#blanket-implementation) を使用しま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36428,6 +36510,9 @@ msgid ""
 "the trait bounds specified in the `impl` block. In this case, the only "
 "requirement is that `T` implements the `Display` trait."
 msgstr ""
+"ブランケット実装は、`impl` ブロックで指定されたトレイト境界を満たすすべての"
+"型 `T` に対してトレイトを実装します。この例では、`T` が `Display` トレイトを"
+"実装していることだけが要件です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36436,24 +36521,34 @@ msgid ""
 "`Display`. All our logic must either use methods from `Display` or functions/"
 "macros that don't require other traits."
 msgstr ""
+"`DisplayExt::quoted` の実装に受講者の注意を向けてください。`T` については、"
+"`Display` を実装していること以外は何も仮定できません。すべてのロジックは、"
+"`Display` のメソッドを使うか、他のトレイトを必要としない関数やマクロを使う必"
+"要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "For example, we can call `format!` with `T`, but can't call "
 "`.to_uppercase()` because it is not necessarily a `String`."
 msgstr ""
+"たとえば、`T` を使って `format!` を呼び出すことはできますが、`T` は `String` "
+"とは限らないため、`.to_uppercase()` を呼び出すことはできません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "We could introduce additional trait bounds on `T`, but it would restrict the "
 "set of types that can leverage the extension trait."
 msgstr ""
+"`T` にトレイト境界を追加することもできますが、そうすると拡張トレイトを利用で"
+"きる型の範囲が狭まります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "Conventionally, the extension trait is named after the trait it extends, "
 "followed by the `Ext` suffix. In the example above, `DisplayExt`."
 msgstr ""
+"慣例として、拡張トレイトには、拡張するトレイトの名前の後に `Ext` という接尾辞"
+"を付けた名前を付けます。上の例では `DisplayExt` です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36462,12 +36557,18 @@ msgid ""
 "you can make `Display` a supertrait of `DisplayExt`. This would lock out non-"
 "`Display` types from implementing the trait."
 msgstr ""
+"ただし、`Display` でない型に対して `DisplayExt` を手動で実装することは依然と"
+"して可能です。このトレイトの直接の実装を防ぎたい場合は、`Display` を "
+"`DisplayExt` のスーパートレイトにできます。そうすると、`Display` でない型はこ"
+"のトレイトを実装できなくなります。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "There are entire crates that extend standard library traits with new "
 "functionality."
 msgstr ""
+"標準ライブラリのトレイトを新しい機能で拡張することを目的としたクレートも数多"
+"く存在します。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36476,22 +36577,30 @@ msgid ""
 "new algorithmic building blocks for iterator pipelines built with method "
 "chaining."
 msgstr ""
+"`itertools` クレートは、`Iterator` を拡張する `Itertools` トレイトを提供して"
+"います。このトレイトは、`interleave` や `unique` など、多くのイテレータアダプ"
+"タを追加します。これにより、メソッドチェーンで構築するイテレータパイプライン"
+"のための新しいアルゴリズムの構成要素が提供されます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "`futures` crate provides the `FutureExt` trait, which extends the `Future` "
 "trait with new combinators and helper methods."
 msgstr ""
+"`futures` クレートは `FutureExt` トレイトを提供しています。このトレイトは、"
+"`Future` トレイトを新しいコンビネータとヘルパーメソッドで拡張します。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "Extension traits can be used by libraries to distinguish between stable and "
 "experimental methods."
 msgstr ""
+"ライブラリでは、拡張トレイトを使って安定したメソッドと実験的なメソッドを区別"
+"できます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid "Stable methods are part of the trait definition."
-msgstr ""
+msgstr "安定したメソッドはトレイト定義の一部とします。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36500,6 +36609,10 @@ msgid ""
 "methods are then \"promoted\" to the core trait definition once they have "
 "been proven useful and their design has been refined."
 msgstr ""
+"実験的なメソッドは、別のライブラリで定義された拡張トレイトを通じて提供しま"
+"す。このライブラリでは、安定性に関するポリシーの制約をゆるくします。一部の"
+"ユーティリティメソッドは、有用であることが証明され、設計が洗練された時点で、"
+"コアのトレイト定義に「昇格」します。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36507,18 +36620,23 @@ msgid ""
 "doc.rust-lang.org/reference/items/traits.html#r-items.traits.dyn-compatible) "
 "in two:"
 msgstr ""
+"拡張トレイトを使うと、[dyn 互換でないトレイト](https://doc.rust-lang.org/"
+"reference/items/traits.html#r-items.traits.dyn-compatible) を次の 2 つに分割"
+"できます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "A **dyn-compatible core**, restricted to the methods that satisfy dyn-"
 "compatibility requirements."
-msgstr ""
+msgstr "**dyn 互換なコア**: dyn 互換の要件を満たすメソッドだけに限定したもの。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
 "An **extension trait**, containing the remaining methods that are not dyn-"
 "compatible (e.g., methods with a generic parameter)."
 msgstr ""
+"**拡張トレイト**: dyn 互換でない残りのメソッド（ジェネリックパラメータを持つ"
+"メソッドなど）を含むもの。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md
 msgid ""
@@ -36527,19 +36645,23 @@ msgid ""
 "(`dyn CoreTrait`) will be able to invoke all methods on the core trait as "
 "well as those on the extension trait that don't require `Self: Sized`."
 msgstr ""
+"コアトレイトを実装する具体的な型は、拡張トレイトのブランケット実装のおかげ"
+"で、すべてのメソッドを呼び出すことができます。トレイトオブジェクト（`dyn "
+"CoreTrait`）は、コアトレイトのすべてのメソッドに加えて、拡張トレイトのメソッ"
+"ドのうち `Self: Sized` を必要としないものを呼び出すことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
 "In what scenarios should you prefer an extension trait over a free function?"
-msgstr ""
+msgstr "どのような場合に、フリー関数よりも拡張トレイトを選ぶべきでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid "// vs\n"
-msgstr ""
+msgstr "// 対\n"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid "The main advantage of extension traits is **ease of discovery**."
-msgstr ""
+msgstr "拡張トレイトの主な利点は、**見つけやすさ**です。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
@@ -36547,6 +36669,9 @@ msgid ""
 "functions. Language servers (e.g., `rust-analyzer`) will suggest them if you "
 "type `.` after an instance of the foreign type."
 msgstr ""
+"**見つけやすさ:** 拡張メソッドはフリー関数よりも見つけやすくなります。言語"
+"サーバー（`rust-analyzer` など）は、外部の型のインスタンスの後に `.` を入力す"
+"ると、拡張メソッドを候補として提示します。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
@@ -36556,6 +36681,11 @@ msgid ""
 "free functions would be far more cumbersome "
 "(`map(filter(iter(data), ...), ...)`)."
 msgstr ""
+"**メソッドチェーン:** 拡張トレイトの使い勝手の面での大きな利点は、メソッド"
+"チェーンです。これは `Iterator` トレイトの基礎であり、"
+"`data.iter().filter(...).map(...)` のような流れるような呼び出しを可能にしま"
+"す。同じことをフリー関数で実現すると、はるかに煩雑になります"
+"（`map(filter(iter(data), ...), ...)`）。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
@@ -36563,6 +36693,9 @@ msgid ""
 "part of a `dyn Trait`, whereas a free function can't necessarily be used in "
 "a generic context."
 msgstr ""
+"**ジェネリクスと `dyn`:** トレイトは、ジェネリクスのトレイト境界として、また"
+"は `dyn Trait` の一部として使用できます。一方、フリー関数はジェネリックなコン"
+"テキストで使えるとは限りません。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
@@ -36571,6 +36704,11 @@ msgid ""
 "`word_count`, `to_kebab_case`), grouping them in a single `StrExt` trait is "
 "often cleaner than having multiple free functions for a user to import."
 msgstr ""
+"**API のまとまり:** 拡張トレイトは、まとまりのある API を作るのに役立ちます。"
+"外部の型に関連する関数が複数ある場合（`is_palindrome`、`word_count`、"
+"`to_kebab_case` など）、それらを 1 つの `StrExt` トレイトにまとめるほうが、"
+"ユーザーが複数のフリー関数をインポートしなければならないよりも、すっきりする"
+"ことが多いです。"
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/should-i-define-an-extension-trait.md
 msgid ""
@@ -36579,64 +36717,67 @@ msgid ""
 "additional import, and the familiar method syntax may not justify the "
 "boilerplate of a full trait definition."
 msgstr ""
+"**トレードオフ:** これらの利点がある一方で、単一の単純な関数のために専用の拡"
+"張トレイトを用意するのはやりすぎかもしれません。どちらの方法でも追加のイン"
+"ポートが必要であり、慣れたメソッド構文のためだけに、トレイトを完全に定義する"
+"ボイラープレートを書く価値はないかもしれません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
-#, fuzzy
 msgid "Typestate Pattern: Problem"
-msgstr "タイプステートパターン"
+msgstr "タイプステートパターン: 問題"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
 "How can we ensure that only valid operations are allowed on a value based on "
 "its current state?"
 msgstr ""
+"値の現在の状態に応じて、有効な操作だけが許可されるようにするにはどうすればよ"
+"いでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
-#, fuzzy
 msgid "\"{name} {{\""
-msgstr "\"Hello {name}\""
+msgstr "\"{name} {{\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "\"  {key}={value};\""
-msgstr ""
+msgstr "\"  {key}={value};\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "\"}\\n\""
-msgstr ""
+msgstr "\"}\\n\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "\"User\""
-msgstr ""
+msgstr "\"User\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "\"id\""
-msgstr ""
+msgstr "\"id\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "\"42\""
-msgstr ""
+msgstr "\"42\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
-#, fuzzy
 msgid "\"name\""
-msgstr "\"Hello {name}\""
+msgstr "\"name\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid "// serializer.serialize_struct_end(); // ← Oops! Forgotten\n"
-msgstr ""
+msgstr "// serializer.serialize_struct_end(); // ← おっと！呼び忘れ\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid "This `Serializer` is meant to write a structured value."
-msgstr ""
+msgstr "この `Serializer` は、構造化された値を書き出すためのものです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
@@ -36644,6 +36785,9 @@ msgid ""
 "`finish()`. As a result, the serialized output is incomplete or "
 "syntactically incorrect."
 msgstr ""
+"しかし、この例では `finish()` の前に `serialize_struct_end()` を呼び出すのを"
+"忘れています。その結果、シリアル化された出力は不完全であるか、構文的に正しく"
+"ありません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
@@ -36651,28 +36795,36 @@ msgid ""
 "return a `Result` from methods like `serialize_struct_field()` or `finish()` "
 "if the current state is invalid."
 msgstr ""
+"これを修正する方法の 1 つは、内部の状態を手動で追跡し、現在の状態が無効な場合"
+"に `serialize_struct_field()` や `finish()` などのメソッドから `Result` を返"
+"すことです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid "But this has downsides:"
-msgstr ""
+msgstr "しかし、この方法には欠点があります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
 "It is easy to get wrong as an implementer. Rust’s type system cannot help "
 "enforce the correctness of our state transitions."
 msgstr ""
+"実装者にとって間違えやすい方法です。Rust の型システムは、状態遷移の正しさを強"
+"制する助けになりません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
 "It also adds unnecessary burden on the user, who must handle `Result` values "
 "for operations that are misused in source code rather than at runtime."
 msgstr ""
+"また、ユーザーに不要な負担をかけます。実行時ではなくソースコード上での誤用で"
+"ある操作について、ユーザーは `Result` 値を処理しなければなりません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
 "A better solution is to model the valid state transitions directly in the "
 "type system."
 msgstr ""
+"よりよい解決策は、有効な状態遷移を型システムで直接モデル化することです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern.md
 msgid ""
@@ -36680,21 +36832,26 @@ msgid ""
 "correct usage at compile time and make it impossible to call incompatible "
 "methods or forget to do a required action."
 msgstr ""
+"次のスライドでは、**タイプステートパターン**を適用して、コンパイル時に正しい"
+"使い方を強制し、互換性のないメソッドの呼び出しや必要な操作の実行忘れを不可能"
+"にします。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
-#, fuzzy
 msgid "Typestate Pattern: Example"
-msgstr "タイプステートパターン"
+msgstr "タイプステートパターン: 例"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
 "The typestate pattern encodes part of a value’s runtime state into its type. "
 "This allows us to prevent invalid or inapplicable operations at compile time."
 msgstr ""
+"タイプステートパターンでは、値の実行時の状態の一部をその型にエンコードしま"
+"す。これにより、無効な操作や適用できない操作をコンパイル時に防ぐことができま"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid "`Serializer` usage flowchart:"
-msgstr ""
+msgstr "`Serializer` の使用フローチャート:"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36703,6 +36860,10 @@ msgid ""
 "internally to ensure serialization follows a valid structure. For more, see: "
 "<https://serde.rs/impl-serializer.html>"
 msgstr ""
+"この例は、Serde の [`Serializer` トレイト](https://docs.rs/serde/latest/"
+"serde/ser/trait.Serializer.html) に着想を得たものです。Serde は内部でタイプス"
+"テートを使用して、シリアル化が有効な構造に従うことを保証しています。詳しくは "
+"<https://serde.rs/impl-serializer.html> を参照してください。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36710,17 +36871,21 @@ msgid ""
 "a value and producing a new one. At each step, only operations valid for "
 "that state are available."
 msgstr ""
+"タイプステートの基本的な考え方は、値を消費して新しい値を生成することで状態遷"
+"移が起こるというものです。各ステップでは、その状態で有効な操作だけが利用でき"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
-#, fuzzy
 msgid "In this example:"
-msgstr "例の実行方法:"
+msgstr "この例では次のようになります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
 "We begin with a `Serializer`, which only allows us to start serializing a "
 "struct."
 msgstr ""
+"最初は `Serializer` から始まります。これは構造体のシリアル化を開始することだ"
+"けを許可します。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36728,6 +36893,9 @@ msgid ""
 "`SerializeStruct` value. From that point on, we can only call methods "
 "related to serializing struct fields."
 msgstr ""
+"`.serialize_struct(...)` を呼び出すと、所有権が `SerializeStruct` 値にムーブ"
+"します。それ以降は、構造体のフィールドのシリアル化に関連するメソッドしか呼び"
+"出せません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36735,12 +36903,17 @@ msgid ""
 "mixing modes (such as starting another _struct_ mid-struct) or calling "
 "`finish()` too early."
 msgstr ""
+"元の `Serializer` にはアクセスできなくなります。これにより、モードを混在させ"
+"ること（構造体の途中で別の _構造体_ を開始するなど）や、`finish()` を早すぎる"
+"タイミングで呼び出すことを防ぎます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
 "Only after calling `.finish_struct()` do we receive the `Serializer` back. "
 "At that point, the output can be finalized or reused."
 msgstr ""
+"`.finish_struct()` を呼び出した後で初めて `Serializer` が戻ってきます。その時"
+"点で、出力を確定させるか、再利用することができます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36748,6 +36921,9 @@ msgid ""
 "the `Serializer` is also dropped. This ensures incomplete output cannot leak "
 "into the system."
 msgstr ""
+"`finish_struct()` を呼び出し忘れて `SerializeStruct` を早期にドロップすると、"
+"`Serializer` もドロップされます。これにより、不完全な出力がシステムに漏れ出さ"
+"ないことが保証されます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md
 msgid ""
@@ -36755,16 +36931,21 @@ msgid ""
 "seen on the previous slide, nothing would stop someone from skipping "
 "important steps or mixing serialization flows."
 msgstr ""
+"対照的に、前のスライドで見たように、すべてを `Serializer` に直接実装していた"
+"としたら、重要なステップを飛ばしたり、シリアル化の流れを混在させたりすること"
+"を止めるものは何もありません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
 "How do we manage increasingly complex configuration flows with many possible "
 "states and transitions, while still preventing incompatible operations?"
 msgstr ""
+"多くの状態と遷移がありうる、ますます複雑になる設定フローを、互換性のない操作"
+"を防ぎつつ管理するにはどうすればよいでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "/* [...] */"
-msgstr ""
+msgstr "/* [...] */"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36773,6 +36954,10 @@ msgid ""
 "    // fn serialize_struct(self, name: &str) -> SerializeStruct\n"
 "    // fn finish(self) -> String\n"
 msgstr ""
+"// TODO、以下を実装する:\n"
+"    //\n"
+"    // fn serialize_struct(self, name: &str) -> SerializeStruct\n"
+"    // fn finish(self) -> String\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36781,6 +36966,10 @@ msgid ""
 "    // fn serialize_property(mut self, name: &str) -> "
 "SerializeStructProperty\n"
 msgstr ""
+"// TODO、以下を実装する:\n"
+"    //\n"
+"    // fn serialize_property(mut self, name: &str) -> "
+"SerializeStructProperty\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36792,6 +36981,14 @@ msgid ""
 "    //\n"
 "    // fn finish(self) -> ???\n"
 msgstr ""
+"// TODO、\n"
+"    // この構造体はどのように終了すべきか？それは出現する場所によって異な"
+"る:\n"
+"    // - ルートレベル: `Serializer` を返す\n"
+"    // - 別の構造体の中のプロパティとして: `SerializeStruct` を返す\n"
+"    // - リストの中の値として: `SerializeList` を返す\n"
+"    //\n"
+"    // fn finish(self) -> ???\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36802,6 +36999,12 @@ msgid ""
 "    // fn serialize_list(self) -> SerializeList\n"
 "    // fn finish(self) -> SerializeStruct\n"
 msgstr ""
+"// TODO、以下を実装する:\n"
+"    //\n"
+"    // fn serialize_string(self, value: &str) -> SerializeStruct\n"
+"    // fn serialize_struct(self, name: &str) -> SerializeStruct\n"
+"    // fn serialize_list(self) -> SerializeList\n"
+"    // fn finish(self) -> SerializeStruct\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36811,6 +37014,11 @@ msgid ""
 "    // fn serialize_struct(mut self, value: &str) -> SerializeStruct\n"
 "    // fn serialize_list(mut self) -> SerializeList\n"
 msgstr ""
+"// TODO、以下を実装する:\n"
+"    //\n"
+"    // fn serialize_string(mut self, value: &str) -> Self\n"
+"    // fn serialize_struct(mut self, value: &str) -> SerializeStruct\n"
+"    // fn serialize_list(mut self) -> SerializeList\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36819,21 +37027,28 @@ msgid ""
 "    //\n"
 "    // fn finish(mut self) -> ???\n"
 msgstr ""
+"// TODO:\n"
+"    // `SerializeStruct::finish` と同様に、戻り値の型はネストの状況によって異"
+"なる。\n"
+"    //\n"
+"    // fn finish(mut self) -> ???\n"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "Diagram of valid transitions:"
-msgstr ""
+msgstr "有効な遷移の図:"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
 "Building on our previous serializer, we now want to support **nested "
 "structures** and **lists**."
 msgstr ""
+"前のシリアライザをもとに、今度は**ネストされた構造**と**リスト**をサポートし"
+"たいと考えます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
 "However, this introduces both **duplication** and **structural complexity**."
-msgstr ""
+msgstr "しかし、これにより**重複**と**構造的な複雑さ**の両方が生じます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36841,28 +37056,33 @@ msgid ""
 "cleanly express what `finish()` should return without duplicating variants "
 "for every nesting context (e.g. root, struct, list)."
 msgstr ""
+"さらに重大なことに、ここで**型システムの制約**に突き当たります。ネストのコン"
+"テキスト（ルート、構造体、リストなど）ごとにバリアントを重複させずに、"
+"`finish()` が何を返すべきかをきれいに表現することができません。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "From the diagram of valid transitions, we can observe:"
-msgstr ""
+msgstr "有効な遷移の図から、次のことがわかります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "The transitions are recursive"
-msgstr ""
+msgstr "遷移は再帰的である"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "The return types depend on _where_ a substructure or list appears"
-msgstr ""
+msgstr "戻り値の型は、サブ構造やリストが _どこに_ 現れるかに依存する"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid "Each context requires a return path to its parent"
-msgstr ""
+msgstr "各コンテキストには、親へ戻る経路が必要である"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
 "With only concrete types, this becomes unmanageable. Our current approach "
 "leads to an explosion of types and manual wiring."
 msgstr ""
+"具体的な型だけでは、これは手に負えなくなります。現在の方法では、型の数が爆発"
+"的に増え、手作業での接続が必要になります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md
 msgid ""
@@ -36870,6 +37090,9 @@ msgid ""
 "with less boilerplate, while still enforcing valid operations at compile "
 "time."
 msgstr ""
+"次の章では、**ジェネリクス**を使うことで、コンパイル時に有効な操作を強制しつ"
+"つ、より少ないボイラープレートで再帰的なフローをモデル化できることを見ていき"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
@@ -36878,6 +37101,10 @@ msgid ""
 "especially useful when the number of states grows or when multiple states "
 "share behavior but differ in structure."
 msgstr ""
+"タイプステートによるモデル化とジェネリクスを組み合わせることで、ロジックを重"
+"複させることなく、より幅広い有効な状態と遷移を表現できます。この方法は、状態"
+"の数が増える場合や、複数の状態が動作を共有しつつ構造が異なる場合に特に有用で"
+"す。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
@@ -36885,6 +37112,9 @@ msgid ""
 "`Serializer` and its state type definitions. This ensures that our API only "
 "permits valid transitions, as illustrated in the following diagram:"
 msgstr ""
+"これで、`Serializer` のメソッドと、その状態を表す型の定義を実装するのに必要な"
+"ツールがすべて揃いました。これにより、次の図に示すように、API が有効な遷移だ"
+"けを許可することが保証されます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
@@ -36892,17 +37122,24 @@ msgid ""
 "arbitrarily nested serializers that enforce valid transitions between "
 "struct, list, and property states."
 msgstr ""
+"ジェネリクスを活用して親のコンテキストを追跡することで、構造体、リスト、プロ"
+"パティの各状態の間で有効な遷移を強制する、任意の深さにネストされたシリアライ"
+"ザを構築できます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
 "This enables us to build a recursive structure while maintaining strict "
 "control over which methods are accessible in each state."
 msgstr ""
+"これにより、各状態でアクセスできるメソッドを厳密に制御しながら、再帰的な構造"
+"を構築できます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
 "Methods common to all states can be defined for any `S` in `Serializer<S>`."
 msgstr ""
+"すべての状態に共通するメソッドは、`Serializer<S>` の任意の `S` に対して定義で"
+"きます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md
 msgid ""
@@ -36910,12 +37147,16 @@ msgid ""
 "they contain no data other than a possible Zero-Sized Type. Their only role "
 "is to enforce correct API usage through the type system."
 msgstr ""
+"マーカー型（`List<S>` など）は、ゼロサイズ型が含まれる可能性があること以外に"
+"データを持たないため、メモリや実行時のオーバーヘッドは発生しません。その唯一"
+"の役割は、型システムを通じて API の正しい使い方を強制することです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
 msgid ""
 "Referring back to our original diagram of valid transitions, we can "
 "visualize the beginning of our implementation as follows:"
 msgstr ""
+"有効な遷移を示した元の図を振り返ると、実装の出発点は次のように図示できます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
 msgid ""
@@ -36937,33 +37178,50 @@ msgid ""
 "     +--------+\n"
 "```"
 msgstr ""
+"```bob\n"
+"                          serialize\n"
+"                          struct\n"
+"+--------------------+ --------------> +----------------------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<Root>>\" |\n"
+"+--------------------+ <-------------- +----------------------------+\n"
+"                         finish struct\n"
+"         |\n"
+"         |\n"
+"         |\n"
+"finish   |\n"
+"         V\n"
+"\n"
+"     +--------+\n"
+"     | String |\n"
+"     +--------+\n"
+"```"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
 msgid ""
 "At the \"root\" of our `Serializer`, the only construct allowed is a "
 "`Struct`."
-msgstr ""
+msgstr "`Serializer` の「ルート」で許可される構造は `Struct` だけです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md
 msgid ""
 "The `Serializer` can only be finalized into a `String` from this root level."
 msgstr ""
+"`Serializer` は、このルートレベルからしか `String` に確定させることができませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
-#, fuzzy
 msgid "\"{}{name}: \""
-msgstr "\"Hello {name}\""
+msgstr "\"{}{name}: \""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
 msgid "\"{}}}\""
-msgstr ""
+msgstr "\"{}}}\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
 msgid "The diagram can now be expanded as follows:"
-msgstr ""
+msgstr "図は次のように拡張できます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
-#, fuzzy
 msgid ""
 "```bob\n"
 "                                                     +------+\n"
@@ -36987,29 +37245,29 @@ msgid ""
 "```"
 msgstr ""
 "```bob\n"
-" スタック                             ヒープ\n"
-".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - -.\n"
-":                           :     :                           :\n"
-":    s1 \"（アクセス不可）\"    :     :                           :\n"
-":   +-----------+-------+   :     :   +----+----+----+----+   :\n"
-":   | ptr       |   o---+---+--+--+-->| R  | u  | s  | t  |   :\n"
-":   | len       |     4 |   :  |  :   +----+----+----+----+   :\n"
-":   | capacity  |     4 |   :  |  :                           :\n"
-":   +-----------+-------+   :  |  :                           :\n"
-":                           :  |  `- - - - - - - - - - - - - -'\n"
-":    s2                     :  |\n"
-":   +-----------+-------+   :  |\n"
-":   | ptr       |   o---+---+--'\n"
-":   | len       |     4 |   :\n"
-":   | capacity  |     4 |   :\n"
-":   +-----------+-------+   :\n"
-":                           :\n"
-"`- - - - - - - - - - - - - -'\n"
+"                                                     +------+\n"
+"                                             finish  |      |\n"
+"                          serialize          struct  V      |\n"
+"                          struct\n"
+"+--------------------+ --------------> +-------------------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<S>>\" |\n"
+"+--------------------+ <-------------- +-------------------------+\n"
+"                         finish struct\n"
+"         |                                     serialize   |\n"
+"         |                                     property    V\n"
+"         |\n"
+"finish   |                           +-----------------------------------+\n"
+"         V                           | \"Serializer<Property<Struct<S>>>\" "
+"|\n"
+"                                     +-----------------------------------+\n"
+"     +--------+\n"
+"     | String |\n"
+"     +--------+\n"
 "```"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
 msgid "A `Struct` can only contain a `Property`;"
-msgstr ""
+msgstr "`Struct` に含めることができるのは `Property` だけです。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md
 msgid ""
@@ -37017,24 +37275,25 @@ msgid ""
 "previous slide was assumed the `Root`, but in reality however it can be also "
 "something else such as `Struct` in case of nested \"structs\"."
 msgstr ""
+"`Struct` を終了すると、制御はその親に戻ります。前のスライドでは親を `Root` と"
+"想定していましたが、実際には、ネストされた「構造体」の場合の `Struct` など、"
+"他のものである可能性もあります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
-#, fuzzy
 msgid "\"[\""
-msgstr "\"\""
+msgstr "\"[\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
 msgid "\"{value},\""
-msgstr ""
+msgstr "\"{value},\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
 msgid ""
 "With the addition of the Property state methods, our diagram is now nearly "
 "complete:"
-msgstr ""
+msgstr "Property 状態のメソッドを追加したことで、図はほぼ完成しました。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
-#, fuzzy
 msgid ""
 "```bob\n"
 "                                                     +------+\n"
@@ -37068,24 +37327,34 @@ msgid ""
 "```"
 msgstr ""
 "```bob\n"
-" スタック                             ヒープ\n"
-".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - -.\n"
-":                           :     :                           :\n"
-":    s1 \"（アクセス不可）\"    :     :                           :\n"
-":   +-----------+-------+   :     :   +----+----+----+----+   :\n"
-":   | ptr       |   o---+---+--+--+-->| R  | u  | s  | t  |   :\n"
-":   | len       |     4 |   :  |  :   +----+----+----+----+   :\n"
-":   | capacity  |     4 |   :  |  :                           :\n"
-":   +-----------+-------+   :  |  :                           :\n"
-":                           :  |  `- - - - - - - - - - - - - -'\n"
-":    s2                     :  |\n"
-":   +-----------+-------+   :  |\n"
-":   | ptr       |   o---+---+--'\n"
-":   | len       |     4 |   :\n"
-":   | capacity  |     4 |   :\n"
-":   +-----------+-------+   :\n"
-":                           :\n"
-"`- - - - - - - - - - - - - -'\n"
+"                                                     +------+\n"
+"                                             finish  |      |\n"
+"                          serialize          struct  V      |\n"
+"                          struct\n"
+"+--------------------+ --------------> +-------------------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<S>>\" |\n"
+"+--------------------+ <-------------- +-------------------------+ "
+"<-----------+\n"
+"                         finish "
+"struct                                         |\n"
+"         |                                     serialize   "
+"|                   |\n"
+"         |                                     property    V        "
+"serialize  |\n"
+"         |                                                          string "
+"or  |\n"
+"finish   |                           +---------------------------+  "
+"struct     |\n"
+"         V                           | \"Serializer<Property<S>>\" | "
+"------------+\n"
+"                                     +---------------------------+\n"
+"     +--------+\n"
+"     | String |                                serialize   |\n"
+"     +--------+                                list        V\n"
+"\n"
+"                                         +-----------------------+\n"
+"                                         | \"Serializer<List<S>>\" |\n"
+"                                         +-----------------------+\n"
 "```"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
@@ -37093,28 +37362,30 @@ msgid ""
 "A property can be defined as a `String`, `Struct<S>`, or `List<S>`, enabling "
 "the representation of nested structures."
 msgstr ""
+"プロパティは `String`、`Struct<S>`、`List<S>` のいずれかとして定義でき、これ"
+"によりネストされた構造を表現できます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md
 msgid ""
 "This concludes the step-by-step implementation. The full implementation, "
 "including support for `List<S>`, is shown in the next slide."
 msgstr ""
+"これで段階的な実装は終わりです。`List<S>` のサポートを含む完全な実装は次のス"
+"ライドに示します。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
-#, fuzzy
 msgid "Serializer: complete implementation"
-msgstr "サービスの実装"
+msgstr "シリアライザ: 完全な実装"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid "Looking back at our original desired flow:"
-msgstr ""
+msgstr "当初の望ましいフローを振り返ってみましょう。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid "We can now see this reflected directly in the types of our serializer:"
-msgstr ""
+msgstr "これがシリアライザの型に直接反映されていることがわかります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
-#, fuzzy
 msgid ""
 "```bob\n"
 "                                                     +------+\n"
@@ -37161,103 +37432,93 @@ msgid ""
 "```"
 msgstr ""
 "```bob\n"
-" スタック                             ヒープ\n"
-".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - - - - "
-"- -.\n"
-":                           :     :                                             :\n"
-":    pets                   :     :                     +----+----+----+----"
-"+   :\n"
-":   +-----------+-------+   :     :   +-----+-----+  .->| F  | i  | d  | o  "
-"|   :\n"
-":   | ptr       |   o---+---+-----+-->| o o | o o |  |  +----+----+----+----"
-"+   :\n"
-":   | len       |     2 |   :     :   +-|-|-+-|-|-+  "
-"`---------.                :\n"
-":   | capacity  |     2 |   :     :     | |   | |    data      "
-"|                :\n"
-":   +-----------+-------+   :     :     | |   | |   +-------+--|-------"
-"+        :\n"
-":                           :     :     | |   | '-->| name  |  o, 4, 4 "
-"|        :\n"
-":                           :     :     | |   |     | age   |        5 "
-"|        :\n"
-"`- - - - - - - - - - - - - -'     :     | |   |     +-------+----------"
-"+        :\n"
-"                                  :     | |   "
-"|                                 :\n"
-"                                  :     | |   |      "
-"vtable                     :\n"
-"                                  :     | |   |     +----------------------"
-"+    :\n"
-"                                  :     | |   '---->| \"<Dog as Pet>::talk\" "
-"|    :\n"
-"                                  :     | |         +----------------------"
-"+    :\n"
-"                                  :     | "
-"|                                     :\n"
-"                                  :     | |    "
-"data                             :\n"
-"                                  :     | |   +-------+-------"
-"+                 :\n"
-"                                  :     | '-->| lives |     9 "
-"|                 :\n"
-"                                  :     |     +-------+-------"
-"+                 :\n"
-"                                  :     "
-"|                                       :\n"
-"                                  :     |      "
-"vtable                           :\n"
-"                                  :     |     +----------------------"
-"+          :\n"
-"                                  :     '---->| \"<Cat as Pet>::talk\" "
-"|          :\n"
-"                                  :           +----------------------"
-"+          :\n"
-"                                  :                                             :\n"
-"                                  '- - - - - - - - - - - - - - - - - - - - - "
-"- -'\n"
+"                                                     +------+\n"
+"                                             finish  |      |\n"
+"                          serialize          struct  V      |\n"
+"                          struct\n"
+"+--------------------+ --------------> +-------------------------+ "
+"<---------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<S>>\" "
+"|                 |\n"
+"+--------------------+ <-------------- +-------------------------+ "
+"<-----------+   |\n"
+"                         finish "
+"struct                                         |   |\n"
+"         |                                  |  serialize   "
+"|                   |   |\n"
+"         |                       +----------+  property    V        "
+"serialize  |   |\n"
+"         |                       |                                  string "
+"or  |   |\n"
+"finish   |                       |   +---------------------------+  "
+"struct     |   |\n"
+"         V                       |   | \"Serializer<Property<S>>\" | "
+"------------+   |\n"
+"                         finish  |   +---------------------------"
+"+                 |\n"
+"     +--------+          struct  "
+"|                                                 |\n"
+"     | String |                  |             serialize   "
+"|                       |\n"
+"     +--------+                  |             list        "
+"V                       |\n"
+"                                 |                                    "
+"finish       |\n"
+"                                 |       +-----------------------+    "
+"list         |\n"
+"                                 +-----> | \"Serializer<List<S>>\" | "
+"----------------+\n"
+"                                         +-----------------------+\n"
+"                                              serialize\n"
+"                                            | list or string  ^\n"
+"                                            | or finish list  |\n"
+"                                            +-----------------+\n"
 "```"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
-#, fuzzy
 msgid ""
 "The code for the full implementation of the `Serializer` and all its states "
 "can be found in [this Rust playground](https://play.rust-lang.org/?"
 "version=stable&mode=debug&edition=2024&gist=c9cbb831cd05fe9db4ce42713c83ca16)."
 msgstr ""
-"[Rust プレイグラウンド](https://play.rust-lang.org/?"
-"version=stable&mode=debug&edition=2021&gist=3ce2ad13ea1302f6572cb15cd96becf0) "
-"で上記のコードをテストします。"
+"`Serializer` とそのすべての状態の完全な実装のコードは、[こちらの Rust プレイ"
+"グラウンド](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=c9cbb831cd05fe9db4ce42713c83ca16) "
+"にあります。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid "This pattern isn't a silver bullet. It still allows issues like:"
 msgstr ""
+"このパターンは万能ではありません。次のような問題は依然として起こりえます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid ""
 "Empty or invalid property names (which can be fixed using [the newtype "
 "pattern](../../newtype-pattern.md))"
 msgstr ""
+"空または無効なプロパティ名（[ニュータイプ パターン](../../newtype-"
+"pattern.md) を使用して修正できます）"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid ""
 "Duplicate property names (which could be tracked in `Struct<S>` and handled "
 "via `Result`)"
-msgstr ""
+msgstr "重複したプロパティ名（`Struct<S>` で追跡し、`Result` で処理できます）"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid ""
 "If validation failures occur, we can also change method signatures to return "
 "a `Result`, allowing recovery:"
 msgstr ""
+"検証の失敗が発生した場合には、メソッドのシグネチャを変更して `Result` を返す"
+"ようにし、回復できるようにすることもできます。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-02-types-implemented.md
 #: src/idiomatic/from-oop-to-rust/problem-solving.md
-#, fuzzy
 msgid "/* ... */"
-msgstr "// ...\n"
+msgstr "/* ... */"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid ""
@@ -37265,6 +37526,9 @@ msgid ""
 "serializers typically favor simpler APIs and reserve the typestate pattern "
 "for enforcing critical invariants."
 msgstr ""
+"この API は強力ですが、常に使いやすいとは限りません。実運用のシリアライザは通"
+"常、よりシンプルな API を好み、タイプステート パターンは重要な不変条件を強制"
+"するために使います。"
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md
 msgid ""
@@ -37273,16 +37537,22 @@ msgid ""
 "uses typestate with generics to guide the user through safe and correct "
 "configuration steps."
 msgstr ""
+"実世界の優れた例の 1 つが [`rustls::ClientConfig`](https://docs.rs/rustls/"
+"latest/rustls/client/struct.ClientConfig.html#method.builder) です。これは"
+"ジェネリクスを使ったタイプステートを利用して、ユーザーを安全で正しい設定手順"
+"に導きます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid "Using the Borrow checker to enforce Invariants"
-msgstr ""
+msgstr "借用チェッカーを使用して不変条件を強制する"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "The borrow checker, while added to enforce memory ownership, can model other "
 "problems and prevent API misuse."
 msgstr ""
+"借用チェッカーは、メモリの所有権を強制するために追加されたものですが、他の問"
+"題をモデル化し、API の誤用を防ぐこともできます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
@@ -37290,64 +37560,83 @@ msgid ""
 "unlock\n"
 "/// one. Modelled with a Shared key and Owned door.\n"
 msgstr ""
+"/// ドアは開いているか閉じているかのどちらかで、施錠や解錠には正しい鍵が必要"
+"です。\n"
+"/// 共有の鍵と所有されたドアでモデル化しています。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid "\"Opened the door with key shape '{}'\""
-msgstr ""
+msgstr "\"Opened the door with key shape '{}'\""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid "\"Door wasn't opened! Your key only opens locks with shape '{}'\""
-msgstr ""
+msgstr "\"Door wasn't opened! Your key only opens locks with shape '{}'\""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "We've seen the borrow checker prevent memory safety bugs (use-after-free, "
 "data races)."
 msgstr ""
+"借用チェッカーがメモリ安全性のバグ（解放後の使用、データ競合）を防ぐことはす"
+"でに見てきました。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "We've also used types to shape and restrict APIs already using [the "
 "Typestate pattern](../leveraging-the-type-system/typestate-pattern.md)."
 msgstr ""
+"また、[タイプステート パターン](../leveraging-the-type-system/typestate-"
+"pattern.md) を使って、型によって API を形作り、制限することもすでに行いまし"
+"た。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid "Language features are often introduced for a specific purpose."
-msgstr ""
+msgstr "言語機能は多くの場合、特定の目的のために導入されます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Over time, users may develop ways of using a feature in ways that were not "
 "predicted when they were introduced."
 msgstr ""
+"時間が経つにつれて、ユーザーは機能が導入されたときには予測されていなかった使"
+"い方を編み出すことがあります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Java 5 introduced Generics in 2004 with the [main stated purpose of enabling "
 "type-safe collections](https://jcp.org/en/jsr/detail?id=14)."
 msgstr ""
+"Java 5 は 2004 年にジェネリクスを導入しましたが、その[主な目的として掲げられ"
+"ていたのは型安全なコレクションを可能にすること](https://jcp.org/en/jsr/"
+"detail?id=14)でした。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Adoption was slow at first, but some new projects began designing their APIs "
 "around generics from the beginning."
 msgstr ""
+"当初の普及はゆっくりでしたが、一部の新しいプロジェクトは最初からジェネリクス"
+"を中心に API を設計し始めました。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Since then, users and developers of the language expanded the use of "
 "generics to other areas of type-safe API design:"
 msgstr ""
+"それ以降、この言語のユーザーと開発者は、ジェネリクスの用途を型安全な API 設計"
+"の他の分野にも広げてきました。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Class information can be held onto via Java's `Class<T>` or Guava's "
 "`TypeToken<T>`."
 msgstr ""
+"クラス情報は、Java の `Class<T>` や Guava の `TypeToken<T>` を介して保持でき"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid "The Builder pattern can be implemented using Recursive Generics."
-msgstr ""
+msgstr "ビルダー パターンは再帰的ジェネリクスを使って実装できます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
@@ -37355,12 +37644,17 @@ msgid ""
 "introduced to prevent use-after-free and data races, we treat it as just "
 "another API design tool."
 msgstr ""
+"ここでも同様のことを目指します。借用チェッカーは解放後の使用やデータ競合を防"
+"ぐために導入されたものですが、ここでは単なる API 設計ツールの 1 つとして扱い"
+"ます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "It can be used to model program properties that have nothing to do with "
 "preventing memory safety bugs."
 msgstr ""
+"借用チェッカーは、メモリ安全性のバグの防止とはまったく関係のないプログラムの"
+"性質をモデル化するために使うことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
@@ -37368,135 +37662,169 @@ msgid ""
 "\"forget\" that the original purpose of it is to prevent mutable aliasing in "
 "the context of preventing use-after-frees and data races."
 msgstr ""
+"借用チェッカーを問題解決のツールとして使うには、その本来の目的が、解放後の使"
+"用やデータ競合を防ぐという文脈で可変エイリアシングを防ぐことであるという点を"
+"「忘れる」必要があります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "We should imagine working within situations where the rules are the same but "
 "the meaning is slightly different."
 msgstr ""
+"ルールは同じでも意味が少し異なる状況で作業していると想像してみてください。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "This example uses ownership and borrowing are used to model the state of a "
 "physical door."
 msgstr ""
+"この例では、所有権と借用を使って物理的なドアの状態をモデル化しています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "`open_door` **consumes** a `LockedDoor` and returns a new `OpenDoor`. The "
 "old `LockedDoor` value is no longer available."
 msgstr ""
+"`open_door` は `LockedDoor` を**消費**し、新しい `OpenDoor` を返します。古い "
+"`LockedDoor` の値はもう使用できません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "If the wrong key is used, the door is left locked. It is returned as an "
 "`Err` case of the `Result`."
 msgstr ""
+"間違った鍵が使われた場合、ドアは施錠されたままになります。そのドアは "
+"`Result` の `Err` ケースとして返されます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "It is a compile-time error to try and use a door that has already been "
 "opened."
-msgstr ""
+msgstr "すでに開かれたドアを使おうとすると、コンパイル時エラーになります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "Similarly, `lock_door` consumes an `OpenDoor`, preventing closing the door "
 "twice at compile time."
 msgstr ""
+"同様に、`lock_door` は `OpenDoor` を消費するため、ドアを 2 回閉めることをコン"
+"パイル時に防げます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "The rules of the borrow checker exist to prevent memory safety bugs, but the "
 "underlying logical system does not \"know\" what memory is."
 msgstr ""
+"借用チェッカーのルールはメモリ安全性のバグを防ぐために存在しますが、その根底"
+"にある論理体系はメモリが何であるかを「知って」いるわけではありません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "All the borrow checker does is enforce a specific set of rules of how users "
 "can order operations."
 msgstr ""
+"借用チェッカーが行っているのは、ユーザーが操作をどのような順序で行えるかにつ"
+"いての特定のルールの集合を強制することだけです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md
 msgid ""
 "This is just one case of piggy-backing onto the rules of the borrow checker "
 "to design APIs to be harder or impossible to misuse."
 msgstr ""
+"これは、借用チェッカーのルールに便乗して、誤用しにくい、あるいは誤用できない "
+"API を設計する一例にすぎません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid "// An internal data type to have something to hold onto.\n"
-msgstr ""
+msgstr "// 保持する対象を用意するための内部データ型。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
-#, fuzzy
 msgid "// The \"outer\" data.\n"
-msgstr "// ベースケース。\n"
+msgstr "// 「外側」のデータ。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid "// let exclusive = exclusive_use(&mut value); // ❌🔨\n"
-msgstr ""
+msgstr "// let exclusive = exclusive_use(&mut value); // ❌🔨\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid "// let shared = shared_use(&value); // ❌🔨\n"
-msgstr ""
+msgstr "// let shared = shared_use(&value); // ❌🔨\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "This example re-frames the borrow checker rules away from references and "
 "towards semantic meaning in non-memory-safety settings."
 msgstr ""
+"この例では、借用チェッカーのルールを参照から切り離し、メモリ安全性以外の場面"
+"における意味論的な意味へと捉え直しています。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid "Nothing is being mutated, nothing is being sent across threads."
-msgstr ""
+msgstr "何も変更されておらず、何もスレッド間で送信されていません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "In Rust's borrow checker we have access to three different ways of "
 "\"taking\" a value:"
 msgstr ""
+"Rust の借用チェッカーには、値を「受け取る」3 つの異なる方法があります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "Owned value `T`. Value is dropped when the scope ends, unless it is not "
 "returned to another scope."
 msgstr ""
+"所有された値 `T`。値を別のスコープに返さない限り、スコープの終了時に値はド"
+"ロップされます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "Shared Reference `&T`. Allows aliasing but prevents mutable access while "
 "shared references are in use."
 msgstr ""
+"共有参照 `&T`。エイリアシングを許可しますが、共有参照が使用されている間は可変"
+"アクセスを防ぎます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "Mutable Reference `&mut T`. Only one of these is allowed to exist for a "
 "value at any one point, but can be used to create shared references."
 msgstr ""
+"可変参照 `&mut T`。ある値に対して同時に存在できるのは 1 つだけですが、共有参"
+"照を作成するために使うことはできます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "Ask: The two commented-out lines in the `demo` functions would cause "
 "compilation errors, Why?"
 msgstr ""
+"質問: `demo` 関数内のコメントアウトされた 2 行はコンパイルエラーになります。"
+"なぜでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "`demo_exclusive`: Because the `shared` value is still aliased after the "
 "`exclusive` reference is taken."
 msgstr ""
+"`demo_exclusive`: `exclusive` 参照が取得された後も、`shared` 値がまだエイリア"
+"スされているためです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "`demo_denied`: Because `value` is consumed the line before the "
 "`shared_again_again` reference is taken from `&value`."
 msgstr ""
+"`demo_denied`: `shared_again_again` 参照が `&value` から取得される前の行で、"
+"`value` が消費されているためです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
 "Remember that every `&T` and `&mut T` has a lifetime, just one the user "
 "doesn't have to annotate or think about most of the time."
 msgstr ""
+"すべての `&T` と `&mut T` にはライフタイムがあることを思い出してください。た"
+"だし、ほとんどの場合、ユーザーがそれを注釈したり意識したりする必要はありませ"
+"ん。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid ""
@@ -37504,51 +37832,58 @@ msgid ""
 "them in most cases. See: [Lifetime Elision](../../../lifetimes/lifetime-"
 "elision.md)"
 msgstr ""
+"Rust コンパイラはほとんどの場合ライフタイムの _省略_ を許可しているため、ライ"
+"フタイムを指定することはめったにありません。参照: [ライフタイムの省略]"
+"(../../../lifetimes/lifetime-elision.md)"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Sometimes we want values that _can only be used once_. One critical example "
 "of this is in cryptography: A \"Nonce.\""
 msgstr ""
+"_一度しか使えない_ 値が欲しい場合があります。その重要な例の 1 つが暗号技術に"
+"おける「ノンス（Nonce）」です。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "/* specifics omitted */"
-msgstr ""
+msgstr "/* 詳細は省略 */"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "/// A single-use number suitable for cryptographic purposes.\n"
-msgstr ""
+msgstr "/// 暗号用途に適した使い捨ての数値。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "/// A cryptographically sound random generator function.\n"
-msgstr ""
+msgstr "/// 暗号学的に健全な乱数生成関数。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "// chosen by a fair dice roll, https://xkcd.com/221/\n"
-msgstr ""
+msgstr "// 公正なサイコロで選んだ値、https://xkcd.com/221/\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "/// Consume a nonce, but not the key or the data.\n"
-msgstr ""
+msgstr "/// ノンスを消費するが、鍵やデータは消費しない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "// The key and data can be re-used, copied, etc. but the nonce cannot.\n"
-msgstr ""
+msgstr "// 鍵とデータは再利用やコピーなどができるが、ノンスはできない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "// encrypt(nonce, &key, &data_2); // 🛠️❌\n"
-msgstr ""
+msgstr "// encrypt(nonce, &key, &data_2); // 🛠️❌\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "Problem: How can we guarantee a value is used only once?"
-msgstr ""
+msgstr "問題: 値が一度だけ使われることをどのように保証できるでしょうか？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Motivation: A nonce is a piece of random, unique data used in cryptographic "
 "protocols to prevent replay attacks."
 msgstr ""
+"動機: ノンスは、リプレイ攻撃を防ぐために暗号プロトコルで使用される、ランダム"
+"で一意なデータです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
@@ -37556,65 +37891,83 @@ msgid ""
 "Most commonly, this causes the cryptographic protocol to completely break "
 "down and stop fulfilling its function."
 msgstr ""
+"背景: 実際には、ノンスを誤って再利用してしまうことが起こっています。最もよく"
+"あるのは、これによって暗号プロトコルが完全に破綻し、その機能を果たさなくなる"
+"ことです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Depending on the specifics of nonce reuse and cryptography at hand, private "
 "keys can also become computable by attackers."
 msgstr ""
+"ノンスの再利用の詳細や使用している暗号方式によっては、攻撃者が秘密鍵を計算で"
+"きるようになることもあります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Rust has an obvious tool for achieving the invariant \"Once you use this, "
 "you can't use it again\": passing a value as an _owned argument_."
 msgstr ""
+"Rust には「一度使ったら二度と使えない」という不変条件を実現するための明白な手"
+"段があります。値を _所有権付きの引数_ として渡すことです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Highlight: the `encrypt` function takes `nonce` by value (an owned "
 "argument), but `key` and `data` by reference."
 msgstr ""
+"強調: `encrypt` 関数は `nonce` を値で（所有権付きの引数として）受け取ります"
+"が、`key` と `data` は参照で受け取ります。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
-#, fuzzy
 msgid "The technique for single-use values is as follows:"
-msgstr "各型の幅は次のとおりです。"
+msgstr "使い捨ての値を実現する手法は次のとおりです。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Keep constructors private, so a user can't construct values with the same "
 "inner value twice."
 msgstr ""
+"コンストラクタを非公開にして、ユーザーが同じ内部値を持つ値を 2 回作成できない"
+"ようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Don't implement `Clone`/`Copy` traits or equivalent methods, so a user can't "
 "duplicate data we want to keep unique."
 msgstr ""
+"`Clone`/`Copy` トレイトやそれに相当するメソッドを実装せず、一意に保ちたいデー"
+"タをユーザーが複製できないようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Make the interior type opaque (like with the newtype pattern), so the user "
 "cannot modify an existing value on their own."
 msgstr ""
+"内部の型を（ニュータイプ パターンのように）不透明にして、ユーザーが既存の値を"
+"自分で変更できないようにします。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "Ask: What are we missing from the newtype pattern in the slide's code?"
 msgstr ""
+"質問: スライドのコードには、ニュータイプ パターンのうち何が欠けているでしょう"
+"か？"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "Expect: Module boundary."
-msgstr ""
+msgstr "想定される回答: モジュール境界。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
 "Demonstrate: Without a module boundary a user can construct a nonce on their "
 "own."
 msgstr ""
+"デモ: モジュール境界がないと、ユーザーが自分でノンスを作成できてしまうことを"
+"示します。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid "Fix: Put `Key`, `Nonce`, and `new_nonce` behind a module."
-msgstr ""
+msgstr "修正: `Key`、`Nonce`、`new_nonce` をモジュールの内側に置きます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md
 msgid ""
@@ -37623,50 +37976,59 @@ msgid ""
 "prevented through this method. This API design prevents one nonce "
 "duplication, but not all logic bugs."
 msgstr ""
+"暗号技術上の注意点: 実際のランダム性がない疑似乱数的なプロセスで作成されたノ"
+"ンスは、2 回使われてしまう可能性があります。これはこの方法では防げません。こ"
+"の API 設計は 1 つのノンスの重複は防ぎますが、すべてのロジックのバグを防ぐわ"
+"けではありません。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "We can use the mutual exclusion of `&T` and `&mut T` references to prevent "
 "data from being used before it is ready."
 msgstr ""
+"`&T` 参照と `&mut T` 参照の相互排他性を利用して、準備が整う前にデータが使われ"
+"るのを防ぐことができます。"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "/* fields omitted */"
-msgstr ""
+msgstr "/* フィールドは省略 */"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// fake results\n"
-msgstr ""
+msgstr "// 偽の結果\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// Send the query over, but don't wait for results.\n"
-msgstr ""
+msgstr "// クエリを送信するが、結果は待たない。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// Finish executing the transaction and retrieve the results.\n"
-msgstr ""
+msgstr "// トランザクションの実行を完了し、結果を取得する。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// The transaction `tx` mutably borrows `db`.\n"
-msgstr ""
+msgstr "// トランザクション `tx` は `db` を可変で借用する。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "\"SELECT * FROM users\""
-msgstr ""
+msgstr "\"SELECT * FROM users\""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
 "// This won't compile because `db` is already mutably borrowed by `tx`.\n"
 "    // let results = db.results(); // ❌🔨\n"
 msgstr ""
+"// `db` はすでに `tx` によって可変で借用されているため、これはコンパイルでき"
+"ない。\n"
+"    // let results = db.results(); // ❌🔨\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// The borrow of `db` ends when `tx` is consumed by `commit()`.\n"
-msgstr ""
+msgstr "// `tx` が `commit()` によって消費されると、`db` の借用が終了する。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid "// Now it is possible to borrow `db` again.\n"
-msgstr ""
+msgstr "// これで再び `db` を借用できる。\n"
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md
 msgid ""
