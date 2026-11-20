@@ -33508,57 +33508,67 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-copy-setter.md
 msgid "The original `Path` is unchanged."
-msgstr ""
+msgstr "元の `Path` は変更されません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid "`with`: Working with Closures"
-msgstr ""
+msgstr "`with`: クロージャを扱う"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid "`with` as in \"do X, but with this specific way of computing things.\""
 msgstr ""
+"「X を行うが、この特定の計算方法で（with）」という意味での `with` です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid ""
 "// Simplified. If the resize is larger than the current vec size, use the\n"
 "    // closure to populate elements.\n"
 msgstr ""
+"// 簡略化しています。リサイズ後のサイズが現在の vec のサイズより大きい場合"
+"は、\n"
+"    // クロージャを使って要素を埋めます。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid "// Create an infinite, lazy iterator using a closure.\n"
-msgstr ""
+msgstr "// クロージャを使って、無限で遅延評価されるイテレータを作成します。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid ""
 "`with` can appear as a suffix to communicate there is a specific function or "
 "closure that can be used instead of a \"sensible default\" for a computation."
 msgstr ""
+"`with` は接尾辞として使われ、計算に「妥当なデフォルト」の代わりに使える特定の"
+"関数やクロージャがあることを伝えます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-closure.md
 msgid "Similar to [`by`](./by.md)."
-msgstr ""
+msgstr "[`by`](./by.md) と似ています。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid "`try_[method]`: Fallible methods with Specific Errors"
-msgstr ""
+msgstr "`try_[method]`: 特定のエラーを返す失敗しうるメソッド"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid "Prefix for fallible methods that return a `Result`."
-msgstr ""
+msgstr "`Result` を返す、失敗しうるメソッドの接頭辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid "Prefix for methods that can fail, returning a `Result`."
-msgstr ""
+msgstr "失敗する可能性があり、`Result` を返すメソッドの接頭辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid ""
 "`TryFrom` is a `From`\\-like trait for types whose single-value constructors "
 "might fail in some way."
 msgstr ""
+"`TryFrom` は `From` に似たトレイトで、単一の値から構築するコンストラクタが何"
+"らかの形で失敗しうる型のためのものです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid "Ask: Why aren't `Vec::get` and other similar methods called `try_get`?"
 msgstr ""
+"質問してください: `Vec::get` やそれに類するメソッドが `try_get` という名前で"
+"ないのはなぜでしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md
 msgid ""
@@ -33567,52 +33577,64 @@ msgid ""
 "mode. For example, only \"index out of bounds\" for `Vec::get`, and \"key "
 "does not exist\" for `HashMap::get`."
 msgstr ""
+"既存の値への参照を返すメソッドは `get` と名付けられ、失敗のパターンが一つしか"
+"ないため `Result` ではなく `Option` を返します。たとえば、`Vec::get` では「イ"
+"ンデックスが範囲外」、`HashMap::get` では「キーが存在しない」だけです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md
 msgid "`from`"
-msgstr ""
+msgstr "`from`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md
 msgid "A constructor function, strongly implying \"type conversion\"."
-msgstr ""
+msgstr "「型変換」を強く示唆するコンストラクタ関数です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md
 msgid "Prefix for constructor-style, `From`\\-trait-style functions."
-msgstr ""
+msgstr "コンストラクタ風、`From` トレイト風の関数の接頭辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md
 msgid ""
 "These functions can take multiple arguments, but usually imply the user is "
 "doing more of the work than a usual constructor would."
 msgstr ""
+"これらの関数は複数の引数を取ることができますが、通常のコンストラクタよりも"
+"ユーザー側が多くの作業をしていることを示唆するのが一般的です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md
 msgid ""
 "`new` is still preferred for most constructor-style functions, the "
 "implication for `from` is transformation of one data type to another."
 msgstr ""
+"ほとんどのコンストラクタ風の関数には、やはり `new` が好まれます。`from` が示"
+"唆するのは、あるデータ型から別のデータ型への変換です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md
 msgid "`into`"
-msgstr ""
+msgstr "`into`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md
 msgid ""
 "Prefix for methods that convert `self` into another type. Consumes `self`, "
 "returns an owned value."
 msgstr ""
+"`self` を別の型に変換するメソッドの接頭辞です。`self` を消費し、所有された値"
+"を返します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md
 msgid ""
 "Prefix for a function that consumes an owned value and transforms it into a "
 "value of another type."
-msgstr ""
+msgstr "所有された値を消費し、それを別の型の値に変換する関数の接頭辞です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md
 msgid ""
 "Not reinterpret cast! The data can be rearranged, reallocated, changed in "
 "any way, including losing information."
 msgstr ""
+"reinterpret キャストではありません！データは並べ替えられたり、再割り当てされ"
+"たり、情報が失われることも含めてあらゆる形で変更されたりする可能性がありま"
+"す。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md
 msgid ""
@@ -33620,25 +33642,31 @@ msgid ""
 "and produces an iterator over owned values, unlike `iter` and `iter_mut` "
 "which produce iterators over reference values."
 msgstr ""
+"`into_iter` はコレクション（vec、btreeset、hashmap など）を消費し、所有された"
+"値に対するイテレータを生成します。これは、参照に対するイテレータを生成する "
+"`iter` や `iter_mut` とは異なります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid "`to`: Non-consuming Conversion"
-msgstr ""
+msgstr "`to`: 消費しない変換"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
 "Prefix to a function that takes a borrowed value and creates an owned value"
-msgstr ""
+msgstr "借用された値を受け取り、所有された値を作成する関数の接頭辞"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid "// Take an owned self because `u32` implements `Copy`\n"
 msgstr ""
+"// `u32` は `Copy` を実装しているので、所有された self を受け取ります\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
 "Methods that create a new owned value without consuming `self`, and imply a "
 "type conversion, are named starting with `to`."
 msgstr ""
+"`self` を消費せずに新しい所有された値を作成し、型変換を示唆するメソッドは、"
+"`to` で始まる名前にします。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
@@ -33646,6 +33674,8 @@ msgid ""
 "non-trivial type conversion, or even a data transformation. For example, "
 "`str::to_uppercase`."
 msgstr ""
+"「to」で始まるメソッドは異なる型を返し、自明でない型変換や、さらにはデータの"
+"変換を強く示唆します。たとえば、`str::to_uppercase` です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
@@ -33653,35 +33683,43 @@ msgid ""
 "value if the type implements `Copy`: this also ensures that the conversion "
 "method call does not consume `self`."
 msgstr ""
+"「to」メソッドは `&self` を取るのが最も一般的です。ただし、型が `Copy` を実装"
+"している場合は `self` を値で取ることもできます。この場合も、変換メソッドの呼"
+"び出しによって `self` が消費されないことが保証されます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
-#, fuzzy
 msgid ""
 "If you simply want to define a method that takes `&self` and returns an "
 "owned value of the same type, implement [`Clone`](https://doc.rust-lang.org/"
 "stable/std/clone/trait.Clone.html) or [`ToOwned`](https://doc.rust-lang.org/"
 "stable/std/borrow/trait.ToOwned.html)."
 msgstr ""
-"[`Option`](https://doc.rust-lang.org/stable/std/option/enum.Option.html) や "
-"[`BinaryHeap`](https://doc.rust-lang.org/stable/std/collections/"
-"struct.BinaryHeap.html) などの標準ライブラリ型。"
+"単に `&self` を取り、同じ型の所有された値を返すメソッドを定義したいのであれ"
+"ば、[`Clone`](https://doc.rust-lang.org/stable/std/clone/trait.Clone.html) ま"
+"たは [`ToOwned`](https://doc.rust-lang.org/stable/std/borrow/"
+"trait.ToOwned.html) を実装してください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
 "If you want to define a method that consumes the source value, use the "
 "\"into\" naming pattern."
 msgstr ""
+"元の値を消費するメソッドを定義したい場合は、「into」の命名パターンを使ってく"
+"ださい。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
 "Also seen in functions that convert the endianness of primitives, or copy "
 "and expose the value of a newtype."
 msgstr ""
+"プリミティブのエンディアンを変換する関数や、newtype の値をコピーして公開する"
+"関数にも見られます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
 "Ask the class: What's the difference between `to_owned` and `into_owned`?"
 msgstr ""
+"受講者に質問してください: `to_owned` と `into_owned` の違いは何でしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
@@ -33689,6 +33727,8 @@ msgid ""
 "`into_owned` appears on owned values that hold reference types, like `Cow` "
 "(copy-on-write)."
 msgstr ""
+"回答: `to_owned` は `&str` のような参照値にあり、`into_owned` は `Cow`（copy-"
+"on-write）のような、参照型を保持する所有された値にあります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/to.md
 msgid ""
@@ -33696,24 +33736,29 @@ msgid ""
 "so the owned value of `Cow` is consumed to create an owned value of the "
 "reference type it was holding onto."
 msgstr ""
+"`Cow` のような型は、借用された参照を含みながら所有されることができます。その"
+"ため、`Cow` の所有された値を消費して、それが保持していた参照型の所有された値"
+"を作成します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid "`as_` and `_ref`: reference conversions"
-msgstr ""
+msgstr "`as_` と `_ref`: 参照の変換"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid "// Very common on container types, see how it's also on Option.\n"
 msgstr ""
+"// コンテナ型では非常によく見られます。Option にもあることを確認してくださ"
+"い。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid "Method that returns a borrow of the primary piece of contained data."
-msgstr ""
+msgstr "内部に保持している主要なデータの借用を返すメソッドです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid ""
 "The borrowing relationship is most often straightforward: the return value "
 "is a reference that borrows `self`."
-msgstr ""
+msgstr "借用の関係はたいてい単純で、戻り値は `self` を借用する参照です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid ""
@@ -33721,39 +33766,50 @@ msgid ""
 "`as_ptr()` methods return an unsafe pointer. The borrow checker does not "
 "track borrowing for pointers."
 msgstr ""
+"戻り値が `self` を論理的にのみ借用する場合もあります。たとえば、`as_ptr()` メ"
+"ソッドはアンセーフなポインタを返します。借用チェッカーはポインタの借用を追跡"
+"しません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid ""
 "The type implementing an \"as\" method should contain one primary piece of "
 "data that is being borrowed out."
 msgstr ""
+"「as」メソッドを実装する型は、貸し出される主要なデータを一つ含んでいる必要が"
+"あります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid ""
 "The \"as\" naming convention does not work if the data type is an aggregate "
 "of many fields without an obvious primary one."
 msgstr ""
+"データ型が、明らかに主要なものがない多数のフィールドの集合である場合、「as」"
+"の命名規則は機能しません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md
 msgid ""
 "If you have two reference getters that you need to distinguish, use the "
 "`_ref` suffix."
 msgstr ""
+"区別する必要のある参照ゲッターが二つある場合は、`_ref` 接尾辞を使ってくださ"
+"い。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid "`by`: custom comparator or projection"
-msgstr ""
+msgstr "`by`: カスタムの比較関数または射影"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid ""
 "Component for methods that take a custom projection or comparison function."
-msgstr ""
+msgstr "カスタムの射影関数や比較関数を受け取るメソッドの構成要素です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid ""
 "`sort_by` takes a custom comparator function that replaces the normal `Ord` "
 "comparison logic."
 msgstr ""
+"`sort_by` は、通常の `Ord` による比較ロジックを置き換えるカスタムの比較関数を"
+"受け取ります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid ""
@@ -33761,126 +33817,142 @@ msgid ""
 "and returns an alternate value to use for sorting. This allow us to do "
 "things like sort by a particular field of a struct."
 msgstr ""
+"`sort_by_key` は、元の要素を受け取り、ソートに使う別の値を返す射影関数を受け"
+"取ります。これにより、構造体の特定のフィールドでソートするといったことができ"
+"ます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid "Sometimes the \"by\" preposition is simply a preposition:"
-msgstr ""
+msgstr "「by」が単なる前置詞である場合もあります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
-#, fuzzy
 msgid ""
 "[`Read::by_ref()`](https://doc.rust-lang.org/std/io/"
 "trait.Read.html#method.by_ref)"
 msgstr ""
-"同様に、[`Write`](https://doc.rust-lang.org/std/io/trait.Write.html) を使用す"
-"ると、`u8` シンクを抽象化できます。"
+"[`Read::by_ref()`](https://doc.rust-lang.org/std/io/"
+"trait.Read.html#method.by_ref)"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md
 msgid ""
 "[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/"
 "trait.Iterator.html#method.advance_by) iterator method (nightly feature)"
 msgstr ""
+"[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/"
+"trait.Iterator.html#method.advance_by) イテレータメソッド（nightly の機能）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "What do these names imply they do?"
-msgstr ""
+msgstr "これらの名前は、何をすることを示唆しているでしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "What should we name these signatures?"
-msgstr ""
+msgstr "これらのシグネチャにはどのような名前を付けるべきでしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
-#, fuzzy
 msgid "// What are the types of these methods?\n"
-msgstr "非同期の呼び出しの返り値の型は？"
+msgstr "// これらのメソッドの型は何でしょうか？\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "// ?\n"
-msgstr ""
+msgstr "// ?\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "// What should we name methods with these types?\n"
 msgstr ""
+"// これらの型を持つメソッドにはどのような名前を付けるべきでしょうか？\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "// details for InnerType do not matter.\n"
-msgstr ""
+msgstr "// InnerType の詳細は重要ではありません。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "Go through the methods in the example with the class and discuss what the "
 "types of the functions should be."
 msgstr ""
+"例のメソッドを受講者と一緒に見ていき、関数の型がどうあるべきかを話し合ってく"
+"ださい。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "Go through the unnamed methods and brainstorm what names those methods "
 "should have."
 msgstr ""
+"名前のないメソッドを見ていき、どのような名前を付けるべきかをブレインストーミ"
+"ングしてください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "Answers for missing types:"
-msgstr ""
+msgstr "欠けている型の回答:"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`Option::is_some(&self) -> bool`"
-msgstr ""
+msgstr "`Option::is_some(&self) -> bool`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`slice::get(&self /* &[T] */, usize) -> Option<&T>`"
-msgstr ""
+msgstr "`slice::get(&self /* &[T] */, usize) -> Option<&T>`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "`slice::get_unchecked_mut(&self /* &[T] */, usize) -> &T` (unsafe and "
 "simplified)"
 msgstr ""
+"`slice::get_unchecked_mut(&self /* &[T] */, usize) -> &T`（アンセーフ、簡略化"
+"しています）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`Option::as_ref(&self /* &Option<T> */) -> Option<&T>`"
-msgstr ""
+msgstr "`Option::as_ref(&self /* &Option<T> */) -> Option<&T>`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`str::from_utf8_unchecked_mut(v: &mut [u8]) -> &mut str` (unsafe)"
-msgstr ""
+msgstr "`str::from_utf8_unchecked_mut(v: &mut [u8]) -> &mut str`（アンセーフ）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "`Rc::get_mut(&mut self /* &mut Rc<T> */) -> Option<&mut T>` (simplified)"
 msgstr ""
+"`Rc::get_mut(&mut self /* &mut Rc<T> */) -> Option<&mut T>`（簡略化していま"
+"す）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "`Vec::dedup_by_key<K: PartialEq>(&mut self /* &mut Vec<T> */, key: impl "
 "FnMut(&mut T) -> K)` (simplified)"
 msgstr ""
+"`Vec::dedup_by_key<K: PartialEq>(&mut self /* &mut Vec<T> */, key: impl "
+"FnMut(&mut T) -> K)`（簡略化しています）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "Answers for missing names:"
-msgstr ""
+msgstr "欠けている名前の回答:"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`fn from_string(String) -> Self`"
-msgstr ""
+msgstr "`fn from_string(String) -> Self`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "`fn inner(&self) -> Option<&InnerType>` or `as_ref`, depending on context"
-msgstr ""
+msgstr "`fn inner(&self) -> Option<&InnerType>`、または文脈によっては `as_ref`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid "`fn with_string(self, String) -> Self`"
-msgstr ""
+msgstr "`fn with_string(self, String) -> Self`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md
 msgid ""
 "`fn inner_mut(&mut self) -> Option<&mut InnerType>` or `as_ref_mut`, "
 "depending on context"
 msgstr ""
+"`fn inner_mut(&mut self) -> Option<&mut InnerType>`、または文脈によっては "
+"`as_ref_mut`"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md
 msgid "Common Traits to Implement"
-msgstr ""
+msgstr "実装すべき一般的なトレイト"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md
 msgid ""
@@ -33888,18 +33960,24 @@ msgid ""
 "and ecosystem expects you to use them, and so a big part of _predictability_ "
 "is what traits are implemented for a type!"
 msgstr ""
+"トレイトは Rust 言語で最も強力なツールの一つです。言語とエコシステムはトレイ"
+"トが使われることを前提としているため、_予測可能性_ の大部分は、型にどのトレイ"
+"トが実装されているかにかかっています！"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md
 msgid ""
 "Traits should be liberally implemented on types you author, but there are "
 "caveats!"
 msgstr ""
+"自分で作成する型には積極的にトレイトを実装すべきですが、注意点もあります！"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md
 msgid ""
 "Remember, many traits have the ability to be _derived_: to have a compiler "
 "plugin (macro) write the implementation for you!"
 msgstr ""
+"多くのトレイトは _導出_ できることを覚えておいてください。つまり、コンパイラ"
+"プラグイン（マクロ）に実装を書いてもらえます！"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md
 msgid ""
@@ -33908,10 +33986,13 @@ msgid ""
 "commitment needed on the developer side for implementing these kinds of "
 "traits!"
 msgstr ""
+"エコシステムのトレイト（De/Serialize など）の作成者は、トレイトの derive 実装"
+"をユーザーが使えるようにしているため、開発者側がこうしたトレイトを実装する手"
+"間はごくわずかで済みます！"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "\"Write to string\" trait, for debug purposes."
-msgstr ""
+msgstr "デバッグ用の「文字列への書き込み」トレイトです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
@@ -33921,125 +34002,136 @@ msgstr ""
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid "Derivable: ✅"
-msgstr ""
+msgstr "導出可能: ✅"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "\"PlainTextPassword\""
-msgstr ""
+msgstr "\"PlainTextPassword\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "\"hint\""
-msgstr ""
+msgstr "\"hint\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md
 msgid "\"password\""
-msgstr ""
+msgstr "\"password\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "\"[omitted]\""
-msgstr ""
+msgstr "\"[omitted]\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
-#, fuzzy
 msgid "\"{user:?}\""
-msgstr "\"{expr:?}\""
+msgstr "\"{user:?}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 #: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md
 msgid "\"Password123\""
-msgstr ""
+msgstr "\"Password123\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "\"Used it for years\""
-msgstr ""
+msgstr "\"Used it for years\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid "Provides trivial \"write to string\" functionality."
-msgstr ""
+msgstr "単純な「文字列への書き込み」機能を提供します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid ""
 "Formatting for _debug information_ for programmers during development, not "
 "appearance or serialization."
 msgstr ""
+"見た目やシリアル化のためではなく、開発中のプログラマ向けの _デバッグ情報_ の"
+"フォーマットです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid ""
 "Allows for use of `{:?}` and `{#?}` interpolation in string formatting "
 "macros."
 msgstr ""
+"文字列フォーマットマクロで `{:?}` や `{#?}` による埋め込みを使えるようにしま"
+"す。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid ""
 "When to not derive/implement: If a struct holds sensitive data, investigate "
 "if you should implement `Debug` for it."
 msgstr ""
+"導出・実装すべきでない場合: 構造体が機密データを保持している場合は、`Debug` "
+"を実装すべきかどうかを検討してください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md
 msgid ""
 "If `Debug` is needed, consider manually implementing `Debug` rather than "
 "deriving it. Omit the sensitive data from the implementation."
 msgstr ""
+"`Debug` が必要な場合は、導出するのではなく `Debug` を手動で実装することを検討"
+"してください。機密データは実装から除外します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid "\"Write to string\" trait, prioritizing readability for an end user."
 msgstr ""
+"エンドユーザーにとっての読みやすさを優先した「文字列への書き込み」トレイトで"
+"す。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "Derivable: ❌, without crates like `derive_more`."
-msgstr ""
+msgstr "導出可能: ❌（`derive_more` などのクレートを使わない場合）"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid "\"HTTP Error code {code}\""
-msgstr ""
+msgstr "\"HTTP Error code {code}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid "\"Whale attack detected – call Ishmael\""
-msgstr ""
+msgstr "\"Whale attack detected – call Ishmael\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
-#, fuzzy
 msgid "\"http debug: {:?}\""
-msgstr "\"result: {:?}\""
+msgstr "\"http debug: {:?}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
-#, fuzzy
 msgid "\"http display: {}\""
-msgstr "\"r1 is: {}\""
+msgstr "\"http display: {}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
-#, fuzzy
 msgid "\"whale debug: {:?}\""
-msgstr "\"result: {:?}\""
+msgstr "\"whale debug: {:?}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
-#, fuzzy
 msgid "\"whale display: {}\""
-msgstr "\"lines in slice: {}\""
+msgstr "\"whale display: {}\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid "A trait similar to `Debug`, but with a focus on end-user readability."
 msgstr ""
+"`Debug` に似たトレイトですが、エンドユーザーにとっての読みやすさに重点を置い"
+"ています。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid ""
 "Prerequisite for the `Error` trait. If implementing for an error type, focus "
 "on providing a descriptive error for users and programmers other than you."
 msgstr ""
+"`Error` トレイトの前提条件です。エラー型に実装する場合は、自分以外のユーザー"
+"やプログラマにとってわかりやすいエラーを提供することに重点を置いてください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid ""
 "Same security considerations as Debug, consider the ways that sensitive data "
 "could be exposed in UI or logs."
 msgstr ""
+"Debug と同じセキュリティ上の考慮事項があります。機密データが UI やログで露出"
+"する可能性のある経路を検討してください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid ""
 "Types that implement `Display` automatically have `ToString` implemented for "
 "them."
-msgstr ""
+msgstr "`Display` を実装した型には、自動的に `ToString` が実装されます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md
 msgid ""
@@ -34048,36 +34140,43 @@ msgid ""
 "in code, whereas `Display` provides a more friendly message to non-"
 "programmers."
 msgstr ""
+"例のエラー型について、`Debug` と `Display` の動作を比較してください。`Debug` "
+"の実装はコード上に現れるとおりにデータをより直接的に表現するのに対し、"
+"`Display` はプログラマ以外の人にもわかりやすいメッセージを提供することを示し"
+"てください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid "Partial equality & Total equality."
-msgstr ""
+msgstr "部分的な等価性と全体的な等価性。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
-#, fuzzy
 msgid "\"alice\""
-msgstr "\"Alice\""
+msgstr "\"alice\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid "\"bob\""
-msgstr ""
+msgstr "\"bob\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
 "Equality-related methods. If a type implements `PartialEq` then you can use "
 "the `==`/`!=` operator with that type."
 msgstr ""
+"等価性に関するメソッドです。型が `PartialEq` を実装していれば、その型で `==`/"
+"`!=` 演算子を使えます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid "A type can't implement `Eq` without implementing `PartialEq`."
-msgstr ""
+msgstr "`PartialEq` を実装せずに `Eq` を実装することはできません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
 "Reminder: Partial means \"there are invalid members of this set for this "
 "function.\""
 msgstr ""
+"おさらい: 部分的（Partial）とは、「この関数にとって無効なメンバーがこの集合に"
+"存在する」という意味です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
@@ -34085,74 +34184,93 @@ msgid ""
 "just that there may be values that may not behave as you expect equality to "
 "behave."
 msgstr ""
+"これは、等価性の判定がパニックになるとか、結果を返すとかいう意味ではありませ"
+"ん。期待する等価性のとおりには振る舞わない値が存在するかもしれない、というだ"
+"けです。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
 "For example, with floating point values `NaN` is an outlier: `NaN == NaN` is "
 "false, despite bitwise equality."
 msgstr ""
+"たとえば浮動小数点数では `NaN` が例外です。ビット単位では等しくても、`NaN == "
+"NaN` は false です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
 "`PartialEq` exists to separate types like `f32`/`f64` from types with Total "
 "Equality."
 msgstr ""
+"`PartialEq` は、`f32`/`f64` のような型を、全体的な等価性を持つ型と区別するた"
+"めに存在します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid ""
 "You can implement `PartialEq` between different types, but this is mostly "
 "useful for reference/smart pointer types."
 msgstr ""
+"異なる型の間で `PartialEq` を実装することもできますが、これが主に役立つのは参"
+"照型やスマートポインタ型の場合です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid "Partial ordering & Total ordering."
-msgstr ""
+msgstr "部分順序と全順序。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid "\"charlie\""
-msgstr ""
+msgstr "\"charlie\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "Comparison-related methods. If a type implements `PartialOrd`/`Ord` then you "
 "can use comparison operators (`<`, `<=`, `>`, `>=`) with that type."
 msgstr ""
+"比較に関するメソッドです。型が `PartialOrd`/`Ord` を実装していれば、その型で"
+"比較演算子（`<`、`<=`、`>`、`>=`）を使えます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid "`Ord` gives access to `min`, `max`, and `clamp` methods."
-msgstr ""
+msgstr "`Ord` により、`min`、`max`、`clamp` メソッドが使えるようになります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid "When derived, compares things in the order they are defined."
-msgstr ""
+msgstr "導出した場合は、定義された順序で比較されます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "For enums this means each variant is considered \"greater than\" the last as "
 "they are written."
 msgstr ""
+"列挙型の場合は、記述された順に、各バリアントが前のものより「大きい」とみなさ"
+"れます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "For structs this means fields are compared as they are written, so `id` "
 "fields are compared before `name` fields in `Totally`."
 msgstr ""
+"構造体の場合は、フィールドが記述された順に比較されます。そのため `Totally` で"
+"は、`id` フィールドが `name` フィールドより先に比較されます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid "Prerequisites: `PartialEq` for `PartialOrd`, `Eq` for `Ord`."
-msgstr ""
+msgstr "前提条件: `PartialOrd` には `PartialEq`、`Ord` には `Eq` が必要です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "To implement `Ord`, a type must also implement `PartialEq`, `Eq`, and "
 "`PartialOrd`."
 msgstr ""
+"`Ord` を実装するには、型は `PartialEq`、`Eq`、`PartialOrd` も実装する必要があ"
+"ります。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "Like with `PartialEq` and `Eq`, a type cannot implement `Ord` without "
 "implementing `PartialOrd`."
 msgstr ""
+"`PartialEq` と `Eq` の場合と同様に、`PartialOrd` を実装せずに `Ord` を実装す"
+"ることはできません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
@@ -34160,32 +34278,37 @@ msgid ""
 "total ordering (particularly floating-point numbers) from types with total "
 "ordering."
 msgstr ""
+"これらの等価性トレイトと同様に、`PartialOrd` は、全順序でない型（特に浮動小数"
+"点数）を全順序を持つ型と区別するために存在します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialord-ord.md
 msgid ""
 "Used for sorting/searching algorithms and maintaining the ordering of "
 "`BTreeMap`/`BTreeSet` style data types."
 msgstr ""
+"ソートや探索のアルゴリズム、および `BTreeMap`/`BTreeSet` のようなデータ型の順"
+"序の維持に使われます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
 msgid "Performing a hash on a type."
-msgstr ""
+msgstr "型のハッシュ値を計算します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
-#, fuzzy
 msgid "\"value\""
-msgstr "値"
+msgstr "\"value\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
 msgid ""
 "Allows a type to be used in hash algorithms, most commonly used with data "
 "structures like `HashMap`."
 msgstr ""
+"型をハッシュアルゴリズムで使えるようにします。最もよく使われるのは `HashMap` "
+"のようなデータ構造です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
 msgid ""
 "Makes it very easy for us to use custom types as the keys in a `HashMap`!"
-msgstr ""
+msgstr "独自の型を `HashMap` のキーとして非常に簡単に使えるようになります！"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md
 msgid ""
@@ -34193,45 +34316,53 @@ msgid ""
 "the type's data into a `Hasher`. This allows us to use different hash "
 "algorithms without changing a type's `Hash` impl."
 msgstr ""
+"`Hash` 自体はハッシュのロジックを何も定義せず、型のデータを `Hasher` に渡すだ"
+"けです。これにより、型の `Hash` の実装を変更せずに異なるハッシュアルゴリズム"
+"を使えます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
 msgid "Deep-copy a type or duplicate a smart, shareable pointer."
-msgstr ""
+msgstr "型をディープコピーする、または共有可能なスマートポインタを複製します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
 msgid "// Deep copy of all of the data in `lots_of_data`.\n"
-msgstr ""
+msgstr "// `lots_of_data` 内のすべてのデータをディープコピーします。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
 msgid "// Copies the reference-counted pointer, not the value.\n"
-msgstr ""
+msgstr "// 値ではなく、参照カウント方式のポインタをコピーします。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
 msgid ""
 "\"Deep copy\" a value, or in the case of reference counting pointers like "
 "`Rc`/`Arc` create a new instance of that pointer."
 msgstr ""
+"値を「ディープコピー」します。`Rc`/`Arc` のような参照カウント方式のポインタの"
+"場合は、そのポインタの新しいインスタンスを作成します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md
 msgid ""
 "When to not implement/derive: For types that, to maintain an invariant, the "
 "value should not be duplicated. We'll touch on this later in Idiomatic Rust."
 msgstr ""
+"実装・導出すべきでない場合: 不変条件を維持するために値を複製すべきでない型の"
+"場合です。これについては Idiomatic Rust の後半で触れます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid "Like `Clone`, but indicates the type is can be bitwise copied."
-msgstr ""
+msgstr "`Clone` に似ていますが、型がビット単位でコピーできることを示します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
-#, fuzzy
 msgid "// Implicit copy operation\n"
-msgstr "/// バイナリ演算。\n"
+msgstr "// 暗黙的なコピー操作\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
 "`Clone` represents an explicit, user-defined copy operation. `Copy` "
 "represents an implicit, bitwise copy."
 msgstr ""
+"`Clone` は明示的でユーザー定義のコピー操作を表します。`Copy` は暗黙的なビット"
+"単位のコピーを表します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
@@ -34239,18 +34370,24 @@ msgid ""
 "like primitive values. For example, primitive numeric types for a linear "
 "algebra library."
 msgstr ""
+"一般に、プリミティブ値のように振る舞うべき「プレーンなデータ」型にのみ実装す"
+"べきです。たとえば、線形代数ライブラリのプリミティブな数値型です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
 "Has the same caveat as `Clone`: If duplicating the values would break an "
 "invariant, the type shouldn't implement `Copy`."
 msgstr ""
+"`Clone` と同じ注意点があります。値を複製すると不変条件が破られる場合、その型"
+"は `Copy` を実装すべきではありません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
 "Always derive `Clone` and `Copy` together! Do _not_ manually implement "
 "`Clone` when implementing `Copy`."
 msgstr ""
+"`Clone` と `Copy` は常に一緒に導出してください！`Copy` を実装するときに、"
+"`Clone` を手動で実装しては _いけません_。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
@@ -34259,16 +34396,22 @@ msgid ""
 "`Clone` and `Copy` together ensures that calling `clone` will give the same "
 "result as invoking a copy."
 msgstr ""
+"コピー操作は `clone` メソッドを呼び出さないため、独自の `Clone` の実装は暗黙"
+"的なコピー操作と異なる動作をする可能性があります。`Clone` と `Copy` を一緒に"
+"導出すれば、`clone` を呼び出した結果とコピーした結果が同じになることが保証さ"
+"れます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid "Cannot be implemented on types with `Drop` or non-`Copy` fields."
-msgstr ""
+msgstr "`Drop` を持つ型や、`Copy` でないフィールドを持つ型には実装できません。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
 "Ask the class: Why can't a type with heap data (`Vec`, `BTreeMap`, `Rc`, "
 "etc.) be `Copy`?"
 msgstr ""
+"受講者に質問してください: ヒープデータを持つ型（`Vec`、`BTreeMap`、`Rc` な"
+"ど）が `Copy` になれないのはなぜでしょうか？"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
@@ -34276,6 +34419,9 @@ msgid ""
 "longer have exclusive ownership of a pointer, breaking the invariants "
 "usually upheld by Rust and its ecosystem."
 msgstr ""
+"これらの型をビット単位でコピーすると、ヒープデータを持つ型がポインタの排他的"
+"な所有権を持たなくなり、Rust とそのエコシステムが通常守っている不変条件が破ら"
+"れてしまいます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
@@ -34283,6 +34429,9 @@ msgid ""
 "data would only update individual `Vec`s length and capacity values. The "
 "same for `BTreeMap`."
 msgstr ""
+"複数の `Vec` がメモリ上の同じデータを指すことになります。データを追加・削除し"
+"ても、更新されるのは個々の `Vec` の長さと容量の値だけです。`BTreeMap` も同様"
+"です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md
 msgid ""
@@ -34292,59 +34441,65 @@ msgid ""
 "them is destroyed, the reference count will become 0 on one of them and the "
 "inner value dropped despite there being another `Rc` still alive."
 msgstr ""
+"`Rc` をビット単位でコピーすると、ポインタ内の参照カウントの値が更新されませ"
+"ん。つまり、そのポインタに対する唯一の `Rc` であると思い込んでいる `Rc` 値の"
+"インスタンスが二つ存在しうることになります。一方が破棄されると、その参照カウ"
+"ントが 0 になり、もう一方の `Rc` がまだ生きているにもかかわらず内部の値がド"
+"ロップされてしまいます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
-#, fuzzy
 msgid "From & Into"
-msgstr "FromとInto"
+msgstr "From と Into"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "Conversion from one type to another."
-msgstr ""
+msgstr "ある型から別の型への変換。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "// `Into` is more natural to use as a trait bound.\n"
-msgstr ""
+msgstr "// トレイト境界としては `Into` を使うほうが自然です。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "// `Wrapper` can be construct from `&str` and `i32`.\n"
-msgstr ""
+msgstr "// `Wrapper` は `&str` と `i32` から構築できます。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
-#, fuzzy
 msgid "\"Hello, obvious!\""
-msgstr "\"Hello, {input}!\""
+msgstr "\"Hello, obvious!\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "// A From implementation implies an Into implementation.\n"
-msgstr ""
+msgstr "// From の実装があれば、Into の実装もあることになります。\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
-#, fuzzy
 msgid "\"Hello, implementation!\""
-msgstr "サービスの実装"
+msgstr "\"Hello, implementation!\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid "Provides conversion functionality to types."
-msgstr ""
+msgstr "型に変換機能を提供します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid ""
 "`From` provides a constructor-style function, whereas `Into` provides a "
 "method on an existing value."
 msgstr ""
+"`From` はコンストラクタ風の関数を提供し、`Into` は既存の値に対するメソッドを"
+"提供します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid ""
 "Prefer writing `From<T>` implementations for a type you're authoring instead "
 "of `Into<T>`."
 msgstr ""
+"自分で作成する型には、`Into<T>` ではなく `From<T>` の実装を書くようにしてくだ"
+"さい。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid ""
 "The `Into` trait is implemented for any type that implements `From` "
 "automatically."
-msgstr ""
+msgstr "`Into` トレイトは、`From` を実装するすべての型に自動的に実装されます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md
 msgid ""
@@ -34352,52 +34507,61 @@ msgid ""
 "of intent for what the function can take: `T: Into<String>` has clearer "
 "intent than `String: From<T>`."
 msgstr ""
+"関数の引数のトレイト境界としては、関数が何を受け取れるかという意図が明確にな"
+"るため、`Into` が好まれます。`T: Into<String>` のほうが `String: From<T>` よ"
+"りも意図が明確です。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid "TryFrom/TryInto"
-msgstr ""
+msgstr "TryFrom/TryInto"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid "Fallible conversion from one type to another."
-msgstr ""
+msgstr "ある型から別の型への、失敗しうる変換。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid "Derivable: ❌"
-msgstr ""
+msgstr "導出可能: ❌"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid "Provides conversion that can fail, returning a result type."
-msgstr ""
+msgstr "失敗する可能性のある変換を提供し、Result 型を返します。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid ""
 "Like `From`/`Into`, prefer implementing `TryFrom` for types rather than "
 "`TryInto`."
 msgstr ""
+"`From`/`Into` と同様に、型には `TryInto` ではなく `TryFrom` を実装するように"
+"してください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/try-from-into.md
 msgid "Implementations can specify what the error type of the `Result`."
-msgstr ""
+msgstr "実装では、`Result` のエラー型を何にするかを指定できます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid "Serialize/Deserialize style traits"
-msgstr ""
+msgstr "Serialize/Deserialize 系のトレイト"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid "Crates like `serde` can implement serialization automatically."
-msgstr ""
+msgstr "`serde` のようなクレートを使うと、シリアル化を自動的に実装できます。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid ""
 "Provides serialization and deserialization functionality for a type, "
 "allowing for Rust data types to be converted to/from data formats like JSON."
 msgstr ""
+"型にシリアル化と逆シリアル化の機能を提供し、Rust のデータ型を JSON などのデー"
+"タ形式との間で相互に変換できるようにします。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid ""
 "The standard library doesn't have serialization functionality built-in, but "
 "the serde crate is the community standard interface for doing serialization."
 msgstr ""
+"標準ライブラリにはシリアル化の機能が組み込まれていませんが、serde クレートが"
+"シリアル化を行うためのコミュニティ標準のインターフェースになっています。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid ""
@@ -34405,12 +34569,17 @@ msgid ""
 "erroneously saved to disk or sent over a network, consider not implementing "
 "Serialize/Deserialize for that type."
 msgstr ""
+"実装すべきでない場合: 型が、誤ってディスクに保存されたりネットワーク経由で送"
+"信されたりしてはならない機密データを含む場合は、その型に Serialize/"
+"Deserialize を実装しないことを検討してください。"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md
 msgid ""
 "Shares security concerns with `Debug`, but given serialization is often used "
 "in networking there can be higher stakes."
 msgstr ""
+"`Debug` と共通のセキュリティ上の懸念がありますが、シリアル化はネットワーク通"
+"信でよく使われるため、リスクはより高くなる可能性があります。"
 
 #: src/idiomatic/leveraging-the-type-system.md
 msgid ""
